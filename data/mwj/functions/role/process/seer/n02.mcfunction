@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : Feb 11, 2019
-## Version: alpha-0.1
+## Date   : 04 March 2019
+## Version: beta-1.0
 ###############################
 
 execute unless score @p[scores={NUM=2}] ROLE matches 1 run tellraw @s ["",{"selector":"@p[scores={NUM=2}]","color":"reset"},{"text":" は ","color":"reset"},{"text":"白","color":"green","bold":true},{"text":" です","color":"reset"}]

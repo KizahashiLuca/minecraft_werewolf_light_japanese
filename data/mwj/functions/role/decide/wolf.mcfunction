@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : Feb 11, 2019
-## Version: alpha-0.1
+## Date   : 04 March 2019
+## Version: beta-1.0
 ###############################
 
 execute if score Time WOLF matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 1

@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : Feb 11, 2019
-## Version: alpha-0.1
+## Date   : 04 March 2019
+## Version: beta-1.0
 ###############################
 
 tellraw @a ["",{"text":"  役職の内訳は以下のとおりでした。","color":"reset"}]

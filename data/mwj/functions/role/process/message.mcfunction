@@ -6,4 +6,5 @@
 ## Version: beta-1.0
 ###############################
 
-execute if score Time MADMAN matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 2
+tellraw @s ["",{"text":"あなたの役職は既に使用できません","color":"reset"}]
+scoreboard players set @s TORCH 0

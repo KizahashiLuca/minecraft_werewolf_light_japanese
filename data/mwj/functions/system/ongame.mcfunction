@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : Feb 11, 2019
-## Version: alpha-0.1
+## Date   : 04 March 2019
+## Version: beta-1.0
 ###############################
 
 ## Time Count
@@ -21,12 +21,16 @@ execute as @a[scores={ROLE=1..10}] if score @s DEATH matches 1 run scoreboard pl
 ## drop torch 
 execute as @p[scores={ROLE=5}] if score @s TORCH matches 1 unless score @s DONE matches 1 run function mwj:role/process/seer
 execute as @p[scores={ROLE=6}] if score @s TORCH matches 1 unless score @s DONE matches 1 run function mwj:role/process/medium
+execute as @p[scores={ROLE=5}] if score @s TORCH matches 1 if score @s DONE matches 1 run function mwj:role/process/message
+execute as @p[scores={ROLE=6}] if score @s TORCH matches 1 if score @s DONE matches 1 run function mwj:role/process/message
 scoreboard players enable @p[scores={ROLE=5}] SEER_OBJ
 scoreboard players enable @p[scores={ROLE=6}] MEDIUM_OBJ
 
 ## seer & medium result
 execute as @p[scores={ROLE=5}] unless score @s DONE matches 1 if score @s SEER_OBJ matches 1..14 run function mwj:role/process/seer/branch
 execute as @p[scores={ROLE=6}] unless score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/medium/branch
+execute as @p[scores={ROLE=5}] if score @s DONE matches 1 if score @s SEER_OBJ matches 1..14 run function mwj:role/process/message
+execute as @p[scores={ROLE=6}] if score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/message
 
 ## item detect
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch"}}] doNotDrop 1
