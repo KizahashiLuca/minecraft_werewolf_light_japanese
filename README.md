@@ -1,4 +1,4 @@
-# Minecraft Werewolf Light
+# Minecraft Werewolf
 
 このデータパックは「汝は人狼なりや？」を元にした   
 __「我々式マイクラ人狼」__
