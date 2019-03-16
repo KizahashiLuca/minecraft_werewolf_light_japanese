@@ -6,9 +6,13 @@
 ## Version: beta-1.0
 ###############################
 
+## decide host
+tag @s add host
+
 ## Change gamerules
 gamerule showDeathMessages false
 gamerule sendCommandFeedback false
+gamemode creative @a
 
 ## Declare valiables
 scoreboard objectives add GAME dummy
@@ -20,6 +24,7 @@ scoreboard objectives add ROLE dummy
 scoreboard objectives add DONE dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
+scoreboard objectives add TimeTrigger trigger
 scoreboard objectives add ChangeLimitTime dummy
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add DEATH deathCount
@@ -34,7 +39,7 @@ scoreboard players set Time TIME 0
 scoreboard players set Time Limit 11
 scoreboard players set Time 20 20
 scoreboard players set Time ROLE 1
-scoreboard players set Time ChangeLimitTime 15
+scoreboard players set Time ChangeLimitTime 5
 scoreboard players set @a NUM 1
 scoreboard players set @a ROLE 0
 scoreboard players set @a DONE 0
@@ -42,12 +47,26 @@ scoreboard players set @a DEATH 0
 scoreboard players set @a TORCH 0
 scoreboard players reset @a SEER_OBJ
 scoreboard players reset @a MEDIUM_OBJ
+scoreboard players reset @s TimeTrigger
 
 ## Count players
 execute as @a run scoreboard players add Time NUM 1
 
-## Start countdown
-execute if score Time NUM matches 3..14 run scoreboard players set Time GAME 2
+## init team setting
+team add Player
+team join Player @a
+team modify Player nametagVisibility never
+team modify Player seeFriendlyInvisibles false
+team modify Player prefix "\u00a7r"
+team modify Player prefix "\u00a77"
+team modify Player suffix "\u00a7r"
+
+## Invisibility
+effect give @a minecraft:invisibility 1000000 100 true
+
+## Decide Time Limit
+scoreboard players enable @s TimeTrigger
+execute if score Time NUM matches 3..14 run function mwj:system/prepare/time_trigger
 
 ## Stop the game
 execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game

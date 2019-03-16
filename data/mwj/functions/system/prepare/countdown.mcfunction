@@ -11,6 +11,9 @@ function mwj:system/time
 
 execute if score Time TIME matches 0 unless score Time Limit matches 0 run title @a times 5 10 5
 execute if score Time TIME matches 0 unless score Time Limit matches 0 run title @a title [{"score":{"name":"Time","objective":"Limit"},"color":"green","bold":true}]
+execute if score Time TIME matches 0 if score Time Limit matches 4..10 run playsound minecraft:item.trident.return master @a
+execute if score Time TIME matches 0 if score Time Limit matches 1..3 run playsound minecraft:item.trident.throw master @a
+execute if score Time TIME matches 0 if score Time Limit matches 0 run playsound minecraft:item.trident.thunder master @a
 execute if score Time TIME matches 0 if score Time Limit matches 0 run function mwj:system/prepare/game_prepare_init
 execute if score Time TIME matches 0 if score Time Limit matches 0 run function mwj:system/prepare/game_prepare_role
 execute if score Time TIME matches 0 if score Time Limit matches 0 run function mwj:system/prepare/game_prepare_item

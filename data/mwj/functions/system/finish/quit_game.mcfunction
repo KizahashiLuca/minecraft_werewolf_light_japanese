@@ -21,6 +21,7 @@ scoreboard objectives remove DEATH
 scoreboard objectives remove TORCH
 scoreboard objectives remove SEER_OBJ
 scoreboard objectives remove MEDIUM_OBJ
+scoreboard objectives remove doNotDrop
 scoreboard players reset @a
 scoreboard players reset Time
 
@@ -28,6 +29,7 @@ kill @e[type=minecraft:item]
 effect clear @a
 kill @e[type=minecraft:area_effect_cloud]
 clear @a
+tag @a remove host
 
 team remove Player
 gamemode creative @a
