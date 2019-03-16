@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 04 March 2019
-## Version: beta-1.0
+## Date   : 16 March 2019
+## Version: beta-1.1
 ###############################
 
 tellraw @s ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"  霊媒を誰に行う？","color":"reset"}]
