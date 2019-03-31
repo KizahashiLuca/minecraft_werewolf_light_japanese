@@ -23,7 +23,6 @@ scoreboard objectives add MEDIUM dummy
 scoreboard objectives add CAT dummy
 
 ## decide amount of role
-execute if score Time NUM matches 1 run function mwj:role/breakdown/p01
 execute if score Time NUM matches 3 run function mwj:role/breakdown/p03
 execute if score Time NUM matches 4 run function mwj:role/breakdown/p04
 execute if score Time NUM matches 5 run function mwj:role/breakdown/p05

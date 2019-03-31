@@ -63,7 +63,7 @@ team modify Player suffix "\u00a7r"
 
 ## Decide Time Limit
 scoreboard players enable @s TimeTrigger
-execute if score Time NUM matches 1..14 run function mwj:system/prepare/time_trigger
+execute if score Time NUM matches 3..14 run function mwj:system/prepare/time_trigger
 
 ## Stop the game
-execute unless score Time NUM matches 1..14 run function mwj:system/finish/break_game
+execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game
