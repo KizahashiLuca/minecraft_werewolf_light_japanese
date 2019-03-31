@@ -8,7 +8,7 @@
 
 scoreboard players set Time WOLF 1
 scoreboard players set Time MADMAN 0
-scoreboard players set Time VILLAGER 2
-scoreboard players set Time SEER 1
+scoreboard players set Time VILLAGER 1
+scoreboard players set Time SEER 0
 scoreboard players set Time MEDIUM 0
 scoreboard players set Time CAT 0

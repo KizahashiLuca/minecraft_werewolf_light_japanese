@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "nonwolf_with_arrow": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"NonWolf\"]}"
+          },
+          "direct_entity": {
+            "type": "arrow"
+          },
+          "dealt": {
+            "min": 10.0
+          }
+        }
+      }
+    },
+    "nonwolf_with_potion": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"NonWolf\"]}"
+          },
+          "direct_entity": {
+            "type": "potion"
+          },
+          "dealt": {
+            "min": 10.0
+          }
+        }
+      }
+    },
+    "nonwolf_with_hoe": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"NonWolf\"]}"
+          },
+          "dealt": {
+            "min": 10.0
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["nonwolf_with_arrow", "nonwolf_with_potion", "nonwolf_with_hoe"]
+  ],
+  "rewards": {
+    "function": "mwj:system/damage/nonwolf_to_cat"
+  }
+}

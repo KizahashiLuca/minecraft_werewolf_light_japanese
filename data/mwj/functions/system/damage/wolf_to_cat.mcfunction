@@ -6,4 +6,5 @@
 ## Version: beta-1.2
 ###############################
 
-give @a minecraft:arrow{display:{Name:"\"矢\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+execute if score @s ROLE matches 10 run tag @r[scores={ROLE=1..2,DEATH=0}] add StrayBullet
+execute as @p[tag=StrayBullet] run effect give @s minecraft:instant_damage 1 10 true

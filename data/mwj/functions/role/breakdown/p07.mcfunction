@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 March 2019
-## Version: beta-1.1
+## Date   : 31 March 2019
+## Version: beta-1.2
 ###############################
 
 scoreboard players set Time WOLF 2
@@ -11,3 +11,4 @@ scoreboard players set Time MADMAN 1
 scoreboard players set Time VILLAGER 2
 scoreboard players set Time SEER 1
 scoreboard players set Time MEDIUM 1
+scoreboard players set Time CAT 0

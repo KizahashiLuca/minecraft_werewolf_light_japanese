@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 March 2019
-## Version: beta-1.1
+## Date   : 31 March 2019
+## Version: beta-1.2
 ###############################
 
 ## objective remove
@@ -30,6 +30,8 @@ effect clear @a
 kill @e[type=minecraft:area_effect_cloud]
 clear @a
 tag @a remove host
+tag @a remove Wolf
+tag @a remove NonWolf
 
 team remove Player
 gamemode creative @a

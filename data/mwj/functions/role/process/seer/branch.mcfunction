@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 March 2019
-## Version: beta-1.1
+## Date   : 31 March 2019
+## Version: beta-1.2
 ###############################
 
 execute if score @s SEER_OBJ matches 1 run function mwj:role/process/seer/n01

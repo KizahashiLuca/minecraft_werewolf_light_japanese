@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 March 2019
-## Version: beta-1.1
+## Date   : 31 March 2019
+## Version: beta-1.2
 ###############################
 
 ## decide host
@@ -36,7 +36,7 @@ scoreboard objectives add MEDIUM_OBJ trigger
 scoreboard players set Time GAME 0
 scoreboard players set Time NUM 0
 scoreboard players set Time TIME 0
-scoreboard players set Time Limit 11
+scoreboard players set Time Limit 16
 scoreboard players set Time 20 20
 scoreboard players set Time ROLE 1
 scoreboard players set Time ChangeLimitTime 5
@@ -61,12 +61,9 @@ team modify Player prefix "\u00a7r"
 team modify Player prefix "\u00a77"
 team modify Player suffix "\u00a7r"
 
-## Invisibility
-effect give @a minecraft:invisibility 1000000 100 true
-
 ## Decide Time Limit
 scoreboard players enable @s TimeTrigger
-execute if score Time NUM matches 3..14 run function mwj:system/prepare/time_trigger
+execute if score Time NUM matches 1..14 run function mwj:system/prepare/time_trigger
 
 ## Stop the game
-execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game
+execute unless score Time NUM matches 1..14 run function mwj:system/finish/break_game

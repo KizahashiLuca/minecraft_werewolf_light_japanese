@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 March 2019
-## Version: beta-1.1
+## Date   : 31 March 2019
+## Version: beta-1.2
 ###############################
 
 ## Time Count
@@ -22,6 +22,7 @@ execute as @p[scores={ROLE=5}] if score @s TORCH matches 1 unless score @s DONE 
 execute as @p[scores={ROLE=6}] if score @s TORCH matches 1 unless score @s DONE matches 1 run function mwj:role/process/medium
 execute as @p[scores={ROLE=5}] if score @s TORCH matches 1 if score @s DONE matches 1 run function mwj:role/process/message
 execute as @p[scores={ROLE=6}] if score @s TORCH matches 1 if score @s DONE matches 1 run function mwj:role/process/message
+
 scoreboard players enable @p[scores={ROLE=5}] SEER_OBJ
 scoreboard players enable @p[scores={ROLE=6}] MEDIUM_OBJ
 
@@ -30,6 +31,11 @@ execute as @p[scores={ROLE=5}] unless score @s DONE matches 1 if score @s SEER_O
 execute as @p[scores={ROLE=6}] unless score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/medium/branch
 execute as @p[scores={ROLE=5}] if score @s DONE matches 1 if score @s SEER_OBJ matches 1..14 run function mwj:role/process/message
 execute as @p[scores={ROLE=6}] if score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/message
+
+## cat system
+execute if score @p[tag=StrayBullet] DEATH matches 1..2 run tellraw @p[tag=StrayBullet] ["",{"selector":"@p[tag=StrayBullet]"},{"text":" は "},{"selector":"@s"},{"text":" に道連れされて突然死しました。"}]
+execute if score @p[tag=StrayBullet] DEATH matches 0 run tellraw @p[tag=StrayBullet] ["",{"selector":"@p[tag=StrayBullet]"},{"text":" は "},{"selector":"@s"},{"text":" に道連れされましたが突然死しませんでした。"}]
+execute if score @p[tag=StrayBullet] DEATH matches 1..2 run tag @a[tag=StrayBullet] remove StrayBullet
 
 ## decide winner
 execute if score Time BLACK matches 0 if score Time WHITE matches 0 run function mwj:system/finish/win_draw

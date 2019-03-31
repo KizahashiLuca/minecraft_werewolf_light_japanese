@@ -6,4 +6,4 @@
 ## Version: beta-1.2
 ###############################
 
-give @a minecraft:arrow{display:{Name:"\"矢\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+execute if score Time CAT matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 10

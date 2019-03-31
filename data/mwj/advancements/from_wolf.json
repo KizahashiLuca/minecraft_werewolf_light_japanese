@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "wolf_with_arrow": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"Wolf\"]}"
+          },
+          "direct_entity": {
+            "type": "arrow"
+          },
+          "dealt": {
+            "min": 10.0
+          }
+        }
+      }
+    },
+    "wolf_with_potion": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"Wolf\"]}"
+          },
+          "direct_entity": {
+            "type": "potion"
+          },
+          "dealt": {
+            "min": 10.0
+          }
+        }
+      }
+    },
+    "wolf_with_hoe": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"Wolf\"]}"
+          },
+          "dealt": {
+            "min": 10.0
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["wolf_with_arrow", "wolf_with_potion", "wolf_with_hoe"]
+  ],
+  "rewards": {
+    "function": "mwj:system/damage/wolf_to_cat"
+  }
+}

@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 March 2019
-## Version: beta-1.1
+## Date   : 31 March 2019
+## Version: beta-1.2
 ###############################
 
 ## REcount members
@@ -20,8 +20,10 @@ scoreboard objectives add MADMAN dummy
 scoreboard objectives add VILLAGER dummy
 scoreboard objectives add SEER dummy
 scoreboard objectives add MEDIUM dummy
+scoreboard objectives add CAT dummy
 
 ## decide amount of role
+execute if score Time NUM matches 1 run function mwj:role/breakdown/p01
 execute if score Time NUM matches 3 run function mwj:role/breakdown/p03
 execute if score Time NUM matches 4 run function mwj:role/breakdown/p04
 execute if score Time NUM matches 5 run function mwj:role/breakdown/p05
@@ -41,3 +43,4 @@ execute as @r[limit=1] run function mwj:role/decide/madman
 execute as @r[limit=1] run function mwj:role/decide/villager
 execute as @r[limit=1] run function mwj:role/decide/seer
 execute as @r[limit=1] run function mwj:role/decide/medium
+execute as @r[limit=1] run function mwj:role/decide/cat
