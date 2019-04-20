@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 31 March 2019
-## Version: beta-1.2
+## Date   : 21 April 2019
+## Version: beta-1.2.1
 ###############################
 
 ## objective remove
@@ -30,8 +30,15 @@ effect clear @a
 kill @e[type=minecraft:area_effect_cloud]
 clear @a
 tag @a remove host
-tag @a remove Wolf
+tag @a remove WereWolf
 tag @a remove NonWolf
+tag @a remove StrayBullet_wolf
+tag @a remove StrayBullet_nonwolf
+
+
+## revoke advancement
+advancement revoke @a only mwj:from_nonwolf
+advancement revoke @a only mwj:from_wolf
 
 team remove Player
 gamemode creative @a

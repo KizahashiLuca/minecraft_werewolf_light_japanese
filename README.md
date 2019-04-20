@@ -32,6 +32,8 @@ __現在 β版です__
      - 猫又
    - 潜伏フェーズ追加
    - 制限時間設定フェーズ修正
+ - 21 Apr 2019 - beta-1.2.1
+   - 猫又に関するバグ修正
 
 ## Discord
 [Discord][5]でご意見ご要望などをお聞きしています。   
@@ -46,19 +48,6 @@ __現在 β版です__
  - hsjoihs
  - Kory
  - Krose
-#### 検証協力者
- - いつき
- - うらん海老
- - 音叉
- - カリー
- - kelen_malu
- - てくのび
- - fto2
- - みぃ
- - りゅっちゃん
- - レギオン卿
- - ろこもあ
- 
 
 [1]:https://www.youtube.com/channel/UCIZzHNbzlIskx3TxGznRyYg
 [2]:https://youtu.be/X9nXLUE6ZIY

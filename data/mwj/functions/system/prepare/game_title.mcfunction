@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 31 March 2019
-## Version: beta-1.2
+## Date   : 21 April 2019
+## Version: beta-1.2.1
 ###############################
 
 ## game title
@@ -32,8 +32,8 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 ## Amount of Roles
 execute as @a[scores={ROLE=4..9}] run scoreboard players add Time WHITE 1
 execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1
-tag @a[scores={ROLE=1..2}] add Wolf
-tag @a[scores={ROLE=4..10}] add NonWolf
+tag @a[scores={ROLE=1..2}] add WereWolf
+tag @a[scores={ROLE=4..9}] add NonWolf
 
 ## limit time
 scoreboard players set Time Limit 60

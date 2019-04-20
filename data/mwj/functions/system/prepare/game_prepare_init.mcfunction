@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 31 March 2019
-## Version: beta-1.2
+## Date   : 21 April 2019
+## Version: beta-1.2.1
 ###############################
 
 ## init gamerule setting
@@ -16,6 +16,10 @@ gamerule showDeathMessages false
 gamerule announceAdvancements false
 difficulty peaceful
 effect clear @a
+
+## revoke advancement
+advancement revoke @a only mwj:from_nonwolf
+advancement revoke @a only mwj:from_wolf
 
 ## init preparing
 kill @e[type=minecraft:item]

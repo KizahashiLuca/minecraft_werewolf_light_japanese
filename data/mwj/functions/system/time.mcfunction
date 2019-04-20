@@ -2,8 +2,8 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 31 March 2019
-## Version: beta-1.2
+## Date   : 21 April 2019
+## Version: beta-1.2.1
 ###############################
 
 scoreboard players add Time TIME 1

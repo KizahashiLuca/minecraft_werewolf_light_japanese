@@ -2,12 +2,22 @@
 ## Minecraft Version 1.13.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 31 March 2019
-## Version: beta-1.2
+## Date   : 21 April 2019
+## Version: beta-1.2.1
 ###############################
 
 ## Time Count
 function mwj:system/time
+
+## cat system
+execute as @a[tag=StrayBullet_wolf] if score @s DEATH matches 1 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされて突然死しました。"}]
+execute as @a[tag=StrayBullet_wolf] if score @s DEATH matches 0 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされましたが突然死しませんでした。"}]
+execute as @a[tag=StrayBullet_nonwolf] if score @s DEATH matches 1 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされて突然死しました。"}]
+execute as @a[tag=StrayBullet_nonwolf] if score @s DEATH matches 0 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされましたが突然死しませんでした。"}]
+execute as @a[tag=StrayBullet_wolf] run tag @s remove StrayBullet_wolf
+execute as @a[tag=StrayBullet_nonwolf] run tag @s remove StrayBullet_nonwolf
+execute as @a[scores={ROLE=10,DEATH=1},advancements={mwj:from_wolf=true}] run function mwj:system/damage/wolf_to_cat
+execute as @a[scores={ROLE=10,DEATH=1},advancements={mwj:from_nonwolf=true}] run function mwj:system/damage/nonwolf_to_cat
 
 ## Death Count
 execute as @a[scores={ROLE=4..9}] if score @s DEATH matches 1 run scoreboard players remove Time WHITE 1
@@ -31,11 +41,6 @@ execute as @p[scores={ROLE=5}] unless score @s DONE matches 1 if score @s SEER_O
 execute as @p[scores={ROLE=6}] unless score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/medium/branch
 execute as @p[scores={ROLE=5}] if score @s DONE matches 1 if score @s SEER_OBJ matches 1..14 run function mwj:role/process/message
 execute as @p[scores={ROLE=6}] if score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/message
-
-## cat system
-execute if score @p[tag=StrayBullet] DEATH matches 1..2 run tellraw @p[tag=StrayBullet] ["",{"selector":"@p[tag=StrayBullet]"},{"text":" は "},{"selector":"@s"},{"text":" に道連れされて突然死しました。"}]
-execute if score @p[tag=StrayBullet] DEATH matches 0 run tellraw @p[tag=StrayBullet] ["",{"selector":"@p[tag=StrayBullet]"},{"text":" は "},{"selector":"@s"},{"text":" に道連れされましたが突然死しませんでした。"}]
-execute if score @p[tag=StrayBullet] DEATH matches 1..2 run tag @a[tag=StrayBullet] remove StrayBullet
 
 ## decide winner
 execute if score Time BLACK matches 0 if score Time WHITE matches 0 run function mwj:system/finish/win_draw
