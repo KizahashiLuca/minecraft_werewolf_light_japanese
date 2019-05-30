@@ -22,17 +22,17 @@ __現在 β版です__
 バグがありましたらご報告お願いします。
  - 04 Mar 2019 - beta-1.0
    - α版移行
- - 16 Mar 2019 - beta-1.1
+ - 16 Mar 2019 - [beta-1.1][beta1.1]
    - ゲームシステム修正
      - 村人陣営生存者が1人となれば 敗北
      - 制限時間終了まで勝敗未決着の場合 引き分け
    - 制限時間設定フェーズ追加
- - 31 Mar 2019 - beta-1.2
+ - 31 Mar 2019 - [beta-1.2][beta1.2]
    - 新役職追加
      - 猫又
    - 潜伏フェーズ追加
    - 制限時間設定フェーズ修正
- - 21 Apr 2019 - beta-1.2.1
+ - 21 Apr 2019 - [beta-1.2.1][beta1.2.1]
    - 猫又に関するバグ修正
 
 ## Discord
@@ -54,3 +54,6 @@ __現在 β版です__
 [3]:https://dic.nicovideo.jp/id/5501981
 [4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki
 [5]:https://discord.gg/ryNDGhU
+[beta1.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.1
+[beta1.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2
+[beta1.2.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.1
