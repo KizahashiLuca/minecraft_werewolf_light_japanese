@@ -42,6 +42,11 @@ execute as @p[scores={ROLE=6}] unless score @s DONE matches 1 if score @s MEDIUM
 execute as @p[scores={ROLE=5}] if score @s DONE matches 1 if score @s SEER_OBJ matches 1..14 run function mwj:role/process/message
 execute as @p[scores={ROLE=6}] if score @s DONE matches 1 if score @s MEDIUM_OBJ matches 1..14 run function mwj:role/process/message
 
+## cat system
+execute as @a[tag=StrayBullet] run function mwj:system/damage/death
+advancement revoke @a[advancements={mwj:from_wolf=true}] only mwj:from_wolf
+advancement revoke @a[advancements={mwj:from_nonwolf=true}] only mwj:from_nonwolf
+
 ## decide winner
 execute if score Time BLACK matches 0 if score Time WHITE matches 0 run function mwj:system/finish/win_draw
 execute if score Time BLACK matches 0 unless score Time WHITE matches 0 run function mwj:system/finish/win_white
