@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.13.2
+## Minecraft Version 1.14.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 April 2019
-## Version: beta-1.2.1
+## Date   : 10 June 2019
+## Version: beta-1.2.2
 ###############################
 
 execute if score @p[scores={NUM=1}] DEATH matches 0 run tellraw @s ["",{"selector":"@p[scores={NUM=1}]","color":"reset"},{"text":" は 生きています","color":"reset"}]

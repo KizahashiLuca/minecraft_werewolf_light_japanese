@@ -2,12 +2,12 @@
 
 このデータパックは「汝は人狼なりや？」を元にした   
 __「我々式マイクラ人狼」__
-を非公式に再現したデータパックです。
+にインスパイアされて作成した  
+__**マイクラ人狼データパック**__ です。
 
-詳しいルール説明などは
- - [〇〇の主役は我々だ！][1]様の[動画][2]
- - 本データパックの[wiki][4]
-などをご覧ください。
+詳しいルール説明は  
+__**本データパックの[wiki][4]**__
+をご覧ください。
 
 ## Caution!!
  - こちらのデータパックは非公式です。
@@ -21,9 +21,11 @@ __「我々式マイクラ人狼」__
 __現在 β版です__   
 バグがありましたらご報告お願いします。
 
-以下のリンクの[Source code(zip)]から、データパックをDL。  
-使用するワールドのフォルダ内[datapacks]に、DLしたzipファイルをコピー。  
-ワールドを開き、`/function #mwj:load`ができれば導入完了！
+ 1. 以下のリンクの[Source code(zip)]から、データパックをDL。
+ 2. DLしたzipファイルを解凍。
+ 3. 解凍したフォルダ内にある、[minecraft_werewolf_light_japanese-beta-1.X]フォルダを、使用するワールドのフォルダ内[datapacks]にコピー。
+ 4. ワールドを開き、`/function #mwj:load`ができれば導入完了！
+
  - 04 Mar 2019 - beta-1.0
    - α版移行
  - 16 Mar 2019 - [beta-1.1 (推奨)][beta1.1]
@@ -36,8 +38,10 @@ __現在 β版です__
      - 猫又
    - 潜伏フェーズ追加
    - 制限時間設定フェーズ修正
- - 21 Apr 2019 - [beta-1.2.1 (推奨)][beta1.2.1]
+ - 21 Apr 2019 - [beta-1.2.1 (v1.13推奨)][beta1.2.1]
    - 猫又に関するバグ修正
+ - 10 Jun 2019 - [beta-1.2.2 (v1.14推奨)][beta1.2.2]
+   - v1.14への対応
 
 ## Discord
 [Discord][5]でご意見ご要望などをお聞きしています。   
@@ -53,6 +57,12 @@ __現在 β版です__
  - Kory
  - Krose
 
+## Twitter
+ 遊んでみた報告お待ちしてます！   
+ 実況や生放送なども見に行きます！   
+ ぜひぜひリプライよろしくお願いいたします。   
+ [@KizahashiLuca][twitter]
+
 [1]:https://www.youtube.com/channel/UCIZzHNbzlIskx3TxGznRyYg
 [2]:https://youtu.be/X9nXLUE6ZIY
 [3]:https://dic.nicovideo.jp/id/5501981
@@ -61,3 +71,5 @@ __現在 β版です__
 [beta1.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.1
 [beta1.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2
 [beta1.2.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.1
+[beta1.2.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.2
+[twitter]:https://www.twitter.com/KizahashiLuca
