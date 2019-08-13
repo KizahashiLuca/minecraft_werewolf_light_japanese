@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "wolf_with_arrow": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"WereWolf\"]}"
+        },
+        "killing_blow": {
+          "direct_entity": {
+            "type": "arrow"
+          }
+        }
+      }
+    },
+    "wolf_with_potion": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"WereWolf\"]}"
+        },
+        "killing_blow": {
+          "direct_entity": {
+            "type": "potion"
+          }
+        }
+      }
+    },
+    "wolf_with_hoe": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"WereWolf\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["wolf_with_arrow", "wolf_with_potion", "wolf_with_hoe"]
+  ]
+}

@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 10 June 2019
-## Version: beta-1.2.2
+## Date   : 14 July 2019
+## Version: beta-1.3
 ###############################
 
 scoreboard players operation Time ChangeLimitTime *= @a[tag=host,limit=1] TimeTrigger
@@ -16,4 +16,4 @@ effect give @a minecraft:invisibility 1000000 100 true
 ## game mode
 scoreboard players set Time TIME 0
 scoreboard players set Time Limit 61
-scoreboard players set Time GAME 2
+scoreboard players set Time GAME 10

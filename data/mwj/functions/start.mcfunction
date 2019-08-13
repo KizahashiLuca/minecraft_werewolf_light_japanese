@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 10 June 2019
-## Version: beta-1.2.2
+## Date   : 14 July 2019
+## Version: beta-1.3
 ###############################
 
 ## decide host
@@ -13,6 +13,7 @@ tag @s add host
 gamerule showDeathMessages false
 gamerule sendCommandFeedback false
 gamemode creative @a
+clear @a
 
 ## Declare valiables
 scoreboard objectives add GAME dummy
@@ -24,7 +25,9 @@ scoreboard objectives add ROLE dummy
 scoreboard objectives add DONE dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
+scoreboard objectives add RoleTrigger trigger
 scoreboard objectives add TimeTrigger trigger
+scoreboard objectives add AddedRole dummy
 scoreboard objectives add ChangeLimitTime dummy
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add DEATH deathCount
@@ -47,6 +50,7 @@ scoreboard players set @a DEATH 0
 scoreboard players set @a TORCH 0
 scoreboard players reset @a SEER_OBJ
 scoreboard players reset @a MEDIUM_OBJ
+scoreboard players reset @s RoleTrigger
 scoreboard players reset @s TimeTrigger
 
 ## Count players
@@ -61,9 +65,14 @@ team modify Player prefix "\u00a7r"
 team modify Player prefix "\u00a77"
 team modify Player suffix "\u00a7r"
 
-## Decide Time Limit
+## Decide Special Role
+scoreboard players enable @s RoleTrigger
 scoreboard players enable @s TimeTrigger
-execute if score Time NUM matches 3..14 run function mwj:system/prepare/time_trigger
+execute if score Time NUM matches 3..7 run function mwj:system/prepare/time_trigger
+execute if score Time NUM matches 8..14 run function mwj:system/prepare/role_trigger
 
 ## Stop the game
-execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game
+## execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game
+
+## DEBUG
+execute if score Time NUM matches 2 run function mwj:system/prepare/role_trigger

@@ -44,6 +44,11 @@
    - 猫又に関するバグ修正
  - 10 Jun 2019 - [beta-1.2.2 (v1.14推奨)][beta1.2.2]
    - v1.14への対応
+ - 14 Jul 2019 - [beta-1.3][beta1.3]
+   - 新役職追加
+     - 妖狐
+   - 追加役職設定フェーズ追加
+   - 内部変数等変更
 
 ## Discord
 [Discord][5]でご意見ご要望などをお聞きしています。   
@@ -74,4 +79,9 @@
 [beta1.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2
 [beta1.2.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.1
 [beta1.2.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.2
+<<<<<<< Updated upstream
 [twitter]:https://www.twitter.com/KizahashiLuca
+=======
+[beta1.3]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.3
+[twitter]:https://www.twitter.com/KizahashiLuca
+>>>>>>> Stashed changes
