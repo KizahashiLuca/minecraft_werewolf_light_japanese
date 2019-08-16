@@ -25,10 +25,10 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
 
 ## Seer System
-execute if score Time SEER matches 1 as @p[scores={ROLE=5}] run function mwj:systems/ongame/seer_system
+execute if score Time SEER matches 1 as @p[scores={ROLE=5}] run function mwj:system/ongame/seer_system
 
 ## Medium System
-execute if score Time MEDIUM matches 1 as @p[scores={ROLE=6}] run function mwj:systems/ongame/medium_system
+execute if score Time MEDIUM matches 1 as @p[scores={ROLE=6}] run function mwj:system/ongame/medium_system
 
 ## Cat System
 execute if score Time CAT matches 1 run function mwj:system/ongame/cat_system
