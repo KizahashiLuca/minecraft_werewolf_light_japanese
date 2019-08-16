@@ -6,8 +6,4 @@
 ## Version: beta-1.3
 ###############################
 
-scoreboard players set Time WOLF 1
-scoreboard players set Time MADMAN 1
-scoreboard players set Time VILLAGER 2
-scoreboard players set Time SEER 1
-scoreboard players set Time MEDIUM 0
+execute if score Time MASON matches 2 as @r[scores={ROLE=0},limit=2] run scoreboard players set @s ROLE 7

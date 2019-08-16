@@ -1,14 +1,18 @@
 ###############################
-## Minecraft Version 1.14.2
+## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 14 July 2019
+## Date   : 16 August 2019
 ## Version: beta-1.3
 ###############################
 
+## Title
 title @a times 20 40 20
 title @a title ["",{"text":"VILLAGER","color":"green","bold":true}]
 title @a subtitle ["",{"text":"WIN","color":"green","bold":true}]
-scoreboard players set Time GAME 0
 
+## Display Winner
 tellraw @a ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Finished!!","color":"green"},{"text":"\n  勝者は ","color":"reset"},{"text":"村人陣営","bold":true,"color":"green"},{"text":" です！","color":"reset"}]
+
+## Change Game Mode
+scoreboard players set Time GAME 0

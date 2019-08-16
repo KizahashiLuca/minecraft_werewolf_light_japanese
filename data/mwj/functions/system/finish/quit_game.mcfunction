@@ -1,12 +1,12 @@
 ###############################
-## Minecraft Version 1.14.2
+## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 14 July 2019
+## Date   : 16 August 2019
 ## Version: beta-1.3
 ###############################
 
-## objective remove
+## Remove Objectives
 scoreboard objectives remove GAME
 scoreboard objectives remove NUM
 scoreboard objectives remove TIME
@@ -28,26 +28,27 @@ scoreboard objectives remove TimeTrigger
 scoreboard players reset @a
 scoreboard players reset Time
 
+## Kill Entities
 kill @e[type=minecraft:item]
-effect clear @a
 kill @e[type=minecraft:area_effect_cloud]
+effect clear @a
 clear @a
+
+## Remove Tags
 tag @a remove host
 tag @a remove WereWolf
 tag @a remove NonWolf
-tag @a remove AttackedFox
-tag @a remove DamagedFox
-tag @a remove KilledFox
 tag @a remove StrayBullet_wolf
 tag @a remove StrayBullet_nonwolf
 
-
-## revoke advancement
-advancement revoke @a only mwj:damaged_by_nonwolf
+## Revoke Advancements
 advancement revoke @a only mwj:killed_by_nonwolf
 advancement revoke @a only mwj:killed_by_wolf
 
+## Remove a Team
 team remove Player
+
+## Change Gamerules
 gamemode creative @a
 gamerule showDeathMessages true
 gamerule sendCommandFeedback true

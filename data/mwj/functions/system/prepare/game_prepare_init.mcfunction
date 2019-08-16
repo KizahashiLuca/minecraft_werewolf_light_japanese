@@ -1,12 +1,12 @@
 ###############################
-## Minecraft Version 1.14.2
+## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 14 July 2019
+## Date   : 16 August 2019
 ## Version: beta-1.3
 ###############################
 
-## init gamerule setting
+## Set Gamerules
 gamemode adventure @a
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
@@ -17,12 +17,11 @@ gamerule announceAdvancements false
 difficulty peaceful
 effect clear @a
 
-## revoke advancement
-advancement revoke @a only mwj:damaged_by_nonwolf
+## Revoke Advancements
 advancement revoke @a only mwj:killed_by_nonwolf
 advancement revoke @a only mwj:killed_by_wolf
 
-## init preparing
+## Kill Entities
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:area_effect_cloud]

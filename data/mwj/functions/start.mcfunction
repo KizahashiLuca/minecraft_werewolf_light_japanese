@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.14.2
+## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 14 July 2019
+## Date   : 16 August 2019
 ## Version: beta-1.3
 ###############################
 
@@ -72,7 +72,4 @@ execute if score Time NUM matches 3..7 run function mwj:system/prepare/time_trig
 execute if score Time NUM matches 8..14 run function mwj:system/prepare/role_trigger
 
 ## Stop the game
-## execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game
-
-## DEBUG
-execute if score Time NUM matches 2 run function mwj:system/prepare/role_trigger
+execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game
