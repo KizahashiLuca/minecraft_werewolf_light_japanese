@@ -6,7 +6,8 @@
 ## Version: beta-1.3
 ###############################
 
-tellraw @s ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"  霊媒を誰に行う？","color":"reset"}]
+tellraw @s ["",{"text":"\n----------------------------------","color":"reset"}]
+tellraw @s ["",{"text":"  霊媒を誰に行う？","color":"reset"}]
 execute if score Time NUM matches 1.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=1}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"霊媒","clickEvent":{"action":"run_command","value":"/trigger MEDIUM_OBJ set 1"},"color":"green","bold":true}]
 execute if score Time NUM matches 2.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=2}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"霊媒","clickEvent":{"action":"run_command","value":"/trigger MEDIUM_OBJ set 2"},"color":"green","bold":true}]
 execute if score Time NUM matches 3.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=3}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"霊媒","clickEvent":{"action":"run_command","value":"/trigger MEDIUM_OBJ set 3"},"color":"green","bold":true}]

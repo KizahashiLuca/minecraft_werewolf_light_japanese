@@ -26,6 +26,9 @@ execute if score Time SEER matches 1 as @p[scores={ROLE=5}] run function mwj:sys
 ## Medium System
 execute if score Time MEDIUM matches 1 as @p[scores={ROLE=6}] run function mwj:system/ongame/medium_system
 
+## Detective System
+execute if score Time DETECTIVE matches 1 as @p[scores={ROLE=8}] run function mwj:system/ongame/detective_system
+
 ## Cat System
 execute if score Time CAT matches 1 run function mwj:system/ongame/cat_system
 

@@ -34,8 +34,6 @@ scoreboard objectives add ChangeLimitTime dummy
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add DEATH deathCount
 scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch
-scoreboard objectives add SEER_OBJ trigger
-scoreboard objectives add MEDIUM_OBJ trigger
 
 ## Set valiables to initial value
 scoreboard players set @a GAME 0
@@ -47,8 +45,6 @@ scoreboard players set @a KILLER 0
 scoreboard players set @a VICTIM 0
 scoreboard players set @a DEATH 0
 scoreboard players set @a TORCH 0
-scoreboard players reset @a SEER_OBJ
-scoreboard players reset @a MEDIUM_OBJ
 scoreboard players reset @s RoleTrigger
 scoreboard players reset @s TimeTrigger
 scoreboard players set Time GAME 0

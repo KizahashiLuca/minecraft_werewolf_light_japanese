@@ -22,6 +22,7 @@ scoreboard objectives add SEER dummy
 scoreboard objectives add MEDIUM dummy
 scoreboard objectives add CAT dummy
 scoreboard objectives add MASON dummy
+scoreboard objectives add DETECTIVE dummy
 scoreboard players set Time WOLF 0
 scoreboard players set Time MADMAN 0
 scoreboard players set Time VILLAGER 0
@@ -29,6 +30,7 @@ scoreboard players set Time SEER 0
 scoreboard players set Time MEDIUM 0
 scoreboard players set Time CAT 0
 scoreboard players set Time MASON 0
+scoreboard players set Time DETECTIVE 0
 
 ## Decide a Amount of Roles
 execute if score Time NUM matches 3 run function mwj:role/breakdown/p03
@@ -47,6 +49,8 @@ execute if score Time NUM matches 14 run function mwj:role/breakdown/p14
 ## Add Special Roles
 execute if score Time AddedRole matches 4 run scoreboard players add Time VILLAGER 2
 execute if score Time AddedRole matches 7 run scoreboard players set Time MASON 2
+execute if score Time AddedRole matches 8 run scoreboard players set Time DETECTIVE 1
+execute if score Time AddedRole matches 8 run scoreboard players set Time VILLAGER 1
 execute if score Time AddedRole matches 10 run scoreboard players set Time CAT 1
 execute if score Time AddedRole matches 10 run scoreboard players add Time VILLAGER 1
 
@@ -57,4 +61,17 @@ execute as @r[limit=1] run function mwj:role/decide/villager
 execute as @r[limit=1] run function mwj:role/decide/seer
 execute as @r[limit=1] run function mwj:role/decide/medium
 execute as @r[limit=1] run function mwj:role/decide/mason
+execute as @r[limit=1] run function mwj:role/decide/detecitve
 execute as @r[limit=1] run function mwj:role/decide/cat
+
+## Add & Set Scoreboard of Seer
+execute if score Time SEER matches 1.. run scoreboard objectives add SEER_OBJ trigger
+execute if score Time SEER matches 1.. run scoreboard players reset @a SEER_OBJ
+
+## Add & Set Scoreboard of Medium
+execute if score Time MEDIUM matches 1.. run scoreboard objectives add MEDIUM_OBJ trigger
+execute if score Time MEDIUM matches 1.. run scoreboard players reset @a MEDIUM_OBJ
+
+## Add & Set Scoreboard of Detective
+execute if score Time DETECTIVE matches 1.. run scoreboard objectives add DETECTIVE_OBJ trigger
+execute if score Time DETECTIVE matches 1.. run scoreboard players reset @a DETECTIVE_OBJ
