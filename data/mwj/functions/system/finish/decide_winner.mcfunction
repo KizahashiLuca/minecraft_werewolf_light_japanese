@@ -14,4 +14,4 @@ execute if score Time BLACK matches 0 if score Time WHITE matches 0..1 run funct
 execute if score Time BLACK matches 0 unless score Time WHITE matches 0..1 run function mwj:system/finish/win_white
 
 ## Winner is Black
-execute unless score Time BLACK matches 0 if score Time WHITE matches 1 run function mwj:system/finish/win_black
+execute unless score Time BLACK matches 0 if score Time WHITE matches 0..1 run function mwj:system/finish/win_black

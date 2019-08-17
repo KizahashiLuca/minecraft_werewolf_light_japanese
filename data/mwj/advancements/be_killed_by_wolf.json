@@ -1,40 +1,16 @@
 {
   "criteria": {
-    "wolf_with_arrow": {
+    "be_killed_by_wolf": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
           "type": "minecraft:player",
           "nbt": "{Tags:[\"WereWolf\"]}"
-        },
-        "killing_blow": {
-          "is_projectile": true
-        }
-      }
-    },
-    "wolf_with_potion": {
-      "trigger": "minecraft:entity_killed_player",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:player",
-          "nbt": "{Tags:[\"WereWolf\"]}"
-        },
-        "killing_blow": {
-          "is_magic": true
-        }
-      }
-    },
-    "wolf_with_hoe": {
-      "trigger": "minecraft:entity_killed_player",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:player",
-          "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"WereWolf\"]}"
         }
       }
     }
   },
   "requirements": [
-    ["wolf_with_arrow", "wolf_with_potion", "wolf_with_hoe"]
+    ["be_killed_by_wolf"]
   ]
 }

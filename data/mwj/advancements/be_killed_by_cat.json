@@ -1,40 +1,16 @@
 {
   "criteria": {
-    "cat_with_arrow": {
+    "be_killed_by_cat": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
           "type": "minecraft:player",
           "nbt": "{Tags:[\"Cat\"]}"
-        },
-        "killing_blow": {
-          "is_projectile": true
-        }
-      }
-    },
-    "cat_with_potion": {
-      "trigger": "minecraft:entity_killed_player",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:player",
-          "nbt": "{Tags:[\"Cat\"]}"
-        },
-        "killing_blow": {
-          "is_magic": true
-        }
-      }
-    },
-    "cat_with_hoe": {
-      "trigger": "minecraft:entity_killed_player",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:player",
-          "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"Cat\"]}"
         }
       }
     }
   },
   "requirements": [
-    ["cat_with_arrow", "cat_with_potion", "cat_with_hoe"]
+    ["be_killed_by_cat"]
   ]
 }

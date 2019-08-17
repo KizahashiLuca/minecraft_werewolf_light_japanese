@@ -16,10 +16,6 @@ execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
 execute as @a[scores={ROLE=4..9}] if score @s DEATH matches 1 run scoreboard players remove Time WHITE 1
 execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1
 
-## Change Spectator for the Dead
-gamemode spectator @a[scores={DEATH=1}]
-execute as @a[scores={DEATH=1}] run scoreboard players set @s DEATH 2
-
 ## Detect Dropping Torch
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch"}}] doNotDrop 1
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
