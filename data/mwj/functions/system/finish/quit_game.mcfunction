@@ -14,6 +14,8 @@ scoreboard objectives remove Limit
 scoreboard objectives remove 20
 scoreboard objectives remove ROLE
 scoreboard objectives remove DONE
+scoreboard objectives remove KILLER
+scoreboard objectives remove VICTIM
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
 scoreboard objectives remove AddedRole
@@ -42,8 +44,10 @@ tag @a remove StrayBullet_wolf
 tag @a remove StrayBullet_nonwolf
 
 ## Revoke Advancements
-advancement revoke @a only mwj:killed_by_nonwolf
-advancement revoke @a only mwj:killed_by_wolf
+advancement revoke @a only mwj:be_killed_by_nonwolf
+advancement revoke @a only mwj:be_killed_by_wolf
+advancement revoke @a only mwj:be_killed_by_cat
+advancement revoke @a only mwj:killed_player
 
 ## Remove a Team
 team remove Player

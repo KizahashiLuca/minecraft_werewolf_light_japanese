@@ -1,44 +1,40 @@
 {
   "criteria": {
-    "nonwolf_with_arrow": {
+    "cat_with_arrow": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
           "type": "minecraft:player",
-          "nbt": "{Tags:[\"NonWolf\"]}"
+          "nbt": "{Tags:[\"Cat\"]}"
         },
         "killing_blow": {
-          "direct_entity": {
-            "type": "arrow"
-          }
+          "is_projectile": true
         }
       }
     },
-    "nonwolf_with_potion": {
+    "cat_with_potion": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
           "type": "minecraft:player",
-          "nbt": "{Tags:[\"NonWolf\"]}"
+          "nbt": "{Tags:[\"Cat\"]}"
         },
         "killing_blow": {
-          "direct_entity": {
-            "type": "potion"
-          }
+          "is_magic": true
         }
       }
     },
-    "nonwolf_with_hoe": {
+    "cat_with_hoe": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
           "type": "minecraft:player",
-          "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"NonWolf\"]}"
+          "nbt": "{SelectedItem:{id:\"minecraft:diamond_hoe\"},Tags:[\"Cat\"]}"
         }
       }
     }
   },
   "requirements": [
-    ["nonwolf_with_arrow", "nonwolf_with_potion", "nonwolf_with_hoe"]
+    ["cat_with_arrow", "cat_with_potion", "cat_with_hoe"]
   ]
 }

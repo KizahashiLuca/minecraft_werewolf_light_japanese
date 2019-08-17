@@ -33,6 +33,9 @@ execute if score Time MEDIUM matches 1 as @p[scores={ROLE=6}] run function mwj:s
 ## Cat System
 execute if score Time CAT matches 1 run function mwj:system/ongame/cat_system
 
+## Kill Log System
+function mwj:system/ongame/kill_log/kill_log_main
+
 ## Decide Winner
 function mwj:system/finish/decide_winner
 

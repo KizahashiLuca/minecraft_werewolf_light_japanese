@@ -39,6 +39,7 @@ execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1
 ## Put a Tag
 tag @a[scores={ROLE=1..2}] add WereWolf
 tag @a[scores={ROLE=3..9}] add NonWolf
+tag @a[scores={ROLE=10}] add Cat
 
 ## Set the Time Limit
 scoreboard players set Time Limit 60

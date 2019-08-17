@@ -17,13 +17,9 @@ execute as @a[tag=StrayBullet_wolf] run tag @s remove StrayBullet_wolf
 execute as @a[tag=StrayBullet_nonwolf] run tag @s remove StrayBullet_nonwolf
 
 ## Put Tags
-execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:killed_by_wolf=true}] run tag @r[scores={ROLE=1..2,DEATH=0}] add StrayBullet_wolf
-execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:killed_by_nonwolf=true}] run tag @r[scores={ROLE=1..9,DEATH=0}] add StrayBullet_nonwolf
+execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:be_killed_by_wolf=true}] run tag @r[scores={ROLE=1..2,DEATH=0}] add StrayBullet_wolf
+execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:be_killed_by_nonwolf=true}] run tag @r[scores={ROLE=1..9,DEATH=0}] add StrayBullet_nonwolf
 
 ## Deal Instant Damage to a Stray Bullet
-execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:killed_by_wolf=true}] run effect give @p[tag=StrayBullet_wolf] minecraft:instant_damage 1 10 true
-execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:killed_by_nonwolf=true}] run effect give @p[tag=StrayBullet_nonwolf] minecraft:instant_damage 1 10 true
-
-## Revoke Advancements
-advancement revoke @a only mwj:killed_by_wolf
-advancement revoke @a only mwj:killed_by_nonwolf
+execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:be_killed_by_wolf=true}] run effect give @p[tag=StrayBullet_wolf] minecraft:instant_damage 1 10 true
+execute as @p[scores={ROLE=10,DEATH=1..2},advancements={mwj:be_killed_by_nonwolf=true}] run effect give @p[tag=StrayBullet_nonwolf] minecraft:instant_damage 1 10 true

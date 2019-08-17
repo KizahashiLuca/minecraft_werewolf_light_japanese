@@ -23,6 +23,8 @@ scoreboard objectives add Limit dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add ROLE dummy
 scoreboard objectives add DONE dummy
+scoreboard objectives add KILLER dummy
+scoreboard objectives add VICTIM dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
 scoreboard objectives add RoleTrigger trigger
@@ -36,22 +38,28 @@ scoreboard objectives add SEER_OBJ trigger
 scoreboard objectives add MEDIUM_OBJ trigger
 
 ## Set valiables to initial value
-scoreboard players set Time GAME 0
-scoreboard players set Time NUM 0
-scoreboard players set Time TIME 0
-scoreboard players set Time Limit 16
-scoreboard players set Time 20 20
-scoreboard players set Time ROLE 1
-scoreboard players set Time ChangeLimitTime 5
+scoreboard players set @a GAME 0
 scoreboard players set @a NUM 1
+scoreboard players set @a TIME 0
 scoreboard players set @a ROLE 0
 scoreboard players set @a DONE 0
+scoreboard players set @a KILLER 0
+scoreboard players set @a VICTIM 0
 scoreboard players set @a DEATH 0
 scoreboard players set @a TORCH 0
 scoreboard players reset @a SEER_OBJ
 scoreboard players reset @a MEDIUM_OBJ
 scoreboard players reset @s RoleTrigger
 scoreboard players reset @s TimeTrigger
+scoreboard players set Time GAME 0
+scoreboard players set Time NUM 0
+scoreboard players set Time TIME 0
+scoreboard players set Time Limit 16
+scoreboard players set Time 20 20
+scoreboard players set Time ROLE 1
+scoreboard players set Time KILLER 1
+scoreboard players set Time VICTIM 1
+scoreboard players set Time ChangeLimitTime 5
 
 ## Count players
 execute as @a run scoreboard players add Time NUM 1

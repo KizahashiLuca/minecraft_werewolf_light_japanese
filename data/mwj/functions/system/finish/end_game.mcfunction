@@ -16,7 +16,13 @@ execute if score Time CAT matches 1.. run tellraw @a ["",{"text":"    ","color":
 execute if score Time WOLF matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"人    狼","color":"red"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=1}]","color":"reset"}]
 execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"狂    人","color":"light_purple"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=2}]","color":"reset"}]
 
-tellraw @a ["",{"text":"\n    ","color":"reset"},{"text":"生 存 者","color":"reset"},{"text":"： ","color":"reset"},{"selector":"@a[scores={DEATH=0}]","color":"reset"},{"text":"\n----------------------------------\n","color":"reset"}]
+tellraw @a ["",{"text":"\n    ","color":"reset"},{"text":"生 存 者","color":"reset"},{"text":"： ","color":"reset"},{"selector":"@a[scores={DEATH=0}]","color":"reset"}]
+tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
+
+## Display a Kill Log
+tellraw @a ["",{"text":"  殺害記録","color":"reset"}] 
+execute as @a run function mwj:system/ongame/kill_log/kill_log_to_chat
+tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
 ## Remove Objectives
 scoreboard objectives remove WOLF
