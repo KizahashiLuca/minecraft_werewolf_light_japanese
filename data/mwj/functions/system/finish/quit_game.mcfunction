@@ -24,6 +24,7 @@ scoreboard objectives remove DEATH
 scoreboard objectives remove TORCH
 scoreboard objectives remove SEER_OBJ
 scoreboard objectives remove MEDIUM_OBJ
+scoreboard objectives remove DETECTIVE_OBJ
 scoreboard objectives remove doNotDrop
 scoreboard objectives remove RoleTrigger
 scoreboard objectives remove TimeTrigger
