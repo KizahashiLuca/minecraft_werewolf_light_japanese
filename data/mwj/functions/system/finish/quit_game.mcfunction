@@ -41,6 +41,7 @@ clear @a
 tag @a remove host
 tag @a remove WereWolf
 tag @a remove NonWolf
+tag @a remove Cat
 tag @a remove StrayBullet_wolf
 tag @a remove StrayBullet_nonwolf
 

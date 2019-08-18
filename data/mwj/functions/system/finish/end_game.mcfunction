@@ -21,7 +21,7 @@ tellraw @a ["",{"text":"\n    ","color":"reset"},{"text":"生 存 者","color":"
 tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
 
 ## Display a Kill Log
-tellraw @a ["",{"text":"  殺害記録","color":"reset"}] 
+tellraw @a ["",{"text":"  死亡記録","color":"reset"}] 
 execute as @a run function mwj:system/ongame/kill_log/kill_log_to_chat
 tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
