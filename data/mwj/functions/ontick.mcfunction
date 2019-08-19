@@ -7,10 +7,10 @@
 ###############################
 
 ## Run every tick
-execute if score Time GAME matches 90 run function mwj:system/prepare/role_setting
-execute if score Time GAME matches 91 run function mwj:system/prepare/time_setting
+execute if score Time GAME matches 90 run function mwj:system/prepare/additional_roles/setting
+execute if score Time GAME matches 91 run function mwj:system/prepare/time_limit/setting
 execute if score Time GAME matches 10 run function mwj:system/prepare/countdown
-execute if score Time GAME matches 11 run function mwj:system/ongame
+execute if score Time GAME matches 11 run function mwj:system/ongame/ongame
 
-execute if score @a[tag=host,limit=1] RoleTrigger matches 1.. run function mwj:system/prepare/role_decision
-execute if score @a[tag=host,limit=1] TimeTrigger matches 1.. run function mwj:system/prepare/time_decision
+execute if score @a[tag=host,limit=1] RoleTrigger matches 1.. run function mwj:system/prepare/additional_roles/decision
+execute if score @a[tag=host,limit=1] TimeTrigger matches 1.. run function mwj:system/prepare/time_limit/decision

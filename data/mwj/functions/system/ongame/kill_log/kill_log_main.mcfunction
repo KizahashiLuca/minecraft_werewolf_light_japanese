@@ -7,11 +7,11 @@
 ###############################
 
 ## Store Kill Log
-function mwj:system/ongame/kill_log/kill_log_of_killer
 function mwj:system/ongame/kill_log/kill_log_of_victim
+function mwj:system/ongame/kill_log/kill_log_of_killer
 function mwj:system/ongame/kill_log/kill_log_of_suicide
 
-## Increment KILL Number br 1
+## Increment KILL Number by 1
 execute if entity @a[advancements={mwj:be_killed_by_cat=false,mwj:be_killed_by_wolf=false,mwj:be_killed_by_nonwolf=false},scores={DEATH=1}] run scoreboard players add Time KILLER 1
 execute if entity @a[advancements={mwj:be_killed_by_cat=true}] run scoreboard players add Time KILLER 1
 execute if entity @a[advancements={mwj:be_killed_by_wolf=true}] run scoreboard players add Time KILLER 1

@@ -72,8 +72,8 @@ team modify Player suffix "\u00a7r"
 ## Decide Special Role
 scoreboard players enable @s RoleTrigger
 scoreboard players enable @s TimeTrigger
-execute if score Time NUM matches 3..7 run function mwj:system/prepare/time_trigger
-execute if score Time NUM matches 8..14 run function mwj:system/prepare/role_trigger
+execute if score Time NUM matches 3..7 run function mwj:system/prepare/time_limit/trigger
+execute if score Time NUM matches 8..14 run function mwj:system/prepare/additional_roles/trigger
 
 ## Stop the game
 execute unless score Time NUM matches 3..14 run function mwj:system/finish/break_game

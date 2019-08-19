@@ -19,4 +19,4 @@ execute if score Time AddedRole matches 10 run tellraw @a ["",{"text":"\n-------
 ## Change Time Limit
 scoreboard players set Time TIME 0
 scoreboard players set Time Limit 16
-function mwj:system/prepare/time_trigger
+function mwj:system/prepare/time_limit/trigger
