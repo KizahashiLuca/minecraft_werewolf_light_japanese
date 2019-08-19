@@ -28,6 +28,8 @@ scoreboard objectives remove DETECTIVE_OBJ
 scoreboard objectives remove doNotDrop
 scoreboard objectives remove RoleTrigger
 scoreboard objectives remove TimeTrigger
+scoreboard objectives remove VICTIM_LOG_TEMP
+scoreboard objectives remove KILLER_LOG_TEMP
 scoreboard players reset @a
 scoreboard players reset Time
 

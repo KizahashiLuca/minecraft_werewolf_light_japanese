@@ -24,7 +24,7 @@ execute if score @p[scores={GAME=2}] TIME matches 10..99 unless entity @p[scores
 execute if score @p[scores={GAME=2}] TIME matches 0..9 unless entity @p[scores={GAME=1}] run tellraw @a ["",{"text":"       ","color":"reset"},{"score":{"name":"@p[scores={GAME=2}]","objective":"TIME"},"color":"reset"},{"text":" sec.  :  ","color":"reset"},{"selector":"@p[scores={GAME=2}]","color":"red"},{"text":" --> ","color":"reset"},{"selector":"@a[scores={GAME=2}]","color":"green"}]
 
 ## Increment Kill Number by 1
-execute if entity @p[scores={GAME=2}] run scoreboard players add Time KILLER 1
+execute as @a[scores={GAME=2}] run scoreboard players add Time KILLER 1
 
 ## Reset a Flag
 scoreboard players set @a GAME 0

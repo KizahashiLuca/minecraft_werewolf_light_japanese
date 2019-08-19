@@ -34,6 +34,8 @@ scoreboard objectives add ChangeLimitTime dummy
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add DEATH deathCount
 scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch
+scoreboard objectives add VICTIM_LOG_TEMP dummy
+scoreboard objectives add KILLER_LOG_TEMP dummy
 
 ## Set valiables to initial value
 scoreboard players set @a GAME 0
@@ -45,6 +47,8 @@ scoreboard players set @a KILLER 0
 scoreboard players set @a VICTIM 0
 scoreboard players set @a DEATH 0
 scoreboard players set @a TORCH 0
+scoreboard players set @a VICTIM_LOG_TEMP 0
+scoreboard players set @a KILLER_LOG_TEMP 0
 scoreboard players reset @s RoleTrigger
 scoreboard players reset @s TimeTrigger
 scoreboard players set Time GAME 0
