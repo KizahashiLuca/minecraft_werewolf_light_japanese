@@ -7,4 +7,4 @@
 ###############################
 
 ## Kill Log of Killer Main Process
-scoreboard players operation @a[advancements={mwj:killed_player=true}] KILLER = Time KILLER
+scoreboard players operation @a[advancements={mwj:killed_player=true}] KILLER = Time VICTIM

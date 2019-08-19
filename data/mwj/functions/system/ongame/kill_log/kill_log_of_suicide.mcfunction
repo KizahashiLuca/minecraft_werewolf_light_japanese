@@ -7,5 +7,5 @@
 ###############################
 
 ## Detect Suicides / Accidents
-scoreboard players operation @a[advancements={mwj:be_killed_by_cat=false,mwj:be_killed_by_wolf=false,mwj:be_killed_by_nonwolf=false},scores={DEATH=1}] VICTIM = Time KILLER
+scoreboard players operation @a[advancements={mwj:be_killed_by_cat=false,mwj:be_killed_by_wolf=false,mwj:be_killed_by_nonwolf=false},scores={DEATH=1}] VICTIM = Time VICTIM
 scoreboard players operation @a[advancements={mwj:be_killed_by_cat=false,mwj:be_killed_by_wolf=false,mwj:be_killed_by_nonwolf=false},scores={DEATH=1}] TIME = Time Limit

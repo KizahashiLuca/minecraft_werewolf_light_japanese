@@ -7,9 +7,9 @@
 ###############################
 
 ## Kill Log of victim Main Process
-scoreboard players operation @a[advancements={mwj:be_killed_by_cat=true}] VICTIM = Time KILLER
-scoreboard players operation @a[advancements={mwj:be_killed_by_wolf=true}] VICTIM = Time KILLER
-scoreboard players operation @a[advancements={mwj:be_killed_by_nonwolf=true}] VICTIM = Time KILLER
+scoreboard players operation @a[advancements={mwj:be_killed_by_cat=true}] VICTIM = Time VICTIM
+scoreboard players operation @a[advancements={mwj:be_killed_by_wolf=true}] VICTIM = Time VICTIM
+scoreboard players operation @a[advancements={mwj:be_killed_by_nonwolf=true}] VICTIM = Time VICTIM
 
 scoreboard players operation @a[advancements={mwj:be_killed_by_cat=true}] TIME = Time Limit
 scoreboard players operation @a[advancements={mwj:be_killed_by_wolf=true}] TIME = Time Limit
