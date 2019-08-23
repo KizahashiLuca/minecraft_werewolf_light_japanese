@@ -33,7 +33,7 @@ execute if score Time DETECTIVE matches 1 as @p[scores={ROLE=8}] run function mw
 execute if score Time CAT matches 1 run function mwj:system/ongame/cat/cat_system
 
 ## Kill Log System
-function mwj:system/ongame/kill_log/kill_log_main
+function mwj:system/ongame/kill_log/kill_log_system
 
 ## Decide Winner
 function mwj:system/finish/decide_winner
