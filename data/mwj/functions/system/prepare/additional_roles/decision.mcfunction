@@ -10,11 +10,17 @@
 scoreboard players operation Time AddedRole = @a[tag=host,limit=1] RoleTrigger
 scoreboard players reset @a[tag=host] RoleTrigger
 
+## Send a Common Message
+tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
+
 ## Send a Message Added Role to All Players
-execute if score Time AddedRole matches 4 run tellraw @a ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"  追加役職は、 ","color":"reset"},{"text":"なし","color":"green","bold":true},{"text":" に設定されました。\n","color":"reset"},{"text":"----------------------------------\n","color":"reset"}]
-execute if score Time AddedRole matches 7 run tellraw @a ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"  追加役職は、 ","color":"reset"},{"text":"共有者","color":"dark_green","bold":true},{"text":" に設定されました。\n","color":"reset"},{"text":"----------------------------------\n","color":"reset"}]
-execute if score Time AddedRole matches 8 run tellraw @a ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"  追加役職は、 ","color":"reset"},{"text":"探偵","color":"dark_aqua","bold":true},{"text":" に設定されました。\n","color":"reset"},{"text":"----------------------------------\n","color":"reset"}]
-execute if score Time AddedRole matches 10 run tellraw @a ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"  追加役職は、 ","color":"reset"},{"text":"猫又","color":"gold","bold":true},{"text":" に設定されました。\n","color":"reset"},{"text":"----------------------------------\n","color":"reset"}]
+execute if score Time AddedRole matches 4 run tellraw @a ["",{"text":"  追加役職は、 ","color":"reset"},{"text":"なし","color":"green","bold":true},{"text":" に設定されました。","color":"reset"}]
+execute if score Time AddedRole matches 7 run tellraw @a ["",{"text":"  追加役職は、 ","color":"reset"},{"text":"共有者","color":"dark_green","bold":true},{"text":" に設定されました。","color":"reset"}]
+execute if score Time AddedRole matches 8 run tellraw @a ["",{"text":"  追加役職は、 ","color":"reset"},{"text":"探偵","color":"dark_aqua","bold":true},{"text":" に設定されました。","color":"reset"}]
+execute if score Time AddedRole matches 10 run tellraw @a ["",{"text":"  追加役職は、 ","color":"reset"},{"text":"猫又","color":"gold","bold":true},{"text":" に設定されました。","color":"reset"}]
+
+## Send a Common Message
+tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
 ## Change Time Limit
 scoreboard players set Time TIME 0

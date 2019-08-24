@@ -6,8 +6,11 @@
 ## Version: beta-1.3
 ###############################
 
+## Send a Common Message
 tellraw @s ["",{"text":"\n----------------------------------","color":"reset"}]
 tellraw @s ["",{"text":"  預言を誰に行う？","color":"reset"}]
+
+## Send Triggers
 execute if score Time NUM matches 1.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=1}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"預言","clickEvent":{"action":"run_command","value":"/trigger SEER_OBJ set 1"},"color":"green","bold":true}]
 execute if score Time NUM matches 2.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=2}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"預言","clickEvent":{"action":"run_command","value":"/trigger SEER_OBJ set 2"},"color":"green","bold":true}]
 execute if score Time NUM matches 3.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=3}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"預言","clickEvent":{"action":"run_command","value":"/trigger SEER_OBJ set 3"},"color":"green","bold":true}]
@@ -22,6 +25,9 @@ execute if score Time NUM matches 11.. run tellraw @s ["",{"text":"    ","color"
 execute if score Time NUM matches 12.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=12}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"預言","clickEvent":{"action":"run_command","value":"/trigger SEER_OBJ set 12"},"color":"green","bold":true}]
 execute if score Time NUM matches 13.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=13}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"預言","clickEvent":{"action":"run_command","value":"/trigger SEER_OBJ set 13"},"color":"green","bold":true}]
 execute if score Time NUM matches 14.. run tellraw @s ["",{"text":"    ","color":"reset"},{"selector":"@a[scores={NUM=14}]","color":"reset"},{"text":" > ","color":"reset"},{"text":"預言","clickEvent":{"action":"run_command","value":"/trigger SEER_OBJ set 14"},"color":"green","bold":true}]
+
+## Send a Common Message
 tellraw @s ["",{"text":"----------------------------------\n","color":"reset"}]
 
+## Reset Scoreboard
 scoreboard players set @s TORCH 0

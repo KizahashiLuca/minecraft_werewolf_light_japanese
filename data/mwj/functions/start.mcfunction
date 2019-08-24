@@ -23,8 +23,6 @@ scoreboard objectives add Limit dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add ROLE dummy
 scoreboard objectives add DONE dummy
-scoreboard objectives add KILLER dummy
-scoreboard objectives add VICTIM dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
 scoreboard objectives add RoleTrigger trigger
@@ -34,6 +32,10 @@ scoreboard objectives add ChangeLimitTime dummy
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add DEATH deathCount
 scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch
+scoreboard objectives add KILLER dummy
+scoreboard objectives add VICTIM dummy
+scoreboard objectives add KILLER_NUM dummy
+scoreboard objectives add VICTIM_NUM dummy
 scoreboard objectives add VICTIM_LOG_TEMP dummy
 scoreboard objectives add KILLER_LOG_TEMP dummy
 
@@ -43,10 +45,12 @@ scoreboard players set @a NUM 1
 scoreboard players set @a TIME 0
 scoreboard players set @a ROLE 0
 scoreboard players set @a DONE 0
-scoreboard players set @a KILLER 0
-scoreboard players set @a VICTIM 0
 scoreboard players set @a DEATH 0
 scoreboard players set @a TORCH 0
+scoreboard players set @a KILLER 0
+scoreboard players set @a VICTIM 0
+scoreboard players set @a KILLER_NUM 0
+scoreboard players set @a VICTIM_NUM 0
 scoreboard players set @a VICTIM_LOG_TEMP 0
 scoreboard players set @a KILLER_LOG_TEMP 0
 scoreboard players reset @s RoleTrigger

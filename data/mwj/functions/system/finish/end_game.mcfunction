@@ -6,7 +6,7 @@
 ## Version: beta-1.3
 ###############################
 
-## Display a Breakdown of Roles
+## Send a Display of Breakdown of Roles
 tellraw @a ["",{"text":"  役職の内訳は以下のとおりでした。","color":"reset"}]
 execute if score Time VILLAGER matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"村    人","color":"green"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=4}]","color":"reset"}]
 execute if score Time SEER matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"預 言 者","color":"aqua"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=5}]","color":"reset"}]
@@ -17,14 +17,20 @@ execute if score Time CAT matches 1.. run tellraw @a ["",{"text":"    ","color":
 execute if score Time WOLF matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"人    狼","color":"red"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=1}]","color":"reset"}]
 execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"狂    人","color":"light_purple"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=2}]","color":"reset"}]
 
+## Send a Display of Survivors
 tellraw @a ["",{"text":"\n    ","color":"reset"},{"text":"生 存 者","color":"reset"},{"text":"： ","color":"reset"},{"selector":"@a[scores={DEATH=0}]","color":"reset"}]
+
+## Send a Common Message
 tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
 
-## Display a Kill Log
+## Send a Kill Log
 tellraw @a ["",{"text":"  死亡記録","color":"reset"}] 
 scoreboard players set Time KILLER 1
 execute as @a run function mwj:system/ongame/kill_log/kill_log_to_chat
-tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
+execute if Time Limit matches 1000.. run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"Time","objective":"Limit"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if Time Limit matches 100..999 run tellraw @a ["",{"text":"     ","color":"reset"},{"score":{"name":"Time","objective":"Limit"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if Time Limit matches 10..99 run tellraw @a ["",{"text":"      ","color":"reset"},{"score":{"name":"Time","objective":"Limit"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if Time Limit matches 0..9 run tellraw @a ["",{"text":"       ","color":"reset"},{"score":{"name":"Time","objective":"Limit"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 
 ## Remove Objectives
 scoreboard objectives remove WOLF
@@ -37,4 +43,4 @@ scoreboard objectives remove MASON
 scoreboard objectives remove DETECTIVE
 
 ## Quit Game
-function mwj:system/finish/quit_game
+function mwj:system/finish/exit_game

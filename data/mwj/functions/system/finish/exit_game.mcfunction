@@ -6,6 +6,9 @@
 ## Version: beta-1.3
 ###############################
 
+## Send a Common Message
+tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
+
 ## Remove Objectives
 scoreboard objectives remove GAME
 scoreboard objectives remove NUM
@@ -14,8 +17,6 @@ scoreboard objectives remove Limit
 scoreboard objectives remove 20
 scoreboard objectives remove ROLE
 scoreboard objectives remove DONE
-scoreboard objectives remove KILLER
-scoreboard objectives remove VICTIM
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
 scoreboard objectives remove AddedRole
@@ -28,6 +29,10 @@ scoreboard objectives remove DETECTIVE_OBJ
 scoreboard objectives remove doNotDrop
 scoreboard objectives remove RoleTrigger
 scoreboard objectives remove TimeTrigger
+scoreboard objectives remove KILLER
+scoreboard objectives remove VICTIM
+scoreboard objectives remove KILLER_NUM
+scoreboard objectives remove VICTIM_NUM
 scoreboard objectives remove VICTIM_LOG_TEMP
 scoreboard objectives remove KILLER_LOG_TEMP
 scoreboard players reset @a

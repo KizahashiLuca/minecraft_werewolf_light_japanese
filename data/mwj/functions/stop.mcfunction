@@ -7,5 +7,12 @@
 ###############################
 
 ## Quit the game
-tellraw @a ["",{"text":"\n----------------------------------\n","color":"reset"},{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Aborted!!","color":"red"},{"text":"\n  ゲームが中断されました。","color":"reset"}]
-function mwj:system/finish/end_game
+tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
+tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Aborted!!","color":"red"}]
+tellraw @a ["",{"text":"  ゲームが中断されました。","color":"reset"}]
+
+## Quit Display
+execute if score Time GAME 90 run function mwj:system/finish/exit_game
+execute if score Time GAME 91 run function mwj:system/finish/exit_game
+execute if score Time GAME 10 run function mwj:system/finish/exit_game
+execute if score Time GAME 11 run function mwj:system/finish/end_game

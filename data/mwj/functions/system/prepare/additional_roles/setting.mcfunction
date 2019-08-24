@@ -15,3 +15,6 @@ execute if score Time TIME matches 0 unless score Time Limit matches 0 run title
 
 ## Detect RoleTrigger
 execute if score Time TIME matches 0 if score Time Limit matches 0 run scoreboard players set @a[tag=host] RoleTrigger 4
+
+## Decide an Added Role
+execute if score @a[tag=host,limit=1] RoleTrigger matches 1.. run function mwj:system/prepare/additional_roles/decision
