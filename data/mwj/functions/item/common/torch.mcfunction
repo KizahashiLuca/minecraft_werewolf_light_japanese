@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 August 2019
-## Version: beta-1.3
+## Date   : 25 August 2019
+## Version: beta-1.4
 ###############################
 
 give @a[scores={ROLE=1..4}] minecraft:redstone_torch{display:{Name:"\"ただの杖\"",Lore:["\"効果のない杖\""]},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1

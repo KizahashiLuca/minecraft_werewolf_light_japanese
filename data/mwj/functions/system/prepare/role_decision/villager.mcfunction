@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 August 2019
-## Version: beta-1.3
+## Date   : 25 August 2019
+## Version: beta-1.4
 ###############################
 
 execute if score Time VILLAGER matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 4
