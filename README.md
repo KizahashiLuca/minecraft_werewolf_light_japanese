@@ -44,13 +44,18 @@
    - 猫又に関するバグ修正
  - 10 Jun 2019 - [beta-1.2.2][beta1.2.2]
    - v1.14への対応
- - 16 Aug 2019 - [beta-1.3 (v1.14推奨)][beta1.3]
+ - 16 Aug 2019 - [beta-1.3][beta1.3]
    - 役職削除
      - 妖狐 (バグ修正不可のため)
    - 新役職追加
      - 共有者
    - 追加役職設定フェーズ追加
    - 内部変数等変更
+ - 25 Aug 2019 - [beta-1.4 (v1.14推奨)][beta1.4]
+   - 死亡記録(キルログ)追加
+   - 新役職追加
+     - 探偵
+   - 預言/霊媒内部処理一部変更
 
 ## Discord
 [Discord][5]でご意見ご要望などをお聞きしています。   
@@ -82,4 +87,5 @@
 [beta1.2.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.1
 [beta1.2.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.2
 [beta1.3]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.3
+[beta1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.4
 [twitter]:https://www.twitter.com/KizahashiLuca
