@@ -62,12 +62,12 @@ execute as @r[limit=1] run function mwj:system/prepare/role_decision/cat
 
 ## Add & Set Scoreboard of Seer
 execute if score Time SEER matches 1.. run scoreboard objectives add SEER_OBJ trigger
-execute if score Time SEER matches 1.. run scoreboard players reset @a SEER_OBJ
+execute if score Time SEER matches 1.. run scoreboard players reset @a[scores={ROLE=5}] SEER_OBJ
 
 ## Add & Set Scoreboard of Medium
 execute if score Time MEDIUM matches 1.. run scoreboard objectives add MEDIUM_OBJ trigger
-execute if score Time MEDIUM matches 1.. run scoreboard players reset @a MEDIUM_OBJ
+execute if score Time MEDIUM matches 1.. run scoreboard players reset @a[scores={ROLE=6}] MEDIUM_OBJ
 
 ## Add & Set Scoreboard of Detective
 execute if score Time DETECTIVE matches 1.. run scoreboard objectives add DETECTIVE_OBJ trigger
-execute if score Time DETECTIVE matches 1.. run scoreboard players reset @a DETECTIVE_OBJ
+execute if score Time DETECTIVE matches 1.. run scoreboard players reset @a[scores={ROLE=8}] DETECTIVE_OBJ

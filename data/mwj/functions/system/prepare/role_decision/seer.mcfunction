@@ -6,5 +6,11 @@
 ## Version: beta-1.4
 ###############################
 
-execute if score Time SEER matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 5
-scoreboard players enable @p[scores={ROLE=5}] SEER_OBJ
+## Set Initial Number of Role to Zero
+scoreboard players set Time ROLE_OF_NUM 0
+
+## Repeat until ROLE_OF_NUM and SEER values ​​are the same
+execute as @a[sort=random] if score Time SEER > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/seer_decision
+
+## Enable Seers' Trigger
+scoreboard players enable @a[scores={ROLE=5}] SEER_OBJ

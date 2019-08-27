@@ -6,5 +6,11 @@
 ## Version: beta-1.4
 ###############################
 
-execute if score Time MEDIUM matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 6
-scoreboard players enable @p[scores={ROLE=6}] MEDIUM_OBJ
+## Set Initial Number of Role to Zero
+scoreboard players set Time ROLE_OF_NUM 0
+
+## Repeat until ROLE_OF_NUM and MEDIUM values ​​are the same
+execute as @a[sort=random] if score Time MEDIUM > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/medium_decision
+
+## Enable Mediums' Trigger
+scoreboard players enable @a[scores={ROLE=6}] MEDIUM_OBJ

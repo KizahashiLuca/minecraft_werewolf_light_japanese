@@ -6,13 +6,8 @@
 ## Version: beta-1.4
 ###############################
 
-execute if score Time VILLAGER matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 2 as @r[scores={ROLE=0},limit=2] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 3 as @r[scores={ROLE=0},limit=3] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 4 as @r[scores={ROLE=0},limit=4] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 5 as @r[scores={ROLE=0},limit=5] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 6 as @r[scores={ROLE=0},limit=6] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 7 as @r[scores={ROLE=0},limit=7] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 8 as @r[scores={ROLE=0},limit=8] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 9 as @r[scores={ROLE=0},limit=9] run scoreboard players set @s ROLE 4
-execute if score Time VILLAGER matches 10 as @r[scores={ROLE=0},limit=10] run scoreboard players set @s ROLE 4
+## Set Initial Number of Role to Zero
+scoreboard players set Time ROLE_OF_NUM 0
+
+## Repeat until ROLE_OF_NUM and VILLAGER values ​​are the same
+execute as @a[sort=random] if score Time VILLAGER > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/villager_decision

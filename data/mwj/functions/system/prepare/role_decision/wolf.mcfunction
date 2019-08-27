@@ -6,7 +6,8 @@
 ## Version: beta-1.4
 ###############################
 
-execute if score Time WOLF matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 1
-execute if score Time WOLF matches 2 as @r[scores={ROLE=0},limit=2] run scoreboard players set @s ROLE 1
-execute if score Time WOLF matches 3 as @r[scores={ROLE=0},limit=3] run scoreboard players set @s ROLE 1
-execute if score Time WOLF matches 4 as @r[scores={ROLE=0},limit=4] run scoreboard players set @s ROLE 1
+## Set Initial Number of Role to Zero
+scoreboard players set Time ROLE_OF_NUM 0
+
+## Repeat until ROLE_OF_NUM and WOLF values ​​are the same
+execute as @a[sort=random] if score Time WOLF > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/wolf_decision

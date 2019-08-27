@@ -6,4 +6,8 @@
 ## Version: beta-1.4
 ###############################
 
-execute if score Time MASON matches 2 as @r[scores={ROLE=0},limit=2] run scoreboard players set @s ROLE 7
+## Set Initial Number of Role to Zero
+scoreboard players set Time ROLE_OF_NUM 0
+
+## Repeat until ROLE_OF_NUM and MASON values ​​are the same
+execute as @a[sort=random] if score Time MASON > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/mason_decision

@@ -13,6 +13,10 @@ execute if score @s TORCH matches 1 if score @s DONE matches 1 run function mwj:
 ## Enable Seer Trigger
 scoreboard players enable @s SEER_OBJ
 
-## Send a Result to Seer
+## Send an Error Message to Seer
 execute if score @s SEER_OBJ matches 1..14 if score @s DONE matches 1 run function mwj:system/ongame/message_error
-execute as @a if score @s NUM = @p[scores={ROLE=5}] SEER_OBJ run function mwj:system/ongame/seer/seer_result
+
+## Send a Result Message to Seer
+scoreboard players set @s ROLE_OF_NUM 1
+execute unless score @p[scores={ROLE=5,ROLE_OF_NUM=1}] DONE matches 1 as @a if score @s NUM = @p[scores={ROLE=5,ROLE_OF_NUM=1}] SEER_OBJ run function mwj:system/ongame/seer/seer_result
+scoreboard players set @s ROLE_OF_NUM 0

@@ -6,4 +6,11 @@
 ## Version: beta-1.4
 ###############################
 
-execute if score Time DETECTIVE matches 1 as @r[scores={ROLE=0},limit=1] run scoreboard players set @s ROLE 8
+## Set Initial Number of Role to Zero
+scoreboard players set Time ROLE_OF_NUM 0
+
+## Repeat until ROLE_OF_NUM and DETECTIVE values ​​are the same
+execute as @a[sort=random] if score Time DETECTIVE > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/detective_decision
+
+## Enable Detectives' Trigger
+scoreboard players enable @a[scores={ROLE=8}] DETECTIVE_OBJ

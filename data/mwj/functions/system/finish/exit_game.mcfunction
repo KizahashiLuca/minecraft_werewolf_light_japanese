@@ -9,26 +9,32 @@
 ## Send a Common Message
 tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
-## Remove Objectives
+## Remove Variables for Game
 scoreboard objectives remove GAME
 scoreboard objectives remove NUM
+scoreboard objectives remove ROLE
+scoreboard objectives remove WHITE
+scoreboard objectives remove BLACK
+## Remove Variables for Timer
 scoreboard objectives remove TIME
 scoreboard objectives remove Limit
 scoreboard objectives remove 20
-scoreboard objectives remove ROLE
-scoreboard objectives remove DONE
-scoreboard objectives remove WHITE
-scoreboard objectives remove BLACK
+## Remove Variables for removeitional_roles/time_limit
 scoreboard objectives remove AddedRole
 scoreboard objectives remove ChangeLimitTime
-scoreboard objectives remove DEATH
-scoreboard objectives remove TORCH
+scoreboard objectives remove RoleTrigger
+scoreboard objectives remove TimeTrigger
+## Remove Variables for Seer/Medium/Detective/Cat
+scoreboard objectives remove DONE
+scoreboard objectives remove ROLE_OF_NUM
 scoreboard objectives remove SEER_OBJ
 scoreboard objectives remove MEDIUM_OBJ
 scoreboard objectives remove DETECTIVE_OBJ
+## Remove Variables for Redstone Torch
 scoreboard objectives remove doNotDrop
-scoreboard objectives remove RoleTrigger
-scoreboard objectives remove TimeTrigger
+scoreboard objectives remove TORCH
+## Remove Variables for Kill Log
+scoreboard objectives remove DEATH
 scoreboard objectives remove KILLER
 scoreboard objectives remove VICTIM
 scoreboard objectives remove KILLER_NUM

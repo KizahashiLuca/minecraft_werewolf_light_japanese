@@ -7,7 +7,7 @@
 ###############################
 
 ## Set Initial Number of Role to Zero
-scoreboard players set Time ROLE_OF_NUM 0
+execute as @r run scoreboard players set @r[scores={ROLE=0}] ROLE 10
 
-## Repeat until ROLE_OF_NUM and CAT values ​​are the same
-execute as @a[sort=random] if score Time CAT > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/cat_decision
+## Increment Number of People that is Decided Cat by One
+scoreboard players add Time ROLE_OF_NUM 1
