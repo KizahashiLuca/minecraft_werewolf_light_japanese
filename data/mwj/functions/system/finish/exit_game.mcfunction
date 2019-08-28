@@ -46,6 +46,7 @@ scoreboard players reset Time
 
 ## Kill Entities
 kill @e[type=minecraft:item]
+kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:area_effect_cloud]
 effect clear @a
 clear @a
