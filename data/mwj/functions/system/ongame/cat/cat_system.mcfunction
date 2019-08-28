@@ -6,11 +6,17 @@
 ## Version: beta-1.4
 ###############################
 
-## Send a Message to a StrayBullet Player
+## Send a Message to a StrayBullet Wolf
+execute as @p[tag=StrayBullet_wolf] run tellraw @s ["",{"text":"\n----------------------------------","color":"reset"}]
 execute as @p[tag=StrayBullet_wolf] if score @s DEATH matches 1 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされて突然死しました。"}]
 execute as @p[tag=StrayBullet_wolf] if score @s DEATH matches 0 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされましたが突然死しませんでした。"}]
+execute as @p[tag=StrayBullet_wolf] run tellraw @s ["",{"text":"----------------------------------\n","color":"reset"}]
+
+## Send a Message to a StrayBullet NonWolf
+execute as @p[tag=StrayBullet_nonwolf] run tellraw @s ["",{"text":"\n----------------------------------","color":"reset"}]
 execute as @p[tag=StrayBullet_nonwolf] if score @s DEATH matches 1 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされて突然死しました。"}]
 execute as @p[tag=StrayBullet_nonwolf] if score @s DEATH matches 0 run tellraw @s ["",{"selector":"@s"},{"text":" は "},{"selector":"@p[scores={ROLE=10,DEATH=1..2}]"},{"text":" に道連れされましたが突然死しませんでした。"}]
+execute as @p[tag=StrayBullet_nonwolf] run tellraw @s ["",{"text":"----------------------------------\n","color":"reset"}]
 
 ## Remove Tags
 execute as @a[tag=StrayBullet_wolf] run tag @s remove StrayBullet_wolf

@@ -11,7 +11,7 @@ gamerule commandBlockOutput false
 gamerule doMobSpawning false
 gamerule announceAdvancements false
 
-## Output the title
+## Send Title Message
 tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
 tellraw @a ["",{"text":"Minecraft Werewolf Light beta-1.4","bold":true,"color":"red"}]
 tellraw @a ["",{"text":"  Thank you for Downloading","color":"reset"}]
