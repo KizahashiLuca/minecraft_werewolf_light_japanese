@@ -10,4 +10,4 @@
 scoreboard players set Time ROLE_OF_NUM 0
 
 ## Repeat until ROLE_OF_NUM and MASON values ​​are the same
-execute as @a[sort=random] if score Time MASON > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/mason_decision
+execute as @a[sort=random] run function mwj:system/prepare/role_decision/mason_decision

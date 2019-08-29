@@ -10,7 +10,7 @@
 scoreboard players set Time ROLE_OF_NUM 0
 
 ## Repeat until ROLE_OF_NUM and DETECTIVE values ​​are the same
-execute as @a[sort=random] if score Time DETECTIVE > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/detective_decision
+execute as @a[sort=random] run function mwj:system/prepare/role_decision/detective_decision
 
 ## Enable Detectives' Trigger
 scoreboard players enable @a[scores={ROLE=8}] DETECTIVE_OBJ

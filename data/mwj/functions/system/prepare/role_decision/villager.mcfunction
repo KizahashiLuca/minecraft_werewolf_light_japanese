@@ -10,4 +10,4 @@
 scoreboard players set Time ROLE_OF_NUM 0
 
 ## Repeat until ROLE_OF_NUM and VILLAGER values ​​are the same
-execute as @a[sort=random] if score Time VILLAGER > Time ROLE_OF_NUM run function mwj:system/prepare/role_decision/villager_decision
+execute as @a[sort=random] run function mwj:system/prepare/role_decision/villager_decision
