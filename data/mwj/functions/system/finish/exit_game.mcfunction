@@ -19,14 +19,10 @@ scoreboard objectives remove BLACK
 scoreboard objectives remove TIME
 scoreboard objectives remove Limit
 scoreboard objectives remove 20
-## Remove Variables for removeitional_roles/time_limit
-scoreboard objectives remove AddedRole
-scoreboard objectives remove ChangeLimitTime
-scoreboard objectives remove RoleTrigger
-scoreboard objectives remove TimeTrigger
 ## Remove Variables for Seer/Medium/Detective/Cat
 scoreboard objectives remove DONE
 scoreboard objectives remove ROLE_OF_NUM
+scoreboard objectives remove STRAY_BY_CAT
 scoreboard objectives remove SEER_OBJ
 scoreboard objectives remove MEDIUM_OBJ
 scoreboard objectives remove DETECTIVE_OBJ

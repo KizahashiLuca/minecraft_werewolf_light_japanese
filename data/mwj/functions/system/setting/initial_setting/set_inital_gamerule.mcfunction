@@ -6,8 +6,8 @@
 ## Version: beta-1.4
 ###############################
 
-## decide host
-tag @s add host
-
-## Start Setting
-function mwj:system/setting/initial_setting/set_initial_main
+## Change Gamerules
+gamerule showDeathMessages false
+gamerule sendCommandFeedback false
+gamemode creative @a
+clear @a

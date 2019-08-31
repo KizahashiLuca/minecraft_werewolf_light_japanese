@@ -6,8 +6,8 @@
 ## Version: beta-1.4
 ###############################
 
-## decide host
-tag @s add host
-
-## Start Setting
-function mwj:system/setting/initial_setting/set_initial_main
+## Kill Entities
+kill @e[type=minecraft:item]
+kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:area_effect_cloud]
+effect clear @a
