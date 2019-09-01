@@ -28,6 +28,3 @@ execute if score Time FOX_NUM matches 1.. unless score Time BLACK matches 0 if s
 
 ## Remove Scoreboard
 scoreboard objectives remove FOX_NUM
-scoreboard objectives remove RESPAWN
-scoreboard objectives remove SPAWN_TIME_SECOND
-scoreboard objectives remove SPAWN_TIME_TICK

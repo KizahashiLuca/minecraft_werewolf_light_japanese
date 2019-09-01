@@ -10,6 +10,16 @@
 execute as @a run function mwj:system/preparation/preparation_numbering
 tag @a remove numbered
 
+scoreboard players set Time WOLF 1
+scoreboard players set Time MADMAN 1
+scoreboard players set Time FOX 1
+scoreboard players set Time VILLAGER 2
+scoreboard players set Time SEER 1
+scoreboard players set Time MEDIUM 1
+scoreboard players set Time MASON 0
+scoreboard players set Time DETECTIVE 0
+scoreboard players set Time CAT 0
+
 ## Decide Players' Role
 execute as @r if score Time WOLF matches 1.. run function mwj:system/preparation/decision_role/wolf_decision
 execute as @r if score Time MADMAN matches 1.. run function mwj:system/preparation/decision_role/madman_decision

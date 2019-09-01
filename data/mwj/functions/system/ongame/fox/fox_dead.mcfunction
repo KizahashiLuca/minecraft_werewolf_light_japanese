@@ -10,12 +10,9 @@
 scoreboard players set @s ROLE_OF_NUM 1
 
 ## Store Respawn Time Limit
-scoreboard players operation @s SPAWN_TIME_SECOND = Time Limit
+scoreboard players operation @s SPAWN_TIME_SEC = Time Limit
 scoreboard players operation @s SPAWN_TIME_TICK = Time TIME
-scoreboard players remove @s SPAWN_TIME_SECOND 10
+scoreboard players remove @s SPAWN_TIME_SEC 10
 
 ## Reset Death Count
 scoreboard players set @s DEATH 0
-
-## Effect invisible
-effect give @s minecraft:invisibility 10 1 true

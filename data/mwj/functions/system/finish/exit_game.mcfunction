@@ -26,6 +26,10 @@ scoreboard objectives remove STRAY_BY_CAT
 scoreboard objectives remove SEER_OBJ
 scoreboard objectives remove MEDIUM_OBJ
 scoreboard objectives remove DETECTIVE_OBJ
+## Remove Variables for Fox
+scoreboard objectives remove RESPAWN
+scoreboard objectives remove SPAWN_TIME_SEC
+scoreboard objectives remove SPAWN_TIME_TICK
 ## Remove Variables for Redstone Torch
 scoreboard objectives remove doNotDrop
 scoreboard objectives remove TORCH

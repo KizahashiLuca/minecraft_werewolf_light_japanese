@@ -20,6 +20,10 @@ scoreboard objectives add 20 dummy
 scoreboard objectives add DONE dummy
 scoreboard objectives add ROLE_OF_NUM dummy
 scoreboard objectives add STRAY_BY_CAT dummy
+## Variables for Fox
+scoreboard objectives add RESPAWN minecraft.custom:minecraft.time_since_death
+scoreboard objectives add SPAWN_TIME_SEC dummy
+scoreboard objectives add SPAWN_TIME_TICK dummy
 ## Variables for Redstone Torch
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch

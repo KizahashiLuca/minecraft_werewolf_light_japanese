@@ -7,17 +7,15 @@
 ###############################
 
 ## Detected Respawn
-execute if score @s RESPAWN matches 1.. as @s function mwj:system/preparation/item/common/bow
-execute if score @s RESPAWN matches 1.. as @s function mwj:system/preparation/item/common/arrow
-execute if score @s RESPAWN matches 1.. as @s function mwj:system/preparation/item/common/torch
+execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparation/item/common/bow
+execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparation/item/common/arrow
+execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparation/item/common/torch
 
-## Detected UnRespawn
-execute if score @s RESPAWN matches 0 run effect clear @s
+## Detected Unspawn
 execute if score @s RESPAWN matches 0 run scoreboard players set @s DEATH 1
 
-## Reset Scoreboard
-scoreboard players reset @s SPAWN_TIME_SECOND
-scoreboard players reset @s SPAWN_TIME_TICK
+## Effect Clear
+effect clear @s
 
 ## Remove Flag
-scoreboard players set @s ROLE_OF_NUM 0
+scoreboard players set @s ROLE_OF_NUM 2
