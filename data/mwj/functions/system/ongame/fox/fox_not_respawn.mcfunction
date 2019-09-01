@@ -6,4 +6,5 @@
 ## Version: beta-1.4
 ###############################
 
-give @s minecraft:arrow{display:{Name:"\"矢\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+## Fox Main
+execute if score @s SPAWN_TIME_SECOND = Time Limit if score @s SPAWN_TIME_TICK = Time TIME run 

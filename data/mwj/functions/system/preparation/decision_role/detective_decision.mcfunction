@@ -10,7 +10,7 @@
 scoreboard players set Time ROLE_OF_NUM 0
 
 ## Repeat until ROLE_OF_NUM and DETECTIVE values ​​are the same
-execute as @a[sort=random] run function mwj:system/prepare/decision_role/detective_calculation
+execute as @a[sort=random] run function mwj:system/preparation/decision_role/detective_calculation
 
 ## Add & Set Scoreboard of Detective
 scoreboard objectives add DETECTIVE_OBJ trigger

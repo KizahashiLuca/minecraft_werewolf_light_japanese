@@ -13,7 +13,7 @@ execute if score @s[scores={DEATH=2}] NUM = @p[tag=StrayBullet,scores={DEATH=0}]
 execute if score @s[scores={DEATH=2}] NUM = @p[tag=StrayBullet] STRAY_BY_CAT run tellraw @p[tag=StrayBullet] ["",{"text":"----------------------------------\n","color":"reset"}]
 
 ## Remove Tags
-tag @p[tag=StrayBullet] remove StrayBullet
+execute if score @s[scores={DEATH=2}] NUM = @p[tag=StrayBullet] STRAY_BY_CAT run tag @p[tag=StrayBullet] remove StrayBullet
 
 ## Select Random StrayBullet
 execute if score @s DEATH matches 1 run function mwj:system/ongame/cat/cat_random_tag

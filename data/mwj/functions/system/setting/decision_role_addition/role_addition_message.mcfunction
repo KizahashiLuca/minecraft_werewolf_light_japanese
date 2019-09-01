@@ -29,7 +29,7 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 ## Add Special Roles
 scoreboard players remove Time VILLAGER 2
 execute if score Time AddedRole matches 3 run scoreboard players set Time FOX 1
-execute if score Time AddedRole matches 3 run scoreboard players add Time VILLAGER 1
+execute if score Time AddedRole matches 3 run scoreboard players add Time SEER 1
 execute if score Time AddedRole matches 4 run scoreboard players add Time VILLAGER 2
 execute if score Time AddedRole matches 7 run scoreboard players set Time MASON 2
 execute if score Time AddedRole matches 8 run scoreboard players set Time DETECTIVE 1

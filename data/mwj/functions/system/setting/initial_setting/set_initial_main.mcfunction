@@ -7,13 +7,13 @@
 ###############################
 
 ## Change gamerules
-function mwj:system/setting/initial_setting/set_inital_gamerule
+function mwj:system/setting/initial_setting/set_initial_gamerule
 
 ## Set Scoreboard
-function mwj:system/setting/initial_setting/set_inital_scoreboard
+function mwj:system/setting/initial_setting/set_initial_scoreboard
 
 ## Set Team Setting
-function mwj:system/setting/initial_setting/set_inital_team
+function mwj:system/setting/initial_setting/set_initial_team
 
 ## Decide Role Breakdown
 function mwj:system/setting/initial_setting/set_role_breakdown

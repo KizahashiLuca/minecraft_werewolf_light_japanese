@@ -6,9 +6,15 @@
 ## Version: beta-1.4
 ###############################
 
-## Fox Main
-spawnpoint @s ~ ~ ~
-scoreboard players set @s DEATH 0
-give @s minecraft:bow{display:{Name:"\"弓\"",Lore:["\"一撃必殺の弓\""]},Unbreakable:1,Enchantments:[{id:"minecraft:power",lvl:199},{id:"minecraft:vanishing_curse",lvl:1},{id:"minecraft:infinity",lvl:1}],HideFlags:39} 1
-give @s minecraft:arrow{display:{Name:"\"矢\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
-give @s minecraft:redstone_torch{display:{Name:"\"ただの杖\"",Lore:["\"効果のない杖\""]},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+## Fox Dead
+execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_wolf=true}] run function mwj:system/ongame/fox/fox_dead
+execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_nonwolf=true}] run scoreboard players set @s ROLE_OF_NUM 2
+execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_cat=true}] run scoreboard players set @s ROLE_OF_NUM 2
+
+## Detect Respawn
+execute if score @s ROLE_OF_NUM matches 1 if score @s SPAWN_TIME_SECOND = Time Limit if score @s SPAWN_TIME_TICK = Time TIME as @s run function mwj:system/ongame/fox/fox_respawn
+
+## Hit by NonWolf
+execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players reset @s SPAWN_TIME_SECOND
+execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players reset @s SPAWN_TIME_TICK
+execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players set @s ROLE_OF_NUM 0

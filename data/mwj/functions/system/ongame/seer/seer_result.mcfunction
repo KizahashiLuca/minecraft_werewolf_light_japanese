@@ -16,6 +16,13 @@ execute if score @s ROLE matches 1 run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}]
 ## Send a Message that Suspect is White
 execute if score @s ROLE matches 2 run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"reset"},{"selector":"@s","color":"reset"},{"text":" は ","color":"reset"},{"text":"白","color":"green","bold":true},{"text":" です","color":"reset"}]
 
+## Send a Message that Suspect is Fox
+execute if score @s ROLE matches 3 run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"reset"},{"selector":"@s","color":"reset"},{"text":" は ","color":"reset"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" です","color":"reset"}]
+execute if score @s ROLE matches 3 run effect give @s minecraft:instant_damage 1 10 true
+execute if score @s ROLE matches 3 run tellraw @s ["",{"text":"\n----------------------------------","color":"reset"}]
+execute if score @s ROLE matches 3 run tellraw @s ["",{"text":"  ","color":"reset"},{"selector":"@s","color":"reset"},{"text":" は ","color":"reset"},{"selector":"@p[scores={ROLE=5,ROLE_OF_NUM=1}]","color":"reset"},{"text":" に占われました。","color":"reset"}]
+execute if score @s ROLE matches 3 run tellraw @s ["",{"text":"----------------------------------\n","color":"reset"}]
+
 ## Send a Message that Suspect is White
 execute if score @s ROLE matches 4..10 run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"reset"},{"selector":"@s","color":"reset"},{"text":" は ","color":"reset"},{"text":"白","color":"green","bold":true},{"text":" です","color":"reset"}]
 
