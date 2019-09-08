@@ -42,6 +42,6 @@ scoreboard objectives remove AddedRole
 scoreboard objectives remove RoleTrigger
 
 ## Change Time Limit
-scoreboard players set Time TIME 0
-scoreboard players set Time Limit 16
+scoreboard players set Time TICK 0
+scoreboard players set Time SECOND 16
 function mwj:system/setting/decision_time_limit/time_limit_trigger

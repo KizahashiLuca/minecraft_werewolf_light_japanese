@@ -10,8 +10,8 @@
 scoreboard players set @s ROLE_OF_NUM 1
 
 ## Store Respawn Time Limit
-scoreboard players operation @s SPAWN_TIME_SEC = Time Limit
-scoreboard players operation @s SPAWN_TIME_TICK = Time TIME
+scoreboard players operation @s SPAWN_TIME_SEC = Time SECOND
+scoreboard players operation @s SPAWN_TIME_TICK = Time TICK
 scoreboard players remove @s SPAWN_TIME_SEC 10
 
 ## Reset Death Count

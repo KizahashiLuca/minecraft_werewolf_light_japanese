@@ -40,8 +40,9 @@ tellraw @a[scores={ROLE=10}] ["",{"text":"\n    あなたは ","color":"reset"},
 tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
 ## Count a Amount of Roles
-execute as @a[scores={ROLE=4..9}] run scoreboard players add Time WHITE 1
 execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1
+execute as @a[scores={ROLE=3}] run scoreboard players add Time PURPLE 1
+execute as @a[scores={ROLE=4..9}] run scoreboard players add Time WHITE 1
 
 ## Put a Tag
 tag @a[scores={ROLE=1..2}] add WereWolf
@@ -49,9 +50,11 @@ tag @a[scores={ROLE=3..9}] add NonWolf
 tag @a[scores={ROLE=10}] add Cat
 
 ## Set the Time Limit
-scoreboard players set Time Limit 60
-scoreboard players operation Time Limit *= Time ChangeLimitTime
-scoreboard objectives setdisplay sidebar Limit
+scoreboard players set Time SECOND 60
+scoreboard players operation Time SECOND *= Time ChangeLimitTime
+
+## Set Sidebar
+function mwj:system/preparation/preparation_sidebar
 
 ## Remove Scoreboard
 scoreboard objectives remove ChangeLimitTime

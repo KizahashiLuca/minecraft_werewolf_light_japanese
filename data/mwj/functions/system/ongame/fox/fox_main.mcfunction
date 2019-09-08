@@ -15,7 +15,7 @@ execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_cat=true}] run sco
 execute if score @s ROLE_OF_NUM matches 1 run effect give @s minecraft:invisibility 10 1 true
 
 ## Detect Respawn
-execute if score @s ROLE_OF_NUM matches 1 if score @s SPAWN_TIME_SEC = Time Limit if score @s SPAWN_TIME_TICK = Time TIME run function mwj:system/ongame/fox/fox_respawn
+execute if score @s ROLE_OF_NUM matches 1 if score @s SPAWN_TIME_SEC = Time SECOND if score @s SPAWN_TIME_TICK = Time TICK run function mwj:system/ongame/fox/fox_respawn
 
 ## Hit by NonWolf
 execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players reset @s SPAWN_TIME_SEC

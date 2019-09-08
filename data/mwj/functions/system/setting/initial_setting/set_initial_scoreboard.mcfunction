@@ -8,14 +8,24 @@
 
 ## Variables for Game
 scoreboard objectives add GAME dummy
-scoreboard objectives add NUM dummy
 scoreboard objectives add ROLE dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
+scoreboard objectives add PURPLE dummy
 ## Variables for Timer
-scoreboard objectives add TIME dummy
-scoreboard objectives add Limit dummy
+scoreboard objectives add SECOND dummy
+scoreboard objectives add TICK dummy
 scoreboard objectives add 20 dummy
+## Variables for Info
+scoreboard objectives add Info_wolf dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_madman dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_fox dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_villager dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_seer dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_medium dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_mason dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_detective dummy {"text":"情報","bold":true}
+scoreboard objectives add Info_cat dummy {"text":"情報","bold":true}
 ## Variables for Seer/Medium/Detective/Cat
 scoreboard objectives add DONE dummy
 scoreboard objectives add ROLE_OF_NUM dummy
@@ -45,10 +55,12 @@ scoreboard players set Time NUM 0
 scoreboard players set Time ROLE 1
 scoreboard players set Time WHITE 0
 scoreboard players set Time BLACK 0
+scoreboard players set Time PURPLE 0
 ## Set Variables for Timer
-scoreboard players set @a TIME 0
-scoreboard players set Time TIME 0
-scoreboard players set Time Limit 16
+scoreboard players set @a SECOND 0
+scoreboard players set @a TICK 0
+scoreboard players set Time TICK 0
+scoreboard players set Time SECOND 16
 scoreboard players set Time 20 20
 ## Variables for Seer/Medium/Detective/Cat
 scoreboard players set @a DONE 0

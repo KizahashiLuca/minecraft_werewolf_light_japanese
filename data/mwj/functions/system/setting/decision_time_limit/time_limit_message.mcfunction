@@ -26,6 +26,6 @@ effect give @a minecraft:invisibility 1000000 100 true
 scoreboard objectives remove TimeTrigger
 
 ## Change Time Limit
-scoreboard players set Time TIME 0
-scoreboard players set Time Limit 61
+scoreboard players set Time TICK 0
+scoreboard players set Time SECOND 61
 scoreboard players set Time GAME 10

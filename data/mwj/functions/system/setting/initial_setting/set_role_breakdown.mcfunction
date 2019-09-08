@@ -6,9 +6,6 @@
 ## Version: beta-1.4
 ###############################
 
-## Count Players
-execute as @a run scoreboard players add Time NUM 1
-
 ## Add & Set the Objectives
 scoreboard objectives add WOLF dummy
 scoreboard objectives add MADMAN dummy

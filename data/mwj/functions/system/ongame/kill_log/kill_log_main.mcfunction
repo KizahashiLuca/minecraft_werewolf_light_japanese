@@ -8,7 +8,8 @@
 
 ## Store Kill Log of victim
 scoreboard players operation @a[scores={DEATH=1}] VICTIM = Time VICTIM
-scoreboard players operation @a[scores={DEATH=1}] TIME = Time Limit
+scoreboard players operation @a[scores={DEATH=1}] SECOND = Time SECOND
+scoreboard players operation @a[scores={DEATH=1}] TICK = Time TICK
 
 ## Store Kill Log of Killer
 scoreboard players operation @a[advancements={mwj:killed_player=true}] KILLER = Time VICTIM

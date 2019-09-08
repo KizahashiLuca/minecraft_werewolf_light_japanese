@@ -15,10 +15,21 @@ scoreboard objectives remove NUM
 scoreboard objectives remove ROLE
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
+scoreboard objectives remove PURPLE
 ## Remove Variables for Timer
-scoreboard objectives remove TIME
-scoreboard objectives remove Limit
+scoreboard objectives remove SECOND
+scoreboard objectives remove TICK
 scoreboard objectives remove 20
+## Variables for Info
+scoreboard objectives remove Info_wolf
+scoreboard objectives remove Info_madman
+scoreboard objectives remove Info_fox
+scoreboard objectives remove Info_villager
+scoreboard objectives remove Info_seer
+scoreboard objectives remove Info_medium
+scoreboard objectives remove Info_mason
+scoreboard objectives remove Info_detective
+scoreboard objectives remove Info_cat
 ## Remove Variables for Seer/Medium/Detective/Cat
 scoreboard objectives remove DONE
 scoreboard objectives remove ROLE_OF_NUM
@@ -41,8 +52,19 @@ scoreboard objectives remove KILLER_NUM
 scoreboard objectives remove VICTIM_NUM
 scoreboard objectives remove VICTIM_LOG_TEMP
 scoreboard objectives remove KILLER_LOG_TEMP
+## Remove Players
 scoreboard players reset @a
 scoreboard players reset Time
+scoreboard players reset 残り時間
+scoreboard players reset あなたは人狼
+scoreboard players reset あなたは狂人
+scoreboard players reset あなたは羽衣狐
+scoreboard players reset あなたは村人
+scoreboard players reset あなたは預言者
+scoreboard players reset あなたは霊媒師
+scoreboard players reset あなたは共有者
+scoreboard players reset あなたは探偵
+scoreboard players reset あなたは猫又
 
 ## Kill Entities
 kill @e[type=minecraft:item]
@@ -56,8 +78,7 @@ tag @a remove host
 tag @a remove WereWolf
 tag @a remove NonWolf
 tag @a remove Cat
-tag @a remove StrayBullet_wolf
-tag @a remove StrayBullet_nonwolf
+tag @a remove StrayBullet
 
 ## Revoke Advancements
 advancement revoke @a only mwj:be_killed_by_nonwolf
@@ -66,7 +87,15 @@ advancement revoke @a only mwj:be_killed_by_cat
 advancement revoke @a only mwj:killed_player
 
 ## Remove a Team
-team remove Player
+team remove Wolf
+team remove Madman
+team remove Fox
+team remove Villager
+team remove Seer
+team remove Medium
+team remove Mason
+team remove Detective
+team remove Cat
 
 ## Change Gamerules
 gamemode creative @a
