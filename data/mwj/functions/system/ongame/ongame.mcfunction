@@ -22,6 +22,7 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
 
 ## Fox System
+execute if score Time FOX matches 1.. as @p[tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 execute if score Time FOX matches 1.. as @a[scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
 
 ## Seer System
@@ -37,7 +38,9 @@ execute if score Time DETECTIVE matches 1.. as @a[scores={ROLE=8}] run function 
 execute if score Time CAT matches 1.. as @a[scores={ROLE=10}] run function mwj:system/ongame/cat/cat_main
 
 ## Kill Log System
-function mwj:system/ongame/kill_log/kill_log_main
+execute as @a[advancements={mwj:killed_player=true}] run function mwj:system/ongame/kill_log/kill_log_killer
+execute as @a[scores={DEATH=1}] run function mwj:system/ongame/kill_log/kill_log_victim
+execute as @a run function mwj:system/ongame/kill_log/kill_log_main
 
 ## Decide Winner
 function mwj:system/finish/decide_winner

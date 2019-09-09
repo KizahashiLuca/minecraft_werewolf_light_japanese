@@ -45,6 +45,8 @@ scoreboard objectives add KILLER_NUM dummy
 scoreboard objectives add VICTIM_NUM dummy
 scoreboard objectives add VICTIM_LOG_TEMP dummy
 scoreboard objectives add KILLER_LOG_TEMP dummy
+scoreboard objectives add KILLLOG_CAT dummy
+scoreboard objectives add KILLLOG_FOX dummy
 
 ## Set Variables for Game
 scoreboard players set @a GAME 0

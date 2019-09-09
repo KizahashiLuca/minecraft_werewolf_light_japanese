@@ -6,7 +6,7 @@
 ## Version: beta-1.4
 ###############################
 
-## Put Tags
+## Put Tag
 execute if entity @s[advancements={mwj:be_killed_by_wolf=true}] run tag @r[scores={ROLE=1..2,DEATH=0}] add StrayBullet
 execute if entity @s[advancements={mwj:be_killed_by_nonwolf=true}] run tag @r[scores={ROLE=1..10,DEATH=0}] add StrayBullet
 execute if entity @s[advancements={mwj:be_killed_by_cat=true}] run tag @r[scores={ROLE=1..10,DEATH=0}] add StrayBullet

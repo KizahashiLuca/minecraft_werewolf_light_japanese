@@ -6,27 +6,22 @@
 ## Version: beta-1.4
 ###############################
 
-## Store Kill Log of victim
-scoreboard players operation @a[scores={DEATH=1}] VICTIM = Time VICTIM
-scoreboard players operation @a[scores={DEATH=1}] SECOND = Time SECOND
-scoreboard players operation @a[scores={DEATH=1}] TICK = Time TICK
+## Increment KILL Variable by 1 for each Victim
+execute if score @s VICTIM_LOG_TEMP matches 1 run scoreboard players add Time VICTIM 1
 
-## Store Kill Log of Killer
-scoreboard players operation @a[advancements={mwj:killed_player=true}] KILLER = Time VICTIM
+## Store Killer Number
+execute as @a[scores={KILLER_LOG_TEMP=1}] unless score @s NUM = @p[scores={VICTIM_LOG_TEMP=1}] NUM run tag @s add KillerPlayer
+scoreboard players reset @p[tag=KillerPlayer] KILLER_LOG_TEMP
+scoreboard players operation @s[scores={VICTIM_LOG_TEMP=1}] KILLER_NUM = @p[tag=KillerPlayer] NUM
+tag @p[tag=KillerPlayer] remove KillerPlayer
 
-## Set Flag
-execute if entity @p[scores={DEATH=1}] as @a if score @s VICTIM = Time VICTIM run scoreboard players set @s VICTIM_LOG_TEMP 1
-execute if entity @p[scores={DEATH=1}] as @a if score @s KILLER = Time VICTIM run scoreboard players set @s KILLER_LOG_TEMP 1
-
-## Increment KILL Number by 1
-execute as @a[scores={VICTIM_LOG_TEMP=1}] run scoreboard players add Time VICTIM 1
-
-## Store Victim Order 
-execute as @a[scores={VICTIM_LOG_TEMP=1}] run scoreboard players operation @s VICTIM_NUM = @s VICTIM
-
-## Store Killer Number for Victim
-execute if entity @p[scores={KILLER_LOG_TEMP=1}] as @a[scores={VICTIM_LOG_TEMP=1}] run scoreboard players operation @s KILLER_NUM = @p[scores={KILLER_LOG_TEMP=1}] NUM
-execute unless entity @p[scores={KILLER_LOG_TEMP=1}] as @a[scores={VICTIM_LOG_TEMP=1}] run scoreboard players operation @s KILLER_NUM = @s NUM
+## Store Killer Number of Exception
+#### Accident / Suicide
+execute unless entity @p[scores={KILLER_LOG_TEMP=1}] if score @s VICTIM_LOG_TEMP matches 1 run scoreboard players operation @s KILLER_NUM = @s NUM
+#### Fox is Seered
+execute if score @s KILLLOG_FOX matches 1 run scoreboard players operation @s KILLER_NUM = @s STRAY_BY_FOX
+#### Cat Stray Bullet
+execute if score @s KILLLOG_CAT matches 1 run scoreboard players operation @s KILLER_NUM = @s STRAY_BY_CAT
 
 ## Reset Scoreboard
 scoreboard players set @a VICTIM 0

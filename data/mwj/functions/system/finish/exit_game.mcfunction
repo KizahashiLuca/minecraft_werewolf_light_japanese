@@ -52,6 +52,8 @@ scoreboard objectives remove KILLER_NUM
 scoreboard objectives remove VICTIM_NUM
 scoreboard objectives remove VICTIM_LOG_TEMP
 scoreboard objectives remove KILLER_LOG_TEMP
+scoreboard objectives remove KILLLOG_FOX
+scoreboard objectives remove KILLLOG_CAT
 ## Remove Players
 scoreboard players reset @a
 scoreboard players reset Time
@@ -79,6 +81,8 @@ tag @a remove WereWolf
 tag @a remove NonWolf
 tag @a remove Cat
 tag @a remove StrayBullet
+tag @a remove SeeredFox
+tag @a remove KillerPlayer
 
 ## Revoke Advancements
 advancement revoke @a only mwj:be_killed_by_nonwolf
