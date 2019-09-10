@@ -17,15 +17,7 @@ scoreboard objectives add SECOND dummy
 scoreboard objectives add TICK dummy
 scoreboard objectives add 20 dummy
 ## Variables for Info
-scoreboard objectives add Info_wolf dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_madman dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_fox dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_villager dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_seer dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_medium dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_mason dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_detective dummy {"text":"情報","bold":true}
-scoreboard objectives add Info_cat dummy {"text":"情報","bold":true}
+scoreboard objectives add Info dummy {"text":"情報","bold":true}
 ## Variables for Seer/Medium/Detective/Cat
 scoreboard objectives add DONE dummy
 scoreboard objectives add ROLE_OF_NUM dummy
@@ -53,7 +45,6 @@ scoreboard players set @a GAME 0
 scoreboard players set @a NUM 1
 scoreboard players set @a ROLE 0
 scoreboard players set Time GAME 0
-scoreboard players set Time NUM 0
 scoreboard players set Time ROLE 1
 scoreboard players set Time WHITE 0
 scoreboard players set Time BLACK 0

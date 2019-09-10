@@ -21,15 +21,7 @@ scoreboard objectives remove SECOND
 scoreboard objectives remove TICK
 scoreboard objectives remove 20
 ## Variables for Info
-scoreboard objectives remove Info_wolf
-scoreboard objectives remove Info_madman
-scoreboard objectives remove Info_fox
-scoreboard objectives remove Info_villager
-scoreboard objectives remove Info_seer
-scoreboard objectives remove Info_medium
-scoreboard objectives remove Info_mason
-scoreboard objectives remove Info_detective
-scoreboard objectives remove Info_cat
+scoreboard objectives remove Info
 ## Remove Variables for Seer/Medium/Detective/Cat
 scoreboard objectives remove DONE
 scoreboard objectives remove ROLE_OF_NUM
@@ -99,6 +91,7 @@ team remove Seer
 team remove Medium
 team remove Mason
 team remove Detective
+team remove Player
 team remove Cat
 
 ## Change Gamerules

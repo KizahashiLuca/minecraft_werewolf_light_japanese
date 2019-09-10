@@ -11,6 +11,7 @@ tag @s add host
 
 ## Add Scoreboard
 scoreboard objectives add NUM dummy
+scoreboard players set Time NUM 0
 ## Count Players
 execute as @a run scoreboard players add Time NUM 1
 
