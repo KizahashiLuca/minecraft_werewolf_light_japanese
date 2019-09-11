@@ -6,8 +6,8 @@
 ## Version: beta-1.4
 ###############################
 
-## Store Recent Number
-scoreboard players operation @s KILLER = Time VICTIM
-
 ## Store Kill Flag
-scoreboard players set @s KILLER_LOG_TEMP 1
+scoreboard players set @s KILLER_FLAG 1
+
+## Count Number of Killer
+scoreboard players add Time KILLER_NUM 1

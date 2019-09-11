@@ -12,9 +12,6 @@ function mwj:system/setting/initial_setting/set_initial_gamerule
 ## Set Scoreboard
 function mwj:system/setting/initial_setting/set_initial_scoreboard
 
-## Decide Role Breakdown
-function mwj:system/setting/initial_setting/set_role_breakdown
-
 ## Decide Special Role
 execute if score Time NUM matches 3..7 run function mwj:system/setting/decision_time_limit/time_limit_trigger
 execute if score Time NUM matches 8..14 run function mwj:system/setting/decision_role_addition/role_addition_trigger

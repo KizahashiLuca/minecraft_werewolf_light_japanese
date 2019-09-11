@@ -32,4 +32,4 @@ tellraw @p[scores={ROLE=6,ROLE_OF_NUM=1}] ["",{"text":"-------------------------
 scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] DONE 1
 
 ## Reset Medium Trigger
-scoreboard players white @p[scores={ROLE=6,ROLE_OF_NUM=1}] MEDIUM_OBJ
+scoreboard players reset @p[scores={ROLE=6,ROLE_OF_NUM=1}] MEDIUM_OBJ

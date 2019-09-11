@@ -41,4 +41,4 @@ scoreboard objectives remove TEMP2
 scoreboard players set @p[scores={ROLE=8,ROLE_OF_NUM=1}] DONE 1
 
 ## Reset Detective Trigger
-scoreboard players white @p[scores={ROLE=8,ROLE_OF_NUM=1}] DETECTIVE_OBJ
+scoreboard players reset @p[scores={ROLE=8,ROLE_OF_NUM=1}] DETECTIVE_OBJ

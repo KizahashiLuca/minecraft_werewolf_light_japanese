@@ -7,7 +7,12 @@
 ###############################
 
 ## Change Gamerules
-gamerule showDeathMessages false
 gamerule sendCommandFeedback false
-gamemode creative @a
+gamerule commandBlockOutput false
+gamerule doMobSpawning false
+gamerule doFireTick false
+gamerule showDeathMessages false
+gamerule announceAdvancements false
+difficulty peaceful
+gamemode adventure @a
 clear @a

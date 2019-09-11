@@ -6,27 +6,6 @@
 ## Version: beta-1.4
 ###############################
 
-## Add & Set the Objectives
-scoreboard objectives add WOLF dummy
-scoreboard objectives add MADMAN dummy
-scoreboard objectives add VILLAGER dummy
-scoreboard objectives add SEER dummy
-scoreboard objectives add MEDIUM dummy
-scoreboard objectives add CAT dummy
-scoreboard objectives add MASON dummy
-scoreboard objectives add DETECTIVE dummy
-scoreboard objectives add FOX dummy
-scoreboard objectives add DENOMINATOR dummy
-scoreboard players set Time WOLF 0
-scoreboard players set Time MADMAN 0
-scoreboard players set Time VILLAGER 0
-scoreboard players set Time SEER 0
-scoreboard players set Time MEDIUM 0
-scoreboard players set Time CAT 0
-scoreboard players set Time MASON 0
-scoreboard players set Time DETECTIVE 0
-scoreboard players set Time FOX 0
-
 ## Decision Role Breakdown of Wolf
 scoreboard players operation Time WOLF = Time NUM
 scoreboard players add Time WOLF 5
@@ -58,5 +37,13 @@ scoreboard players operation Time VILLAGER -= Time MADMAN
 scoreboard players operation Time VILLAGER -= Time SEER
 scoreboard players operation Time VILLAGER -= Time MEDIUM
 
-## Remove Scoreboard
-scoreboard objectives remove DENOMINATOR
+## Add Special Roles
+scoreboard players remove Time VILLAGER 2
+execute if score Time AddedRole matches 3 run scoreboard players set Time FOX 1
+execute if score Time AddedRole matches 3 run scoreboard players add Time SEER 1
+execute if score Time AddedRole matches 4 run scoreboard players add Time VILLAGER 2
+execute if score Time AddedRole matches 7 run scoreboard players set Time MASON 2
+execute if score Time AddedRole matches 8 run scoreboard players set Time DETECTIVE 1
+execute if score Time AddedRole matches 8 run scoreboard players add Time VILLAGER 1
+execute if score Time AddedRole matches 10 run scoreboard players set Time CAT 1
+execute if score Time AddedRole matches 10 run scoreboard players add Time VILLAGER 1

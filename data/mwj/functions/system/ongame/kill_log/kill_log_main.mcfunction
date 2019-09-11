@@ -6,28 +6,27 @@
 ## Version: beta-1.4
 ###############################
 
-## Increment KILL Variable by 1 for each Victim
-execute if score @s VICTIM_LOG_TEMP matches 1 run scoreboard players add Time VICTIM 1
+## Set Flag
+#### Killer Flag
+execute as @a[advancements={mwj:killed_player=true}] run function mwj:system/ongame/kill_log/kill_log_killer
+#### Victim Flag
+execute as @a[scores={DEATH=1}] run function mwj:system/ongame/kill_log/kill_log_victim
 
-## Store Killer Number
-execute as @a[scores={KILLER_LOG_TEMP=1}] unless score @s NUM = @p[scores={VICTIM_LOG_TEMP=1}] NUM run tag @s add KillerPlayer
-scoreboard players reset @p[tag=KillerPlayer] KILLER_LOG_TEMP
-scoreboard players operation @s[scores={VICTIM_LOG_TEMP=1}] KILLER_NUM = @p[tag=KillerPlayer] NUM
-tag @p[tag=KillerPlayer] remove KillerPlayer
-
-## Store Killer Number of Exception
-#### Accident / Suicide
-execute unless entity @p[scores={KILLER_LOG_TEMP=1}] if score @s VICTIM_LOG_TEMP matches 1 run scoreboard players operation @s KILLER_NUM = @s NUM
-#### Fox is Seered
-execute if score @s KILLLOG_FOX matches 1 run scoreboard players operation @s KILLER_NUM = @s STRAY_BY_FOX
-#### Cat Stray Bullet
-execute if score @s KILLLOG_CAT matches 1 run scoreboard players operation @s KILLER_NUM = @s STRAY_BY_CAT
+## Store Number of Killer Player
+#### Victim : 1 -
+#### Killer : 0
+execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 0 as @a[scores={VICTIM_FLAG=1}] run function mwj:system/ongame/kill_log/kill_log_sub1
+#### Victim : 1 -
+#### Killer : 1 -
+execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 1.. as @a[scores={VICTIM_FLAG=1}] run function mwj:system/ongame/kill_log/kill_log_sub2
 
 ## Reset Scoreboard
-scoreboard players set @a VICTIM 0
-scoreboard players set @a KILLER 0
-scoreboard players set @a VICTIM_LOG_TEMP 0
-scoreboard players set @a KILLER_LOG_TEMP 0
+scoreboard players set @a VICTIM_FLAG 0
+scoreboard players set @a KILLER_FLAG 0
+scoreboard players set @a STRAY_BY_FOX 0
+scoreboard players set @a STRAY_BY_CAT 0
+scoreboard players set Time VICTIM_NUM 0
+scoreboard players set Time KILLER_NUM 0
 
 ## Revoke Advancements
 advancement revoke @a only mwj:be_killed_by_wolf

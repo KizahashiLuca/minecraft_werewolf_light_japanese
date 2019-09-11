@@ -6,9 +6,6 @@
 ## Version: beta-1.4
 ###############################
 
-## Set Scoreboard
-scoreboard objectives add AddedRole dummy
-
 ## Store Variables of RoleTrigger to AddedRole
 scoreboard players operation Time AddedRole = @a[tag=host,limit=1] RoleTrigger
 scoreboard players reset @a[tag=host] RoleTrigger
@@ -26,19 +23,7 @@ execute if score Time AddedRole matches 10 run tellraw @a ["",{"text":"  追加�
 ## Send a Common Message
 tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
-## Add Special Roles
-scoreboard players remove Time VILLAGER 2
-execute if score Time AddedRole matches 3 run scoreboard players set Time FOX 1
-execute if score Time AddedRole matches 3 run scoreboard players add Time SEER 1
-execute if score Time AddedRole matches 4 run scoreboard players add Time VILLAGER 2
-execute if score Time AddedRole matches 7 run scoreboard players set Time MASON 2
-execute if score Time AddedRole matches 8 run scoreboard players set Time DETECTIVE 1
-execute if score Time AddedRole matches 8 run scoreboard players add Time VILLAGER 1
-execute if score Time AddedRole matches 10 run scoreboard players set Time CAT 1
-execute if score Time AddedRole matches 10 run scoreboard players add Time VILLAGER 1
-
 ## Remove Scoreboard
-scoreboard objectives remove AddedRole
 scoreboard objectives remove RoleTrigger
 
 ## Change Time Limit

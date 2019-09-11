@@ -26,8 +26,8 @@ tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
 
 ## Send a Kill Log
 tellraw @a ["",{"text":"  死亡記録","color":"reset"}] 
-scoreboard players set Time KILLER 1
-execute as @a run function mwj:system/ongame/kill_log/kill_log_to_chat
+scoreboard players set Time KILLLOG_NUM 1
+execute as @a run function mwj:system/finish/kill_log
 execute if score Time SECOND matches 1000.. run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"     ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 execute if score Time SECOND matches 10..99 run tellraw @a ["",{"text":"      ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
