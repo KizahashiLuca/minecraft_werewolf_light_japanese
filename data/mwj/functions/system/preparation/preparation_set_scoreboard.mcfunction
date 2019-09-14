@@ -41,6 +41,7 @@ scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
 
 ## Set Variables for Game
+scoreboard players set @a ROLE 0
 scoreboard players set @a NUM 1
 scoreboard players set Time NUM 0
 scoreboard players set Time WHITE 0
@@ -49,8 +50,6 @@ scoreboard players set Time PURPLE 0
 ## Set Variables for Timer of Kill Log
 scoreboard players set @a SECOND 0
 scoreboard players set @a TICK 0
-scoreboard players set Time SECOND 60
-scoreboard players set Time TICK 0
 ## Set Variables for Seer/Medium/Detective/Cat
 scoreboard players set @a ROLE_OF_NUM 0
 scoreboard players set Time ROLE_OF_NUM 0 

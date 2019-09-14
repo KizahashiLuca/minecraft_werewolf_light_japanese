@@ -6,7 +6,9 @@
 ## Version: beta-1.4
 ###############################
 
-
+## Add Variables for Timer
+scoreboard players set Time SECOND 60
+scoreboard players set Time TICK 0
 ## Add Variables for Role
 #### Seer/Medium/Detective
 scoreboard objectives add doNotDrop dummy

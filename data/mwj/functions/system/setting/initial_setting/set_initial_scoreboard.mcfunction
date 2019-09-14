@@ -17,8 +17,6 @@ scoreboard objectives add 20 dummy
 scoreboard objectives add AddedRole dummy
 
 ## Set Variables for Game
-scoreboard players set @a GAME 0
-scoreboard players set @a ROLE 0
 scoreboard players set Time GAME 0
 scoreboard players set Time ROLE 1
 ## Set Variables for Timer
@@ -26,4 +24,4 @@ scoreboard players set Time TICK 0
 scoreboard players set Time SECOND 16
 scoreboard players set Time 20 20
 ## Set Variables for Role Addition
-scoreboard players set AddedRole 4
+scoreboard players set Time AddedRole 4

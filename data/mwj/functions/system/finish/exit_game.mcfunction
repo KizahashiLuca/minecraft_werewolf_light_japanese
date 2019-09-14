@@ -45,6 +45,7 @@ scoreboard objectives remove KILLER_NUM
 scoreboard objectives remove VICTIM_NUM
 scoreboard objectives remove VICTIM_FLAG
 scoreboard objectives remove KILLER_FLAG
+scoreboard objectives remove KILLLOG_NUM
 scoreboard objectives remove KILLLOG_FOX
 scoreboard objectives remove KILLLOG_CAT
 ## Remove Players

@@ -10,4 +10,6 @@
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:area_effect_cloud]
-effect clear @a
+
+## Give Effect of Invisibility
+effect give @a minecraft:invisibility 1000000 100 true

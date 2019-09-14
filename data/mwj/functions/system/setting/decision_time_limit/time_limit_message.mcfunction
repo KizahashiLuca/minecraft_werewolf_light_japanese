@@ -19,9 +19,6 @@ tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
 tellraw @a ["",{"text":"  制限時間が、 ","color":"reset"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true},{"text":" に設定されました。","color":"reset"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 
-## Give Effect of Invisibility
-effect give @a minecraft:invisibility 1000000 100 true
-
 ## Remove Scoreboard
 scoreboard objectives remove TimeTrigger
 

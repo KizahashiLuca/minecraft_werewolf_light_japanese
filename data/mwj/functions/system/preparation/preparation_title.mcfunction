@@ -43,3 +43,6 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 tag @a[scores={ROLE=1..2}] add WereWolf
 tag @a[scores={ROLE=3..9}] add NonWolf
 tag @a[scores={ROLE=10}] add Cat
+
+## Remove Effect
+effect clear @a
