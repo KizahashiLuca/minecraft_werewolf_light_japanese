@@ -18,10 +18,10 @@ scoreboard players remove Time TENS_DIGIT 1
 scoreboard players operation Time TENS_DIGIT /= Time DENOMINATOR
 
 ## Give Special Items
-execute if score Time TENS_DIGIT matches 1.. as @a run function mwj:system/preparation/item/branch/branch_tens_digit
+execute if score Time TENS_DIGIT matches 1.. as @a[team=Player] run function mwj:system/preparation/item/branch/branch_tens_digit
 execute if score Time TENS_DIGIT matches 0 run function mwj:system/preparation/item/branch/branch_ones_digit
 
 ## Give Common Items
-execute as @a run function mwj:system/preparation/item/common/bow
-execute as @a run function mwj:system/preparation/item/common/arrow
-execute as @a run function mwj:system/preparation/item/common/torch
+execute as @a[team=Player] run function mwj:system/preparation/item/common/bow
+execute as @a[team=Player] run function mwj:system/preparation/item/common/arrow
+execute as @a[team=Player] run function mwj:system/preparation/item/common/torch

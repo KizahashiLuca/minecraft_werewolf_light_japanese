@@ -10,4 +10,4 @@
 scoreboard players set Time ROLE_OF_NUM 0
 
 ## Repeat until ROLE_OF_NUM and MEDIUM values ​​are the same
-execute as @a[sort=random] run function mwj:system/preparation/decision_role/medium_calculation
+execute as @a[sort=random,team=Player] run function mwj:system/preparation/decision_role/medium_calculation

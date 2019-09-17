@@ -18,5 +18,5 @@ execute if score @s DETECTIVE_OBJ matches 1..14 if score @s DONE matches 1 run f
 
 ## Send a Result Message to Seer
 scoreboard players set @s ROLE_OF_NUM 1
-execute unless score @p[scores={ROLE=8,ROLE_OF_NUM=1}] DONE matches 1 as @a if score @s NUM = @p[scores={ROLE=8,ROLE_OF_NUM=1}] DETECTIVE_OBJ run function mwj:system/ongame/detective/detective_result
+execute unless score @p[scores={ROLE=8,ROLE_OF_NUM=1}] DONE matches 1 as @a[team=Player] if score @s NUM = @p[scores={ROLE=8,ROLE_OF_NUM=1}] DETECTIVE_OBJ run function mwj:system/ongame/detective/detective_result
 scoreboard players set @s ROLE_OF_NUM 0

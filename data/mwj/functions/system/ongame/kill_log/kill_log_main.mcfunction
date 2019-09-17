@@ -8,22 +8,22 @@
 
 ## Set Flag
 #### Killer Flag
-execute as @a[advancements={mwj:killed_player=true}] run function mwj:system/ongame/kill_log/kill_log_killer
+execute as @a[advancements={mwj:killed_player=true},team=Player] run function mwj:system/ongame/kill_log/kill_log_killer
 #### Victim Flag
-execute as @a[scores={DEATH=1}] run function mwj:system/ongame/kill_log/kill_log_victim
+execute as @a[scores={DEATH=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_victim
 
 ## Store Number of Killer Player
 #### Victim : 1 -
 #### Killer : 0
-execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 0 as @a[scores={VICTIM_FLAG=1}] run function mwj:system/ongame/kill_log/kill_log_sub1
+execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 0 as @a[scores={VICTIM_FLAG=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_sub1
 #### Victim : 1 -
 #### Killer : 1 -
-execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 1.. as @a[scores={VICTIM_FLAG=1}] run function mwj:system/ongame/kill_log/kill_log_sub2
+execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 1.. as @a[scores={VICTIM_FLAG=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_sub2
 
 ## Fox is Seered
-execute as @a if score @s KILLLOG_FOX matches 1 run scoreboard players operation @s KILLER = @s STRAY_BY_FOX
+execute as @a[team=Player] if score @s KILLLOG_FOX matches 1 run scoreboard players operation @s KILLER = @s STRAY_BY_FOX
 ## Cat Stray Bullet
-execute as @a if score @s KILLLOG_CAT matches 1 run scoreboard players operation @s KILLER = @s STRAY_BY_CAT
+execute as @a[team=Player] if score @s KILLLOG_CAT matches 1 run scoreboard players operation @s KILLER = @s STRAY_BY_CAT
 
 ## Reset Scoreboard
 scoreboard players set @a VICTIM_FLAG 0
@@ -42,7 +42,7 @@ advancement revoke @a only mwj:be_killed_by_cat
 advancement revoke @a only mwj:killed_player
 
 ## Change Spectator for the Dead
-gamemode spectator @a[scores={DEATH=1}]
+gamemode spectator @a[scores={DEATH=1},team=Player]
 
 ## Change the Dead's variables
-scoreboard players set @a[scores={DEATH=1}] DEATH 2
+scoreboard players set @a[scores={DEATH=1},team=Player] DEATH 2

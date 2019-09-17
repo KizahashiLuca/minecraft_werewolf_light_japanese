@@ -6,6 +6,9 @@
 ## Version: beta-1.5
 ###############################
 
+## Login En Route
+function mwj:system/en_route
+
 ## Run every tick
 execute if score Time GAME matches 90 run function mwj:system/setting/choose_mode/choose_mode_main
 execute if score Time GAME matches 91 run function mwj:system/setting/decision_role_addition/role_addition_main

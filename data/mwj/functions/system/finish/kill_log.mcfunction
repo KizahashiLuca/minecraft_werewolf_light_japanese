@@ -7,8 +7,8 @@
 ###############################
 
 ## Find Killer
-execute as @a if score @s VICTIM = Time KILLLOG_NUM run scoreboard players set @s VICTIM_FLAG 1
-execute as @a if score @s NUM = @p[scores={VICTIM_FLAG=1}] KILLER run scoreboard players set @s KILLER_FLAG 1
+execute as @a[team=Player] if score @s VICTIM = Time KILLLOG_NUM run scoreboard players set @s VICTIM_FLAG 1
+execute as @a[team=Player] if score @s NUM = @p[scores={VICTIM_FLAG=1}] KILLER run scoreboard players set @s KILLER_FLAG 1
 
 ## Send a Kill Log to Chat
 execute if score @p[scores={VICTIM_FLAG=1}] SECOND matches 1000.. if entity @p[scores={KILLER_FLAG=1}] run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"@p[scores={VICTIM_FLAG=1}]","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ","color":"reset"},{"selector":"@a[scores={KILLER_FLAG=1}]","color":"red"},{"text":" --> ","color":"reset"},{"selector":"@a[scores={VICTIM_FLAG=1}]","color":"green"}] 

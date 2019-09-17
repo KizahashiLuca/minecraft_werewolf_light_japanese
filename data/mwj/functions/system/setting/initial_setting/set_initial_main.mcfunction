@@ -6,6 +6,9 @@
 ## Version: beta-1.5
 ###############################
 
+## Set Team
+function mwj:system/setting/initial_setting/set_initial_team
+
 ## Change gamerules
 function mwj:system/setting/initial_setting/set_initial_gamerule
 

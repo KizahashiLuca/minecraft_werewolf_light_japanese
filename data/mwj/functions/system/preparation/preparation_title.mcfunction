@@ -37,6 +37,7 @@ tellraw @a[scores={ROLE=7}] ["",{"text":"\n    あなたは ","color":"white"},{
 tellraw @a[scores={ROLE=7}] ["",{"text":"\n    仲間は ","color":"white"},{"selector":"@a[scores={ROLE=7}]","color":"dark_green"},{"text":" です。","color":"white"}]
 tellraw @a[scores={ROLE=8}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"探偵","color":"dark_aqua"},{"text":" です。","color":"white"}]
 tellraw @a[scores={ROLE=10}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"猫又","color":"gold"},{"text":" です。","color":"white"}]
+tellraw @a[team=!Player] ["",{"text":"\n    あなたは ","color":"white"},{"text":"観戦者","color":"white"},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Put a Tag
@@ -45,4 +46,4 @@ tag @a[scores={ROLE=3..9}] add NonWolf
 tag @a[scores={ROLE=10}] add Cat
 
 ## Remove Effect
-effect clear @a
+effect clear @a[team=Player]

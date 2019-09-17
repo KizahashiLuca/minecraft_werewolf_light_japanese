@@ -19,7 +19,7 @@ execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","colo
 execute if score Time FOX matches 1.. run tellraw @a ["",{"text":"    ","color":"reset"},{"text":"羽 衣 狐","color":"dark_purple"},{"text":"： ","color":"reset"},{"selector":"@a[scores={ROLE=3}]","color":"reset"}]
 
 ## Send a Display of Survivors
-tellraw @a ["",{"text":"\n    ","color":"reset"},{"text":"生 存 者","color":"reset"},{"text":"： ","color":"reset"},{"selector":"@a[scores={DEATH=0}]","color":"reset"}]
+tellraw @a ["",{"text":"\n    ","color":"reset"},{"text":"生 存 者","color":"reset"},{"text":"： ","color":"reset"},{"selector":"@a[scores={DEATH=0},team=Player]","color":"reset"}]
 
 ## Send a Common Message
 tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
@@ -27,7 +27,7 @@ tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
 ## Send a Kill Log
 tellraw @a ["",{"text":"  死亡記録","color":"reset"}] 
 scoreboard players set Time KILLLOG_NUM 1
-execute as @a run function mwj:system/finish/kill_log
+execute as @a[team=Player] run function mwj:system/finish/kill_log
 execute if score Time SECOND matches 1000.. run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"     ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 execute if score Time SECOND matches 10..99 run tellraw @a ["",{"text":"      ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]

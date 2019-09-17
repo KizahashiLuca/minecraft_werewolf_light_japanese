@@ -79,4 +79,4 @@ scoreboard players set Time FOX 0
 scoreboard players set Time DENOMINATOR 0
 
 ## RE-Count Players
-execute as @a run scoreboard players add Time NUM 1
+execute as @a[team=Player] run scoreboard players add Time NUM 1

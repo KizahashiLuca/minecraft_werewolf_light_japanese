@@ -9,8 +9,7 @@
 ## Timer System
 function mwj:system/time
 
-## Set Gamemode
-function mwj:system/preparation/preparation_gamerule
+## Remove Entity
 function mwj:system/preparation/preparation_entity
 
 ## Title Count Down
@@ -29,6 +28,5 @@ execute if score Time TICK matches 0 if score Time SECOND matches 0 run function
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_role_number
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_role
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_item
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_team
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_title
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_reset_scoreboard

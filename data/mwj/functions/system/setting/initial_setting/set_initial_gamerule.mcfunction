@@ -14,5 +14,3 @@ gamerule doFireTick false
 gamerule showDeathMessages false
 gamerule announceAdvancements false
 difficulty peaceful
-gamemode adventure @a
-clear @a
