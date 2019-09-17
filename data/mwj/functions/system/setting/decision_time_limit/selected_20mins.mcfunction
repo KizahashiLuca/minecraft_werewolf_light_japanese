@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 August 2019
-## Version: beta-1.3
+## Date   : 17 September 2019
+## Version: beta-1.5
 ###############################
 
 ## Set 20mins

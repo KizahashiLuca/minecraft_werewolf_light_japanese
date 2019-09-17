@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 16 August 2019
-## Version: beta-1.3
+## Date   : 17 September 2019
+## Version: beta-1.5
 ###############################
 
 ## Store Variables of TimeTrigger to ChangeLimitTime
@@ -33,17 +33,3 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 scoreboard players set Time TICK 0
 scoreboard players set Time SECOND 61
 scoreboard players set Time GAME 10
-
-## あとで消す
-scoreboard objectives remove NUM
-scoreboard objectives remove GAME
-scoreboard objectives remove SECOND
-scoreboard objectives remove TICK
-scoreboard objectives remove 20
-scoreboard objectives remove AddedRole
-scoreboard objectives remove LimitTime
-scoreboard objectives remove ChangeLimitTime
-scoreboard players reset @a
-scoreboard players reset Time
-
-tag @a remove host

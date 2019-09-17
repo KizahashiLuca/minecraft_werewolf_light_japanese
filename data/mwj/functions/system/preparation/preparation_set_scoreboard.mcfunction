@@ -2,11 +2,12 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 25 August 2019
-## Version: beta-1.4
+## Date   : 17 September 2019
+## Version: beta-1.5
 ###############################
 
 ## Add Variables for Game
+scoreboard objectives add ROLE dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
 scoreboard objectives add PURPLE dummy
@@ -43,6 +44,7 @@ scoreboard objectives add ONES_DIGIT dummy
 ## Set Variables for Game
 scoreboard players set @a ROLE 0
 scoreboard players set @a NUM 1
+scoreboard players set Time ROLE 1
 scoreboard players set Time NUM 0
 scoreboard players set Time WHITE 0
 scoreboard players set Time BLACK 0
