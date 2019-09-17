@@ -14,7 +14,7 @@ scoreboard players operation Time ChangeLimitTime *= Time LimitTime
 function mwj:system/setting/remove_scoreboard
 
 ## Title Hiding Start
-title @a times 5 40 20
+title @a times 5 40 15
 title @a title ["",{"text":"潜伏時間開始","color":"red","bold":true}]
 title @a subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
 
@@ -31,5 +31,5 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
 scoreboard players set Time TICK 0
-scoreboard players set Time SECOND 61
+scoreboard players set Time SECOND 63
 scoreboard players set Time GAME 10

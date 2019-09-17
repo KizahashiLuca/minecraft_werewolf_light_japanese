@@ -7,12 +7,7 @@
 ###############################
 
 ## Timer System
-function mwj:system/time
-
-## Title Count Down
-execute if score Time TICK matches 0 unless score Time SECOND matches 0 run title @a[tag=host] times 5 10 5
-execute if score Time TICK matches 0 unless score Time SECOND matches 0 run title @a[tag=host] title [{"text":"初期設定時間","color":"green","bold":true}]
-execute if score Time TICK matches 0 unless score Time SECOND matches 0 run title @a[tag=host] subtitle [{"score":{"name":"Time","objective":"SECOND"},"color":"green","bold":true}]
+function mwj:system/setting/setting_time
 
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r10分\""}}}}] Throw10mins 1

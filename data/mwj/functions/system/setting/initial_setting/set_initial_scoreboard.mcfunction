@@ -52,7 +52,7 @@ scoreboard objectives add Throw25mins dummy
 scoreboard objectives add Throw30mins dummy
 
 ## Set Variables for Timer
-scoreboard players set Time SECOND 60
+scoreboard players set Time SECOND 61
 scoreboard players set Time TICK 0
 scoreboard players set Time 20 20
 ## Set Variables for Setting
