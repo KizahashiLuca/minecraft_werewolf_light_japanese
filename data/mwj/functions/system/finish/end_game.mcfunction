@@ -43,6 +43,9 @@ scoreboard objectives remove CAT
 scoreboard objectives remove MASON
 scoreboard objectives remove DETECTIVE
 scoreboard objectives remove FOX
+## Remove Variables for Mason Number
+scoreboard objectives add MASON_PAIR dummy
+scoreboard objectives add MASON_PAIR_NUM dummy
 
 ## Quit Game
 function mwj:system/finish/exit_game

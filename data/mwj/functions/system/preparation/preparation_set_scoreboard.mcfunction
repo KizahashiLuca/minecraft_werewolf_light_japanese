@@ -37,6 +37,9 @@ scoreboard objectives add MASON dummy
 scoreboard objectives add DETECTIVE dummy
 scoreboard objectives add FOX dummy
 scoreboard objectives add DENOMINATOR dummy
+## Add Variables for Mason Number
+scoreboard objectives add MASON_PAIR dummy
+scoreboard objectives add MASON_PAIR_NUM dummy
 ## Add Variables for Item
 scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
@@ -77,6 +80,10 @@ scoreboard players set Time MASON 0
 scoreboard players set Time DETECTIVE 0
 scoreboard players set Time FOX 0
 scoreboard players set Time DENOMINATOR 0
+## Add Variables for Mason Number
+scoreboard players set @a MASON_PAIR 0
+scoreboard players set Time MASON_PAIR 1
+scoreboard players set Time MASON_PAIR_NUM 0
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add Time NUM 1

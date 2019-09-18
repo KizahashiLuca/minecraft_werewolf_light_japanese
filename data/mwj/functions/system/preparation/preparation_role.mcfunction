@@ -20,3 +20,7 @@ execute as @r[team=Player] if score Time MEDIUM matches 1.. run function mwj:sys
 execute as @r[team=Player] if score Time MASON matches 1.. run function mwj:system/preparation/decision_role/mason_decision
 execute as @r[team=Player] if score Time DETECTIVE matches 1.. run function mwj:system/preparation/decision_role/detective_decision
 execute as @r[team=Player] if score Time CAT matches 1.. run function mwj:system/preparation/decision_role/cat_decision
+
+## Decide Mason Pair
+execute if score Time MASON matches 1.. run function mwj:system/preparation/decision_role/mason_pair_calculation
+execute if score Time MASON matches 1.. as @a[scores={ROLE=7}] run function mwj:system/preparation/decision_role/mason_pair_decision
