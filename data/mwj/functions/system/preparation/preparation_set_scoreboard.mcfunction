@@ -46,7 +46,7 @@ scoreboard objectives add ONES_DIGIT dummy
 
 ## Set Variables for Game
 scoreboard players set @a ROLE 0
-scoreboard players set @a NUM 1
+scoreboard players set @a[team=Player] NUM 1
 scoreboard players set Time ROLE 1
 scoreboard players set Time NUM 0
 scoreboard players set Time WHITE 0

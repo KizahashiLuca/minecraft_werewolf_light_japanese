@@ -37,4 +37,4 @@ tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"-------------------------
 scoreboard players set @p[scores={ROLE=5,ROLE_OF_NUM=1}] DONE 1
 
 ## Reset Seer Trigger
-scoreboard players reset @p[scores={ROLE=5,ROLE_OF_NUM=1}] SEER_OBJ
+scoreboard players set @p[scores={ROLE=5,ROLE_OF_NUM=1}] ROLE_TARGET 0

@@ -6,17 +6,34 @@
 ## Version: beta-1.5
 ###############################
 
+## Set Scoreboard
+scoreboard players set @s ROLE_OF_NUM 1
+scoreboard players set @s ROLE_TARGET 0
+
 ## Detect Dropping Redstone Torch
-execute if score @s TORCH matches 1 unless score @s DONE matches 1 run function mwj:system/ongame/detective/detective_trigger
+execute if score @s TORCH matches 1 if score @s DONE matches 0 run function mwj:system/ongame/detective/detective_trigger
 execute if score @s TORCH matches 1 if score @s DONE matches 1 run function mwj:system/ongame/message_error
 
-## Enable Detective Trigger
-scoreboard players enable @s DETECTIVE_OBJ
+## Detect Page Role
+execute if score @s ROLE_R_PAGE matches 1 if score @s DONE matches 0 run function mwj:system/ongame/detective/detective_message
+execute if score @s ROLE_L_PAGE matches 1 if score @s DONE matches 0 run function mwj:system/ongame/detective/detective_message
+execute if score @s ROLE_R_PAGE matches 1 if score @s DONE matches 1 run function mwj:system/ongame/message_error
+execute if score @s ROLE_L_PAGE matches 1 if score @s DONE matches 1 run function mwj:system/ongame/message_error
 
 ## Send a Result to Detective
-execute if score @s DETECTIVE_OBJ matches 1..14 if score @s DONE matches 1 run function mwj:system/ongame/message_error
+execute if score @s ROLE_BUTTON matches 1..10 if score @s DONE matches 0 run function mwj:system/ongame/detective_calculation
+execute if score @s ROLE_BUTTON matches 1..10 if score @s DONE matches 1 run function mwj:system/ongame/message_error
 
-## Send a Result Message to Seer
-scoreboard players set @s ROLE_OF_NUM 1
-execute unless score @p[scores={ROLE=8,ROLE_OF_NUM=1}] DONE matches 1 as @a[team=Player] if score @s NUM = @p[scores={ROLE=8,ROLE_OF_NUM=1}] DETECTIVE_OBJ run function mwj:system/ongame/detective/detective_result
+## Send a Result Message to Detective
+execute if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] DONE matches 0 as @a[team=Player] if score @s NUM = @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET run function mwj:system/ongame/detective/detective_result
+
+## Reset Scoreboard
 scoreboard players set @s ROLE_OF_NUM 0
+
+## Enable Detective Trigger
+scoreboard players reset @s ROLE_R_PAGE
+scoreboard players reset @s ROLE_L_PAGE
+scoreboard players reset @s ROLE_BUTTON
+scoreboard players enable @s ROLE_R_PAGE
+scoreboard players enable @s ROLE_L_PAGE
+scoreboard players enable @s ROLE_BUTTON

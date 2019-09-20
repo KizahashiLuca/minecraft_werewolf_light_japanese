@@ -27,9 +27,15 @@ scoreboard objectives remove ROLE_OF_NUM
 scoreboard objectives remove doNotDrop
 scoreboard objectives remove TORCH
 scoreboard objectives remove DONE
-scoreboard objectives remove SEER_OBJ
-scoreboard objectives remove MEDIUM_OBJ
-scoreboard objectives remove DETECTIVE_OBJ
+scoreboard objectives remove 10
+scoreboard objectives remove PAGE_NUMER
+scoreboard objectives remove PAGE_DENOM
+scoreboard objectives remove ROLE_PAGE
+scoreboard objectives remove ROLE_PAGE_NUM
+scoreboard objectives remove ROLE_TARGET
+scoreboard objectives remove ROLE_R_PAGE
+scoreboard objectives remove ROLE_L_PAGE
+scoreboard objectives remove ROLE_BUTTON
 #### Fox
 scoreboard objectives remove STRAY_BY_FOX
 scoreboard objectives remove SPAWN_TIME_SEC

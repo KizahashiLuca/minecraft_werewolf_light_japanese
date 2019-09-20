@@ -6,11 +6,7 @@
 ## Version: beta-1.5
 ###############################
 
-## Set Scoreboard
-scoreboard players set @s ROLE_PAGE 0
-
-## Send Trigger Message
-function mwj:system/ongame/medium/medium_message
-
-## Reset Scoreboard
-scoreboard players set @s TORCH 0
+## Number the Members
+scoreboard players operation Time ROLE_PAGE_NUM = Time NUM
+scoreboard players remove Time ROLE_PAGE_NUM 1
+scoreboard players operation Time ROLE_PAGE_NUM /= Time 10

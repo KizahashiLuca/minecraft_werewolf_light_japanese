@@ -26,7 +26,7 @@ execute as @a if score Time TICK matches 0 if score Time SECOND matches 0 run pl
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_set_scoreboard
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_advancement
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_role_number
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_role
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_role_decision
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_item
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_title
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_reset_scoreboard
