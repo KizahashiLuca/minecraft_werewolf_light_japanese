@@ -7,7 +7,7 @@
 ###############################
 
 ## Reset choice
-scoreboard players operation Time LimitTime = Time LastLimitTime
+scoreboard players operation Time LimitTime = Time PrevLimitTime
 
 ## Set Time Limit
 function mwj:system/setting/decision_time_limit/selected_set

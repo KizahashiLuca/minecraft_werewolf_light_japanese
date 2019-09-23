@@ -66,15 +66,5 @@ execute as @a[scores={ROLE=4..9}] run scoreboard players add Time WHITE 1
 ## Set Sidebar Variables for Info
 scoreboard objectives setdisplay sidebar Info
 
-## Remove Variables for Role Addition
-scoreboard objectives remove AddedRole
-## Remove Variables for Time Limit
-scoreboard objectives remove ChangeLimitTime
-## Remove Variables for ROLE
-scoreboard objectives remove DENOMINATOR
-## Remove Variables for Item
-scoreboard objectives remove TENS_DIGIT
-scoreboard objectives remove ONES_DIGIT
-
 ## Game Start
 scoreboard players set Time GAME 11

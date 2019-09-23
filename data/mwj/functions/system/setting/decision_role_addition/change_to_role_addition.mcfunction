@@ -19,6 +19,7 @@ scoreboard players set @a[tag=host] SelectedMason 0
 scoreboard players set @a[tag=host] SelectedDetec 0
 scoreboard players set @a[tag=host] SelectedCat 0
 scoreboard players set @a[tag=host] SelectedBarrier 0
+scoreboard players set @a[tag=host] SelectedMap 0
 scoreboard players set @a[tag=host] SelectedWire 0
 scoreboard players set @a[tag=host] SelectedStar 0
 scoreboard players set @a[tag=host] ThrowHeadFox 0
@@ -27,6 +28,7 @@ scoreboard players set @a[tag=host] ThrowHeadMason 0
 scoreboard players set @a[tag=host] ThrowHeadDetec 0
 scoreboard players set @a[tag=host] ThrowHeadCat 0
 scoreboard players set @a[tag=host] ThrowBarrier 0
+scoreboard players set @a[tag=host] ThrowMap 0
 scoreboard players set @a[tag=host] ThrowWireHook 0
 scoreboard players set @a[tag=host] ThrowNetherStar 0
 

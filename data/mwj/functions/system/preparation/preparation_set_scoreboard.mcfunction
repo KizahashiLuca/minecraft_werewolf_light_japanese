@@ -36,7 +36,6 @@ scoreboard objectives add CAT dummy
 scoreboard objectives add MASON dummy
 scoreboard objectives add DETECTIVE dummy
 scoreboard objectives add FOX dummy
-scoreboard objectives add DENOMINATOR dummy
 ## Add Variables for Mason Number
 scoreboard objectives add MASON_PAIR dummy
 scoreboard objectives add MASON_PAIR_NUM dummy

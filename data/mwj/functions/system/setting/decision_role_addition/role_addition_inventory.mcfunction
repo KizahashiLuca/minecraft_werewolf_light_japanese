@@ -8,11 +8,12 @@
 
 ## Replace Inventory
 replaceitem entity @a[tag=host] inventory.11 minecraft:player_head{SkullOwner:"mhf_villager",display:{Name:"\"\\u00A7r特殊役職無し\""}} 1
-replaceitem entity @a[tag=host] inventory.12 minecraft:player_head{SkullOwner:"mhf_fox",display:{Name:"\"\\u00A7r妖狐の追加\""}} 1
+replaceitem entity @a[tag=host] inventory.12 minecraft:player_head{SkullOwner:"mhf_fox",display:{Name:"\"\\u00A7r羽衣狐の追加\""}} 1
 replaceitem entity @a[tag=host] inventory.13 minecraft:player_head{SkullOwner:"mhf_golem",display:{Name:"\"\\u00A7r共有者の追加\""}} 1
 replaceitem entity @a[tag=host] inventory.14 minecraft:player_head{SkullOwner:"mhf_steve",display:{Name:"\"\\u00A7r探偵の追加\""}} 1
 replaceitem entity @a[tag=host] inventory.15 minecraft:player_head{SkullOwner:"mhf_ocelot",display:{Name:"\"\\u00A7r猫又の追加\""}} 1
 replaceitem entity @a[tag=host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7rキャンセル\""}} 1
+replaceitem entity @a[tag=host] inventory.22 minecraft:map{display:{Name:"\"\\u00A7rリセット\""}} 1
 replaceitem entity @a[tag=host] inventory.25 minecraft:tripwire_hook{display:{Name:"\"\\u00A7rこれで決定\""}} 1
 
 ## Set Nether Star above Selected Role

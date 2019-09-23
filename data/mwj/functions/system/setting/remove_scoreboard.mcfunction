@@ -7,11 +7,12 @@
 ###############################
 
 ## Remove Variables for Setting
+scoreboard objectives remove PrevAddedRole
 scoreboard objectives remove LimitTime
-scoreboard objectives remove LastAddedRole
-scoreboard objectives remove LastLimitTime
+scoreboard objectives remove PrevLimitTime
 ## Remove Variables for GUI
 scoreboard objectives remove SelectedBarrier
+scoreboard objectives remove SelectedMap
 scoreboard objectives remove SelectedWire
 scoreboard objectives remove SelectedStar
 scoreboard objectives remove SelectedAStand
@@ -28,6 +29,7 @@ scoreboard objectives remove Selected25mins
 scoreboard objectives remove Selected30mins
 ## Remove Variables for Throwing
 scoreboard objectives remove ThrowBarrier
+scoreboard objectives remove ThrowMap
 scoreboard objectives remove ThrowWireHook
 scoreboard objectives remove ThrowNetherStar
 scoreboard objectives remove ThrowArmorStand

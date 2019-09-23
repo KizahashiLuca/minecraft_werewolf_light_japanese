@@ -6,8 +6,8 @@
 ## Version: beta-1.5
 ###############################
 
-## Set Prev choice
-scoreboard players operation Time PrevLimitTime = Time LimitTime
+## Reset choice
+scoreboard players set Time AddedRole 4
 
-## Set Time Limit
-function mwj:system/setting/decision_time_limit/selected_set
+## Set Role
+function mwj:system/setting/decision_role_addition/change_to_role_addition

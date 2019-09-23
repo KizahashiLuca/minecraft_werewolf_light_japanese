@@ -15,3 +15,6 @@ execute if score Time TICK matches 0 unless score Time SECOND matches 0 run scor
 execute if score Time TICK matches 0 if score Time SECOND matches 0..60 run title @a[tag=host] times 5 10 5
 execute if score Time TICK matches 0 if score Time SECOND matches 0..60 run title @a[tag=host] title [{"text":"初期設定時間","color":"green","bold":true}]
 execute if score Time TICK matches 0 if score Time SECOND matches 0..60 run title @a[tag=host] subtitle [{"score":{"name":"Time","objective":"SECOND"},"color":"white","bold":true}]
+
+## Preparation
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting

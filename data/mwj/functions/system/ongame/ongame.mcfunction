@@ -22,7 +22,7 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
 
 ## Fox System
-execute as @p[tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
+execute as @a[tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 execute as @a[scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
 
 ## Seer System

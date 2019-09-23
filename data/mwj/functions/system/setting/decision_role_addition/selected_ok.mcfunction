@@ -6,8 +6,8 @@
 ## Version: beta-1.5
 ###############################
 
-## Set Last choice
-scoreboard players operation Time LastAddedRole = Time AddedRole
+## Set Prev choice
+scoreboard players operation Time PrevAddedRole = Time AddedRole
 
 ## Set Role
 function mwj:system/setting/decision_role_addition/selected_set

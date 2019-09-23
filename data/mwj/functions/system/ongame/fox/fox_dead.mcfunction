@@ -16,3 +16,4 @@ scoreboard players remove @s SPAWN_TIME_SEC 10
 
 ## Reset Death Count
 scoreboard players set @s DEATH 0
+scoreboard players add Time PURPLE 1

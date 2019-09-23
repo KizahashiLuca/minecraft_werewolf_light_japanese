@@ -16,25 +16,25 @@ tellraw @s ["",{"text":"  探偵を誰に行う？","color":"white"}]
 
 ## Send Triggers
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 1"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 1"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 2"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 2"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 3"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 3"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 4"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 4"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 5"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 5"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 6"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 6"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 7"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 7"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 8"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 8"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 9"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 9"},"color":"green","bold":true}]
 scoreboard players add @s ROLE_TARGET 1
-execute as @a if score Time ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 10"},"color":"green","bold":true}]
+execute as @a if score @p[scores={ROLE=8,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"探偵","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 10"},"color":"green","bold":true}]
 
 ## Send Page Role
 scoreboard players operation @s PAGE_NUMER = @s ROLE_PAGE

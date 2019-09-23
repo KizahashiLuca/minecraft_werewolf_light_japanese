@@ -7,5 +7,5 @@
 ###############################
 
 ## Decide Mason Pair
-scoreboard players operation @r[scores={MASON_PAIR=0},limit=2] MASON_PAIR = Time MASON_PAIR
-execute if entity @p[scores={MASON_PAIR=0}] run scoreboard players add Time MASON_PAIR 1
+execute if score Time MASON_PAIR <= Time MASON_PAIR_NUM run scoreboard players operation @r[scores={ROLE=7,MASON_PAIR=0},limit=2] MASON_PAIR = Time MASON_PAIR
+execute if score Time MASON_PAIR <= Time MASON_PAIR_NUM if entity @p[scores={ROLE=7,MASON_PAIR=0}] run scoreboard players add Time MASON_PAIR 1

@@ -21,7 +21,7 @@ execute if score @s ROLE_R_PAGE matches 1 if score @s DONE matches 1 run functio
 execute if score @s ROLE_L_PAGE matches 1 if score @s DONE matches 1 run function mwj:system/ongame/message_error
 
 ## Send a Result to Seer
-execute if score @s ROLE_BUTTON matches 1..10 if score @s DONE matches 0 run function mwj:system/ongame/seer_calculation
+execute if score @s ROLE_BUTTON matches 1..10 if score @s DONE matches 0 run function mwj:system/ongame/seer/seer_calculation
 execute if score @s ROLE_BUTTON matches 1..10 if score @s DONE matches 1 run function mwj:system/ongame/message_error
 
 ## Send a Result Message to Seer
@@ -37,3 +37,6 @@ scoreboard players reset @s ROLE_BUTTON
 scoreboard players enable @s ROLE_R_PAGE
 scoreboard players enable @s ROLE_L_PAGE
 scoreboard players enable @s ROLE_BUTTON
+
+## Death
+execute if score @s DEATH matches 1 run scoreboard players set @s DONE 1

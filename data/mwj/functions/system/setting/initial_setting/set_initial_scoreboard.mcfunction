@@ -14,12 +14,14 @@ scoreboard objectives add TICK dummy
 scoreboard objectives add 20 dummy
 ## Add Variables for Setting
 scoreboard objectives add AddedRole dummy
+scoreboard objectives add PrevAddedRole dummy
 scoreboard objectives add LimitTime dummy
-scoreboard objectives add LastAddedRole dummy
-scoreboard objectives add LastLimitTime dummy
+scoreboard objectives add PrevLimitTime dummy
 scoreboard objectives add ChangeLimitTime dummy
+scoreboard objectives add DENOMINATOR dummy
 ## Add Variables for GUI
 scoreboard objectives add SelectedBarrier dummy
+scoreboard objectives add SelectedMap dummy
 scoreboard objectives add SelectedWire dummy
 scoreboard objectives add SelectedStar dummy
 scoreboard objectives add SelectedAStand dummy
@@ -36,6 +38,7 @@ scoreboard objectives add Selected25mins dummy
 scoreboard objectives add Selected30mins dummy
 ## Add Variables for Throwing
 scoreboard objectives add ThrowBarrier dummy
+scoreboard objectives add ThrowMap dummy
 scoreboard objectives add ThrowWireHook dummy
 scoreboard objectives add ThrowNetherStar dummy
 scoreboard objectives add ThrowArmorStand dummy
@@ -57,7 +60,8 @@ scoreboard players set Time TICK 0
 scoreboard players set Time 20 20
 ## Set Variables for Setting
 scoreboard players set Time AddedRole 4
+scoreboard players set Time PrevAddedRole 4
 scoreboard players set Time LimitTime 2
-scoreboard players set Time LastAddedRole 4
-scoreboard players set Time LastLimitTime 2
+scoreboard players set Time PrevLimitTime 2
 scoreboard players set Time ChangeLimitTime 5
+scoreboard players set Time DENOMINATOR 0

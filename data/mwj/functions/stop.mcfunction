@@ -12,8 +12,7 @@ tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"t
 tellraw @a ["",{"text":"  ゲームが中断されました。","color":"reset"}]
 
 ## Quit Display
-execute if score Time GAME matches 90 run function mwj:system/finish/exit_game
-execute if score Time GAME matches 91 run function mwj:system/finish/exit_game
-execute if score Time GAME matches 92 run function mwj:system/finish/exit_game
+execute if score Time GAME matches 90..92 run function mwj:system/setting/remove_scoreboard
+execute if score Time GAME matches 90..92 run function mwj:system/finish/exit_game
 execute if score Time GAME matches 10 run function mwj:system/finish/exit_game
 execute if score Time GAME matches 11 run function mwj:system/finish/end_game

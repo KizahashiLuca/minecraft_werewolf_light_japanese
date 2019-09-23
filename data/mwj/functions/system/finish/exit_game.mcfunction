@@ -43,6 +43,9 @@ scoreboard objectives remove SPAWN_TIME_TICK
 scoreboard objectives remove RESPAWN
 #### Cat
 scoreboard objectives remove STRAY_BY_CAT
+#### Mason
+scoreboard objectives remove MASON_PAIR
+scoreboard objectives remove MASON_PAIR_NUM
 ## Remove Variables for Kill Log
 scoreboard objectives remove DEATH
 scoreboard objectives remove KILLER
@@ -54,6 +57,15 @@ scoreboard objectives remove KILLER_FLAG
 scoreboard objectives remove KILLLOG_NUM
 scoreboard objectives remove KILLLOG_FOX
 scoreboard objectives remove KILLLOG_CAT
+## Remove Variables for Role Addition
+scoreboard objectives remove AddedRole
+## Remove Variables for Time Limit
+scoreboard objectives remove ChangeLimitTime
+## Remove Variables for ROLE
+scoreboard objectives remove DENOMINATOR
+## Remove Variables for Item
+scoreboard objectives remove TENS_DIGIT
+scoreboard objectives remove ONES_DIGIT
 ## Remove Players
 scoreboard players reset @a
 scoreboard players reset Time

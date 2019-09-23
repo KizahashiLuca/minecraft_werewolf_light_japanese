@@ -46,4 +46,5 @@ tag @a[scores={ROLE=3..9}] add NonWolf
 tag @a[scores={ROLE=10}] add Cat
 
 ## Remove Effect
+team modify Player friendlyFire true
 effect clear @a[team=Player]

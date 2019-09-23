@@ -30,8 +30,8 @@ scoreboard players set @a VICTIM_FLAG 0
 scoreboard players set @a KILLER_FLAG 0
 scoreboard players set @a KILLLOG_FOX 0
 scoreboard players set @a KILLLOG_CAT 0
-scoreboard players set @a STRAY_BY_FOX 0
-scoreboard players set @a STRAY_BY_CAT 0
+scoreboard players set @a[tag=!SeeredFox] STRAY_BY_FOX 0
+scoreboard players set @a[tag=!StrayBullet] STRAY_BY_CAT 0
 scoreboard players set Time VICTIM_NUM 0
 scoreboard players set Time KILLER_NUM 0
 
