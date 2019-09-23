@@ -14,7 +14,6 @@ execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
 
 ## Count Death Score
 execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1
-execute as @a[scores={ROLE=3}] if score @s DEATH matches 1 run scoreboard players remove Time PURPLE 1
 execute as @a[scores={ROLE=4..9}] if score @s DEATH matches 1 run scoreboard players remove Time WHITE 1
 
 ## Detect Dropping Torch
@@ -22,8 +21,8 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
 
 ## Fox System
-execute as @a[tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 execute as @a[scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
+execute as @a[tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 
 ## Seer System
 execute as @a[scores={ROLE=5}] run function mwj:system/ongame/seer/seer_main

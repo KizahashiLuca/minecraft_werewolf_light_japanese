@@ -14,7 +14,7 @@ execute if score @s ROLE_OF_NUM matches 1 run scoreboard players set @s ROLE_OF_
 scoreboard objectives add TMP dummy
 scoreboard players set @s TMP 1
 execute as @a[scores={ROLE=5}] if score @s NUM = @p[tag=SeeredFox,scores={TMP=1}] STRAY_BY_FOX run scoreboard players set @s TMP 1
-scoreboard players set @s TMP 0
+scoreboard players set @p[tag=SeeredFox,scores={TMP=1}] TMP 0
 execute if score @s DEATH matches 0..1 run tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
 execute if score @s DEATH matches 0 run tellraw @s ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={ROLE=5},scores={TMP=1}]","color":"white"},{"text":" に占われましたが、突然死しませんでした。","color":"white"}]
 execute if score @s DEATH matches 1 run tellraw @s ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={ROLE=5},scores={TMP=1}]","color":"white"},{"text":" に占われて、突然死しました。","color":"white"}]

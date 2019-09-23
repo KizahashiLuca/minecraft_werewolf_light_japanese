@@ -59,6 +59,11 @@ scoreboard objectives remove KILLLOG_FOX
 scoreboard objectives remove KILLLOG_CAT
 ## Remove Variables for Role Addition
 scoreboard objectives remove AddedRole
+scoreboard objectives remove AddedFox
+scoreboard objectives remove AddedVilla
+scoreboard objectives remove AddedMason
+scoreboard objectives remove AddedDetec
+scoreboard objectives remove AddedCat
 ## Remove Variables for Time Limit
 scoreboard objectives remove ChangeLimitTime
 ## Remove Variables for ROLE

@@ -13,6 +13,7 @@ execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparatio
 
 ## Detected Unspawn
 execute if score @s RESPAWN matches 0 run scoreboard players set @s DEATH 1
+execute if score @s RESPAWN matches 0 run scoreboard players remove Time PURPLE 1
 
 ## Effect Clear
 effect clear @s

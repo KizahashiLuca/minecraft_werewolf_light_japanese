@@ -8,6 +8,11 @@
 
 ## Remove Variables for Setting
 scoreboard objectives remove PrevAddedRole
+scoreboard objectives remove PrevAddedFox
+scoreboard objectives remove PrevAddedVilla
+scoreboard objectives remove PrevAddedMason
+scoreboard objectives remove PrevAddedDetec
+scoreboard objectives remove PrevAddedCat
 scoreboard objectives remove LimitTime
 scoreboard objectives remove PrevLimitTime
 ## Remove Variables for GUI

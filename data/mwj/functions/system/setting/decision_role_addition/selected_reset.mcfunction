@@ -7,7 +7,12 @@
 ###############################
 
 ## Reset choice
-scoreboard players set Time AddedRole 4
+scoreboard players operation Time AddedRole = Time PrevAddedRole
+scoreboard players set Time AddedVilla 0
+scoreboard players set Time AddedFox 0
+scoreboard players set Time AddedMason 0
+scoreboard players set Time AddedDetec 0
+scoreboard players set Time AddedCat 0
 
 ## Set Role
 function mwj:system/setting/decision_role_addition/change_to_role_addition

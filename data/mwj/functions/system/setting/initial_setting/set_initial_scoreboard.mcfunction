@@ -14,7 +14,17 @@ scoreboard objectives add TICK dummy
 scoreboard objectives add 20 dummy
 ## Add Variables for Setting
 scoreboard objectives add AddedRole dummy
+scoreboard objectives add AddedFox dummy
+scoreboard objectives add AddedVilla dummy
+scoreboard objectives add AddedMason dummy
+scoreboard objectives add AddedDetec dummy
+scoreboard objectives add AddedCat dummy
 scoreboard objectives add PrevAddedRole dummy
+scoreboard objectives add PrevAddedFox dummy
+scoreboard objectives add PrevAddedVilla dummy
+scoreboard objectives add PrevAddedMason dummy
+scoreboard objectives add PrevAddedDetec dummy
+scoreboard objectives add PrevAddedCat dummy
 scoreboard objectives add LimitTime dummy
 scoreboard objectives add PrevLimitTime dummy
 scoreboard objectives add ChangeLimitTime dummy
@@ -55,12 +65,20 @@ scoreboard objectives add Throw25mins dummy
 scoreboard objectives add Throw30mins dummy
 
 ## Set Variables for Timer
-scoreboard players set Time SECOND 61
-scoreboard players set Time TICK 0
 scoreboard players set Time 20 20
 ## Set Variables for Setting
-scoreboard players set Time AddedRole 4
-scoreboard players set Time PrevAddedRole 4
+scoreboard players set Time AddedRole 0
+scoreboard players set Time AddedFox 0
+scoreboard players set Time AddedVilla 0
+scoreboard players set Time AddedMason 0
+scoreboard players set Time AddedDetec 0
+scoreboard players set Time AddedCat 0
+scoreboard players set Time PrevAddedRole 0
+scoreboard players set Time PrevAddedFox 0
+scoreboard players set Time PrevAddedVilla 0
+scoreboard players set Time PrevAddedMason 0
+scoreboard players set Time PrevAddedDetec 0
+scoreboard players set Time PrevAddedCat 0
 scoreboard players set Time LimitTime 2
 scoreboard players set Time PrevLimitTime 2
 scoreboard players set Time ChangeLimitTime 5

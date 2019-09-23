@@ -15,5 +15,11 @@ function mwj:system/setting/initial_setting/set_initial_gamerule
 ## Set Scoreboard
 function mwj:system/setting/initial_setting/set_initial_scoreboard
 
+## Set Added Role Number
+function mwj:system/setting/initial_setting/set_initial_calculation
+
+## Set Title
+function mwj:system/setting/initial_setting/set_initial_title
+
 ## Set Inventory
 function mwj:system/setting/choose_mode/change_to_choose_mode

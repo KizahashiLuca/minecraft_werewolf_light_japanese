@@ -34,6 +34,5 @@ scoreboard players set @a[tag=host,nbt={Inventory:[{Slot:34b,id:"minecraft:tripw
 ## Function Each Mode
 execute if score Time NUM matches 8.. as @a[tag=host] if score @s SelectedAStand matches 1 run function mwj:system/setting/decision_role_addition/change_to_role_addition
 execute as @a[tag=host] if score @s SelectedClock matches 1 run function mwj:system/setting/decision_time_limit/change_to_time_limit
-execute as @a[tag=host] if score @s SelectedBarrier matches 1 run function mwj:system/setting/remove_scoreboard
 execute as @a[tag=host] if score @s SelectedBarrier matches 1 run function mwj:stop
 execute as @a[tag=host] if score @s SelectedWire matches 1 run function mwj:system/setting/exit_setting

@@ -7,5 +7,6 @@
 ###############################
 
 ## Set Villager
-scoreboard players set Time AddedRole 4
+execute if score Time AddedRole matches 1.. run scoreboard players add Time AddedVilla 1
+execute if score Time AddedRole matches 1.. run scoreboard players remove Time AddedRole 1
 function mwj:system/setting/decision_role_addition/change_to_role_addition
