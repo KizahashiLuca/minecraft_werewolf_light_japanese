@@ -6,6 +6,9 @@
 ## Version: beta-1.5
 ###############################
 
+## Store Number of Role
+scoreboard players operation Time AddedRole = Time PrevAddedRole
+
 ## Store Variables of TimeTrigger to ChangeLimitTime
 scoreboard players set Time ChangeLimitTime 5
 scoreboard players operation Time ChangeLimitTime *= Time LimitTime
@@ -27,7 +30,6 @@ execute if score Time AddedVilla matches 1.. run tellraw @a ["",{"text":"    ","
 execute if score Time AddedMason matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedMason"},"color":"white"},{"text":"組","color":"white"}]
 execute if score Time AddedDetec matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedDetec"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time AddedCat matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedCat"},"color":"white"},{"text":"人","color":"white"}]
-execute if score Time AddedRole = Time PrevAddedRole run tellraw @a ["",{"text":"    ","color":"white"},{"text":"なし","color":"green","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedVilla"},"color":"white"},{"text":"人","color":"white"}]
 tellraw @a ["",{"text":"  制限時間 : ","color":"white"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 

@@ -42,12 +42,15 @@ scoreboard players operation Time VILLAGER -= Time SEER
 scoreboard players operation Time VILLAGER -= Time MEDIUM
 
 ## Add Special Roles
-scoreboard players remove Time VILLAGER 2
-execute if score Time AddedRole matches 3 run scoreboard players add Time FOX 1
-execute if score Time AddedRole matches 3 run scoreboard players add Time SEER 1
-execute if score Time AddedRole matches 4 run scoreboard players add Time VILLAGER 2
-execute if score Time AddedRole matches 7 run scoreboard players add Time MASON 2
-execute if score Time AddedRole matches 8 run scoreboard players add Time DETECTIVE 1
-execute if score Time AddedRole matches 8 run scoreboard players add Time WOLF 1
-execute if score Time AddedRole matches 10 run scoreboard players add Time CAT 1
-execute if score Time AddedRole matches 10 run scoreboard players add Time VILLAGER 1
+scoreboard players operation Time VILLAGER -= Time AddedRole
+scoreboard players operation Time VILLAGER -= Time AddedRole
+scoreboard players operation Time FOX += Time AddedFox
+scoreboard players operation Time VILLAGER += Time AddedFox
+scoreboard players operation Time VILLAGER += Time AddedVilla
+scoreboard players operation Time VILLAGER += Time AddedVilla
+scoreboard players operation Time MASON += Time AddedMason
+scoreboard players operation Time MASON += Time AddedMason
+scoreboard players operation Time DETECTIVE += Time AddedDetec
+scoreboard players operation Time VILLAGER += Time AddedDetec
+scoreboard players operation Time CAT += Time AddedCat
+scoreboard players operation Time VILLAGER += Time AddedCat

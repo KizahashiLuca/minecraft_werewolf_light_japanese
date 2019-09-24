@@ -7,7 +7,7 @@
 ###############################
 
 ## Calculate Rest Number of Add Roles
-execute if score Time AddedRole matches 1.. run scoreboard players operation Time AddedVilla = Time AddedRole
+execute if score Time AddedRole matches 1.. run scoreboard players operation Time AddedVilla += Time AddedRole
 
 ## Set Prev choice
 scoreboard players set Time AddedRole 0

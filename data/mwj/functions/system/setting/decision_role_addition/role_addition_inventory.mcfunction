@@ -17,21 +17,21 @@ replaceitem entity @a[tag=host] inventory.22 minecraft:map{display:{Name:"\"\\u0
 replaceitem entity @a[tag=host] inventory.25 minecraft:tripwire_hook{display:{Name:"\"\\u00A7rこれで決定\""}} 1
 
 ## Set Nether Star above Selected Role
-execute if score Time AddedVilla matches 1 run replaceitem entity @a[tag=host] inventory.2 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Villa"}} 1
-execute if score Time AddedFox matches 1 run replaceitem entity @a[tag=host] inventory.3 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Fox"}} 1
-execute if score Time AddedMason matches 1 run replaceitem entity @a[tag=host] inventory.4 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Mason"}} 1
-execute if score Time AddedDetec matches 1 run replaceitem entity @a[tag=host] inventory.5 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Detec"}} 1
-execute if score Time AddedCat matches 1 run replaceitem entity @a[tag=host] inventory.6 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Cat"}} 1
+execute if score Time AddedVilla matches 1.. run replaceitem entity @a[tag=host] inventory.2 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Villa"}} 1
+execute if score Time AddedFox matches 1.. run replaceitem entity @a[tag=host] inventory.3 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Fox"}} 1
+execute if score Time AddedMason matches 1.. run replaceitem entity @a[tag=host] inventory.4 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Mason"}} 1
+execute if score Time AddedDetec matches 1.. run replaceitem entity @a[tag=host] inventory.5 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Detec"}} 1
+execute if score Time AddedCat matches 1.. run replaceitem entity @a[tag=host] inventory.6 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\"",Taged:"Cat"}} 1
 
 scoreboard objectives add AddedRoleTmp dummy
 scoreboard players operation Time AddedRoleTmp = Time AddedVilla
-execute if score Time AddedVilla matches 2.. as @a run function mwj:system/setting/decision_role_addition/added_villager
+function mwj:system/setting/decision_role_addition/added_villager
 scoreboard players operation Time AddedRoleTmp = Time AddedFox
-execute if score Time AddedFox matches 2.. as @a run function mwj:system/setting/decision_role_addition/added_fox
+function mwj:system/setting/decision_role_addition/added_fox
 scoreboard players operation Time AddedRoleTmp = Time AddedMason
-execute if score Time AddedMason matches 2.. as @a run function mwj:system/setting/decision_role_addition/added_mason
+function mwj:system/setting/decision_role_addition/added_mason
 scoreboard players operation Time AddedRoleTmp = Time AddedDetec
-execute if score Time AddedDetec matches 2.. as @a run function mwj:system/setting/decision_role_addition/added_detective
+function mwj:system/setting/decision_role_addition/added_detective
 scoreboard players operation Time AddedRoleTmp = Time AddedCat
-execute if score Time AddedCat matches 2.. as @a run function mwj:system/setting/decision_role_addition/added_cat
+function mwj:system/setting/decision_role_addition/added_cat
 scoreboard objectives remove AddedRoleTmp

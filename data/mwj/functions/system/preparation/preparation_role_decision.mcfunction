@@ -11,16 +11,27 @@ execute as @a[team=Player] run function mwj:system/preparation/preparation_numbe
 tag @a remove numbered
 
 ## Decide Players' Role
-execute as @r[team=Player] if score Time WOLF matches 1.. run function mwj:system/preparation/decision_role/wolf_decision
-execute as @r[team=Player] if score Time MADMAN matches 1.. run function mwj:system/preparation/decision_role/madman_decision
-execute as @r[team=Player] if score Time FOX matches 1.. run function mwj:system/preparation/decision_role/fox_decision
-execute as @r[team=Player] if score Time VILLAGER matches 1.. run function mwj:system/preparation/decision_role/villager_decision
-execute as @r[team=Player] if score Time SEER matches 1.. run function mwj:system/preparation/decision_role/seer_decision
-execute as @r[team=Player] if score Time MEDIUM matches 1.. run function mwj:system/preparation/decision_role/medium_decision
-execute as @r[team=Player] if score Time MASON matches 1.. run function mwj:system/preparation/decision_role/mason_decision
-execute as @r[team=Player] if score Time DETECTIVE matches 1.. run function mwj:system/preparation/decision_role/detective_decision
-execute as @r[team=Player] if score Time CAT matches 1.. run function mwj:system/preparation/decision_role/cat_decision
+scoreboard objectives add NUMBER_ROLE dummy
+scoreboard players operation Time NUMBER_ROLE = Time WOLF
+function mwj:system/preparation/decision_role/wolf_decision
+scoreboard players operation Time NUMBER_ROLE = Time MADMAN
+function mwj:system/preparation/decision_role/madman_decision
+scoreboard players operation Time NUMBER_ROLE = Time FOX
+function mwj:system/preparation/decision_role/fox_decision
+scoreboard players operation Time NUMBER_ROLE = Time VILLAGER
+function mwj:system/preparation/decision_role/villager_decision
+scoreboard players operation Time NUMBER_ROLE = Time SEER
+function mwj:system/preparation/decision_role/seer_decision
+scoreboard players operation Time NUMBER_ROLE = Time MEDIUM
+function mwj:system/preparation/decision_role/medium_decision
+scoreboard players operation Time NUMBER_ROLE = Time MASON
+function mwj:system/preparation/decision_role/mason_decision
+scoreboard players operation Time NUMBER_ROLE = Time DETECTIVE
+function mwj:system/preparation/decision_role/detective_decision
+scoreboard players operation Time NUMBER_ROLE = Time CAT
+function mwj:system/preparation/decision_role/cat_decision
 
 ## Decide Mason Pair
-execute if score Time MASON matches 1.. run function mwj:system/preparation/decision_role/mason_pair_calculation
-execute if score Time MASON matches 1.. as @a[scores={ROLE=7}] run function mwj:system/preparation/decision_role/mason_pair_decision
+scoreboard players operation Time NUMBER_ROLE = Time AddedMason
+function mwj:system/preparation/decision_role/mason_pair_decision
+scoreboard objectives remove NUMBER_ROLE
