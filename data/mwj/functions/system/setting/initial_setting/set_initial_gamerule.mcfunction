@@ -15,4 +15,5 @@ gamerule showDeathMessages false
 gamerule announceAdvancements false
 difficulty peaceful
 gamemode adventure @a[gamemode=!spectator]
+effect clear @a[gamemode=!spectator]
 clear @a

@@ -14,7 +14,7 @@ scoreboard players set Time ChangeLimitTime 5
 scoreboard players operation Time ChangeLimitTime *= Time LimitTime
 
 ## Exit Setting - Remove Scoreboard
-function mwj:system/setting/remove_scoreboard
+function mwj:system/setting/exit_setting/remove_scoreboard
 
 ## Title Hiding Start
 title @a times 5 40 15
@@ -24,7 +24,14 @@ title @a subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
 ## Send a Message Added Role to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"white"},{"text":"Hiding Start!!","color":"green"}]
-tellraw @a ["",{"text":"  追加役職 : ","color":"white"}]
+execute if score Time GameMode matches 1 run tellraw @a ["",{"text":"  ","color":"white"},{"text":"通常人狼モード","color":"green","bold":true}]
+execute if score Time GameMode matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村人陣営の人数が、人狼の人数以下になったら敗北\n","color":"white"}]
+execute if score Time GameMode matches 2 run tellraw @a ["",{"text":"  ","color":"white"},{"text":"村人2人生存モード","color":"green","bold":true}]
+execute if score Time GameMode matches 2 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村人陣営の人数が、2人未満になったら敗北\n","color":"white"}]
+execute if score Time GameMode matches 3 run tellraw @a ["",{"text":"  ","color":"white"},{"text":"我々だ！人狼モード","color":"green","bold":true}]
+execute if score Time GameMode matches 3 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村人陣営の人数が、0人になったら敗北\n","color":"white"}]
+execute if score Time AddedRole matches 1.. run tellraw @a ["",{"text":"  追加役職 : ","color":"white"}]
+execute if score Time AddedRole matches ..0 run tellraw @a ["",{"text":"  追加役職 : なし","color":"white"}]
 execute if score Time AddedFox matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"羽 衣 狐","color":"dark_purple","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedFox"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time AddedVilla matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedVilla"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time AddedMason matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedMason"},"color":"white"},{"text":"組","color":"white"}]

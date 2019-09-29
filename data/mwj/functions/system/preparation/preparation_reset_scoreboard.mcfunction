@@ -48,7 +48,7 @@ scoreboard players enable @a ROLE_R_PAGE
 scoreboard players enable @a ROLE_L_PAGE
 scoreboard players enable @a ROLE_BUTTON
 scoreboard players set Time ROLE_PAGE_NUM 0
-function mwj:system/preparation/preparation_role_setting
+function mwj:system/preparation/preparation_reset_page_role
 #### Fox
 scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_SEC 0
 scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_TICK 0
@@ -62,7 +62,7 @@ scoreboard players operation 残り時間 Info = Time SECOND
 ## Set Variables for Game
 execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1
 execute as @a[scores={ROLE=3}] run scoreboard players add Time PURPLE 1
-execute as @a[scores={ROLE=4..9}] run scoreboard players add Time WHITE 1
+execute as @a[scores={ROLE=4..10}] run scoreboard players add Time WHITE 1
 ## Set Sidebar Variables for Info
 scoreboard objectives setdisplay sidebar Info
 

@@ -33,19 +33,5 @@ execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"     "
 execute if score Time SECOND matches 10..99 run tellraw @a ["",{"text":"      ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 execute if score Time SECOND matches 0..9 run tellraw @a ["",{"text":"       ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 
-## Remove Objectives
-scoreboard objectives remove WOLF
-scoreboard objectives remove MADMAN
-scoreboard objectives remove VILLAGER
-scoreboard objectives remove SEER
-scoreboard objectives remove MEDIUM
-scoreboard objectives remove CAT
-scoreboard objectives remove MASON
-scoreboard objectives remove DETECTIVE
-scoreboard objectives remove FOX
-## Remove Variables for Mason Number
-scoreboard objectives add MASON_PAIR dummy
-scoreboard objectives add MASON_PAIR_NUM dummy
-
 ## Quit Game
 function mwj:system/finish/exit_game

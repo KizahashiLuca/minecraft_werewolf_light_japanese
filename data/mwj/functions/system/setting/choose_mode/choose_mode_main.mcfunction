@@ -10,29 +10,34 @@
 function mwj:system/setting/setting_time
 
 ## Detect Dropping
-execute if score Time NUM matches 8.. run scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:armor_stand",tag:{display:{Name:"\"\\u00A7r追加役職設定\""}}}}] ThrowArmorStand 1
+execute if score Time PrevAddedRole matches 1.. run scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:armor_stand",tag:{display:{Name:"\"\\u00A7r追加役職設定\""}}}}] ThrowArmorStand 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:flower_banner_pattern",tag:{display:{Name:"\"\\u00A7rモード設定\""}}}}] ThrowPattern 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r制限時間設定\""}}}}] ThrowClock 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rゲームキャンセル\""}}}}] ThrowBarrier 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rゲームスタート\""}}}}] ThrowWireHook 1
-execute if score Time NUM matches 8.. as @e[type=minecraft:item,scores={ThrowArmorStand=1}] run function mwj:system/setting/choose_mode/choose_mode_drop
+execute if score Time PrevAddedRole matches 1.. as @e[type=minecraft:item,scores={ThrowArmorStand=1}] run function mwj:system/setting/choose_mode/choose_mode_drop
+execute as @e[type=minecraft:item,scores={ThrowPattern=1}] run function mwj:system/setting/choose_mode/choose_mode_drop
 execute as @e[type=minecraft:item,scores={ThrowClock=1}] run function mwj:system/setting/choose_mode/choose_mode_drop
 execute as @e[type=minecraft:item,scores={ThrowBarrier=1}] run function mwj:system/setting/choose_mode/choose_mode_drop
 execute as @e[type=minecraft:item,scores={ThrowWireHook=1}] run function mwj:system/setting/choose_mode/choose_mode_drop
 
 ## Detect Selected Item
-execute if score Time NUM matches 8.. run scoreboard players set @a[tag=host] SelectedAStand 1
-scoreboard players set @a[tag=host] SelectedClock 1
-scoreboard players set @a[tag=host] SelectedBarrier 1
-scoreboard players set @a[tag=host] SelectedWire 1
+execute if score Time PrevAddedRole matches 1.. run scoreboard players set @p[tag=host] SelectedAStand 1
+scoreboard players set @p[tag=host] SelectedPattern 1
+scoreboard players set @p[tag=host] SelectedClock 1
+scoreboard players set @p[tag=host] SelectedBarrier 1
+scoreboard players set @p[tag=host] SelectedWire 1
 
 ## Declare Inventory
-execute if score Time NUM matches 8.. run scoreboard players set @a[tag=host,nbt={Inventory:[{Slot:21b,id:"minecraft:armor_stand",tag:{display:{Name:"\"\\u00A7r追加役職設定\""}}}]}] SelectedAStand 0
-scoreboard players set @a[tag=host,nbt={Inventory:[{Slot:23b,id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r制限時間設定\""}}}]}] SelectedClock 0
-scoreboard players set @a[tag=host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rゲームキャンセル\""}}}]}] SelectedBarrier 0
-scoreboard players set @a[tag=host,nbt={Inventory:[{Slot:34b,id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rゲームスタート\""}}}]}] SelectedWire 0
+execute if score Time PrevAddedRole matches 1.. run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:21b,id:"minecraft:armor_stand",tag:{display:{Name:"\"\\u00A7r追加役職設定\""}}}]}] SelectedAStand 0
+scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:22b,id:"minecraft:flower_banner_pattern",tag:{display:{Name:"\"\\u00A7rモード設定\""}}}]}] SelectedPattern 0
+scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:23b,id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r制限時間設定\""}}}]}] SelectedClock 0
+scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rゲームキャンセル\""}}}]}] SelectedBarrier 0
+scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:34b,id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rゲームスタート\""}}}]}] SelectedWire 0
 
 ## Function Each Mode
-execute if score Time NUM matches 8.. as @a[tag=host] if score @s SelectedAStand matches 1 run function mwj:system/setting/decision_role_addition/change_to_role_addition
-execute as @a[tag=host] if score @s SelectedClock matches 1 run function mwj:system/setting/decision_time_limit/change_to_time_limit
-execute as @a[tag=host] if score @s SelectedBarrier matches 1 run function mwj:stop
-execute as @a[tag=host] if score @s SelectedWire matches 1 run function mwj:system/setting/exit_setting
+execute if score Time PrevAddedRole matches 1.. if score @p[tag=host] SelectedAStand matches 1 run function mwj:system/setting/decision_role_addition/change_to_role_addition
+execute if score @p[tag=host] SelectedPattern matches 1 run function mwj:system/setting/decision_game_mode/change_to_game_mode
+execute if score @p[tag=host] SelectedClock matches 1 run function mwj:system/setting/decision_time_limit/change_to_time_limit
+execute if score @p[tag=host] SelectedBarrier matches 1 run function mwj:stop
+execute if score @p[tag=host] SelectedWire matches 1 run function mwj:system/setting/exit_setting/exit_setting

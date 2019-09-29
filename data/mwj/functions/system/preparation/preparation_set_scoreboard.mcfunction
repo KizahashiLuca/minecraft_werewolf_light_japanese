@@ -26,16 +26,6 @@ scoreboard objectives add KILLER_FLAG dummy
 scoreboard objectives add KILLLOG_NUM dummy
 scoreboard objectives add KILLLOG_FOX dummy
 scoreboard objectives add KILLLOG_CAT dummy
-## Add Variables for Role Number
-scoreboard objectives add WOLF dummy
-scoreboard objectives add MADMAN dummy
-scoreboard objectives add VILLAGER dummy
-scoreboard objectives add SEER dummy
-scoreboard objectives add MEDIUM dummy
-scoreboard objectives add CAT dummy
-scoreboard objectives add MASON dummy
-scoreboard objectives add DETECTIVE dummy
-scoreboard objectives add FOX dummy
 ## Add Variables for Mason Number
 scoreboard objectives add MASON_PAIR dummy
 scoreboard objectives add MASON_PAIR_NUM dummy
@@ -68,17 +58,6 @@ scoreboard players set @a KILLLOG_CAT 0
 scoreboard players set Time KILLER_NUM 0
 scoreboard players set Time VICTIM_NUM 0
 scoreboard players set Time KILLLOG_NUM 1
-## Set Variables for ROLE
-scoreboard players set Time WOLF 0
-scoreboard players set Time MADMAN 0
-scoreboard players set Time VILLAGER 0
-scoreboard players set Time SEER 0
-scoreboard players set Time MEDIUM 0
-scoreboard players set Time CAT 0
-scoreboard players set Time MASON 0
-scoreboard players set Time DETECTIVE 0
-scoreboard players set Time FOX 0
-scoreboard players set Time DENOMINATOR 0
 ## Add Variables for Mason Number
 scoreboard players set @a MASON_PAIR 0
 scoreboard players set Time MASON_PAIR 1

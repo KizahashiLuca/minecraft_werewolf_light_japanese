@@ -7,20 +7,22 @@
 ###############################
 
 ## Clear Inventory
-clear @a[tag=host]
+clear @p[tag=host]
 
 ## Set Inventory
 function mwj:system/setting/choose_mode/choose_mode_inventory
 
 ## Set Scoreboard
-scoreboard players set @a[tag=host] SelectedAStand 0
-scoreboard players set @a[tag=host] SelectedClock 0
-scoreboard players set @a[tag=host] SelectedBarrier 0
-scoreboard players set @a[tag=host] SelectedWire 0
-scoreboard players set @a[tag=host] ThrowArmorStand 0
-scoreboard players set @a[tag=host] ThrowClock 0
-scoreboard players set @a[tag=host] ThrowBarrier 0
-scoreboard players set @a[tag=host] ThrowWireHook 0
+scoreboard players set @p[tag=host] SelectedAStand 0
+scoreboard players set @p[tag=host] SelectedPattern 0
+scoreboard players set @p[tag=host] SelectedClock 0
+scoreboard players set @p[tag=host] SelectedBarrier 0
+scoreboard players set @p[tag=host] SelectedWire 0
+scoreboard players set @p[tag=host] ThrowArmorStand 0
+scoreboard players set @p[tag=host] ThrowPattern 0
+scoreboard players set @p[tag=host] ThrowClock 0
+scoreboard players set @p[tag=host] ThrowBarrier 0
+scoreboard players set @p[tag=host] ThrowWireHook 0
 
 ## Change Mode
 scoreboard players set Time GAME 90

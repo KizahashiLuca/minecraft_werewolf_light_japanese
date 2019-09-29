@@ -16,7 +16,7 @@ scoreboard players set Time NUM 0
 execute as @a[gamemode=!spectator] run scoreboard players add Time NUM 1
 
 ## Stop the game
-execute unless score Time NUM matches 3.. run function mwj:system/finish/break_game
+execute if score Time NUM matches ..2 run function mwj:system/finish/break_game
 
 ## Start Setting
 execute if score Time NUM matches 3.. run function mwj:system/setting/initial_setting/set_initial_main

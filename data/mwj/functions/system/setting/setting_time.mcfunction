@@ -17,4 +17,4 @@ execute if score Time TICK matches 0 if score Time SECOND matches 0..60 run titl
 execute if score Time TICK matches 0 if score Time SECOND matches 0..60 run title @a subtitle [{"score":{"name":"Time","objective":"SECOND"},"color":"white","bold":true}]
 
 ## Preparation
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting

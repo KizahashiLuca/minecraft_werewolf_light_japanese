@@ -40,17 +40,4 @@ scoreboard players operation Time VILLAGER -= Time WOLF
 scoreboard players operation Time VILLAGER -= Time MADMAN
 scoreboard players operation Time VILLAGER -= Time SEER
 scoreboard players operation Time VILLAGER -= Time MEDIUM
-
-## Add Special Roles
-scoreboard players operation Time VILLAGER -= Time AddedRole
-scoreboard players operation Time VILLAGER -= Time AddedRole
-scoreboard players operation Time FOX += Time AddedFox
-scoreboard players operation Time VILLAGER += Time AddedFox
-scoreboard players operation Time VILLAGER += Time AddedVilla
-scoreboard players operation Time VILLAGER += Time AddedVilla
-scoreboard players operation Time MASON += Time AddedMason
-scoreboard players operation Time MASON += Time AddedMason
-scoreboard players operation Time DETECTIVE += Time AddedDetec
-scoreboard players operation Time VILLAGER += Time AddedDetec
-scoreboard players operation Time CAT += Time AddedCat
-scoreboard players operation Time VILLAGER += Time AddedCat
+execute if score Time VILLAGER matches ..-1 run scoreboard players set Time VILLAGER 0

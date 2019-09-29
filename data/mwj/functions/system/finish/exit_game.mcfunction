@@ -12,6 +12,7 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
 ## Remove Variables for Game
 scoreboard objectives remove GAME
 scoreboard objectives remove NUM
+scoreboard objectives remove PREV_NUM
 scoreboard objectives remove ROLE
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
@@ -22,6 +23,19 @@ scoreboard objectives remove TICK
 scoreboard objectives remove 20
 ## Variables for Info
 scoreboard objectives remove Info
+## Remove Variables for Number of Roles
+scoreboard objectives remove WOLF
+scoreboard objectives remove MADMAN
+scoreboard objectives remove VILLAGER
+scoreboard objectives remove SEER
+scoreboard objectives remove MEDIUM
+scoreboard objectives remove CAT
+scoreboard objectives remove MASON
+scoreboard objectives remove DETECTIVE
+scoreboard objectives remove FOX
+## Remove Variables for Mason Number
+scoreboard objectives remove MASON_PAIR
+scoreboard objectives remove MASON_PAIR_NUM
 ## Remove Variables for Role
 scoreboard objectives remove ROLE_OF_NUM
 scoreboard objectives remove doNotDrop
@@ -64,8 +78,11 @@ scoreboard objectives remove AddedVilla
 scoreboard objectives remove AddedMason
 scoreboard objectives remove AddedDetec
 scoreboard objectives remove AddedCat
+scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Time Limit
 scoreboard objectives remove ChangeLimitTime
+## Remove Variables for Game Rules
+scoreboard objectives remove GameMode
 ## Remove Variables for ROLE
 scoreboard objectives remove DENOMINATOR
 ## Remove Variables for Item
