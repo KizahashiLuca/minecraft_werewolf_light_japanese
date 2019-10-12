@@ -41,7 +41,7 @@ scoreboard players operation @s PAGE_NUMER = @s ROLE_PAGE
 scoreboard players operation @s PAGE_DENOM = Time ROLE_PAGE_NUM
 scoreboard players add @s PAGE_NUMER 1
 scoreboard players add @s PAGE_DENOM 1
-execute if score @s ROLE_PAGE_NUM matches 1.. run tellraw @s ["",{"text":"    ","color":"white"},{"text":"<","color":"green","bold":true},{"text":"  ( ","color":"white"},{"score":{"name":"@s","objective":"PAGE_NUMER"},"color":"white"},{"text":" / ","color":"white"},{"score":{"name":"@s","objective":"PAGE_DENOM"},"color":"white"},{"text":" )  ","color":"white"},{"text":">","clickEvent":{"action":"run_command","value":"/trigger ROLE_R_PAGE set 1"},"color":"green","bold":true}]
+execute if score Time ROLE_PAGE_NUM matches 1.. run tellraw @s ["",{"text":"    ","color":"white"},{"text":"<","color":"green","bold":true},{"text":"  ( ","color":"white"},{"score":{"name":"@s","objective":"PAGE_NUMER"},"color":"white"},{"text":" / ","color":"white"},{"score":{"name":"@s","objective":"PAGE_DENOM"},"color":"white"},{"text":" )  ","color":"white"},{"text":">","clickEvent":{"action":"run_command","value":"/trigger ROLE_R_PAGE set 1"},"color":"green","bold":true}]
 
 ## Detect Page Role
 execute if score @s ROLE_PAGE matches 0 if score @s ROLE_L_PAGE matches 1 run scoreboard players operation @s ROLE_PAGE = Time ROLE_PAGE_NUM

@@ -42,5 +42,5 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
 scoreboard players set Time TICK 0
-scoreboard players set Time SECOND 63
+scoreboard players set Time SECOND 64
 scoreboard players set Time GAME 10

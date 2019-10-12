@@ -114,10 +114,13 @@ advancement revoke @a only mwj:be_killed_by_wolf
 advancement revoke @a only mwj:be_killed_by_cat
 advancement revoke @a only mwj:killed_player
 
-## Remove a Team
-team remove Player
+## teleport to alive players
+execute if entity @p[gamemode=adventure] run tp @a[team=Player] @r[gamemode=adventure]
 
 ## Change Gamerules
-gamemode creative @a
+gamemode adventure @a[team=Player]
 gamerule showDeathMessages true
 gamerule sendCommandFeedback true
+
+## Remove a Team
+team remove Player

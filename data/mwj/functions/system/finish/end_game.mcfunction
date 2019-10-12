@@ -27,11 +27,17 @@ tellraw @a ["",{"text":"----------------------------------","color":"reset"}]
 ## Send a Kill Log
 tellraw @a ["",{"text":"  死亡記録","color":"reset"}] 
 scoreboard players set Time KILLLOG_NUM 1
+scoreboard players set Time DENOMINATOR 5
+scoreboard players operation Time TICK *= Time DENOMINATOR
 execute as @a[team=Player] run function mwj:system/finish/kill_log
-execute if score Time SECOND matches 1000.. run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
-execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"     ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
-execute if score Time SECOND matches 10..99 run tellraw @a ["",{"text":"      ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
-execute if score Time SECOND matches 0..9 run tellraw @a ["",{"text":"       ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if score Time SECOND matches 1000.. run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":".","color":"reset"},{"score":{"name":"Time","objective":"TICK"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"    0","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":".","color":"reset"},{"score":{"name":"Time","objective":"TICK"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if score Time SECOND matches 10..99 run tellraw @a ["",{"text":"    00","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":".","color":"reset"},{"score":{"name":"Time","objective":"TICK"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+execute if score Time SECOND matches 0..9 run tellraw @a ["",{"text":"    000","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":".","color":"reset"},{"score":{"name":"Time","objective":"TICK"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+#execute if score Time SECOND matches 1000.. run tellraw @a ["",{"text":"    ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+#execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"     ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+#execute if score Time SECOND matches 10..99 run tellraw @a ["",{"text":"      ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
+#execute if score Time SECOND matches 0..9 run tellraw @a ["",{"text":"       ","color":"reset"},{"score":{"name":"Time","objective":"SECOND"},"color":"reset"},{"text":" sec.  :  ゲーム終了","color":"reset"}]
 
 ## Quit Game
 function mwj:system/finish/exit_game
