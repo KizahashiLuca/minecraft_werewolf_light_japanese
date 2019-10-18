@@ -2,10 +2,16 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 25 August 2019
-## Version: beta-1.4
+## Date   : 17 September 2019
+## Version: beta-1.5
 ###############################
 
-scoreboard players add Time TIME 1
-scoreboard players operation Time TIME %= Time 20
-execute if score Time TIME matches 0 unless score Time Limit matches 0 run scoreboard players remove Time Limit 1
+## Calculate Time
+scoreboard players remove Time TICK 1
+execute if score Time TICK matches -1 run scoreboard players remove Time SECOND 1
+
+## Store for Sidebar
+execute if score Time TICK matches -1 run scoreboard players operation 残り時間 Info = Time SECOND
+
+## Reset Tick
+execute if score Time TICK matches -1 run scoreboard players set Time TICK 19
