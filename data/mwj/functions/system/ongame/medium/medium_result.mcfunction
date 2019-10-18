@@ -20,7 +20,7 @@ execute if score @s DEATH matches 1..2 if score @s ROLE matches 1 run tellraw @p
 execute if score @s DEATH matches 1..2 if score @s ROLE matches 2 run tellraw @p[scores={ROLE=6,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Victim is Fox
-execute if score @s DEATH matches 1..2 if score @s ROLE matches 3 run tellraw @p[scores={ROLE=6,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"羽衣狐","color":"red","bold":true},{"text":" です","color":"white"}]
+execute if score @s DEATH matches 1..2 if score @s ROLE matches 3 run tellraw @p[scores={ROLE=6,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Victim is White
 execute if score @s DEATH matches 1..2 if score @s ROLE matches 4..10 run tellraw @p[scores={ROLE=6,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]

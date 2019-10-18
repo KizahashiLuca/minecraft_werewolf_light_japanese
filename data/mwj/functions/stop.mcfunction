@@ -7,9 +7,9 @@
 ###############################
 
 ## Quit the game
-tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Aborted!!","color":"red"}]
-tellraw @a ["",{"text":"  ゲームが中断されました。","color":"reset"}]
+execute if score Time GAME matches 0..100 run tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
+execute if score Time GAME matches 0..100 run tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Aborted!!","color":"red"}]
+execute if score Time GAME matches 0..100 run tellraw @a ["",{"text":"  ゲームが中断されました。","color":"reset"}]
 
 ## Quit Display
 execute if score Time GAME matches 0 run function mwj:system/finish/exit_game

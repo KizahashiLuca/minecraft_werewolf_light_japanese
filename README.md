@@ -40,7 +40,7 @@
      - 猫又
    - 潜伏フェーズ追加
    - 制限時間設定フェーズ修正
- - 21 Apr 2019 - [beta-1.2.1 (v1.13推奨)][beta1.2.1]
+ - 21 Apr 2019 - [beta-1.2.1][beta1.2.1]
    - 猫又に関するバグ修正
  - 10 Jun 2019 - [beta-1.2.2][beta1.2.2]
    - v1.14への対応
@@ -51,11 +51,20 @@
      - 共有者
    - 追加役職設定フェーズ追加
    - 内部変数等変更
- - 25 Aug 2019 - [beta-1.4 (v1.14推奨)][beta1.4]
+ - 25 Aug 2019 - [beta-1.4][beta1.4]
    - 死亡記録(キルログ)追加
    - 新役職追加
      - 探偵
    - 預言/霊媒内部処理一部変更
+ - 14 Oct 2019 - [beta-1.5 (推奨)][beta1.5]
+   - 死亡記録(キルログ)修正
+   - 新役職追加
+     - 羽衣狐
+   - インベントリGUI追加
+     - 追加役職
+     - 制限時間
+     - ゲームモード
+     以上、選択機能を移管
 
 ## Discord
 [Discord][5]でご意見ご要望などをお聞きしています。   
@@ -88,4 +97,5 @@
 [beta1.2.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.2.2
 [beta1.3]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.3
 [beta1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.4
+[beta1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5
 [twitter]:https://www.twitter.com/KizahashiLuca

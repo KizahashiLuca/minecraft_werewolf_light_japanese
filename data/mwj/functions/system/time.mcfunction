@@ -8,10 +8,10 @@
 
 ## Calculate Time
 scoreboard players remove Time TICK 1
-execute if score Time TICK matches -1 unless score Time SECOND matches 0 run scoreboard players remove Time SECOND 1
+execute if score Time TICK matches -1 run scoreboard players remove Time SECOND 1
 
 ## Store for Sidebar
-execute if score Time TICK matches -1 unless score Time SECOND matches 0 run scoreboard players operation 残り時間 Info = Time SECOND
+execute if score Time TICK matches -1 run scoreboard players operation 残り時間 Info = Time SECOND
 
 ## Reset Tick
-execute if score Time TICK matches -1 unless score Time SECOND matches 0 run scoreboard players set Time TICK 19
+execute if score Time TICK matches -1 run scoreboard players set Time TICK 19

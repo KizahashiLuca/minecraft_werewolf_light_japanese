@@ -11,7 +11,7 @@ scoreboard objectives add TEMP1 dummy
 scoreboard objectives add TEMP2 dummy
 
 ## Calculate Time Limit
-scoreboard players operation @s TEMP1 = @s TIME
+scoreboard players operation @s TEMP1 = @s SECOND
 scoreboard players operation @s TEMP1 -= Time SECOND
 
 ## Set This Player Flag

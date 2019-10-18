@@ -7,5 +7,5 @@
 ###############################
 
 ## Detect Gamemode
-execute unless score Time GAME matches 1..100 run function mwj:system/setting/initial_setting/set_initial_start
-execute if score Time GAME matches 1..100 run function mwj:system/finish/reject_game
+execute if entity @p[tag=host] run function mwj:system/finish/reject_game
+execute unless entity @p[tag=host] run function mwj:system/setting/initial_setting/set_initial_start

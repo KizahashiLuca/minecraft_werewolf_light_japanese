@@ -7,7 +7,7 @@
 ###############################
 
 ## decide host
-tag @s add host
+tag @p[sort=nearest] add host
 
 ## Add Scoreboard
 scoreboard objectives add NUM dummy

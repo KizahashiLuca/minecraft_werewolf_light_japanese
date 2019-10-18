@@ -118,7 +118,7 @@ advancement revoke @a only mwj:killed_player
 execute if entity @p[gamemode=adventure] run tp @a[team=Player] @r[gamemode=adventure]
 
 ## Change Gamerules
-gamemode adventure @a[team=Player]
+gamemode adventure @a
 gamerule showDeathMessages true
 gamerule sendCommandFeedback true
 
