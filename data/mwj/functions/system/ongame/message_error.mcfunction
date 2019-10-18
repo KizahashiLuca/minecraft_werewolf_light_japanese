@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 25 August 2019
-## Version: beta-1.4
+## Date   : 17 September 2019
+## Version: beta-1.5
 ###############################
 
 ## Error Message
@@ -14,6 +14,4 @@ tellraw @s ["",{"text":"----------------------------------\n","color":"reset"}]
 
 ## Reset Scoreboard
 scoreboard players set @s TORCH 0
-scoreboard players reset @s SEER_OBJ
-scoreboard players reset @s MEDIUM_OBJ
-scoreboard players reset @s DETECTIVE_OBJ
+scoreboard players reset @s ROLE_BUTTON
