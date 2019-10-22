@@ -99,4 +99,5 @@
 [beta1.3]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.3
 [beta1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.4
 [beta1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5
+[beta1.5-mc1.13]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5_MC1.13
 [twitter]:https://www.twitter.com/KizahashiLuca
