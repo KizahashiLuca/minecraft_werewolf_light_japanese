@@ -56,7 +56,7 @@
    - 新役職追加
      - 探偵
    - 預言/霊媒内部処理一部変更
- - 14 Oct 2019 - [beta-1.5 (推奨)][beta1.5]
+ - 14 Oct 2019 - beta-1.5(推奨) - [(v1.14)][beta1.5], [(v1.13)][beta1.5-mc1.13]
    - 死亡記録(キルログ)修正
    - 猫又を村人陣営へ人数反映
    - 新役職追加
@@ -99,4 +99,5 @@
 [beta1.3]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.3
 [beta1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.4
 [beta1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5
+[beta1.5-mc1.13]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5_MC1.13
 [twitter]:https://www.twitter.com/KizahashiLuca
