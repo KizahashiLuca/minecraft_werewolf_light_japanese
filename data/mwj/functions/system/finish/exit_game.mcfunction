@@ -7,7 +7,10 @@
 ###############################
 
 ## Send a Common Message
-tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
+tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+
+## teleport to alive players
+execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DEATH=1..2}] @r[gamemode=adventure]
 
 ## Remove Variables for Game
 scoreboard objectives remove GAME
@@ -81,6 +84,7 @@ scoreboard objectives remove AddedCat
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Time Limit
 scoreboard objectives remove ChangeLimitTime
+scoreboard objectives remove GlowingTime
 ## Remove Variables for Game Rules
 scoreboard objectives remove GameMode
 ## Remove Variables for ROLE
@@ -113,9 +117,6 @@ advancement revoke @a only mwj:be_killed_by_nonwolf
 advancement revoke @a only mwj:be_killed_by_wolf
 advancement revoke @a only mwj:be_killed_by_cat
 advancement revoke @a only mwj:killed_player
-
-## teleport to alive players
-execute if entity @p[gamemode=adventure] run tp @a[team=Player] @r[gamemode=adventure]
 
 ## Change Gamerules
 gamemode adventure @a

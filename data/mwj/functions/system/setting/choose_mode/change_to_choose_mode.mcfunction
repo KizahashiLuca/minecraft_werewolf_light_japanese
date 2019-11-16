@@ -13,16 +13,12 @@ clear @p[tag=host]
 function mwj:system/setting/choose_mode/choose_mode_inventory
 
 ## Set Scoreboard
-scoreboard players set @p[tag=host] SelectedAStand 0
-scoreboard players set @p[tag=host] SelectedPattern 0
-scoreboard players set @p[tag=host] SelectedClock 0
-scoreboard players set @p[tag=host] SelectedBarrier 0
-scoreboard players set @p[tag=host] SelectedWire 0
-scoreboard players set @p[tag=host] ThrowArmorStand 0
-scoreboard players set @p[tag=host] ThrowPattern 0
-scoreboard players set @p[tag=host] ThrowClock 0
-scoreboard players set @p[tag=host] ThrowBarrier 0
-scoreboard players set @p[tag=host] ThrowWireHook 0
+scoreboard players set @p[tag=host] SelectedCancel 0
+scoreboard players set @p[tag=host] SelectedOkay 0
+scoreboard players set @p[tag=host] ChosenTimeLimit 0
+scoreboard players set @p[tag=host] ChosenRoleAdd 0
+scoreboard players set @p[tag=host] ChosenGameMode 0
+scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode
 scoreboard players set Time GAME 90

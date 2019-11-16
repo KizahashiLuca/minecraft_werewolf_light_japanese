@@ -16,13 +16,13 @@ scoreboard objectives remove LimitTime
 scoreboard objectives remove PrevLimitTime
 scoreboard objectives remove PrevGameMode
 ## Remove Variables for GUI
-scoreboard objectives remove SelectedBarrier
-scoreboard objectives remove SelectedMap
-scoreboard objectives remove SelectedWire
-scoreboard objectives remove SelectedStar
-scoreboard objectives remove SelectedAStand
-scoreboard objectives remove SelectedPattern
-scoreboard objectives remove SelectedClock
+scoreboard objectives remove SelectedCancel
+scoreboard objectives remove SelectedReset
+scoreboard objectives remove SelectedOkay
+scoreboard objectives remove SelectedDecide
+scoreboard objectives remove ChosenTimeLimit
+scoreboard objectives remove ChosenRoleAdd
+scoreboard objectives remove ChosenGameMode
 scoreboard objectives remove SelectedFox
 scoreboard objectives remove SelectedVilla
 scoreboard objectives remove SelectedMason
@@ -37,26 +37,7 @@ scoreboard objectives remove SelectedWof
 scoreboard objectives remove SelectedTwo
 scoreboard objectives remove SelectedExt
 ## Remove Variables for Throwing
-scoreboard objectives remove ThrowBarrier
-scoreboard objectives remove ThrowMap
-scoreboard objectives remove ThrowWireHook
-scoreboard objectives remove ThrowNetherStar
-scoreboard objectives remove ThrowArmorStand
-scoreboard objectives remove ThrowPattern
-scoreboard objectives remove ThrowClock
-scoreboard objectives remove ThrowHeadFox
-scoreboard objectives remove ThrowHeadVilla
-scoreboard objectives remove ThrowHeadMason
-scoreboard objectives remove ThrowHeadDetec
-scoreboard objectives remove ThrowHeadCat
-scoreboard objectives remove Throw10mins
-scoreboard objectives remove Throw15mins
-scoreboard objectives remove Throw20mins
-scoreboard objectives remove Throw25mins
-scoreboard objectives remove Throw30mins
-scoreboard objectives remove ThrowWof
-scoreboard objectives remove ThrowTwo
-scoreboard objectives remove ThrowExt
+scoreboard objectives remove ThrowItem
 
 ## Clear Inventory
 clear @a

@@ -7,14 +7,18 @@
 ###############################
 
 ## Change gamerules always
+gamerule maxCommandChainLength 65536
 gamerule commandBlockOutput false
 gamerule doMobSpawning false
 gamerule announceAdvancements false
 
 ## Send Title Message
-tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light beta-1.5","bold":true,"color":"red"}]
-tellraw @a ["",{"text":"  Thank you for Downloading","color":"reset"}]
-tellraw @a ["",{"text":"  当ゲームの必要人数は","color":"reset"},{"text":" 3 ","bold":true,"color":"red"},{"text":"人からです。","color":"reset"}]
-tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"reset"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"をご覧ください。","color":"reset"}]
-tellraw @a ["",{"text":"----------------------------------\n","color":"reset"}]
+tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a ["",{"text":"Minecraft Werewolf Light beta-1.5","color":"red","bold":true}]
+tellraw @a ["",{"text":"         Thank you for Downloading","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"\n","color":"white"}]
+tellraw @a ["",{"text":"  当ゲームの必要人数は","color":"white"},{"text":" 3 ","color":"red","bold":true},{"text":"人からです。","color":"white"}]
+tellraw @a ["",{"text":"  以下のコマンドで、ゲームを開始してください。","color":"white"}]
+tellraw @a ["",{"text":"    ","color":"white"},{"text":"/function #mwj:start","color":"light_purple"}]
+tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

@@ -41,18 +41,19 @@ scoreboard objectives add PrevAddedCat dummy
 scoreboard objectives add LimitTime dummy
 scoreboard objectives add PrevLimitTime dummy
 scoreboard objectives add ChangeLimitTime dummy
+scoreboard objectives add GlowingTime dummy
 ## Add Variables for Setting Game Mode
 scoreboard objectives add GameMode dummy
 scoreboard objectives add PrevGameMode dummy
 
 ## Add Variables for GUI Choose Mode
-scoreboard objectives add SelectedBarrier dummy
-scoreboard objectives add SelectedMap dummy
-scoreboard objectives add SelectedWire dummy
-scoreboard objectives add SelectedStar dummy
-scoreboard objectives add SelectedAStand dummy
-scoreboard objectives add SelectedPattern dummy
-scoreboard objectives add SelectedClock dummy
+scoreboard objectives add SelectedCancel dummy
+scoreboard objectives add SelectedReset dummy
+scoreboard objectives add SelectedOkay dummy
+scoreboard objectives add SelectedDecide dummy
+scoreboard objectives add ChosenTimeLimit dummy
+scoreboard objectives add ChosenRoleAdd dummy
+scoreboard objectives add ChosenGameMode dummy
 ## Add Variables for GUI Added Role
 scoreboard objectives add SelectedFox dummy
 scoreboard objectives add SelectedVilla dummy
@@ -69,31 +70,8 @@ scoreboard objectives add Selected30mins dummy
 scoreboard objectives add SelectedWof dummy
 scoreboard objectives add SelectedTwo dummy
 scoreboard objectives add SelectedExt dummy
-
-## Add Variables for Throwing Choose Mode
-scoreboard objectives add ThrowBarrier dummy
-scoreboard objectives add ThrowMap dummy
-scoreboard objectives add ThrowWireHook dummy
-scoreboard objectives add ThrowNetherStar dummy
-scoreboard objectives add ThrowArmorStand dummy
-scoreboard objectives add ThrowPattern dummy
-scoreboard objectives add ThrowClock dummy
-## Add Variables for Throwing Added Role
-scoreboard objectives add ThrowHeadFox dummy
-scoreboard objectives add ThrowHeadVilla dummy
-scoreboard objectives add ThrowHeadMason dummy
-scoreboard objectives add ThrowHeadDetec dummy
-scoreboard objectives add ThrowHeadCat dummy
-## Add Variables for Throwing Time Limit
-scoreboard objectives add Throw10mins dummy
-scoreboard objectives add Throw15mins dummy
-scoreboard objectives add Throw20mins dummy
-scoreboard objectives add Throw25mins dummy
-scoreboard objectives add Throw30mins dummy
-## Add Variables for Throwing Game Mode
-scoreboard objectives add ThrowWof dummy
-scoreboard objectives add ThrowTwo dummy
-scoreboard objectives add ThrowExt dummy
+## Add Variables for Throwing Item
+scoreboard objectives add ThrowItem dummy
 
 ## Set Variables for Timer
 scoreboard players operation Time PREV_NUM = Time NUM
@@ -126,6 +104,7 @@ scoreboard players set Time PrevAddedCat 0
 scoreboard players set Time LimitTime 2
 scoreboard players set Time PrevLimitTime 2
 scoreboard players set Time ChangeLimitTime 5
+scoreboard players set Time GlowingTime 30
 scoreboard players set Time DENOMINATOR 0
 ## Set Variables for Setting Game Mode
 scoreboard players set Time GameMode 2

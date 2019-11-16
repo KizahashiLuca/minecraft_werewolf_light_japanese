@@ -12,9 +12,8 @@ title @a title ["",{"text":"FOX","color":"dark_purple","bold":true}]
 title @a subtitle ["",{"text":"WIN","color":"dark_purple","bold":true}]
 
 ## Display Winner
-tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Finished!!","color":"green"}]
-tellraw @a ["",{"text":"  勝者は ","color":"reset"},{"text":"羽衣狐","bold":true,"color":"dark_purple"},{"text":" です！","color":"reset"}]
+function mwj:system/finish/finish_game_title
+tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"羽衣狐","bold":true,"color":"dark_purple"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode
 scoreboard players set Time GAME 0

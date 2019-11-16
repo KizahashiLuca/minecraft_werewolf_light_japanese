@@ -18,19 +18,11 @@ scoreboard players set @p[tag=host] SelectedVilla 0
 scoreboard players set @p[tag=host] SelectedMason 0
 scoreboard players set @p[tag=host] SelectedDetec 0
 scoreboard players set @p[tag=host] SelectedCat 0
-scoreboard players set @p[tag=host] SelectedBarrier 0
-scoreboard players set @p[tag=host] SelectedMap 0
-scoreboard players set @p[tag=host] SelectedWire 0
-scoreboard players set @p[tag=host] SelectedStar 0
-scoreboard players set @p[tag=host] ThrowHeadFox 0
-scoreboard players set @p[tag=host] ThrowHeadVilla 0
-scoreboard players set @p[tag=host] ThrowHeadMason 0
-scoreboard players set @p[tag=host] ThrowHeadDetec 0
-scoreboard players set @p[tag=host] ThrowHeadCat 0
-scoreboard players set @p[tag=host] ThrowBarrier 0
-scoreboard players set @p[tag=host] ThrowMap 0
-scoreboard players set @p[tag=host] ThrowWireHook 0
-scoreboard players set @p[tag=host] ThrowNetherStar 0
+scoreboard players set @p[tag=host] SelectedCancel 0
+scoreboard players set @p[tag=host] SelectedReset 0
+scoreboard players set @p[tag=host] SelectedOkay 0
+scoreboard players set @p[tag=host] SelectedDecide 0
+scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode
 scoreboard players set Time GAME 91

@@ -13,10 +13,9 @@ execute unless entity @p[scores={ROLE=2,DEATH=0}] run title @a title ["",{"text"
 title @a subtitle ["",{"text":"WIN","color":"red","bold":true}]
 
 ## Display Winners
-tellraw @a ["",{"text":"\n----------------------------------","color":"reset"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light","bold":true,"color":"red"},{"text":" ","color":"reset"},{"text":"Finished!!","color":"green"}]
-execute if entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  勝者は ","color":"reset"},{"text":"人狼＆狂人","bold":true,"color":"red"},{"text":" です！","color":"reset"}]
-execute unless entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  勝者は ","color":"reset"},{"text":"人狼","bold":true,"color":"red"},{"text":" です！","color":"reset"}]
+function mwj:system/finish/finish_game_title
+execute if entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"人狼＆狂人","bold":true,"color":"red"},{"text":" です！","color":"white"}]
+execute unless entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"人狼","bold":true,"color":"red"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode
 scoreboard players set Time GAME 0

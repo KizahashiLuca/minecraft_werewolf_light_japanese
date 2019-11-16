@@ -7,10 +7,10 @@
 ###############################
 
 ## Error Message
-tellraw @s ["",{"text":"\n----------------------------------","color":"reset"}]
-tellraw @s ["",{"text":"  エラー","color":"reset"}]
-tellraw @s ["",{"text":"    あなたの役職は既に使用できません","color":"reset"}]
-tellraw @s ["",{"text":"----------------------------------\n","color":"reset"}]
+tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @s ["",{"text":"  エラー","color":"white"}]
+tellraw @s ["",{"text":"    あなたの役職は既に使用できません","color":"white"}]
+tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
 scoreboard players set @s TORCH 0
