@@ -10,22 +10,15 @@
 function mwj:system/setting/setting_time
 
 ## Detect Dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r10分\""}}}}] Throw10mins 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r15分\""}}}}] Throw15mins 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r20分\""}}}}] Throw20mins 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r25分\""}}}}] Throw25mins 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r30分\""}}}}] Throw30mins 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}}] ThrowBarrier 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}}] ThrowWireHook 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}}] ThrowNetherStar 1
-execute as @e[type=minecraft:item,scores={Throw10mins=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={Throw15mins=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={Throw20mins=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={Throw25mins=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={Throw30mins=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={ThrowBarrier=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={ThrowWireHook=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
-execute as @e[type=minecraft:item,scores={ThrowNetherStar=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r10分\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r15分\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r20分\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r25分\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r30分\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}}] ThrowItem 1
+execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/decision_time_limit/time_limit_drop
 
 ## Detect Selected Item
 scoreboard players set @p[tag=host] Selected10mins 1

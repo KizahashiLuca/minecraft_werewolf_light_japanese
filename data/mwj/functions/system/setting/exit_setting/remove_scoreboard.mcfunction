@@ -37,26 +37,7 @@ scoreboard objectives remove SelectedWof
 scoreboard objectives remove SelectedTwo
 scoreboard objectives remove SelectedExt
 ## Remove Variables for Throwing
-scoreboard objectives remove ThrowBarrier
-scoreboard objectives remove ThrowMap
-scoreboard objectives remove ThrowWireHook
-scoreboard objectives remove ThrowNetherStar
-scoreboard objectives remove ThrowArmorStand
-scoreboard objectives remove ThrowPattern
-scoreboard objectives remove ThrowClock
-scoreboard objectives remove ThrowHeadFox
-scoreboard objectives remove ThrowHeadVilla
-scoreboard objectives remove ThrowHeadMason
-scoreboard objectives remove ThrowHeadDetec
-scoreboard objectives remove ThrowHeadCat
-scoreboard objectives remove Throw10mins
-scoreboard objectives remove Throw15mins
-scoreboard objectives remove Throw20mins
-scoreboard objectives remove Throw25mins
-scoreboard objectives remove Throw30mins
-scoreboard objectives remove ThrowWof
-scoreboard objectives remove ThrowTwo
-scoreboard objectives remove ThrowExt
+scoreboard objectives remove ThrowItem
 
 ## Clear Inventory
 clear @a

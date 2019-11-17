@@ -19,12 +19,7 @@ scoreboard players set @p[tag=host] SelectedExt 0
 scoreboard players set @p[tag=host] SelectedBarrier 0
 scoreboard players set @p[tag=host] SelectedWire 0
 scoreboard players set @p[tag=host] SelectedStar 0
-scoreboard players set @p[tag=host] ThrowWof 0
-scoreboard players set @p[tag=host] ThrowTwo 0
-scoreboard players set @p[tag=host] ThrowExt 0
-scoreboard players set @p[tag=host] ThrowBarrier 0
-scoreboard players set @p[tag=host] ThrowWireHook 0
-scoreboard players set @p[tag=host] ThrowNetherStar 0
+scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode
 scoreboard players set Time GAME 93
