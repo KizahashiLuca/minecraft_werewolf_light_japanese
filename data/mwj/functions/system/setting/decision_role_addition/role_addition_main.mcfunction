@@ -10,24 +10,16 @@
 function mwj:system/setting/setting_time
 
 ## Detect Dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r羽衣狐の追加\""}}}}] ThrowHeadFox 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r特殊役職無し\""}}}}] ThrowHeadVilla 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r共有者の追加\""}}}}] ThrowHeadMason 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r探偵の追加\""}}}}] ThrowHeadDetec 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r猫又の追加\""}}}}] ThrowHeadCat 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}}] ThrowBarrier 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7rリセット\""}}}}] ThrowMap 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}}] ThrowWireHook 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}}] ThrowNetherStar 1
-execute as @e[type=minecraft:item,scores={ThrowHeadFox=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowHeadVilla=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowHeadMason=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowHeadDetec=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowHeadCat=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowBarrier=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowMap=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowWireHook=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
-execute as @e[type=minecraft:item,scores={ThrowNetherStar=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r羽衣狐の追加\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r特殊役職無し\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r共有者の追加\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r探偵の追加\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:player_head",tag:{display:{Name:"\"\\u00A7r猫又の追加\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7rリセット\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}}] ThrowItem 1
+execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/decision_role_addition/role_addition_drop
 
 ## Detect Selected Item
 scoreboard players set @p[tag=host] SelectedFox 1
