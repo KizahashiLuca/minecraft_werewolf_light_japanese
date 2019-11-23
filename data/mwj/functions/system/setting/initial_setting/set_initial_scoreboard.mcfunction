@@ -45,7 +45,10 @@ scoreboard objectives add GlowingTime dummy
 ## Add Variables for Setting Game Mode
 scoreboard objectives add GameMode dummy
 scoreboard objectives add PrevGameMode dummy
-
+## Add Variables for Setting Hiding Time
+scoreboard objectives add HidingTime dummy
+scoreboard objectives add PrevHidingTime dummy
+scoreboard objectives add ChangeHidingTime dummy
 ## Add Variables for GUI Choose Mode
 scoreboard objectives add SelectedCancel dummy
 scoreboard objectives add SelectedReset dummy
@@ -54,6 +57,7 @@ scoreboard objectives add SelectedDecide dummy
 scoreboard objectives add ChosenTimeLimit dummy
 scoreboard objectives add ChosenRoleAdd dummy
 scoreboard objectives add ChosenGameMode dummy
+scoreboard objectives add ChosenHidingTime dummy
 ## Add Variables for GUI Added Role
 scoreboard objectives add SelectedFox dummy
 scoreboard objectives add SelectedVilla dummy
@@ -70,6 +74,12 @@ scoreboard objectives add Selected30mins dummy
 scoreboard objectives add SelectedWof dummy
 scoreboard objectives add SelectedTwo dummy
 scoreboard objectives add SelectedExt dummy
+## Add Variables for GUI Hiding Time
+scoreboard objectives add Selected00secs dummy
+scoreboard objectives add Selected30secs dummy
+scoreboard objectives add Selected60secs dummy
+scoreboard objectives add Selected90secs dummy
+scoreboard objectives add Selected120secs dummy
 ## Add Variables for Throwing Item
 scoreboard objectives add ThrowItem dummy
 
@@ -109,3 +119,7 @@ scoreboard players set Time DENOMINATOR 0
 ## Set Variables for Setting Game Mode
 scoreboard players set Time GameMode 2
 scoreboard players set Time PrevGameMode 2
+## Set Variables for Setting Hiding Time
+scoreboard players set Time HidingTime 2
+scoreboard players set Time PrevHidingTime 2
+scoreboard players set Time ChangeLimitTime 30

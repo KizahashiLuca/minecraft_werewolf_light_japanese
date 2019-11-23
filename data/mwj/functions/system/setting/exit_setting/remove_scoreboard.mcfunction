@@ -13,8 +13,10 @@ scoreboard objectives remove PrevAddedMason
 scoreboard objectives remove PrevAddedDetec
 scoreboard objectives remove PrevAddedCat
 scoreboard objectives remove LimitTime
+scoreboard objectives remove HidingTime
 scoreboard objectives remove PrevLimitTime
 scoreboard objectives remove PrevGameMode
+scoreboard objectives remove PrevHidingTime
 ## Remove Variables for GUI
 scoreboard objectives remove SelectedCancel
 scoreboard objectives remove SelectedReset
@@ -23,6 +25,7 @@ scoreboard objectives remove SelectedDecide
 scoreboard objectives remove ChosenTimeLimit
 scoreboard objectives remove ChosenRoleAdd
 scoreboard objectives remove ChosenGameMode
+scoreboard objectives remove ChosenHidingTime
 scoreboard objectives remove SelectedFox
 scoreboard objectives remove SelectedVilla
 scoreboard objectives remove SelectedMason
@@ -36,6 +39,11 @@ scoreboard objectives remove Selected30mins
 scoreboard objectives remove SelectedWof
 scoreboard objectives remove SelectedTwo
 scoreboard objectives remove SelectedExt
+scoreboard objectives remove Selected00secs
+scoreboard objectives remove Selected30secs
+scoreboard objectives remove Selected60secs
+scoreboard objectives remove Selected90secs
+scoreboard objectives remove Selected120secs
 ## Remove Variables for Throwing
 scoreboard objectives remove ThrowItem
 

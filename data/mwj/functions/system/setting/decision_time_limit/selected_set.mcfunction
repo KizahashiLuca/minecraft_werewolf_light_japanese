@@ -10,7 +10,7 @@
 scoreboard players set Time ChangeLimitTime 5
 scoreboard players operation Time ChangeLimitTime *= Time LimitTime
 
-## Send a Message Added Role to All Players
+## Send a Message Time Limit to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  制限時間が、 ","color":"white"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

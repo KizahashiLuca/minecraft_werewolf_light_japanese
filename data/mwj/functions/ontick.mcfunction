@@ -10,6 +10,7 @@
 function mwj:system/en_route
 
 ## Run every tick
+execute if score Time GAME matches 94 run function mwj:system/setting/decision_hiding_time/hiding_time_main
 execute if score Time GAME matches 93 run function mwj:system/setting/decision_game_mode/game_mode_main
 execute if score Time GAME matches 92 run function mwj:system/setting/decision_time_limit/time_limit_main
 execute if score Time GAME matches 91 run function mwj:system/setting/decision_role_addition/role_addition_main

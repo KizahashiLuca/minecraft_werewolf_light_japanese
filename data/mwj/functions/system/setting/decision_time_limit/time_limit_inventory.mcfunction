@@ -15,7 +15,7 @@ replaceitem entity @p[tag=host] inventory.15 minecraft:paper{display:{Name:"\"\\
 replaceitem entity @p[tag=host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7rキャンセル\""}} 1
 replaceitem entity @p[tag=host] inventory.25 minecraft:tripwire_hook{display:{Name:"\"\\u00A7rこれで決定\""}} 1
 
-## Set Nether Star above Selected Role
+## Set Nether Star above Time Limit
 execute if score Time LimitTime matches 2 run replaceitem entity @p[tag=host] inventory.2 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\""}} 1
 execute if score Time LimitTime matches 3 run replaceitem entity @p[tag=host] inventory.3 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\""}} 1
 execute if score Time LimitTime matches 4 run replaceitem entity @p[tag=host] inventory.4 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\""}} 1
