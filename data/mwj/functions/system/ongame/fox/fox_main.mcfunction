@@ -24,4 +24,4 @@ execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players reset @s 
 execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players set @s ROLE_OF_NUM 0
 
 ## Detect Death
-execute if score @s DEATH matches 1 run scoreboard players remove Time PURPLE 1
+execute if score @s DEATH matches 1 if score @s ROLE_OF_NUM matches 0 run scoreboard players remove Time PURPLE 1

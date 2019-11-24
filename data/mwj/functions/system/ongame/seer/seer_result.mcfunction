@@ -21,11 +21,11 @@ execute if score @s ROLE matches 3 run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}]
 
 ## Effect Instant Damage of Fox by Seer
 #### Put Tag
-execute if score @s ROLE matches 3 run tag @s add SeeredFox
+execute if score @s ROLE matches 3 if score @s DEATH matches 0 run tag @s add SeeredFox
 #### Store SEER Number
-execute if score @s ROLE matches 3 run scoreboard players operation @s STRAY_BY_FOX = @p[scores={ROLE=5,ROLE_OF_NUM=1}] NUM
+execute if score @s ROLE matches 3 if score @s DEATH matches 0 run scoreboard players operation @s STRAY_BY_FOX = @p[scores={ROLE=5,ROLE_OF_NUM=1}] NUM
 #### Deal Instant Damage to Fox
-execute if score @s ROLE matches 3 run effect give @s minecraft:instant_damage 1 10 true
+execute if score @s ROLE matches 3 if score @s DEATH matches 0 run effect give @s minecraft:instant_damage 1 10 true
 
 ## Send a Message that Suspect is White
 execute if score @s ROLE matches 4..10 run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]

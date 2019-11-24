@@ -8,7 +8,6 @@
 
 ## Detect Wolf Killed
 execute if score @s ROLE_OF_NUM matches 1 run scoreboard players set @s DEATH 1
-execute if score @s ROLE_OF_NUM matches 1 run scoreboard players set @s ROLE_OF_NUM 2
 
 ## Tell Fox by Seer
 scoreboard objectives add TMP dummy
@@ -23,6 +22,10 @@ scoreboard objectives remove TMP
 
 ## Kill log
 execute if score @s DEATH matches 1 run scoreboard players set @s KILLLOG_FOX 1
+
+## Detect Death
+execute if score @s DEATH matches 1 if score @s ROLE_OF_NUM matches 1 run scoreboard players remove Time PURPLE 1
+execute if score @s ROLE_OF_NUM matches 1 run scoreboard players set @s ROLE_OF_NUM 2
 
 ## Remove Tag
 tag @s remove SeeredFox
