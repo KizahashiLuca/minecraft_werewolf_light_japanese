@@ -26,14 +26,22 @@ scoreboard objectives add FOX dummy
 scoreboard objectives add DENOMINATOR dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRole dummy
+scoreboard objectives add AddedWolf dummy
+scoreboard objectives add AddedMadman dummy
 scoreboard objectives add AddedFox dummy
 scoreboard objectives add AddedVilla dummy
+scoreboard objectives add AddedSeer dummy
+scoreboard objectives add AddedMedium dummy
 scoreboard objectives add AddedMason dummy
 scoreboard objectives add AddedDetec dummy
 scoreboard objectives add AddedCat dummy
 scoreboard objectives add PrevAddedRole dummy
+scoreboard objectives add PrevAddedWolf dummy
+scoreboard objectives add PrevAddedMadman dummy
 scoreboard objectives add PrevAddedFox dummy
 scoreboard objectives add PrevAddedVilla dummy
+scoreboard objectives add PrevAddedSeer dummy
+scoreboard objectives add PrevAddedMedium dummy
 scoreboard objectives add PrevAddedMason dummy
 scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedCat dummy
@@ -59,8 +67,12 @@ scoreboard objectives add ChosenRoleAdd dummy
 scoreboard objectives add ChosenGameMode dummy
 scoreboard objectives add ChosenHidingTime dummy
 ## Add Variables for GUI Added Role
+scoreboard objectives add SelectedWolf dummy
+scoreboard objectives add SelectedMadman dummy
 scoreboard objectives add SelectedFox dummy
 scoreboard objectives add SelectedVilla dummy
+scoreboard objectives add SelectedSeer dummy
+scoreboard objectives add SelectedMedium dummy
 scoreboard objectives add SelectedMason dummy
 scoreboard objectives add SelectedDetec dummy
 scoreboard objectives add SelectedCat dummy
@@ -99,14 +111,22 @@ scoreboard players set Time FOX 0
 scoreboard players set Time DENOMINATOR 0
 ## Set Variables for Setting Added Role
 scoreboard players set Time AddedRole 0
+scoreboard players set Time AddedWolf 0
+scoreboard players set Time AddedMadman 0
 scoreboard players set Time AddedFox 0
 scoreboard players set Time AddedVilla 0
+scoreboard players set Time AddedSeer 0
+scoreboard players set Time AddedMedium 0
 scoreboard players set Time AddedMason 0
 scoreboard players set Time AddedDetec 0
 scoreboard players set Time AddedCat 0
 scoreboard players set Time PrevAddedRole 0
+scoreboard players set Time PrevAddedWolf 0
+scoreboard players set Time PrevAddedMadman 0
 scoreboard players set Time PrevAddedFox 0
 scoreboard players set Time PrevAddedVilla 0
+scoreboard players set Time PrevAddedSeer 0
+scoreboard players set Time PrevAddedMedium 0
 scoreboard players set Time PrevAddedMason 0
 scoreboard players set Time PrevAddedDetec 0
 scoreboard players set Time PrevAddedCat 0

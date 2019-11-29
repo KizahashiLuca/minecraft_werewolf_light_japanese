@@ -17,14 +17,25 @@ execute if score Time PrevAddedRole matches 1.. run function mwj:system/preparat
 
 ## Set Added Role Number
 scoreboard players operation Time PrevAddedRole = Time DENOMINATOR
+scoreboard players operation Time VILLAGER -= Time AddedWolf
+scoreboard players operation Time VILLAGER -= Time AddedMadman
 scoreboard players operation Time VILLAGER -= Time AddedFox
 scoreboard players operation Time VILLAGER -= Time AddedFox
+scoreboard players operation Time VILLAGER -= Time AddedVilla
+scoreboard players operation Time VILLAGER -= Time AddedSeer
+scoreboard players operation Time VILLAGER -= Time AddedMedium
 scoreboard players operation Time VILLAGER -= Time AddedMason
 scoreboard players operation Time VILLAGER -= Time AddedMason
 scoreboard players operation Time VILLAGER -= Time AddedDetec
 scoreboard players operation Time VILLAGER -= Time AddedCat
+
+scoreboard players operation Time WOLF += Time AddedWolf
+scoreboard players operation Time MADMAN += Time AddedMadman
 scoreboard players operation Time FOX = Time AddedFox
 scoreboard players operation Time SEER += Time AddedFox
+scoreboard players operation Time VILLAGER += Time AddedVilla
+scoreboard players operation Time SEER += Time AddedSeer
+scoreboard players operation Time MEDIUM += Time AddedMedium
 scoreboard players operation Time MASON = Time AddedMason
 scoreboard players operation Time MASON += Time AddedMason
 scoreboard players operation Time DETECTIVE = Time AddedDetec
