@@ -13,8 +13,12 @@ clear @p[tag=host]
 function mwj:system/setting/decision_role_addition/role_addition_inventory
 
 ## Set Scoreboard
+scoreboard players set @p[tag=host] SelectedWolf 0
+scoreboard players set @p[tag=host] SelectedMadman 0
 scoreboard players set @p[tag=host] SelectedFox 0
 scoreboard players set @p[tag=host] SelectedVilla 0
+scoreboard players set @p[tag=host] SelectedSeer 0
+scoreboard players set @p[tag=host] SelectedMedium 0
 scoreboard players set @p[tag=host] SelectedMason 0
 scoreboard players set @p[tag=host] SelectedDetec 0
 scoreboard players set @p[tag=host] SelectedCat 0

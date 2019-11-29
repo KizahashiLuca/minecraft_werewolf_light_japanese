@@ -7,8 +7,12 @@
 ###############################
 
 ## Remove Variables for Setting
+scoreboard objectives remove PrevAddedWolf
+scoreboard objectives remove PrevAddedMadman
 scoreboard objectives remove PrevAddedFox
 scoreboard objectives remove PrevAddedVilla
+scoreboard objectives remove PrevAddedSeer
+scoreboard objectives remove PrevAddedMedium
 scoreboard objectives remove PrevAddedMason
 scoreboard objectives remove PrevAddedDetec
 scoreboard objectives remove PrevAddedCat
@@ -26,8 +30,12 @@ scoreboard objectives remove ChosenTimeLimit
 scoreboard objectives remove ChosenRoleAdd
 scoreboard objectives remove ChosenGameMode
 scoreboard objectives remove ChosenHidingTime
+scoreboard objectives remove SelectedWolf
+scoreboard objectives remove SelectedMadman
 scoreboard objectives remove SelectedFox
 scoreboard objectives remove SelectedVilla
+scoreboard objectives remove SelectedSeer
+scoreboard objectives remove SelectedMedium
 scoreboard objectives remove SelectedMason
 scoreboard objectives remove SelectedDetec
 scoreboard objectives remove SelectedCat
