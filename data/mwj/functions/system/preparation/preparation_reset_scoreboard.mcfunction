@@ -9,7 +9,7 @@
 ## Add Variables for Timer
 scoreboard players set Time SECOND 60
 scoreboard players set Time TICK 0
-## Add Variables for Role
+## Add Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives add doNotDrop dummy
 scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch
@@ -30,6 +30,9 @@ scoreboard objectives add SPAWN_TIME_TICK dummy
 scoreboard objectives add RESPAWN minecraft.custom:minecraft.time_since_death
 #### Cat
 scoreboard objectives add STRAY_BY_CAT dummy
+## Add Variables for Items
+#### Snowball
+scoreboard objectives add SNOWBALL dummy
 
 ## Set Variables for Role
 #### Set Variables for Redstone Torch
@@ -55,6 +58,9 @@ scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_TICK 0
 scoreboard players set @a[scores={ROLE=3}] STRAY_BY_FOX 0
 #### Cat
 scoreboard players set @a STRAY_BY_CAT 0
+## Add Items
+#### Snowball
+scoreboard players set Time SNOWBALL 0
 
 ## Set the Time Limit
 scoreboard players operation Time SECOND *= Time ChangeLimitTime

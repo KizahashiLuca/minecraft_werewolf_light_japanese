@@ -14,7 +14,6 @@ scoreboard objectives add NUM dummy
 scoreboard players set Time NUM 0
 ## Count Players
 execute as @a[gamemode=!spectator] run scoreboard players add Time NUM 1
-scoreboard players set Time NUM 15
 
 ## Stop the game
 execute if score Time NUM matches ..2 run function mwj:system/finish/break_game

@@ -39,7 +39,8 @@ scoreboard objectives remove FOX
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
-## Remove Variables for Role
+## Remove Variables for Roles
+#### Seer/Medium/Detective
 scoreboard objectives remove ROLE_OF_NUM
 scoreboard objectives remove doNotDrop
 scoreboard objectives remove TORCH
@@ -63,6 +64,9 @@ scoreboard objectives remove STRAY_BY_CAT
 #### Mason
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
+## Remove Variables for Items
+scoreboard objectives remove SNOWBALL
+
 ## Remove Variables for Kill Log
 scoreboard objectives remove DEATH
 scoreboard objectives remove KILLER
@@ -106,6 +110,7 @@ scoreboard players reset 残り時間
 kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:area_effect_cloud]
+kill @e[type=minecraft:snowball]
 effect clear @a
 clear @a
 
@@ -116,6 +121,8 @@ tag @a remove NonWolf
 tag @a remove Cat
 tag @a remove StrayBullet
 tag @a remove SeeredFox
+tag @a remove NoHit
+tag @a remove DetectHit
 
 ## Revoke Advancements
 advancement revoke @a only mwj:be_killed_by_nonwolf

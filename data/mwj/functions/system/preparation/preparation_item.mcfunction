@@ -6,8 +6,8 @@
 ## Version: beta-1.5
 ###############################
 
-## Set DENOMINATOR
-scoreboard players set Time DENOMINATOR 10
+## Set DENOMINATOR (Kind of Items) 
+scoreboard players set Time DENOMINATOR 11
 ## Calculate ones digit
 scoreboard players operation Time ONES_DIGIT = Time NUM
 scoreboard players remove Time ONES_DIGIT 1
