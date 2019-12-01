@@ -134,6 +134,7 @@ advancement revoke @a only mwj:killed_player
 gamemode adventure @a
 gamerule showDeathMessages true
 gamerule sendCommandFeedback true
+gamerule doLimitedCrafting false
 
 ## Remove a Team
 team remove Player

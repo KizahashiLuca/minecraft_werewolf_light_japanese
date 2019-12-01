@@ -13,7 +13,9 @@ gamerule doMobSpawning false
 gamerule doFireTick false
 gamerule showDeathMessages false
 gamerule announceAdvancements false
+gamerule doLimitedCrafting true
 difficulty peaceful
 gamemode adventure @a[gamemode=!spectator]
 effect clear @a[gamemode=!spectator]
+recipe take @a *
 clear @a
