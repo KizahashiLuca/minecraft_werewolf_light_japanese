@@ -19,6 +19,10 @@ execute if score Time SECOND = Time GlowingTime run effect give @a[scores={DEATH
 execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1
 execute as @a[scores={ROLE=4..10}] if score @s DEATH matches 1 run scoreboard players remove Time WHITE 1
 
+## Detect Existing Snowball
+execute as @e[type=minecraft:snowball] run function mwj:system/ongame/snowball/snowball_main
+execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,scores={SNOWBALL=1..}] run function mwj:system/ongame/snowball/snowball_sub
+
 ## Detect Dropping Torch
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch"}}] doNotDrop 1
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
