@@ -13,6 +13,7 @@ execute if score Time SEER matches 1.. run tellraw @a ["",{"text":"    ","color"
 execute if score Time MEDIUM matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=6}]","color":"white"}]
 execute if score Time MASON matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=7}]","color":"white"}]
 execute if score Time DETECTIVE matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=8}]","color":"white"}]
+execute if score Time THIEF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"怪    盗","color":"blue"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=9}]","color":"white"}]
 execute if score Time CAT matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=10}]","color":"white"}]
 execute if score Time WOLF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"人    狼","color":"red"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=1}]","color":"white"}]
 execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂    人","color":"light_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=2}]","color":"white"}]

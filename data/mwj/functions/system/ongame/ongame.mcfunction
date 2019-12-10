@@ -44,6 +44,9 @@ execute as @a[scores={ROLE=6}] run function mwj:system/ongame/medium/medium_main
 ## Detective System
 execute as @a[scores={ROLE=8}] run function mwj:system/ongame/detective/detective_main
 
+## Thief System
+execute as @a[scores={ROLE=9}] run function mwj:system/ongame/thief/thief_main
+
 ## Cat System
 execute as @a[scores={ROLE=10}] run function mwj:system/ongame/cat/cat_main
 

@@ -27,6 +27,7 @@ scoreboard players operation Time VILLAGER -= Time AddedMedium
 scoreboard players operation Time VILLAGER -= Time AddedMason
 scoreboard players operation Time VILLAGER -= Time AddedMason
 scoreboard players operation Time VILLAGER -= Time AddedDetec
+scoreboard players operation Time VILLAGER -= Time AddedThief
 scoreboard players operation Time VILLAGER -= Time AddedCat
 
 scoreboard players operation Time WOLF += Time AddedWolf
@@ -39,4 +40,5 @@ scoreboard players operation Time MEDIUM += Time AddedMedium
 scoreboard players operation Time MASON = Time AddedMason
 scoreboard players operation Time MASON += Time AddedMason
 scoreboard players operation Time DETECTIVE = Time AddedDetec
+scoreboard players operation Time THIEF = Time AddedThief
 scoreboard players operation Time CAT = Time AddedCat

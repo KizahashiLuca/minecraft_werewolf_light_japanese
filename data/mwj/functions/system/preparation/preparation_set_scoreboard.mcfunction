@@ -8,6 +8,7 @@
 
 ## Add Variables for Game
 scoreboard objectives add ROLE dummy
+scoreboard objectives add PREV_ROLE dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
 scoreboard objectives add PURPLE dummy
@@ -65,3 +66,4 @@ scoreboard players set Time MASON_PAIR_NUM 0
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add Time NUM 1
+#scoreboard players set Time NUM 20

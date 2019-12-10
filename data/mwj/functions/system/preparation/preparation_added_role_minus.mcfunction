@@ -23,6 +23,8 @@ execute if score Time PrevAddedRole matches 1.. if score Time AddedMason matches
 scoreboard players remove Time PrevAddedRole 1
 execute if score Time PrevAddedRole matches 1.. if score Time AddedDetec matches 1.. run scoreboard players remove Time AddedDetec 1
 scoreboard players remove Time PrevAddedRole 1
+execute if score Time PrevAddedRole matches 1.. if score Time AddedThief matches 1.. run scoreboard players remove Time AddedThief 1
+scoreboard players remove Time PrevAddedRole 1
 execute if score Time PrevAddedRole matches 1.. if score Time AddedCat matches 1.. run scoreboard players remove Time AddedCat 1
 scoreboard players remove Time PrevAddedRole 1
 

@@ -28,6 +28,8 @@ scoreboard players operation Time NUMBER_ROLE = Time MASON
 function mwj:system/preparation/decision_role/mason_decision
 scoreboard players operation Time NUMBER_ROLE = Time DETECTIVE
 function mwj:system/preparation/decision_role/detective_decision
+scoreboard players operation Time NUMBER_ROLE = Time THIEF
+function mwj:system/preparation/decision_role/thief_decision
 scoreboard players operation Time NUMBER_ROLE = Time CAT
 function mwj:system/preparation/decision_role/cat_decision
 

@@ -6,4 +6,11 @@
 ## Version: beta-1.5
 ###############################
 
-give @s minecraft:redstone_torch{display:{Name:"\"杖\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+## Set Scoreboard
+scoreboard players set @s ROLE_PAGE 0
+
+## Send Trigger Message
+function mwj:system/ongame/seer/seer_message
+
+## Reset Scoreboard
+scoreboard players set @s TORCH 0

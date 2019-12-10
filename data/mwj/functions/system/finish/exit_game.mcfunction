@@ -17,6 +17,7 @@ scoreboard objectives remove GAME
 scoreboard objectives remove NUM
 scoreboard objectives remove PREV_NUM
 scoreboard objectives remove ROLE
+scoreboard objectives remove PREV_ROLE
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
 scoreboard objectives remove PURPLE
@@ -35,6 +36,7 @@ scoreboard objectives remove MEDIUM
 scoreboard objectives remove CAT
 scoreboard objectives remove MASON
 scoreboard objectives remove DETECTIVE
+scoreboard objectives remove THIEF
 scoreboard objectives remove FOX
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
@@ -88,6 +90,7 @@ scoreboard objectives remove AddedSeer
 scoreboard objectives remove AddedMedium
 scoreboard objectives remove AddedMason
 scoreboard objectives remove AddedDetec
+scoreboard objectives remove AddedThief
 scoreboard objectives remove AddedCat
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Time Limit

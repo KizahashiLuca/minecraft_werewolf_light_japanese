@@ -15,6 +15,7 @@ scoreboard objectives remove PrevAddedSeer
 scoreboard objectives remove PrevAddedMedium
 scoreboard objectives remove PrevAddedMason
 scoreboard objectives remove PrevAddedDetec
+scoreboard objectives remove PrevAddedThief
 scoreboard objectives remove PrevAddedCat
 scoreboard objectives remove LimitTime
 scoreboard objectives remove HidingTime
@@ -38,6 +39,7 @@ scoreboard objectives remove SelectedSeer
 scoreboard objectives remove SelectedMedium
 scoreboard objectives remove SelectedMason
 scoreboard objectives remove SelectedDetec
+scoreboard objectives remove SelectedThief
 scoreboard objectives remove SelectedCat
 scoreboard objectives remove Selected10mins
 scoreboard objectives remove Selected15mins

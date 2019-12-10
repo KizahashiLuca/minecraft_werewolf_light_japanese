@@ -34,6 +34,7 @@ execute if score Time SEER matches 1.. run tellraw @a ["",{"text":"    ","color"
 execute if score Time MEDIUM matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"MEDIUM"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time MASON matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"MASON"},"color":"white"},{"text":"人 - ","color":"white"},{"score":{"name":"Time","objective":"AddedMason"},"color":"white"},{"text":"組","color":"white"}]
 execute if score Time DETECTIVE matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"DETECTIVE"},"color":"white"},{"text":"人","color":"white"}]
+execute if score Time THIEF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"怪    盗","color":"blue"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"THIEF"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time CAT matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"CAT"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time WOLF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"人    狼","color":"red"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"WOLF"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂    人","color":"light_purple"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"MADMAN"},"color":"white"},{"text":"人","color":"white"}]
@@ -49,6 +50,7 @@ tellraw @a[scores={ROLE=6}] ["",{"text":"\n    あなたは ","color":"white"},{
 tellraw @a[scores={ROLE=7}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"共有者","color":"dark_green"},{"text":" です。","color":"white"}]
 function mwj:system/preparation/decision_role/mason_pair_message_main
 tellraw @a[scores={ROLE=8}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"探偵","color":"dark_aqua"},{"text":" です。","color":"white"}]
+tellraw @a[scores={ROLE=9}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"怪盗","color":"blue"},{"text":" です。","color":"white"}]
 tellraw @a[scores={ROLE=10}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"猫又","color":"gold"},{"text":" です。","color":"white"}]
 tellraw @a[team=!Player] ["",{"text":"\n    あなたは ","color":"white"},{"text":"観戦者","color":"white"},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
