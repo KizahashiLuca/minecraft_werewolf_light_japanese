@@ -28,6 +28,11 @@ scoreboard objectives add STRAY_BY_FOX dummy
 scoreboard objectives add SPAWN_TIME_SEC dummy
 scoreboard objectives add SPAWN_TIME_TICK dummy
 scoreboard objectives add RESPAWN minecraft.custom:minecraft.time_since_death
+#### Thief
+scoreboard objectives add STEALER dummy
+scoreboard objectives add STOLEN dummy
+scoreboard objectives add STEAL_TIME_SEC dummy
+scoreboard objectives add STEAL_TIME_TICK dummy
 #### Cat
 scoreboard objectives add STRAY_BY_CAT dummy
 ## Add Variables for Items
@@ -56,6 +61,11 @@ function mwj:system/preparation/preparation_reset_page_role
 scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_SEC 0
 scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_TICK 0
 scoreboard players set @a[scores={ROLE=3}] STRAY_BY_FOX 0
+#### Thief
+scoreboard players set @a STOLEN 0
+scoreboard players set @a[scores={ROLE=9}] STEALER 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_TIME_SEC 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_TIME_TICK 0
 #### Cat
 scoreboard players set @a STRAY_BY_CAT 0
 ## Add Items

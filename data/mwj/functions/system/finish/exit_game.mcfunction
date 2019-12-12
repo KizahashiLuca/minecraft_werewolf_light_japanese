@@ -61,11 +61,16 @@ scoreboard objectives remove STRAY_BY_FOX
 scoreboard objectives remove SPAWN_TIME_SEC
 scoreboard objectives remove SPAWN_TIME_TICK
 scoreboard objectives remove RESPAWN
-#### Cat
-scoreboard objectives remove STRAY_BY_CAT
 #### Mason
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
+#### Thief
+scoreboard objectives remove STEALER
+scoreboard objectives remove STOLEN
+scoreboard objectives remove STEAL_TIME_SEC
+scoreboard objectives remove STEAL_TIME_TICK
+#### Cat
+scoreboard objectives remove STRAY_BY_CAT
 ## Remove Variables for Items
 scoreboard objectives remove SNOWBALL
 

@@ -10,7 +10,7 @@
 scoreboard players set @s ROLE_PAGE 0
 
 ## Send Trigger Message
-function mwj:system/ongame/seer/seer_message
+function mwj:system/ongame/thief/thief_message
 
 ## Reset Scoreboard
 scoreboard players set @s TORCH 0
