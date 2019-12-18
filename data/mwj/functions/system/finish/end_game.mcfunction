@@ -8,19 +8,26 @@
 
 ## Send a Display of Breakdown of Roles
 tellraw @a ["",{"text":"  役職の内訳は以下のとおりでした。","color":"white"}]
-execute if score Time VILLAGER matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=4}]","color":"white"}]
-execute if score Time SEER matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"預 言 者","color":"aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=5}]","color":"white"}]
-execute if score Time MEDIUM matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=6}]","color":"white"}]
-execute if score Time MASON matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=7}]","color":"white"}]
-execute if score Time DETECTIVE matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=8}]","color":"white"}]
-execute if score Time THIEF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"怪    盗","color":"blue"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=9}]","color":"white"}]
-execute if score Time CAT matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=10}]","color":"white"}]
-execute if score Time WOLF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"人    狼","color":"red"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=1}]","color":"white"}]
-execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂    人","color":"light_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=2}]","color":"white"}]
-execute if score Time FOX matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"羽 衣 狐","color":"dark_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={ROLE=3}]","color":"white"}]
+execute if score Time VILLAGER matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=4}]","color":"white"}]
+execute if score Time SEER matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"預 言 者","color":"aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=5}]","color":"white"}]
+execute if score Time MEDIUM matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=6}]","color":"white"}]
+execute if score Time MASON matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=7}]","color":"white"}]
+execute if score Time DETECTIVE matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=8}]","color":"white"}]
+execute if score Time THIEF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"怪    盗","color":"blue"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=9}]","color":"white"}]
+execute if score Time CAT matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=10}]","color":"white"}]
+execute if score Time WOLF matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"人    狼","color":"red"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=1}]","color":"white"}]
+execute if score Time MADMAN matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂    人","color":"light_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=2}]","color":"white"}]
+execute if score Time FOX matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"羽 衣 狐","color":"dark_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=3}]","color":"white"}]
 
 ## Send a Display of Survivors
 tellraw @a ["",{"text":"\n    ","color":"white"},{"text":"生 存 者","color":"white"},{"text":" ： ","color":"white"},{"selector":"@a[scores={DEATH=0},team=Player]","color":"white"}]
+
+## Send a Thief Log
+scoreboard players set Time DENOMINATOR 5
+scoreboard players set Time STEAL_NUM 1
+execute if score Time THIEF matches 1.. run tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+execute if score Time THIEF matches 1.. run tellraw @a ["",{"text":"  怪盗記録","color":"white"}]
+execute if score Time THIEF matches 1.. run function mwj:system/finish/thief_log
 
 ## Send a Common Message
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]

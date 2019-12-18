@@ -43,13 +43,25 @@ execute if score @s ROLE matches 9 if score @s DEATH matches 0 run tellraw @p[sc
 ## Send a Message that the Stolen is Cat
 execute if score @s ROLE matches 10 if score @s DEATH matches 0 run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"猫又","color":"gold","bold":true},{"text":" になりました","color":"white"}]
 
-## Effect Instant Damage of Fox by Seer
-#### Put Tag
-#execute if score @s ROLE matches 3 if score @s DEATH matches 0 run tag @s add SeeredFox
-#### Store SEER Number
-#execute if score @s ROLE matches 3 if score @s DEATH matches 0 run scoreboard players operation @s STRAY_BY_FOX = @p[scores={ROLE=5,ROLE_OF_NUM=1}] NUM
-#### Deal Instant Damage to Fox
-#execute if score @s ROLE matches 3 if score @s DEATH matches 0 run effect give @s minecraft:instant_damage 1 10 true
+## Put Tag
+tag @p[scores={ROLE=9,ROLE_OF_NUM=1}] remove NonWolf
+execute if score @s DEATH matches 1 run tag @p[scores={ROLE=9,ROLE_OF_NUM=1}] add NonWolf
+execute if score @s ROLE matches 1..2 if score @s DEATH matches 0 run tag @p[scores={ROLE=9,ROLE_OF_NUM=1}] add WereWolf
+execute if score @s ROLE matches 3..9 if score @s DEATH matches 0 run tag @p[scores={ROLE=9,ROLE_OF_NUM=1}] add NonWolf
+execute if score @s ROLE matches 10 if score @s DEATH matches 0 run tag @p[scores={ROLE=9,ROLE_OF_NUM=1}] add Cat
+
+execute if score @s ROLE matches 1..2 if score @s DEATH matches 0 run tag @s remove WereWolf
+execute if score @s ROLE matches 3..9 if score @s DEATH matches 0 run tag @s remove NonWolf
+execute if score @s ROLE matches 10 if score @s DEATH matches 0 run tag @s remove Cat
+execute if score @s DEATH matches 0 run tag @s add NonWolf
+
+## Store Recent Time
+scoreboard players set @s STOLEN 1
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_NUM = Time STEAL_NUM
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TARGET = @s NUM
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TIME_SEC = Time SECOND
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TIME_TICK = Time TICK
+scoreboard players add Time STEAL_NUM 1
 
 ## Send a Common Message
 tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"----------------------------------\n","color":"white"}]
@@ -59,3 +71,8 @@ scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE = @s DONE
 
 ## Reset Thief Trigger
 scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET 0
+
+## Exchange Role
+execute if score @s DEATH matches 0 run scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE = @s ROLE
+execute if score @s DEATH matches 0 run scoreboard players set @s ROLE 4
+execute if score @s DEATH matches 1 run scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE 4

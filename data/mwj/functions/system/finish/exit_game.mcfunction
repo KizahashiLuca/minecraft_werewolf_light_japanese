@@ -67,6 +67,9 @@ scoreboard objectives remove MASON_PAIR_NUM
 #### Thief
 scoreboard objectives remove STEALER
 scoreboard objectives remove STOLEN
+scoreboard objectives remove STEAL_NUM
+scoreboard objectives remove STEAL_TARGET
+scoreboard objectives remove STEAL_FLAG
 scoreboard objectives remove STEAL_TIME_SEC
 scoreboard objectives remove STEAL_TIME_TICK
 #### Cat

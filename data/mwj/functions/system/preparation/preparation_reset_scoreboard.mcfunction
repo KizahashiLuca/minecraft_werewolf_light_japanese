@@ -31,6 +31,8 @@ scoreboard objectives add RESPAWN minecraft.custom:minecraft.time_since_death
 #### Thief
 scoreboard objectives add STEALER dummy
 scoreboard objectives add STOLEN dummy
+scoreboard objectives add STEAL_NUM dummy
+scoreboard objectives add STEAL_FLAG dummy
 scoreboard objectives add STEAL_TIME_SEC dummy
 scoreboard objectives add STEAL_TIME_TICK dummy
 #### Cat
@@ -40,6 +42,7 @@ scoreboard objectives add STRAY_BY_CAT dummy
 scoreboard objectives add SNOWBALL dummy
 
 ## Set Variables for Role
+execute as @a run scoreboard players operation @s PREV_ROLE = @s ROLE
 #### Set Variables for Redstone Torch
 scoreboard players set @a TORCH 0
 scoreboard players set @a DONE 0
@@ -66,6 +69,10 @@ scoreboard players set @a STOLEN 0
 scoreboard players set @a[scores={ROLE=9}] STEALER 0
 scoreboard players set @a[scores={ROLE=9}] STEAL_TIME_SEC 0
 scoreboard players set @a[scores={ROLE=9}] STEAL_TIME_TICK 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_NUM 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_TARGET 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_FLAG 0
+scoreboard players set Time STEAL_NUM 1
 #### Cat
 scoreboard players set @a STRAY_BY_CAT 0
 ## Add Items
