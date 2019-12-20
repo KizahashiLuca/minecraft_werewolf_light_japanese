@@ -67,12 +67,18 @@ scoreboard players add Time STEAL_NUM 1
 tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Thief Role Done
-scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE = @s DONE
+execute if score @s ROLE matches 9 if score @s DEATH matches 0 run scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE 0
+execute unless score @s ROLE matches 9 if score @s DEATH matches 0 run scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE = @s DONE
+execute if score @s DEATH matches 1 run scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE 0
 
 ## Reset Thief Trigger
 scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET 0
 
 ## Exchange Role
-execute if score @s DEATH matches 0 run scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE = @s ROLE
+execute if score @s ROLE matches 9 if score @s DEATH matches 0 run scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE 4
+execute unless score @s ROLE matches 9 if score @s DEATH matches 0 run scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE = @s ROLE
 execute if score @s DEATH matches 0 run scoreboard players set @s ROLE 4
 execute if score @s DEATH matches 1 run scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE 4
+
+## Send a Message
+execute if score @s PREV_ROLE matches 1 if score @s DEATH matches 0 run tellraw @p[scores={ROLE=1,ROLE_OF_NUM=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={ROLE=1}]","color":"red"},{"text":" です。","color":"white"}]

@@ -33,6 +33,7 @@ scoreboard objectives add STEALER dummy
 scoreboard objectives add STOLEN dummy
 scoreboard objectives add STEAL_NUM dummy
 scoreboard objectives add STEAL_FLAG dummy
+scoreboard objectives add STEAL_TARGET dummy
 scoreboard objectives add STEAL_TIME_SEC dummy
 scoreboard objectives add STEAL_TIME_TICK dummy
 #### Cat

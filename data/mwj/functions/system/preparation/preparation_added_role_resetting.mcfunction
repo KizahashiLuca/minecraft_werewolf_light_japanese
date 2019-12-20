@@ -42,3 +42,15 @@ scoreboard players operation Time MASON += Time AddedMason
 scoreboard players operation Time DETECTIVE = Time AddedDetec
 scoreboard players operation Time THIEF = Time AddedThief
 scoreboard players operation Time CAT = Time AddedCat
+
+## temp
+#scoreboard players set Time WOLF 1
+#scoreboard players set Time MADMAN 0
+#scoreboard players set Time FOX 0
+#scoreboard players set Time VILLAGER 1
+#scoreboard players set Time SEER 0
+#scoreboard players set Time MEDIUM 0
+#scoreboard players set Time MASON 0
+#scoreboard players set Time DETECTIVE 0
+#scoreboard players set Time THIEF 2
+#scoreboard players set Time CAT 0
