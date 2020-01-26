@@ -19,3 +19,4 @@ execute unless entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  
 
 ## Change Game Mode
 scoreboard players set Time GAME 0
+scoreboard players set Time WINNER 1

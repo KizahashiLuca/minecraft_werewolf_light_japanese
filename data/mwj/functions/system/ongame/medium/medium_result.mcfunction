@@ -33,3 +33,6 @@ scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] DONE 1
 
 ## Reset Medium Trigger
 scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] ROLE_TARGET 0
+
+## First Achievement
+scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] MEDIUM_ACHIEVE1 1

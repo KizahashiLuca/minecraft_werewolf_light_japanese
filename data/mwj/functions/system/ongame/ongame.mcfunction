@@ -56,5 +56,7 @@ function mwj:system/ongame/kill_log/kill_log_main
 ## Decide Winner
 function mwj:system/finish/decide_winner/decide_winner_main
 
+## Achievements
+execute if score Time GAME matches 0 as @a run function mwj:system/finish/achievements
 ## Exit This Game
 execute if score Time GAME matches 0 run function mwj:system/finish/end_game

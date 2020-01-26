@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "人事を尽くして天命を待つ"
+        },
+        "description": {
+            "text": "霊媒を行う"
+        },
+        "icon": {
+            "item": "minecraft:experience_bottle"
+        },
+        "frame": "task"
+    },
+    "parent": "mwj:achievements/root",
+    "criteria": {
+        "first_medium": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "first_medium"
+        ]
+    ]
+}

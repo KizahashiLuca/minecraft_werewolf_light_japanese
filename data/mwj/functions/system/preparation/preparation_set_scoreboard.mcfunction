@@ -9,6 +9,7 @@
 ## Add Variables for Game
 scoreboard objectives add ROLE dummy
 scoreboard objectives add PREV_ROLE dummy
+scoreboard objectives add WINNER dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
 scoreboard objectives add PURPLE dummy
@@ -33,12 +34,27 @@ scoreboard objectives add MASON_PAIR_NUM dummy
 ## Add Variables for Item
 scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
+scoreboard objectives add TEMP_DIGIT dummy
+## Add Variables for Achievements
+scoreboard objectives add WOLF_ACHIEVE1 dummy
+scoreboard objectives add MADMAN_ACHIEVE1 dummy
+scoreboard objectives add MADMAN_ACHIEVE2 dummy
+scoreboard objectives add FOX_ACHIEVE1 dummy
+scoreboard objectives add VILLA_ACHIEVE1 dummy
+scoreboard objectives add SEER_ACHIEVE1 dummy
+scoreboard objectives add SEER_ACHIEVE2 dummy
+scoreboard objectives add MEDIUM_ACHIEVE1 dummy
+scoreboard objectives add DETEC_ACHIEVE1 dummy
+scoreboard objectives add MASON_ACHIEVE1 dummy
+scoreboard objectives add DETEC_ACHIEVE1 dummy
+scoreboard objectives add CAT_ACHIEVE1 dummy
 
 ## Set Variables for Game
 scoreboard players set @a ROLE 0
 scoreboard players set @a[team=Player] NUM 1
 scoreboard players set Time ROLE 1
 scoreboard players set Time NUM 0
+scoreboard players set Time WINNER 0
 scoreboard players set Time WHITE 0
 scoreboard players set Time BLACK 0
 scoreboard players set Time PURPLE 0
@@ -59,10 +75,23 @@ scoreboard players set @a KILLLOG_CAT 0
 scoreboard players set Time KILLER_NUM 0
 scoreboard players set Time VICTIM_NUM 0
 scoreboard players set Time KILLLOG_NUM 1
-## Add Variables for Mason Number
+## Set Variables for Mason Number
 scoreboard players set @a MASON_PAIR 0
 scoreboard players set Time MASON_PAIR 1
 scoreboard players set Time MASON_PAIR_NUM 0
+## Set Variables for Achievements
+scoreboard players set @a WOLF_ACHIEVE1 0
+scoreboard players set @a MADMAN_ACHIEVE1 0
+scoreboard players set @a MADMAN_ACHIEVE2 0
+scoreboard players set @a FOX_ACHIEVE1 0
+scoreboard players set @a VILLA_ACHIEVE1 0
+scoreboard players set @a SEER_ACHIEVE1 0
+scoreboard players set @a SEER_ACHIEVE2 0
+scoreboard players set @a MEDIUM_ACHIEVE1 0
+scoreboard players set @a DETEC_ACHIEVE1 0
+scoreboard players set @a MASON_ACHIEVE1 0
+scoreboard players set @a DETEC_ACHIEVE1 0
+scoreboard players set @a CAT_ACHIEVE1 0
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add Time NUM 1

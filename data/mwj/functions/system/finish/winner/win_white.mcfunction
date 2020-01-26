@@ -17,3 +17,4 @@ tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"村人陣営","b
 
 ## Change Game Mode
 scoreboard players set Time GAME 0
+scoreboard players set Time WINNER 2

@@ -40,8 +40,8 @@ scoreboard players set Time DENOMINATOR 5
 scoreboard players operation Time TICK *= Time DENOMINATOR
 
 ## Send a Game Begin Log
-execute if score Time SECOND matches 1000.. run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
-execute if score Time SECOND matches 100..999 run tellraw @a ["",{"text":"    0","color":"white"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
+execute if score Time ChangeLimitTime matches 1000.. run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
+execute if score Time ChangeLimitTime matches 100..999 run tellraw @a ["",{"text":"    0","color":"white"},{"score":{"name":"Time","objective":"ChangeLimitTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
 
 ## Send a Kill Log
 function mwj:system/finish/kill_log

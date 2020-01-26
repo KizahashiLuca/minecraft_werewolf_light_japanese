@@ -17,3 +17,4 @@ tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"羽衣狐","bold
 
 ## Change Game Mode
 scoreboard players set Time GAME 0
+scoreboard players set Time WINNER 3

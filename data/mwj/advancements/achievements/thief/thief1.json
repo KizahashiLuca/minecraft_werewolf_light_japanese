@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "名怪盗"
+        },
+        "description": {
+            "text": "人狼陣営を盗み、人狼陣営として生存して勝利する"
+        },
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "frame": "task"
+    },
+    "parent": "mwj:achievements/root",
+    "criteria": {
+        "first_thief": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "first_thief"
+        ]
+    ]
+}

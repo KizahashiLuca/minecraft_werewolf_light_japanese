@@ -38,3 +38,6 @@ scoreboard players set @p[scores={ROLE=5,ROLE_OF_NUM=1}] DONE 1
 
 ## Reset Seer Trigger
 scoreboard players set @p[scores={ROLE=5,ROLE_OF_NUM=1}] ROLE_TARGET 0
+
+## First Achievement
+scoreboard players set @p[scores={ROLE=5,ROLE_OF_NUM=1}] SEER_ACHIEVE1 1

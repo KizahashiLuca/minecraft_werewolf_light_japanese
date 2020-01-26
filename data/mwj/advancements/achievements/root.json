@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Minecraft Werewolf"
+        },
+        "description": {
+            "text": "はじまり"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/block/cut_red_sandstone.png"
+    },
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "root"
+        ]
+    ]
+}

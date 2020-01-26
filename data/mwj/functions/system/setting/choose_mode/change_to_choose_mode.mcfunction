@@ -15,10 +15,11 @@ function mwj:system/setting/choose_mode/choose_mode_inventory
 ## Set Scoreboard
 scoreboard players set @p[tag=host] SelectedCancel 0
 scoreboard players set @p[tag=host] SelectedOkay 0
+scoreboard players set @p[tag=host] ChosenHidingTime 0
 scoreboard players set @p[tag=host] ChosenTimeLimit 0
 scoreboard players set @p[tag=host] ChosenRoleAdd 0
+scoreboard players set @p[tag=host] ChosenItemAdd 0
 scoreboard players set @p[tag=host] ChosenGameMode 0
-scoreboard players set @p[tag=host] ChosenHidingTime 0
 scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode

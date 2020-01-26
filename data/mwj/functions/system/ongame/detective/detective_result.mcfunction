@@ -37,13 +37,7 @@ execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEM
 execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 121..180 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は不明です。","color":"white"}]
 
 ## Send a Message of Victim's role
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..60 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER if score @s ROLE matches 1 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"黒","color":"red","bold":true},{"text":" です。","color":"white"}]
-
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..60 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER if score @s ROLE matches 2 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です。","color":"white"}]
-
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..60 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER if score @s ROLE matches 3 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" です。","color":"white"}]
-
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..60 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER if score @s ROLE matches 4..10 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です。","color":"white"}]
+execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..60 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run function mwj:system/ongame/detective/detective_role_result
 
 ## Send a Common Message
 tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"----------------------------------\n","color":"white"}]

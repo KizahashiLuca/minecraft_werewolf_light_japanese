@@ -48,6 +48,16 @@ scoreboard objectives add PrevAddedMason dummy
 scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedThief dummy
 scoreboard objectives add PrevAddedCat dummy
+scoreboard objectives add SelectedWolf dummy
+scoreboard objectives add SelectedMadman dummy
+scoreboard objectives add SelectedFox dummy
+scoreboard objectives add SelectedVilla dummy
+scoreboard objectives add SelectedSeer dummy
+scoreboard objectives add SelectedMedium dummy
+scoreboard objectives add SelectedMason dummy
+scoreboard objectives add SelectedDetec dummy
+scoreboard objectives add SelectedThief dummy
+scoreboard objectives add SelectedCat dummy
 ## Add Variables for Setting Time Limit
 scoreboard objectives add LimitTime dummy
 scoreboard objectives add PrevLimitTime dummy
@@ -65,21 +75,11 @@ scoreboard objectives add SelectedCancel dummy
 scoreboard objectives add SelectedReset dummy
 scoreboard objectives add SelectedOkay dummy
 scoreboard objectives add SelectedDecide dummy
+scoreboard objectives add ChosenHidingTime dummy
 scoreboard objectives add ChosenTimeLimit dummy
 scoreboard objectives add ChosenRoleAdd dummy
+scoreboard objectives add ChosenItemAdd dummy
 scoreboard objectives add ChosenGameMode dummy
-scoreboard objectives add ChosenHidingTime dummy
-## Add Variables for GUI Added Role
-scoreboard objectives add SelectedWolf dummy
-scoreboard objectives add SelectedMadman dummy
-scoreboard objectives add SelectedFox dummy
-scoreboard objectives add SelectedVilla dummy
-scoreboard objectives add SelectedSeer dummy
-scoreboard objectives add SelectedMedium dummy
-scoreboard objectives add SelectedMason dummy
-scoreboard objectives add SelectedDetec dummy
-scoreboard objectives add SelectedThief dummy
-scoreboard objectives add SelectedCat dummy
 ## Add Variables for GUI Time Limit
 scoreboard objectives add Selected10mins dummy
 scoreboard objectives add Selected15mins dummy
@@ -96,6 +96,43 @@ scoreboard objectives add Selected30secs dummy
 scoreboard objectives add Selected60secs dummy
 scoreboard objectives add Selected90secs dummy
 scoreboard objectives add Selected120secs dummy
+## Add Variables for GUI Item Addition
+scoreboard objectives add TmpAdded dummy
+scoreboard objectives add AddedStick dummy
+scoreboard objectives add AddedTotem dummy
+scoreboard objectives add AddedDeath2 dummy
+scoreboard objectives add AddedPearl dummy
+scoreboard objectives add AddedHoe dummy
+scoreboard objectives add AddedCrossbow dummy
+scoreboard objectives add AddedSnowball dummy
+scoreboard objectives add AddedInvis dummy
+scoreboard objectives add AddedSpeed dummy
+scoreboard objectives add AddedJump dummy
+scoreboard objectives add AddedElytra dummy
+scoreboard objectives add PrevAddedStick dummy
+scoreboard objectives add PrevAddedTotem dummy
+scoreboard objectives add PrevAddedDeath2 dummy
+scoreboard objectives add PrevAddedPearl dummy
+scoreboard objectives add PrevAddedHoe dummy
+scoreboard objectives add PrevAddedCrossbo dummy
+scoreboard objectives add PrevAddedSnowbal dummy
+scoreboard objectives add PrevAddedInvis dummy
+scoreboard objectives add PrevAddedSpeed dummy
+scoreboard objectives add PrevAddedJump dummy
+scoreboard objectives add PrevAddedElytra dummy
+scoreboard objectives add SelectedStick dummy
+scoreboard objectives add SelectedTotem dummy
+scoreboard objectives add SelectedDeath2 dummy
+scoreboard objectives add SelectedPearl dummy
+scoreboard objectives add SelectedHoe dummy
+scoreboard objectives add SelectedCrossbow dummy
+scoreboard objectives add SelectedSnowball dummy
+scoreboard objectives add SelectedInvis dummy
+scoreboard objectives add SelectedSpeed dummy
+scoreboard objectives add SelectedJump dummy
+scoreboard objectives add SelectedElytra dummy
+scoreboard objectives add SelectedPrevPage dummy
+scoreboard objectives add SelectedNextPage dummy
 ## Add Variables for Throwing Item
 scoreboard objectives add ThrowItem dummy
 
@@ -150,3 +187,26 @@ scoreboard players set Time PrevGameMode 2
 scoreboard players set Time HidingTime 2
 scoreboard players set Time PrevHidingTime 2
 scoreboard players set Time ChangeLimitTime 30
+## Set Variables for GUI Item Addition
+scoreboard players set Time AddedStick 1
+scoreboard players set Time AddedTotem 1
+scoreboard players set Time AddedDeath2 1
+scoreboard players set Time AddedPearl 1
+scoreboard players set Time AddedHoe 1
+scoreboard players set Time AddedCrossbow 1
+scoreboard players set Time AddedSnowball 1
+scoreboard players set Time AddedInvis 1
+scoreboard players set Time AddedSpeed 1
+scoreboard players set Time AddedJump 1
+scoreboard players set Time AddedElytra 1
+scoreboard players set Time PrevAddedStick 1
+scoreboard players set Time PrevAddedTotem 1
+scoreboard players set Time PrevAddedDeath2 1
+scoreboard players set Time PrevAddedPearl 1
+scoreboard players set Time PrevAddedHoe 1
+scoreboard players set Time PrevAddedCrossbo 1
+scoreboard players set Time PrevAddedSnowbal 1
+scoreboard players set Time PrevAddedInvis 1
+scoreboard players set Time PrevAddedSpeed 1
+scoreboard players set Time PrevAddedJump 1
+scoreboard players set Time PrevAddedElytra 1

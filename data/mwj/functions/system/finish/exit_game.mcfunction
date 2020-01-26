@@ -18,6 +18,7 @@ scoreboard objectives remove NUM
 scoreboard objectives remove PREV_NUM
 scoreboard objectives remove ROLE
 scoreboard objectives remove PREV_ROLE
+scoreboard objectives remove WINNER
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
 scoreboard objectives remove PURPLE
@@ -76,6 +77,19 @@ scoreboard objectives remove STEAL_TIME_TICK
 scoreboard objectives remove STRAY_BY_CAT
 ## Remove Variables for Items
 scoreboard objectives remove SNOWBALL
+## Remove Variables for Achievements
+scoreboard objectives remove WOLF_ACHIEVE1
+scoreboard objectives remove MADMAN_ACHIEVE1
+scoreboard objectives remove MADMAN_ACHIEVE2
+scoreboard objectives remove FOX_ACHIEVE1
+scoreboard objectives remove VILLA_ACHIEVE1
+scoreboard objectives remove SEER_ACHIEVE1
+scoreboard objectives remove SEER_ACHIEVE2
+scoreboard objectives remove MEDIUM_ACHIEVE1
+scoreboard objectives remove DETEC_ACHIEVE1
+scoreboard objectives remove MASON_ACHIEVE1
+scoreboard objectives remove DETEC_ACHIEVE1
+scoreboard objectives remove CAT_ACHIEVE1
 
 ## Remove Variables for Kill Log
 scoreboard objectives remove DEATH
@@ -101,6 +115,18 @@ scoreboard objectives remove AddedDetec
 scoreboard objectives remove AddedThief
 scoreboard objectives remove AddedCat
 scoreboard objectives remove PrevAddedRole
+## Remove Variables for Item Addition
+scoreboard objectives remove AddedStick
+scoreboard objectives remove AddedTotem
+scoreboard objectives remove AddedDeath2
+scoreboard objectives remove AddedPearl
+scoreboard objectives remove AddedHoe
+scoreboard objectives remove AddedCrossbow
+scoreboard objectives remove AddedSnowball
+scoreboard objectives remove AddedInvis
+scoreboard objectives remove AddedSpeed
+scoreboard objectives remove AddedJump
+scoreboard objectives remove AddedElytra
 ## Remove Variables for Time Limit
 scoreboard objectives remove ChangeLimitTime
 scoreboard objectives remove ChangeHidingTime
@@ -112,6 +138,7 @@ scoreboard objectives remove DENOMINATOR
 ## Remove Variables for Item
 scoreboard objectives remove TENS_DIGIT
 scoreboard objectives remove ONES_DIGIT
+scoreboard objectives remove TEMP_DIGIT
 ## Remove Players
 scoreboard players reset @a
 scoreboard players reset Time
