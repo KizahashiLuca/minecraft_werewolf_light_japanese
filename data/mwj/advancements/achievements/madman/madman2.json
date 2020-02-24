@@ -11,7 +11,7 @@
         },
         "frame": "challenge"
     },
-    "parent": "mwj:achievements/madman/madman1",
+    "parent": "mwj:achievements/madman/root",
     "criteria": {
         "madman1": {
             "trigger": "minecraft:impossible"
