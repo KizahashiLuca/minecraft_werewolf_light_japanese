@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Send a Message Added Role to All Players
@@ -17,6 +17,7 @@ execute if score Time AddedSeer matches 1.. run tellraw @a ["",{"text":"    ","c
 execute if score Time AddedMedium matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedMedium"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time AddedMason matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedMason"},"color":"white"},{"text":"組","color":"white"}]
 execute if score Time AddedDetec matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedDetec"},"color":"white"},{"text":"人","color":"white"}]
+execute if score Time AddedThief matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"怪    盗","color":"blue","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedThief"},"color":"white"},{"text":"人","color":"white"}]
 execute if score Time AddedCat matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold","bold":true},{"text":" : ","color":"white"},{"score":{"name":"Time","objective":"AddedCat"},"color":"white"},{"text":"人","color":"white"}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Detect the Number of Players is not Enough
@@ -27,6 +27,7 @@ scoreboard players operation Time VILLAGER -= Time AddedMedium
 scoreboard players operation Time VILLAGER -= Time AddedMason
 scoreboard players operation Time VILLAGER -= Time AddedMason
 scoreboard players operation Time VILLAGER -= Time AddedDetec
+scoreboard players operation Time VILLAGER -= Time AddedThief
 scoreboard players operation Time VILLAGER -= Time AddedCat
 
 scoreboard players operation Time WOLF += Time AddedWolf
@@ -39,4 +40,17 @@ scoreboard players operation Time MEDIUM += Time AddedMedium
 scoreboard players operation Time MASON = Time AddedMason
 scoreboard players operation Time MASON += Time AddedMason
 scoreboard players operation Time DETECTIVE = Time AddedDetec
+scoreboard players operation Time THIEF = Time AddedThief
 scoreboard players operation Time CAT = Time AddedCat
+
+## temp
+#scoreboard players set Time WOLF 1
+#scoreboard players set Time MADMAN 0
+#scoreboard players set Time FOX 0
+#scoreboard players set Time VILLAGER 1
+#scoreboard players set Time SEER 0
+#scoreboard players set Time MEDIUM 0
+#scoreboard players set Time MASON 0
+#scoreboard players set Time DETECTIVE 0
+#scoreboard players set Time THIEF 2
+#scoreboard players set Time CAT 0

@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Detect Wolf Killed
@@ -17,6 +17,7 @@ scoreboard players set @p[tag=SeeredFox,scores={TMP=1}] TMP 0
 execute if score @s DEATH matches 0..1 run tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
 execute if score @s DEATH matches 0 run tellraw @s ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={ROLE=5,TMP=1}]","color":"white"},{"text":" に占われましたが、突然死しませんでした。","color":"white"}]
 execute if score @s DEATH matches 1 run tellraw @s ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={ROLE=5,TMP=1}]","color":"white"},{"text":" に占われて、突然死しました。","color":"white"}]
+execute if score @s DEATH matches 1 run scoreboard players set @a[scores={ROLE=5,TMP=1}] SEER_ACHIEVE2 1
 execute if score @s DEATH matches 0..1 run tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
 scoreboard objectives remove TMP
 

@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Add Variables for Timer
@@ -28,6 +28,14 @@ scoreboard objectives add STRAY_BY_FOX dummy
 scoreboard objectives add SPAWN_TIME_SEC dummy
 scoreboard objectives add SPAWN_TIME_TICK dummy
 scoreboard objectives add RESPAWN minecraft.custom:minecraft.time_since_death
+#### Thief
+scoreboard objectives add STEALER dummy
+scoreboard objectives add STOLEN dummy
+scoreboard objectives add STEAL_NUM dummy
+scoreboard objectives add STEAL_FLAG dummy
+scoreboard objectives add STEAL_TARGET dummy
+scoreboard objectives add STEAL_TIME_SEC dummy
+scoreboard objectives add STEAL_TIME_TICK dummy
 #### Cat
 scoreboard objectives add STRAY_BY_CAT dummy
 ## Add Variables for Items
@@ -35,6 +43,7 @@ scoreboard objectives add STRAY_BY_CAT dummy
 scoreboard objectives add SNOWBALL dummy
 
 ## Set Variables for Role
+execute as @a run scoreboard players operation @s PREV_ROLE = @s ROLE
 #### Set Variables for Redstone Torch
 scoreboard players set @a TORCH 0
 scoreboard players set @a DONE 0
@@ -56,15 +65,24 @@ function mwj:system/preparation/preparation_reset_page_role
 scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_SEC 0
 scoreboard players set @a[scores={ROLE=3}] SPAWN_TIME_TICK 0
 scoreboard players set @a[scores={ROLE=3}] STRAY_BY_FOX 0
+#### Thief
+scoreboard players set @a STOLEN 0
+scoreboard players set @a[scores={ROLE=9}] STEALER 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_TIME_SEC 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_TIME_TICK 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_NUM 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_TARGET 0
+scoreboard players set @a[scores={ROLE=9}] STEAL_FLAG 0
+scoreboard players set Time STEAL_NUM 1
 #### Cat
 scoreboard players set @a STRAY_BY_CAT 0
 ## Add Items
 #### Snowball
 scoreboard players set Time SNOWBALL 0
 
-## Set the Time Limit
-scoreboard players operation Time SECOND *= Time ChangeLimitTime
-scoreboard players operation Time ChangeLimitTime = Time SECOND
+## Set the Game Time
+scoreboard players operation Time SECOND *= Time ChangeGameTime
+scoreboard players operation Time ChangeGameTime = Time SECOND
 scoreboard players operation 残り時間 Info = Time SECOND
 ## Set Variables for Game
 execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1

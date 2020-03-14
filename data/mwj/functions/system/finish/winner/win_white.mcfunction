@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Title
@@ -17,3 +17,4 @@ tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"村人陣営","b
 
 ## Change Game Mode
 scoreboard players set Time GAME 0
+scoreboard players set Time WINNER 2

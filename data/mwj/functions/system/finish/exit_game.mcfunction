@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Send a Common Message
@@ -17,6 +17,8 @@ scoreboard objectives remove GAME
 scoreboard objectives remove NUM
 scoreboard objectives remove PREV_NUM
 scoreboard objectives remove ROLE
+scoreboard objectives remove PREV_ROLE
+scoreboard objectives remove WINNER
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
 scoreboard objectives remove PURPLE
@@ -35,6 +37,7 @@ scoreboard objectives remove MEDIUM
 scoreboard objectives remove CAT
 scoreboard objectives remove MASON
 scoreboard objectives remove DETECTIVE
+scoreboard objectives remove THIEF
 scoreboard objectives remove FOX
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
@@ -59,13 +62,34 @@ scoreboard objectives remove STRAY_BY_FOX
 scoreboard objectives remove SPAWN_TIME_SEC
 scoreboard objectives remove SPAWN_TIME_TICK
 scoreboard objectives remove RESPAWN
-#### Cat
-scoreboard objectives remove STRAY_BY_CAT
 #### Mason
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
+#### Thief
+scoreboard objectives remove STEALER
+scoreboard objectives remove STOLEN
+scoreboard objectives remove STEAL_NUM
+scoreboard objectives remove STEAL_TARGET
+scoreboard objectives remove STEAL_FLAG
+scoreboard objectives remove STEAL_TIME_SEC
+scoreboard objectives remove STEAL_TIME_TICK
+#### Cat
+scoreboard objectives remove STRAY_BY_CAT
 ## Remove Variables for Items
 scoreboard objectives remove SNOWBALL
+## Remove Variables for Achievements
+scoreboard objectives remove WOLF_ACHIEVE1
+scoreboard objectives remove MADMAN_ACHIEVE1
+scoreboard objectives remove MADMAN_ACHIEVE2
+scoreboard objectives remove FOX_ACHIEVE1
+scoreboard objectives remove VILLA_ACHIEVE1
+scoreboard objectives remove SEER_ACHIEVE1
+scoreboard objectives remove SEER_ACHIEVE2
+scoreboard objectives remove MEDIUM_ACHIEVE1
+scoreboard objectives remove DETEC_ACHIEVE1
+scoreboard objectives remove MASON_ACHIEVE1
+scoreboard objectives remove DETEC_ACHIEVE1
+scoreboard objectives remove CAT_ACHIEVE1
 
 ## Remove Variables for Kill Log
 scoreboard objectives remove DEATH
@@ -88,12 +112,27 @@ scoreboard objectives remove AddedSeer
 scoreboard objectives remove AddedMedium
 scoreboard objectives remove AddedMason
 scoreboard objectives remove AddedDetec
+scoreboard objectives remove AddedThief
 scoreboard objectives remove AddedCat
 scoreboard objectives remove PrevAddedRole
-## Remove Variables for Time Limit
-scoreboard objectives remove ChangeLimitTime
-scoreboard objectives remove ChangeHidingTime
-scoreboard objectives remove GlowingTime
+## Remove Variables for Item Addition
+scoreboard objectives remove AddedStick
+scoreboard objectives remove AddedTotem
+scoreboard objectives remove AddedDeath2
+scoreboard objectives remove AddedPearl
+scoreboard objectives remove AddedHoe
+scoreboard objectives remove AddedCrossbow
+scoreboard objectives remove AddedSnowball
+scoreboard objectives remove AddedInvis
+scoreboard objectives remove AddedSpeed
+scoreboard objectives remove AddedJump
+scoreboard objectives remove AddedElytra
+## Remove Variables for Hide Time
+scoreboard objectives remove ChangeHideTime
+## Remove Variables for Glow Time
+scoreboard objectives remove ChangeGlowTime
+## Remove Variables for Game Time
+scoreboard objectives remove ChangeGameTime
 ## Remove Variables for Game Rules
 scoreboard objectives remove GameMode
 ## Remove Variables for ROLE
@@ -101,6 +140,7 @@ scoreboard objectives remove DENOMINATOR
 ## Remove Variables for Item
 scoreboard objectives remove TENS_DIGIT
 scoreboard objectives remove ONES_DIGIT
+scoreboard objectives remove TEMP_DIGIT
 ## Remove Players
 scoreboard players reset @a
 scoreboard players reset Time

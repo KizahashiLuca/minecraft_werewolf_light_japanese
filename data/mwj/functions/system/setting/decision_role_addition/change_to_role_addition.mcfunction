@@ -1,13 +1,16 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Clear Inventory
 clear @p[tag=host]
+
+## Rest become villager
+scoreboard players operation Time AddedVilla = Time AddedRole
 
 ## Set Inventory
 function mwj:system/setting/decision_role_addition/role_addition_inventory
@@ -21,6 +24,7 @@ scoreboard players set @p[tag=host] SelectedSeer 0
 scoreboard players set @p[tag=host] SelectedMedium 0
 scoreboard players set @p[tag=host] SelectedMason 0
 scoreboard players set @p[tag=host] SelectedDetec 0
+scoreboard players set @p[tag=host] SelectedThief 0
 scoreboard players set @p[tag=host] SelectedCat 0
 scoreboard players set @p[tag=host] SelectedCancel 0
 scoreboard players set @p[tag=host] SelectedReset 0
@@ -29,4 +33,4 @@ scoreboard players set @p[tag=host] SelectedDecide 0
 scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode
-scoreboard players set Time GAME 91
+scoreboard players set Time GAME 98

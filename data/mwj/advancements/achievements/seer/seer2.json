@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "「ごん、お前だったのか…」"
+        },
+        "description": {
+            "text": "預言で羽衣狐を占い、倒す"
+        },
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "frame": "challenge"
+    },
+    "parent": "mwj:achievements/seer/root",
+    "criteria": {
+        "second_seer": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "second_seer"
+        ]
+    ]
+}

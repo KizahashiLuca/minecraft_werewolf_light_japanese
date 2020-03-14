@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Set Team
@@ -21,7 +21,6 @@ function mwj:system/setting/initial_setting/set_initial_added_role_number
 scoreboard players operation Time AddedVilla = Time AddedRole
 scoreboard players operation Time PrevAddedRole = Time AddedRole
 scoreboard players operation Time PrevAddedVilla = Time PrevAddedRole
-scoreboard players set Time AddedRole 0
 
 ## Set Title
 function mwj:system/setting/initial_setting/set_initial_title

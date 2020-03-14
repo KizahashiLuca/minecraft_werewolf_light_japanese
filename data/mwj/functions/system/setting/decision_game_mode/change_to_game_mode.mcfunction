@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Clear Inventory
@@ -22,4 +22,4 @@ scoreboard players set @p[tag=host] SelectedDecide 0
 scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode
-scoreboard players set Time GAME 93
+scoreboard players set Time GAME 94

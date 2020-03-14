@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Timer System
@@ -12,8 +12,8 @@ function mwj:system/time
 ## Cannot Pickup Arrow
 execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
 
-## Glowing
-execute if score Time SECOND = Time GlowingTime run effect give @a[scores={DEATH=0}] minecraft:glowing 1000000 1 true
+## Glow Time
+execute if score Time SECOND <= Time ChangeGlowTime run effect give @a[scores={DEATH=0}] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
 execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1
@@ -44,6 +44,9 @@ execute as @a[scores={ROLE=6}] run function mwj:system/ongame/medium/medium_main
 ## Detective System
 execute as @a[scores={ROLE=8}] run function mwj:system/ongame/detective/detective_main
 
+## Thief System
+execute as @a[scores={ROLE=9}] run function mwj:system/ongame/thief/thief_main
+
 ## Cat System
 execute as @a[scores={ROLE=10}] run function mwj:system/ongame/cat/cat_main
 
@@ -53,5 +56,7 @@ function mwj:system/ongame/kill_log/kill_log_main
 ## Decide Winner
 function mwj:system/finish/decide_winner/decide_winner_main
 
+## Achievements
+execute if score Time GAME matches 0 as @a run function mwj:system/finish/achievements
 ## Exit This Game
 execute if score Time GAME matches 0 run function mwj:system/finish/end_game

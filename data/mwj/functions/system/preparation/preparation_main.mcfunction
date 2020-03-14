@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Timer System
@@ -13,9 +13,9 @@ function mwj:system/time
 function mwj:system/preparation/preparation_entity
 
 ## Title Count Down
-execute if score Time TICK matches 19 if score Time SECOND matches 1.. if score Time SECOND <= Time ChangeHidingTime run title @a times 5 10 5
-execute if score Time TICK matches 19 if score Time SECOND matches 1.. if score Time SECOND <= Time ChangeHidingTime run title @a title [{"text":"潜伏時間","color":"red","bold":true}]
-execute if score Time TICK matches 19 if score Time SECOND matches 1.. if score Time SECOND <= Time ChangeHidingTime run title @a subtitle [{"score":{"name":"Time","objective":"SECOND"},"color":"white","bold":true}]
+execute if score Time TICK matches 19 if score Time SECOND matches 1.. if score Time SECOND <= Time ChangeHideTime run title @a times 5 10 5
+execute if score Time TICK matches 19 if score Time SECOND matches 1.. if score Time SECOND <= Time ChangeHideTime run title @a title [{"text":"潜伏時間","color":"red","bold":true}]
+execute if score Time TICK matches 19 if score Time SECOND matches 1.. if score Time SECOND <= Time ChangeHideTime run title @a subtitle [{"score":{"name":"Time","objective":"SECOND"},"color":"white","bold":true}]
 
 ## Sound System
 execute as @a if score Time TICK matches 19 if score Time SECOND matches 4..10 run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1

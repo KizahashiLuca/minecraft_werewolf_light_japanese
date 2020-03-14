@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Send a Common Message
@@ -33,3 +33,6 @@ scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] DONE 1
 
 ## Reset Medium Trigger
 scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] ROLE_TARGET 0
+
+## First Achievement
+scoreboard players set @p[scores={ROLE=6,ROLE_OF_NUM=1}] MEDIUM_ACHIEVE1 1

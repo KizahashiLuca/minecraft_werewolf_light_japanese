@@ -1,13 +1,13 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Reset choice
-scoreboard players set Time AddedRole 0
+scoreboard players operation Time AddedRole = Time PrevAddedVilla
 scoreboard players operation Time AddedWolf = Time PrevAddedWolf
 scoreboard players operation Time AddedMadman = Time PrevAddedMadman
 scoreboard players operation Time AddedFox = Time PrevAddedFox
@@ -16,6 +16,7 @@ scoreboard players operation Time AddedSeer = Time PrevAddedSeer
 scoreboard players operation Time AddedMedium = Time PrevAddedMedium
 scoreboard players operation Time AddedMason = Time PrevAddedMason
 scoreboard players operation Time AddedDetec = Time PrevAddedDetec
+scoreboard players operation Time AddedThief = Time PrevAddedThief
 scoreboard players operation Time AddedCat = Time PrevAddedCat
 
 ## Set Role

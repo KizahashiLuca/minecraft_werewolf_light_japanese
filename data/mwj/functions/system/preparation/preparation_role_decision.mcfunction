@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## Number the Members
@@ -28,6 +28,8 @@ scoreboard players operation Time NUMBER_ROLE = Time MASON
 function mwj:system/preparation/decision_role/mason_decision
 scoreboard players operation Time NUMBER_ROLE = Time DETECTIVE
 function mwj:system/preparation/decision_role/detective_decision
+scoreboard players operation Time NUMBER_ROLE = Time THIEF
+function mwj:system/preparation/decision_role/thief_decision
 scoreboard players operation Time NUMBER_ROLE = Time CAT
 function mwj:system/preparation/decision_role/cat_decision
 

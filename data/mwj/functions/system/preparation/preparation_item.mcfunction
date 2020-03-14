@@ -1,13 +1,24 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
-## Set DENOMINATOR (Kind of Items) 
-scoreboard players set Time DENOMINATOR 11
+## Set DENOMINATOR (Kind of Items)
+scoreboard players set Time DENOMINATOR 0
+execute if score Time AddedStick matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedTotem matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedDeath2 matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedPearl matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedHoe matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedCrossbow matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedSnowball matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedInvis matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedSpeed matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedJump matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedElytra matches 1 run scoreboard players add Time DENOMINATOR 1
 ## Calculate ones digit
 scoreboard players operation Time ONES_DIGIT = Time NUM
 scoreboard players remove Time ONES_DIGIT 1

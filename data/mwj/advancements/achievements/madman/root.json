@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "狂言綺語"
+        },
+        "description": {
+            "text": "狂人で人狼と共に勝利する"
+        },
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "frame": "task"
+    },
+    "parent": "mwj:achievements/root",
+    "criteria": {
+        "first_madman": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "first_madman"
+        ]
+    ]
+}

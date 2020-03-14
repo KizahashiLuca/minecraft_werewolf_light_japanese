@@ -1,9 +1,9 @@
 ###############################
-## Minecraft Version 1.14
+## Minecraft Version 1.15.2
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 17 September 2019
-## Version: beta-1.5
+## Date   : 24 February 2020
+## Version: beta-1.6
 ###############################
 
 ## If the Number is Short
@@ -22,6 +22,8 @@ scoreboard players remove Time PrevAddedRole 1
 execute if score Time PrevAddedRole matches 1.. if score Time AddedMason matches 1.. run scoreboard players remove Time AddedMason 1
 scoreboard players remove Time PrevAddedRole 1
 execute if score Time PrevAddedRole matches 1.. if score Time AddedDetec matches 1.. run scoreboard players remove Time AddedDetec 1
+scoreboard players remove Time PrevAddedRole 1
+execute if score Time PrevAddedRole matches 1.. if score Time AddedThief matches 1.. run scoreboard players remove Time AddedThief 1
 scoreboard players remove Time PrevAddedRole 1
 execute if score Time PrevAddedRole matches 1.. if score Time AddedCat matches 1.. run scoreboard players remove Time AddedCat 1
 scoreboard players remove Time PrevAddedRole 1
