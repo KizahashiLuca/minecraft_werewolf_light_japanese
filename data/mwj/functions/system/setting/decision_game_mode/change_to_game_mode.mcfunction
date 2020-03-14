@@ -22,4 +22,4 @@ scoreboard players set @p[tag=host] SelectedDecide 0
 scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode
-scoreboard players set Time GAME 93
+scoreboard players set Time GAME 94

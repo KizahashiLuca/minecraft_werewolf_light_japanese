@@ -23,7 +23,11 @@ scoreboard players set @p[tag=host] SelectedNextPage 0
 scoreboard players set @p[tag=host] SelectedCancel 0
 scoreboard players set @p[tag=host] SelectedReset 0
 scoreboard players set @p[tag=host] SelectedOkay 0
-scoreboard players set @p[tag=host] SelectedDecide 0
+scoreboard players set @p[tag=host] SelectedDecide1 0
+scoreboard players set @p[tag=host] SelectedDecide2 0
+scoreboard players set @p[tag=host] SelectedDecide3 0
+scoreboard players set @p[tag=host] SelectedDecide4 0
+scoreboard players set @p[tag=host] SelectedDecide5 0
 scoreboard players set @p[tag=host] ThrowItem 0
 
 ## Change Mode

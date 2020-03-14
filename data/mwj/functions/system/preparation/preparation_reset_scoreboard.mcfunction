@@ -80,9 +80,9 @@ scoreboard players set @a STRAY_BY_CAT 0
 #### Snowball
 scoreboard players set Time SNOWBALL 0
 
-## Set the Time Limit
-scoreboard players operation Time SECOND *= Time ChangeLimitTime
-scoreboard players operation Time ChangeLimitTime = Time SECOND
+## Set the Game Time
+scoreboard players operation Time SECOND *= Time ChangeGameTime
+scoreboard players operation Time ChangeGameTime = Time SECOND
 scoreboard players operation 残り時間 Info = Time SECOND
 ## Set Variables for Game
 execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1

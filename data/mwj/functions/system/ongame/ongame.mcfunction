@@ -12,8 +12,8 @@ function mwj:system/time
 ## Cannot Pickup Arrow
 execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
 
-## Glowing
-execute if score Time SECOND = Time GlowingTime run effect give @a[scores={DEATH=0}] minecraft:glowing 1000000 1 true
+## Glow Time
+execute if score Time SECOND <= Time ChangeGlowTime run effect give @a[scores={DEATH=0}] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
 execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1

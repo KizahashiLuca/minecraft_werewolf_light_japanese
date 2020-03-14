@@ -127,10 +127,12 @@ scoreboard objectives remove AddedInvis
 scoreboard objectives remove AddedSpeed
 scoreboard objectives remove AddedJump
 scoreboard objectives remove AddedElytra
-## Remove Variables for Time Limit
-scoreboard objectives remove ChangeLimitTime
-scoreboard objectives remove ChangeHidingTime
-scoreboard objectives remove GlowingTime
+## Remove Variables for Hide Time
+scoreboard objectives remove ChangeHideTime
+## Remove Variables for Glow Time
+scoreboard objectives remove ChangeGlowTime
+## Remove Variables for Game Time
+scoreboard objectives remove ChangeGameTime
 ## Remove Variables for Game Rules
 scoreboard objectives remove GameMode
 ## Remove Variables for ROLE

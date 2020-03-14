@@ -28,40 +28,56 @@ scoreboard objectives remove SelectedMason
 scoreboard objectives remove SelectedDetec
 scoreboard objectives remove SelectedThief
 scoreboard objectives remove SelectedCat
-## Add Variables for Setting Time Limit
-scoreboard objectives remove LimitTime
-scoreboard objectives remove PrevLimitTime
+## Add Variables for Setting Hide Time
+scoreboard objectives remove HideTime
+scoreboard objectives remove PrevHideTime
+## Add Variables for Setting Glow Time
+scoreboard objectives remove GlowTime
+scoreboard objectives remove PrevGlowTime
+## Add Variables for Setting Game Time
+scoreboard objectives remove GameTime
+scoreboard objectives remove PrevGameTime
 ## Add Variables for Setting Game Mode
 scoreboard objectives remove PrevGameMode
-## Add Variables for Setting Hiding Time
-scoreboard objectives remove HidingTime
-scoreboard objectives remove PrevHidingTime
 ## Add Variables for GUI Choose Mode
 scoreboard objectives remove SelectedCancel
 scoreboard objectives remove SelectedReset
 scoreboard objectives remove SelectedOkay
 scoreboard objectives remove SelectedDecide
-scoreboard objectives remove ChosenHidingTime
-scoreboard objectives remove ChosenTimeLimit
-scoreboard objectives remove ChosenRoleAdd
-scoreboard objectives remove ChosenItemAdd
+scoreboard objectives remove ChosenHideTime
+scoreboard objectives remove ChosenGlowTime
+scoreboard objectives remove ChosenGameTime
 scoreboard objectives remove ChosenGameMode
-## Add Variables for GUI Time Limit
+scoreboard objectives remove ChosenItemAdd
+scoreboard objectives remove ChosenRoleAdd
+## Add Variables for GUI Hide Time
+scoreboard objectives remove Selected015secs
+scoreboard objectives remove Selected030secs
+scoreboard objectives remove Selected060secs
+scoreboard objectives remove Selected090secs
+scoreboard objectives remove Selected120secs
+scoreboard objectives remove Selected180secs
+scoreboard objectives remove Selected300secs
+## Add Variables for GUI Glow Time
+scoreboard objectives remove Selected000pers
+scoreboard objectives remove Selected010pers
+scoreboard objectives remove Selected020pers
+scoreboard objectives remove Selected030pers
+scoreboard objectives remove Selected050pers
+scoreboard objectives remove Selected080pers
+scoreboard objectives remove Selected100pers
+## Add Variables for GUI Game Time
+scoreboard objectives remove Selected05mins
 scoreboard objectives remove Selected10mins
 scoreboard objectives remove Selected15mins
 scoreboard objectives remove Selected20mins
 scoreboard objectives remove Selected25mins
 scoreboard objectives remove Selected30mins
+scoreboard objectives remove Selected60mins
 ## Add Variables for GUI Game Mode
 scoreboard objectives remove SelectedWof
 scoreboard objectives remove SelectedTwo
 scoreboard objectives remove SelectedExt
-## Add Variables for GUI Hiding Time
-scoreboard objectives remove Selected00secs
-scoreboard objectives remove Selected30secs
-scoreboard objectives remove Selected60secs
-scoreboard objectives remove Selected90secs
-scoreboard objectives remove Selected120secs
 ## Add Variables for GUI Item Addition
 scoreboard objectives remove TmpAdded
 scoreboard objectives remove PrevAddedStick
@@ -88,6 +104,11 @@ scoreboard objectives remove SelectedJump
 scoreboard objectives remove SelectedElytra
 scoreboard objectives remove SelectedPrevPage
 scoreboard objectives remove SelectedNextPage
+scoreboard objectives remove SelectedDecide1
+scoreboard objectives remove SelectedDecide2
+scoreboard objectives remove SelectedDecide3
+scoreboard objectives remove SelectedDecide4
+scoreboard objectives remove SelectedDecide5
 ## Add Variables for Throwing Item
 scoreboard objectives remove ThrowItem
 

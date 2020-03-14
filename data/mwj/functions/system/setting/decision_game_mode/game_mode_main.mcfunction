@@ -12,7 +12,7 @@ function mwj:system/setting/setting_time
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r通常人狼モード\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r村人2人生存モード\""}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r我々だ！人狼モード\""}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r殲滅モード\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}}] ThrowItem 1
@@ -29,7 +29,7 @@ scoreboard players set @p[tag=host] SelectedDecide 1
 ## Declare Inventory
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:21b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r通常人狼モード\""}}}]}] SelectedWof 0
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r村人2人生存モード\""}}}]}] SelectedTwo 0
-scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r我々だ！人狼モード\""}}}]}] SelectedExt 0
+scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r殲滅モード\""}}}]}] SelectedExt 0
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}]}] SelectedCancel 0
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:34b,id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}]}] SelectedOkay 0
 execute if score Time GameMode matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide 0

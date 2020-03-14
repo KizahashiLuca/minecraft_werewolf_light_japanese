@@ -7,15 +7,15 @@
 ###############################
 
 ## Replace Inventory
-replaceitem entity @p[tag=host] inventory.9 minecraft:player_head{SkullOwner:"mhf_wolf",display:{Name:"\"\\u00A7r人狼の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.10 minecraft:player_head{SkullOwner:"mhf_herobrine",display:{Name:"\"\\u00A7r狂人の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.11 minecraft:player_head{SkullOwner:"mhf_fox",display:{Name:"\"\\u00A7r羽衣狐の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.12 minecraft:player_head{SkullOwner:"mhf_steve",display:{Name:"\"\\u00A7r預言者の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.13 minecraft:player_head{SkullOwner:"mhf_alex",display:{Name:"\"\\u00A7r霊媒師の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.14 minecraft:player_head{SkullOwner:"mhf_golem",display:{Name:"\"\\u00A7r共有者の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.15 minecraft:player_head{SkullOwner:"mhf_witch",display:{Name:"\"\\u00A7r探偵の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.16 minecraft:player_head{SkullOwner:"mhf_wskeleton",display:{Name:"\"\\u00A7r怪盗の追加\""}} 1
-replaceitem entity @p[tag=host] inventory.17 minecraft:player_head{SkullOwner:"mhf_ocelot",display:{Name:"\"\\u00A7r猫又の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.9 minecraft:red_stained_glass{display:{Name:"\"\\u00A7r人狼の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.10 minecraft:pink_stained_glass{display:{Name:"\"\\u00A7r狂人の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.11 minecraft:purple_stained_glass{display:{Name:"\"\\u00A7r羽衣狐の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.12 minecraft:light_blue_stained_glass{display:{Name:"\"\\u00A7r預言者の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.13 minecraft:yellow_stained_glass{display:{Name:"\"\\u00A7r霊媒師の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.14 minecraft:green_stained_glass{display:{Name:"\"\\u00A7r共有者の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.15 minecraft:cyan_stained_glass{display:{Name:"\"\\u00A7r探偵の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.16 minecraft:blue_stained_glass{display:{Name:"\"\\u00A7r怪盗の追加\""}} 1
+replaceitem entity @p[tag=host] inventory.17 minecraft:orange_stained_glass{display:{Name:"\"\\u00A7r猫又の追加\""}} 1
 replaceitem entity @p[tag=host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7rキャンセル\""}} 1
 replaceitem entity @p[tag=host] inventory.21 minecraft:map{display:{Name:"\"\\u00A7rリセット\""}} 1
 execute if score Time AddedVilla matches 1.. run replaceitem entity @p[tag=host] inventory.23 minecraft:nether_star{display:{Name:"\"\\u00A7r残り追加可能人数\"",Taged:"Villa"}} 1

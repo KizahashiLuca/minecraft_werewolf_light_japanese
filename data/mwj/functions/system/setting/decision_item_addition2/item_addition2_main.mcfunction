@@ -34,11 +34,11 @@ scoreboard players set @p[tag=host] SelectedNextPage 1
 scoreboard players set @p[tag=host] SelectedCancel 1
 scoreboard players set @p[tag=host] SelectedReset 1
 scoreboard players set @p[tag=host] SelectedOkay 1
-execute if score Time AddedCrossbow matches 1 run scoreboard players set @p[tag=host] SelectedDecide 1
-execute if score Time AddedSnowball matches 1 run scoreboard players set @p[tag=host] SelectedDecide 1
-execute if score Time AddedInvis matches 1 run scoreboard players set @p[tag=host] SelectedDecide 1
-execute if score Time AddedSpeed matches 1 run scoreboard players set @p[tag=host] SelectedDecide 1
-execute if score Time AddedJump matches 1 run scoreboard players set @p[tag=host] SelectedDecide 1
+execute if score Time AddedCrossbow matches 1 run scoreboard players set @p[tag=host] SelectedDecide1 1
+execute if score Time AddedSnowball matches 1 run scoreboard players set @p[tag=host] SelectedDecide2 1
+execute if score Time AddedInvis matches 1 run scoreboard players set @p[tag=host] SelectedDecide3 1
+execute if score Time AddedSpeed matches 1 run scoreboard players set @p[tag=host] SelectedDecide4 1
+execute if score Time AddedJump matches 1 run scoreboard players set @p[tag=host] SelectedDecide5 1
 
 ## Declare Inventory
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:18b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r前へ\""}}}]}] SelectedPrevPage 0
@@ -51,11 +51,11 @@ scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:26b,id:"minecraft:nethe
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}]}] SelectedCancel 0
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:31b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7rリセット\""}}}]}] SelectedReset 0
 scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:34b,id:"minecraft:tripwire_hook",tag:{display:{Name:"\"\\u00A7rこれで決定\""}}}]}] SelectedOkay 0
-execute if score Time AddedCrossbow matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide 0
-execute if score Time AddedSnowball matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide 0
-execute if score Time AddedInvis matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide 0
-execute if score Time AddedSpeed matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide 0
-execute if score Time AddedJump matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide 0
+execute if score Time AddedCrossbow matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide1 0
+execute if score Time AddedSnowball matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide2 0
+execute if score Time AddedInvis matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide3 0
+execute if score Time AddedSpeed matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide4 0
+execute if score Time AddedJump matches 1 run scoreboard players set @p[tag=host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r選択済み\""}}}]}] SelectedDecide5 0
 
 ## Function Each Mode
 execute if score @p[tag=host] SelectedPrevPage matches 1 run function mwj:system/setting/decision_item_addition2/selected_prevpage
@@ -68,4 +68,8 @@ execute if score @p[tag=host] SelectedNextPage matches 1 run function mwj:system
 execute if score @p[tag=host] SelectedCancel matches 1 run function mwj:system/setting/decision_item_addition2/selected_cancel
 execute if score @p[tag=host] SelectedReset matches 1 run function mwj:system/setting/decision_item_addition2/selected_reset
 execute if score @p[tag=host] SelectedOkay matches 1 run function mwj:system/setting/decision_item_addition2/selected_ok
-execute if score @p[tag=host] SelectedDecide matches 1 run function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+execute if score @p[tag=host] SelectedDecide1 matches 1 run function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+execute if score @p[tag=host] SelectedDecide2 matches 1 run function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+execute if score @p[tag=host] SelectedDecide3 matches 1 run function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+execute if score @p[tag=host] SelectedDecide4 matches 1 run function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+execute if score @p[tag=host] SelectedDecide5 matches 1 run function mwj:system/setting/decision_item_addition2/change_to_item_addition2
