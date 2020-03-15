@@ -18,14 +18,10 @@ scoreboard players set Time ChangeGameTime 5
 scoreboard players operation Time ChangeGameTime *= Time GameTime
 
 ## Calculate Glow Time
-scoreboard players set Time DENOMINATOR 60
-scoreboard players operation Time GlowTime *= Time ChangeGameTime
-scoreboard players operation Time GlowTime *= Time DENOMINATOR
-scoreboard players operation Time ChangeGlowTime = Time ChangeGameTime
+scoreboard players set Time DENOMINATOR 6
+scoreboard players operation Time ChangeGlowTime = Time GlowTime
+scoreboard players operation Time ChangeGlowTime *= Time ChangeGameTime
 scoreboard players operation Time ChangeGlowTime *= Time DENOMINATOR
-scoreboard players set Time DENOMINATOR 10
-scoreboard players operation Time GlowTime /= Time DENOMINATOR
-scoreboard players operation Time ChangeGlowTime -= Time GlowTime
 
 ## Exit Setting - Remove Scoreboard
 function mwj:system/setting/exit_setting/remove_scoreboard
