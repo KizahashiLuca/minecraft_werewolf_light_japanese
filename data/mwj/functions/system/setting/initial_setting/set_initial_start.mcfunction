@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## decide host
-tag @p[sort=nearest] add host
+## decide Host
+tag @p[sort=nearest] add Host
 
 ## Add Scoreboard
 scoreboard objectives add NUM dummy

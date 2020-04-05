@@ -7,7 +7,7 @@
 ###############################
 
 ## Clear Inventory
-clear @p[tag=host]
+clear @p[tag=Host]
 
 ## Rest become villager
 scoreboard players operation Time AddedVilla = Time AddedRole
@@ -16,21 +16,21 @@ scoreboard players operation Time AddedVilla = Time AddedRole
 function mwj:system/setting/decision_role_addition/role_addition_inventory
 
 ## Set Scoreboard
-scoreboard players set @p[tag=host] SelectedWolf 0
-scoreboard players set @p[tag=host] SelectedMadman 0
-scoreboard players set @p[tag=host] SelectedFox 0
-scoreboard players set @p[tag=host] SelectedVilla 0
-scoreboard players set @p[tag=host] SelectedSeer 0
-scoreboard players set @p[tag=host] SelectedMedium 0
-scoreboard players set @p[tag=host] SelectedMason 0
-scoreboard players set @p[tag=host] SelectedDetec 0
-scoreboard players set @p[tag=host] SelectedThief 0
-scoreboard players set @p[tag=host] SelectedCat 0
-scoreboard players set @p[tag=host] SelectedCancel 0
-scoreboard players set @p[tag=host] SelectedReset 0
-scoreboard players set @p[tag=host] SelectedOkay 0
-scoreboard players set @p[tag=host] SelectedDecide 0
-scoreboard players set @p[tag=host] ThrowItem 0
+scoreboard players set @p[tag=Host] SelectedWolf 0
+scoreboard players set @p[tag=Host] SelectedMadman 0
+scoreboard players set @p[tag=Host] SelectedFox 0
+scoreboard players set @p[tag=Host] SelectedVilla 0
+scoreboard players set @p[tag=Host] SelectedSeer 0
+scoreboard players set @p[tag=Host] SelectedMedium 0
+scoreboard players set @p[tag=Host] SelectedMason 0
+scoreboard players set @p[tag=Host] SelectedDetec 0
+scoreboard players set @p[tag=Host] SelectedThief 0
+scoreboard players set @p[tag=Host] SelectedCat 0
+scoreboard players set @p[tag=Host] SelectedCancel 0
+scoreboard players set @p[tag=Host] SelectedReset 0
+scoreboard players set @p[tag=Host] SelectedOkay 0
+scoreboard players set @p[tag=Host] SelectedDecide 0
+scoreboard players set @p[tag=Host] ThrowItem 0
 
 ## Change Mode
 scoreboard players set Time GAME 98

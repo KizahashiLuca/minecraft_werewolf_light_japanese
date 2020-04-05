@@ -63,9 +63,6 @@ scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TIME_SEC = 
 scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TIME_TICK = Time TICK
 scoreboard players add Time STEAL_NUM 1
 
-## Send a Common Message
-tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"----------------------------------\n","color":"white"}]
-
 ## Thief Role Done
 execute if score @s ROLE matches 9 if score @s DEATH matches 0 run scoreboard players set @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE 0
 execute unless score @s ROLE matches 9 if score @s DEATH matches 0 run scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE = @s DONE
@@ -82,3 +79,6 @@ execute if score @s DEATH matches 1 run scoreboard players set @p[scores={ROLE=9
 
 ## Send a Message
 execute if score @s PREV_ROLE matches 1 if score @s DEATH matches 0 run tellraw @p[scores={ROLE=1,ROLE_OF_NUM=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={ROLE=1}]","color":"red"},{"text":" です。","color":"white"}]
+
+## Send a Common Message
+tellraw @p[scores={PREV_ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"----------------------------------\n","color":"white"}]

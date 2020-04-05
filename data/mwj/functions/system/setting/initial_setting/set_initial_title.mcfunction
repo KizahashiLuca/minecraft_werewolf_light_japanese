@@ -18,7 +18,7 @@ tellraw @a ["",{"text":"                ","color":"white"},{"text":"Setting Star
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"\n","color":"white"}]
 
-tellraw @a ["",{"text":"  ","color":"white"},{"selector":"@p[tag=host]","color":"white","bold":true},{"text":" さんは、インベントリを","color":"white"}]
+tellraw @a ["",{"text":"  ","color":"white"},{"selector":"@p[tag=Host]","color":"white","bold":true},{"text":" さんは、インベントリを","color":"white"}]
 tellraw @a ["",{"text":"  開いて、以下の設定をしてください。","color":"white"}]
 tellraw @a ["",{"text":"    ・潜伏時間","color":"white"}]
 tellraw @a ["",{"text":"    ・発光時間","color":"white"}]

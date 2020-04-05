@@ -7,23 +7,23 @@
 ###############################
 
 ## Clear Inventory
-clear @p[tag=host]
+clear @p[tag=Host]
 
 ## Set Inventory
 function mwj:system/setting/decision_glow_time/glow_time_inventory
 
 ## Set Scoreboard
-scoreboard players set @p[tag=host] ThrowItem 0
-scoreboard players set @p[tag=host] Selected000pers 0
-scoreboard players set @p[tag=host] Selected010pers 0
-scoreboard players set @p[tag=host] Selected020pers 0
-scoreboard players set @p[tag=host] Selected030pers 0
-scoreboard players set @p[tag=host] Selected050pers 0
-scoreboard players set @p[tag=host] Selected080pers 0
-scoreboard players set @p[tag=host] Selected100pers 0
-scoreboard players set @p[tag=host] SelectedCancel 0
-scoreboard players set @p[tag=host] SelectedOkay 0
-scoreboard players set @p[tag=host] SelectedDecide 0
+scoreboard players set @p[tag=Host] ThrowItem 0
+scoreboard players set @p[tag=Host] Selected000pers 0
+scoreboard players set @p[tag=Host] Selected010pers 0
+scoreboard players set @p[tag=Host] Selected020pers 0
+scoreboard players set @p[tag=Host] Selected030pers 0
+scoreboard players set @p[tag=Host] Selected050pers 0
+scoreboard players set @p[tag=Host] Selected080pers 0
+scoreboard players set @p[tag=Host] Selected100pers 0
+scoreboard players set @p[tag=Host] SelectedCancel 0
+scoreboard players set @p[tag=Host] SelectedOkay 0
+scoreboard players set @p[tag=Host] SelectedDecide 0
 
 ## Change Mode
 scoreboard players set Time GAME 92

@@ -7,23 +7,23 @@
 ###############################
 
 ## Clear Inventory
-clear @p[tag=host]
+clear @p[tag=Host]
 
 ## Set Inventory
 function mwj:system/setting/decision_game_time/game_time_inventory
 
 ## Set Scoreboard
-scoreboard players set @p[tag=host] ThrowItem 0
-scoreboard players set @p[tag=host] Selected05mins 0
-scoreboard players set @p[tag=host] Selected10mins 0
-scoreboard players set @p[tag=host] Selected15mins 0
-scoreboard players set @p[tag=host] Selected20mins 0
-scoreboard players set @p[tag=host] Selected25mins 0
-scoreboard players set @p[tag=host] Selected30mins 0
-scoreboard players set @p[tag=host] Selected60mins 0
-scoreboard players set @p[tag=host] SelectedCancel 0
-scoreboard players set @p[tag=host] SelectedOkay 0
-scoreboard players set @p[tag=host] SelectedDecide 0
+scoreboard players set @p[tag=Host] ThrowItem 0
+scoreboard players set @p[tag=Host] Selected05mins 0
+scoreboard players set @p[tag=Host] Selected10mins 0
+scoreboard players set @p[tag=Host] Selected15mins 0
+scoreboard players set @p[tag=Host] Selected20mins 0
+scoreboard players set @p[tag=Host] Selected25mins 0
+scoreboard players set @p[tag=Host] Selected30mins 0
+scoreboard players set @p[tag=Host] Selected60mins 0
+scoreboard players set @p[tag=Host] SelectedCancel 0
+scoreboard players set @p[tag=Host] SelectedOkay 0
+scoreboard players set @p[tag=Host] SelectedDecide 0
 
 ## Change Mode
 scoreboard players set Time GAME 93

@@ -21,7 +21,7 @@ tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"w
 tellraw @a ["",{"text":"  ゲームモードは、 以下のとおりです。","color":"white"}]
 execute if score Time GameMode matches 1 run tellraw @a ["",{"text":"    勝敗判定 : ","color":"white"},{"text":"通常人狼モード","color":"green","bold":true}]
 execute if score Time GameMode matches 2 run tellraw @a ["",{"text":"    勝敗判定 : ","color":"white"},{"text":"村人2人生存モード","color":"green","bold":true}]
-execute if score Time GameMode matches 3 run tellraw @a ["",{"text":"    勝敗判定 : ","color":"white"},{"text":"我々だ！人狼モード","color":"green","bold":true}]
+execute if score Time GameMode matches 3 run tellraw @a ["",{"text":"    勝敗判定 : ","color":"white"},{"text":"殲滅モード","color":"green","bold":true}]
 execute if score Time GameMode matches 1 run tellraw @a ["",{"text":"       村人陣営の人数が、人狼の人数以下に\n       なったら、人狼陣営の勝利です。","color":"white"}]
 execute if score Time GameMode matches 2 run tellraw @a ["",{"text":"       村人陣営の人数が、2人未満になったら、\n       人狼陣営の勝利です。","color":"white"}]
 execute if score Time GameMode matches 3 run tellraw @a ["",{"text":"       村人陣営の人数が、0人になったら、\n       人狼陣営の勝利です。","color":"white"}]

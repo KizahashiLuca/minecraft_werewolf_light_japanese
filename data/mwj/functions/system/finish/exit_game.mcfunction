@@ -155,7 +155,7 @@ effect clear @a
 clear @a
 
 ## Remove Tags
-tag @a remove host
+tag @a remove Host
 tag @a remove WereWolf
 tag @a remove NonWolf
 tag @a remove Cat

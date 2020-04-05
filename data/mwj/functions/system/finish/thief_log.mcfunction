@@ -29,5 +29,8 @@ execute as @a[team=Player] if score @s NUM = @p[scores={STEAL_FLAG=1}] STEAL_TAR
 ## Increment Thief Log Number by 1
 scoreboard players add Time STEAL_NUM 1
 
+## Remove Thief Flag
+scoreboard players set @p[scores={STEAL_FLAG=1}] STEAL_FLAG 0
+
 ## Loop
 execute if score Time STEAL_NUM <= Time THIEF run function mwj:system/finish/thief_log
