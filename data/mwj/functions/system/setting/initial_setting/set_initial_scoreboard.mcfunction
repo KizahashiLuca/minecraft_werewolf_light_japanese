@@ -12,7 +12,6 @@ scoreboard objectives add PREV_NUM dummy
 ## Variables for Timer
 scoreboard objectives add SECOND dummy
 scoreboard objectives add TICK dummy
-scoreboard objectives add 20 dummy
 ## Add Variables for Role Number
 scoreboard objectives add WOLF dummy
 scoreboard objectives add MADMAN dummy
@@ -57,6 +56,8 @@ scoreboard objectives add SelectedMason dummy
 scoreboard objectives add SelectedDetec dummy
 scoreboard objectives add SelectedThief dummy
 scoreboard objectives add SelectedCat dummy
+## Add Variables for Setting Time
+scoreboard objectives add SettingTime dummy
 ## Add Variables for Setting Hide Time
 scoreboard objectives add HideTime dummy
 scoreboard objectives add PrevHideTime dummy
@@ -160,7 +161,6 @@ scoreboard objectives add DENOMINATOR dummy
 
 ## Set Variables for Timer
 scoreboard players operation Time PREV_NUM = Time NUM
-scoreboard players set Time 20 20
 ## Set Variables for ROLE
 scoreboard players set Time WOLF 0
 scoreboard players set Time MADMAN 0
@@ -196,6 +196,8 @@ scoreboard players set Time PrevAddedMason 0
 scoreboard players set Time PrevAddedDetec 0
 scoreboard players set Time PrevAddedThief 0
 scoreboard players set Time PrevAddedCat 0
+## Set Variables for Setting Time
+scoreboard players set Time SettingTime 60
 ## Set Variables for Setting Hide Time
 scoreboard players set Time HideTime 4
 scoreboard players set Time PrevHideTime 4
@@ -236,3 +238,12 @@ scoreboard players set Time PrevAddedJump 1
 scoreboard players set Time PrevAddedElytra 1
 ## Set Variables for Denominator
 scoreboard players set Time DENOMINATOR 0
+
+## Set bossbar
+scoreboard players set Time TICK 0
+scoreboard players operation Time SECOND = Time SettingTime
+bossbar add minecraft:bossbar [{"text":"初期設定時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
+bossbar set minecraft:bossbar players @a
+bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
+execute store result bossbar minecraft:bossbar max run scoreboard players get Time SettingTime
+execute store result bossbar minecraft:bossbar value run scoreboard players get Time SECOND

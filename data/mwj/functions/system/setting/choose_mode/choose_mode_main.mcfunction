@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Timer System
-function mwj:system/setting/setting_time
+## Process the timer system
+function mwj:system/time/time
 
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone",tag:{display:{Name:"\"\\u00A7r潜伏時間設定\""}}}}] ThrowItem 1
@@ -49,3 +49,6 @@ execute if score @p[tag=Host] ChosenItemAdd matches 1 run function mwj:system/se
 execute if score Time PrevAddedRole matches 1.. if score @p[tag=Host] ChosenRoleAdd matches 1 run function mwj:system/setting/decision_role_addition/change_to_role_addition
 execute if score @p[tag=Host] SelectedCancel matches 1 run function mwj:stop
 execute if score @p[tag=Host] SelectedOkay matches 1 run function mwj:system/setting/exit_setting/exit_setting
+
+## Process the system finished
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting

@@ -13,8 +13,6 @@ scoreboard objectives add WINNER dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
 scoreboard objectives add PURPLE dummy
-## Add Variables for Info
-scoreboard objectives add Info dummy {"text":"情報","bold":true}
 ## Add Variables for Role
 scoreboard objectives add ROLE_OF_NUM dummy
 ## Add Variables for Kill Log
@@ -95,3 +93,4 @@ scoreboard players set @a CAT_ACHIEVE1 0
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add Time NUM 1
+scoreboard players set Time NUM 11

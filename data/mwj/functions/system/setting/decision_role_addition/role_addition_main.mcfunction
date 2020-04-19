@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Timer System
-function mwj:system/setting/setting_time
+## Process the timer system
+function mwj:system/time/time
 
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:red_stained_glass",tag:{display:{Name:"\"\\u00A7r人狼の追加\""}}}}] ThrowItem 1
@@ -82,3 +82,6 @@ execute if score @p[tag=Host] SelectedReset matches 1 run function mwj:system/se
 execute if score @p[tag=Host] SelectedVilla matches 1 run function mwj:system/setting/decision_role_addition/selected_villager
 execute if score @p[tag=Host] SelectedOkay matches 1 run function mwj:system/setting/decision_role_addition/selected_ok
 execute if score @p[tag=Host] SelectedDecide matches 1 run function mwj:system/setting/decision_role_addition/change_to_role_addition
+
+## Process the system finished
+execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting

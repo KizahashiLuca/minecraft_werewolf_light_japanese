@@ -25,9 +25,6 @@ scoreboard objectives remove PURPLE
 ## Remove Variables for Timer
 scoreboard objectives remove SECOND
 scoreboard objectives remove TICK
-scoreboard objectives remove 20
-## Variables for Info
-scoreboard objectives remove Info
 ## Remove Variables for Number of Roles
 scoreboard objectives remove WOLF
 scoreboard objectives remove MADMAN
@@ -127,6 +124,8 @@ scoreboard objectives remove AddedInvis
 scoreboard objectives remove AddedSpeed
 scoreboard objectives remove AddedJump
 scoreboard objectives remove AddedElytra
+## Remove Variables for Setting Time
+scoreboard objectives remove SettingTime
 ## Remove Variables for Hide Time
 scoreboard objectives remove ChangeHideTime
 ## Remove Variables for Glow Time
@@ -144,7 +143,9 @@ scoreboard objectives remove TEMP_DIGIT
 ## Remove Players
 scoreboard players reset @a
 scoreboard players reset Time
-scoreboard players reset 残り時間
+
+## Remove bossbar
+bossbar remove minecraft:bossbar
 
 ## Kill Entities
 kill @e[type=minecraft:item]

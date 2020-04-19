@@ -26,7 +26,7 @@ execute if score Time GameMode matches 1 run tellraw @a ["",{"text":"       村�
 execute if score Time GameMode matches 2 run tellraw @a ["",{"text":"       村人陣営の人数が、2人未満になったら、\n       人狼陣営の勝利です。","color":"white"}]
 execute if score Time GameMode matches 3 run tellraw @a ["",{"text":"       村人陣営の人数が、0人になったら、\n       人狼陣営の勝利です。","color":"white"}]
 tellraw @a ["",{"text":"    制限時間 : ","color":"white"},{"score":{"name":"Time","objective":"ChangeGameTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true}]
-tellraw @a ["",{"text":"      残り時間 ","color":"white"},{"score":{"name":"Time","objective":"ChangeGlowTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員が発光","color":"white"}]
+tellraw @a ["",{"text":"       残り時間 ","color":"white"},{"score":{"name":"Time","objective":"ChangeGlowTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員が発光","color":"white"}]
 
 tellraw @a ["",{"text":"\n  役職内訳 : ","color":"white"}]
 execute if score Time VILLAGER matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green"},{"text":" ： ","color":"white"},{"score":{"name":"Time","objective":"VILLAGER"},"color":"white"},{"text":"人","color":"white"}]

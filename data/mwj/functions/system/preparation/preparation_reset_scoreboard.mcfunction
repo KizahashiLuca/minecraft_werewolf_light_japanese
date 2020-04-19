@@ -6,9 +6,6 @@
 ## Version: beta-1.6
 ###############################
 
-## Add Variables for Timer
-scoreboard players set Time SECOND 60
-scoreboard players set Time TICK 0
 ## Add Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives add doNotDrop dummy
@@ -81,15 +78,19 @@ scoreboard players set @a STRAY_BY_CAT 0
 scoreboard players set Time SNOWBALL 0
 
 ## Set the Game Time
+## Reset Scoreboard
+scoreboard players set Time TICK 0
+scoreboard players set Time SECOND 60
 scoreboard players operation Time SECOND *= Time ChangeGameTime
 scoreboard players operation Time ChangeGameTime = Time SECOND
-scoreboard players operation 残り時間 Info = Time SECOND
 ## Set Variables for Game
 execute as @a[scores={ROLE=1}] run scoreboard players add Time BLACK 1
 execute as @a[scores={ROLE=3}] run scoreboard players add Time PURPLE 1
 execute as @a[scores={ROLE=4..10}] run scoreboard players add Time WHITE 1
-## Set Sidebar Variables for Info
-scoreboard objectives setdisplay sidebar Info
+## Set bossbar
+bossbar set minecraft:bossbar name [{"text":"制限時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
+execute store result bossbar minecraft:bossbar max run scoreboard players get Time ChangeGameTime
+execute store result bossbar minecraft:bossbar value run scoreboard players get Time SECOND
 
 ## Game Start
 scoreboard players set Time GAME 11

@@ -8,7 +8,7 @@
 
 ## Title Hiding Start
 title @a times 5 40 15
-title @a title ["",{"text":"初期設定時間開始","color":"green","bold":true}]
+title @a title ["",{"text":"初期設定時間 開始","color":"green","bold":true}]
 title @a subtitle ["",{"text":"Setting Start","color":"white","bold":true}]
 
 ## Send a Message Added Role to All Players
@@ -27,7 +27,3 @@ tellraw @a ["",{"text":"    ・ゲームモード(人狼勝敗条件)","color":"
 tellraw @a ["",{"text":"    ・追加アイテム","color":"white"}]
 execute if score Time PrevAddedRole matches 1.. run tellraw @a ["",{"text":"    ・追加役職(","color":"white"},{"score":{"name":"Time","objective":"PrevAddedRole"},"color":"white"},{"text":"組)","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
-
-## Reset Scoreboard
-scoreboard players set Time TICK 0
-scoreboard players set Time SECOND 64

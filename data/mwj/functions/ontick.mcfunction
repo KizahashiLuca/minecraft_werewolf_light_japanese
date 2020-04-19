@@ -6,7 +6,7 @@
 ## Version: beta-1.6
 ###############################
 
-## Login En Route
+## Login with en route
 function mwj:system/en_route
 
 ## Run every tick

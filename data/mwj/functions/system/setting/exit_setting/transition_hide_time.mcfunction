@@ -47,5 +47,9 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 ## Reset Scoreboard
 scoreboard players set Time TICK 0
 scoreboard players operation Time SECOND = Time ChangeHideTime
-scoreboard players add Time SECOND 4
 scoreboard players set Time GAME 10
+
+## Set bossbar
+bossbar set minecraft:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
+execute store result bossbar minecraft:bossbar max run scoreboard players get Time ChangeHideTime
+execute store result bossbar minecraft:bossbar value run scoreboard players get Time SECOND
