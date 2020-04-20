@@ -20,7 +20,8 @@ execute if score Time AddedInvis matches 1 run tellraw @a ["",{"text":"    ","co
 execute if score Time AddedSpeed matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・俊敏のポーション","color":"white","bold":true}]
 execute if score Time AddedJump matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・跳躍のポーション","color":"white","bold":true}]
 execute if score Time AddedElytra matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・エリトラ","color":"white","bold":true}]
-execute if score Time AddedStick matches 0 if score Time AddedTotem matches 0 if score Time AddedDeath2 matches 0 if score Time AddedPearl matches 0 if score Time AddedHoe matches 0 if score Time AddedCrossbow matches 0 if score Time AddedSnowball matches 0 if score Time AddedInvis matches 0 if score Time AddedSpeed matches 0 if score Time AddedJump matches 0 if score Time AddedElytra matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"無し","color":"white","bold":true}]
+execute if score Time AddedConduit matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・地雷","color":"white","bold":true}]
+execute if score Time AddedStick matches 0 if score Time AddedTotem matches 0 if score Time AddedDeath2 matches 0 if score Time AddedPearl matches 0 if score Time AddedHoe matches 0 if score Time AddedCrossbow matches 0 if score Time AddedSnowball matches 0 if score Time AddedInvis matches 0 if score Time AddedSpeed matches 0 if score Time AddedJump matches 0 if score Time AddedElytra matches 0 if score Time AddedConduit matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"無し","color":"white","bold":true}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 

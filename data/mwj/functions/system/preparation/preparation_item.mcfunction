@@ -19,6 +19,7 @@ execute if score Time AddedInvis matches 1 run scoreboard players add Time DENOM
 execute if score Time AddedSpeed matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedJump matches 1 run scoreboard players add Time DENOMINATOR 1
 execute if score Time AddedElytra matches 1 run scoreboard players add Time DENOMINATOR 1
+execute if score Time AddedConduit matches 1 run scoreboard players add Time DENOMINATOR 1
 ## Calculate ones digit
 scoreboard players operation Time ONES_DIGIT = Time NUM
 scoreboard players remove Time ONES_DIGIT 1

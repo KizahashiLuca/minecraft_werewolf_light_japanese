@@ -91,6 +91,7 @@ scoreboard objectives remove PrevAddedInvis
 scoreboard objectives remove PrevAddedSpeed
 scoreboard objectives remove PrevAddedJump
 scoreboard objectives remove PrevAddedElytra
+scoreboard objectives remove PrevAddedConduit
 scoreboard objectives remove SelectedStick
 scoreboard objectives remove SelectedTotem
 scoreboard objectives remove SelectedDeath2
@@ -102,6 +103,7 @@ scoreboard objectives remove SelectedInvis
 scoreboard objectives remove SelectedSpeed
 scoreboard objectives remove SelectedJump
 scoreboard objectives remove SelectedElytra
+scoreboard objectives remove SelectedConduit
 scoreboard objectives remove SelectedPrevPage
 scoreboard objectives remove SelectedNextPage
 scoreboard objectives remove SelectedDecide1

@@ -125,6 +125,7 @@ scoreboard objectives add AddedInvis dummy
 scoreboard objectives add AddedSpeed dummy
 scoreboard objectives add AddedJump dummy
 scoreboard objectives add AddedElytra dummy
+scoreboard objectives add AddedConduit dummy
 scoreboard objectives add PrevAddedStick dummy
 scoreboard objectives add PrevAddedTotem dummy
 scoreboard objectives add PrevAddedDeath2 dummy
@@ -136,6 +137,7 @@ scoreboard objectives add PrevAddedInvis dummy
 scoreboard objectives add PrevAddedSpeed dummy
 scoreboard objectives add PrevAddedJump dummy
 scoreboard objectives add PrevAddedElytra dummy
+scoreboard objectives add PrevAddedConduit dummy
 scoreboard objectives add SelectedStick dummy
 scoreboard objectives add SelectedTotem dummy
 scoreboard objectives add SelectedDeath2 dummy
@@ -147,6 +149,7 @@ scoreboard objectives add SelectedInvis dummy
 scoreboard objectives add SelectedSpeed dummy
 scoreboard objectives add SelectedJump dummy
 scoreboard objectives add SelectedElytra dummy
+scoreboard objectives add SelectedConduit dummy
 scoreboard objectives add SelectedPrevPage dummy
 scoreboard objectives add SelectedNextPage dummy
 scoreboard objectives add SelectedDecide1 dummy
@@ -225,6 +228,7 @@ scoreboard players set Time AddedInvis 1
 scoreboard players set Time AddedSpeed 1
 scoreboard players set Time AddedJump 1
 scoreboard players set Time AddedElytra 1
+scoreboard players set Time AddedConduit 1
 scoreboard players set Time PrevAddedStick 1
 scoreboard players set Time PrevAddedTotem 1
 scoreboard players set Time PrevAddedDeath2 1
@@ -236,6 +240,7 @@ scoreboard players set Time PrevAddedInvis 1
 scoreboard players set Time PrevAddedSpeed 1
 scoreboard players set Time PrevAddedJump 1
 scoreboard players set Time PrevAddedElytra 1
+scoreboard players set Time PrevAddedConduit 1
 ## Set Variables for Denominator
 scoreboard players set Time DENOMINATOR 0
 

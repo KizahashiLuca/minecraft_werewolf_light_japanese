@@ -124,6 +124,7 @@ scoreboard objectives remove AddedInvis
 scoreboard objectives remove AddedSpeed
 scoreboard objectives remove AddedJump
 scoreboard objectives remove AddedElytra
+scoreboard objectives remove AddedConduit
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
 ## Remove Variables for Hide Time

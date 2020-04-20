@@ -23,6 +23,9 @@ execute as @a[scores={ROLE=4..10}] if score @s DEATH matches 1 run scoreboard pl
 execute as @e[type=minecraft:snowball] run function mwj:system/ongame/snowball/snowball_main
 execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,scores={SNOWBALL=1..}] run function mwj:system/ongame/snowball/snowball_sub
 
+## Detect the mines system
+execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00a7r地雷\"",Tag:"\"Mine\""}}}}] at @s if entity @p[team=Player,distance=..2] run function mwj:system/ongame/mines/mines_main
+
 ## Detect Dropping Torch
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch"}}] doNotDrop 1
 execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}

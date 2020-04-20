@@ -93,4 +93,3 @@ scoreboard players set @a CAT_ACHIEVE1 0
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add Time NUM 1
-scoreboard players set Time NUM 11

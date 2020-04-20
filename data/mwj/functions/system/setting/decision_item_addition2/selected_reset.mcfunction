@@ -18,6 +18,7 @@ scoreboard players set Time AddedInvis 1
 scoreboard players set Time AddedSpeed 1
 scoreboard players set Time AddedJump 1
 scoreboard players set Time AddedElytra 1
+scoreboard players set Time AddedConduit 1
 
 ## Set Item Addition 2
 function mwj:system/setting/decision_item_addition2/change_to_item_addition2

@@ -18,6 +18,7 @@ scoreboard players operation Time PrevAddedInvis = Time AddedInvis
 scoreboard players operation Time PrevAddedSpeed = Time AddedSpeed
 scoreboard players operation Time PrevAddedJump = Time AddedJump
 scoreboard players operation Time PrevAddedElytra = Time AddedElytra
+scoreboard players operation Time PrevAddedConduit = Time AddedConduit
 
 ## Set Item Addition 1
 function mwj:system/setting/decision_item_addition1/selected_set

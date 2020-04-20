@@ -15,6 +15,7 @@ function mwj:system/setting/decision_item_addition3/item_addition3_inventory
 ## Set Scoreboard
 scoreboard players set @p[tag=Host] SelectedPrevPage 0
 scoreboard players set @p[tag=Host] SelectedElytra 0
+scoreboard players set @p[tag=Host] SelectedConduit 0
 scoreboard players set @p[tag=Host] SelectedNextPage 0
 scoreboard players set @p[tag=Host] SelectedCancel 0
 scoreboard players set @p[tag=Host] SelectedReset 0

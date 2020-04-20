@@ -41,3 +41,6 @@ execute if score Time AddedJump matches 1 if score Time ONES_DIGIT >= Time TEMP_
 execute if score Time AddedJump matches 1 run scoreboard players add Time TEMP_DIGIT 1
 
 execute if score Time AddedElytra matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[nbt={Inventory:[]},team=Player] run function mwj:system/preparation/item/special/elytra
+execute if score Time AddedElytra matches 1 run scoreboard players add Time TEMP_DIGIT 1
+
+execute if score Time AddedConduit matches 1 if score Time ONES_DIGIT >= Time TEMP_DIGIT as @r[nbt={Inventory:[]},team=Player] run function mwj:system/preparation/item/special/conduit
