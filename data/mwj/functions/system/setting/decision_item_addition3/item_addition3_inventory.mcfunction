@@ -9,7 +9,7 @@
 ## Replace Inventory
 replaceitem entity @p[tag=Host] inventory.9 minecraft:nether_star{display:{Name:"\"\\u00A7r前へ\""}} 1
 replaceitem entity @p[tag=Host] inventory.11 minecraft:elytra{display:{Name:"\"\\u00A7rエリトラ\"",Lore:["\"滑空ができる\""]},Unbreakable:1,HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.12 minecraft:conduit{display:{Name:"\"\\u00A7r地雷\"",Lore:["\"範囲1.5mに入ると発光+盲目10秒\""]}} 1
+replaceitem entity @p[tag=Host] inventory.12 minecraft:conduit{display:{Name:"\"\\u00A7r地雷\"",Lore:["\"範囲1.5mに入ると発光+移動速度低下10秒\""]}} 1
 replaceitem entity @p[tag=Host] inventory.17 minecraft:nether_star{display:{Name:"\"\\u00A7r次へ\""}} 1
 replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7rキャンセル\""}} 1
 replaceitem entity @p[tag=Host] inventory.22 minecraft:map{display:{Name:"\"\\u00A7rリセット\""}} 1

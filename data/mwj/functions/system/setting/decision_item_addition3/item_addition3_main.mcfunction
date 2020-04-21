@@ -12,7 +12,7 @@ function mwj:system/time/time
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r前へ\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:elytra",tag:{display:{Name:"\"\\u00A7rエリトラ\"",Lore:["\"滑空ができる\""]}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00A7r地雷\"",Lore:["\"範囲1.5mに入ると発光+盲目10秒\""]}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00A7r地雷\"",Lore:["\"範囲1.5mに入ると発光+移動速度低下10秒\""]}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r次へ\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:"\"\\u00A7rリセット\""}}}}] ThrowItem 1
@@ -34,7 +34,7 @@ execute if score Time AddedConduit matches 1 run scoreboard players set @p[tag=H
 ## Declare Inventory
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r前へ\""}}}]}] SelectedPrevPage 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:elytra",tag:{display:{Name:"\"\\u00A7rエリトラ\"",Lore:["\"滑空ができる\""]}}}]}] SelectedElytra 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:conduit",tag:{display:{Name:"\"\\u00A7r地雷\"",Lore:["\"範囲1.5mに入ると発光+盲目10秒\""]}}}]}] SelectedConduit 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:conduit",tag:{display:{Name:"\"\\u00A7r地雷\"",Lore:["\"範囲1.5mに入ると発光+移動速度低下10秒\""]}}}]}] SelectedConduit 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r次へ\""}}}]}] SelectedNextPage 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7rキャンセル\""}}}]}] SelectedCancel 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:31b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7rリセット\""}}}]}] SelectedReset 0
