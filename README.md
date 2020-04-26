@@ -26,7 +26,7 @@
  1. 以下のリンクの[Source code(zip)]から、データパックをDL。
  2. DLしたzipファイルを解凍。
  3. 解凍したフォルダ内にある、[minecraft_werewolf_light_japanese-beta-1.X]フォルダを、使用するワールドのフォルダ内[datapacks]にコピー。
- 4. ワールドを開き、`/function #mwj:load`ができれば導入完了！
+ 4. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
  - 04 Mar 2019 - beta-1.0
    - α版移行

@@ -30,7 +30,7 @@ execute as @e[type=minecraft:snowball] run function mwj:system/ongame/snowball/s
 execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,scores={SNOWBALL=1..}] run function mwj:system/ongame/snowball/snowball_sub
 
 ## Detect the mines system
-execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00a7r\\u00a7b地雷\"",Lore:["\"\\u00a7r\\u00a79発光 (0:10)\"","\"\\u00a7r\\u00a7c移動速度低下 Ⅶ (0:10)\"","\"\"","\"\\u00a7r\\u00a75効果:\"","\"\\u00a7r\\u00a7c移動速度上昇 -100%\"","\"\\u00a7r捨てた範囲1.5mに発効\""],Tag:"\"Mine\""}}}}] at @s if entity @p[team=Player,distance=..2] run function mwj:system/ongame/mines/mines_main
+execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00a7r\\u00a7b地雷\"",Lore:["\"\\u00a7r\\u00a79発光 (0:10)\"","\"\\u00a7r\\u00a7c移動速度低下 Ⅶ (0:10)\"","\"\"","\"\\u00a7r\\u00a75効果:\"","\"\\u00a7r\\u00a7c移動速度上昇 -100%\"","\"\\u00a7r捨てた範囲1.5mに発効\""],Tag:"\"Mine\""}}}}] at @s if entity @p[team=Player,scores={DEATH=0},distance=..2] run function mwj:system/ongame/mines/mines_main
 
 ## Fox System
 execute as @a[scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
