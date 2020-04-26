@@ -95,5 +95,3 @@ execute store result bossbar minecraft:bossbar value run scoreboard players get 
 
 ## Game Start
 scoreboard players set Time GAME 11
-scoreboard players add Time BLACK 2
-scoreboard players add Time WHITE 2
