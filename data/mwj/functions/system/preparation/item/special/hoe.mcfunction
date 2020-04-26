@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:diamond_hoe{display:{Name:"\"ダイヤのクワ\"",Lore:["\"一撃必殺の近接攻撃が一度だけ可能\""]},Damage:1561,Enchantments:[{id:"minecraft:sharpness",lvl:199}],HideFlags:39} 1
+give @s minecraft:diamond_hoe{display:{Lore:["\"\\u00A7r\\u00A77ダメージ増加 ⅭⅭ\""]},Damage:1561,Enchantments:[{id:"minecraft:sharpness",lvl:200}],HideFlags:1} 1

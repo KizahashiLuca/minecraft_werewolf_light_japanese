@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Set Invis
-scoreboard players operation Time TmpAdded = Time AddedInvis
-execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedInvis 0
-execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedInvis 1
-function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+## Set Invis - Item3
+scoreboard players operation Time TmpAdded = Time AddedItem3
+execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedItem3 0
+execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedItem3 1
+function mwj:system/setting/decision_item_addition_common/set_scoreboard

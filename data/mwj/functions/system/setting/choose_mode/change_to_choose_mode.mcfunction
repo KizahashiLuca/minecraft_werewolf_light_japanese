@@ -20,8 +20,8 @@ scoreboard players set @p[tag=Host] ChosenGameTime 0
 scoreboard players set @p[tag=Host] ChosenGameMode 0
 scoreboard players set @p[tag=Host] ChosenItemAdd 0
 scoreboard players set @p[tag=Host] ChosenRoleAdd 0
-scoreboard players set @p[tag=Host] SelectedCancel 0
-scoreboard players set @p[tag=Host] SelectedOkay 0
+scoreboard players set @p[tag=Host] SelectCancel 0
+scoreboard players set @p[tag=Host] SelectOkay 0
 
 ## Change Mode
 scoreboard players set Time GAME 90

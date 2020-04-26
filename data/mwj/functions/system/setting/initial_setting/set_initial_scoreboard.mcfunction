@@ -46,16 +46,16 @@ scoreboard objectives add PrevAddedMason dummy
 scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedThief dummy
 scoreboard objectives add PrevAddedCat dummy
-scoreboard objectives add SelectedWolf dummy
-scoreboard objectives add SelectedMadman dummy
-scoreboard objectives add SelectedFox dummy
-scoreboard objectives add SelectedVilla dummy
-scoreboard objectives add SelectedSeer dummy
-scoreboard objectives add SelectedMedium dummy
-scoreboard objectives add SelectedMason dummy
-scoreboard objectives add SelectedDetec dummy
-scoreboard objectives add SelectedThief dummy
-scoreboard objectives add SelectedCat dummy
+scoreboard objectives add SelectWolf dummy
+scoreboard objectives add SelectMadman dummy
+scoreboard objectives add SelectFox dummy
+scoreboard objectives add SelectVilla dummy
+scoreboard objectives add SelectSeer dummy
+scoreboard objectives add SelectMedium dummy
+scoreboard objectives add SelectMason dummy
+scoreboard objectives add SelectDetec dummy
+scoreboard objectives add SelectThief dummy
+scoreboard objectives add SelectCat dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
 ## Add Variables for Setting Hide Time
@@ -74,10 +74,10 @@ scoreboard objectives add ChangeGameTime dummy
 scoreboard objectives add GameMode dummy
 scoreboard objectives add PrevGameMode dummy
 ## Add Variables for GUI Choose Mode
-scoreboard objectives add SelectedCancel dummy
-scoreboard objectives add SelectedReset dummy
-scoreboard objectives add SelectedOkay dummy
-scoreboard objectives add SelectedDecide dummy
+scoreboard objectives add SelectCancel dummy
+scoreboard objectives add SelectReset dummy
+scoreboard objectives add SelectOkay dummy
+scoreboard objectives add SelectDecide dummy
 scoreboard objectives add ChosenHideTime dummy
 scoreboard objectives add ChosenGlowTime dummy
 scoreboard objectives add ChosenGameTime dummy
@@ -85,35 +85,40 @@ scoreboard objectives add ChosenGameMode dummy
 scoreboard objectives add ChosenItemAdd dummy
 scoreboard objectives add ChosenRoleAdd dummy
 ## Add Variables for GUI Hide Time
-scoreboard objectives add Selected015secs dummy
-scoreboard objectives add Selected030secs dummy
-scoreboard objectives add Selected060secs dummy
-scoreboard objectives add Selected090secs dummy
-scoreboard objectives add Selected120secs dummy
-scoreboard objectives add Selected180secs dummy
-scoreboard objectives add Selected300secs dummy
+scoreboard objectives add Select015secs dummy
+scoreboard objectives add Select030secs dummy
+scoreboard objectives add Select060secs dummy
+scoreboard objectives add Select090secs dummy
+scoreboard objectives add Select120secs dummy
+scoreboard objectives add Select180secs dummy
+scoreboard objectives add Select300secs dummy
 ## Add Variables for GUI Glow Time
-scoreboard objectives add Selected000pers dummy
-scoreboard objectives add Selected010pers dummy
-scoreboard objectives add Selected020pers dummy
-scoreboard objectives add Selected030pers dummy
-scoreboard objectives add Selected050pers dummy
-scoreboard objectives add Selected080pers dummy
-scoreboard objectives add Selected100pers dummy
+scoreboard objectives add Select000pers dummy
+scoreboard objectives add Select010pers dummy
+scoreboard objectives add Select020pers dummy
+scoreboard objectives add Select030pers dummy
+scoreboard objectives add Select050pers dummy
+scoreboard objectives add Select080pers dummy
+scoreboard objectives add Select100pers dummy
 ## Add Variables for GUI Game Time
-scoreboard objectives add Selected05mins dummy
-scoreboard objectives add Selected10mins dummy
-scoreboard objectives add Selected15mins dummy
-scoreboard objectives add Selected20mins dummy
-scoreboard objectives add Selected25mins dummy
-scoreboard objectives add Selected30mins dummy
-scoreboard objectives add Selected60mins dummy
+scoreboard objectives add Select05mins dummy
+scoreboard objectives add Select10mins dummy
+scoreboard objectives add Select15mins dummy
+scoreboard objectives add Select20mins dummy
+scoreboard objectives add Select25mins dummy
+scoreboard objectives add Select30mins dummy
+scoreboard objectives add Select60mins dummy
 ## Add Variables for GUI Game Mode
-scoreboard objectives add SelectedWof dummy
-scoreboard objectives add SelectedTwo dummy
-scoreboard objectives add SelectedExt dummy
+scoreboard objectives add SelectNormalWolf dummy
+scoreboard objectives add SelectTwoAlive dummy
+scoreboard objectives add SelectAnnihilate dummy
 ## Add Variables for GUI Item Addition
 scoreboard objectives add TmpAdded dummy
+scoreboard objectives add AddedItem1 dummy
+scoreboard objectives add AddedItem2 dummy
+scoreboard objectives add AddedItem3 dummy
+scoreboard objectives add AddedItem4 dummy
+scoreboard objectives add AddedItem5 dummy
 scoreboard objectives add AddedStick dummy
 scoreboard objectives add AddedTotem dummy
 scoreboard objectives add AddedDeath2 dummy
@@ -138,25 +143,32 @@ scoreboard objectives add PrevAddedSpeed dummy
 scoreboard objectives add PrevAddedJump dummy
 scoreboard objectives add PrevAddedElytra dummy
 scoreboard objectives add PrevAddedConduit dummy
-scoreboard objectives add SelectedStick dummy
-scoreboard objectives add SelectedTotem dummy
-scoreboard objectives add SelectedDeath2 dummy
-scoreboard objectives add SelectedPearl dummy
-scoreboard objectives add SelectedHoe dummy
-scoreboard objectives add SelectedCrossbow dummy
-scoreboard objectives add SelectedSnowball dummy
-scoreboard objectives add SelectedInvis dummy
-scoreboard objectives add SelectedSpeed dummy
-scoreboard objectives add SelectedJump dummy
-scoreboard objectives add SelectedElytra dummy
-scoreboard objectives add SelectedConduit dummy
-scoreboard objectives add SelectedPrevPage dummy
-scoreboard objectives add SelectedNextPage dummy
-scoreboard objectives add SelectedDecide1 dummy
-scoreboard objectives add SelectedDecide2 dummy
-scoreboard objectives add SelectedDecide3 dummy
-scoreboard objectives add SelectedDecide4 dummy
-scoreboard objectives add SelectedDecide5 dummy
+scoreboard objectives add SelectAllDel dummy
+scoreboard objectives add SelectAllSet dummy
+scoreboard objectives add SelectStick dummy
+scoreboard objectives add SelectTotem dummy
+scoreboard objectives add SelectDeath2 dummy
+scoreboard objectives add SelectPearl dummy
+scoreboard objectives add SelectHoe dummy
+scoreboard objectives add SelectCrossbow dummy
+scoreboard objectives add SelectSnowball dummy
+scoreboard objectives add SelectInvis dummy
+scoreboard objectives add SelectSpeed dummy
+scoreboard objectives add SelectJump dummy
+scoreboard objectives add SelectElytra dummy
+scoreboard objectives add SelectConduit dummy
+scoreboard objectives add SelectPrevPage dummy
+scoreboard objectives add SelectNextPage dummy
+scoreboard objectives add SelectItem1 dummy
+scoreboard objectives add SelectItem2 dummy
+scoreboard objectives add SelectItem3 dummy
+scoreboard objectives add SelectItem4 dummy
+scoreboard objectives add SelectItem5 dummy
+scoreboard objectives add SelectDecide1 dummy
+scoreboard objectives add SelectDecide2 dummy
+scoreboard objectives add SelectDecide3 dummy
+scoreboard objectives add SelectDecide4 dummy
+scoreboard objectives add SelectDecide5 dummy
 ## Add Variables for Throwing Item
 scoreboard objectives add ThrowItem dummy
 ## Add Variables for Denominator
@@ -217,6 +229,11 @@ scoreboard players set Time ChangeGameTime 5
 scoreboard players set Time GameMode 3
 scoreboard players set Time PrevGameMode 3
 ## Set Variables for GUI Item Addition
+scoreboard players set Time AddedItem1 1
+scoreboard players set Time AddedItem2 1
+scoreboard players set Time AddedItem3 1
+scoreboard players set Time AddedItem4 1
+scoreboard players set Time AddedItem5 1
 scoreboard players set Time AddedStick 1
 scoreboard players set Time AddedTotem 1
 scoreboard players set Time AddedDeath2 1

@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Set Conduit
-scoreboard players operation Time TmpAdded = Time AddedConduit
-execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedConduit 0
-execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedConduit 1
-function mwj:system/setting/decision_item_addition3/change_to_item_addition3
+## Set Conduit - Item2
+scoreboard players operation Time TmpAdded = Time AddedItem2
+execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedItem2 0
+execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedItem2 1
+function mwj:system/setting/decision_item_addition_common/set_scoreboard

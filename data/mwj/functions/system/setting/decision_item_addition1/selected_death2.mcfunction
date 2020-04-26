@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Set Death2
-scoreboard players operation Time TmpAdded = Time AddedDeath2
-execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedDeath2 0
-execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedDeath2 1
-function mwj:system/setting/decision_item_addition1/change_to_item_addition1
+## Set Death2 - Item3
+scoreboard players operation Time TmpAdded = Time AddedItem3
+execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedItem3 0
+execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedItem3 1
+function mwj:system/setting/decision_item_addition_common/set_scoreboard

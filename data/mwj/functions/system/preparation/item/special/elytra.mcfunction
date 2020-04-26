@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:elytra{display:{Name:"\"エリトラ\"",Lore:["\"滑空ができる\""]},Unbreakable:1,HideFlags:39} 1
+give @s minecraft:elytra{Unbreakable:1} 1

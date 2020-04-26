@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:snowball{display:{Name:"\"スタングレネード\"",Lore:["\"半径3mのプレイヤーの動きを15秒止める\""]}} 8
+give @s minecraft:snowball{display:{Name:"\"\\u00a7r\\u00a7bスタングレネード\"",Lore:["\"\\u00a7r\\u00a7c移動速度低下 Ⅶ (0:15)\"","\"\"","\"\\u00a7r\\u00a75効果:\"","\"\\u00a7r\\u00a7c移動速度上昇 -100%\"","\"\\u00a7r当てた範囲3mに発効\""]}} 4

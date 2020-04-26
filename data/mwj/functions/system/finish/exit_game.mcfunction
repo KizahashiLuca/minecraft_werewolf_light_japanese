@@ -42,8 +42,8 @@ scoreboard objectives remove MASON_PAIR_NUM
 ## Remove Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives remove ROLE_OF_NUM
-scoreboard objectives remove doNotDrop
 scoreboard objectives remove TORCH
+scoreboard objectives remove REMOVED_TORCH
 scoreboard objectives remove DONE
 scoreboard objectives remove 10
 scoreboard objectives remove PAGE_NUMER

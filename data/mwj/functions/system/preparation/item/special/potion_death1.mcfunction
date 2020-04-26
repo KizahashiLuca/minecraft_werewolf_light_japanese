@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:splash_potion{display:{Name:"\"即死のスプラッシュポーション\"",Lore:["\"即死効果を一定範囲にばらまくポーション\""]},CustomPotionEffects:[{Id:7,Amplifier:3}],CustomPotionColor:16122102,HideFlags:39} 1
+give @s minecraft:splash_potion{display:{Name:"\"\\u00A7r即死のスプラッシュポーション\""},CustomPotionEffects:[{Id:7,Amplifier:3}],CustomPotionColor:16122102} 1

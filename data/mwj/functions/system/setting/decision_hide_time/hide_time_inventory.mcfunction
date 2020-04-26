@@ -14,8 +14,8 @@ replaceitem entity @p[tag=Host] inventory.13 minecraft:paper{display:{Name:"\"\\
 replaceitem entity @p[tag=Host] inventory.14 minecraft:paper{display:{Name:"\"\\u00A7r120秒\""}} 1
 replaceitem entity @p[tag=Host] inventory.15 minecraft:paper{display:{Name:"\"\\u00A7r180秒\""}} 1
 replaceitem entity @p[tag=Host] inventory.16 minecraft:paper{display:{Name:"\"\\u00A7r300秒\""}} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7rキャンセル\""}} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:tripwire_hook{display:{Name:"\"\\u00A7rこれで決定\""}} 1
+replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7r\\u00A7dキャンセル\""},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7b決定\""},HideFlags:39} 1
 
 ## Set Nether Star above Hide Time
 execute if score Time HideTime matches 1 run replaceitem entity @p[tag=Host] inventory.1 minecraft:nether_star{display:{Name:"\"\\u00A7r選択済み\""}} 1

@@ -8,8 +8,8 @@
 
 ## Add Variables for Roles
 #### Seer/Medium/Detective
-scoreboard objectives add doNotDrop dummy
 scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch
+scoreboard objectives add REMOVED_TORCH dummy
 scoreboard objectives add DONE dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add PAGE_NUMER dummy
@@ -43,6 +43,7 @@ scoreboard objectives add SNOWBALL dummy
 execute as @a run scoreboard players operation @s PREV_ROLE = @s ROLE
 #### Set Variables for Redstone Torch
 scoreboard players set @a TORCH 0
+scoreboard players set @a REMOVED_TORCH 0
 scoreboard players set @a DONE 0
 #### Seer/Medium/Detective
 scoreboard players set Time 10 10
@@ -94,3 +95,5 @@ execute store result bossbar minecraft:bossbar value run scoreboard players get 
 
 ## Game Start
 scoreboard players set Time GAME 11
+scoreboard players add Time BLACK 2
+scoreboard players add Time WHITE 2

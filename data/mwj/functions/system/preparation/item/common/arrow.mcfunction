@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:arrow{display:{Name:"\"矢\""},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}],HideFlags:39} 1
+give @s minecraft:arrow{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}]} 1

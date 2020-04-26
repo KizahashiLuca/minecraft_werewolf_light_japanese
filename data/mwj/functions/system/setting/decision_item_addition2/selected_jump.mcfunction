@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Set Jump
-scoreboard players operation Time TmpAdded = Time AddedJump
-execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedJump 0
-execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedJump 1
-function mwj:system/setting/decision_item_addition2/change_to_item_addition2
+## Set Jump - Item5
+scoreboard players operation Time TmpAdded = Time AddedItem5
+execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedItem5 0
+execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedItem5 1
+function mwj:system/setting/decision_item_addition_common/set_scoreboard

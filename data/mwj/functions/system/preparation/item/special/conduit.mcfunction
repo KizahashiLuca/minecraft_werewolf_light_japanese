@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:conduit{display:{Name:"\"\\u00a7r地雷\"",Lore:["\" 捨てることで発動。\"","\" 捨てた範囲1.5mに入ると発光+移動速度低下10秒。\""],Tag:"\"Mine\""}} 4
+give @s minecraft:conduit{display:{Name:"\"\\u00a7r\\u00a7b地雷\"",Lore:["\"\\u00a7r\\u00a79発光 (0:10)\"","\"\\u00a7r\\u00a7c移動速度低下 Ⅶ (0:10)\"","\"\"","\"\\u00a7r\\u00a75効果:\"","\"\\u00a7r\\u00a7c移動速度上昇 -100%\"","\"\\u00a7r捨てた範囲1.5mに発効\""],Tag:"\"Mine\""}} 4

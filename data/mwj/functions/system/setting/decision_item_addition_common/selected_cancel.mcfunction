@@ -12,13 +12,15 @@ scoreboard players operation Time AddedTotem = Time PrevAddedTotem
 scoreboard players operation Time AddedDeath2 = Time PrevAddedDeath2
 scoreboard players operation Time AddedPearl = Time PrevAddedPearl
 scoreboard players operation Time AddedHoe = Time PrevAddedHoe
+
 scoreboard players operation Time AddedCrossbow = Time PrevAddedCrossbo
 scoreboard players operation Time AddedSnowball = Time PrevAddedSnowbal
 scoreboard players operation Time AddedInvis = Time PrevAddedInvis
 scoreboard players operation Time AddedSpeed = Time PrevAddedSpeed
 scoreboard players operation Time AddedJump = Time PrevAddedJump
+
 scoreboard players operation Time AddedElytra = Time PrevAddedElytra
 scoreboard players operation Time AddedConduit = Time PrevAddedConduit
 
-## Set Item Addition 2
-function mwj:system/setting/decision_item_addition2/selected_set
+## Set item addition
+function mwj:system/setting/decision_item_addition_common/selected_set

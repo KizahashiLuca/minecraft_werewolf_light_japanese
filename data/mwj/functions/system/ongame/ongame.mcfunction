@@ -19,16 +19,18 @@ execute if score Time SECOND <= Time ChangeGlowTime run effect give @a[scores={D
 execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1
 execute as @a[scores={ROLE=4..10}] if score @s DEATH matches 1 run scoreboard players remove Time WHITE 1
 
+## Detect Dropping Torch
+execute as @a[team=Player] if score @s REMOVED_TORCH matches 1 run function mwj:system/preparation/item/common/torch
+execute as @a[team=Player] if score @s REMOVED_TORCH matches 1 run scoreboard players set @s REMOVED_TORCH 0
+execute as @a[team=Player] if score @s TORCH matches 1 run scoreboard players set @s REMOVED_TORCH 1
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{display:{Name:"\"\\u00A7r\\u00A7b杖\"",Lore:["\"\\u00a7r捨てることで役職利用可能\""]},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}]}}}] run kill @s
+
 ## Detect Existing Snowball
 execute as @e[type=minecraft:snowball] run function mwj:system/ongame/snowball/snowball_main
 execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,scores={SNOWBALL=1..}] run function mwj:system/ongame/snowball/snowball_sub
 
 ## Detect the mines system
-execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00a7r地雷\"",Tag:"\"Mine\""}}}}] at @s if entity @p[team=Player,distance=..2] run function mwj:system/ongame/mines/mines_main
-
-## Detect Dropping Torch
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch"}}] doNotDrop 1
-execute as @e[type=minecraft:item,scores={doNotDrop=1}] run data merge entity @s {PickupDelay:0}
+execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00a7r\\u00a7b地雷\"",Lore:["\"\\u00a7r\\u00a79発光 (0:10)\"","\"\\u00a7r\\u00a7c移動速度低下 Ⅶ (0:10)\"","\"\"","\"\\u00a7r\\u00a75効果:\"","\"\\u00a7r\\u00a7c移動速度上昇 -100%\"","\"\\u00a7r捨てた範囲1.5mに発効\""],Tag:"\"Mine\""}}}}] at @s if entity @p[team=Player,distance=..2] run function mwj:system/ongame/mines/mines_main
 
 ## Fox System
 execute as @a[scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
@@ -54,6 +56,9 @@ function mwj:system/ongame/kill_log/kill_log_main
 
 ## Decide Winner
 function mwj:system/finish/decide_winner/decide_winner_main
+
+## Torch system
+scoreboard players set @a TORCH 0
 
 ## Achievements
 execute if score Time GAME matches 0 as @a run function mwj:system/finish/achievements

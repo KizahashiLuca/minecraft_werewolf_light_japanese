@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:ender_pearl{display:{Name:"\"エンダーパール\"",Lore:["\"投げたところに瞬間移動できる\""]},HideFlags:39} 1
+give @s minecraft:ender_pearl 1

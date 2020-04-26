@@ -14,5 +14,5 @@ replaceitem entity @p[tag=Host] inventory.14 minecraft:map{display:{Name:"\"\\u0
 replaceitem entity @p[tag=Host] inventory.15 minecraft:chest{display:{Name:"\"\\u00A7r追加アイテム設定\""}} 1
 
 execute if score Time PrevAddedRole matches 1.. run replaceitem entity @p[tag=Host] inventory.17 minecraft:armor_stand{display:{Name:"\"\\u00A7r追加役職設定\""}} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7rゲームキャンセル\""}} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:tripwire_hook{display:{Name:"\"\\u00A7rゲームスタート\""}} 1
+replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7r\\u00A7dゲームキャンセル\""},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7bゲームスタート\""},HideFlags:39} 1

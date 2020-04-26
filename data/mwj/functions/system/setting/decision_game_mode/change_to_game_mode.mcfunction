@@ -13,12 +13,12 @@ clear @p[tag=Host]
 function mwj:system/setting/decision_game_mode/game_mode_inventory
 
 ## Set Scoreboard
-scoreboard players set @p[tag=Host] SelectedWof 0
-scoreboard players set @p[tag=Host] SelectedTwo 0
-scoreboard players set @p[tag=Host] SelectedExt 0
-scoreboard players set @p[tag=Host] SelectedCancel 0
-scoreboard players set @p[tag=Host] SelectedOkay 0
-scoreboard players set @p[tag=Host] SelectedDecide 0
+scoreboard players set @p[tag=Host] SelectNormalWolf 0
+scoreboard players set @p[tag=Host] SelectTwoAlive 0
+scoreboard players set @p[tag=Host] SelectAnnihilate 0
+scoreboard players set @p[tag=Host] SelectCancel 0
+scoreboard players set @p[tag=Host] SelectOkay 0
+scoreboard players set @p[tag=Host] SelectDecide 0
 scoreboard players set @p[tag=Host] ThrowItem 0
 
 ## Change Mode

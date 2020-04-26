@@ -6,8 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Set Elytra
-scoreboard players operation Time TmpAdded = Time AddedElytra
-execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedElytra 0
-execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedElytra 1
-function mwj:system/setting/decision_item_addition3/change_to_item_addition3
+## Set Elytra - Item1
+scoreboard players operation Time TmpAdded = Time AddedItem1
+execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedItem1 0
+execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedItem1 1
+function mwj:system/setting/decision_item_addition_common/set_scoreboard

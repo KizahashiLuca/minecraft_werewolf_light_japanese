@@ -26,4 +26,5 @@ tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Change to Choose Mode
+function mwj:system/setting/decision_item_addition1/set_added
 function mwj:system/setting/choose_mode/change_to_choose_mode

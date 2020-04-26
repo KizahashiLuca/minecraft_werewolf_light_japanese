@@ -6,6 +6,6 @@
 ## Version: beta-1.6
 ###############################
 
-execute at @s run effect give @a[gamemode=adventure,distance=0..3] minecraft:slowness 15 255 true
+execute at @s run effect give @a[gamemode=adventure,distance=0..3] minecraft:slowness 15 6 true
 execute at @s run effect give @a[gamemode=adventure,distance=0..3] minecraft:jump_boost 15 128 true
 kill @s
