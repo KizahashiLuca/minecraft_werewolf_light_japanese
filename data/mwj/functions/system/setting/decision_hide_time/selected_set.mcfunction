@@ -7,12 +7,12 @@
 ###############################
 
 ## Store Variables of TimeTrigger to ChangeHideTime
-scoreboard players set Time ChangeHideTime 15
-scoreboard players operation Time ChangeHideTime *= Time HideTime
+scoreboard players set #MWL ChangeHideTime 15
+scoreboard players operation #MWL ChangeHideTime *= #MWL HideTime
 
 ## Send a Message Hide Time to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"  潜伏時間が、 ","color":"white"},{"score":{"name":"Time","objective":"ChangeHideTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
+tellraw @a ["",{"text":"  潜伏時間が、 ","color":"white"},{"score":{"name":"#MWL","objective":"ChangeHideTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Change to Choose Mode

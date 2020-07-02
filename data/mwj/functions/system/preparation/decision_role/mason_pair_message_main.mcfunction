@@ -7,6 +7,6 @@
 ###############################
 
 ## Set scoreboard
-scoreboard players set Time MASON_PAIR 1
+scoreboard players set #MWL MASON_PAIR 1
 execute as @a[scores={ROLE=7}] run function mwj:system/preparation/decision_role/mason_pair_message_sub
-scoreboard players set Time MASON_PAIR 0
+scoreboard players set #MWL MASON_PAIR 0

@@ -7,7 +7,7 @@
 ###############################
 
 ## Set Prev choice
-scoreboard players operation Time PrevGameMode = Time GameMode
+scoreboard players operation #MWL PrevGameMode = #MWL GameMode
 
 ## Set Game Mode
 function mwj:system/setting/decision_game_mode/selected_set

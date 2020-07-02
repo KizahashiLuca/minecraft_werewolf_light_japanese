@@ -38,9 +38,9 @@ scoreboard players set @p[tag=Host] SelectThief 1
 scoreboard players set @p[tag=Host] SelectCat 1
 scoreboard players set @p[tag=Host] SelectCancel 1
 scoreboard players set @p[tag=Host] SelectReset 1
-execute if score Time AddedVilla matches 1.. run scoreboard players set @p[tag=Host] SelectVilla 1
+execute if score #MWL AddedVilla matches 1.. run scoreboard players set @p[tag=Host] SelectVilla 1
 scoreboard players set @p[tag=Host] SelectOkay 1
-execute unless score Time AddedRole = Time PrevAddedRole run scoreboard players set @p[tag=Host] SelectDecide 1
+execute unless score #MWL AddedRole = #MWL PrevAddedRole run scoreboard players set @p[tag=Host] SelectDecide 1
 
 ## Declare Inventory
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:red_stained_glass",tag:{display:{Name:"\"\\u00A7r\\u00A7f人狼の追加\""}}}]}] SelectWolf 0
@@ -56,16 +56,16 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barri
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:30b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r\\u00A7eリセット\""}}}]}] SelectReset 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:32b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7f残り追加可能人数\""}}}]}] SelectVilla 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b決定\""},HideFlags:39}}]}] SelectOkay 0
-execute if score Time AddedWolf matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedMadman matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:10b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedFox matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedVilla matches 1.. run scoreboard players set @p[tag=Host] SelectDecide 0
-execute if score Time AddedSeer matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedMedium matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedMason matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedDetec matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedThief matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:16b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time AddedCat matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:17b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedWolf matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedMadman matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:10b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedFox matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedVilla matches 1.. run scoreboard players set @p[tag=Host] SelectDecide 0
+execute if score #MWL AddedSeer matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedMedium matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedMason matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedDetec matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedThief matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:16b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL AddedCat matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:17b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={SelectWolf=1}] run function mwj:system/setting/decision_role_addition/selected_wolf
@@ -84,4 +84,4 @@ execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/de
 execute as @p[tag=Host,scores={SelectDecide=1}] run function mwj:system/setting/decision_role_addition/change_to_role_addition
 
 ## Process the system finished
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/setting/exit_setting/exit_setting

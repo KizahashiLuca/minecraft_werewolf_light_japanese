@@ -22,7 +22,7 @@ execute as @s[scores={ROLE=3}] run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] [""
 ## Effect Instant Damage of Fox by Seer
 #### Put Tag
 tag @s[scores={ROLE=3,DEATH=0}] add SeeredFox
-#### Store SEER Number
+#### Store Seer Number
 scoreboard players operation @s[scores={ROLE=3,DEATH=0}] STRAY_BY_FOX = @p[scores={ROLE=5,ROLE_OF_NUM=1}] NUM
 #### Deal Instant Damage to Fox
 effect give @s[scores={ROLE=3,DEATH=0}] minecraft:instant_damage 1 10 true

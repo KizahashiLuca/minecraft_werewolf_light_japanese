@@ -7,9 +7,9 @@
 ###############################
 
 ## Give Special Items 
-execute if score Time TENS_DIGIT matches 1.. run function mwj:system/preparation/item/branch/branch_ones_digit
+execute if score #MWL TENS_DIGIT matches 1.. run function mwj:system/preparation/item/branch/branch_ones_digit
 
 ## Remove Number of Player Item Gived
-execute if score Time TENS_DIGIT matches 1.. run scoreboard players remove Time TENS_DIGIT 1
-scoreboard players operation Time ONES_DIGIT = Time DENOMINATOR
-scoreboard players remove Time ONES_DIGIT 1
+execute if score #MWL TENS_DIGIT matches 1.. run scoreboard players remove #MWL TENS_DIGIT 1
+scoreboard players operation #MWL ONES_DIGIT = #MWL DENOMINATOR
+scoreboard players remove #MWL ONES_DIGIT 1

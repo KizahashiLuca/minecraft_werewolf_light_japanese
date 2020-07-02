@@ -57,11 +57,11 @@ tag @s[scores={DEATH=0}] add NonWolf
 
 ## Store Recent Time
 scoreboard players set @s STOLEN 1
-scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_NUM = Time STEAL_NUM
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_NUM = #MWL STEAL_NUM
 scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TARGET = @s NUM
-scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TIME_SEC = Time SECOND
-scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] STEAL_TIME_TICK = Time TICK
-scoreboard players add Time STEAL_NUM 1
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] ThiefStealSecond = #MWL Second
+scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] ThiefStealTick = #MWL Tick
+scoreboard players add #MWL STEAL_NUM 1
 
 ## Thief Role Done
 execute as @s[scores={DEATH=0,ROLE=1..8}] run scoreboard players operation @p[scores={ROLE=9,ROLE_OF_NUM=1}] DONE = @s DONE

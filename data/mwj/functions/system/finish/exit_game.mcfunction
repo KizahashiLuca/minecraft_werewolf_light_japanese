@@ -14,9 +14,9 @@ execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DEATH=1..
 
 ## Remove Variables for Game
 scoreboard objectives remove Version
-scoreboard objectives remove GAME
+scoreboard objectives remove Phase
 scoreboard objectives remove NUM
-scoreboard objectives remove PREV_NUM
+scoreboard objectives remove PrevNumOfPlayers
 scoreboard objectives remove ROLE
 scoreboard objectives remove PREV_ROLE
 scoreboard objectives remove WINNER
@@ -24,19 +24,19 @@ scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
 scoreboard objectives remove PURPLE
 ## Remove Variables for Timer
-scoreboard objectives remove SECOND
-scoreboard objectives remove TICK
+scoreboard objectives remove Second
+scoreboard objectives remove Tick
 ## Remove Variables for Number of Roles
-scoreboard objectives remove WOLF
-scoreboard objectives remove MADMAN
-scoreboard objectives remove VILLAGER
-scoreboard objectives remove SEER
-scoreboard objectives remove MEDIUM
-scoreboard objectives remove CAT
-scoreboard objectives remove MASON
-scoreboard objectives remove DETECTIVE
-scoreboard objectives remove THIEF
-scoreboard objectives remove FOX
+scoreboard objectives remove NumOfWolves
+scoreboard objectives remove NumOfMadmans
+scoreboard objectives remove NumOfVillagers
+scoreboard objectives remove NumOfSeers
+scoreboard objectives remove NumOfMediums
+scoreboard objectives remove NumOfCats
+scoreboard objectives remove NumOfMasons
+scoreboard objectives remove NumOfDetectives
+scoreboard objectives remove NumOfThieves
+scoreboard objectives remove NumOfFoxes
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
@@ -57,8 +57,8 @@ scoreboard objectives remove ROLE_L_PAGE
 scoreboard objectives remove ROLE_BUTTON
 #### Fox
 scoreboard objectives remove STRAY_BY_FOX
-scoreboard objectives remove SPAWN_TIME_SEC
-scoreboard objectives remove SPAWN_TIME_TICK
+scoreboard objectives remove FoxSpawnSecond
+scoreboard objectives remove FoxSpawnTick
 scoreboard objectives remove RESPAWN
 #### Mason
 scoreboard objectives remove MASON_PAIR
@@ -69,8 +69,8 @@ scoreboard objectives remove STOLEN
 scoreboard objectives remove STEAL_NUM
 scoreboard objectives remove STEAL_TARGET
 scoreboard objectives remove STEAL_FLAG
-scoreboard objectives remove STEAL_TIME_SEC
-scoreboard objectives remove STEAL_TIME_TICK
+scoreboard objectives remove ThiefStealSecond
+scoreboard objectives remove ThiefStealTick
 #### Cat
 scoreboard objectives remove STRAY_BY_CAT
 ## Remove Variables for Items
@@ -146,7 +146,7 @@ scoreboard objectives remove ONES_DIGIT
 scoreboard objectives remove TEMP_DIGIT
 ## Remove Players
 scoreboard players reset @a
-scoreboard players reset Time
+scoreboard players reset #MWL
 
 ## Remove bossbar
 bossbar remove minecraft:bossbar

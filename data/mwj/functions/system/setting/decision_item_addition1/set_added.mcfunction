@@ -7,8 +7,8 @@
 ###############################
 
 ## Set scoreboard
-scoreboard players operation Time AddedItem1 = Time AddedStick
-scoreboard players operation Time AddedItem2 = Time AddedTotem
-scoreboard players operation Time AddedItem3 = Time AddedDeath2
-scoreboard players operation Time AddedItem4 = Time AddedPearl
-scoreboard players operation Time AddedItem5 = Time AddedHoe
+scoreboard players operation #MWL AddedItem1 = #MWL AddedStick
+scoreboard players operation #MWL AddedItem2 = #MWL AddedTotem
+scoreboard players operation #MWL AddedItem3 = #MWL AddedDeath2
+scoreboard players operation #MWL AddedItem4 = #MWL AddedPearl
+scoreboard players operation #MWL AddedItem5 = #MWL AddedHoe

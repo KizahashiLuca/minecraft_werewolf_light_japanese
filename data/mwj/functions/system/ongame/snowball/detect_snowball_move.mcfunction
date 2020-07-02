@@ -10,8 +10,8 @@
 tag @s add DetectSnowballMove
 
 ## Detect snowball just born
-execute as @s[scores={SNOWBALL=0}] run scoreboard players add Time SNOWBALL 1
-scoreboard players operation @s[scores={SNOWBALL=0}] SNOWBALL = Time SNOWBALL
+execute as @s[scores={SNOWBALL=0}] run scoreboard players add #MWL SNOWBALL 1
+scoreboard players operation @s[scores={SNOWBALL=0}] SNOWBALL = #MWL SNOWBALL
 
 ## Remove area_effect_cloud preview position of snowball
 execute as @e[type=minecraft:area_effect_cloud,tag=Snowball] if score @s SNOWBALL = @e[type=minecraft:snowball,tag=DetectSnowballMove,limit=1] SNOWBALL run kill @s

@@ -7,9 +7,9 @@
 ###############################
 
 ## Added Role Number
-scoreboard players operation Time AddedRole = Time VILLAGER
-scoreboard players remove Time AddedRole 1
-scoreboard players set Time DENOMINATOR 2
-scoreboard players operation Time AddedRole /= Time DENOMINATOR
-execute if score Time NUM matches ..7 run scoreboard players set Time AddedRole 0
-execute if score Time AddedRole matches ..-1 run scoreboard players set Time AddedRole 0
+scoreboard players operation #MWL AddedRole = #MWL NumOfVillagers
+scoreboard players remove #MWL AddedRole 1
+scoreboard players set #MWL DENOMINATOR 2
+scoreboard players operation #MWL AddedRole /= #MWL DENOMINATOR
+execute if score #MWL NUM matches ..7 run scoreboard players set #MWL AddedRole 0
+execute if score #MWL AddedRole matches ..-1 run scoreboard players set #MWL AddedRole 0

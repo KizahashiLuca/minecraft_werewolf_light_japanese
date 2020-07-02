@@ -7,5 +7,5 @@
 ###############################
 
 ## Set 0 percent
-scoreboard players set Time GlowTime 0
+scoreboard players set #MWL GlowTime 0
 function mwj:system/setting/decision_glow_time/change_to_glow_time

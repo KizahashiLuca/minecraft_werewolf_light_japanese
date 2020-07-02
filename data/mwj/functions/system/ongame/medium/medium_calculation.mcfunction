@@ -8,5 +8,5 @@
 
 ## Calculate Scoreboard
 scoreboard players operation @s ROLE_TARGET = @s ROLE_PAGE
-scoreboard players operation @s ROLE_TARGET *= Time 10
+scoreboard players operation @s ROLE_TARGET *= #MWL 10
 scoreboard players operation @s ROLE_TARGET += @s ROLE_BUTTON

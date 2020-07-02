@@ -14,8 +14,8 @@ replaceitem entity @p[tag=Host] inventory.14 minecraft:ender_pearl 1
 replaceitem entity @p[tag=Host] inventory.15 minecraft:diamond_hoe{display:{Lore:["\"\\u00A7r\\u00A77ダメージ増加 ⅭⅭ\""]},Damage:1561,Enchantments:[{id:"minecraft:sharpness",lvl:200}],HideFlags:1} 1
 
 ## Set scoreboard
-scoreboard players operation Time AddedStick = Time AddedItem1
-scoreboard players operation Time AddedTotem = Time AddedItem2
-scoreboard players operation Time AddedDeath2 = Time AddedItem3
-scoreboard players operation Time AddedPearl = Time AddedItem4
-scoreboard players operation Time AddedHoe = Time AddedItem5
+scoreboard players operation #MWL AddedStick = #MWL AddedItem1
+scoreboard players operation #MWL AddedTotem = #MWL AddedItem2
+scoreboard players operation #MWL AddedDeath2 = #MWL AddedItem3
+scoreboard players operation #MWL AddedPearl = #MWL AddedItem4
+scoreboard players operation #MWL AddedHoe = #MWL AddedItem5

@@ -25,7 +25,7 @@ scoreboard objectives remove TMP
 scoreboard players set @s[scores={DEATH=1}] KILLLOG_FOX 1
 
 ## Detect Death
-execute as @s[scores={DEATH=1,ROLE_OF_NUM=1}] run scoreboard players remove Time PURPLE 1
+execute as @s[scores={DEATH=1,ROLE_OF_NUM=1}] run scoreboard players remove #MWL PURPLE 1
 scoreboard players set @s[scores={ROLE_OF_NUM=1}] ROLE_OF_NUM 2
 
 ## Remove Tag

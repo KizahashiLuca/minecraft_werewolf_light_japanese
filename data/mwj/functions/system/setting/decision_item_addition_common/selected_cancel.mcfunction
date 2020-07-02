@@ -7,23 +7,23 @@
 ###############################
 
 ## Reset choice
-scoreboard players operation Time AddedStick = Time PrevAddedStick
-scoreboard players operation Time AddedTotem = Time PrevAddedTotem
-scoreboard players operation Time AddedDeath2 = Time PrevAddedDeath2
-scoreboard players operation Time AddedPearl = Time PrevAddedPearl
-scoreboard players operation Time AddedHoe = Time PrevAddedHoe
+scoreboard players operation #MWL AddedStick = #MWL PrevAddedStick
+scoreboard players operation #MWL AddedTotem = #MWL PrevAddedTotem
+scoreboard players operation #MWL AddedDeath2 = #MWL PrevAddedDeath2
+scoreboard players operation #MWL AddedPearl = #MWL PrevAddedPearl
+scoreboard players operation #MWL AddedHoe = #MWL PrevAddedHoe
 
-scoreboard players operation Time AddedElytra = Time PrevAddedElytra
-scoreboard players operation Time AddedSnowball = Time PrevAddedSnowbal
-scoreboard players operation Time AddedInvis = Time PrevAddedInvis
-scoreboard players operation Time AddedSpeed = Time PrevAddedSpeed
-scoreboard players operation Time AddedJump = Time PrevAddedJump
+scoreboard players operation #MWL AddedElytra = #MWL PrevAddedElytra
+scoreboard players operation #MWL AddedSnowball = #MWL PrevAddedSnowbal
+scoreboard players operation #MWL AddedInvis = #MWL PrevAddedInvis
+scoreboard players operation #MWL AddedSpeed = #MWL PrevAddedSpeed
+scoreboard players operation #MWL AddedJump = #MWL PrevAddedJump
 
-scoreboard players operation Time AddedTrident = Time PrevAddedTrident
-scoreboard players operation Time AddedConduit = Time PrevAddedConduit
-scoreboard players operation Time AddedCrossbow = Time PrevAddedCrossbo
-scoreboard players operation Time AddedHoneyBlock = Time PrevAddedHoneyBl
-scoreboard players operation Time AddedLantern = Time PrevAddedLantern
+scoreboard players operation #MWL AddedTrident = #MWL PrevAddedTrident
+scoreboard players operation #MWL AddedConduit = #MWL PrevAddedConduit
+scoreboard players operation #MWL AddedCrossbow = #MWL PrevAddedCrossbo
+scoreboard players operation #MWL AddedHoneyBlock = #MWL PrevAddedHoneyBl
+scoreboard players operation #MWL AddedLantern = #MWL PrevAddedLantern
 
 ## Set item addition
 function mwj:system/setting/decision_item_addition_common/selected_set

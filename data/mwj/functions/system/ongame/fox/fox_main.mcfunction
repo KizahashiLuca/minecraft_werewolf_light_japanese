@@ -12,16 +12,16 @@ execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_nonwolf=true}] run
 execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_cat=true}] run scoreboard players set @s ROLE_OF_NUM 2
 
 ## Detect Respawn
-execute if score @s[scores={ROLE_OF_NUM=1}] SPAWN_TIME_SEC = Time SECOND if score @s[scores={ROLE_OF_NUM=1}] SPAWN_TIME_TICK = Time TICK run function mwj:system/ongame/fox/fox_respawn
+execute if score @s[scores={ROLE_OF_NUM=1}] FoxSpawnSecond = #MWL Second if score @s[scores={ROLE_OF_NUM=1}] FoxSpawnTick = #MWL Tick run function mwj:system/ongame/fox/fox_respawn
 
 ## Give Effect
 effect give @s[scores={ROLE_OF_NUM=1}] minecraft:invisibility 10 1 true
 effect clear @s[scores={ROLE_OF_NUM=2}]
 
 ## Hit by NonWolf
-scoreboard players reset @s[scores={ROLE_OF_NUM=2}] SPAWN_TIME_SEC
-scoreboard players reset @s[scores={ROLE_OF_NUM=2}] SPAWN_TIME_TICK
+scoreboard players reset @s[scores={ROLE_OF_NUM=2}] FoxSpawnSecond
+scoreboard players reset @s[scores={ROLE_OF_NUM=2}] FoxSpawnTick
 scoreboard players set @s[scores={ROLE_OF_NUM=2}] ROLE_OF_NUM 0
 
 ## Detect Death
-execute as @s[scores={DEATH=1,ROLE_OF_NUM=0}] run scoreboard players remove Time PURPLE 1
+execute as @s[scores={DEATH=1,ROLE_OF_NUM=0}] run scoreboard players remove #MWL PURPLE 1

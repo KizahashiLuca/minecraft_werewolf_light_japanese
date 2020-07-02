@@ -7,15 +7,15 @@
 ###############################
 
 ## Store Recent Time
-scoreboard players operation @s VICTIM = Time KILLLOG_NUM
-scoreboard players operation @s SECOND = Time SECOND
-scoreboard players operation @s TICK = Time TICK
+scoreboard players operation @s VICTIM = #MWL KILLLOG_NUM
+scoreboard players operation @s Second = #MWL Second
+scoreboard players operation @s Tick = #MWL Tick
 
 ## Store Victim Flag
 scoreboard players set @s VICTIM_FLAG 1
 
 ## Count Number of Victim
-scoreboard players add Time VICTIM_NUM 1
+scoreboard players add #MWL VICTIM_NUM 1
 
 ## Increment Kill Log Number by 1
-scoreboard players add Time KILLLOG_NUM 1
+scoreboard players add #MWL KILLLOG_NUM 1

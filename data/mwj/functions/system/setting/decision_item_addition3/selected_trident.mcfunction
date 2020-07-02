@@ -7,7 +7,7 @@
 ###############################
 
 ## Set Trident - Item1
-scoreboard players operation Time TmpAdded = Time AddedItem1
-execute if score Time TmpAdded matches 1 run scoreboard players set Time AddedItem1 0
-execute if score Time TmpAdded matches 0 run scoreboard players set Time AddedItem1 1
+scoreboard players operation #MWL TmpAdded = #MWL AddedItem1
+execute if score #MWL TmpAdded matches 1 run scoreboard players set #MWL AddedItem1 0
+execute if score #MWL TmpAdded matches 0 run scoreboard players set #MWL AddedItem1 1
 function mwj:system/setting/decision_item_addition_common/set_scoreboard

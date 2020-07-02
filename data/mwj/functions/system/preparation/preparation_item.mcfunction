@@ -7,34 +7,34 @@
 ###############################
 
 ## Set DENOMINATOR (Kind of Items)
-scoreboard players set Time DENOMINATOR 0
-execute if score Time AddedStick matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedTotem matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedDeath2 matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedPearl matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedHoe matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedElytra matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedSnowball matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedInvis matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedSpeed matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedJump matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedTrident matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedConduit matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedCrossbow matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedHoneyBlock matches 1 run scoreboard players add Time DENOMINATOR 1
-execute if score Time AddedLantern matches 1 run scoreboard players add Time DENOMINATOR 1
+scoreboard players set #MWL DENOMINATOR 0
+execute if score #MWL AddedStick matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedTotem matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedDeath2 matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedPearl matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedHoe matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedElytra matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedSnowball matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedInvis matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedSpeed matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedJump matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedTrident matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedConduit matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedCrossbow matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedHoneyBlock matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedLantern matches 1 run scoreboard players add #MWL DENOMINATOR 1
 ## Calculate ones digit
-scoreboard players operation Time ONES_DIGIT = Time NUM
-scoreboard players remove Time ONES_DIGIT 1
-scoreboard players operation Time ONES_DIGIT %= Time DENOMINATOR
+scoreboard players operation #MWL ONES_DIGIT = #MWL NUM
+scoreboard players remove #MWL ONES_DIGIT 1
+scoreboard players operation #MWL ONES_DIGIT %= #MWL DENOMINATOR
 ## Calculate tens digit
-scoreboard players operation Time TENS_DIGIT = Time NUM
-scoreboard players remove Time TENS_DIGIT 1
-scoreboard players operation Time TENS_DIGIT /= Time DENOMINATOR
+scoreboard players operation #MWL TENS_DIGIT = #MWL NUM
+scoreboard players remove #MWL TENS_DIGIT 1
+scoreboard players operation #MWL TENS_DIGIT /= #MWL DENOMINATOR
 
 ## Give Special Items
-execute if score Time TENS_DIGIT matches 1.. as @a[team=Player] run function mwj:system/preparation/item/branch/branch_tens_digit
-execute if score Time TENS_DIGIT matches 0 run function mwj:system/preparation/item/branch/branch_ones_digit
+execute if score #MWL TENS_DIGIT matches 1.. as @a[team=Player] run function mwj:system/preparation/item/branch/branch_tens_digit
+execute if score #MWL TENS_DIGIT matches 0 run function mwj:system/preparation/item/branch/branch_ones_digit
 
 ## Give Common Items
 execute as @a[team=Player] run function mwj:system/preparation/item/common/bow

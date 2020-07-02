@@ -7,37 +7,37 @@
 ###############################
 
 ## Decision Role Breakdown of Wolf
-scoreboard players operation Time WOLF = Time NUM
-scoreboard players add Time WOLF 5
-scoreboard players set Time DENOMINATOR 5
-scoreboard players operation Time WOLF /= Time DENOMINATOR
-execute if score Time WOLF matches ..-1 run scoreboard players set Time WOLF 0
+scoreboard players operation #MWL NumOfWolves = #MWL NUM
+scoreboard players add #MWL NumOfWolves 5
+scoreboard players set #MWL DENOMINATOR 5
+scoreboard players operation #MWL NumOfWolves /= #MWL DENOMINATOR
+execute if score #MWL NumOfWolves matches ..-1 run scoreboard players set #MWL NumOfWolves 0
 
 ## Decision Role Breakdown of Madman
-scoreboard players operation Time MADMAN = Time NUM
-scoreboard players remove Time MADMAN 1
-scoreboard players set Time DENOMINATOR 6
-scoreboard players operation Time MADMAN /= Time DENOMINATOR
-execute if score Time MADMAN matches ..-1 run scoreboard players set Time MADMAN 0
+scoreboard players operation #MWL NumOfMadmans = #MWL NUM
+scoreboard players remove #MWL NumOfMadmans 1
+scoreboard players set #MWL DENOMINATOR 6
+scoreboard players operation #MWL NumOfMadmans /= #MWL DENOMINATOR
+execute if score #MWL NumOfMadmans matches ..-1 run scoreboard players set #MWL NumOfMadmans 0
 
 ## Decision Role Breakdown of Seer
-scoreboard players operation Time SEER = Time NUM
-scoreboard players add Time SEER 5
-scoreboard players set Time DENOMINATOR 10
-scoreboard players operation Time SEER /= Time DENOMINATOR
-execute if score Time SEER matches ..-1 run scoreboard players set Time SEER 0
+scoreboard players operation #MWL NumOfSeers = #MWL NUM
+scoreboard players add #MWL NumOfSeers 5
+scoreboard players set #MWL DENOMINATOR 10
+scoreboard players operation #MWL NumOfSeers /= #MWL DENOMINATOR
+execute if score #MWL NumOfSeers matches ..-1 run scoreboard players set #MWL NumOfSeers 0
 
 ## Decision Role Breakdown of Medium
-scoreboard players operation Time MEDIUM = Time NUM
-scoreboard players add Time MEDIUM 4
-scoreboard players set Time DENOMINATOR 10
-scoreboard players operation Time MEDIUM /= Time DENOMINATOR
-execute if score Time MEDIUM matches ..-1 run scoreboard players set Time MEDIUM 0
+scoreboard players operation #MWL NumOfMediums = #MWL NUM
+scoreboard players add #MWL NumOfMediums 4
+scoreboard players set #MWL DENOMINATOR 10
+scoreboard players operation #MWL NumOfMediums /= #MWL DENOMINATOR
+execute if score #MWL NumOfMediums matches ..-1 run scoreboard players set #MWL NumOfMediums 0
 
 ## Decision Role Breakdown of Villager
-scoreboard players operation Time VILLAGER = Time NUM
-scoreboard players operation Time VILLAGER -= Time WOLF
-scoreboard players operation Time VILLAGER -= Time MADMAN
-scoreboard players operation Time VILLAGER -= Time SEER
-scoreboard players operation Time VILLAGER -= Time MEDIUM
-execute if score Time VILLAGER matches ..-1 run scoreboard players set Time VILLAGER 0
+scoreboard players operation #MWL NumOfVillagers = #MWL NUM
+scoreboard players operation #MWL NumOfVillagers -= #MWL NumOfWolves
+scoreboard players operation #MWL NumOfVillagers -= #MWL NumOfMadmans
+scoreboard players operation #MWL NumOfVillagers -= #MWL NumOfSeers
+scoreboard players operation #MWL NumOfVillagers -= #MWL NumOfMediums
+execute if score #MWL NumOfVillagers matches ..-1 run scoreboard players set #MWL NumOfVillagers 0

@@ -6,6 +6,6 @@
 ## Version: beta-1.6
 ###############################
 
-execute if score Time GameMode matches 1 run function mwj:system/finish/decide_winner/decide_winner_wolf_prior
-execute if score Time GameMode matches 2 run function mwj:system/finish/decide_winner/decide_winner_two_r_alive
-execute if score Time GameMode matches 3 run function mwj:system/finish/decide_winner/decide_winner_extinction
+execute if score #MWL GameMode matches 1 run function mwj:system/finish/decide_winner/decide_winner_wolf_prior
+execute if score #MWL GameMode matches 2 run function mwj:system/finish/decide_winner/decide_winner_two_r_alive
+execute if score #MWL GameMode matches 3 run function mwj:system/finish/decide_winner/decide_winner_extinction

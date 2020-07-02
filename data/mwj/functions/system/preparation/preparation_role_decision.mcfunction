@@ -12,28 +12,28 @@ tag @a remove numbered
 
 ## Decide Players' Role
 scoreboard objectives add NUMBER_ROLE dummy
-scoreboard players operation Time NUMBER_ROLE = Time WOLF
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfWolves
 function mwj:system/preparation/decision_role/wolf_decision
-scoreboard players operation Time NUMBER_ROLE = Time MADMAN
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfMadmans
 function mwj:system/preparation/decision_role/madman_decision
-scoreboard players operation Time NUMBER_ROLE = Time FOX
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfFoxes
 function mwj:system/preparation/decision_role/fox_decision
-scoreboard players operation Time NUMBER_ROLE = Time VILLAGER
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfVillagers
 function mwj:system/preparation/decision_role/villager_decision
-scoreboard players operation Time NUMBER_ROLE = Time SEER
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfSeers
 function mwj:system/preparation/decision_role/seer_decision
-scoreboard players operation Time NUMBER_ROLE = Time MEDIUM
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfMediums
 function mwj:system/preparation/decision_role/medium_decision
-scoreboard players operation Time NUMBER_ROLE = Time MASON
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfMasons
 function mwj:system/preparation/decision_role/mason_decision
-scoreboard players operation Time NUMBER_ROLE = Time DETECTIVE
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfDetectives
 function mwj:system/preparation/decision_role/detective_decision
-scoreboard players operation Time NUMBER_ROLE = Time THIEF
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfThieves
 function mwj:system/preparation/decision_role/thief_decision
-scoreboard players operation Time NUMBER_ROLE = Time CAT
+scoreboard players operation #MWL NUMBER_ROLE = #MWL NumOfCats
 function mwj:system/preparation/decision_role/cat_decision
 
 ## Decide Mason Pair
-scoreboard players operation Time NUMBER_ROLE = Time AddedMason
+scoreboard players operation #MWL NUMBER_ROLE = #MWL AddedMason
 function mwj:system/preparation/decision_role/mason_pair_decision
 scoreboard objectives remove NUMBER_ROLE

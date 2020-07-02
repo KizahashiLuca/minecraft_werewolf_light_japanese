@@ -7,6 +7,6 @@
 ###############################
 
 ## Set Thief
-execute if score Time AddedRole matches 1.. run scoreboard players add Time AddedThief 1
-execute if score Time AddedRole matches 1.. run scoreboard players remove Time AddedRole 1
+execute if score #MWL AddedRole matches 1.. run scoreboard players add #MWL AddedThief 1
+execute if score #MWL AddedRole matches 1.. run scoreboard players remove #MWL AddedRole 1
 function mwj:system/setting/decision_role_addition/change_to_role_addition

@@ -7,22 +7,22 @@
 ###############################
 
 ## Add Variables for Game
-scoreboard objectives add GAME dummy
-scoreboard objectives add PREV_NUM dummy
+scoreboard objectives add Phase dummy
+scoreboard objectives add PrevNumOfPlayers dummy
 ## Variables for Timer
-scoreboard objectives add SECOND dummy
-scoreboard objectives add TICK dummy
+scoreboard objectives add Second dummy
+scoreboard objectives add Tick dummy
 ## Add Variables for Role Number
-scoreboard objectives add WOLF dummy
-scoreboard objectives add MADMAN dummy
-scoreboard objectives add VILLAGER dummy
-scoreboard objectives add SEER dummy
-scoreboard objectives add MEDIUM dummy
-scoreboard objectives add CAT dummy
-scoreboard objectives add MASON dummy
-scoreboard objectives add DETECTIVE dummy
-scoreboard objectives add THIEF dummy
-scoreboard objectives add FOX dummy
+scoreboard objectives add NumOfWolves dummy
+scoreboard objectives add NumOfMadmans dummy
+scoreboard objectives add NumOfVillagers dummy
+scoreboard objectives add NumOfSeers dummy
+scoreboard objectives add NumOfMediums dummy
+scoreboard objectives add NumOfCats dummy
+scoreboard objectives add NumOfMasons dummy
+scoreboard objectives add NumOfDetectives dummy
+scoreboard objectives add NumOfThieves dummy
+scoreboard objectives add NumOfFoxes dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRole dummy
 scoreboard objectives add AddedWolf dummy
@@ -169,107 +169,107 @@ scoreboard objectives add ThrowItem dummy
 scoreboard objectives add DENOMINATOR dummy
 
 ## Set Variables for Timer
-scoreboard players operation Time PREV_NUM = Time NUM
+scoreboard players operation #MWL PrevNumOfPlayers = #MWL NUM
 ## Set Variables for ROLE
-scoreboard players set Time WOLF 0
-scoreboard players set Time MADMAN 0
-scoreboard players set Time VILLAGER 0
-scoreboard players set Time SEER 0
-scoreboard players set Time MEDIUM 0
-scoreboard players set Time CAT 0
-scoreboard players set Time MASON 0
-scoreboard players set Time DETECTIVE 0
-scoreboard players set Time THIEF 0
-scoreboard players set Time FOX 0
-scoreboard players set Time DENOMINATOR 0
+scoreboard players set #MWL NumOfWolves 0
+scoreboard players set #MWL NumOfMadmans 0
+scoreboard players set #MWL NumOfVillagers 0
+scoreboard players set #MWL NumOfSeers 0
+scoreboard players set #MWL NumOfMediums 0
+scoreboard players set #MWL NumOfCats 0
+scoreboard players set #MWL NumOfMasons 0
+scoreboard players set #MWL NumOfDetectives 0
+scoreboard players set #MWL NumOfThieves 0
+scoreboard players set #MWL NumOfFoxes 0
+scoreboard players set #MWL DENOMINATOR 0
 ## Set Variables for Setting Added Role
-scoreboard players set Time AddedRole 0
-scoreboard players set Time AddedWolf 0
-scoreboard players set Time AddedMadman 0
-scoreboard players set Time AddedFox 0
-scoreboard players set Time AddedVilla 0
-scoreboard players set Time AddedSeer 0
-scoreboard players set Time AddedMedium 0
-scoreboard players set Time AddedMason 0
-scoreboard players set Time AddedDetec 0
-scoreboard players set Time AddedThief 0
-scoreboard players set Time AddedCat 0
-scoreboard players set Time PrevAddedRole 0
-scoreboard players set Time PrevAddedWolf 0
-scoreboard players set Time PrevAddedMadman 0
-scoreboard players set Time PrevAddedFox 0
-scoreboard players set Time PrevAddedVilla 0
-scoreboard players set Time PrevAddedSeer 0
-scoreboard players set Time PrevAddedMedium 0
-scoreboard players set Time PrevAddedMason 0
-scoreboard players set Time PrevAddedDetec 0
-scoreboard players set Time PrevAddedThief 0
-scoreboard players set Time PrevAddedCat 0
+scoreboard players set #MWL AddedRole 0
+scoreboard players set #MWL AddedWolf 0
+scoreboard players set #MWL AddedMadman 0
+scoreboard players set #MWL AddedFox 0
+scoreboard players set #MWL AddedVilla 0
+scoreboard players set #MWL AddedSeer 0
+scoreboard players set #MWL AddedMedium 0
+scoreboard players set #MWL AddedMason 0
+scoreboard players set #MWL AddedDetec 0
+scoreboard players set #MWL AddedThief 0
+scoreboard players set #MWL AddedCat 0
+scoreboard players set #MWL PrevAddedRole 0
+scoreboard players set #MWL PrevAddedWolf 0
+scoreboard players set #MWL PrevAddedMadman 0
+scoreboard players set #MWL PrevAddedFox 0
+scoreboard players set #MWL PrevAddedVilla 0
+scoreboard players set #MWL PrevAddedSeer 0
+scoreboard players set #MWL PrevAddedMedium 0
+scoreboard players set #MWL PrevAddedMason 0
+scoreboard players set #MWL PrevAddedDetec 0
+scoreboard players set #MWL PrevAddedThief 0
+scoreboard players set #MWL PrevAddedCat 0
 ## Set Variables for Setting Time
-scoreboard players set Time SettingTime 60
+scoreboard players set #MWL SettingTime 60
 ## Set Variables for Setting Hide Time
-scoreboard players set Time HideTime 4
-scoreboard players set Time PrevHideTime 4
-scoreboard players set Time ChangeHideTime 15
+scoreboard players set #MWL HideTime 4
+scoreboard players set #MWL PrevHideTime 4
+scoreboard players set #MWL ChangeHideTime 15
 ## Set Variables for Setting Glow Time
-scoreboard players set Time GlowTime 2
-scoreboard players set Time PrevGlowTime 2
-scoreboard players set Time ChangeGlowTime 0
+scoreboard players set #MWL GlowTime 2
+scoreboard players set #MWL PrevGlowTime 2
+scoreboard players set #MWL ChangeGlowTime 0
 ## Set Variables for Setting Game Time
-scoreboard players set Time GameTime 4
-scoreboard players set Time PrevGameTime 4
-scoreboard players set Time ChangeGameTime 5
+scoreboard players set #MWL GameTime 4
+scoreboard players set #MWL PrevGameTime 4
+scoreboard players set #MWL ChangeGameTime 5
 ## Set Variables for Setting Game Mode
-scoreboard players set Time GameMode 3
-scoreboard players set Time PrevGameMode 3
+scoreboard players set #MWL GameMode 3
+scoreboard players set #MWL PrevGameMode 3
 ## Set Variables for GUI Item Addition
-scoreboard players set Time AddedItem1 1
-scoreboard players set Time AddedItem2 1
-scoreboard players set Time AddedItem3 1
-scoreboard players set Time AddedItem4 1
-scoreboard players set Time AddedItem5 1
-scoreboard players set Time AddedStick 1
-scoreboard players set Time AddedTotem 1
-scoreboard players set Time AddedDeath2 1
-scoreboard players set Time AddedPearl 1
-scoreboard players set Time AddedHoe 1
-scoreboard players set Time AddedElytra 1
-scoreboard players set Time AddedSnowball 1
-scoreboard players set Time AddedInvis 1
-scoreboard players set Time AddedSpeed 1
-scoreboard players set Time AddedJump 1
-scoreboard players set Time AddedTrident 1
-scoreboard players set Time AddedConduit 1
-scoreboard players set Time AddedCrossbow 1
-scoreboard players set Time AddedHoneyBlock 0
-execute if score Time Version matches 15.. run scoreboard players set Time AddedHoneyBlock 1
-scoreboard players set Time AddedLantern 0
-execute if score Time Version matches 16.. run scoreboard players set Time AddedLantern 1
-scoreboard players set Time PrevAddedStick 1
-scoreboard players set Time PrevAddedTotem 1
-scoreboard players set Time PrevAddedDeath2 1
-scoreboard players set Time PrevAddedPearl 1
-scoreboard players set Time PrevAddedHoe 1
-scoreboard players set Time PrevAddedElytra 1
-scoreboard players set Time PrevAddedSnowbal 1
-scoreboard players set Time PrevAddedInvis 1
-scoreboard players set Time PrevAddedSpeed 1
-scoreboard players set Time PrevAddedJump 1
-scoreboard players set Time PrevAddedTrident 1
-scoreboard players set Time PrevAddedConduit 1
-scoreboard players set Time PrevAddedCrossbo 1
-scoreboard players set Time PrevAddedHoneyBl 0
-execute if score Time Version matches 15.. run scoreboard players set Time PrevAddedHoneyBl 1
-scoreboard players set Time PrevAddedLantern 0
-execute if score Time Version matches 16.. run scoreboard players set Time PrevAddedLantern 1
+scoreboard players set #MWL AddedItem1 1
+scoreboard players set #MWL AddedItem2 1
+scoreboard players set #MWL AddedItem3 1
+scoreboard players set #MWL AddedItem4 1
+scoreboard players set #MWL AddedItem5 1
+scoreboard players set #MWL AddedStick 1
+scoreboard players set #MWL AddedTotem 1
+scoreboard players set #MWL AddedDeath2 1
+scoreboard players set #MWL AddedPearl 1
+scoreboard players set #MWL AddedHoe 1
+scoreboard players set #MWL AddedElytra 1
+scoreboard players set #MWL AddedSnowball 1
+scoreboard players set #MWL AddedInvis 1
+scoreboard players set #MWL AddedSpeed 1
+scoreboard players set #MWL AddedJump 1
+scoreboard players set #MWL AddedTrident 1
+scoreboard players set #MWL AddedConduit 1
+scoreboard players set #MWL AddedCrossbow 1
+scoreboard players set #MWL AddedHoneyBlock 0
+execute if score #MWL Version matches 15.. run scoreboard players set #MWL AddedHoneyBlock 1
+scoreboard players set #MWL AddedLantern 0
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedLantern 1
+scoreboard players set #MWL PrevAddedStick 1
+scoreboard players set #MWL PrevAddedTotem 1
+scoreboard players set #MWL PrevAddedDeath2 1
+scoreboard players set #MWL PrevAddedPearl 1
+scoreboard players set #MWL PrevAddedHoe 1
+scoreboard players set #MWL PrevAddedElytra 1
+scoreboard players set #MWL PrevAddedSnowbal 1
+scoreboard players set #MWL PrevAddedInvis 1
+scoreboard players set #MWL PrevAddedSpeed 1
+scoreboard players set #MWL PrevAddedJump 1
+scoreboard players set #MWL PrevAddedTrident 1
+scoreboard players set #MWL PrevAddedConduit 1
+scoreboard players set #MWL PrevAddedCrossbo 1
+scoreboard players set #MWL PrevAddedHoneyBl 0
+execute if score #MWL Version matches 15.. run scoreboard players set #MWL PrevAddedHoneyBl 1
+scoreboard players set #MWL PrevAddedLantern 0
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedLantern 1
 ## Set Variables for Denominator
-scoreboard players set Time DENOMINATOR 0
+scoreboard players set #MWL DENOMINATOR 0
 
 ## Set bossbar
-scoreboard players set Time TICK 0
-scoreboard players operation Time SECOND = Time SettingTime
-bossbar add minecraft:bossbar [{"text":"初期設定時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
+scoreboard players set #MWL Tick 0
+scoreboard players operation #MWL Second = #MWL SettingTime
+bossbar add minecraft:bossbar [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 bossbar set minecraft:bossbar players @a
-bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
-execute store result bossbar minecraft:bossbar max run scoreboard players get Time SettingTime
-execute store result bossbar minecraft:bossbar value run scoreboard players get Time SECOND
+bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
+execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL SettingTime
+execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second

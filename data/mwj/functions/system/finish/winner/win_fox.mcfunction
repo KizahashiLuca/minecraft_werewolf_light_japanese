@@ -16,5 +16,5 @@ function mwj:system/finish/finish_game_title
 tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"羽衣狐","bold":true,"color":"dark_purple"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode
-scoreboard players set Time GAME 0
-scoreboard players set Time WINNER 3
+scoreboard players set #MWL Phase 0
+scoreboard players set #MWL WINNER 3

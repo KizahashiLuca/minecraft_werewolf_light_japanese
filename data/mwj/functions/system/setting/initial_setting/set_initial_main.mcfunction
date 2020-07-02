@@ -18,9 +18,9 @@ function mwj:system/setting/initial_setting/set_initial_scoreboard
 ## Set Role Number
 function mwj:system/setting/initial_setting/set_initial_role_number
 function mwj:system/setting/initial_setting/set_initial_added_role_number
-scoreboard players operation Time AddedVilla = Time AddedRole
-scoreboard players operation Time PrevAddedRole = Time AddedRole
-scoreboard players operation Time PrevAddedVilla = Time PrevAddedRole
+scoreboard players operation #MWL AddedVilla = #MWL AddedRole
+scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole
+scoreboard players operation #MWL PrevAddedVilla = #MWL PrevAddedRole
 
 ## Set Title
 function mwj:system/setting/initial_setting/set_initial_title

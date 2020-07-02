@@ -7,24 +7,24 @@
 ###############################
 
 ## Reset choice
-scoreboard players set Time AddedStick 0
-scoreboard players set Time AddedTotem 0
-scoreboard players set Time AddedDeath2 0
-scoreboard players set Time AddedPearl 0
-scoreboard players set Time AddedHoe 0
-scoreboard players set Time AddedElytra 0
-scoreboard players set Time AddedSnowball 0
-scoreboard players set Time AddedInvis 0
-scoreboard players set Time AddedSpeed 0
-scoreboard players set Time AddedJump 0
-scoreboard players set Time AddedTrident 0
-scoreboard players set Time AddedConduit 0
-scoreboard players set Time AddedCrossbow 0
-scoreboard players set Time AddedHoneyBlock 0
-scoreboard players set Time AddedLantern 0
+scoreboard players set #MWL AddedStick 0
+scoreboard players set #MWL AddedTotem 0
+scoreboard players set #MWL AddedDeath2 0
+scoreboard players set #MWL AddedPearl 0
+scoreboard players set #MWL AddedHoe 0
+scoreboard players set #MWL AddedElytra 0
+scoreboard players set #MWL AddedSnowball 0
+scoreboard players set #MWL AddedInvis 0
+scoreboard players set #MWL AddedSpeed 0
+scoreboard players set #MWL AddedJump 0
+scoreboard players set #MWL AddedTrident 0
+scoreboard players set #MWL AddedConduit 0
+scoreboard players set #MWL AddedCrossbow 0
+scoreboard players set #MWL AddedHoneyBlock 0
+scoreboard players set #MWL AddedLantern 0
 
 ## Set Item Addition
-execute if score Time GAME matches 95 run function mwj:system/setting/decision_item_addition1/set_added
-execute if score Time GAME matches 96 run function mwj:system/setting/decision_item_addition2/set_added
-execute if score Time GAME matches 97 run function mwj:system/setting/decision_item_addition3/set_added
+execute if score #MWL Phase matches 95 run function mwj:system/setting/decision_item_addition1/set_added
+execute if score #MWL Phase matches 96 run function mwj:system/setting/decision_item_addition2/set_added
+execute if score #MWL Phase matches 97 run function mwj:system/setting/decision_item_addition3/set_added
 function mwj:system/setting/decision_item_addition_common/set_scoreboard

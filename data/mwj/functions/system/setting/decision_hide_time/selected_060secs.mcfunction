@@ -7,5 +7,5 @@
 ###############################
 
 ## Set 60secs
-scoreboard players set Time HideTime 4
+scoreboard players set #MWL HideTime 4
 function mwj:system/setting/decision_hide_time/change_to_hide_time

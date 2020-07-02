@@ -18,10 +18,10 @@ replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"
 replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7b決定\""},HideFlags:39} 1
 
 ## Set Nether Star above Glow Time
-execute if score Time GlowTime matches 0 run replaceitem entity @p[tag=Host] inventory.1 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
-execute if score Time GlowTime matches 1 run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
-execute if score Time GlowTime matches 2 run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
-execute if score Time GlowTime matches 3 run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
-execute if score Time GlowTime matches 5 run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
-execute if score Time GlowTime matches 8 run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
-execute if score Time GlowTime matches 10 run replaceitem entity @p[tag=Host] inventory.7 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 0 run replaceitem entity @p[tag=Host] inventory.1 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 1 run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 2 run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 3 run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 5 run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 8 run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1
+execute if score #MWL GlowTime matches 10 run replaceitem entity @p[tag=Host] inventory.7 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}} 1

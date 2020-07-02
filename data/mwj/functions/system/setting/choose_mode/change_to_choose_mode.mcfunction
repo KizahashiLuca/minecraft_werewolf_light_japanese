@@ -24,4 +24,4 @@ scoreboard players set @p[tag=Host] SelectCancel 0
 scoreboard players set @p[tag=Host] SelectOkay 0
 
 ## Change Mode
-scoreboard players set Time GAME 90
+scoreboard players set #MWL Phase 90

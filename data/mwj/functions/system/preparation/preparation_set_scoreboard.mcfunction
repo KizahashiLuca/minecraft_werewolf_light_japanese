@@ -37,18 +37,18 @@ scoreboard objectives add TEMP_DIGIT dummy
 ## Set Variables for Game
 scoreboard players set @a ROLE 0
 scoreboard players set @a[team=Player] NUM 1
-scoreboard players set Time ROLE 1
-scoreboard players set Time NUM 0
-scoreboard players set Time WINNER 0
-scoreboard players set Time WHITE 0
-scoreboard players set Time BLACK 0
-scoreboard players set Time PURPLE 0
+scoreboard players set #MWL ROLE 1
+scoreboard players set #MWL NUM 0
+scoreboard players set #MWL WINNER 0
+scoreboard players set #MWL WHITE 0
+scoreboard players set #MWL BLACK 0
+scoreboard players set #MWL PURPLE 0
 ## Set Variables for Timer of Kill Log
-scoreboard players set @a SECOND 0
-scoreboard players set @a TICK 0
+scoreboard players set @a Second 0
+scoreboard players set @a Tick 0
 ## Set Variables for Seer/Medium/Detective/Cat
 scoreboard players set @a ROLE_OF_NUM 0
-scoreboard players set Time ROLE_OF_NUM 0 
+scoreboard players set #MWL ROLE_OF_NUM 0 
 ## Set Variables for Kill Log
 scoreboard players set @a DEATH 0
 scoreboard players set @a KILLER 0
@@ -57,13 +57,13 @@ scoreboard players set @a VICTIM_FLAG 0
 scoreboard players set @a KILLER_FLAG 0
 scoreboard players set @a KILLLOG_FOX 0
 scoreboard players set @a KILLLOG_CAT 0
-scoreboard players set Time KILLER_NUM 0
-scoreboard players set Time VICTIM_NUM 0
-scoreboard players set Time KILLLOG_NUM 1
+scoreboard players set #MWL KILLER_NUM 0
+scoreboard players set #MWL VICTIM_NUM 0
+scoreboard players set #MWL KILLLOG_NUM 1
 ## Set Variables for Mason Number
 scoreboard players set @a MASON_PAIR 0
-scoreboard players set Time MASON_PAIR 1
-scoreboard players set Time MASON_PAIR_NUM 0
+scoreboard players set #MWL MASON_PAIR 1
+scoreboard players set #MWL MASON_PAIR_NUM 0
 
 ## RE-Count Players
-execute as @a[team=Player] run scoreboard players add Time NUM 1
+execute as @a[team=Player] run scoreboard players add #MWL NUM 1

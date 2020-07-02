@@ -7,6 +7,6 @@
 ###############################
 
 ## Add Cat
-scoreboard players remove Time AddedRoleTmp 1
-execute if score Time AddedRoleTmp matches 1.. run give @p[tag=Host] minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\"",Taged:"Cat"}} 1
-execute if score Time AddedRoleTmp matches 2.. run function mwj:system/setting/decision_role_addition/added_cat
+scoreboard players remove #MWL AddedRoleTmp 1
+execute if score #MWL AddedRoleTmp matches 1.. run give @p[tag=Host] minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\"",Taged:"Cat"}} 1
+execute if score #MWL AddedRoleTmp matches 2.. run function mwj:system/setting/decision_role_addition/added_cat

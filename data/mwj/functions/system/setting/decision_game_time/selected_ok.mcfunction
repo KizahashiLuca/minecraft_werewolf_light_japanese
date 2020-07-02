@@ -7,7 +7,7 @@
 ###############################
 
 ## Set Prev choice
-scoreboard players operation Time PrevGameTime = Time GameTime
+scoreboard players operation #MWL PrevGameTime = #MWL GameTime
 
 ## Set Game Time
 function mwj:system/setting/decision_game_time/selected_set

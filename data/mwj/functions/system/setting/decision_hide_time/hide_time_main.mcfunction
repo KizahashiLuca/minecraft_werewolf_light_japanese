@@ -44,13 +44,13 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:paper
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:25b,id:"minecraft:paper",tag:{display:{Name:"\"\\u00A7r\\u00A7f300秒\""}}}]}] Select300secs 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7r\\u00A7dキャンセル\""},HideFlags:39}}]}] SelectCancel 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b決定\""},HideFlags:39}}]}] SelectOkay 0
-execute if score Time HideTime matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:10b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time HideTime matches 2 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time HideTime matches 4 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time HideTime matches 6 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time HideTime matches 8 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time HideTime matches 12 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time HideTime matches 20 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:16b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:10b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 2 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 4 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 6 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 8 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 12 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL HideTime matches 20 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:16b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={Select015secs=1}] run function mwj:system/setting/decision_hide_time/selected_015secs
@@ -65,4 +65,4 @@ execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/de
 execute as @p[tag=Host,scores={SelectDecide=1}] run function mwj:system/setting/decision_hide_time/change_to_hide_time
 
 ## Process the system finished
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/setting/exit_setting/exit_setting

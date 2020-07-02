@@ -10,4 +10,4 @@
 scoreboard players set @s KILLER_FLAG 1
 
 ## Count Number of Killer
-scoreboard players add Time KILLER_NUM 1
+scoreboard players add #MWL KILLER_NUM 1

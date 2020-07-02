@@ -7,38 +7,38 @@
 ###############################
 
 ## Detect the Number of Players is not Enough
-execute if score Time NUM matches ..2 run scoreboard players set Time GAME 0
+execute if score #MWL NUM matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Detect the Number of Players is increment/decrement
-scoreboard players operation Time DENOMINATOR = Time PrevAddedRole
-scoreboard players operation Time PrevAddedRole -= Time AddedRole
-execute if score Time PrevAddedRole matches 1.. run scoreboard players operation Time DENOMINATOR -= Time PrevAddedRole
-execute if score Time PrevAddedRole matches 1.. run function mwj:system/preparation/preparation_added_role_minus
+scoreboard players operation #MWL DENOMINATOR = #MWL PrevAddedRole
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedRole
+execute if score #MWL PrevAddedRole matches 1.. run scoreboard players operation #MWL DENOMINATOR -= #MWL PrevAddedRole
+execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/preparation_added_role_minus
 
 ## Set Added Role Number
-scoreboard players operation Time PrevAddedRole = Time DENOMINATOR
-scoreboard players operation Time VILLAGER -= Time AddedWolf
-scoreboard players operation Time VILLAGER -= Time AddedMadman
-scoreboard players operation Time VILLAGER -= Time AddedFox
-scoreboard players operation Time VILLAGER -= Time AddedFox
-scoreboard players operation Time VILLAGER -= Time AddedVilla
-scoreboard players operation Time VILLAGER -= Time AddedSeer
-scoreboard players operation Time VILLAGER -= Time AddedMedium
-scoreboard players operation Time VILLAGER -= Time AddedMason
-scoreboard players operation Time VILLAGER -= Time AddedMason
-scoreboard players operation Time VILLAGER -= Time AddedDetec
-scoreboard players operation Time VILLAGER -= Time AddedThief
-scoreboard players operation Time VILLAGER -= Time AddedCat
+scoreboard players operation #MWL PrevAddedRole = #MWL DENOMINATOR
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedWolf
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedMadman
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedFox
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedFox
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedVilla
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedSeer
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedMedium
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedMason
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedMason
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedDetec
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedThief
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedCat
 
-scoreboard players operation Time WOLF += Time AddedWolf
-scoreboard players operation Time MADMAN += Time AddedMadman
-scoreboard players operation Time FOX = Time AddedFox
-scoreboard players operation Time SEER += Time AddedFox
-scoreboard players operation Time VILLAGER += Time AddedVilla
-scoreboard players operation Time SEER += Time AddedSeer
-scoreboard players operation Time MEDIUM += Time AddedMedium
-scoreboard players operation Time MASON = Time AddedMason
-scoreboard players operation Time MASON += Time AddedMason
-scoreboard players operation Time DETECTIVE = Time AddedDetec
-scoreboard players operation Time THIEF = Time AddedThief
-scoreboard players operation Time CAT = Time AddedCat
+scoreboard players operation #MWL NumOfWolves += #MWL AddedWolf
+scoreboard players operation #MWL NumOfMadmans += #MWL AddedMadman
+scoreboard players operation #MWL NumOfFoxes = #MWL AddedFox
+scoreboard players operation #MWL NumOfSeers += #MWL AddedFox
+scoreboard players operation #MWL NumOfVillagers += #MWL AddedVilla
+scoreboard players operation #MWL NumOfSeers += #MWL AddedSeer
+scoreboard players operation #MWL NumOfMediums += #MWL AddedMedium
+scoreboard players operation #MWL NumOfMasons = #MWL AddedMason
+scoreboard players operation #MWL NumOfMasons += #MWL AddedMason
+scoreboard players operation #MWL NumOfDetectives = #MWL AddedDetec
+scoreboard players operation #MWL NumOfThieves = #MWL AddedThief
+scoreboard players operation #MWL NumOfCats = #MWL AddedCat

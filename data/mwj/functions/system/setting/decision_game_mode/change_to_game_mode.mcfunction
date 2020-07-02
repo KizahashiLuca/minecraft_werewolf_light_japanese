@@ -22,4 +22,4 @@ scoreboard players set @p[tag=Host] SelectDecide 0
 scoreboard players set @p[tag=Host] ThrowItem 0
 
 ## Change Mode
-scoreboard players set Time GAME 94
+scoreboard players set #MWL Phase 94

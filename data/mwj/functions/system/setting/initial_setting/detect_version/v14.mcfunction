@@ -8,4 +8,4 @@
 
 ## Minecraft 1.14
 replaceitem entity @p[tag=Host] inventory.0 minecraft:lantern{Tag:"Ver"}
-execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:lantern",Count:1b,tag:{Tag:"Ver"}}]}] run scoreboard players set Time Version 14
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:lantern",Count:1b,tag:{Tag:"Ver"}}]}] run scoreboard players set #MWL Version 14

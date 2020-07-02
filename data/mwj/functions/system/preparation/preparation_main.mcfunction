@@ -13,18 +13,18 @@ function mwj:system/time/time
 function mwj:system/preparation/preparation_entity
 
 ## Prepare Initially
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_set_scoreboard
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_advancement
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/preparation/preparation_set_scoreboard
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/preparation/preparation_advancement
 ## Recount the Number of Players
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/initial_setting/set_initial_role_number
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/initial_setting/set_initial_added_role_number
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/preparation/preparation_added_role_resetting
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/setting/initial_setting/set_initial_role_number
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/setting/initial_setting/set_initial_added_role_number
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/preparation/preparation_added_role_resetting
 ## Decide Roles
-execute if score Time TICK matches 0 if score Time SECOND matches 0 unless score Time GAME matches 0 run function mwj:system/preparation/preparation_role_decision
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 unless score #MWL Phase matches 0 run function mwj:system/preparation/preparation_role_decision
 ## Give Items
-execute if score Time TICK matches 0 if score Time SECOND matches 0 unless score Time GAME matches 0 run function mwj:system/preparation/preparation_item
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 unless score #MWL Phase matches 0 run function mwj:system/preparation/preparation_item
 ## Title and Chat Message
-execute if score Time TICK matches 0 if score Time SECOND matches 0 unless score Time GAME matches 0 run function mwj:system/preparation/preparation_title
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 unless score #MWL Phase matches 0 run function mwj:system/preparation/preparation_title
 ## Reset Scoreboard
-execute if score Time TICK matches 0 if score Time SECOND matches 0 unless score Time GAME matches 0 run function mwj:system/preparation/preparation_reset_scoreboard
-execute if score Time GAME matches 0 run function mwj:system/finish/break_game
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 unless score #MWL Phase matches 0 run function mwj:system/preparation/preparation_reset_scoreboard
+execute if score #MWL Phase matches 0 run function mwj:system/finish/break_game

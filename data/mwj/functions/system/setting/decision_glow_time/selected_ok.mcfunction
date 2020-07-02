@@ -7,7 +7,7 @@
 ###############################
 
 ## Set Prev choice
-scoreboard players operation Time PrevGlowTime = Time GlowTime
+scoreboard players operation #MWL PrevGlowTime = #MWL GlowTime
 
 ## Set Glow Time
 function mwj:system/setting/decision_glow_time/selected_set

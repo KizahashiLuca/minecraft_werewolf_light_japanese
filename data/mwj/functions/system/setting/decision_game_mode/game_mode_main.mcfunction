@@ -32,9 +32,9 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:"\"\\u00A7r\\u00A7f殲滅モード\""}}}]}] SelectAnnihilate 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7r\\u00A7dキャンセル\""},HideFlags:39}}]}] SelectCancel 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b決定\""},HideFlags:39}}]}] SelectOkay 0
-execute if score Time GameMode matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time GameMode matches 2 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
-execute if score Time GameMode matches 3 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL GameMode matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL GameMode matches 2 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
+execute if score #MWL GameMode matches 3 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""}}}]}] SelectDecide 0
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={SelectNormalWolf=1}] run function mwj:system/setting/decision_game_mode/selected_normal_wolf
@@ -45,4 +45,4 @@ execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/de
 execute as @p[tag=Host,scores={SelectDecide=1}] run function mwj:system/setting/decision_game_mode/change_to_game_mode
 
 ## Process the system finished
-execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/setting/exit_setting/exit_setting

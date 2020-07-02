@@ -7,17 +7,17 @@
 ###############################
 
 ## Reset choice
-scoreboard players operation Time AddedRole = Time PrevAddedVilla
-scoreboard players operation Time AddedWolf = Time PrevAddedWolf
-scoreboard players operation Time AddedMadman = Time PrevAddedMadman
-scoreboard players operation Time AddedFox = Time PrevAddedFox
-scoreboard players operation Time AddedVilla = Time PrevAddedVilla
-scoreboard players operation Time AddedSeer = Time PrevAddedSeer
-scoreboard players operation Time AddedMedium = Time PrevAddedMedium
-scoreboard players operation Time AddedMason = Time PrevAddedMason
-scoreboard players operation Time AddedDetec = Time PrevAddedDetec
-scoreboard players operation Time AddedThief = Time PrevAddedThief
-scoreboard players operation Time AddedCat = Time PrevAddedCat
+scoreboard players operation #MWL AddedRole = #MWL PrevAddedVilla
+scoreboard players operation #MWL AddedWolf = #MWL PrevAddedWolf
+scoreboard players operation #MWL AddedMadman = #MWL PrevAddedMadman
+scoreboard players operation #MWL AddedFox = #MWL PrevAddedFox
+scoreboard players operation #MWL AddedVilla = #MWL PrevAddedVilla
+scoreboard players operation #MWL AddedSeer = #MWL PrevAddedSeer
+scoreboard players operation #MWL AddedMedium = #MWL PrevAddedMedium
+scoreboard players operation #MWL AddedMason = #MWL PrevAddedMason
+scoreboard players operation #MWL AddedDetec = #MWL PrevAddedDetec
+scoreboard players operation #MWL AddedThief = #MWL PrevAddedThief
+scoreboard players operation #MWL AddedCat = #MWL PrevAddedCat
 
 ## Set Role
 function mwj:system/setting/decision_role_addition/selected_set

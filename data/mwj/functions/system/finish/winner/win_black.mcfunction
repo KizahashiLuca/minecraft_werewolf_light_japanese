@@ -18,5 +18,5 @@ execute if entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  勝�
 execute unless entity @p[scores={ROLE=2,DEATH=0}] run tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"人狼","bold":true,"color":"red"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode
-scoreboard players set Time GAME 0
-scoreboard players set Time WINNER 1
+scoreboard players set #MWL Phase 0
+scoreboard players set #MWL WINNER 1

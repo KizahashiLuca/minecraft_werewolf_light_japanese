@@ -7,8 +7,8 @@
 ###############################
 
 ## Set scoreboard
-scoreboard players operation Time AddedItem1 = Time AddedElytra
-scoreboard players operation Time AddedItem2 = Time AddedSnowball
-scoreboard players operation Time AddedItem3 = Time AddedInvis
-scoreboard players operation Time AddedItem4 = Time AddedSpeed
-scoreboard players operation Time AddedItem5 = Time AddedJump
+scoreboard players operation #MWL AddedItem1 = #MWL AddedElytra
+scoreboard players operation #MWL AddedItem2 = #MWL AddedSnowball
+scoreboard players operation #MWL AddedItem3 = #MWL AddedInvis
+scoreboard players operation #MWL AddedItem4 = #MWL AddedSpeed
+scoreboard players operation #MWL AddedItem5 = #MWL AddedJump

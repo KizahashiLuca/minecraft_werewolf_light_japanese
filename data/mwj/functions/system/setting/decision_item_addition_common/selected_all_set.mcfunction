@@ -7,24 +7,24 @@
 ###############################
 
 ## Reset choice
-scoreboard players set Time AddedStick 1
-scoreboard players set Time AddedTotem 1
-scoreboard players set Time AddedDeath2 1
-scoreboard players set Time AddedPearl 1
-scoreboard players set Time AddedHoe 1
-scoreboard players set Time AddedElytra 1
-scoreboard players set Time AddedSnowball 1
-scoreboard players set Time AddedInvis 1
-scoreboard players set Time AddedSpeed 1
-scoreboard players set Time AddedJump 1
-scoreboard players set Time AddedTrident 1
-scoreboard players set Time AddedConduit 1
-scoreboard players set Time AddedCrossbow 1
-execute if score Time Version matches 15.. run scoreboard players set Time AddedHoneyBlock 1
-execute if score Time Version matches 16.. run scoreboard players set Time AddedLantern 1
+scoreboard players set #MWL AddedStick 1
+scoreboard players set #MWL AddedTotem 1
+scoreboard players set #MWL AddedDeath2 1
+scoreboard players set #MWL AddedPearl 1
+scoreboard players set #MWL AddedHoe 1
+scoreboard players set #MWL AddedElytra 1
+scoreboard players set #MWL AddedSnowball 1
+scoreboard players set #MWL AddedInvis 1
+scoreboard players set #MWL AddedSpeed 1
+scoreboard players set #MWL AddedJump 1
+scoreboard players set #MWL AddedTrident 1
+scoreboard players set #MWL AddedConduit 1
+scoreboard players set #MWL AddedCrossbow 1
+execute if score #MWL Version matches 15.. run scoreboard players set #MWL AddedHoneyBlock 1
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedLantern 1
 
 ## Set Item Addition
-execute if score Time GAME matches 95 run function mwj:system/setting/decision_item_addition1/set_added
-execute if score Time GAME matches 96 run function mwj:system/setting/decision_item_addition2/set_added
-execute if score Time GAME matches 97 run function mwj:system/setting/decision_item_addition3/set_added
+execute if score #MWL Phase matches 95 run function mwj:system/setting/decision_item_addition1/set_added
+execute if score #MWL Phase matches 96 run function mwj:system/setting/decision_item_addition2/set_added
+execute if score #MWL Phase matches 97 run function mwj:system/setting/decision_item_addition3/set_added
 function mwj:system/setting/decision_item_addition_common/set_scoreboard

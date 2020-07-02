@@ -7,5 +7,5 @@
 ###############################
 
 ## Set Normal WereWolf Mode
-scoreboard players set Time GameMode 2
+scoreboard players set #MWL GameMode 2
 function mwj:system/setting/decision_game_mode/change_to_game_mode

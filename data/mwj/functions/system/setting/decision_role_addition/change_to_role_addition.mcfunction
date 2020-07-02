@@ -10,7 +10,7 @@
 clear @p[tag=Host]
 
 ## Rest become villager
-scoreboard players operation Time AddedVilla = Time AddedRole
+scoreboard players operation #MWL AddedVilla = #MWL AddedRole
 
 ## Set Inventory
 function mwj:system/setting/decision_role_addition/role_addition_inventory
@@ -33,4 +33,4 @@ scoreboard players set @p[tag=Host] SelectDecide 0
 scoreboard players set @p[tag=Host] ThrowItem 0
 
 ## Change Mode
-scoreboard players set Time GAME 98
+scoreboard players set #MWL Phase 98

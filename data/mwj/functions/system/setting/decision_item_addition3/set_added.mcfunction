@@ -7,8 +7,8 @@
 ###############################
 
 ## Set scoreboard
-scoreboard players operation Time AddedItem1 = Time AddedTrident
-scoreboard players operation Time AddedItem2 = Time AddedConduit
-scoreboard players operation Time AddedItem3 = Time AddedCrossbow
-scoreboard players operation Time AddedItem4 = Time AddedHoneyBlock
-scoreboard players operation Time AddedItem5 = Time AddedLantern
+scoreboard players operation #MWL AddedItem1 = #MWL AddedTrident
+scoreboard players operation #MWL AddedItem2 = #MWL AddedConduit
+scoreboard players operation #MWL AddedItem3 = #MWL AddedCrossbow
+scoreboard players operation #MWL AddedItem4 = #MWL AddedHoneyBlock
+scoreboard players operation #MWL AddedItem5 = #MWL AddedLantern

@@ -7,6 +7,6 @@
 ###############################
 
 ## Number the Members
-scoreboard players operation Time ROLE_PAGE_NUM = Time NUM
-scoreboard players remove Time ROLE_PAGE_NUM 1
-scoreboard players operation Time ROLE_PAGE_NUM /= Time 10
+scoreboard players operation #MWL ROLE_PAGE_NUM = #MWL NUM
+scoreboard players remove #MWL ROLE_PAGE_NUM 1
+scoreboard players operation #MWL ROLE_PAGE_NUM /= #MWL 10

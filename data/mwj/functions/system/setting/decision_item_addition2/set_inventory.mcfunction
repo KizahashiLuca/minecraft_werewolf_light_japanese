@@ -14,8 +14,8 @@ replaceitem entity @p[tag=Host] inventory.14 minecraft:potion{display:{Name:"\"\
 replaceitem entity @p[tag=Host] inventory.15 minecraft:potion{display:{Name:"\"\\u00A7r\\u00A7f跳躍のポーション\"",Lore:["\"\\u00A7r\\u00A79跳躍力上昇 Ⅹ (0:30)\""]},CustomPotionEffects:[{Id:8,Amplifier:9,Duration:600}],CustomPotionColor:3470848,HideFlags:32} 1
 
 ## Set scoreboard
-scoreboard players operation Time AddedElytra = Time AddedItem1
-scoreboard players operation Time AddedSnowball = Time AddedItem2
-scoreboard players operation Time AddedInvis = Time AddedItem3
-scoreboard players operation Time AddedSpeed = Time AddedItem4
-scoreboard players operation Time AddedJump = Time AddedItem5
+scoreboard players operation #MWL AddedElytra = #MWL AddedItem1
+scoreboard players operation #MWL AddedSnowball = #MWL AddedItem2
+scoreboard players operation #MWL AddedInvis = #MWL AddedItem3
+scoreboard players operation #MWL AddedSpeed = #MWL AddedItem4
+scoreboard players operation #MWL AddedJump = #MWL AddedItem5

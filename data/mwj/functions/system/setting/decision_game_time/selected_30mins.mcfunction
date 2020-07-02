@@ -7,5 +7,5 @@
 ###############################
 
 ## Set 30mins
-scoreboard players set Time GameTime 6
+scoreboard players set #MWL GameTime 6
 function mwj:system/setting/decision_game_time/change_to_game_time

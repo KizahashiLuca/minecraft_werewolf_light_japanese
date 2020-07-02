@@ -10,7 +10,7 @@
 scoreboard objectives add Version dummy
 
 ## Set scoreboard - Minecraft 1.14
-scoreboard players set Time Version 14
+scoreboard players set #MWL Version 14
 
 ## Minecraft 1.14
 function mwj:system/setting/initial_setting/detect_version/v14

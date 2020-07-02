@@ -7,7 +7,7 @@
 ###############################
 
 ## Set Prev choice
-scoreboard players operation Time PrevHideTime = Time HideTime
+scoreboard players operation #MWL PrevHideTime = #MWL HideTime
 
 ## Set Hide Time
 function mwj:system/setting/decision_hide_time/selected_set

@@ -7,7 +7,7 @@
 ###############################
 
 ## Reset choice
-scoreboard players operation Time GameMode = Time PrevGameMode
+scoreboard players operation #MWL GameMode = #MWL PrevGameMode
 
 ## Set Game Mode
 function mwj:system/setting/decision_game_mode/selected_set

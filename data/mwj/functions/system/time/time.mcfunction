@@ -7,8 +7,8 @@
 ###############################
 
 ## Calculate time every tick
-scoreboard players remove Time TICK 1
-execute if score Time TICK matches ..-1 run scoreboard players set Time TICK 0
+scoreboard players remove #MWL Tick 1
+execute if score #MWL Tick matches ..-1 run scoreboard players set #MWL Tick 0
 
 ## Calculate time every second
-execute if score Time TICK matches 0 run function mwj:system/time/second
+execute if score #MWL Tick matches 0 run function mwj:system/time/second
