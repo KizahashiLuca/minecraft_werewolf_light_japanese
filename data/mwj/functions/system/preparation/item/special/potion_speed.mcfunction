@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:potion{display:{Name:"\"\\u00A7r\\u00A7f俊敏のポーション\""},CustomPotionEffects:[{Id:1,Amplifier:2,Duration:600}],CustomPotionColor:63217} 1
+give @s minecraft:potion{display:{Name:'"\\u00A7r\\u00A7f俊敏のポーション"'},CustomPotionEffects:[{Id:1,Amplifier:2,Duration:600}],CustomPotionColor:63217} 1

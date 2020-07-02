@@ -24,7 +24,7 @@ execute as @a[team=Player,scores={ROLE=4..10,DEATH=1}] run scoreboard players re
 execute as @a[team=Player,scores={REMOVED_TORCH=1}] run function mwj:system/preparation/item/common/torch
 scoreboard players set @a[team=Player,scores={REMOVED_TORCH=1}] REMOVED_TORCH 0
 scoreboard players set @a[team=Player,scores={TORCH=1}] REMOVED_TORCH 1
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{display:{Name:"\"\\u00A7r\\u00A7b杖\"",Lore:["\"\\u00a7r捨てることで役職利用可能\""]},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}}}] run kill @s
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{display:{Name:'"\\u00A7r\\u00A7b杖"',Lore:['"\\u00a7r捨てることで役職利用可能"']},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}}}] run kill @s
 
 ## Detect snowball
 execute if score #MWL AddedSnowball matches 1 run function mwj:system/ongame/snowball/snowball_main

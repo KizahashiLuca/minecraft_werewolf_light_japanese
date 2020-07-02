@@ -35,15 +35,15 @@ execute if score #MWL Phase matches 96 run function mwj:system/setting/decision_
 execute if score #MWL Phase matches 97 run function mwj:system/setting/decision_item_addition3/set_inventory
 
 ## Set items
-replaceitem entity @p[tag=Host] inventory.9 minecraft:white_banner{display:{Name:"\"\\u00A7r\\u00A7c前へ\""},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.17 minecraft:white_banner{display:{Name:"\"\\u00A7r\\u00A7c次へ\""},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vh,Color:14},{Pattern:bl,Color:0},{Pattern:tl,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7r\\u00A7dキャンセル\""},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.21 minecraft:map{display:{Name:"\"\\u00A7r\\u00A7e全選択解除\""},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.23 minecraft:filled_map{display:{Name:"\"\\u00A7r\\u00A7e全選択\""},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7b決定\""},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.9 minecraft:white_banner{display:{Name:'"\\u00A7r\\u00A7c前へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.17 minecraft:white_banner{display:{Name:'"\\u00A7r\\u00A7c次へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vh,Color:14},{Pattern:bl,Color:0},{Pattern:tl,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.21 minecraft:map{display:{Name:'"\\u00A7r\\u00A7e全選択解除"'},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.23 minecraft:filled_map{display:{Name:'"\\u00A7r\\u00A7e全選択"'},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39} 1
 
-execute if score #MWL AddedItem1 matches 1 run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""},HideFlags:39} 1
-execute if score #MWL AddedItem2 matches 1 run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""},HideFlags:39} 1
-execute if score #MWL AddedItem3 matches 1 run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""},HideFlags:39} 1
-execute if score #MWL AddedItem4 matches 1 run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""},HideFlags:39} 1
-execute if score #MWL AddedItem5 matches 1 run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:"\"\\u00A7r\\u00A7a選択済み\""},HideFlags:39} 1
+execute if score #MWL AddedItem1 matches 1 run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39} 1
+execute if score #MWL AddedItem2 matches 1 run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39} 1
+execute if score #MWL AddedItem3 matches 1 run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39} 1
+execute if score #MWL AddedItem4 matches 1 run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39} 1
+execute if score #MWL AddedItem5 matches 1 run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39} 1

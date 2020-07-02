@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:trident{display:{Lore:["\"\\u00A7r\\u00A77召雷\""]},Damage:248,HideFlags:1} 1
+give @s minecraft:trident{display:{Lore:['"\\u00A7r\\u00A77召雷"']},Damage:248,HideFlags:1} 1

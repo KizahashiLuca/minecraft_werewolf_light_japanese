@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:conduit{display:{Name:"\"\\u00a7r\\u00a7bコンカッション地雷\"",Lore:["\"\\u00a7r\\u00a79発光 (0:10)\"","\"\\u00a7r\\u00a7c吐き気 Ⅱ (0:10)\"","\"\\u00a7r\\u00A7f設置範囲1.5mに発効\""],Tag:"\"Mine\""}} 4
+give @s minecraft:conduit{display:{Name:'"\\u00a7r\\u00a7bコンカッション地雷"',Lore:['"\\u00a7r\\u00a79発光 (0:10)"','"\\u00a7r\\u00a7c吐き気 Ⅱ (0:10)"','"\\u00a7r\\u00A7f設置範囲1.5mに発効"'],Tag:"\"Mine\""}} 4
