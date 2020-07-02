@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -13,6 +13,7 @@ tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DEATH=1..2}] @r[gamemode=adventure]
 
 ## Remove Variables for Game
+scoreboard objectives remove Version
 scoreboard objectives remove GAME
 scoreboard objectives remove NUM
 scoreboard objectives remove PREV_NUM
@@ -73,20 +74,19 @@ scoreboard objectives remove STEAL_TIME_TICK
 #### Cat
 scoreboard objectives remove STRAY_BY_CAT
 ## Remove Variables for Items
+scoreboard objectives remove SNEAKTIME
+#### Snowball
 scoreboard objectives remove SNOWBALL
-## Remove Variables for Achievements
-scoreboard objectives remove WOLF_ACHIEVE1
-scoreboard objectives remove MADMAN_ACHIEVE1
-scoreboard objectives remove MADMAN_ACHIEVE2
-scoreboard objectives remove FOX_ACHIEVE1
-scoreboard objectives remove VILLA_ACHIEVE1
-scoreboard objectives remove SEER_ACHIEVE1
-scoreboard objectives remove SEER_ACHIEVE2
-scoreboard objectives remove MEDIUM_ACHIEVE1
-scoreboard objectives remove DETEC_ACHIEVE1
-scoreboard objectives remove MASON_ACHIEVE1
-scoreboard objectives remove DETEC_ACHIEVE1
-scoreboard objectives remove CAT_ACHIEVE1
+#### Trident
+scoreboard objectives remove THROW_TRIDENT
+#### Mines
+scoreboard objectives remove DROP_CONDUIT
+#### Honey block
+scoreboard objectives remove HoneyBottleCount
+scoreboard objectives remove DROP_HONEY_BLOCK
+#### Soul lantern
+scoreboard objectives remove DROP_SOULLANTERN
+scoreboard objectives remove DROP_LANTERN
 
 ## Remove Variables for Kill Log
 scoreboard objectives remove DEATH
@@ -118,13 +118,16 @@ scoreboard objectives remove AddedTotem
 scoreboard objectives remove AddedDeath2
 scoreboard objectives remove AddedPearl
 scoreboard objectives remove AddedHoe
-scoreboard objectives remove AddedCrossbow
+scoreboard objectives remove AddedElytra
 scoreboard objectives remove AddedSnowball
 scoreboard objectives remove AddedInvis
 scoreboard objectives remove AddedSpeed
 scoreboard objectives remove AddedJump
-scoreboard objectives remove AddedElytra
+scoreboard objectives remove AddedTrident
 scoreboard objectives remove AddedConduit
+scoreboard objectives remove AddedCrossbow
+scoreboard objectives remove AddedHoneyBlock
+scoreboard objectives remove AddedLantern
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
 ## Remove Variables for Hide Time
@@ -153,6 +156,7 @@ kill @e[type=minecraft:item]
 kill @e[type=minecraft:arrow]
 kill @e[type=minecraft:area_effect_cloud]
 kill @e[type=minecraft:snowball]
+kill @e[type=minecraft:trident]
 effect clear @a
 clear @a
 
@@ -165,6 +169,10 @@ tag @a remove StrayBullet
 tag @a remove SeeredFox
 tag @a remove NoHit
 tag @a remove DetectHit
+tag @a remove SetMines
+tag @a remove ExplodeMines
+tag @a remove TridentDone
+tag @a remove TridentThrower
 
 ## Revoke Advancements
 advancement revoke @a only mwj:be_killed_by_nonwolf
@@ -173,10 +181,13 @@ advancement revoke @a only mwj:be_killed_by_cat
 advancement revoke @a only mwj:killed_player
 
 ## Change Gamerules
+difficulty peaceful
 gamemode adventure @a
-gamerule showDeathMessages true
-gamerule sendCommandFeedback true
+gamerule announceAdvancements true
+gamerule commandBlockOutput true
 gamerule doLimitedCrafting false
+gamerule sendCommandFeedback true
+gamerule showDeathMessages true
 
 ## Remove a Team
 team remove Player

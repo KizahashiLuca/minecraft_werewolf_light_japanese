@@ -1,16 +1,15 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
 ## Change gamerules always
 gamerule maxCommandChainLength 65536
-gamerule commandBlockOutput false
+gamerule doFireTick false
 gamerule doMobSpawning false
-gamerule announceAdvancements false
 
 ## Send Title Message
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
@@ -20,5 +19,5 @@ tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"\n","color":"white"}]
 tellraw @a ["",{"text":"  当ゲームの必要人数は","color":"white"},{"text":" 3 ","color":"red","bold":true},{"text":"人からです。","color":"white"}]
 tellraw @a ["",{"text":"  以下のコマンドで、ゲームを開始してください。","color":"white"}]
-tellraw @a ["",{"text":"    ","color":"white"},{"text":"/function #mwj:start","color":"light_purple"}]
+tellraw @a ["",{"text":"      ","color":"white"},{"text":"/function #mwj:start","color":"light_purple","hoverEvent":{"action":"show_text","value":"クリックしてゲーム開始"},"clickEvent":{"action":"suggest_command","value":"/function #mwj:start"}}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

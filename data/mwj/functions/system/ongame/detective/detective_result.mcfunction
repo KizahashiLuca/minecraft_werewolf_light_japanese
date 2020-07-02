@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -22,22 +22,22 @@ tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"\n-----------------------
 tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"  探偵結果","color":"white"}]
 
 ## Send a Message that Victim is Alive
-execute if score @p[scores={TEMP2=1}] DEATH matches 0 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" は行方不明です。","color":"white"}]
+execute as @p[scores={TEMP2=1,DEATH=0}] run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は行方不明です。","color":"white"}]
 
 ## Send a Message that Victim Time Out of Range
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 unless score @p[scores={TEMP2=1}] TEMP1 matches 0..120 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" は行方不明です。","color":"white"}]
+execute as @p[scores={TEMP2=1,DEATH=1..2,TEMP1=181..}] run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は行方不明です。","color":"white"}]
 
 ## Send a Message that Victim is dead
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..180 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" は殺害されています。","color":"white"}]
+execute as @p[scores={TEMP2=1,DEATH=1..2,TEMP1=0..180}] run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は殺害されています。","color":"white"}]
 
 ## Send a Message that Killer is Known
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..120 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は ","color":"white"},{"selector":"@s","color":"white","bold":true},{"text":" です。","color":"white"}]
+execute if entity @p[scores={TEMP2=1,DEATH=1..2,TEMP1=0..120}] as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は ","color":"white"},{"selector":"@s","color":"white","bold":true},{"text":" です。","color":"white"}]
 
 ## Send a Message that Killer is Unknown
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 121..180 run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は不明です。","color":"white"}]
+execute if entity @p[scores={TEMP2=1,DEATH=1..2,TEMP1=121..180}] run tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は不明です。","color":"white"}]
 
 ## Send a Message of Victim's role
-execute if score @p[scores={TEMP2=1}] DEATH matches 1..2 if score @p[scores={TEMP2=1}] TEMP1 matches 0..60 as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run function mwj:system/ongame/detective/detective_role_result
+execute if entity @p[scores={TEMP2=1,DEATH=1..2,TEMP1=0..60}] as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run function mwj:system/ongame/detective/detective_role_result
 
 ## Send a Common Message
 tellraw @p[scores={ROLE=8,ROLE_OF_NUM=1}] ["",{"text":"----------------------------------\n","color":"white"}]

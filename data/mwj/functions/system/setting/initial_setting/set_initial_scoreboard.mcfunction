@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -124,39 +124,33 @@ scoreboard objectives add AddedTotem dummy
 scoreboard objectives add AddedDeath2 dummy
 scoreboard objectives add AddedPearl dummy
 scoreboard objectives add AddedHoe dummy
-scoreboard objectives add AddedCrossbow dummy
+scoreboard objectives add AddedElytra dummy
 scoreboard objectives add AddedSnowball dummy
 scoreboard objectives add AddedInvis dummy
 scoreboard objectives add AddedSpeed dummy
 scoreboard objectives add AddedJump dummy
-scoreboard objectives add AddedElytra dummy
+scoreboard objectives add AddedTrident dummy
 scoreboard objectives add AddedConduit dummy
+scoreboard objectives add AddedCrossbow dummy
+scoreboard objectives add AddedHoneyBlock dummy
+scoreboard objectives add AddedLantern dummy
 scoreboard objectives add PrevAddedStick dummy
 scoreboard objectives add PrevAddedTotem dummy
 scoreboard objectives add PrevAddedDeath2 dummy
 scoreboard objectives add PrevAddedPearl dummy
 scoreboard objectives add PrevAddedHoe dummy
-scoreboard objectives add PrevAddedCrossbo dummy
+scoreboard objectives add PrevAddedElytra dummy
 scoreboard objectives add PrevAddedSnowbal dummy
 scoreboard objectives add PrevAddedInvis dummy
 scoreboard objectives add PrevAddedSpeed dummy
 scoreboard objectives add PrevAddedJump dummy
-scoreboard objectives add PrevAddedElytra dummy
+scoreboard objectives add PrevAddedTrident dummy
 scoreboard objectives add PrevAddedConduit dummy
+scoreboard objectives add PrevAddedCrossbo dummy
+scoreboard objectives add PrevAddedHoneyBl dummy
+scoreboard objectives add PrevAddedLantern dummy
 scoreboard objectives add SelectAllDel dummy
 scoreboard objectives add SelectAllSet dummy
-scoreboard objectives add SelectStick dummy
-scoreboard objectives add SelectTotem dummy
-scoreboard objectives add SelectDeath2 dummy
-scoreboard objectives add SelectPearl dummy
-scoreboard objectives add SelectHoe dummy
-scoreboard objectives add SelectCrossbow dummy
-scoreboard objectives add SelectSnowball dummy
-scoreboard objectives add SelectInvis dummy
-scoreboard objectives add SelectSpeed dummy
-scoreboard objectives add SelectJump dummy
-scoreboard objectives add SelectElytra dummy
-scoreboard objectives add SelectConduit dummy
 scoreboard objectives add SelectPrevPage dummy
 scoreboard objectives add SelectNextPage dummy
 scoreboard objectives add SelectItem1 dummy
@@ -239,25 +233,35 @@ scoreboard players set Time AddedTotem 1
 scoreboard players set Time AddedDeath2 1
 scoreboard players set Time AddedPearl 1
 scoreboard players set Time AddedHoe 1
-scoreboard players set Time AddedCrossbow 1
+scoreboard players set Time AddedElytra 1
 scoreboard players set Time AddedSnowball 1
 scoreboard players set Time AddedInvis 1
 scoreboard players set Time AddedSpeed 1
 scoreboard players set Time AddedJump 1
-scoreboard players set Time AddedElytra 1
+scoreboard players set Time AddedTrident 1
 scoreboard players set Time AddedConduit 1
+scoreboard players set Time AddedCrossbow 1
+scoreboard players set Time AddedHoneyBlock 0
+execute if score Time Version matches 15.. run scoreboard players set Time AddedHoneyBlock 1
+scoreboard players set Time AddedLantern 0
+execute if score Time Version matches 16.. run scoreboard players set Time AddedLantern 1
 scoreboard players set Time PrevAddedStick 1
 scoreboard players set Time PrevAddedTotem 1
 scoreboard players set Time PrevAddedDeath2 1
 scoreboard players set Time PrevAddedPearl 1
 scoreboard players set Time PrevAddedHoe 1
-scoreboard players set Time PrevAddedCrossbo 1
+scoreboard players set Time PrevAddedElytra 1
 scoreboard players set Time PrevAddedSnowbal 1
 scoreboard players set Time PrevAddedInvis 1
 scoreboard players set Time PrevAddedSpeed 1
 scoreboard players set Time PrevAddedJump 1
-scoreboard players set Time PrevAddedElytra 1
+scoreboard players set Time PrevAddedTrident 1
 scoreboard players set Time PrevAddedConduit 1
+scoreboard players set Time PrevAddedCrossbo 1
+scoreboard players set Time PrevAddedHoneyBl 0
+execute if score Time Version matches 15.. run scoreboard players set Time PrevAddedHoneyBl 1
+scoreboard players set Time PrevAddedLantern 0
+execute if score Time Version matches 16.. run scoreboard players set Time PrevAddedLantern 1
 ## Set Variables for Denominator
 scoreboard players set Time DENOMINATOR 0
 

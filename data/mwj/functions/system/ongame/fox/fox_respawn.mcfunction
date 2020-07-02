@@ -1,18 +1,18 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
 ## Detected Respawn
-execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparation/item/common/bow
-execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparation/item/common/arrow
-execute if score @s RESPAWN matches 1.. as @s run function mwj:system/preparation/item/common/torch
+execute as @s[scores={RESPAWN=1..}] run function mwj:system/preparation/item/common/bow
+execute as @s[scores={RESPAWN=1..}] run function mwj:system/preparation/item/common/arrow
+execute as @s[scores={RESPAWN=1..}] run function mwj:system/preparation/item/common/torch
 
 ## Detected Unspawn
-execute if score @s RESPAWN matches 0 run scoreboard players set @s DEATH 1
+scoreboard players set @s[scores={RESPAWN=0}] DEATH 1
 
 ## Effect Clear
 effect clear @s

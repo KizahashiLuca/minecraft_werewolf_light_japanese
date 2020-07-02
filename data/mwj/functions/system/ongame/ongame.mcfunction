@@ -1,55 +1,64 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
 ## Timer System
 function mwj:system/time/time
 
-## Cannot Pickup Arrow
+## Cannot Pickup
 execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
+execute as @e[type=minecraft:trident] run data merge entity @s {pickup:2b}
 
 ## Glow Time
-execute if score Time SECOND <= Time ChangeGlowTime run effect give @a[scores={DEATH=0}] minecraft:glowing 1000000 1 true
+execute if score Time SECOND <= Time ChangeGlowTime run effect give @a[team=Player,scores={DEATH=0}] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
-execute as @a[scores={ROLE=1}] if score @s DEATH matches 1 run scoreboard players remove Time BLACK 1
-execute as @a[scores={ROLE=4..10}] if score @s DEATH matches 1 run scoreboard players remove Time WHITE 1
+execute as @a[team=Player,scores={ROLE=1,DEATH=1}] run scoreboard players remove Time BLACK 1
+execute as @a[team=Player,scores={ROLE=4..10,DEATH=1}] run scoreboard players remove Time WHITE 1
 
 ## Detect Dropping Torch
-execute as @a[team=Player] if score @s REMOVED_TORCH matches 1 run function mwj:system/preparation/item/common/torch
-execute as @a[team=Player] if score @s REMOVED_TORCH matches 1 run scoreboard players set @s REMOVED_TORCH 0
-execute as @a[team=Player] if score @s TORCH matches 1 run scoreboard players set @s REMOVED_TORCH 1
+execute as @a[team=Player,scores={REMOVED_TORCH=1}] run function mwj:system/preparation/item/common/torch
+scoreboard players set @a[team=Player,scores={REMOVED_TORCH=1}] REMOVED_TORCH 0
+scoreboard players set @a[team=Player,scores={TORCH=1}] REMOVED_TORCH 1
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{display:{Name:"\"\\u00A7r\\u00A7b杖\"",Lore:["\"\\u00a7r捨てることで役職利用可能\""]},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1}]}}}] run kill @s
 
-## Detect Existing Snowball
-execute as @e[type=minecraft:snowball] run function mwj:system/ongame/snowball/snowball_main
-execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,scores={SNOWBALL=1..}] run function mwj:system/ongame/snowball/snowball_sub
+## Detect snowball
+execute if score Time AddedSnowball matches 1 run function mwj:system/ongame/snowball/snowball_main
 
-## Detect the mines system
-execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit",tag:{display:{Name:"\"\\u00a7r\\u00a7b地雷\"",Lore:["\"\\u00a7r\\u00a79発光 (0:10)\"","\"\\u00a7r\\u00a7c移動速度低下 Ⅶ (0:10)\"","\"\"","\"\\u00a7r\\u00a75効果:\"","\"\\u00a7r\\u00a7c移動速度上昇 -100%\"","\"\\u00a7r捨てた範囲1.5mに発効\""],Tag:"\"Mine\""}}}}] at @s if entity @p[team=Player,scores={DEATH=0},distance=..2] run function mwj:system/ongame/mines/mines_main
+## Detect trident
+execute if score Time AddedTrident matches 1 run function mwj:system/ongame/trident/trident_main
+
+## Detect conduit
+execute if score Time AddedConduit matches 1 run function mwj:system/ongame/conduit/conduit_main
+
+## Detect honey block
+execute if score Time Version matches 15.. if score Time AddedHoneyBlock matches 1 run function mwj:system/ongame/honey_block/honey_block_main
+
+## Detect soul lantern
+execute if score Time Version matches 16.. if score Time AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/soul_lantern_main
 
 ## Fox System
-execute as @a[scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
-execute as @a[tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
+execute as @a[team=Player,scores={ROLE=3}] run function mwj:system/ongame/fox/fox_main
+execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 
 ## Seer System
-execute as @a[scores={ROLE=5}] run function mwj:system/ongame/seer/seer_main
+execute as @a[team=Player,scores={ROLE=5}] run function mwj:system/ongame/seer/seer_main
 
 ## Medium System
-execute as @a[scores={ROLE=6}] run function mwj:system/ongame/medium/medium_main
+execute as @a[team=Player,scores={ROLE=6}] run function mwj:system/ongame/medium/medium_main
 
 ## Detective System
-execute as @a[scores={ROLE=8}] run function mwj:system/ongame/detective/detective_main
+execute as @a[team=Player,scores={ROLE=8}] run function mwj:system/ongame/detective/detective_main
 
 ## Thief System
-execute as @a[scores={ROLE=9}] run function mwj:system/ongame/thief/thief_main
+execute as @a[team=Player,scores={ROLE=9}] run function mwj:system/ongame/thief/thief_main
 
 ## Cat System
-execute as @a[scores={ROLE=10}] run function mwj:system/ongame/cat/cat_main
+execute as @a[team=Player,scores={ROLE=10}] run function mwj:system/ongame/cat/cat_main
 
 ## Kill Log System
 function mwj:system/ongame/kill_log/kill_log_main
@@ -58,9 +67,8 @@ function mwj:system/ongame/kill_log/kill_log_main
 function mwj:system/finish/decide_winner/decide_winner_main
 
 ## Torch system
-scoreboard players set @a TORCH 0
+scoreboard players set @a[team=Player] TORCH 0
+scoreboard players set @a[team=Player] SNEAKTIME 0
 
-## Achievements
-execute if score Time GAME matches 0 as @a run function mwj:system/finish/achievements
 ## Exit This Game
 execute if score Time GAME matches 0 run function mwj:system/finish/end_game

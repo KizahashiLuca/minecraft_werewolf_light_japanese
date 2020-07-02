@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -24,9 +24,9 @@ execute if score Time VICTIM_NUM matches 1.. if score Time KILLER_NUM matches 1 
 execute if score Time VICTIM_NUM matches 2.. if score Time KILLER_NUM matches 2.. as @a[scores={VICTIM_FLAG=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_sub
 
 ## Fox is Seered
-execute as @a[team=Player] if score @s KILLLOG_FOX matches 1 run scoreboard players operation @s KILLER = @s STRAY_BY_FOX
+execute as @a[team=Player,scores={KILLLOG_FOX=1}] run scoreboard players operation @s KILLER = @s STRAY_BY_FOX
 ## Cat Stray Bullet
-execute as @a[team=Player] if score @s KILLLOG_CAT matches 1 run scoreboard players operation @s KILLER = @s STRAY_BY_CAT
+execute as @a[team=Player,scores={KILLLOG_CAT=1}] run scoreboard players operation @s KILLER = @s STRAY_BY_CAT
 
 ## Reset Scoreboard
 scoreboard players set @a VICTIM_FLAG 0

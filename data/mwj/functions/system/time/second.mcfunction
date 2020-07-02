@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -17,9 +17,9 @@ execute if score Time GAME matches 10 run bossbar set minecraft:bossbar name [{"
 execute if score Time GAME matches 11 run bossbar set minecraft:bossbar name [{"text":"制限時間  残り "},{"score":{"name":"Time","objective":"SECOND"}},{"text":" 秒"}]
 
 ## Process the sound system
-execute if score Time SECOND matches 4..10 as @a run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1
-execute if score Time SECOND matches 1..3 as @a run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1
-execute if score Time SECOND matches 0 as @a run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
+execute if score Time GAME matches 10..11 if score Time SECOND matches 4..10 as @a at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1
+execute if score Time GAME matches 10..11 if score Time SECOND matches 1..3 as @a at @s run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1
+execute if score Time GAME matches 10..11 if score Time SECOND matches 0 as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
 
 ## Reset tick
 execute unless score Time SECOND matches 0 run scoreboard players set Time TICK 19

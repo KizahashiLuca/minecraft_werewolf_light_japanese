@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -63,17 +63,17 @@ execute if score Time GAME matches 96 run function mwj:system/setting/decision_i
 execute if score Time GAME matches 97 run function mwj:system/setting/decision_item_addition3/item_addition3_selected
 
 ## Function Each Mode
-execute if score @p[tag=Host] SelectPrevPage matches 1 run function mwj:system/setting/decision_item_addition_common/selected_prevpage
-execute if score @p[tag=Host] SelectNextPage matches 1 run function mwj:system/setting/decision_item_addition_common/selected_nextpage
-execute if score @p[tag=Host] SelectCancel matches 1 run function mwj:system/setting/decision_item_addition_common/selected_cancel
-execute if score @p[tag=Host] SelectAllDel matches 1 run function mwj:system/setting/decision_item_addition_common/selected_all_delete
-execute if score @p[tag=Host] SelectAllSet matches 1 run function mwj:system/setting/decision_item_addition_common/selected_all_set
-execute if score @p[tag=Host] SelectOkay matches 1 run function mwj:system/setting/decision_item_addition_common/selected_ok
-execute if score @p[tag=Host] SelectDecide1 matches 1 run function mwj:system/setting/decision_item_addition_common/set_scoreboard
-execute if score @p[tag=Host] SelectDecide2 matches 1 run function mwj:system/setting/decision_item_addition_common/set_scoreboard
-execute if score @p[tag=Host] SelectDecide3 matches 1 run function mwj:system/setting/decision_item_addition_common/set_scoreboard
-execute if score @p[tag=Host] SelectDecide4 matches 1 run function mwj:system/setting/decision_item_addition_common/set_scoreboard
-execute if score @p[tag=Host] SelectDecide5 matches 1 run function mwj:system/setting/decision_item_addition_common/set_scoreboard
+execute as @p[tag=Host,scores={SelectPrevPage=1}] run function mwj:system/setting/decision_item_addition_common/selected_prevpage
+execute as @p[tag=Host,scores={SelectNextPage=1}] run function mwj:system/setting/decision_item_addition_common/selected_nextpage
+execute as @p[tag=Host,scores={SelectCancel=1}] run function mwj:system/setting/decision_item_addition_common/selected_cancel
+execute as @p[tag=Host,scores={SelectAllDel=1}] run function mwj:system/setting/decision_item_addition_common/selected_all_delete
+execute as @p[tag=Host,scores={SelectAllSet=1}] run function mwj:system/setting/decision_item_addition_common/selected_all_set
+execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/decision_item_addition_common/selected_ok
+execute as @p[tag=Host,scores={SelectDecide1=1}] run function mwj:system/setting/decision_item_addition_common/set_scoreboard
+execute as @p[tag=Host,scores={SelectDecide2=1}] run function mwj:system/setting/decision_item_addition_common/set_scoreboard
+execute as @p[tag=Host,scores={SelectDecide3=1}] run function mwj:system/setting/decision_item_addition_common/set_scoreboard
+execute as @p[tag=Host,scores={SelectDecide4=1}] run function mwj:system/setting/decision_item_addition_common/set_scoreboard
+execute as @p[tag=Host,scores={SelectDecide5=1}] run function mwj:system/setting/decision_item_addition_common/set_scoreboard
 
 ## Process the system finished
 execute if score Time TICK matches 0 if score Time SECOND matches 0 run function mwj:system/setting/exit_setting/exit_setting

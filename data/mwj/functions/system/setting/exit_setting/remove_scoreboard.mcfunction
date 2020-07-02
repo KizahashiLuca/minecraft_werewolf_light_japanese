@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -90,27 +90,18 @@ scoreboard objectives remove PrevAddedTotem
 scoreboard objectives remove PrevAddedDeath2
 scoreboard objectives remove PrevAddedPearl
 scoreboard objectives remove PrevAddedHoe
-scoreboard objectives remove PrevAddedCrossbo
+scoreboard objectives remove PrevAddedElytra
 scoreboard objectives remove PrevAddedSnowbal
 scoreboard objectives remove PrevAddedInvis
 scoreboard objectives remove PrevAddedSpeed
 scoreboard objectives remove PrevAddedJump
-scoreboard objectives remove PrevAddedElytra
+scoreboard objectives remove PrevAddedTrident
 scoreboard objectives remove PrevAddedConduit
+scoreboard objectives remove PrevAddedCrossbo
+scoreboard objectives remove PrevAddedHoneyBl
+scoreboard objectives remove PrevAddedLantern
 scoreboard objectives remove SelectAllDel
 scoreboard objectives remove SelectAllSet
-scoreboard objectives remove SelectStick
-scoreboard objectives remove SelectTotem
-scoreboard objectives remove SelectDeath2
-scoreboard objectives remove SelectPearl
-scoreboard objectives remove SelectHoe
-scoreboard objectives remove SelectCrossbow
-scoreboard objectives remove SelectSnowball
-scoreboard objectives remove SelectInvis
-scoreboard objectives remove SelectSpeed
-scoreboard objectives remove SelectJump
-scoreboard objectives remove SelectElytra
-scoreboard objectives remove SelectConduit
 scoreboard objectives remove SelectPrevPage
 scoreboard objectives remove SelectNextPage
 scoreboard objectives remove SelectItem1

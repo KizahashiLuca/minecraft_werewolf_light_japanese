@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -14,7 +14,8 @@ title @a subtitle ["",{"text":"Setting Start","color":"white","bold":true}]
 ## Send a Message Added Role to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"Minecraft Werewolf Light beta-1.6","color":"red","bold":true}]
-tellraw @a ["",{"text":"                ","color":"white"},{"text":"Setting Start","color":"green","bold":true}]
+tellraw @a ["",{"text":"  - Minecraft version 1.","color":"green","bold":true},{"score":{"name":"Time","objective":"Version"},"color":"green","bold":true}]
+tellraw @a ["",{"text":" ","color":"white"},{"text":"Setting Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"\n","color":"white"}]
 

@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -36,8 +36,17 @@ scoreboard objectives add STEAL_TIME_TICK dummy
 #### Cat
 scoreboard objectives add STRAY_BY_CAT dummy
 ## Add Variables for Items
+scoreboard objectives add SNEAKTIME minecraft.custom:minecraft.sneak_time
 #### Snowball
 scoreboard objectives add SNOWBALL dummy
+#### Trident
+scoreboard objectives add THROW_TRIDENT minecraft.used:minecraft.trident
+#### Mines
+scoreboard objectives add DROP_CONDUIT minecraft.dropped:minecraft.conduit
+#### Honey block
+execute if score Time Version matches 15.. run function mwj:system/preparation/scoreboard/add_honey_block
+#### Soul lantern
+execute if score Time Version matches 16.. run function mwj:system/preparation/scoreboard/add_soul_lantern
 
 ## Set Variables for Role
 execute as @a run scoreboard players operation @s PREV_ROLE = @s ROLE
@@ -75,8 +84,19 @@ scoreboard players set Time STEAL_NUM 1
 #### Cat
 scoreboard players set @a STRAY_BY_CAT 0
 ## Add Items
+scoreboard players set @a SNEAKTIME 0
 #### Snowball
 scoreboard players set Time SNOWBALL 0
+#### Trident
+scoreboard players set @a THROW_TRIDENT 0
+#### Mines
+scoreboard players set @a DROP_CONDUIT 0
+#### Honey block
+scoreboard players set @a HoneyBottleCount 0
+scoreboard players set @a DROP_HONEY_BLOCK 0
+#### Soul lantern
+scoreboard players set @a DROP_SOULLANTERN 0
+scoreboard players set @a DROP_LANTERN 0
 
 ## Set the Game Time
 ## Reset Scoreboard

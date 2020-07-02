@@ -1,8 +1,8 @@
 ###############################
-## Minecraft Version 1.15.2
+## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
+## Date   : 21 Jun 2020
 ## Version: beta-1.6
 ###############################
 
@@ -12,16 +12,16 @@ execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_nonwolf=true}] run
 execute as @s[scores={DEATH=1},advancements={mwj:be_killed_by_cat=true}] run scoreboard players set @s ROLE_OF_NUM 2
 
 ## Detect Respawn
-execute if score @s ROLE_OF_NUM matches 1 if score @s SPAWN_TIME_SEC = Time SECOND if score @s SPAWN_TIME_TICK = Time TICK run function mwj:system/ongame/fox/fox_respawn
+execute if score @s[scores={ROLE_OF_NUM=1}] SPAWN_TIME_SEC = Time SECOND if score @s[scores={ROLE_OF_NUM=1}] SPAWN_TIME_TICK = Time TICK run function mwj:system/ongame/fox/fox_respawn
 
 ## Give Effect
-execute if score @s ROLE_OF_NUM matches 1 run effect give @s minecraft:invisibility 10 1 true
-execute if score @s ROLE_OF_NUM matches 2 run effect clear @s
+effect give @s[scores={ROLE_OF_NUM=1}] minecraft:invisibility 10 1 true
+effect clear @s[scores={ROLE_OF_NUM=2}]
 
 ## Hit by NonWolf
-execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players reset @s SPAWN_TIME_SEC
-execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players reset @s SPAWN_TIME_TICK
-execute if score @s ROLE_OF_NUM matches 2 as @s run scoreboard players set @s ROLE_OF_NUM 0
+scoreboard players reset @s[scores={ROLE_OF_NUM=2}] SPAWN_TIME_SEC
+scoreboard players reset @s[scores={ROLE_OF_NUM=2}] SPAWN_TIME_TICK
+scoreboard players set @s[scores={ROLE_OF_NUM=2}] ROLE_OF_NUM 0
 
 ## Detect Death
-execute if score @s DEATH matches 1 if score @s ROLE_OF_NUM matches 0 run scoreboard players remove Time PURPLE 1
+execute as @s[scores={DEATH=1,ROLE_OF_NUM=0}] run scoreboard players remove Time PURPLE 1

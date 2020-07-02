@@ -1,0 +1,18 @@
+###############################
+## Minecraft Version 1.14-1.16
+## Minecraft Werewolf Light
+## Author : KizahashiLuca
+## Date   : 21 Jun 2020
+## Version: beta-1.6
+###############################
+
+## Add a tag
+tag @s add SetConduit
+
+## Detect player
+execute at @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1] as @a[team=Player,scores={DEATH=0},distance=..2] unless score @s NUM = @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1,scores={NUM=1..}] NUM run tag @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1] add ExplodeConduit
+execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=ExplodeConduit] at @s run function mwj:system/ongame/conduit/explode_conduit
+
+## Remove a tag
+tag @s remove SetConduit
+tag @e[tag=ExplodeConduit] remove ExplodeConduit
