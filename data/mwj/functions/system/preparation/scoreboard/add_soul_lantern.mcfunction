@@ -7,7 +7,7 @@
 ###############################
 
 ## Add Variables for Soul Lantern
-scoreboard objectives add TeleporterNum dummy
+scoreboard objectives add TeleporterTemp dummy
 scoreboard objectives add TeleporterPosX dummy
 scoreboard objectives add TeleporterPosY dummy
 scoreboard objectives add TeleporterPosZ dummy

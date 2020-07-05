@@ -79,7 +79,7 @@ scoreboard objectives remove DROP_CONDUIT
 scoreboard objectives remove HoneyBottleCount
 scoreboard objectives remove DROP_HONEY_BLOCK
 #### Soul lantern
-scoreboard objectives remove TeleporterNum
+scoreboard objectives remove TeleporterTemp
 scoreboard objectives remove TeleporterPosX
 scoreboard objectives remove TeleporterPosY
 scoreboard objectives remove TeleporterPosZ

@@ -7,7 +7,7 @@
 ###############################
 
 ## Detect throwing soul_lantern
-function mwj:system/ongame/soul_lantern/compare_soul_lantern_tag
+execute as @s run function mwj:system/ongame/soul_lantern/compare_soul_lantern_tag
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern"}},sort=nearest,limit=1]
 data remove storage mwj:teleporter Teleporter.Temp
 data remove storage mwj:teleporter Teleporter.SoulLantern

@@ -14,3 +14,4 @@ scoreboard players remove @a[team=Player,scores={DROP_LANTERN=1..}] DROP_LANTERN
 execute as @a[team=Player,scores={DROP_SOULLANTERN=1..,SNEAKTIME=1..}] at @s run function mwj:system/ongame/soul_lantern/throw_soul_lantern
 scoreboard players set @a[team=Player,scores={DROP_SOULLANTERN=1..,SNEAKTIME=1..}] SNEAKTIME 0
 scoreboard players remove @a[team=Player,scores={DROP_SOULLANTERN=1..}] DROP_SOULLANTERN 1
+scoreboard players reset @a[team=Player] TeleporterTemp

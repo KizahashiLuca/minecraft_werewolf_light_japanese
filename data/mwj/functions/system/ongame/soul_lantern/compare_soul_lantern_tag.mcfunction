@@ -23,7 +23,7 @@ execute if score @s TeleporterTemp matches 1 run data modify entity @e[type=item
 execute if score @s TeleporterTemp matches 1 run data modify storage mwj:teleporter Teleporter.Store append from storage mwj:teleporter Teleporter.Temp
 
 ## If equal soul_lantern's tag to temporary storage, teleport player
-execute if score @s TeleporterTemp matches 0 run function mwj:system/ongame/soul_lantern/teleport_player
+execute at @s if score @s TeleporterTemp matches 0 run function mwj:system/ongame/soul_lantern/teleport_player
 
 ## Loop
 execute if score @s TeleporterTemp matches 1 run function mwj:system/ongame/soul_lantern/compare_soul_lantern_tag
