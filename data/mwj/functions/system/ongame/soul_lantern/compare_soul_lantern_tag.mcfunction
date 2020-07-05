@@ -14,10 +14,10 @@ data modify storage mwj:teleporter Teleporter.Temp set from storage mwj:teleport
 data remove storage mwj:teleporter Teleporter.Store[0]
 
 ## Compare soul_lantern's tag to temporary storage
-execute store success score @s TeleporterTemp run data modify entity @e[type=item,nbt={Item:{id:"minecraft:soul_lantern"}},limit=1] Item.tag.display.Lore[1] set from storage mwj:teleporter Teleporter.Temp.Message
+execute store success score @s TeleporterTemp run data modify entity @e[type=item,nbt={Item:{id:"minecraft:soul_lantern"}},sort=nearest,limit=1] Item.tag.display.Lore[1] set from storage mwj:teleporter Teleporter.Temp.Message
 
 ## If not equal soul_lantern's tag to temporary storage, return soul_lantern's tag
-execute if score @s TeleporterTemp matches 1 run data modify entity @e[type=item,nbt={Item:{id:"minecraft:soul_lantern"}},limit=1] Item.tag.display.Lore[1] set from storage mwj:teleporter Teleporter.SoulLantern
+execute if score @s TeleporterTemp matches 1 run data modify entity @e[type=item,nbt={Item:{id:"minecraft:soul_lantern"}},sort=nearest,limit=1] Item.tag.display.Lore[1] set from storage mwj:teleporter Teleporter.SoulLantern
 
 ## Return temporary storage to stored storage
 execute if score @s TeleporterTemp matches 1 run data modify storage mwj:teleporter Teleporter.Store append from storage mwj:teleporter Teleporter.Temp

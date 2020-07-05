@@ -8,7 +8,7 @@
 
 ## Summon area_effect_cloud
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["SoulLantern"],NoGravity:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:100000000}
-data modify entity @e[type=minecraft:area_effect_cloud,tag=SoulLantern,sort=nearest,limit=1] Pos set from storage mwj:teleporter Teleporter.Temp.Pos
+data modify entity @e[type=minecraft:area_effect_cloud,tag=SoulLantern,limit=1] Pos set from storage mwj:teleporter Teleporter.Temp.Pos
 
 ## Teleport player
 playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 1.0 2.0
