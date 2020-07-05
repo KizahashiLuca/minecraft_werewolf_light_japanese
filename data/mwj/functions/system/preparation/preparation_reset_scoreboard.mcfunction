@@ -95,6 +95,10 @@ scoreboard players set @a DROP_CONDUIT 0
 scoreboard players set @a HoneyBottleCount 0
 scoreboard players set @a DROP_HONEY_BLOCK 0
 #### Soul lantern
+scoreboard players set #MWL TeleporterNum 0
+scoreboard players set @a TeleporterPosX 0
+scoreboard players set @a TeleporterPosY 0
+scoreboard players set @a TeleporterPosZ 0
 scoreboard players set @a DROP_SOULLANTERN 0
 scoreboard players set @a DROP_LANTERN 0
 

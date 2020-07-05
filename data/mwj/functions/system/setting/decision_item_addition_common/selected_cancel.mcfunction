@@ -9,7 +9,7 @@
 ## Reset choice
 scoreboard players operation #MWL AddedStick = #MWL PrevAddedStick
 scoreboard players operation #MWL AddedTotem = #MWL PrevAddedTotem
-scoreboard players operation #MWL AddedDeath2 = #MWL PrevAddedDeath2
+scoreboard players operation #MWL AddedDeath = #MWL PrevAddedDeath
 scoreboard players operation #MWL AddedPearl = #MWL PrevAddedPearl
 scoreboard players operation #MWL AddedHoe = #MWL PrevAddedHoe
 

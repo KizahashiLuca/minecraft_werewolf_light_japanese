@@ -6,4 +6,5 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:stick{Unbreakable:1b} 1
+## Remove teams
+team remove Player

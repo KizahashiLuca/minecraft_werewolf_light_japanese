@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:bow{Unbreakable:1,Enchantments:[{id:"minecraft:power",lvl:200},{id:"minecraft:infinity",lvl:1},{id:"minecraft:vanishing_curse",lvl:1}]} 1
+give @s minecraft:bow{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:200},{id:"minecraft:infinity",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}]} 1

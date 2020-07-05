@@ -8,5 +8,5 @@
 
 ## Add Villager
 scoreboard players remove #MWL AddedRoleTmp 1
-execute if score #MWL AddedRoleTmp matches 1.. run give @p[tag=Host] minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a残り追加可能人数"',Taged:"Villa"}} 1
+execute if score #MWL AddedRoleTmp matches 1.. run give @p[tag=Host] minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a残り追加可能人数"',Tag:"Villa"}} 1
 execute if score #MWL AddedRoleTmp matches 2.. run function mwj:system/setting/decision_role_addition/added_villager

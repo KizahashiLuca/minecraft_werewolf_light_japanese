@@ -7,5 +7,5 @@
 ###############################
 
 ## Minecraft 1.15
-replaceitem entity @p[tag=Host] inventory.0 minecraft:honeycomb_block{Tag:"Ver"}
-execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:honeycomb_block",Count:1b,tag:{Tag:"Ver"}}]}] run scoreboard players set #MWL Version 15
+replaceitem entity @p[tag=Host] inventory.0 minecraft:honeycomb_block{display:{Tag:"Ver"}}
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:honeycomb_block",Count:1b,tag:{display:{Tag:"Ver"}}}]}] run scoreboard players set #MWL Version 15

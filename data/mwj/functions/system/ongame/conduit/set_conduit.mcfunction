@@ -7,4 +7,4 @@
 ###############################
 
 ## Detect conduit set
-execute at @s unless score @e[type=minecraft:item,nbt={Item:{id:"minecraft:conduit",tag:{display:{Tag:"\"Mine\""}}}},sort=nearest,limit=1] NUM matches 1.. run scoreboard players operation @e[type=minecraft:item,nbt={Item:{id:"minecraft:conduit",tag:{display:{Tag:"\"Mine\""}}}},sort=nearest,limit=1] NUM = @s NUM
+execute at @s unless score @e[type=minecraft:item,nbt={Item:{id:"minecraft:conduit",tag:{display:{Tag:"Mine"}}}},sort=nearest,limit=1] NUM matches 1.. run scoreboard players operation @e[type=minecraft:item,nbt={Item:{id:"minecraft:conduit",tag:{display:{Tag:"Mine"}}}},sort=nearest,limit=1] NUM = @s NUM

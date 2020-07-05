@@ -87,7 +87,7 @@ scoreboard objectives remove AddedItem4
 scoreboard objectives remove AddedItem5
 scoreboard objectives remove PrevAddedStick
 scoreboard objectives remove PrevAddedTotem
-scoreboard objectives remove PrevAddedDeath2
+scoreboard objectives remove PrevAddedDeath
 scoreboard objectives remove PrevAddedPearl
 scoreboard objectives remove PrevAddedHoe
 scoreboard objectives remove PrevAddedElytra

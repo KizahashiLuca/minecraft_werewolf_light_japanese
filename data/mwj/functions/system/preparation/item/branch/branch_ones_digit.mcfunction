@@ -16,8 +16,8 @@ execute if score #MWL AddedStick matches 1 run scoreboard players add #MWL TEMP_
 execute if score #MWL AddedTotem matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @r[nbt={Inventory:[]},team=Player] run function mwj:system/preparation/item/special/totem
 execute if score #MWL AddedTotem matches 1 run scoreboard players add #MWL TEMP_DIGIT 1
 
-execute if score #MWL AddedDeath2 matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @r[nbt={Inventory:[]},team=Player] run function mwj:system/preparation/item/special/potion_death2
-execute if score #MWL AddedDeath2 matches 1 run scoreboard players add #MWL TEMP_DIGIT 1
+execute if score #MWL AddedDeath matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @r[nbt={Inventory:[]},team=Player] run function mwj:system/preparation/item/special/potion_death
+execute if score #MWL AddedDeath matches 1 run scoreboard players add #MWL TEMP_DIGIT 1
 
 execute if score #MWL AddedPearl matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @r[nbt={Inventory:[]},team=Player] run function mwj:system/preparation/item/special/pearl
 execute if score #MWL AddedPearl matches 1 run scoreboard players add #MWL TEMP_DIGIT 1

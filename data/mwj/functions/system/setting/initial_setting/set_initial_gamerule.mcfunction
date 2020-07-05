@@ -12,6 +12,7 @@ gamerule commandBlockOutput false
 gamerule doFireTick false
 gamerule doLimitedCrafting true
 gamerule doMobSpawning false
+gamerule keepInventory false
 gamerule sendCommandFeedback false
 gamerule showDeathMessages false
 difficulty peaceful

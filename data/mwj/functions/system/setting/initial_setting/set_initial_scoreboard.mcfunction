@@ -121,7 +121,7 @@ scoreboard objectives add AddedItem4 dummy
 scoreboard objectives add AddedItem5 dummy
 scoreboard objectives add AddedStick dummy
 scoreboard objectives add AddedTotem dummy
-scoreboard objectives add AddedDeath2 dummy
+scoreboard objectives add AddedDeath dummy
 scoreboard objectives add AddedPearl dummy
 scoreboard objectives add AddedHoe dummy
 scoreboard objectives add AddedElytra dummy
@@ -136,7 +136,7 @@ scoreboard objectives add AddedHoneyBlock dummy
 scoreboard objectives add AddedLantern dummy
 scoreboard objectives add PrevAddedStick dummy
 scoreboard objectives add PrevAddedTotem dummy
-scoreboard objectives add PrevAddedDeath2 dummy
+scoreboard objectives add PrevAddedDeath dummy
 scoreboard objectives add PrevAddedPearl dummy
 scoreboard objectives add PrevAddedHoe dummy
 scoreboard objectives add PrevAddedElytra dummy
@@ -230,7 +230,7 @@ scoreboard players set #MWL AddedItem4 1
 scoreboard players set #MWL AddedItem5 1
 scoreboard players set #MWL AddedStick 1
 scoreboard players set #MWL AddedTotem 1
-scoreboard players set #MWL AddedDeath2 1
+scoreboard players set #MWL AddedDeath 1
 scoreboard players set #MWL AddedPearl 1
 scoreboard players set #MWL AddedHoe 1
 scoreboard players set #MWL AddedElytra 1
@@ -247,7 +247,7 @@ scoreboard players set #MWL AddedLantern 0
 execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedLantern 1
 scoreboard players set #MWL PrevAddedStick 1
 scoreboard players set #MWL PrevAddedTotem 1
-scoreboard players set #MWL PrevAddedDeath2 1
+scoreboard players set #MWL PrevAddedDeath 1
 scoreboard players set #MWL PrevAddedPearl 1
 scoreboard players set #MWL PrevAddedHoe 1
 scoreboard players set #MWL PrevAddedElytra 1

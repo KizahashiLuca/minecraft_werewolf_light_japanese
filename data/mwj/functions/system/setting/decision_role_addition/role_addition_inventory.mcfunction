@@ -18,19 +18,19 @@ replaceitem entity @p[tag=Host] inventory.16 minecraft:blue_stained_glass{displa
 replaceitem entity @p[tag=Host] inventory.17 minecraft:orange_stained_glass{display:{Name:'"\\u00A7r\\u00A7f猫又の追加"'}} 1
 replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39} 1
 replaceitem entity @p[tag=Host] inventory.21 minecraft:map{display:{Name:'"\\u00A7r\\u00A7eリセット"'}} 1
-execute if score #MWL AddedVilla matches 1.. run replaceitem entity @p[tag=Host] inventory.23 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7f残り追加可能人数"',Taged:"Villa"}} 1
+execute if score #MWL AddedVilla matches 1.. run replaceitem entity @p[tag=Host] inventory.23 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7f残り追加可能人数"',Tag:"Villa"}} 1
 replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39} 1
 
 ## Set Nether Star above Selected Role
-execute if score #MWL AddedWolf matches 1.. run replaceitem entity @p[tag=Host] inventory.0 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Wolf"}} 1
-execute if score #MWL AddedMadman matches 1.. run replaceitem entity @p[tag=Host] inventory.1 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Madman"}} 1
-execute if score #MWL AddedFox matches 1.. run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Fox"}} 1
-execute if score #MWL AddedSeer matches 1.. run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Seer"}} 1
-execute if score #MWL AddedMedium matches 1.. run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Medium"}} 1
-execute if score #MWL AddedMason matches 1.. run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Mason"}} 1
-execute if score #MWL AddedDetec matches 1.. run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Detec"}} 1
-execute if score #MWL AddedThief matches 1.. run replaceitem entity @p[tag=Host] inventory.7 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Thief"}} 1
-execute if score #MWL AddedCat matches 1.. run replaceitem entity @p[tag=Host] inventory.8 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Cat"}} 1
+execute if score #MWL AddedWolf matches 1.. run replaceitem entity @p[tag=Host] inventory.0 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Wolf"}} 1
+execute if score #MWL AddedMadman matches 1.. run replaceitem entity @p[tag=Host] inventory.1 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Madman"}} 1
+execute if score #MWL AddedFox matches 1.. run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Fox"}} 1
+execute if score #MWL AddedSeer matches 1.. run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Seer"}} 1
+execute if score #MWL AddedMedium matches 1.. run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Medium"}} 1
+execute if score #MWL AddedMason matches 1.. run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Mason"}} 1
+execute if score #MWL AddedDetec matches 1.. run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Detec"}} 1
+execute if score #MWL AddedThief matches 1.. run replaceitem entity @p[tag=Host] inventory.7 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Thief"}} 1
+execute if score #MWL AddedCat matches 1.. run replaceitem entity @p[tag=Host] inventory.8 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Cat"}} 1
 
 scoreboard objectives add AddedRoleTmp dummy
 scoreboard players operation #MWL AddedRoleTmp = #MWL AddedWolf

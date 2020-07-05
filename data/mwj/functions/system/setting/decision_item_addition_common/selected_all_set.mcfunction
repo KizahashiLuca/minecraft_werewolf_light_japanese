@@ -9,7 +9,7 @@
 ## Reset choice
 scoreboard players set #MWL AddedStick 1
 scoreboard players set #MWL AddedTotem 1
-scoreboard players set #MWL AddedDeath2 1
+scoreboard players set #MWL AddedDeath 1
 scoreboard players set #MWL AddedPearl 1
 scoreboard players set #MWL AddedHoe 1
 scoreboard players set #MWL AddedElytra 1

@@ -10,7 +10,7 @@
 scoreboard players set #MWL DENOMINATOR 0
 execute if score #MWL AddedStick matches 1 run scoreboard players add #MWL DENOMINATOR 1
 execute if score #MWL AddedTotem matches 1 run scoreboard players add #MWL DENOMINATOR 1
-execute if score #MWL AddedDeath2 matches 1 run scoreboard players add #MWL DENOMINATOR 1
+execute if score #MWL AddedDeath matches 1 run scoreboard players add #MWL DENOMINATOR 1
 execute if score #MWL AddedPearl matches 1 run scoreboard players add #MWL DENOMINATOR 1
 execute if score #MWL AddedHoe matches 1 run scoreboard players add #MWL DENOMINATOR 1
 execute if score #MWL AddedElytra matches 1 run scoreboard players add #MWL DENOMINATOR 1

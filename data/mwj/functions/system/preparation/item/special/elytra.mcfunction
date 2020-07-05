@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:elytra{Unbreakable:1} 1
+give @s minecraft:elytra{Unbreakable:1b} 1

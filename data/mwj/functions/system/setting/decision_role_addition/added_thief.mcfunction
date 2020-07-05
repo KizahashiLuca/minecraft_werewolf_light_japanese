@@ -8,5 +8,5 @@
 
 ## Add Thief
 scoreboard players remove #MWL AddedRoleTmp 1
-execute if score #MWL AddedRoleTmp matches 1.. run give @p[tag=Host] minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Taged:"Thief"}} 1
+execute if score #MWL AddedRoleTmp matches 1.. run give @p[tag=Host] minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"',Tag:"Thief"}} 1
 execute if score #MWL AddedRoleTmp matches 2.. run function mwj:system/setting/decision_role_addition/added_thief

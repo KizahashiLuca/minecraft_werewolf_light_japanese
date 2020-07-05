@@ -7,5 +7,12 @@
 ###############################
 
 ## Add Variables for Soul Lantern
+scoreboard objectives add TeleporterNum dummy
+scoreboard objectives add TeleporterPosX dummy
+scoreboard objectives add TeleporterPosY dummy
+scoreboard objectives add TeleporterPosZ dummy
 scoreboard objectives add DROP_SOULLANTERN minecraft.dropped:minecraft.soul_lantern
 scoreboard objectives add DROP_LANTERN minecraft.dropped:minecraft.lantern
+
+## Data storage 
+data remove storage mwj:teleporter Teleporter

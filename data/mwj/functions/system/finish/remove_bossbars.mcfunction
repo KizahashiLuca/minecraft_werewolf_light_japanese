@@ -6,4 +6,5 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:splash_potion{display:{Name:'"\\u00A7r\\u00A7f即死のスプラッシュポーション"'},CustomPotionEffects:[{Id:7,Amplifier:3}],CustomPotionColor:16122102} 1
+## Remove bossbar
+bossbar remove minecraft:bossbar

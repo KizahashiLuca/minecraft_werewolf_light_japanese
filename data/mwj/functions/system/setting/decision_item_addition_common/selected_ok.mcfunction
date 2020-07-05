@@ -9,7 +9,7 @@
 ## Set Prev choice
 scoreboard players operation #MWL PrevAddedStick = #MWL AddedStick
 scoreboard players operation #MWL PrevAddedTotem = #MWL AddedTotem
-scoreboard players operation #MWL PrevAddedDeath2 = #MWL AddedDeath2
+scoreboard players operation #MWL PrevAddedDeath = #MWL AddedDeath
 scoreboard players operation #MWL PrevAddedPearl = #MWL AddedPearl
 scoreboard players operation #MWL PrevAddedHoe = #MWL AddedHoe
 
