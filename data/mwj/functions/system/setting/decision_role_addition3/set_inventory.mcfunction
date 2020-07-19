@@ -14,8 +14,8 @@ replaceitem entity @p[tag=Host] inventory.11 minecraft:light_blue_concrete{displ
 # replaceitem entity @p[tag=Host] inventory.15 minecraft:white_concrete{display:{Name:'"\\u00A7r\\u00A7f追加役職の追加"'}} 1
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedFkSeer = #MWL AddedItem1
-# scoreboard players operation #MWL Added = #MWL AddedItem2
-# scoreboard players operation #MWL Added = #MWL AddedItem3
-# scoreboard players operation #MWL Added = #MWL AddedItem4
-# scoreboard players operation #MWL Added = #MWL AddedItem5
+scoreboard players operation #MWL AddedFkSeer = #MWL AddedRole1
+# scoreboard players operation #MWL Added = #MWL AddedRole2
+# scoreboard players operation #MWL Added = #MWL AddedRole3
+# scoreboard players operation #MWL Added = #MWL AddedRole4
+# scoreboard players operation #MWL Added = #MWL AddedRole5

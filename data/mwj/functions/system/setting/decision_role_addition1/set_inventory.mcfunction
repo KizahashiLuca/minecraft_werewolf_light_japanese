@@ -14,8 +14,8 @@ replaceitem entity @p[tag=Host] inventory.14 minecraft:light_blue_stained_glass{
 replaceitem entity @p[tag=Host] inventory.15 minecraft:yellow_stained_glass{display:{Name:'"\\u00A7r\\u00A7f霊媒師の追加"'}} 1
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedWolf = #MWL AddedItem1
-scoreboard players operation #MWL AddedMadman = #MWL AddedItem2
-scoreboard players operation #MWL AddedVilla = #MWL AddedItem3
-scoreboard players operation #MWL AddedSeer = #MWL AddedItem4
-scoreboard players operation #MWL AddedMedium = #MWL AddedItem5
+scoreboard players operation #MWL AddedWolf = #MWL AddedRole1
+scoreboard players operation #MWL AddedMadman = #MWL AddedRole2
+scoreboard players operation #MWL AddedVilla = #MWL AddedRole3
+scoreboard players operation #MWL AddedSeer = #MWL AddedRole4
+scoreboard players operation #MWL AddedMedium = #MWL AddedRole5

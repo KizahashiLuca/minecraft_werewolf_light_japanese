@@ -46,23 +46,23 @@ execute if score #MWL AddedRole matches 1.. run replaceitem entity @p[tag=Host] 
 replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39} 1
 
 ## Set Nether Star above Selected Role
-execute if score #MWL AddedItem1 matches 1.. run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem1",HideFlags:39} 1
-execute if score #MWL AddedItem2 matches 1.. run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem2",HideFlags:39} 1
-execute if score #MWL AddedItem3 matches 1.. run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem3",HideFlags:39} 1
-execute if score #MWL AddedItem4 matches 1.. run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem4",HideFlags:39} 1
-execute if score #MWL AddedItem5 matches 1.. run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem5",HideFlags:39} 1
+execute if score #MWL AddedRole1 matches 1.. run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole1",HideFlags:39} 1
+execute if score #MWL AddedRole2 matches 1.. run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole2",HideFlags:39} 1
+execute if score #MWL AddedRole3 matches 1.. run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole3",HideFlags:39} 1
+execute if score #MWL AddedRole4 matches 1.. run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole4",HideFlags:39} 1
+execute if score #MWL AddedRole5 matches 1.. run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole5",HideFlags:39} 1
 
 scoreboard objectives add AddedRoleTmp dummy
 scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole
 function mwj:system/setting/decision_role_addition_common/added_rest_number
-scoreboard players operation #MWL AddedRoleTmp = #MWL AddedItem1
+scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole1
 function mwj:system/setting/decision_role_addition_common/selected_role1
-scoreboard players operation #MWL AddedRoleTmp = #MWL AddedItem2
+scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole2
 function mwj:system/setting/decision_role_addition_common/selected_role2
-scoreboard players operation #MWL AddedRoleTmp = #MWL AddedItem3
+scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole3
 function mwj:system/setting/decision_role_addition_common/selected_role3
-scoreboard players operation #MWL AddedRoleTmp = #MWL AddedItem4
+scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole4
 function mwj:system/setting/decision_role_addition_common/selected_role4
-scoreboard players operation #MWL AddedRoleTmp = #MWL AddedItem5
+scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole5
 function mwj:system/setting/decision_role_addition_common/selected_role5
 scoreboard objectives remove AddedRoleTmp

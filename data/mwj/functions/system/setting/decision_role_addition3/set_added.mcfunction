@@ -7,8 +7,8 @@
 ###############################
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedItem1 = #MWL AddedFkSeer
-# scoreboard players operation #MWL AddedItem2 = #MWL Added
-# scoreboard players operation #MWL AddedItem3 = #MWL Added
-# scoreboard players operation #MWL AddedItem4 = #MWL Added
-# scoreboard players operation #MWL AddedItem5 = #MWL Added
+scoreboard players operation #MWL AddedRole1 = #MWL AddedFkSeer
+# scoreboard players operation #MWL AddedRole2 = #MWL Added
+# scoreboard players operation #MWL AddedRole3 = #MWL Added
+# scoreboard players operation #MWL AddedRole4 = #MWL Added
+# scoreboard players operation #MWL AddedRole5 = #MWL Added

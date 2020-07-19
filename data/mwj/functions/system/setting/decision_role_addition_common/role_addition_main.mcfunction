@@ -39,11 +39,11 @@ scoreboard players set @p[tag=Host] SelectAllDel 1
 execute if score #MWL AddedRole matches 1.. run scoreboard players set @p[tag=Host] SelectNumber 1
 scoreboard players set @p[tag=Host] SelectOkay 1
 
-execute if score #MWL AddedItem1 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide1 1
-execute if score #MWL AddedItem2 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide2 1
-execute if score #MWL AddedItem3 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide3 1
-execute if score #MWL AddedItem4 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide4 1
-execute if score #MWL AddedItem5 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide5 1
+execute if score #MWL AddedRole1 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide1 1
+execute if score #MWL AddedRole2 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide2 1
+execute if score #MWL AddedRole3 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide3 1
+execute if score #MWL AddedRole4 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide4 1
+execute if score #MWL AddedRole5 matches 1.. run scoreboard players set @p[tag=Host] SelectDecide5 1
 
 ## Declare Inventory
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:white_banner",tag:{display:{Name:'"\\u00A7r\\u00A7c前へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39}}]}] SelectPrevPage 0
@@ -53,11 +53,11 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:30b,id:"minecraft:map",
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:32b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a残り追加可能人数"'},HideFlags:39}}]}] SelectNumber 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39}}]}] SelectOkay 0
 
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem1",HideFlags:39}}]}] SelectDecide1 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem2",HideFlags:39}}]}] SelectDecide2 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem3",HideFlags:39}}]}] SelectDecide3 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem4",HideFlags:39}}]}] SelectDecide4 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedItem5",HideFlags:39}}]}] SelectDecide5 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole1",HideFlags:39}}]}] SelectDecide1 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole2",HideFlags:39}}]}] SelectDecide2 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole3",HideFlags:39}}]}] SelectDecide3 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole4",HideFlags:39}}]}] SelectDecide4 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole5",HideFlags:39}}]}] SelectDecide5 0
 
 execute if score #MWL Phase matches 90 run function mwj:system/setting/decision_role_addition1/role_addition1_selected
 execute if score #MWL Phase matches 91 run function mwj:system/setting/decision_role_addition2/role_addition2_selected

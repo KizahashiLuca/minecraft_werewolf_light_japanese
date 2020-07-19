@@ -14,8 +14,8 @@ replaceitem entity @p[tag=Host] inventory.14 minecraft:blue_stained_glass{displa
 replaceitem entity @p[tag=Host] inventory.15 minecraft:orange_stained_glass{display:{Name:'"\\u00A7r\\u00A7f猫又の追加"'}} 1
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedFox = #MWL AddedItem1
-scoreboard players operation #MWL AddedMason = #MWL AddedItem2
-scoreboard players operation #MWL AddedDetec = #MWL AddedItem3
-scoreboard players operation #MWL AddedThief = #MWL AddedItem4
-scoreboard players operation #MWL AddedCat = #MWL AddedItem5
+scoreboard players operation #MWL AddedFox = #MWL AddedRole1
+scoreboard players operation #MWL AddedMason = #MWL AddedRole2
+scoreboard players operation #MWL AddedDetec = #MWL AddedRole3
+scoreboard players operation #MWL AddedThief = #MWL AddedRole4
+scoreboard players operation #MWL AddedCat = #MWL AddedRole5

@@ -19,6 +19,11 @@ scoreboard objectives remove PrevAddedDetec
 scoreboard objectives remove PrevAddedThief
 scoreboard objectives remove PrevAddedCat
 scoreboard objectives remove PrevAddedFkSeer
+scoreboard objectives remove AddedRole1
+scoreboard objectives remove AddedRole2
+scoreboard objectives remove AddedRole3
+scoreboard objectives remove AddedRole4
+scoreboard objectives remove AddedRole5
 scoreboard objectives remove SelectNumber
 ## Remove Variables for Setting Hide Time
 scoreboard objectives remove HideTime
@@ -86,13 +91,13 @@ scoreboard objectives remove PrevAddedConduit
 scoreboard objectives remove PrevAddedCrossbo
 scoreboard objectives remove PrevAddedHoneyBl
 scoreboard objectives remove PrevAddedLantern
-## Remove Variables for GUI Addition Common
-scoreboard objectives remove TmpAdded
 scoreboard objectives remove AddedItem1
 scoreboard objectives remove AddedItem2
 scoreboard objectives remove AddedItem3
 scoreboard objectives remove AddedItem4
 scoreboard objectives remove AddedItem5
+## Remove Variables for GUI Addition Common
+scoreboard objectives remove TmpAdded
 scoreboard objectives remove SelectAllDel
 scoreboard objectives remove SelectAllSet
 scoreboard objectives remove SelectPrevPage

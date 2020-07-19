@@ -49,6 +49,11 @@ scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedThief dummy
 scoreboard objectives add PrevAddedCat dummy
 scoreboard objectives add PrevAddedFkSeer dummy
+scoreboard objectives add AddedRole1 dummy
+scoreboard objectives add AddedRole2 dummy
+scoreboard objectives add AddedRole3 dummy
+scoreboard objectives add AddedRole4 dummy
+scoreboard objectives add AddedRole5 dummy
 scoreboard objectives add SelectNumber dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
@@ -137,13 +142,13 @@ scoreboard objectives add PrevAddedConduit dummy
 scoreboard objectives add PrevAddedCrossbo dummy
 scoreboard objectives add PrevAddedHoneyBl dummy
 scoreboard objectives add PrevAddedLantern dummy
-## Add Variables for GUI Addition Common
-scoreboard objectives add TmpAdded dummy
 scoreboard objectives add AddedItem1 dummy
 scoreboard objectives add AddedItem2 dummy
 scoreboard objectives add AddedItem3 dummy
 scoreboard objectives add AddedItem4 dummy
 scoreboard objectives add AddedItem5 dummy
+## Add Variables for GUI Addition Common
+scoreboard objectives add TmpAdded dummy
 scoreboard objectives add SelectAllDel dummy
 scoreboard objectives add SelectAllSet dummy
 scoreboard objectives add SelectPrevPage dummy

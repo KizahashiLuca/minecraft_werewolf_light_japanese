@@ -30,4 +30,5 @@ execute if score #MWL AddedRole matches 1.. run tellraw @a ["",{"text":"\n  ","c
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Change to Choose Mode
+function mwj:system/setting/decision_role_addition1/set_added
 function mwj:system/setting/choose_mode/change_to_choose_mode

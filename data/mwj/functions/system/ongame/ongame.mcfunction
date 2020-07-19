@@ -64,7 +64,7 @@ execute as @a[team=Player,scores={ROLE=10}] run function mwj:system/ongame/cat/c
 function mwj:system/ongame/kill_log/kill_log_main
 
 ## Decide Winner
-function mwj:system/finish/decide_winner/decide_winner_main
+execute unless entity @p[tag=MWLtest] run function mwj:system/finish/decide_winner/decide_winner_main
 
 ## Torch system
 scoreboard players set @a[team=Player] TORCH 0

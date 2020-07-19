@@ -7,8 +7,8 @@
 ###############################
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedItem1 = #MWL AddedFox
-scoreboard players operation #MWL AddedItem2 = #MWL AddedMason
-scoreboard players operation #MWL AddedItem3 = #MWL AddedDetec
-scoreboard players operation #MWL AddedItem4 = #MWL AddedThief
-scoreboard players operation #MWL AddedItem5 = #MWL AddedCat
+scoreboard players operation #MWL AddedRole1 = #MWL AddedFox
+scoreboard players operation #MWL AddedRole2 = #MWL AddedMason
+scoreboard players operation #MWL AddedRole3 = #MWL AddedDetec
+scoreboard players operation #MWL AddedRole4 = #MWL AddedThief
+scoreboard players operation #MWL AddedRole5 = #MWL AddedCat
