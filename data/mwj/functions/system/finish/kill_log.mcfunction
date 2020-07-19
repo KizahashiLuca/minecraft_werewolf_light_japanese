@@ -10,7 +10,7 @@
 execute as @a[team=Player] if score @s VICTIM = #MWL KILLLOG_NUM run scoreboard players set @s VICTIM_FLAG 1
 execute as @a[team=Player] if score @s NUM = @p[scores={VICTIM_FLAG=1}] KILLER run scoreboard players set @s KILLER_FLAG 1
 
-scoreboard players operation @p[scores={VICTIM_FLAG=1}] Tick *= #MWL DENOMINATOR
+scoreboard players operation @p[scores={VICTIM_FLAG=1}] Tick *= #MWL TempVariable
 
 ## 1000 sec. -
 execute as @p[scores={VICTIM_FLAG=1,Second=1000..,Tick=0..5}] if entity @p[scores={KILLER_FLAG=1}] run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"@s","objective":"Second"},"color":"white"},{"text":".0","color":"white"},{"score":{"name":"@s","objective":"Tick"},"color":"white"},{"text":" sec.  :  ","color":"white"},{"selector":"@p[scores={KILLER_FLAG=1}]","color":"red"},{"text":" --> ","color":"white"},{"selector":"@s","color":"green"}]

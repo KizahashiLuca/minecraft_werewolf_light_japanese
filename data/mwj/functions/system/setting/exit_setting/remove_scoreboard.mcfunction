@@ -6,7 +6,7 @@
 ## Version: beta-1.6
 ###############################
 
-## Add Variables for Setting Added Role
+## Remove Variables for Setting Added Role
 scoreboard objectives remove PrevAddedRole
 scoreboard objectives remove PrevAddedWolf
 scoreboard objectives remove PrevAddedMadman
@@ -18,28 +18,20 @@ scoreboard objectives remove PrevAddedMason
 scoreboard objectives remove PrevAddedDetec
 scoreboard objectives remove PrevAddedThief
 scoreboard objectives remove PrevAddedCat
-scoreboard objectives remove SelectWolf
-scoreboard objectives remove SelectMadman
-scoreboard objectives remove SelectFox
-scoreboard objectives remove SelectVilla
-scoreboard objectives remove SelectSeer
-scoreboard objectives remove SelectMedium
-scoreboard objectives remove SelectMason
-scoreboard objectives remove SelectDetec
-scoreboard objectives remove SelectThief
-scoreboard objectives remove SelectCat
-## Add Variables for Setting Hide Time
+scoreboard objectives remove PrevAddedFkSeer
+scoreboard objectives remove SelectNumber
+## Remove Variables for Setting Hide Time
 scoreboard objectives remove HideTime
 scoreboard objectives remove PrevHideTime
-## Add Variables for Setting Glow Time
+## Remove Variables for Setting Glow Time
 scoreboard objectives remove GlowTime
 scoreboard objectives remove PrevGlowTime
-## Add Variables for Setting Game Time
+## Remove Variables for Setting Game Time
 scoreboard objectives remove GameTime
 scoreboard objectives remove PrevGameTime
-## Add Variables for Setting Game Mode
+## Remove Variables for Setting Game Mode
 scoreboard objectives remove PrevGameMode
-## Add Variables for GUI Choose Mode
+## Remove Variables for GUI Choose Mode
 scoreboard objectives remove SelectCancel
 scoreboard objectives remove SelectReset
 scoreboard objectives remove SelectOkay
@@ -50,7 +42,7 @@ scoreboard objectives remove ChosenGameTime
 scoreboard objectives remove ChosenGameMode
 scoreboard objectives remove ChosenItemAdd
 scoreboard objectives remove ChosenRoleAdd
-## Add Variables for GUI Hide Time
+## Remove Variables for GUI Hide Time
 scoreboard objectives remove Select015secs
 scoreboard objectives remove Select030secs
 scoreboard objectives remove Select060secs
@@ -58,7 +50,7 @@ scoreboard objectives remove Select090secs
 scoreboard objectives remove Select120secs
 scoreboard objectives remove Select180secs
 scoreboard objectives remove Select300secs
-## Add Variables for GUI Glow Time
+## Remove Variables for GUI Glow Time
 scoreboard objectives remove Select000pers
 scoreboard objectives remove Select010pers
 scoreboard objectives remove Select020pers
@@ -66,7 +58,7 @@ scoreboard objectives remove Select030pers
 scoreboard objectives remove Select050pers
 scoreboard objectives remove Select080pers
 scoreboard objectives remove Select100pers
-## Add Variables for GUI Game Time
+## Remove Variables for GUI Game Time
 scoreboard objectives remove Select05mins
 scoreboard objectives remove Select10mins
 scoreboard objectives remove Select15mins
@@ -74,17 +66,11 @@ scoreboard objectives remove Select20mins
 scoreboard objectives remove Select25mins
 scoreboard objectives remove Select30mins
 scoreboard objectives remove Select60mins
-## Add Variables for GUI Game Mode
+## Remove Variables for GUI Game Mode
 scoreboard objectives remove SelectNormalWolf
 scoreboard objectives remove SelectTwoAlive
 scoreboard objectives remove SelectAnnihilate
-## Add Variables for GUI Item Addition
-scoreboard objectives remove TmpAdded
-scoreboard objectives remove AddedItem1
-scoreboard objectives remove AddedItem2
-scoreboard objectives remove AddedItem3
-scoreboard objectives remove AddedItem4
-scoreboard objectives remove AddedItem5
+## Remove Variables for GUI Item Addition
 scoreboard objectives remove PrevAddedStick
 scoreboard objectives remove PrevAddedTotem
 scoreboard objectives remove PrevAddedDeath
@@ -100,6 +86,13 @@ scoreboard objectives remove PrevAddedConduit
 scoreboard objectives remove PrevAddedCrossbo
 scoreboard objectives remove PrevAddedHoneyBl
 scoreboard objectives remove PrevAddedLantern
+## Remove Variables for GUI Addition Common
+scoreboard objectives remove TmpAdded
+scoreboard objectives remove AddedItem1
+scoreboard objectives remove AddedItem2
+scoreboard objectives remove AddedItem3
+scoreboard objectives remove AddedItem4
+scoreboard objectives remove AddedItem5
 scoreboard objectives remove SelectAllDel
 scoreboard objectives remove SelectAllSet
 scoreboard objectives remove SelectPrevPage
@@ -114,7 +107,7 @@ scoreboard objectives remove SelectDecide2
 scoreboard objectives remove SelectDecide3
 scoreboard objectives remove SelectDecide4
 scoreboard objectives remove SelectDecide5
-## Add Variables for Throwing Item
+## Remove Variables for Throwing Item
 scoreboard objectives remove ThrowItem
 
 ## Clear Inventory

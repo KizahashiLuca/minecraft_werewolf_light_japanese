@@ -10,13 +10,13 @@
 execute if score #MWL NUM matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Detect the Number of Players is increment/decrement
-scoreboard players operation #MWL DENOMINATOR = #MWL PrevAddedRole
+scoreboard players operation #MWL TempVariable = #MWL PrevAddedRole
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedRole
-execute if score #MWL PrevAddedRole matches 1.. run scoreboard players operation #MWL DENOMINATOR -= #MWL PrevAddedRole
+execute if score #MWL PrevAddedRole matches 1.. run scoreboard players operation #MWL TempVariable -= #MWL PrevAddedRole
 execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/preparation_added_role_minus
 
 ## Set Added Role Number
-scoreboard players operation #MWL PrevAddedRole = #MWL DENOMINATOR
+scoreboard players operation #MWL PrevAddedRole = #MWL TempVariable
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedWolf
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedMadman
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedFox

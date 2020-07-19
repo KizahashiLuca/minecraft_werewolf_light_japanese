@@ -98,6 +98,7 @@ scoreboard objectives remove KILLLOG_NUM
 scoreboard objectives remove KILLLOG_FOX
 scoreboard objectives remove KILLLOG_CAT
 ## Remove Variables for Role Addition
+scoreboard objectives remove AddedRoleNumber
 scoreboard objectives remove AddedRole
 scoreboard objectives remove AddedWolf
 scoreboard objectives remove AddedMadman
@@ -109,6 +110,7 @@ scoreboard objectives remove AddedMason
 scoreboard objectives remove AddedDetec
 scoreboard objectives remove AddedThief
 scoreboard objectives remove AddedCat
+scoreboard objectives remove AddedFkSeer
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Item Addition
 scoreboard objectives remove AddedStick
@@ -137,7 +139,7 @@ scoreboard objectives remove ChangeGameTime
 ## Remove Variables for Game Rules
 scoreboard objectives remove GameMode
 ## Remove Variables for ROLE
-scoreboard objectives remove DENOMINATOR
+scoreboard objectives remove TempVariable
 ## Remove Variables for Item
 scoreboard objectives remove TENS_DIGIT
 scoreboard objectives remove ONES_DIGIT

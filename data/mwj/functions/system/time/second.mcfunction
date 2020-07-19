@@ -12,7 +12,7 @@ execute if score #MWL Second matches ..-1 run scoreboard players set #MWL Second
 
 ## Store time for bossbar
 execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second
-execute if score #MWL Phase matches 90..100 run bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
+execute if score #MWL Phase matches 80..100 run bossbar set minecraft:bossbar name [{"text":"初期設定時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 execute if score #MWL Phase matches 10 run bossbar set minecraft:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 execute if score #MWL Phase matches 11 run bossbar set minecraft:bossbar name [{"text":"制限時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 

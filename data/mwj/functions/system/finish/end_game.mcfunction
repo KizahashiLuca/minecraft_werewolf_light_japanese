@@ -9,7 +9,7 @@
 ## Send a Display of Breakdown of Roles
 tellraw @a ["",{"text":"  役職の内訳は以下のとおりでした。","color":"white"}]
 execute if score #MWL NumOfVillagers matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=4}]","color":"white"}]
-execute if score #MWL NumOfSeers matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"預 言 者","color":"aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=5}]","color":"white"}]
+execute if score #MWL NumOfSeers matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"予 言 者","color":"aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=5}]","color":"white"}]
 execute if score #MWL NumOfMediums matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=6}]","color":"white"}]
 execute if score #MWL NumOfMasons matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=7}]","color":"white"}]
 execute if score #MWL NumOfDetectives matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PREV_ROLE=8}]","color":"white"}]
@@ -23,7 +23,7 @@ execute if score #MWL NumOfFoxes matches 1.. run tellraw @a ["",{"text":"    ","
 tellraw @a ["",{"text":"\n    ","color":"white"},{"text":"生 存 者","color":"white"},{"text":" ： ","color":"white"},{"selector":"@a[scores={DEATH=0},team=Player]","color":"white"}]
 
 ## Send a Thief Log
-scoreboard players set #MWL DENOMINATOR 5
+scoreboard players set #MWL TempVariable 5
 scoreboard players set #MWL STEAL_NUM 1
 execute if score #MWL NumOfThieves matches 1.. run tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 execute if score #MWL NumOfThieves matches 1.. run tellraw @a ["",{"text":"  怪盗記録","color":"white"}]
@@ -36,8 +36,8 @@ tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  死亡記録","color":"white"}]
 scoreboard players operation #MWL KILLER_NUM = #MWL KILLLOG_NUM
 scoreboard players set #MWL KILLLOG_NUM 1
-scoreboard players set #MWL DENOMINATOR 5
-scoreboard players operation #MWL Tick *= #MWL DENOMINATOR
+scoreboard players set #MWL TempVariable 5
+scoreboard players operation #MWL Tick *= #MWL TempVariable
 
 ## Send a Game Begin Log
 execute if score #MWL ChangeGameTime matches 1000.. run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"#MWL","objective":"ChangeGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]

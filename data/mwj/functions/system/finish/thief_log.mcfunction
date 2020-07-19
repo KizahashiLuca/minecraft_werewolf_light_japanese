@@ -8,7 +8,7 @@
 
 ## Set flag
 execute as @a[scores={PREV_ROLE=9}] if score @s STEAL_NUM = #MWL STEAL_NUM run scoreboard players set @s STEAL_FLAG 1
-scoreboard players operation @p[scores={STEAL_FLAG=1}] ThiefStealTick *= #MWL DENOMINATOR
+scoreboard players operation @p[scores={STEAL_FLAG=1}] ThiefStealTick *= #MWL TempVariable
 
 ## 1000 sec. -
 execute as @a[team=Player] if score @s NUM = @p[scores={STEAL_FLAG=1,ThiefStealSecond=1000..,ThiefStealTick=0..5}] STEAL_TARGET run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"@p[scores={STEAL_FLAG=1}]","objective":"ThiefStealSecond"},"color":"white"},{"text":".0","color":"white"},{"score":{"name":"@p[scores={STEAL_FLAG=1}]","objective":"ThiefStealTick"},"color":"white"},{"text":" sec.  :  ","color":"white"},{"selector":"@p[scores={STEAL_FLAG=1}]","color":"red"},{"text":" --> ","color":"white"},{"selector":"@s","color":"green"}]

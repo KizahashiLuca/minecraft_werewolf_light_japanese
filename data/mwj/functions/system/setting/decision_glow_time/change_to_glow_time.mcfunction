@@ -26,4 +26,4 @@ scoreboard players set @p[tag=Host] SelectOkay 0
 scoreboard players set @p[tag=Host] SelectDecide 0
 
 ## Change Mode
-scoreboard players set #MWL Phase 92
+scoreboard players set #MWL Phase 82

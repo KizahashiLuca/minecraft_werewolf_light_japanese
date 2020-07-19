@@ -8,7 +8,7 @@
 
 ## Send a Common Message
 tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"  預言結果","color":"white"}]
+tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"  予言結果","color":"white"}]
 
 ## Send a Message that Suspect is Black
 execute as @s[scores={ROLE=1}] run tellraw @p[scores={ROLE=5,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"黒","color":"red","bold":true},{"text":" です","color":"white"}]

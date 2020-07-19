@@ -24,6 +24,7 @@ scoreboard objectives add NumOfDetectives dummy
 scoreboard objectives add NumOfThieves dummy
 scoreboard objectives add NumOfFoxes dummy
 ## Add Variables for Setting Added Role
+scoreboard objectives add AddedRoleNumber dummy
 scoreboard objectives add AddedRole dummy
 scoreboard objectives add AddedWolf dummy
 scoreboard objectives add AddedMadman dummy
@@ -35,6 +36,7 @@ scoreboard objectives add AddedMason dummy
 scoreboard objectives add AddedDetec dummy
 scoreboard objectives add AddedThief dummy
 scoreboard objectives add AddedCat dummy
+scoreboard objectives add AddedFkSeer dummy
 scoreboard objectives add PrevAddedRole dummy
 scoreboard objectives add PrevAddedWolf dummy
 scoreboard objectives add PrevAddedMadman dummy
@@ -46,16 +48,8 @@ scoreboard objectives add PrevAddedMason dummy
 scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedThief dummy
 scoreboard objectives add PrevAddedCat dummy
-scoreboard objectives add SelectWolf dummy
-scoreboard objectives add SelectMadman dummy
-scoreboard objectives add SelectFox dummy
-scoreboard objectives add SelectVilla dummy
-scoreboard objectives add SelectSeer dummy
-scoreboard objectives add SelectMedium dummy
-scoreboard objectives add SelectMason dummy
-scoreboard objectives add SelectDetec dummy
-scoreboard objectives add SelectThief dummy
-scoreboard objectives add SelectCat dummy
+scoreboard objectives add PrevAddedFkSeer dummy
+scoreboard objectives add SelectNumber dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
 ## Add Variables for Setting Hide Time
@@ -113,12 +107,6 @@ scoreboard objectives add SelectNormalWolf dummy
 scoreboard objectives add SelectTwoAlive dummy
 scoreboard objectives add SelectAnnihilate dummy
 ## Add Variables for GUI Item Addition
-scoreboard objectives add TmpAdded dummy
-scoreboard objectives add AddedItem1 dummy
-scoreboard objectives add AddedItem2 dummy
-scoreboard objectives add AddedItem3 dummy
-scoreboard objectives add AddedItem4 dummy
-scoreboard objectives add AddedItem5 dummy
 scoreboard objectives add AddedStick dummy
 scoreboard objectives add AddedTotem dummy
 scoreboard objectives add AddedDeath dummy
@@ -149,6 +137,13 @@ scoreboard objectives add PrevAddedConduit dummy
 scoreboard objectives add PrevAddedCrossbo dummy
 scoreboard objectives add PrevAddedHoneyBl dummy
 scoreboard objectives add PrevAddedLantern dummy
+## Add Variables for GUI Addition Common
+scoreboard objectives add TmpAdded dummy
+scoreboard objectives add AddedItem1 dummy
+scoreboard objectives add AddedItem2 dummy
+scoreboard objectives add AddedItem3 dummy
+scoreboard objectives add AddedItem4 dummy
+scoreboard objectives add AddedItem5 dummy
 scoreboard objectives add SelectAllDel dummy
 scoreboard objectives add SelectAllSet dummy
 scoreboard objectives add SelectPrevPage dummy
@@ -165,8 +160,8 @@ scoreboard objectives add SelectDecide4 dummy
 scoreboard objectives add SelectDecide5 dummy
 ## Add Variables for Throwing Item
 scoreboard objectives add ThrowItem dummy
-## Add Variables for Denominator
-scoreboard objectives add DENOMINATOR dummy
+## Add Temporary Variable
+scoreboard objectives add TempVariable dummy
 
 ## Set Variables for Timer
 scoreboard players operation #MWL PrevNumOfPlayers = #MWL NUM
@@ -181,8 +176,8 @@ scoreboard players set #MWL NumOfMasons 0
 scoreboard players set #MWL NumOfDetectives 0
 scoreboard players set #MWL NumOfThieves 0
 scoreboard players set #MWL NumOfFoxes 0
-scoreboard players set #MWL DENOMINATOR 0
 ## Set Variables for Setting Added Role
+scoreboard players set #MWL AddedRoleNumber 0
 scoreboard players set #MWL AddedRole 0
 scoreboard players set #MWL AddedWolf 0
 scoreboard players set #MWL AddedMadman 0
@@ -206,7 +201,7 @@ scoreboard players set #MWL PrevAddedDetec 0
 scoreboard players set #MWL PrevAddedThief 0
 scoreboard players set #MWL PrevAddedCat 0
 ## Set Variables for Setting Time
-scoreboard players set #MWL SettingTime 60
+scoreboard players set #MWL SettingTime 180
 ## Set Variables for Setting Hide Time
 scoreboard players set #MWL HideTime 4
 scoreboard players set #MWL PrevHideTime 4
@@ -223,11 +218,6 @@ scoreboard players set #MWL ChangeGameTime 5
 scoreboard players set #MWL GameMode 3
 scoreboard players set #MWL PrevGameMode 3
 ## Set Variables for GUI Item Addition
-scoreboard players set #MWL AddedItem1 1
-scoreboard players set #MWL AddedItem2 1
-scoreboard players set #MWL AddedItem3 1
-scoreboard players set #MWL AddedItem4 1
-scoreboard players set #MWL AddedItem5 1
 scoreboard players set #MWL AddedStick 1
 scoreboard players set #MWL AddedTotem 1
 scoreboard players set #MWL AddedDeath 1
@@ -262,8 +252,14 @@ scoreboard players set #MWL PrevAddedHoneyBl 0
 execute if score #MWL Version matches 15.. run scoreboard players set #MWL PrevAddedHoneyBl 1
 scoreboard players set #MWL PrevAddedLantern 0
 execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedLantern 1
-## Set Variables for Denominator
-scoreboard players set #MWL DENOMINATOR 0
+## Add Variables for GUI Addition Common
+scoreboard players set #MWL AddedItem1 1
+scoreboard players set #MWL AddedItem2 1
+scoreboard players set #MWL AddedItem3 1
+scoreboard players set #MWL AddedItem4 1
+scoreboard players set #MWL AddedItem5 1
+## Set Temporary Variable
+scoreboard players set #MWL TempVariable 0
 
 ## Set bossbar
 scoreboard players set #MWL Tick 0

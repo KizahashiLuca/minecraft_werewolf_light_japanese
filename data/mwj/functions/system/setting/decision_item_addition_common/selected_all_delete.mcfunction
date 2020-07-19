@@ -24,7 +24,7 @@ scoreboard players set #MWL AddedHoneyBlock 0
 scoreboard players set #MWL AddedLantern 0
 
 ## Set Item Addition
-execute if score #MWL Phase matches 95 run function mwj:system/setting/decision_item_addition1/set_added
-execute if score #MWL Phase matches 96 run function mwj:system/setting/decision_item_addition2/set_added
-execute if score #MWL Phase matches 97 run function mwj:system/setting/decision_item_addition3/set_added
+execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/set_added
+execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/set_added
+execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/set_added
 function mwj:system/setting/decision_item_addition_common/set_scoreboard

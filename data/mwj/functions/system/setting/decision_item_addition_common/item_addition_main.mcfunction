@@ -18,9 +18,9 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:filled_ma
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}}] ThrowItem 1
 
-execute if score #MWL Phase matches 95 run function mwj:system/setting/decision_item_addition1/item_addition1_dropped
-execute if score #MWL Phase matches 96 run function mwj:system/setting/decision_item_addition2/item_addition2_dropped
-execute if score #MWL Phase matches 97 run function mwj:system/setting/decision_item_addition3/item_addition3_dropped
+execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/item_addition1_dropped
+execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/item_addition2_dropped
+execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/item_addition3_dropped
 
 ## Kill a dropped item
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run kill @s
@@ -58,9 +58,9 @@ execute if score #MWL AddedItem3 matches 1 run scoreboard players set @p[tag=Hos
 execute if score #MWL AddedItem4 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide4 0
 execute if score #MWL AddedItem5 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide5 0
 
-execute if score #MWL Phase matches 95 run function mwj:system/setting/decision_item_addition1/item_addition1_selected
-execute if score #MWL Phase matches 96 run function mwj:system/setting/decision_item_addition2/item_addition2_selected
-execute if score #MWL Phase matches 97 run function mwj:system/setting/decision_item_addition3/item_addition3_selected
+execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/item_addition1_selected
+execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/item_addition2_selected
+execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/item_addition3_selected
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={SelectPrevPage=1}] run function mwj:system/setting/decision_item_addition_common/selected_prevpage

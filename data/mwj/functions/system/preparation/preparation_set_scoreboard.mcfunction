@@ -67,3 +67,5 @@ scoreboard players set #MWL MASON_PAIR_NUM 0
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add #MWL NUM 1
+## Test
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NUM 15

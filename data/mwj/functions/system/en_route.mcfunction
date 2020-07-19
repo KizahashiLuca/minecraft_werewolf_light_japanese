@@ -8,7 +8,7 @@
 
 ## Leave midtime of preparation
 execute if score #MWL Phase matches 10 run team leave @a[team=Player,gamemode=spectator]
-execute if score #MWL Phase matches 90..100 run team leave @a[tag=!Host,team=Player,gamemode=spectator]
+execute if score #MWL Phase matches 80..100 run team leave @a[tag=!Host,team=Player,gamemode=spectator]
 
 ## Log-in midtime of preparation
 execute unless score #MWL Phase matches 11 run team join Player @a[tag=!Host,team=!Player,gamemode=!spectator]

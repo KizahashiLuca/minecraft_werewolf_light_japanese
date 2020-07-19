@@ -26,7 +26,7 @@ execute as @s[scores={ROLE=3,DEATH=0}] run tellraw @p[scores={ROLE=9,ROLE_OF_NUM
 execute as @s[scores={ROLE=4,DEATH=0}] run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Seer
-execute as @s[scores={ROLE=5,DEATH=0}] run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"預言者","color":"aqua","bold":true},{"text":" になりました","color":"white"}]
+execute as @s[scores={ROLE=5,DEATH=0}] run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"予言者","color":"aqua","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Medium
 execute as @s[scores={ROLE=6,DEATH=0}] run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"霊媒師","color":"yellow","bold":true},{"text":" になりました","color":"white"}]
