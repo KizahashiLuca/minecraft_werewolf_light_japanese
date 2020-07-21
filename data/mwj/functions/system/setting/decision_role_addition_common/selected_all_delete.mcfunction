@@ -18,7 +18,7 @@ scoreboard players set #MWL AddedMason 0
 scoreboard players set #MWL AddedDetec 0
 scoreboard players set #MWL AddedThief 0
 scoreboard players set #MWL AddedCat 0
-# scoreboard players set #MWL AddedFkSeer 0
+scoreboard players set #MWL AddedFkSeer 0
 # scoreboard players set #MWL Added 0
 # scoreboard players set #MWL Added 0
 # scoreboard players set #MWL Added 0

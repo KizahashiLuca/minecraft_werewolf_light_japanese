@@ -7,10 +7,10 @@
 ###############################
 
 ## Set the Role
-execute if score #MWL NumOfRoles matches 1.. as @r[team=Player] run scoreboard players set @r[scores={CurrentRole=0},team=Player] CurrentRole 40
+execute if score #MWL NumOfRoles matches 1.. as @r[team=Player] run scoreboard players set @r[scores={CurrentRole=0},team=Player] CurrentRole 26
 
 ## Decrement value by 1
 scoreboard players remove #MWL NumOfRoles 1
 
 ## Repeat
-execute if score #MWL NumOfRoles matches 1.. run function mwj:system/preparation/decision_role/cat_decision
+execute if score #MWL NumOfRoles matches 1.. run function mwj:system/preparation/decision_role/fake_seer_decision

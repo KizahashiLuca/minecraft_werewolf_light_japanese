@@ -35,6 +35,19 @@ scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
 scoreboard objectives add TEMP_DIGIT dummy
 
+## CurrentRole - breakdown
+##   1 : Wolf 人狼
+##   5 : Madman 狂人
+##   10 : Fox 羽衣狐
+##   20 : Villager 村人
+##   21 : Mason 共有者
+##   25 : Seer 予言者
+##   26 : Fake Seer 偽予言者
+##   28 : Medium 霊媒師
+##   31 : Detective 探偵
+##   35 : Thief 怪盗
+##   40 : Cat 猫又
+
 ## Set Variables for Game
 scoreboard players set @a CurrentRole 0
 scoreboard players set @a[team=Player] NUM 1

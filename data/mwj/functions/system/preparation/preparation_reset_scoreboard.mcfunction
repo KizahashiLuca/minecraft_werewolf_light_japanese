@@ -70,17 +70,17 @@ scoreboard players enable @a RoleTrigger
 scoreboard players set #MWL TurnPageMax 0
 function mwj:system/preparation/preparation_reset_page_role
 #### Fox
-scoreboard players set @a[scores={CurrentRole=3}] FoxSpawnSecond 0
-scoreboard players set @a[scores={CurrentRole=3}] FoxSpawnTick 0
-scoreboard players set @a[scores={CurrentRole=3}] KilledBySeer 0
+scoreboard players set @a[scores={CurrentRole=10}] FoxSpawnSecond 0
+scoreboard players set @a[scores={CurrentRole=10}] FoxSpawnTick 0
+scoreboard players set @a[scores={CurrentRole=10}] KilledBySeer 0
 #### Thief
 scoreboard players set @a STOLEN 0
-scoreboard players set @a[scores={CurrentRole=9}] STEALER 0
-scoreboard players set @a[scores={CurrentRole=9}] ThiefStealSecond 0
-scoreboard players set @a[scores={CurrentRole=9}] ThiefStealTick 0
-scoreboard players set @a[scores={CurrentRole=9}] STEAL_NUM 0
-scoreboard players set @a[scores={CurrentRole=9}] STEAL_TARGET 0
-scoreboard players set @a[scores={CurrentRole=9}] STEAL_FLAG 0
+scoreboard players set @a[scores={CurrentRole=35}] STEALER 0
+scoreboard players set @a[scores={CurrentRole=35}] ThiefStealSecond 0
+scoreboard players set @a[scores={CurrentRole=35}] ThiefStealTick 0
+scoreboard players set @a[scores={CurrentRole=35}] STEAL_NUM 0
+scoreboard players set @a[scores={CurrentRole=35}] STEAL_TARGET 0
+scoreboard players set @a[scores={CurrentRole=35}] STEAL_FLAG 0
 scoreboard players set #MWL STEAL_NUM 1
 #### Cat
 scoreboard players set @a KilledByCat 0
@@ -111,9 +111,9 @@ scoreboard players set #MWL Second 60
 scoreboard players operation #MWL Second *= #MWL ChangeGameTime
 scoreboard players operation #MWL ChangeGameTime = #MWL Second
 ## Set Variables for Game
-execute as @a[scores={CurrentRole=1}] run scoreboard players add #MWL BLACK 1
-execute as @a[scores={CurrentRole=3}] run scoreboard players add #MWL PURPLE 1
-execute as @a[scores={CurrentRole=4..10}] run scoreboard players add #MWL WHITE 1
+execute as @a[scores={CurrentRole=1..4}] run scoreboard players add #MWL BLACK 1
+execute as @a[scores={CurrentRole=10}] run scoreboard players add #MWL PURPLE 1
+execute as @a[scores={CurrentRole=20..40}] run scoreboard players add #MWL WHITE 1
 ## Set bossbar
 bossbar set minecraft:bossbar name [{"text":"制限時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL ChangeGameTime

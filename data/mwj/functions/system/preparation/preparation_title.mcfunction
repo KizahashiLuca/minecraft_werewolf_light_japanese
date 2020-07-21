@@ -31,6 +31,7 @@ tellraw @a ["",{"text":"       残り時間 ","color":"white"},{"score":{"name":
 tellraw @a ["",{"text":"\n  役職内訳 : ","color":"white"}]
 execute if score #MWL NumOfVillagers matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green"},{"text":" ： ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfVillagers"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL NumOfSeers matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"予 言 者","color":"aqua"},{"text":" ： ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfSeers"},"color":"white"},{"text":"人","color":"white"}]
+execute if score #MWL NumOfFkSeers matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"偽予言者","color":"aqua"},{"text":" ： ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfFkSeers"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL NumOfMediums matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfMediums"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL NumOfMasons matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfMasons"},"color":"white"},{"text":"人 - ","color":"white"},{"score":{"name":"#MWL","objective":"AddedMason"},"color":"white"},{"text":"組","color":"white"}]
 execute if score #MWL NumOfDetectives matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfDetectives"},"color":"white"},{"text":"人","color":"white"}]
@@ -42,23 +43,23 @@ execute if score #MWL NumOfFoxes matches 1.. run tellraw @a ["",{"text":"    ","
 
 tellraw @a[scores={CurrentRole=1}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"人狼","color":"red"},{"text":" です。","color":"white"}]
 tellraw @a[scores={CurrentRole=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={CurrentRole=1}]","color":"red"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=2}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"狂人","color":"light_purple"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=3}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"羽衣狐","color":"dark_purple"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=4}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"村人","color":"green"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=5}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"予言者","color":"aqua"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=6}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"霊媒師","color":"yellow"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=7}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"共有者","color":"dark_green"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=5}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"狂人","color":"light_purple"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=10}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"羽衣狐","color":"dark_purple"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=20}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"村人","color":"green"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=21}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"共有者","color":"dark_green"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=25..26}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"予言者","color":"aqua"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=28}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"霊媒師","color":"yellow"},{"text":" です。","color":"white"}]
 function mwj:system/preparation/decision_role/mason_pair_message_main
-tellraw @a[scores={CurrentRole=8}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"探偵","color":"dark_aqua"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=9}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"怪盗","color":"blue"},{"text":" です。","color":"white"}]
-tellraw @a[scores={CurrentRole=10}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"猫又","color":"gold"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=31}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"探偵","color":"dark_aqua"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=35}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"怪盗","color":"blue"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=40}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"猫又","color":"gold"},{"text":" です。","color":"white"}]
 tellraw @a[team=!Player] ["",{"text":"\n    あなたは ","color":"white"},{"text":"観戦者","color":"white"},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Put a Tag
-tag @a[scores={CurrentRole=1..2}] add WereWolf
-tag @a[scores={CurrentRole=3..9}] add NonWolf
-tag @a[scores={CurrentRole=10}] add Cat
+tag @a[scores={CurrentRole=1..9}] add WereWolf
+tag @a[scores={CurrentRole=10..39}] add NonWolf
+tag @a[scores={CurrentRole=40}] add Cat
 
 ## Remove Effect
 team modify Player friendlyFire true

@@ -7,7 +7,7 @@
 ###############################
 
 ## Set the Role
-execute if score #MWL NumOfRoles matches 1.. as @r[team=Player] run scoreboard players operation @r[scores={CurrentRole=7,MASON_PAIR=0},limit=2] MASON_PAIR = #MWL MASON_PAIR
+execute if score #MWL NumOfRoles matches 1.. as @r[team=Player] run scoreboard players operation @r[scores={CurrentRole=21,MASON_PAIR=0},limit=2] MASON_PAIR = #MWL MASON_PAIR
 
 ## Decrement value by 1
 scoreboard players remove #MWL NumOfRoles 1

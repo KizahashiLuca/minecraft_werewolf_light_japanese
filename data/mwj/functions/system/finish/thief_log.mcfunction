@@ -7,7 +7,7 @@
 ###############################
 
 ## Set flag
-execute as @a[scores={PrevRole=9}] if score @s STEAL_NUM = #MWL STEAL_NUM run scoreboard players set @s STEAL_FLAG 1
+execute as @a[scores={PrevRole=35}] if score @s STEAL_NUM = #MWL STEAL_NUM run scoreboard players set @s STEAL_FLAG 1
 scoreboard players operation @p[scores={STEAL_FLAG=1}] ThiefStealTick *= #MWL TempVariable
 
 ## 1000 sec. -

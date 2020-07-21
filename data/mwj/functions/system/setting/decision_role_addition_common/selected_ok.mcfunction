@@ -22,7 +22,7 @@ scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
 scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
 scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
 
-# scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
+scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added

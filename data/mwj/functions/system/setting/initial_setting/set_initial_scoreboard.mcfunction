@@ -18,20 +18,21 @@ scoreboard objectives add NumOfMadmans dummy
 scoreboard objectives add NumOfVillagers dummy
 scoreboard objectives add NumOfSeers dummy
 scoreboard objectives add NumOfMediums dummy
-scoreboard objectives add NumOfCats dummy
+scoreboard objectives add NumOfFoxes dummy
 scoreboard objectives add NumOfMasons dummy
 scoreboard objectives add NumOfDetectives dummy
 scoreboard objectives add NumOfThieves dummy
-scoreboard objectives add NumOfFoxes dummy
+scoreboard objectives add NumOfCats dummy
+scoreboard objectives add NumOfFkSeers dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRoleNumber dummy
 scoreboard objectives add AddedRole dummy
 scoreboard objectives add AddedWolf dummy
 scoreboard objectives add AddedMadman dummy
-scoreboard objectives add AddedFox dummy
 scoreboard objectives add AddedVilla dummy
 scoreboard objectives add AddedSeer dummy
 scoreboard objectives add AddedMedium dummy
+scoreboard objectives add AddedFox dummy
 scoreboard objectives add AddedMason dummy
 scoreboard objectives add AddedDetec dummy
 scoreboard objectives add AddedThief dummy
@@ -40,10 +41,10 @@ scoreboard objectives add AddedFkSeer dummy
 scoreboard objectives add PrevAddedRole dummy
 scoreboard objectives add PrevAddedWolf dummy
 scoreboard objectives add PrevAddedMadman dummy
-scoreboard objectives add PrevAddedFox dummy
 scoreboard objectives add PrevAddedVilla dummy
 scoreboard objectives add PrevAddedSeer dummy
 scoreboard objectives add PrevAddedMedium dummy
+scoreboard objectives add PrevAddedFox dummy
 scoreboard objectives add PrevAddedMason dummy
 scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedThief dummy
@@ -176,35 +177,38 @@ scoreboard players set #MWL NumOfMadmans 0
 scoreboard players set #MWL NumOfVillagers 0
 scoreboard players set #MWL NumOfSeers 0
 scoreboard players set #MWL NumOfMediums 0
-scoreboard players set #MWL NumOfCats 0
+scoreboard players set #MWL NumOfFoxes 0
 scoreboard players set #MWL NumOfMasons 0
 scoreboard players set #MWL NumOfDetectives 0
 scoreboard players set #MWL NumOfThieves 0
-scoreboard players set #MWL NumOfFoxes 0
+scoreboard players set #MWL NumOfCats 0
+scoreboard players set #MWL NumOfFkSeers 0
 ## Set Variables for Setting Added Role
 scoreboard players set #MWL AddedRoleNumber 0
 scoreboard players set #MWL AddedRole 0
 scoreboard players set #MWL AddedWolf 0
 scoreboard players set #MWL AddedMadman 0
-scoreboard players set #MWL AddedFox 0
 scoreboard players set #MWL AddedVilla 0
 scoreboard players set #MWL AddedSeer 0
 scoreboard players set #MWL AddedMedium 0
+scoreboard players set #MWL AddedFox 0
 scoreboard players set #MWL AddedMason 0
 scoreboard players set #MWL AddedDetec 0
 scoreboard players set #MWL AddedThief 0
 scoreboard players set #MWL AddedCat 0
+scoreboard players set #MWL AddedFkSeer 0
 scoreboard players set #MWL PrevAddedRole 0
 scoreboard players set #MWL PrevAddedWolf 0
 scoreboard players set #MWL PrevAddedMadman 0
-scoreboard players set #MWL PrevAddedFox 0
 scoreboard players set #MWL PrevAddedVilla 0
 scoreboard players set #MWL PrevAddedSeer 0
 scoreboard players set #MWL PrevAddedMedium 0
+scoreboard players set #MWL PrevAddedFox 0
 scoreboard players set #MWL PrevAddedMason 0
 scoreboard players set #MWL PrevAddedDetec 0
 scoreboard players set #MWL PrevAddedThief 0
 scoreboard players set #MWL PrevAddedCat 0
+scoreboard players set #MWL PrevAddedFkSeer 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 180
 ## Set Variables for Setting Hide Time

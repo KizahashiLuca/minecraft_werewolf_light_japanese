@@ -22,3 +22,4 @@ tag @a remove ExplodeMines
 tag @a remove TridentDone
 tag @a remove TridentThrower
 tag @a remove TridentHit
+tag @a remove MasonTag

@@ -26,11 +26,12 @@ scoreboard objectives remove NumOfMadmans
 scoreboard objectives remove NumOfVillagers
 scoreboard objectives remove NumOfSeers
 scoreboard objectives remove NumOfMediums
-scoreboard objectives remove NumOfCats
+scoreboard objectives remove NumOfFoxes
 scoreboard objectives remove NumOfMasons
 scoreboard objectives remove NumOfDetectives
 scoreboard objectives remove NumOfThieves
-scoreboard objectives remove NumOfFoxes
+scoreboard objectives remove NumOfCats
+scoreboard objectives remove NumOfFkSeers
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
@@ -104,10 +105,10 @@ scoreboard objectives remove AddedRoleNumber
 scoreboard objectives remove AddedRole
 scoreboard objectives remove AddedWolf
 scoreboard objectives remove AddedMadman
-scoreboard objectives remove AddedFox
 scoreboard objectives remove AddedVilla
 scoreboard objectives remove AddedSeer
 scoreboard objectives remove AddedMedium
+scoreboard objectives remove AddedFox
 scoreboard objectives remove AddedMason
 scoreboard objectives remove AddedDetec
 scoreboard objectives remove AddedThief

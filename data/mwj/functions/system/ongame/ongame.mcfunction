@@ -17,8 +17,8 @@ execute as @e[type=minecraft:trident] run data merge entity @s {pickup:2b}
 execute if score #MWL Second <= #MWL ChangeGlowTime run effect give @a[team=Player,scores={DeathCount=0}] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
-execute as @a[team=Player,scores={CurrentRole=1,DeathCount=1}] run scoreboard players remove #MWL BLACK 1
-execute as @a[team=Player,scores={CurrentRole=4..10,DeathCount=1}] run scoreboard players remove #MWL WHITE 1
+execute as @a[team=Player,scores={CurrentRole=1..4,DeathCount=1}] run scoreboard players remove #MWL BLACK 1
+execute as @a[team=Player,scores={CurrentRole=20..40,DeathCount=1}] run scoreboard players remove #MWL WHITE 1
 
 ## Detect Dropping Torch
 execute as @a[team=Player,scores={RemovedTorch=1..}] run function mwj:system/preparation/item/common/torch
@@ -42,23 +42,26 @@ execute if score #MWL Version matches 15.. if score #MWL AddedHoneyBlock matches
 execute if score #MWL Version matches 16.. if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/soul_lantern_main
 
 ## Fox System
-execute as @a[team=Player,scores={CurrentRole=3}] run function mwj:system/ongame/fox/fox_main
+execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongame/fox/fox_main
 execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 
 ## Seer System
-execute as @a[team=Player,scores={CurrentRole=5}] run function mwj:system/ongame/seer/seer_main
+execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/seer_main
+
+## Fake Seer System
+execute as @a[team=Player,scores={CurrentRole=26}] run function mwj:system/ongame/fake_seer/fake_seer_main
 
 ## Medium System
-execute as @a[team=Player,scores={CurrentRole=6}] run function mwj:system/ongame/medium/medium_main
+execute as @a[team=Player,scores={CurrentRole=28}] run function mwj:system/ongame/medium/medium_main
 
 ## Detective System
-execute as @a[team=Player,scores={CurrentRole=8}] run function mwj:system/ongame/detective/detective_main
+execute as @a[team=Player,scores={CurrentRole=31}] run function mwj:system/ongame/detective/detective_main
 
 ## Thief System
-execute as @a[team=Player,scores={CurrentRole=9}] run function mwj:system/ongame/thief/thief_main
+execute as @a[team=Player,scores={CurrentRole=35}] run function mwj:system/ongame/thief/thief_main
 
 ## Cat System
-execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongame/cat/cat_main
+execute as @a[team=Player,scores={CurrentRole=40}] run function mwj:system/ongame/cat/cat_main
 
 ## Kill Log System
 function mwj:system/ongame/kill_log/kill_log_main

@@ -25,7 +25,7 @@ execute as @s[scores={RoleTrigger=1..10,DONE=0}] run function mwj:system/ongame/
 execute as @s[scores={RoleTrigger=1..10,DONE=1}] run function mwj:system/ongame/message_error
 
 ## Send a Result Message to Detective
-execute as @a[team=Player] if score @s NUM = @p[scores={CurrentRole=8,RoleOfNum=1,DONE=0}] RoleTarget run function mwj:system/ongame/detective/detective_result
+execute as @a[team=Player] if score @s NUM = @p[scores={CurrentRole=31,RoleOfNum=1,DONE=0}] RoleTarget run function mwj:system/ongame/detective/detective_result
 
 ## Reset Scoreboard
 scoreboard players set @s RoleOfNum 0
