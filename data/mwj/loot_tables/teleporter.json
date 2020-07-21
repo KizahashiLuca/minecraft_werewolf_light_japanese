@@ -23,7 +23,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{display:{Tag:\"UnsetStorage\"}}"
+              "tag":"{Tags:\"UnsetStorage\"}"
             }
           ]
         }
