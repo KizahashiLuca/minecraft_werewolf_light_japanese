@@ -6,6 +6,8 @@
 ## Version: beta-1.6
 ###############################
 
-## Detect Dropping
-kill @s
-function mwj:system/setting/choose_mode/choose_mode_inventory
+## Kill log
+scoreboard players set @a[tag=TridentHit,scores={DeathCount=1}] KillLogOfTrident 1
+
+## Remove tag
+tag @a[tag=TridentHit] remove TridentHit

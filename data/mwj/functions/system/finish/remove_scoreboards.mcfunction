@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -11,8 +11,8 @@ scoreboard objectives remove Version
 scoreboard objectives remove Phase
 scoreboard objectives remove NUM
 scoreboard objectives remove PrevNumOfPlayers
-scoreboard objectives remove ROLE
-scoreboard objectives remove PREV_ROLE
+scoreboard objectives remove CurrentRole
+scoreboard objectives remove PrevRole
 scoreboard objectives remove WINNER
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
@@ -36,21 +36,21 @@ scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
 ## Remove Variables for Roles
 #### Seer/Medium/Detective
-scoreboard objectives remove ROLE_OF_NUM
-scoreboard objectives remove TORCH
-scoreboard objectives remove REMOVED_TORCH
+scoreboard objectives remove RoleOfNum
+scoreboard objectives remove DropTorch
+scoreboard objectives remove RemovedTorch
 scoreboard objectives remove DONE
 scoreboard objectives remove 10
-scoreboard objectives remove PAGE_NUMER
-scoreboard objectives remove PAGE_DENOM
-scoreboard objectives remove ROLE_PAGE
-scoreboard objectives remove ROLE_PAGE_NUM
-scoreboard objectives remove ROLE_TARGET
-scoreboard objectives remove ROLE_R_PAGE
-scoreboard objectives remove ROLE_L_PAGE
-scoreboard objectives remove ROLE_BUTTON
+scoreboard objectives remove PageNumer
+scoreboard objectives remove PageDenom
+scoreboard objectives remove TurnPageNum
+scoreboard objectives remove TurnPageMax
+scoreboard objectives remove RoleTarget
+scoreboard objectives remove TurnPageRight
+scoreboard objectives remove TurnPageLeft
+scoreboard objectives remove RoleTrigger
 #### Fox
-scoreboard objectives remove STRAY_BY_FOX
+scoreboard objectives remove KilledBySeer
 scoreboard objectives remove FoxSpawnSecond
 scoreboard objectives remove FoxSpawnTick
 scoreboard objectives remove RESPAWN
@@ -66,28 +66,29 @@ scoreboard objectives remove STEAL_FLAG
 scoreboard objectives remove ThiefStealSecond
 scoreboard objectives remove ThiefStealTick
 #### Cat
-scoreboard objectives remove STRAY_BY_CAT
+scoreboard objectives remove KilledByCat
 ## Remove Variables for Items
-scoreboard objectives remove SNEAKTIME
+scoreboard objectives remove SneakTime
 #### Snowball
 scoreboard objectives remove SNOWBALL
 #### Trident
-scoreboard objectives remove THROW_TRIDENT
+scoreboard objectives remove ThrowTrident
+scoreboard objectives remove KilledByTrident
 #### Mines
-scoreboard objectives remove DROP_CONDUIT
+scoreboard objectives remove DropConduit
 #### Honey block
 scoreboard objectives remove HoneyBottleCount
-scoreboard objectives remove DROP_HONEY_BLOCK
+scoreboard objectives remove DropHoneyBlock
 #### Soul lantern
 scoreboard objectives remove TeleporterTemp
 scoreboard objectives remove TeleporterPosX
 scoreboard objectives remove TeleporterPosY
 scoreboard objectives remove TeleporterPosZ
-scoreboard objectives remove DROP_SOULLANTERN
-scoreboard objectives remove DROP_LANTERN
+scoreboard objectives remove DropSoulLantern
+scoreboard objectives remove DropLantern
 
 ## Remove Variables for Kill Log
-scoreboard objectives remove DEATH
+scoreboard objectives remove DeathCount
 scoreboard objectives remove KILLER
 scoreboard objectives remove VICTIM
 scoreboard objectives remove KILLER_NUM
@@ -95,8 +96,9 @@ scoreboard objectives remove VICTIM_NUM
 scoreboard objectives remove VICTIM_FLAG
 scoreboard objectives remove KILLER_FLAG
 scoreboard objectives remove KILLLOG_NUM
-scoreboard objectives remove KILLLOG_FOX
-scoreboard objectives remove KILLLOG_CAT
+scoreboard objectives remove KillLogOfFox
+scoreboard objectives remove KillLogOfCat
+scoreboard objectives remove KillLogOfTrident
 ## Remove Variables for Role Addition
 scoreboard objectives remove AddedRoleNumber
 scoreboard objectives remove AddedRole
@@ -138,7 +140,7 @@ scoreboard objectives remove ChangeGlowTime
 scoreboard objectives remove ChangeGameTime
 ## Remove Variables for Game Rules
 scoreboard objectives remove GameMode
-## Remove Variables for ROLE
+## Remove Variables for CurrentRole
 scoreboard objectives remove TempVariable
 ## Remove Variables for Item
 scoreboard objectives remove TENS_DIGIT

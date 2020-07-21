@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -170,7 +170,7 @@ scoreboard objectives add TempVariable dummy
 
 ## Set Variables for Timer
 scoreboard players operation #MWL PrevNumOfPlayers = #MWL NUM
-## Set Variables for ROLE
+## Set Variables for CurrentRole
 scoreboard players set #MWL NumOfWolves 0
 scoreboard players set #MWL NumOfMadmans 0
 scoreboard players set #MWL NumOfVillagers 0

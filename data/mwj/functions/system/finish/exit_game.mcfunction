@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -10,7 +10,7 @@
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## teleport to alive players
-execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DEATH=1..2}] @r[gamemode=adventure]
+execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DeathCount=1..2}] @r[gamemode=adventure]
 
 ## Remove storages
 execute if score #MWL Version matches 16.. run function mwj:system/finish/remove_storages

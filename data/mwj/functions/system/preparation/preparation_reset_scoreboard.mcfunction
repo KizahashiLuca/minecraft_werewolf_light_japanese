@@ -2,26 +2,26 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
 ## Add Variables for Roles
 #### Seer/Medium/Detective
-scoreboard objectives add TORCH minecraft.dropped:minecraft.redstone_torch
-scoreboard objectives add REMOVED_TORCH dummy
+scoreboard objectives add DropTorch minecraft.dropped:minecraft.redstone_torch
+scoreboard objectives add RemovedTorch dummy
 scoreboard objectives add DONE dummy
 scoreboard objectives add 10 dummy
-scoreboard objectives add PAGE_NUMER dummy
-scoreboard objectives add PAGE_DENOM dummy
-scoreboard objectives add ROLE_PAGE dummy
-scoreboard objectives add ROLE_PAGE_NUM dummy
-scoreboard objectives add ROLE_TARGET dummy
-scoreboard objectives add ROLE_R_PAGE trigger
-scoreboard objectives add ROLE_L_PAGE trigger
-scoreboard objectives add ROLE_BUTTON trigger
+scoreboard objectives add PageNumer dummy
+scoreboard objectives add PageDenom dummy
+scoreboard objectives add TurnPageNum dummy
+scoreboard objectives add TurnPageMax dummy
+scoreboard objectives add RoleTarget dummy
+scoreboard objectives add TurnPageRight trigger
+scoreboard objectives add TurnPageLeft trigger
+scoreboard objectives add RoleTrigger trigger
 #### Fox
-scoreboard objectives add STRAY_BY_FOX dummy
+scoreboard objectives add KilledBySeer dummy
 scoreboard objectives add FoxSpawnSecond dummy
 scoreboard objectives add FoxSpawnTick dummy
 scoreboard objectives add RESPAWN minecraft.custom:minecraft.time_since_death
@@ -34,73 +34,75 @@ scoreboard objectives add STEAL_TARGET dummy
 scoreboard objectives add ThiefStealSecond dummy
 scoreboard objectives add ThiefStealTick dummy
 #### Cat
-scoreboard objectives add STRAY_BY_CAT dummy
+scoreboard objectives add KilledByCat dummy
 ## Add Variables for Items
-scoreboard objectives add SNEAKTIME minecraft.custom:minecraft.sneak_time
+scoreboard objectives add SneakTime minecraft.custom:minecraft.sneak_time
 #### Snowball
 scoreboard objectives add SNOWBALL dummy
 #### Trident
-scoreboard objectives add THROW_TRIDENT minecraft.used:minecraft.trident
+scoreboard objectives add ThrowTrident minecraft.used:minecraft.trident
+scoreboard objectives add KilledByTrident dummy
 #### Mines
-scoreboard objectives add DROP_CONDUIT minecraft.dropped:minecraft.conduit
+scoreboard objectives add DropConduit minecraft.dropped:minecraft.conduit
 #### Honey block
 execute if score #MWL Version matches 15.. run function mwj:system/preparation/scoreboard/add_honey_block
 #### Soul lantern
 execute if score #MWL Version matches 16.. run function mwj:system/preparation/scoreboard/add_soul_lantern
 
 ## Set Variables for Role
-execute as @a run scoreboard players operation @s PREV_ROLE = @s ROLE
+execute as @a run scoreboard players operation @s PrevRole = @s CurrentRole
 #### Set Variables for Redstone Torch
-scoreboard players set @a TORCH 0
-scoreboard players set @a REMOVED_TORCH 0
+scoreboard players set @a DropTorch 0
+scoreboard players set @a RemovedTorch 0
 scoreboard players set @a DONE 0
 #### Seer/Medium/Detective
 scoreboard players set #MWL 10 10
-scoreboard players set @a PAGE_NUMER 0
-scoreboard players set @a PAGE_DENOM 0
-scoreboard players set @a ROLE_PAGE 0
-scoreboard players set @a ROLE_TARGET 0
-scoreboard players reset @a ROLE_R_PAGE
-scoreboard players reset @a ROLE_L_PAGE
-scoreboard players reset @a ROLE_BUTTON
-scoreboard players enable @a ROLE_R_PAGE
-scoreboard players enable @a ROLE_L_PAGE
-scoreboard players enable @a ROLE_BUTTON
-scoreboard players set #MWL ROLE_PAGE_NUM 0
+scoreboard players set @a PageNumer 0
+scoreboard players set @a PageDenom 0
+scoreboard players set @a TurnPageNum 0
+scoreboard players set @a RoleTarget 0
+scoreboard players reset @a TurnPageRight
+scoreboard players reset @a TurnPageLeft
+scoreboard players reset @a RoleTrigger
+scoreboard players enable @a TurnPageRight
+scoreboard players enable @a TurnPageLeft
+scoreboard players enable @a RoleTrigger
+scoreboard players set #MWL TurnPageMax 0
 function mwj:system/preparation/preparation_reset_page_role
 #### Fox
-scoreboard players set @a[scores={ROLE=3}] FoxSpawnSecond 0
-scoreboard players set @a[scores={ROLE=3}] FoxSpawnTick 0
-scoreboard players set @a[scores={ROLE=3}] STRAY_BY_FOX 0
+scoreboard players set @a[scores={CurrentRole=3}] FoxSpawnSecond 0
+scoreboard players set @a[scores={CurrentRole=3}] FoxSpawnTick 0
+scoreboard players set @a[scores={CurrentRole=3}] KilledBySeer 0
 #### Thief
 scoreboard players set @a STOLEN 0
-scoreboard players set @a[scores={ROLE=9}] STEALER 0
-scoreboard players set @a[scores={ROLE=9}] ThiefStealSecond 0
-scoreboard players set @a[scores={ROLE=9}] ThiefStealTick 0
-scoreboard players set @a[scores={ROLE=9}] STEAL_NUM 0
-scoreboard players set @a[scores={ROLE=9}] STEAL_TARGET 0
-scoreboard players set @a[scores={ROLE=9}] STEAL_FLAG 0
+scoreboard players set @a[scores={CurrentRole=9}] STEALER 0
+scoreboard players set @a[scores={CurrentRole=9}] ThiefStealSecond 0
+scoreboard players set @a[scores={CurrentRole=9}] ThiefStealTick 0
+scoreboard players set @a[scores={CurrentRole=9}] STEAL_NUM 0
+scoreboard players set @a[scores={CurrentRole=9}] STEAL_TARGET 0
+scoreboard players set @a[scores={CurrentRole=9}] STEAL_FLAG 0
 scoreboard players set #MWL STEAL_NUM 1
 #### Cat
-scoreboard players set @a STRAY_BY_CAT 0
+scoreboard players set @a KilledByCat 0
 ## Add Items
-scoreboard players set @a SNEAKTIME 0
+scoreboard players set @a SneakTime 0
 #### Snowball
 scoreboard players set #MWL SNOWBALL 0
 #### Trident
-scoreboard players set @a THROW_TRIDENT 0
+scoreboard players set @a ThrowTrident 0
+scoreboard players set @a KilledByTrident 0
 #### Mines
-scoreboard players set @a DROP_CONDUIT 0
+scoreboard players set @a DropConduit 0
 #### Honey block
 scoreboard players set @a HoneyBottleCount 0
-scoreboard players set @a DROP_HONEY_BLOCK 0
+scoreboard players set @a DropHoneyBlock 0
 #### Soul lantern
 scoreboard players set @a TeleporterTemp 0
 scoreboard players set @a TeleporterPosX 0
 scoreboard players set @a TeleporterPosY 0
 scoreboard players set @a TeleporterPosZ 0
-scoreboard players set @a DROP_SOULLANTERN 0
-scoreboard players set @a DROP_LANTERN 0
+scoreboard players set @a DropSoulLantern 0
+scoreboard players set @a DropLantern 0
 
 ## Set the Game Time
 ## Reset Scoreboard
@@ -109,9 +111,9 @@ scoreboard players set #MWL Second 60
 scoreboard players operation #MWL Second *= #MWL ChangeGameTime
 scoreboard players operation #MWL ChangeGameTime = #MWL Second
 ## Set Variables for Game
-execute as @a[scores={ROLE=1}] run scoreboard players add #MWL BLACK 1
-execute as @a[scores={ROLE=3}] run scoreboard players add #MWL PURPLE 1
-execute as @a[scores={ROLE=4..10}] run scoreboard players add #MWL WHITE 1
+execute as @a[scores={CurrentRole=1}] run scoreboard players add #MWL BLACK 1
+execute as @a[scores={CurrentRole=3}] run scoreboard players add #MWL PURPLE 1
+execute as @a[scores={CurrentRole=4..10}] run scoreboard players add #MWL WHITE 1
 ## Set bossbar
 bossbar set minecraft:bossbar name [{"text":"制限時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL ChangeGameTime

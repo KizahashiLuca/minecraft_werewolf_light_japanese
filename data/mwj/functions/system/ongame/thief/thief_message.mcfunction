@@ -2,56 +2,60 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
 ## Detect Page Role
-scoreboard players operation @s[scores={ROLE_PAGE=0,ROLE_L_PAGE=1}] ROLE_PAGE = #MWL ROLE_PAGE_NUM
-execute if score @s[scores={ROLE_R_PAGE=1}] ROLE_PAGE = #MWL ROLE_PAGE_NUM run scoreboard players set @s ROLE_PAGE 0
-scoreboard players remove @s[scores={ROLE_PAGE=1..,ROLE_L_PAGE=1}] ROLE_PAGE 1
-execute unless score @s[scores={ROLE_R_PAGE=1}] ROLE_PAGE = #MWL ROLE_PAGE_NUM run scoreboard players add @s ROLE_PAGE 1
+scoreboard objectives add TurnPageTmp dummy
+scoreboard players operation @s TurnPageTmp = @s TurnPageNum
+scoreboard players operation @s[scores={TurnPageNum=0,TurnPageLeft=1}] TurnPageTmp = #MWL TurnPageMax
+execute if score @s[scores={TurnPageRight=1}] TurnPageNum = #MWL TurnPageMax run scoreboard players set @s TurnPageTmp 0
+scoreboard players remove @s[scores={TurnPageNum=1..,TurnPageLeft=1}] TurnPageTmp 1
+execute unless score @s[scores={TurnPageRight=1}] TurnPageNum = #MWL TurnPageMax run scoreboard players add @s TurnPageTmp 1
+scoreboard players operation @s TurnPageNum = @s TurnPageTmp
+scoreboard objectives remove TurnPageTmp
 
 ## Set Scoreboard
-scoreboard players operation @s ROLE_TARGET = @s ROLE_PAGE
-scoreboard players operation @s ROLE_TARGET *= #MWL 10
+scoreboard players operation @s RoleTarget = @s TurnPageNum
+scoreboard players operation @s RoleTarget *= #MWL 10
 
 ## Send a Common Message
 tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @s ["",{"text":"  誰の役職を盗む？","color":"white"}]
 
 ## Send Triggers
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 1"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 2"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 3"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 4"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 5"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 6"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 7"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 8"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 9"},"color":"green","bold":true}]
-scoreboard players add @s ROLE_TARGET 1
-execute as @a if score @p[scores={ROLE=9,ROLE_OF_NUM=1}] ROLE_TARGET = @s NUM unless score @p[scores={ROLE=9,ROLE_OF_NUM=1}] NUM = @s NUM run tellraw @p[scores={ROLE=9,ROLE_OF_NUM=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger ROLE_BUTTON set 10"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 1"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 2"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 3"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 4"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 5"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 6"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 7"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 8"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 9"},"color":"green","bold":true}]
+scoreboard players add @s RoleTarget 1
+execute as @a if score @p[scores={CurrentRole=9,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=9,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=9,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"盗む","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 10"},"color":"green","bold":true}]
 
 ## Send Page Role
-scoreboard players operation @s PAGE_NUMER = @s ROLE_PAGE
-scoreboard players operation @s PAGE_DENOM = #MWL ROLE_PAGE_NUM
-scoreboard players add @s PAGE_NUMER 1
-scoreboard players add @s PAGE_DENOM 1
-execute if score #MWL ROLE_PAGE_NUM matches 1.. run tellraw @s ["",{"text":"    ","color":"white"},{"text":"<","clickEvent":{"action":"run_command","value":"/trigger ROLE_L_PAGE set 1"},"color":"green","bold":true},{"text":"  ( ","color":"white"},{"score":{"name":"@s","objective":"PAGE_NUMER"},"color":"white"},{"text":" / ","color":"white"},{"score":{"name":"@s","objective":"PAGE_DENOM"},"color":"white"},{"text":" )  ","color":"white"},{"text":">","clickEvent":{"action":"run_command","value":"/trigger ROLE_R_PAGE set 1"},"color":"green","bold":true}]
+scoreboard players operation @s PageNumer = @s TurnPageNum
+scoreboard players operation @s PageDenom = #MWL TurnPageMax
+scoreboard players add @s PageNumer 1
+scoreboard players add @s PageDenom 1
+execute if score #MWL TurnPageMax matches 1.. run tellraw @s ["",{"text":"    ","color":"white"},{"text":"<","clickEvent":{"action":"run_command","value":"/trigger TurnPageLeft set 1"},"color":"green","bold":true},{"text":"  ( ","color":"white"},{"score":{"name":"@s","objective":"PageNumer"},"color":"white"},{"text":" / ","color":"white"},{"score":{"name":"@s","objective":"PageDenom"},"color":"white"},{"text":" )  ","color":"white"},{"text":">","clickEvent":{"action":"run_command","value":"/trigger TurnPageRight set 1"},"color":"green","bold":true}]
 
 ## Send a Common Message
 tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
-scoreboard players set @s ROLE_TARGET 0
-scoreboard players set @s TORCH 0
+scoreboard players set @s RoleTarget 0
+scoreboard players set @s DropTorch 0

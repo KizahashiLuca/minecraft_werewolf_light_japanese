@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -10,7 +10,7 @@
 tag @s add SetConduit
 
 ## Detect player
-execute at @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1] as @a[team=Player,scores={DEATH=0},distance=..2] unless score @s NUM = @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1,scores={NUM=1..}] NUM run tag @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1] add ExplodeConduit
+execute at @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1] as @a[team=Player,scores={DeathCount=0},distance=..2] unless score @s NUM = @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1,scores={NUM=1..}] NUM run tag @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=SetConduit,limit=1] add ExplodeConduit
 execute as @e[type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:conduit"}},tag=ExplodeConduit] at @s run function mwj:system/ongame/conduit/explode_conduit
 
 ## Remove a tag

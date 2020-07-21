@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -10,7 +10,7 @@
 #### Killer Flag
 execute as @a[advancements={mwj:killed_player=true},team=Player] run function mwj:system/ongame/kill_log/kill_log_killer
 #### Victim Flag
-execute as @a[scores={DEATH=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_victim
+execute as @a[scores={DeathCount=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_victim
 
 ## Store Number of Killer Player
 #### Victim : 1 -
@@ -24,17 +24,21 @@ execute if score #MWL VICTIM_NUM matches 1.. if score #MWL KILLER_NUM matches 1 
 execute if score #MWL VICTIM_NUM matches 2.. if score #MWL KILLER_NUM matches 2.. as @a[scores={VICTIM_FLAG=1},team=Player] run function mwj:system/ongame/kill_log/kill_log_sub
 
 ## Fox is Seered
-execute as @a[team=Player,scores={KILLLOG_FOX=1}] run scoreboard players operation @s KILLER = @s STRAY_BY_FOX
+execute as @a[team=Player,scores={KillLogOfFox=1}] run scoreboard players operation @s KILLER = @s KilledBySeer
 ## Cat Stray Bullet
-execute as @a[team=Player,scores={KILLLOG_CAT=1}] run scoreboard players operation @s KILLER = @s STRAY_BY_CAT
+execute as @a[team=Player,scores={KillLogOfCat=1}] run scoreboard players operation @s KILLER = @s KilledByCat
+## Trident thrown
+execute as @a[team=Player,scores={KillLogOfTrident=1}] run scoreboard players operation @s KILLER = @s KilledByTrident
 
 ## Reset Scoreboard
 scoreboard players set @a VICTIM_FLAG 0
 scoreboard players set @a KILLER_FLAG 0
-scoreboard players set @a KILLLOG_FOX 0
-scoreboard players set @a KILLLOG_CAT 0
-scoreboard players set @a[tag=!SeeredFox] STRAY_BY_FOX 0
-scoreboard players set @a[tag=!StrayBullet] STRAY_BY_CAT 0
+scoreboard players set @a KillLogOfFox 0
+scoreboard players set @a KillLogOfCat 0
+scoreboard players set @a KillLogOfTrident 0
+scoreboard players set @a[tag=!SeeredFox] KilledBySeer 0
+scoreboard players set @a[tag=!StrayBullet] KilledByCat 0
+scoreboard players set @a[tag=!TridentHit] KilledByTrident 0
 scoreboard players set #MWL VICTIM_NUM 0
 scoreboard players set #MWL KILLER_NUM 0
 
@@ -45,7 +49,7 @@ advancement revoke @a only mwj:be_killed_by_cat
 advancement revoke @a only mwj:killed_player
 
 ## Change Spectator for the Dead
-gamemode spectator @a[scores={DEATH=1},team=Player]
+gamemode spectator @a[scores={DeathCount=1},team=Player]
 
 ## Change the Dead's variables
-scoreboard players set @a[scores={DEATH=1},team=Player] DEATH 2
+scoreboard players set @a[scores={DeathCount=1},team=Player] DeathCount 2

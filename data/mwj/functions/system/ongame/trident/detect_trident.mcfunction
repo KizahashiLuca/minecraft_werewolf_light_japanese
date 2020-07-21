@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -11,4 +11,4 @@ execute as @s[nbt={inGround:1b,pickup:2b}] run function mwj:system/ongame/triden
 execute as @s[nbt={DealtDamage:1b}] run function mwj:system/ongame/trident/summon_thunderbolt
 
 ## Throw
-execute as @a[scores={THROW_TRIDENT=1}] run function mwj:system/ongame/trident/throw_trident
+execute as @a[scores={ThrowTrident=1..}] run function mwj:system/ongame/trident/throw_trident

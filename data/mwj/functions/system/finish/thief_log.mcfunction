@@ -2,12 +2,12 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
 ## Set flag
-execute as @a[scores={PREV_ROLE=9}] if score @s STEAL_NUM = #MWL STEAL_NUM run scoreboard players set @s STEAL_FLAG 1
+execute as @a[scores={PrevRole=9}] if score @s STEAL_NUM = #MWL STEAL_NUM run scoreboard players set @s STEAL_FLAG 1
 scoreboard players operation @p[scores={STEAL_FLAG=1}] ThiefStealTick *= #MWL TempVariable
 
 ## 1000 sec. -

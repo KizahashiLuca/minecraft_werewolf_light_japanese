@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jun 2020
+## Date   : 21 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -12,10 +12,10 @@ execute as @s[scores={RESPAWN=1..}] run function mwj:system/preparation/item/com
 execute as @s[scores={RESPAWN=1..}] run function mwj:system/preparation/item/common/torch
 
 ## Detected Unspawn
-scoreboard players set @s[scores={RESPAWN=0}] DEATH 1
+scoreboard players set @s[scores={RESPAWN=0}] DeathCount 1
 
 ## Effect Clear
 effect clear @s
 
 ## Remove Flag
-scoreboard players set @s ROLE_OF_NUM 2
+scoreboard players set @s RoleOfNum 2
