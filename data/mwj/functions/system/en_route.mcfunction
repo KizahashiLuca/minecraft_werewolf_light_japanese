@@ -16,6 +16,7 @@ execute unless score #MWL Phase matches 11 run gamemode adventure @a[tag=!Host,t
 execute unless score #MWL Phase matches 11 run clear @a[tag=!Host,team=Player]
 
 ## Log-in midtime of ongame
+execute if score #MWL Phase matches 11 run gamemode spectator @a[team=Player,scores={CurrentRole=0}]
 execute if score #MWL Phase matches 11 run gamemode spectator @a[team=!Player]
 execute if score #MWL Phase matches 11 run clear @a[team=!Player]
 

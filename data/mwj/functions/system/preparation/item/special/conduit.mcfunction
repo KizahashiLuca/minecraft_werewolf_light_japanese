@@ -6,4 +6,4 @@
 ## Version: beta-1.6
 ###############################
 
-give @s minecraft:conduit{display:{Name:'"\\u00a7r\\u00a7bコンカッション地雷"',Lore:['"\\u00a7r\\u00a79発光 (0:10)"','"\\u00a7r\\u00a7c吐き気 Ⅱ (0:10)"','"\\u00a7r\\u00A7fShift+Qキー同時押しで設置"','"\\u00a7r\\u00A7f設置範囲半径1.5mに発効"']},Tags:"Mine"} 4
+give @s minecraft:conduit{display:{Name:'"\\u00a7r\\u00a7bコンカッション地雷"',Lore:['"\\u00a7r\\u00a79発光 (0:10)"','"\\u00a7r\\u00a7c吐き気 Ⅱ (0:10)"','"\\u00a7r\\u00A7f設置方法 : Shift+Qキー同時押し"','"\\u00a7r\\u00A7f設置以後 : アイテム非消失・設置者回収可能"','"\\u00a7r\\u00A7f効果範囲 : 半径1.5m"']},Tags:"Mine"} 4

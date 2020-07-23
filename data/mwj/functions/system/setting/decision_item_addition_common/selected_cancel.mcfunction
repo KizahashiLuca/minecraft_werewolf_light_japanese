@@ -25,5 +25,11 @@ scoreboard players operation #MWL AddedCrossbow = #MWL PrevAddedCrossbo
 scoreboard players operation #MWL AddedHoneyBlock = #MWL PrevAddedHoneyBl
 scoreboard players operation #MWL AddedLantern = #MWL PrevAddedLantern
 
+# scoreboard players operation #MWL Added = #MWL PrevAdded
+# scoreboard players operation #MWL Added = #MWL PrevAdded
+# scoreboard players operation #MWL Added = #MWL PrevAdded
+# scoreboard players operation #MWL Added = #MWL PrevAdded
+# scoreboard players operation #MWL Added = #MWL PrevAdded
+
 ## Set item addition
 function mwj:system/setting/decision_item_addition_common/selected_set

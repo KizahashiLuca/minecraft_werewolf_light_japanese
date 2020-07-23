@@ -33,6 +33,7 @@ execute if score #MWL Phase matches 80 run scoreboard players set #MWL Phase 85
 execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/set_inventory
 execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/set_inventory
 execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/set_inventory
+# execute if score #MWL Phase matches 88 run function mwj:system/setting/decision_item_addition4/set_inventory
 
 ## Set items
 replaceitem entity @p[tag=Host] inventory.9 minecraft:white_banner{display:{Name:'"\\u00A7r\\u00A7c前へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
