@@ -6,7 +6,7 @@
 ## Version: beta-1.6
 ###############################
 
-## Set Seer
-execute if score #MWL AddedRole matches 1.. run scoreboard players add #MWL AddedSeer 1
+## Set White Wolf
+execute if score #MWL AddedRole matches 1.. run scoreboard players add #MWL AddedWhWolf 1
 execute if score #MWL AddedRole matches 1.. run scoreboard players remove #MWL AddedRole 1
 function mwj:system/setting/decision_role_addition_common/set_scoreboard

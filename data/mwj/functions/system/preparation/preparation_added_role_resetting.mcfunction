@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jul 2020
+## Date   : 24 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -30,6 +30,7 @@ scoreboard players operation #MWL NumOfVillagers -= #MWL AddedDetec
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedThief
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedCat
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedFkSeer
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedWhWolf
 
 scoreboard players operation #MWL NumOfWolves += #MWL AddedWolf
 scoreboard players operation #MWL NumOfMadmans += #MWL AddedMadman
@@ -44,3 +45,4 @@ scoreboard players operation #MWL NumOfDetectives = #MWL AddedDetec
 scoreboard players operation #MWL NumOfThieves = #MWL AddedThief
 scoreboard players operation #MWL NumOfCats = #MWL AddedCat
 scoreboard players operation #MWL NumOfFkSeers = #MWL AddedFkSeer
+scoreboard players operation #MWL NumOfWhWolves = #MWL AddedWhWolf

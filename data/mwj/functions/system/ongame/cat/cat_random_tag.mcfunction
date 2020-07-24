@@ -2,12 +2,12 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jul 2020
+## Date   : 24 Jul 2020
 ## Version: beta-1.6
 ###############################
 
 ## Put Tag
-execute if entity @s[advancements={mwj:be_killed_by_wolf=true}] run tag @r[scores={CurrentRole=1..5,DeathCount=0}] add StrayBullet
+execute if entity @s[advancements={mwj:be_killed_by_wolf=true}] run tag @r[scores={CurrentRole=1..9,DeathCount=0}] add StrayBullet
 execute if entity @s[advancements={mwj:be_killed_by_nonwolf=true}] run tag @r[scores={CurrentRole=1..40,DeathCount=0}] add StrayBullet
 execute if entity @s[advancements={mwj:be_killed_by_cat=true}] run tag @r[scores={CurrentRole=1..40,DeathCount=0}] add StrayBullet
 

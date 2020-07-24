@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jul 2020
+## Date   : 24 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -23,7 +23,7 @@ scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
 scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
 
 scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
-# scoreboard players operation #MWL PrevAdded = #MWL Added
+scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added

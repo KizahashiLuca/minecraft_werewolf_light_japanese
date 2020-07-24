@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jul 2020
+## Date   : 24 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -15,6 +15,9 @@ execute as @s[scores={DeathCount=1..2}] run tellraw @p[scores={CurrentRole=35,Ro
 
 ## Send a Message that the Stolen is Wolf
 execute as @s[scores={CurrentRole=1,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"人狼","color":"red","bold":true},{"text":" になりました","color":"white"}]
+
+## Send a Message that the Stolen is White Wolf
+execute as @s[scores={CurrentRole=4,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"白狼","color":"red","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Madman
 execute as @s[scores={CurrentRole=5,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"狂人","color":"light_purple","bold":true},{"text":" になりました","color":"white"}]
@@ -83,7 +86,7 @@ scoreboard players set @s[scores={DeathCount=0}] CurrentRole 20
 execute as @s[scores={DeathCount=1..2}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole 20
 
 ## Send a Message of wolves
-execute as @s[scores={DeathCount=0,PrevRole=1}] run tellraw @p[scores={CurrentRole=1,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={CurrentRole=1}]","color":"red"},{"text":" です。","color":"white"}]
+execute as @s[scores={DeathCount=0,PrevRole=1..4}] run tellraw @p[scores={CurrentRole=1..4,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"},{"text":" です。","color":"white"}]
 
 ## Send a Message of masons
 execute as @s[scores={DeathCount=0,PrevRole=21}] run scoreboard players operation @p[scores={CurrentRole=21,RoleOfNum=1}] MASON_PAIR = @s MASON_PAIR

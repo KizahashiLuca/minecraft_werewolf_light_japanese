@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jul 2020
+## Date   : 24 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -37,6 +37,7 @@ scoreboard objectives add TEMP_DIGIT dummy
 
 ## CurrentRole - breakdown
 ##   1 : Wolf 人狼
+##   4 : White Wolf 白狼
 ##   5 : Madman 狂人
 ##   10 : Fox 羽衣狐
 ##   20 : Villager 村人

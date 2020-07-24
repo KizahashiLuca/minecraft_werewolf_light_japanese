@@ -2,7 +2,7 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 21 Jul 2020
+## Date   : 24 Jul 2020
 ## Version: beta-1.6
 ###############################
 
@@ -28,6 +28,8 @@ scoreboard players remove #MWL PrevAddedRole 1
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedCat matches 1.. run scoreboard players remove #MWL AddedCat 1
 scoreboard players remove #MWL PrevAddedRole 1
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedFkSeer matches 1.. run scoreboard players remove #MWL AddedFkSeer 1
+scoreboard players remove #MWL PrevAddedRole 1
+execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedWhWolf matches 1.. run scoreboard players remove #MWL AddedWhWolf 1
 scoreboard players remove #MWL PrevAddedRole 1
 
 execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/preparation_added_role_minus
