@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Reset choice
@@ -23,7 +23,7 @@ scoreboard players operation #MWL AddedCat = #MWL PrevAddedCat
 
 scoreboard players operation #MWL AddedFkSeer = #MWL PrevAddedFkSeer
 scoreboard players operation #MWL AddedWhWolf = #MWL PrevAddedWhWolf
-# scoreboard players operation #MWL Added = #MWL PrevAdded
+scoreboard players operation #MWL AddedImmoral = #MWL PrevAddedImmoral
 # scoreboard players operation #MWL Added = #MWL PrevAdded
 # scoreboard players operation #MWL Added = #MWL PrevAdded
 

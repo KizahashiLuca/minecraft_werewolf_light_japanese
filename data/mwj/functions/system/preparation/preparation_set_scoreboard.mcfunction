@@ -3,11 +3,10 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Add Variables for Game
-scoreboard objectives add CurrentRole dummy
 scoreboard objectives add PrevRole dummy
 scoreboard objectives add WINNER dummy
 scoreboard objectives add WHITE dummy

@@ -3,12 +3,13 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Fox Dead
 execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_wolf=true}] run function mwj:system/ongame/fox/fox_dead
-execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_nonwolf=true}] run scoreboard players set @s RoleOfNum 2
+execute as @s[scores={DeathCount=1},tag=TridentDeadFoxbyWolf] run function mwj:system/ongame/fox/fox_dead
+execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_nonwolf=true},tag=!TridentDeadFoxbyWolf] run scoreboard players set @s RoleOfNum 2
 execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_cat=true}] run scoreboard players set @s RoleOfNum 2
 
 ## Detect Respawn

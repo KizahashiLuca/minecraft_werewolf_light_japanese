@@ -3,12 +3,12 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Send a Message
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light beta-1.6","color":"red","bold":true}]
+tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.0","color":"red","bold":true}]
 tellraw @a ["",{"text":"                     ","color":"white"},{"text":"Error","color":"yellow","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  前提バージョンが異なります。","color":"white"}]

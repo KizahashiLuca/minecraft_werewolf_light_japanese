@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Send a Message Added Item to All Players
@@ -21,10 +21,10 @@ execute if score #MWL AddedThief matches 1.. run tellraw @a ["",{"text":"    ","
 execute if score #MWL AddedCat matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"猫    又","color":"gold","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedCat"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL AddedFkSeer matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"偽予言者","color":"aqua","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedFkSeer"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL AddedWhWolf matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"白    狼","color":"red","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedWhWolf"},"color":"white"},{"text":"人","color":"white"}]
+execute if score #MWL AddedImmoral matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"背 徳 者","color":"dark_purple","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedImmoral"},"color":"white"},{"text":"人","color":"white"}]
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"追加役職","color":"","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"Added"},"color":"white"},{"text":"人","color":"white"}]
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"追加役職","color":"","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"Added"},"color":"white"},{"text":"人","color":"white"}]
-# execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"追加役職","color":"","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"Added"},"color":"white"},{"text":"人","color":"white"}]
-execute if score #MWL AddedWolf matches ..0 if score #MWL AddedMadman matches ..0 if score #MWL AddedVilla matches ..0 if score #MWL AddedSeer matches ..0 if score #MWL AddedMedium matches ..0 if score #MWL AddedFox matches ..0 if score #MWL AddedMason matches ..0 if score #MWL AddedDetec matches ..0 if score #MWL AddedThief matches ..0 if score #MWL AddedCat matches ..0 if score #MWL AddedFkSeer matches ..0 if score #MWL AddedWhWolf matches ..0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"なし","color":"white","bold":true}]
+execute if score #MWL AddedWolf matches ..0 if score #MWL AddedMadman matches ..0 if score #MWL AddedVilla matches ..0 if score #MWL AddedSeer matches ..0 if score #MWL AddedMedium matches ..0 if score #MWL AddedFox matches ..0 if score #MWL AddedMason matches ..0 if score #MWL AddedDetec matches ..0 if score #MWL AddedThief matches ..0 if score #MWL AddedCat matches ..0 if score #MWL AddedFkSeer matches ..0 if score #MWL AddedWhWolf matches ..0 if score #MWL AddedImmoral matches ..0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"なし","color":"white","bold":true}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
 execute if score #MWL AddedRole matches 1.. run tellraw @a ["",{"text":"\n  ","color":"white"},{"text":"残り追加可能人数","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedRole"},"color":"white"},{"text":"人","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

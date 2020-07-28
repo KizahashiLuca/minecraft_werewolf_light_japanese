@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Calculate Rest Number of Add Roles
@@ -24,7 +24,7 @@ scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
 
 scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
 scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
-# scoreboard players operation #MWL PrevAdded = #MWL Added
+scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 

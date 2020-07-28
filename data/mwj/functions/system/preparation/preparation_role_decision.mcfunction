@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Number the Members
@@ -36,6 +36,8 @@ scoreboard players operation #MWL NumOfRoles = #MWL NumOfFkSeers
 function mwj:system/preparation/decision_role/fake_seer_decision
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfWhWolves
 function mwj:system/preparation/decision_role/white_wolf_decision
+scoreboard players operation #MWL NumOfRoles = #MWL NumOfImmorals
+function mwj:system/preparation/decision_role/immoralist_decision
 
 ## Decide Mason Pair
 scoreboard players operation #MWL NumOfRoles = #MWL AddedMason

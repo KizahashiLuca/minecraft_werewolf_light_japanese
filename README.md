@@ -16,66 +16,19 @@
  - 再配布は禁止です。
 
 ## version
-**現在 β版です**   
-バグがありましたらご報告お願いします。
-
- 1. 以下のリンクの[Source code(zip)]から、データパックをDL。
- 2. DLしたzipファイルを解凍。
- 3. 解凍したフォルダ内にある、[minecraft_werewolf_light_japanese-beta-1.X]フォルダを、使用するワールドのフォルダ内[datapacks]にコピー。
- 4. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
+ 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_0.zip][v.1.0] をクリックして、データパックをDL。
+ 2. DLしたzipファイルを、使用するワールドのフォルダ内[datapacks]にコピー。
+ 3. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
  - 04 Mar 2019 - beta-1.0
-   - α版移行
- - 16 Mar 2019 - [beta-1.1][beta1.1]
-   - ゲームシステム修正
-     - 村人陣営生存者が1人となれば 敗北
-     - 制限時間終了まで勝敗未決着の場合 引き分け
-   - 制限時間設定フェーズ追加
- - 31 Mar 2019 - [beta-1.2][beta1.2]
-   - 新役職追加
-     - 猫又
-   - 潜伏フェーズ追加
-   - 制限時間設定フェーズ修正
- - 21 Apr 2019 - [beta-1.2.1][beta1.2.1]
-   - 猫又に関するバグ修正
- - 10 Jun 2019 - [beta-1.2.2][beta1.2.2]
-   - v1.14への対応
- - 16 Aug 2019 - [beta-1.3][beta1.3]
-   - 役職削除
-     - 妖狐 (バグ修正不可のため)
-   - 新役職追加
-     - 共有者
-   - 追加役職設定フェーズ追加
-   - 内部変数等変更
- - 25 Aug 2019 - [beta-1.4][beta1.4]
-   - 死亡記録(キルログ)追加
-   - 新役職追加
-     - 探偵
-   - 預言/霊媒内部処理一部変更
- - 14 Oct 2019 - beta-1.5 - [(v1.14)][beta1.5], [(v1.13)][beta1.5-mc1.13]
-   - 死亡記録(キルログ)修正
-   - 猫又を村人陣営へ人数反映
-   - 新役職追加
-     - 羽衣狐
-   - インベントリGUI追加
-     - 追加役職
-     - 制限時間
-     - ゲームモード
-     以上、選択機能を移管
- - 14 Oct 2019 - beta-1.6(推奨) - [beta1.6][beta1.6]
-   - 新役職追加
-     - 怪盗
-   - 新アイテム追加
-     - クロスボウ
-     - トライデント
-     - フラッシュバン(雪玉)
-     - コンカッション地雷(コンジット)
-     - ハチミツブロック
-   - インベントリGUI追加
-     - 発光時間
-     - 潜伏時間
-     - 特殊アイテム
-   - マイクラv1.14-1.16対応
+ - 16 Mar 2019 - beta-1.1
+ - 31 Mar 2019 - beta-1.2
+ - 16 Aug 2019 - beta-1.3
+ - 25 Aug 2019 - beta-1.4
+ - 14 Oct 2019 - beta-1.5
+ - 29 Jul 2020 - beta-1.6
+ - 29 Oct 2020 - [v.1.0][v.1.0](推奨)
+   - リリース版移行
 
 ## Discord
 [Discord][discord]でご意見ご要望などをお聞きしています。   
@@ -88,6 +41,7 @@
  - 狐雨茶
 #### 技術協力者
  - hsjoihs
+ - intsuc
  - Kory
  - Krose
 
@@ -107,5 +61,5 @@
 [beta1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.4
 [beta1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5
 [beta1.5-mc1.13]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5_MC1.13
-[beta1.6]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.6
+[v.1.0]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.0
 [twitter]:https://www.twitter.com/KizahashiLuca

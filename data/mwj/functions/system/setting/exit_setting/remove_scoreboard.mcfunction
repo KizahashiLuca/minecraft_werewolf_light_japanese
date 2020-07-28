@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Remove Variables for Setting Added Role
@@ -20,6 +20,7 @@ scoreboard objectives remove PrevAddedThief
 scoreboard objectives remove PrevAddedCat
 scoreboard objectives remove PrevAddedFkSeer
 scoreboard objectives remove PrevAddedWhWolf
+scoreboard objectives remove PrevAddedImmoral
 scoreboard objectives remove AddedRole1
 scoreboard objectives remove AddedRole2
 scoreboard objectives remove AddedRole3

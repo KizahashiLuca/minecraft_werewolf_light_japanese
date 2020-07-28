@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Detect the Number of Players is not Enough
@@ -31,6 +31,7 @@ scoreboard players operation #MWL NumOfVillagers -= #MWL AddedThief
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedCat
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedFkSeer
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedWhWolf
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedImmoral
 
 scoreboard players operation #MWL NumOfWolves += #MWL AddedWolf
 scoreboard players operation #MWL NumOfMadmans += #MWL AddedMadman
@@ -46,3 +47,4 @@ scoreboard players operation #MWL NumOfThieves = #MWL AddedThief
 scoreboard players operation #MWL NumOfCats = #MWL AddedCat
 scoreboard players operation #MWL NumOfFkSeers = #MWL AddedFkSeer
 scoreboard players operation #MWL NumOfWhWolves = #MWL AddedWhWolf
+scoreboard players operation #MWL NumOfImmorals = #MWL AddedWhWolf

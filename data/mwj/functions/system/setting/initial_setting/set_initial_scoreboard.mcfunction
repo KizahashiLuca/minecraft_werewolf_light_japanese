@@ -3,15 +3,17 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Add Variables for Game
 scoreboard objectives add Phase dummy
 scoreboard objectives add PrevNumOfPlayers dummy
-## Variables for Timer
+## Add Variables for Timer
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
+## Add Variables for Game
+scoreboard objectives add CurrentRole dummy
 ## Add Variables for Role Number
 scoreboard objectives add NumOfWolves dummy
 scoreboard objectives add NumOfMadmans dummy
@@ -25,6 +27,7 @@ scoreboard objectives add NumOfThieves dummy
 scoreboard objectives add NumOfCats dummy
 scoreboard objectives add NumOfFkSeers dummy
 scoreboard objectives add NumOfWhWolves dummy
+scoreboard objectives add NumOfImmorals dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRoleNumber dummy
 scoreboard objectives add AddedRole dummy
@@ -40,6 +43,7 @@ scoreboard objectives add AddedThief dummy
 scoreboard objectives add AddedCat dummy
 scoreboard objectives add AddedFkSeer dummy
 scoreboard objectives add AddedWhWolf dummy
+scoreboard objectives add AddedImmoral dummy
 scoreboard objectives add PrevAddedRole dummy
 scoreboard objectives add PrevAddedWolf dummy
 scoreboard objectives add PrevAddedMadman dummy
@@ -53,6 +57,7 @@ scoreboard objectives add PrevAddedThief dummy
 scoreboard objectives add PrevAddedCat dummy
 scoreboard objectives add PrevAddedFkSeer dummy
 scoreboard objectives add PrevAddedWhWolf dummy
+scoreboard objectives add PrevAddedImmoral dummy
 scoreboard objectives add AddedRole1 dummy
 scoreboard objectives add AddedRole2 dummy
 scoreboard objectives add AddedRole3 dummy
@@ -174,6 +179,8 @@ scoreboard objectives add TempVariable dummy
 
 ## Set Variables for Timer
 scoreboard players operation #MWL PrevNumOfPlayers = #MWL NUM
+## Set Variables for Game
+scoreboard players set @a CurrentRole 0
 ## Set Variables for CurrentRole
 scoreboard players set #MWL NumOfWolves 0
 scoreboard players set #MWL NumOfMadmans 0
@@ -187,6 +194,7 @@ scoreboard players set #MWL NumOfThieves 0
 scoreboard players set #MWL NumOfCats 0
 scoreboard players set #MWL NumOfFkSeers 0
 scoreboard players set #MWL NumOfWhWolves 0
+scoreboard players set #MWL NumOfImmorals 0
 ## Set Variables for Setting Added Role
 scoreboard players set #MWL AddedRoleNumber 0
 scoreboard players set #MWL AddedRole 0
@@ -202,6 +210,7 @@ scoreboard players set #MWL AddedThief 0
 scoreboard players set #MWL AddedCat 0
 scoreboard players set #MWL AddedFkSeer 0
 scoreboard players set #MWL AddedWhWolf 0
+scoreboard players set #MWL AddedImmoral 0
 scoreboard players set #MWL PrevAddedRole 0
 scoreboard players set #MWL PrevAddedWolf 0
 scoreboard players set #MWL PrevAddedMadman 0
@@ -215,6 +224,7 @@ scoreboard players set #MWL PrevAddedThief 0
 scoreboard players set #MWL PrevAddedCat 0
 scoreboard players set #MWL PrevAddedFkSeer 0
 scoreboard players set #MWL PrevAddedWhWolf 0
+scoreboard players set #MWL PrevAddedImmoral 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 180
 ## Set Variables for Setting Hide Time

@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Process the timer system
@@ -12,9 +12,9 @@ function mwj:system/time/time
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone",tag:{display:{Name:'"\\u00A7r\\u00A7f潜伏時間設定"'}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:glowstone_dust",tag:{display:{Name:'"\\u00A7r\\u00A7f発光時間設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gunpowder",tag:{display:{Name:'"\\u00A7r\\u00A7fゲーム時間設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fモード設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest",tag:{display:{Name:'"\\u00A7r\\u00A7f追加アイテム設定"'}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gunpowder",tag:{display:{Name:'"\\u00A7r\\u00A7f制限時間設定"'}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fゲームモード(人狼勝利条件)設定"'}}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest",tag:{display:{Name:'"\\u00A7r\\u00A7f追加特殊アイテム設定"'}}}}] ThrowItem 1
 execute if score #MWL AddedRoleNumber matches 1.. run scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:armor_stand",tag:{display:{Name:'"\\u00A7r\\u00A7f追加役職設定"'}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39}}}] ThrowItem 1
@@ -33,9 +33,9 @@ scoreboard players set @p[tag=Host] SelectOkay 1
 ## Declare Inventory
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:redstone",tag:{display:{Name:'"\\u00A7r\\u00A7f潜伏時間設定"'}}}]}] ChosenHideTime 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:glowstone_dust",tag:{display:{Name:'"\\u00A7r\\u00A7f発光時間設定"'}}}]}] ChosenGlowTime 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:gunpowder",tag:{display:{Name:'"\\u00A7r\\u00A7fゲーム時間設定"'}}}]}] ChosenGameTime 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fモード設定"'}}}]}] ChosenGameMode 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:chest",tag:{display:{Name:'"\\u00A7r\\u00A7f追加アイテム設定"'}}}]}] ChosenItemAdd 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:gunpowder",tag:{display:{Name:'"\\u00A7r\\u00A7f制限時間設定"'}}}]}] ChosenGameTime 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fゲームモード(人狼勝利条件)設定"'}}}]}] ChosenGameMode 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:chest",tag:{display:{Name:'"\\u00A7r\\u00A7f追加特殊アイテム設定"'}}}]}] ChosenItemAdd 0
 execute if score #MWL AddedRoleNumber matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:armor_stand",tag:{display:{Name:'"\\u00A7r\\u00A7f追加役職設定"'}}}]}] ChosenRoleAdd 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39}}]}] SelectCancel 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39}}]}] SelectOkay 0

@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Send a Common Message
@@ -24,6 +24,9 @@ execute as @s[scores={CurrentRole=5,DeathCount=0}] run tellraw @p[scores={Curren
 
 ## Send a Message that the Stolen is Fox
 execute as @s[scores={CurrentRole=10,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" になりました","color":"white"}]
+
+## Send a Message that the Stolen is Immoralist
+execute as @s[scores={CurrentRole=11,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"背徳者","color":"dark_purple","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Villager
 execute as @s[scores={CurrentRole=20,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" になりました","color":"white"}]
@@ -87,6 +90,9 @@ execute as @s[scores={DeathCount=1..2}] run scoreboard players set @p[scores={Cu
 
 ## Send a Message of wolves
 execute as @s[scores={DeathCount=0,PrevRole=1..4}] run tellraw @p[scores={CurrentRole=1..4,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"},{"text":" です。","color":"white"}]
+
+## Send a Message of immoralists
+execute as @s[scores={DeathCount=0,PrevRole=11}] run tellraw @p[scores={CurrentRole=11,RoleOfNum=1}] ["",{"text":"    羽衣狐は ","color":"white"},{"selector":"@a[scores={CurrentRole=10}]","color":"dark_purple"},{"text":" です。","color":"white"}]
 
 ## Send a Message of masons
 execute as @s[scores={DeathCount=0,PrevRole=21}] run scoreboard players operation @p[scores={CurrentRole=21,RoleOfNum=1}] MASON_PAIR = @s MASON_PAIR

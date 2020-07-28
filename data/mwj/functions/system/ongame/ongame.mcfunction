@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Timer System
@@ -44,6 +44,10 @@ execute if score #MWL Version matches 16.. if score #MWL AddedLantern matches 1 
 ## Fox System
 execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongame/fox/fox_main
 execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
+
+## Immoralist System
+execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,DONE=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/immoral_main
+execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,DONE=0}] run function mwj:system/ongame/immoral/immoral_dead
 
 ## Seer System
 execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/seer_main

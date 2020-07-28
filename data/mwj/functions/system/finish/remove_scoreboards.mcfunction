@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Remove Variables for Game
@@ -33,6 +33,7 @@ scoreboard objectives remove NumOfThieves
 scoreboard objectives remove NumOfCats
 scoreboard objectives remove NumOfFkSeers
 scoreboard objectives remove NumOfWhWolves
+scoreboard objectives remove NumOfImmorals
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
 scoreboard objectives remove MASON_PAIR_NUM
@@ -116,6 +117,7 @@ scoreboard objectives remove AddedThief
 scoreboard objectives remove AddedCat
 scoreboard objectives remove AddedFkSeer
 scoreboard objectives remove AddedWhWolf
+scoreboard objectives remove AddedImmoral
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Item Addition
 scoreboard objectives remove AddedStick

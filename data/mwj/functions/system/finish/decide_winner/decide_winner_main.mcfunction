@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 execute if score #MWL GameMode matches 1 run function mwj:system/finish/decide_winner/decide_winner_wolf_prior

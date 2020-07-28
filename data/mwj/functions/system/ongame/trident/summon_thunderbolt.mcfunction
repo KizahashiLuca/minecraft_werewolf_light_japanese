@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 24 Jul 2020
-## Version: beta-1.6
+## Version: v.1.0
 ###############################
 
 ## Add a tag
@@ -14,6 +14,7 @@ execute at @e[tag=TridentTarget] run summon minecraft:lightning_bolt ~ ~ ~
 
 ## Give effect
 execute at @e[tag=TridentTarget] run effect give @a[team=Player,scores={DeathCount=0},distance=..4] minecraft:instant_damage 1 10 true
+execute as @a[team=Player,scores={CurrentRole=1..9}] if score @e[tag=TridentTarget,limit=1] NUM = @s NUM at @e[tag=TridentTarget] run tag @a[team=Player,scores={DeathCount=0,CurrentRole=10},distance=..4] add TridentDeadFoxbyWolf
 
 ## Kill log tag
 execute at @e[tag=TridentTarget] run tag @a[team=Player,scores={DeathCount=0},distance=..4] add TridentHit
