@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 24 Jul 2020
-## Version: v.1.0
+## Date   : 02 Aug 2020
+## Version: v.1.1
 ###############################
 
 ## Title Game Start
@@ -13,7 +13,7 @@ title @a subtitle ["",{"text":"START","color":"white","bold":true}]
 
 ## Display Breakdown of Roles & His Role
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.0","color":"red","bold":true}]
+tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.1","color":"red","bold":true}]
 tellraw @a ["",{"text":"                  ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}},{"text":"\n","color":"white"}]

@@ -16,7 +16,7 @@
  - 再配布は禁止です。
 
 ## version
- 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_0.zip][v.1.0] をクリックして、データパックをDL。
+ 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_1.zip][v.1.1] をクリックして、データパックをDL。
  2. DLしたzipファイルを、使用するワールドのフォルダ内[datapacks]にコピー。
  3. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
@@ -27,8 +27,15 @@
  - 25 Aug 2019 - beta-1.4
  - 14 Oct 2019 - beta-1.5
  - 29 Jul 2020 - beta-1.6
- - 29 Oct 2020 - [v.1.0][v.1.0](推奨)
+ - 29 Jul 2020 - [v.1.0][v.1.0]
    - リリース版移行
+ - 02 Aug 2020 - [v.1.1][v.1.1](推奨)
+   - 新追加役職追加
+     - 偽予言者
+     - 白狼
+     - 背徳者
+   - 狂人勝利条件変更
+     - 人狼陣営として勝利
 
 ## Discord
 [Discord][discord]でご意見ご要望などをお聞きしています。   
@@ -62,4 +69,5 @@
 [beta1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5
 [beta1.5-mc1.13]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/beta-1.5_MC1.13
 [v.1.0]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.0
+[v.1.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.1
 [twitter]:https://www.twitter.com/KizahashiLuca
