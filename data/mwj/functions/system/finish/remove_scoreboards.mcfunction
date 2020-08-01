@@ -32,7 +32,9 @@ scoreboard objectives remove NumOfDetectives
 scoreboard objectives remove NumOfThieves
 scoreboard objectives remove NumOfCats
 scoreboard objectives remove NumOfFkSeers
+scoreboard objectives remove NumOfSages
 scoreboard objectives remove NumOfWhWolves
+scoreboard objectives remove NumOfFanatics
 scoreboard objectives remove NumOfImmorals
 ## Remove Variables for Mason Number
 scoreboard objectives remove MASON_PAIR
@@ -116,7 +118,9 @@ scoreboard objectives remove AddedDetec
 scoreboard objectives remove AddedThief
 scoreboard objectives remove AddedCat
 scoreboard objectives remove AddedFkSeer
+scoreboard objectives remove AddedSage
 scoreboard objectives remove AddedWhWolf
+scoreboard objectives remove AddedFanatic
 scoreboard objectives remove AddedImmoral
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Item Addition

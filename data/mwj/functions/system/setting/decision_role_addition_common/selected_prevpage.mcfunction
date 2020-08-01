@@ -8,8 +8,7 @@
 
 ## Set Prev Page
 scoreboard players remove #MWL Phase 1
-execute if score #MWL Phase matches 89 run scoreboard players set #MWL Phase 91
-# execute if score #MWL Phase matches 89 run scoreboard players set #MWL Phase 92
+execute if score #MWL Phase matches 89 run scoreboard players set #MWL Phase 92
 
 execute if score #MWL Phase matches 90 run function mwj:system/setting/decision_role_addition1/set_added
 execute if score #MWL Phase matches 91 run function mwj:system/setting/decision_role_addition2/set_added

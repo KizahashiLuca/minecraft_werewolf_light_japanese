@@ -21,10 +21,10 @@ scoreboard players set #MWL AddedThief 0
 scoreboard players set #MWL AddedCat 0
 
 scoreboard players set #MWL AddedFkSeer 0
+scoreboard players set #MWL AddedSage 0
 scoreboard players set #MWL AddedWhWolf 0
+scoreboard players set #MWL AddedFanatic 0
 scoreboard players set #MWL AddedImmoral 0
-# scoreboard players set #MWL Added 0
-# scoreboard players set #MWL Added 0
 
 ## Set Item Addition
 execute if score #MWL Phase matches 90 run function mwj:system/setting/decision_role_addition1/set_added

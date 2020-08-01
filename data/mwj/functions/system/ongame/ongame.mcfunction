@@ -55,6 +55,9 @@ execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongam
 ## Fake Seer System
 execute as @a[team=Player,scores={CurrentRole=26}] run function mwj:system/ongame/fake_seer/fake_seer_main
 
+## Sage System
+execute as @a[team=Player,scores={CurrentRole=27}] run function mwj:system/ongame/sage/sage_main
+
 ## Medium System
 execute as @a[team=Player,scores={CurrentRole=28}] run function mwj:system/ongame/medium/medium_main
 

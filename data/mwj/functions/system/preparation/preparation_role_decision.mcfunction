@@ -34,8 +34,12 @@ scoreboard players operation #MWL NumOfRoles = #MWL NumOfCats
 function mwj:system/preparation/decision_role/cat_decision
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfFkSeers
 function mwj:system/preparation/decision_role/fake_seer_decision
+scoreboard players operation #MWL NumOfRoles = #MWL NumOfSages
+function mwj:system/preparation/decision_role/sage_decision
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfWhWolves
 function mwj:system/preparation/decision_role/white_wolf_decision
+scoreboard players operation #MWL NumOfRoles = #MWL NumOfFanatics
+function mwj:system/preparation/decision_role/fanatic_decision
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfImmorals
 function mwj:system/preparation/decision_role/immoralist_decision
 

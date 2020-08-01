@@ -21,7 +21,7 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_st
 execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/item_addition1_dropped
 execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/item_addition2_dropped
 execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/item_addition3_dropped
-# execute if score #MWL Phase matches 88 run function mwj:system/setting/decision_item_addition3/item_addition4_dropped
+execute if score #MWL Phase matches 88 run function mwj:system/setting/decision_item_addition4/item_addition4_dropped
 
 ## Kill a dropped item
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run kill @s
@@ -62,7 +62,7 @@ execute if score #MWL AddedItem5 matches 1 run scoreboard players set @p[tag=Hos
 execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/item_addition1_selected
 execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/item_addition2_selected
 execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/item_addition3_selected
-# execute if score #MWL Phase matches 88 run function mwj:system/setting/decision_item_addition3/item_addition4_selected
+execute if score #MWL Phase matches 88 run function mwj:system/setting/decision_item_addition4/item_addition4_selected
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={SelectPrevPage=1}] run function mwj:system/setting/decision_item_addition_common/selected_prevpage

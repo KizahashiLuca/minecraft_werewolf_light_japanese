@@ -26,7 +26,9 @@ scoreboard objectives add NumOfDetectives dummy
 scoreboard objectives add NumOfThieves dummy
 scoreboard objectives add NumOfCats dummy
 scoreboard objectives add NumOfFkSeers dummy
+scoreboard objectives add NumOfSages dummy
 scoreboard objectives add NumOfWhWolves dummy
+scoreboard objectives add NumOfFanatics dummy
 scoreboard objectives add NumOfImmorals dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRoleNumber dummy
@@ -42,7 +44,9 @@ scoreboard objectives add AddedDetec dummy
 scoreboard objectives add AddedThief dummy
 scoreboard objectives add AddedCat dummy
 scoreboard objectives add AddedFkSeer dummy
+scoreboard objectives add AddedSage dummy
 scoreboard objectives add AddedWhWolf dummy
+scoreboard objectives add AddedFanatic dummy
 scoreboard objectives add AddedImmoral dummy
 scoreboard objectives add PrevAddedRole dummy
 scoreboard objectives add PrevAddedWolf dummy
@@ -56,7 +60,9 @@ scoreboard objectives add PrevAddedDetec dummy
 scoreboard objectives add PrevAddedThief dummy
 scoreboard objectives add PrevAddedCat dummy
 scoreboard objectives add PrevAddedFkSeer dummy
+scoreboard objectives add PrevAddedSage dummy
 scoreboard objectives add PrevAddedWhWolf dummy
+scoreboard objectives add PrevAddedFanatic dummy
 scoreboard objectives add PrevAddedImmoral dummy
 scoreboard objectives add AddedRole1 dummy
 scoreboard objectives add AddedRole2 dummy
@@ -193,7 +199,9 @@ scoreboard players set #MWL NumOfDetectives 0
 scoreboard players set #MWL NumOfThieves 0
 scoreboard players set #MWL NumOfCats 0
 scoreboard players set #MWL NumOfFkSeers 0
+scoreboard players set #MWL NumOfSages 0
 scoreboard players set #MWL NumOfWhWolves 0
+scoreboard players set #MWL NumOfFanatics 0
 scoreboard players set #MWL NumOfImmorals 0
 ## Set Variables for Setting Added Role
 scoreboard players set #MWL AddedRoleNumber 0
@@ -209,7 +217,9 @@ scoreboard players set #MWL AddedDetec 0
 scoreboard players set #MWL AddedThief 0
 scoreboard players set #MWL AddedCat 0
 scoreboard players set #MWL AddedFkSeer 0
+scoreboard players set #MWL AddedSage 0
 scoreboard players set #MWL AddedWhWolf 0
+scoreboard players set #MWL AddedFanatic 0
 scoreboard players set #MWL AddedImmoral 0
 scoreboard players set #MWL PrevAddedRole 0
 scoreboard players set #MWL PrevAddedWolf 0
@@ -223,10 +233,12 @@ scoreboard players set #MWL PrevAddedDetec 0
 scoreboard players set #MWL PrevAddedThief 0
 scoreboard players set #MWL PrevAddedCat 0
 scoreboard players set #MWL PrevAddedFkSeer 0
+scoreboard players set #MWL PrevAddedSage 0
 scoreboard players set #MWL PrevAddedWhWolf 0
+scoreboard players set #MWL PrevAddedFanatic 0
 scoreboard players set #MWL PrevAddedImmoral 0
 ## Set Variables for Setting Time
-scoreboard players set #MWL SettingTime 180
+scoreboard players set #MWL SettingTime 600
 ## Set Variables for Setting Hide Time
 scoreboard players set #MWL HideTime 4
 scoreboard players set #MWL PrevHideTime 4

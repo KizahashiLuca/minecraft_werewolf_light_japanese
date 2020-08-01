@@ -22,10 +22,10 @@ scoreboard players operation #MWL AddedThief = #MWL PrevAddedThief
 scoreboard players operation #MWL AddedCat = #MWL PrevAddedCat
 
 scoreboard players operation #MWL AddedFkSeer = #MWL PrevAddedFkSeer
+scoreboard players operation #MWL AddedSage = #MWL PrevAddedSage
 scoreboard players operation #MWL AddedWhWolf = #MWL PrevAddedWhWolf
+scoreboard players operation #MWL AddedFanatic = #MWL PrevAddedFanatic
 scoreboard players operation #MWL AddedImmoral = #MWL PrevAddedImmoral
-# scoreboard players operation #MWL Added = #MWL PrevAdded
-# scoreboard players operation #MWL Added = #MWL PrevAdded
 
 ## Set item addition
 function mwj:system/setting/decision_role_addition_common/selected_set

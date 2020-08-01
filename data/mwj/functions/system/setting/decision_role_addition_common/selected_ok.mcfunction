@@ -23,10 +23,10 @@ scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
 scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
 
 scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
+scoreboard players operation #MWL PrevAddedSage = #MWL AddedSage
 scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
+scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
 scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
-# scoreboard players operation #MWL PrevAdded = #MWL Added
-# scoreboard players operation #MWL PrevAdded = #MWL Added
 
 ## Set inventory
 function mwj:system/setting/decision_role_addition_common/selected_set

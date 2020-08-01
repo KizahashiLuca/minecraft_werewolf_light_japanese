@@ -29,7 +29,11 @@ execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedCat matches 1
 scoreboard players remove #MWL PrevAddedRole 1
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedFkSeer matches 1.. run scoreboard players remove #MWL AddedFkSeer 1
 scoreboard players remove #MWL PrevAddedRole 1
+execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedSage matches 1.. run scoreboard players remove #MWL AddedSage 1
+scoreboard players remove #MWL PrevAddedRole 1
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedWhWolf matches 1.. run scoreboard players remove #MWL AddedWhWolf 1
+scoreboard players remove #MWL PrevAddedRole 1
+execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedFanatic matches 1.. run scoreboard players remove #MWL AddedFanatic 1
 scoreboard players remove #MWL PrevAddedRole 1
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedImmoral matches 1.. run scoreboard players remove #MWL AddedImmoral 1
 scoreboard players remove #MWL PrevAddedRole 1
