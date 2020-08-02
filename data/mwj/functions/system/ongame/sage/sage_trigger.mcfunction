@@ -10,7 +10,7 @@
 scoreboard players set @s TurnPageNum 0
 
 ## Send Trigger Message
-function mwj:system/ongame/fake_seer/fake_seer_message
+function mwj:system/ongame/sage/sage_message
 
 ## Reset Scoreboard
 scoreboard players set @s DropTorch 0

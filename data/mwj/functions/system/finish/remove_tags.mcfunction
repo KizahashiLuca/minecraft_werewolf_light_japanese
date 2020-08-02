@@ -7,34 +7,34 @@
 ###############################
 
 ## Remove tags
-tag @e remove Host
+tag @a remove Host
 #### Number system
 tag @a remove numbered
 #### Werwolf system
-tag @e remove WereWolf
-tag @e remove NonWolf
-tag @e remove Cat
+tag @a remove WereWolf
+tag @a remove NonWolf
+tag @a remove Cat
 #### Give item
-tag @e remove MWLitem
+tag @a remove MWLitem
 #### Cat system
-tag @e remove StrayBullet
+tag @a remove StrayBullet
 #### Fox system
-tag @e remove SeeredFox
-tag @e remove SeerFox
-tag @e remove DetectDeath
+tag @a remove SeeredFox
+tag @a remove SeerFox
+tag @a remove DetectDeath
 #### Mason system
-tag @e remove MasonTag
+tag @a remove MasonTag
 #### Trident system
-tag @e remove TridentDone
-tag @e remove TridentThrower
-tag @e remove TridentHit
-tag @e remove TridentDeadFoxbyWolf
+tag @a remove TridentDone
+tag @a remove TridentThrower
+tag @a remove TridentHit
+tag @a remove TridentDeadFoxbyWolf
 #### Conduit system
-tag @e remove SetConduit
-tag @e remove ExplodeConduit
+tag @a remove SetConduit
+tag @a remove ExplodeConduit
 #### Honey block system
-tag @e remove DetectPlayer
-tag @e remove JustBorn
+tag @a remove DetectPlayer
+tag @a remove JustBorn
 #### Snowball system
-tag @e remove DetectSnowballMove
-tag @e remove DetectSnowballUnexist
+tag @a remove DetectSnowballMove
+tag @a remove DetectSnowballUnexist

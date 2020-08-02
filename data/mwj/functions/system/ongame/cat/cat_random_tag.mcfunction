@@ -7,9 +7,9 @@
 ###############################
 
 ## Put Tag
-execute if entity @s[advancements={mwj:be_killed_by_wolf=true}] run tag @r[scores={CurrentRole=1..9,DeathCount=0}] add StrayBullet
-execute if entity @s[advancements={mwj:be_killed_by_nonwolf=true}] run tag @r[scores={CurrentRole=1..40,DeathCount=0}] add StrayBullet
-execute if entity @s[advancements={mwj:be_killed_by_cat=true}] run tag @r[scores={CurrentRole=1..40,DeathCount=0}] add StrayBullet
+execute as @s[advancements={mwj:be_killed_by_wolf=true}] run tag @r[scores={CurrentRole=1..9,DeathCount=0}] add StrayBullet
+execute as @s[advancements={mwj:be_killed_by_nonwolf=true}] run tag @r[scores={CurrentRole=1..40,DeathCount=0}] add StrayBullet
+execute as @s[advancements={mwj:be_killed_by_cat=true}] run tag @r[scores={CurrentRole=1..40,DeathCount=0}] add StrayBullet
 
 ## Store CAT Number
 scoreboard players operation @p[tag=StrayBullet] KilledByCat = @s NUM
