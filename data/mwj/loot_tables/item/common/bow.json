@@ -1,0 +1,34 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"bow",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"弓","color":"aqua","italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore":[
+                ["",{"text":"射撃ダメージ増加 ⅭⅭ","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"無限","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"消滅の呪い","color":"red","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,Enchantments:[{id:\"minecraft:power\",lvl:200s},{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}],HideFlags:1,Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

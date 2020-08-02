@@ -1,0 +1,19 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"arrow",
+          "functions":[{
+              "function":"minecraft:set_nbt",
+              "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

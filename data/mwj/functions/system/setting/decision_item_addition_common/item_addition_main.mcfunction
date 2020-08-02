@@ -18,10 +18,7 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:filled_ma
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}}] ThrowItem 1
 
-execute if score #MWL Phase matches 85 run function mwj:system/setting/decision_item_addition1/item_addition1_dropped
-execute if score #MWL Phase matches 86 run function mwj:system/setting/decision_item_addition2/item_addition2_dropped
-execute if score #MWL Phase matches 87 run function mwj:system/setting/decision_item_addition3/item_addition3_dropped
-execute if score #MWL Phase matches 88 run function mwj:system/setting/decision_item_addition4/item_addition4_dropped
+scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:"MWLitem"}}}] ThrowItem 1
 
 ## Kill a dropped item
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run kill @s

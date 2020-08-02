@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:potion{display:{Name:'"\\u00A7r\\u00A7f俊敏のポーション"'},CustomPotionEffects:[{Id:1b,Amplifier:2b,Duration:600}],CustomPotionColor:63217} 1
+## Give item
+loot give @s loot mwj:item/special/potion_speed
+
+## Add tag
+tag @s add MWLitem

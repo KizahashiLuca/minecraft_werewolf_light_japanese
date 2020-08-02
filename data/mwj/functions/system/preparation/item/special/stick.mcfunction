@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:stick{Unbreakable:1b} 1
+## Give item
+loot give @s loot mwj:item/special/stick
+
+## Add tag
+tag @s add MWLitem

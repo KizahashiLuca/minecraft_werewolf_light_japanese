@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"potion",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"透明化のポーション","color":"white","italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{CustomPotionEffects:[{Id:14b,Duration:600}],CustomPotionColor:16777215,Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

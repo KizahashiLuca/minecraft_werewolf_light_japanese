@@ -10,7 +10,10 @@
 clear @s minecraft:snow_block 1
 
 ## Give snowball
-give @s minecraft:snowball 4
+loot give @s loot mwj:item/special/snowball
+loot give @s loot mwj:item/special/snowball
+loot give @s loot mwj:item/special/snowball
+loot give @s loot mwj:item/special/snowball
 
 ## Loop
 execute as @s[team=Player,nbt={Inventory:[{id:"minecraft:snow_block"}]}] run function mwj:system/ongame/snowball/clear_snowball

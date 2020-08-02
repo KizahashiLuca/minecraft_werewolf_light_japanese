@@ -8,9 +8,9 @@
 
 ## Replace Inventory
 replaceitem entity @p[tag=Host] inventory.11 minecraft:light_blue_concrete{display:{Name:'"\\u00A7r\\u00A7f偽予言者の追加"'}} 1
-# replaceitem entity @p[tag=Host] inventory.12 minecraft:blue_concrete{display:{Name:'"\\u00A7r\\u00A7f賢者の追加"'}} 1
+replaceitem entity @p[tag=Host] inventory.12 minecraft:blue_concrete{display:{Name:'"\\u00A7r\\u00A7f賢者の追加"'}} 1
 replaceitem entity @p[tag=Host] inventory.13 minecraft:red_concrete{display:{Name:'"\\u00A7r\\u00A7f白狼の追加"'}} 1
-# replaceitem entity @p[tag=Host] inventory.14 minecraft:pink_concrete{display:{Name:'"\\u00A7r\\u00A7f狂信者の追加"'}} 1
+replaceitem entity @p[tag=Host] inventory.14 minecraft:pink_concrete{display:{Name:'"\\u00A7r\\u00A7f狂信者の追加"'}} 1
 replaceitem entity @p[tag=Host] inventory.15 minecraft:purple_concrete{display:{Name:'"\\u00A7r\\u00A7f背徳者の追加"'}} 1
 
 ## Set scoreboard

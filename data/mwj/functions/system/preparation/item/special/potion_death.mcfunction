@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:lingering_potion{display:{Name:'"\\u00A7r\\u00A7f即死の残留ポーション"'},CustomPotionEffects:[{Id:7b,Amplifier:3b}],CustomPotionColor:16122102} 1
+## Give item
+loot give @s loot mwj:item/special/potion_death
+
+## Add tag
+tag @s add MWLitem

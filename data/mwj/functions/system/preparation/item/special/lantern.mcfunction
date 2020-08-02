@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:ender_pearl 1
+## Give item
+loot give @s loot mwj:item/special/lantern
+
+## Add tag
+tag @s add MWLitem

@@ -6,4 +6,11 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:honey_block{display:{Name:'"\\u00a7r\\u00a7bスティッキー地雷"',Lore:['"\\u00a7r\\u00a7c移動速度低下 Ⅲ (**:**)"','"\\u00a7r\\u00A7f設置方法 : Shift+Qキー同時押し"','"\\u00a7r\\u00A7f設置以後 : アイテム消失・設置者回収不能"','"\\u00a7r\\u00A7f効果範囲 : 半径4m"']},Tags:"HoneyBlock"} 4
+## Give item
+loot give @s loot mwj:item/special/honey_block
+loot give @s loot mwj:item/special/honey_block
+loot give @s loot mwj:item/special/honey_block
+loot give @s loot mwj:item/special/honey_block
+
+## Add tag
+tag @s add MWLitem

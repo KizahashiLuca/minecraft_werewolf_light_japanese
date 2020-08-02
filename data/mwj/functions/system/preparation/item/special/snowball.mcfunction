@@ -6,4 +6,11 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:snowball{display:{Name:'"\\u00a7r\\u00a7bフラッシュバン"',Lore:['"\\u00a7r\\u00a7c盲目 (0:20)"','"\\u00a7r\\u00A7f使用方法 : 投擲"','"\\u00a7r\\u00A7f効果範囲 : 半径3m"']}} 4
+## Give item
+loot give @s loot mwj:item/special/snowball
+loot give @s loot mwj:item/special/snowball
+loot give @s loot mwj:item/special/snowball
+loot give @s loot mwj:item/special/snowball
+
+## Add tag
+tag @s add MWLitem

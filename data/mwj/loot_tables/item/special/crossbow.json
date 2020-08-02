@@ -1,0 +1,20 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"crossbow",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{Damage:325,Charged:1b,ChargedProjectiles:[{id:\"minecraft:tipped_arrow\",Count:1b,tag:{display:{Name:'\"\\\\u00A7r\\\\u00A7f即死の矢\"'},CustomPotionEffects:[{Id:7b,Amplifier:3b,Duration:1}]}},{id:\"minecraft:tipped_arrow\",Count:1b,tag:{display:{Name:'\"\\\\u00A7r\\\\u00A7f即死の矢\"'},CustomPotionEffects:[{Id:7b,Amplifier:3b,Duration:1}]}},{id:\"minecraft:tipped_arrow\",Count:1b,tag:{display:{Name:'\"\\\\u00A7r\\\\u00A7f即死の矢\"'},CustomPotionEffects:[{Id:7b,Amplifier:3b,Duration:1}]}}],Enchantments:[{id:\"minecraft:multishot\",lvl:1s}],Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

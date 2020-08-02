@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:totem_of_undying 1
+## Give item
+loot give @s loot mwj:item/special/ender_pearl
+
+## Add tag
+tag @s add MWLitem

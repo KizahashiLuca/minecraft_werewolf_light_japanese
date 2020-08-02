@@ -7,19 +7,34 @@
 ###############################
 
 ## Remove tags
-tag @a remove Host
-tag @a remove WereWolf
-tag @a remove NonWolf
-tag @a remove Cat
-tag @a remove StrayBullet
-tag @a remove SeeredFox
-tag @a remove SeerFox
-tag @a remove DetectDeath
-tag @a remove NoHit
-tag @a remove DetectHit
-tag @a remove SetMines
-tag @a remove ExplodeMines
-tag @a remove TridentDone
-tag @a remove TridentThrower
-tag @a remove TridentHit
-tag @a remove MasonTag
+tag @e remove Host
+#### Number system
+tag @a remove numbered
+#### Werwolf system
+tag @e remove WereWolf
+tag @e remove NonWolf
+tag @e remove Cat
+#### Give item
+tag @e remove MWLitem
+#### Cat system
+tag @e remove StrayBullet
+#### Fox system
+tag @e remove SeeredFox
+tag @e remove SeerFox
+tag @e remove DetectDeath
+#### Mason system
+tag @e remove MasonTag
+#### Trident system
+tag @e remove TridentDone
+tag @e remove TridentThrower
+tag @e remove TridentHit
+tag @e remove TridentDeadFoxbyWolf
+#### Conduit system
+tag @e remove SetConduit
+tag @e remove ExplodeConduit
+#### Honey block system
+tag @e remove DetectPlayer
+tag @e remove JustBorn
+#### Snowball system
+tag @e remove DetectSnowballMove
+tag @e remove DetectSnowballUnexist

@@ -8,4 +8,4 @@
 
 ## Detect setting lantern
 function mwj:system/ongame/soul_lantern/give_soul_lantern
-kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:lantern",tag:{Tags:"SoulLantern"}}},sort=nearest,limit=1]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:lantern",tag:{Tags:"MWLitem"}}},sort=nearest,limit=1]

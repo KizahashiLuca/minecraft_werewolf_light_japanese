@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"soul_lantern",
+          "name":"lantern",
           "functions":[
             {
               "function":"minecraft:set_name",
@@ -18,12 +18,13 @@
               "entity" : "this",
               "replace": true,
               "lore":[
-                ["",{"text":"Shift+Qキー同時押しで","color":"white","bold":false,"italic":false}],
-                ["",{"translate":"(%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false},{"text":" にテレポート","color":"white","bold":false,"italic":false}]
+                ["",{"text":"テレポート先設定方法 : ","color":"white","bold":false,"italic":false}],
+                ["",{"translate":"  (%s)+(%s)キーで設定","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
+                ["",{"text":"  設定以後 : テレポート先設定完了・魂のランタン配布","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:\"UnsetStorage\"}"
+              "tag":"{Tags:\"MWLitem\"}"
             }
           ]
         }

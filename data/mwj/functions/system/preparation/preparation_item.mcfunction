@@ -6,6 +6,11 @@
 ## Version: v.1.1
 ###############################
 
+## Give Common Items
+execute as @a[team=Player] run loot replace entity @s hotbar.0 1 loot mwj:item/common/bow
+execute as @a[team=Player] run loot replace entity @s hotbar.1 1 loot mwj:item/common/arrow
+execute as @a[team=Player] run loot replace entity @s hotbar.2 1 loot mwj:item/common/redstone_torch
+
 ## Set TempVariable (Kind of Items)
 scoreboard players set #MWL TempVariable 0
 execute if score #MWL AddedStick matches 1 run scoreboard players add #MWL TempVariable 1
@@ -36,7 +41,5 @@ scoreboard players operation #MWL TENS_DIGIT /= #MWL TempVariable
 execute if score #MWL TENS_DIGIT matches 1.. as @a[team=Player] run function mwj:system/preparation/item/branch/branch_tens_digit
 execute if score #MWL TENS_DIGIT matches 0 run function mwj:system/preparation/item/branch/branch_ones_digit
 
-## Give Common Items
-execute as @a[team=Player] run function mwj:system/preparation/item/common/bow
-execute as @a[team=Player] run function mwj:system/preparation/item/common/arrow
-execute as @a[team=Player] run function mwj:system/preparation/item/common/torch
+## Remove tag
+tag @a remove MWLitem

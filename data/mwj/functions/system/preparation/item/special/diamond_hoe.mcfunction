@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:arrow{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+## Give item
+loot give @s loot mwj:item/special/diamond_hoe
+
+## Add tag
+tag @s add MWLitem

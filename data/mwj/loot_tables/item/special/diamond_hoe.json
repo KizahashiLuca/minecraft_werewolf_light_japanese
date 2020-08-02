@@ -1,0 +1,27 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"diamond_hoe",
+          "functions":[
+            {
+              "function":"minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore":[
+                ["",{"text":"ダメージ増加 ⅭⅭ","color":"gray","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:1,Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

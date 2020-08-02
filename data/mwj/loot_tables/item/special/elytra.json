@@ -1,0 +1,20 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"elytra",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"trident",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"トライデント","color":"aqua","italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore":[
+                ["",{"text":"召雷","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  投擲","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  効果範囲 : 半径4.0m","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{Damage:248,HideFlags:1,Tags:\"MWLitem\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

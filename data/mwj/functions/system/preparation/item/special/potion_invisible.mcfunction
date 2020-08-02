@@ -6,4 +6,8 @@
 ## Version: v.1.1
 ###############################
 
-give @s minecraft:potion{display:{Name:'"\\u00A7r\\u00A7f透明化のポーション"'},CustomPotionEffects:[{Id:14b,Duration:600}],CustomPotionColor:16777215} 1
+## Give item
+loot give @s loot mwj:item/special/potion_invisible
+
+## Add tag
+tag @s add MWLitem

@@ -21,10 +21,10 @@ execute as @a[team=Player,scores={CurrentRole=1..4,DeathCount=1}] run scoreboard
 execute as @a[team=Player,scores={CurrentRole=20..40,DeathCount=1}] run scoreboard players remove #MWL WHITE 1
 
 ## Detect Dropping Torch
-execute as @a[team=Player,scores={RemovedTorch=1..}] run function mwj:system/preparation/item/common/torch
+execute as @a[team=Player,scores={RemovedTorch=1..}] run loot give @s loot mwj:item/common/redstone_torch
 scoreboard players set @a[team=Player,scores={RemovedTorch=1}] RemovedTorch 0
 scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
-kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{display:{Name:'"\\u00A7r\\u00A7b杖"',Lore:['"\\u00a7r\\u00A7f捨てることで役職利用可能"']},Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:"MWLitem"}}}]
 
 ## Detect snowball
 execute if score #MWL AddedSnowball matches 1 run function mwj:system/ongame/snowball/snowball_main

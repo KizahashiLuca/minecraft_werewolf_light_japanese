@@ -14,7 +14,7 @@ execute store result score @s HoneyBottleCount run clear @s minecraft:honey_bott
 clear @s[scores={HoneyBottleCount=4..}] minecraft:honey_bottle 4
 
 ## Give honey_block
-give @s[scores={HoneyBottleCount=4..}] minecraft:honey_block 1
+loot give @s loot mwj:item/special/honey_block
 
 ## Loop
 execute as @s[nbt={Inventory:[{id:"minecraft:honey_bottle"}]}] run function mwj:system/ongame/honey_block/clear_honey_bottle
