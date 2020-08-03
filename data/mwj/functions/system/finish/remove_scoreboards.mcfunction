@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Remove Variables for Game
@@ -36,21 +36,18 @@ scoreboard objectives remove NumOfSages
 scoreboard objectives remove NumOfWhWolves
 scoreboard objectives remove NumOfFanatics
 scoreboard objectives remove NumOfImmorals
-## Remove Variables for Mason Number
-scoreboard objectives remove MASON_PAIR
-scoreboard objectives remove MASON_PAIR_NUM
 ## Remove Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives remove RoleOfNum
 scoreboard objectives remove DropTorch
 scoreboard objectives remove RemovedTorch
-scoreboard objectives remove DONE
+scoreboard objectives remove RoleDone
 scoreboard objectives remove 10
 scoreboard objectives remove PageNumer
 scoreboard objectives remove PageDenom
 scoreboard objectives remove TurnPageNum
 scoreboard objectives remove TurnPageMax
-scoreboard objectives remove RoleTarget
+scoreboard objectives remove TargetOfRole
 scoreboard objectives remove TurnPageRight
 scoreboard objectives remove TurnPageLeft
 scoreboard objectives remove RoleTrigger
@@ -58,16 +55,14 @@ scoreboard objectives remove RoleTrigger
 scoreboard objectives remove KilledBySeer
 scoreboard objectives remove FoxSpawnSecond
 scoreboard objectives remove FoxSpawnTick
-scoreboard objectives remove RESPAWN
+scoreboard objectives remove RespawnTime
 #### Mason
-scoreboard objectives remove MASON_PAIR
-scoreboard objectives remove MASON_PAIR_NUM
+scoreboard objectives remove MasonPair
 #### Thief
-scoreboard objectives remove STEALER
-scoreboard objectives remove STOLEN
-scoreboard objectives remove STEAL_NUM
-scoreboard objectives remove STEAL_TARGET
-scoreboard objectives remove STEAL_FLAG
+scoreboard objectives remove RoleStolen
+scoreboard objectives remove NumberOfStolen
+scoreboard objectives remove TargetOfStolen
+scoreboard objectives remove FlagOfThiefLog
 scoreboard objectives remove ThiefStealSecond
 scoreboard objectives remove ThiefStealTick
 #### Cat
@@ -75,7 +70,7 @@ scoreboard objectives remove KilledByCat
 ## Remove Variables for Items
 scoreboard objectives remove SneakTime
 #### Snowball
-scoreboard objectives remove SNOWBALL
+scoreboard objectives remove NumberOfSnowball
 #### Trident
 scoreboard objectives remove ThrowTrident
 scoreboard objectives remove KilledByTrident
@@ -94,13 +89,13 @@ scoreboard objectives remove DropLantern
 
 ## Remove Variables for Kill Log
 scoreboard objectives remove DeathCount
-scoreboard objectives remove KILLER
-scoreboard objectives remove VICTIM
-scoreboard objectives remove KILLER_NUM
-scoreboard objectives remove VICTIM_NUM
-scoreboard objectives remove VICTIM_FLAG
-scoreboard objectives remove KILLER_FLAG
-scoreboard objectives remove KILLLOG_NUM
+scoreboard objectives remove NumberOfKiller
+scoreboard objectives remove NumberOfVictim
+scoreboard objectives remove CountOfKiller
+scoreboard objectives remove CountOfVictim
+scoreboard objectives remove FlagOfVictim
+scoreboard objectives remove FlagOfKiller
+scoreboard objectives remove NumberOfKillLog
 scoreboard objectives remove KillLogOfFox
 scoreboard objectives remove KillLogOfCat
 scoreboard objectives remove KillLogOfTrident

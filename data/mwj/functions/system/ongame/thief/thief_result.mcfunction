@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Send a Common Message
@@ -65,21 +65,21 @@ tag @s[scores={DeathCount=0,CurrentRole=40}] remove Cat
 tag @s[scores={DeathCount=0}] add NonWolf
 
 ## Store Recent Time
-scoreboard players set @s STOLEN 1
-scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] STEAL_NUM = #MWL STEAL_NUM
-scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] STEAL_TARGET = @s NUM
+scoreboard players set @s RoleStolen 1
+scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] NumberOfStolen = #MWL NumberOfStolen
+scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] TargetOfStolen = @s NUM
 scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] ThiefStealSecond = #MWL Second
 scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] ThiefStealTick = #MWL Tick
-scoreboard players add #MWL STEAL_NUM 1
+scoreboard players add #MWL NumberOfStolen 1
 
 ## Thief Role Done
-execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] DONE = @s DONE
-execute as @s[scores={DeathCount=0,CurrentRole=35}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] DONE 0
-execute as @s[scores={DeathCount=0,CurrentRole=40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] DONE = @s DONE
-execute as @s[scores={DeathCount=1}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] DONE 0
+execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
+execute as @s[scores={DeathCount=0,CurrentRole=35}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone 0
+execute as @s[scores={DeathCount=0,CurrentRole=40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
+execute as @s[scores={DeathCount=1}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone 0
 
 ## Reset Thief Trigger
-scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleTarget 0
+scoreboard players reset @p[scores={CurrentRole=35,RoleOfNum=1}] TargetOfRole
 
 ## Exchange Role
 execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole = @s CurrentRole
@@ -95,9 +95,9 @@ execute as @s[scores={DeathCount=0,PrevRole=1..4}] run tellraw @p[scores={Curren
 execute as @s[scores={DeathCount=0,PrevRole=11}] run tellraw @p[scores={CurrentRole=11,RoleOfNum=1}] ["",{"text":"    羽衣狐は ","color":"white"},{"selector":"@a[scores={CurrentRole=10}]","color":"dark_purple"},{"text":" です。","color":"white"}]
 
 ## Send a Message of masons
-execute as @s[scores={DeathCount=0,PrevRole=21}] run scoreboard players operation @p[scores={CurrentRole=21,RoleOfNum=1}] MASON_PAIR = @s MASON_PAIR
-scoreboard players set @s[scores={DeathCount=0,PrevRole=21}] MASON_PAIR 0
-execute as @a[scores={CurrentRole=21}] if score @s MASON_PAIR = @p[scores={CurrentRole=21,RoleOfNum=1}] MASON_PAIR run tag @s add MasonTag
+execute as @s[scores={DeathCount=0,PrevRole=21}] run scoreboard players operation @p[scores={CurrentRole=21,RoleOfNum=1}] MasonPair = @s MasonPair
+scoreboard players reset @s[scores={DeathCount=0,PrevRole=21}] MasonPair
+execute as @a[scores={CurrentRole=21}] if score @s MasonPair = @p[scores={CurrentRole=21,RoleOfNum=1}] MasonPair run tag @s add MasonTag
 tellraw @p[scores={CurrentRole=21,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[tag=MasonTag,scores={CurrentRole=21}]","color":"dark_green"},{"text":" です。","color":"white"}]
 tag @a remove MasonTag
 

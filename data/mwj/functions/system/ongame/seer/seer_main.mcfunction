@@ -3,32 +3,32 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Set Scoreboard
 scoreboard players set @s RoleOfNum 1
-scoreboard players set @s RoleTarget 0
+scoreboard players reset @s TargetOfRole
 
 ## Detect Dropping Redstone Torch
-execute as @s[scores={DropTorch=1,DONE=0}] run function mwj:system/ongame/seer/seer_trigger
-execute as @s[scores={DropTorch=1,DONE=1}] run function mwj:system/ongame/roles/message_error
+execute as @s[scores={DropTorch=1,RoleDone=0}] run function mwj:system/ongame/seer/seer_trigger
+execute as @s[scores={DropTorch=1,RoleDone=1}] run function mwj:system/ongame/roles/message_error
 
 ## Detect Page Role
-execute as @s[scores={TurnPageRight=1,DONE=0}] run function mwj:system/ongame/seer/seer_message
-execute as @s[scores={TurnPageLeft=1,DONE=0}] run function mwj:system/ongame/seer/seer_message
-execute as @s[scores={TurnPageRight=1,DONE=1}] run function mwj:system/ongame/roles/message_error
-execute as @s[scores={TurnPageLeft=1,DONE=1}] run function mwj:system/ongame/roles/message_error
+execute as @s[scores={TurnPageRight=1,RoleDone=0}] run function mwj:system/ongame/seer/seer_message
+execute as @s[scores={TurnPageLeft=1,RoleDone=0}] run function mwj:system/ongame/seer/seer_message
+execute as @s[scores={TurnPageRight=1,RoleDone=1}] run function mwj:system/ongame/roles/message_error
+execute as @s[scores={TurnPageLeft=1,RoleDone=1}] run function mwj:system/ongame/roles/message_error
 
 ## Send a Result to Seer
-execute as @s[scores={RoleTrigger=1..10,DONE=0}] run function mwj:system/ongame/roles/calculation
-execute as @s[scores={RoleTrigger=1..10,DONE=1}] run function mwj:system/ongame/roles/message_error
+execute as @s[scores={RoleTrigger=1..10,RoleDone=0}] run function mwj:system/ongame/roles/calculation
+execute as @s[scores={RoleTrigger=1..10,RoleDone=1}] run function mwj:system/ongame/roles/message_error
 
 ## Send a Result Message to Seer
-execute as @a[team=Player] if score @s NUM = @p[scores={CurrentRole=25,RoleOfNum=1,DONE=0}] RoleTarget run function mwj:system/ongame/seer/seer_result
+execute as @a[team=Player] if score @s NUM = @p[scores={CurrentRole=25,RoleOfNum=1,RoleDone=0}] TargetOfRole run function mwj:system/ongame/seer/seer_result
 
 ## Reset Scoreboard
-scoreboard players set @s RoleOfNum 0
+scoreboard players reset @s RoleOfNum
 
 ## Enable Seer Trigger
 scoreboard players reset @s TurnPageRight
@@ -39,4 +39,4 @@ scoreboard players enable @s TurnPageLeft
 scoreboard players enable @s RoleTrigger
 
 ## Death
-scoreboard players set @s[scores={DeathCount=1}] DONE 1
+scoreboard players set @s[scores={DeathCount=1}] RoleDone 1

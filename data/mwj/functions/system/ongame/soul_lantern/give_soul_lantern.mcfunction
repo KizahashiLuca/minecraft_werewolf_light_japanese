@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Detect lantern set
@@ -18,6 +18,11 @@ data modify storage mwj:teleporter Teleporter.Temp.Pos set from entity @s Pos
 loot spawn ~ ~ ~ loot mwj:item/special/soul_lantern
 data modify storage mwj:teleporter Teleporter.Temp.Message set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{Tags:["MWLitem","UnsetStorage"]}}},sort=nearest,limit=1] Item.tag.display.Lore[2]
 data remove entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{Tags:["MWLitem","UnsetStorage"]}}},sort=nearest,limit=1] Item.tag.Tags[1]
+
+## Clear scoreboard
+scoreboard players reset @a TeleporterPosX
+scoreboard players reset @a TeleporterPosY
+scoreboard players reset @a TeleporterPosZ
 
 ## Merge data storage
 data modify storage mwj:teleporter Teleporter.Store append from storage mwj:teleporter Teleporter.Temp

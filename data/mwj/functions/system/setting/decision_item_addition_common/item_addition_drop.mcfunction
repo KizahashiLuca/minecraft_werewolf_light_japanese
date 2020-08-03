@@ -6,6 +6,6 @@
 ## Version: v.1.2.1
 ###############################
 
-## Set Normal WereWolf Mode
-scoreboard players set #MWL GameMode 2
-function mwj:system/setting/decision_game_mode/change_to_game_mode
+## Detect Dropping
+kill @s
+function mwj:system/setting/decision_item_addition_common/set_scoreboard

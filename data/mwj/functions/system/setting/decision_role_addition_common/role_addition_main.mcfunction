@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Process the timer system
@@ -23,8 +23,7 @@ execute if score #MWL Phase matches 91 run function mwj:system/setting/decision_
 execute if score #MWL Phase matches 92 run function mwj:system/setting/decision_role_addition3/role_addition3_dropped
 
 ## Kill a dropped item
-execute as @e[type=minecraft:item,scores={ThrowItem=1}] run kill @s
-execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/decision_role_addition_common/set_scoreboard
+execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/decision_role_addition_common/role_addition_drop
 
 ## Detect selected items
 scoreboard players set @p[tag=Host] SelectItem1 1

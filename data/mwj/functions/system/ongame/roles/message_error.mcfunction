@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Error Message
@@ -13,5 +13,5 @@ tellraw @s ["",{"text":"    あなたの役職は既に使用できません","c
 tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
-scoreboard players set @s DropTorch 0
+scoreboard players reset @s DropTorch
 scoreboard players reset @s RoleTrigger

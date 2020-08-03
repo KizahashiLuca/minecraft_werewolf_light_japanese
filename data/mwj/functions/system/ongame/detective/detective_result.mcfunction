@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Set Scoreboard
@@ -31,13 +31,13 @@ execute as @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=181..}] run tellraw @p[score
 execute as @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..180}] run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は殺害されています。","color":"white"}]
 
 ## Send a Message that Killer is Known
-execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..120}] as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は ","color":"white"},{"selector":"@s","color":"white","bold":true},{"text":" です。","color":"white"}]
+execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..120}] as @a if score @s NUM = @p[scores={TEMP2=1}] NumberOfKiller run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は ","color":"white"},{"selector":"@s","color":"white","bold":true},{"text":" です。","color":"white"}]
 
 ## Send a Message that Killer is Unknown
 execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=121..180}] run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は不明です。","color":"white"}]
 
 ## Send a Message of Victim's role
-execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..60}] as @a if score @s NUM = @p[scores={TEMP2=1}] KILLER run function mwj:system/ongame/detective/detective_role_result
+execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..60}] as @a if score @s NUM = @p[scores={TEMP2=1}] NumberOfKiller run function mwj:system/ongame/detective/detective_role_result
 
 ## Send a Common Message
 tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"----------------------------------\n","color":"white"}]
@@ -47,7 +47,7 @@ scoreboard objectives remove TEMP1
 scoreboard objectives remove TEMP2
 
 ## Detective Role Done
-scoreboard players set @p[scores={CurrentRole=31,RoleOfNum=1}] DONE 1
+scoreboard players set @p[scores={CurrentRole=31,RoleOfNum=1}] RoleDone 1
 
 ## Reset Detective Trigger
-scoreboard players set @p[scores={CurrentRole=31,RoleOfNum=1}] RoleTarget 0
+scoreboard players reset @p[scores={CurrentRole=31,RoleOfNum=1}] TargetOfRole

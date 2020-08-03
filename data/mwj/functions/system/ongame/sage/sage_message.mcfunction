@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Detect Page Role
@@ -17,34 +17,34 @@ scoreboard players operation @s TurnPageNum = @s TurnPageTmp
 scoreboard objectives remove TurnPageTmp
 
 ## Set Scoreboard
-scoreboard players operation @s RoleTarget = @s TurnPageNum
-scoreboard players operation @s RoleTarget *= #MWL 10
+scoreboard players operation @s TargetOfRole = @s TurnPageNum
+scoreboard players operation @s TargetOfRole *= #MWL 10
 
 ## Send a Common Message
 tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @s ["",{"text":"  賢者の予言を誰に行う？","color":"white"}]
 
 ## Send Triggers
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 1"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 2"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 3"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 4"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 5"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 6"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 7"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 8"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 9"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
-scoreboard players add @s RoleTarget 1
-execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] RoleTarget = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 10"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 1"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 2"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 3"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 4"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 5"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 6"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 7"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 8"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 9"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
+scoreboard players add @s TargetOfRole 1
+execute as @a if score @p[scores={CurrentRole=27,RoleOfNum=1}] TargetOfRole = @s NUM unless score @p[scores={CurrentRole=27,RoleOfNum=1}] NUM = @s NUM run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" > ","color":"white"},{"text":"賢者の予言","clickEvent":{"action":"run_command","value":"/trigger RoleTrigger set 10"},"hoverEvent":{"action":"show_text","value":[{"selector":"@s"},{"text":" を賢者の予言"}]},"color":"green","bold":true}]
 
 ## Send Page Role
 scoreboard players operation @s PageNumer = @s TurnPageNum
@@ -57,5 +57,7 @@ execute if score #MWL TurnPageMax matches 1.. run tellraw @s ["",{"text":"    ",
 tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Reset Scoreboard
-scoreboard players set @s RoleTarget 0
-scoreboard players set @s DropTorch 0
+scoreboard players reset @s PageNumer
+scoreboard players reset @s PageDenom
+scoreboard players reset @s TargetOfRole
+scoreboard players reset @s DropTorch

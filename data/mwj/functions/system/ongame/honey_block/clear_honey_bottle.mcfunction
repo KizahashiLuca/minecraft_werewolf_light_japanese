@@ -3,11 +3,11 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Set scoreboard
-scoreboard players set @s HoneyBottleCount 0
+scoreboard players reset @s HoneyBottleCount
 
 ## Clear honey_bottle
 execute store result score @s HoneyBottleCount run clear @s minecraft:honey_bottle 0

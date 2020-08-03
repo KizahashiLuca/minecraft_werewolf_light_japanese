@@ -3,11 +3,11 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Store Kill Flag
-scoreboard players set @s KILLER_FLAG 1
+scoreboard players set @s FlagOfKiller 1
 
 ## Count Number of Killer
-scoreboard players add #MWL KILLER_NUM 1
+scoreboard players add #MWL CountOfKiller 1

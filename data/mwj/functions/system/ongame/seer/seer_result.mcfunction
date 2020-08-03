@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Send a Common Message
@@ -34,7 +34,7 @@ execute as @s[scores={CurrentRole=11..40}] run tellraw @p[scores={CurrentRole=25
 tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Seer Role Done
-scoreboard players set @p[scores={CurrentRole=25,RoleOfNum=1}] DONE 1
+scoreboard players set @p[scores={CurrentRole=25,RoleOfNum=1}] RoleDone 1
 
 ## Reset Seer Trigger
-scoreboard players set @p[scores={CurrentRole=25,RoleOfNum=1}] RoleTarget 0
+scoreboard players reset @p[scores={CurrentRole=25,RoleOfNum=1}] TargetOfRole

@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Send a Display of Breakdown of Roles
@@ -29,7 +29,7 @@ tellraw @a ["",{"text":"\n    ","color":"white"},{"text":"生 存 者","color":"
 
 ## Send a Thief Log
 scoreboard players set #MWL TempVariable 5
-scoreboard players set #MWL STEAL_NUM 1
+scoreboard players set #MWL NumberOfStolen 1
 execute if score #MWL NumOfThieves matches 1.. run tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 execute if score #MWL NumOfThieves matches 1.. run tellraw @a ["",{"text":"  怪盗記録","color":"white"}]
 execute if score #MWL NumOfThieves matches 1.. run function mwj:system/finish/thief_log
@@ -39,8 +39,8 @@ tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 
 ## Send a Kill Log
 tellraw @a ["",{"text":"  死亡記録","color":"white"}]
-scoreboard players operation #MWL KILLER_NUM = #MWL KILLLOG_NUM
-scoreboard players set #MWL KILLLOG_NUM 1
+scoreboard players operation #MWL CountOfKiller = #MWL NumberOfKillLog
+scoreboard players set #MWL NumberOfKillLog 1
 scoreboard players set #MWL TempVariable 5
 scoreboard players operation #MWL Tick *= #MWL TempVariable
 

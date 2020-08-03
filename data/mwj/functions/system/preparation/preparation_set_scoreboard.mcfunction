@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Add Variables for Game
@@ -16,19 +16,18 @@ scoreboard objectives add PURPLE dummy
 scoreboard objectives add RoleOfNum dummy
 ## Add Variables for Kill Log
 scoreboard objectives add DeathCount deathCount
-scoreboard objectives add KILLER dummy
-scoreboard objectives add VICTIM dummy
-scoreboard objectives add KILLER_NUM dummy
-scoreboard objectives add VICTIM_NUM dummy
-scoreboard objectives add VICTIM_FLAG dummy
-scoreboard objectives add KILLER_FLAG dummy
-scoreboard objectives add KILLLOG_NUM dummy
+scoreboard objectives add NumberOfKiller dummy
+scoreboard objectives add NumberOfVictim dummy
+scoreboard objectives add CountOfKiller dummy
+scoreboard objectives add CountOfVictim dummy
+scoreboard objectives add FlagOfVictim dummy
+scoreboard objectives add FlagOfKiller dummy
+scoreboard objectives add NumberOfKillLog dummy
 scoreboard objectives add KillLogOfFox dummy
 scoreboard objectives add KillLogOfCat dummy
 scoreboard objectives add KillLogOfTrident dummy
 ## Add Variables for Mason Number
-scoreboard objectives add MASON_PAIR dummy
-scoreboard objectives add MASON_PAIR_NUM dummy
+scoreboard objectives add MasonPair dummy
 ## Add Variables for Item
 scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
@@ -61,27 +60,26 @@ scoreboard players set #MWL WHITE 0
 scoreboard players set #MWL BLACK 0
 scoreboard players set #MWL PURPLE 0
 ## Set Variables for Timer of Kill Log
-scoreboard players set @a Second 0
-scoreboard players set @a Tick 0
+scoreboard players reset @a Second
+scoreboard players reset @a Tick
 ## Set Variables for Seer/Medium/Detective/Cat
-scoreboard players set @a RoleOfNum 0
+scoreboard players reset @a RoleOfNum
 scoreboard players set #MWL RoleOfNum 0 
 ## Set Variables for Kill Log
 scoreboard players set @a DeathCount 0
-scoreboard players set @a KILLER 0
-scoreboard players set @a VICTIM 0
-scoreboard players set @a VICTIM_FLAG 0
-scoreboard players set @a KILLER_FLAG 0
-scoreboard players set @a KillLogOfFox 0
-scoreboard players set @a KillLogOfCat 0
-scoreboard players set @a KillLogOfTrident 0
-scoreboard players set #MWL KILLER_NUM 0
-scoreboard players set #MWL VICTIM_NUM 0
-scoreboard players set #MWL KILLLOG_NUM 1
+scoreboard players reset @a NumberOfKiller
+scoreboard players reset @a NumberOfVictim
+scoreboard players reset @a FlagOfVictim
+scoreboard players reset @a FlagOfKiller
+scoreboard players reset @a KillLogOfFox
+scoreboard players reset @a KillLogOfCat
+scoreboard players reset @a KillLogOfTrident
+scoreboard players set #MWL CountOfKiller 0
+scoreboard players set #MWL CountOfVictim 0
+scoreboard players set #MWL NumberOfKillLog 1
 ## Set Variables for Mason Number
-scoreboard players set @a MASON_PAIR 0
-scoreboard players set #MWL MASON_PAIR 1
-scoreboard players set #MWL MASON_PAIR_NUM 0
+scoreboard players set @a MasonPair 0
+scoreboard players set #MWL MasonPair 1
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add #MWL NUM 1

@@ -6,7 +6,6 @@
 ## Version: v.1.2.1
 ###############################
 
-## Set Seer
-execute if score #MWL AddedRole matches 1.. run scoreboard players add #MWL AddedSeer 1
-execute if score #MWL AddedRole matches 1.. run scoreboard players remove #MWL AddedRole 1
+## Detect Dropping
+kill @s
 function mwj:system/setting/decision_role_addition_common/set_scoreboard

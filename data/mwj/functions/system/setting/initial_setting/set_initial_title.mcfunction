@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Title Hiding Start
@@ -13,7 +13,7 @@ title @a subtitle ["",{"text":"Setting Start","color":"white","bold":true}]
 
 ## Send a Message Added Role to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.2","color":"red","bold":true}]
+tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.2.1","color":"red","bold":true}]
 tellraw @a ["",{"text":"  - Minecraft version 1.","color":"green","bold":true},{"score":{"name":"#MWL","objective":"Version"},"color":"green","bold":true}]
 tellraw @a ["",{"text":" ","color":"white"},{"text":"Setting Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]

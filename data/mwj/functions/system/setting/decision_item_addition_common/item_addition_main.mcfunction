@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Process the timer system
@@ -21,8 +21,7 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_st
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:"MWLitem"}}}] ThrowItem 1
 
 ## Kill a dropped item
-execute as @e[type=minecraft:item,scores={ThrowItem=1}] run kill @s
-execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/decision_item_addition_common/set_scoreboard
+execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/decision_item_addition_common/item_addition_drop
 
 ## Detect selected items
 scoreboard players set @p[tag=Host] SelectItem1 1

@@ -3,7 +3,7 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Timer System
@@ -22,7 +22,7 @@ execute as @a[team=Player,scores={CurrentRole=20..40,DeathCount=1}] run scoreboa
 
 ## Detect Dropping Torch
 execute as @a[team=Player,scores={RemovedTorch=1..}] run loot give @s loot mwj:item/common/redstone_torch
-scoreboard players set @a[team=Player,scores={RemovedTorch=1}] RemovedTorch 0
+scoreboard players reset @a[team=Player,scores={RemovedTorch=1..}] RemovedTorch
 scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:"MWLitem"}}}]
 
@@ -46,8 +46,8 @@ execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongam
 execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
 
 ## Immoralist System
-execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,DONE=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/immoral_main
-execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,DONE=0}] run function mwj:system/ongame/immoral/immoral_dead
+execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,RoleDone=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/immoral_main
+execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/immoral_dead
 
 ## Seer System
 execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/seer_main
@@ -77,8 +77,8 @@ function mwj:system/ongame/kill_log/kill_log_main
 execute unless entity @p[tag=MWLtest] run function mwj:system/finish/decide_winner/decide_winner_main
 
 ## Torch system
-scoreboard players set @a[team=Player] DropTorch 0
-scoreboard players set @a[team=Player] SneakTime 0
+scoreboard players reset @a[team=Player] DropTorch
+scoreboard players reset @a[team=Player] SneakTime
 
 ## Exit This Game
 execute if score #MWL Phase matches 0 run function mwj:system/finish/end_game

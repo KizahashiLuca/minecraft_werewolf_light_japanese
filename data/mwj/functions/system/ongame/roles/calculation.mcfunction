@@ -3,10 +3,10 @@
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
 ## Date   : 03 Aug 2020
-## Version: v.1.2
+## Version: v.1.2.1
 ###############################
 
 ## Calculate Scoreboard
-scoreboard players operation @s RoleTarget = @s TurnPageNum
-scoreboard players operation @s RoleTarget *= #MWL 10
-scoreboard players operation @s RoleTarget += @s RoleTrigger
+scoreboard players operation @s TargetOfRole = @s TurnPageNum
+scoreboard players operation @s TargetOfRole *= #MWL 10
+scoreboard players operation @s TargetOfRole += @s RoleTrigger
