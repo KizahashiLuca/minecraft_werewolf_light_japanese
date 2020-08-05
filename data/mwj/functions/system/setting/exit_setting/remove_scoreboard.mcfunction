@@ -7,7 +7,6 @@
 ###############################
 
 ## Remove Variables for Setting Added Role
-scoreboard objectives remove PrevAddedRole
 scoreboard objectives remove PrevAddedWolf
 scoreboard objectives remove PrevAddedMadman
 scoreboard objectives remove PrevAddedVilla
@@ -29,6 +28,8 @@ scoreboard objectives remove AddedRole3
 scoreboard objectives remove AddedRole4
 scoreboard objectives remove AddedRole5
 scoreboard objectives remove SelectNumber
+## Remove Variables for Setting Dummy Role
+scoreboard objectives remove PrevSetDummyRole
 ## Remove Variables for Setting Hide Time
 scoreboard objectives remove HideTime
 scoreboard objectives remove PrevHideTime
@@ -45,6 +46,7 @@ scoreboard objectives remove SelectCancel
 scoreboard objectives remove SelectReset
 scoreboard objectives remove SelectOkay
 scoreboard objectives remove SelectDecide
+scoreboard objectives remove ChosenDummyRole
 scoreboard objectives remove ChosenHideTime
 scoreboard objectives remove ChosenGlowTime
 scoreboard objectives remove ChosenGameTime

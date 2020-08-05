@@ -136,6 +136,8 @@ scoreboard objectives remove AddedHoneyBlock
 scoreboard objectives remove AddedLantern
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
+## Remove Variables for Setting Dummy Role
+scoreboard objectives remove SetDummyRole
 ## Remove Variables for Hide Time
 scoreboard objectives remove ChangeHideTime
 ## Remove Variables for Glow Time

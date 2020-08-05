@@ -27,54 +27,54 @@ scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:"MWLitem"}}}]
 
 ## Detect snowball
-execute if score #MWL AddedSnowball matches 1 run function mwj:system/ongame/snowball/snowball_main
+execute if score #MWL AddedSnowball matches 1 run function mwj:system/ongame/snowball/main
 
 ## Detect trident
-execute if score #MWL AddedTrident matches 1 run function mwj:system/ongame/trident/trident_main
+execute if score #MWL AddedTrident matches 1 run function mwj:system/ongame/trident/main
 
 ## Detect conduit
-execute if score #MWL AddedConduit matches 1 run function mwj:system/ongame/conduit/conduit_main
+execute if score #MWL AddedConduit matches 1 run function mwj:system/ongame/conduit/main
 
 ## Detect honey block
-execute if score #MWL Version matches 15.. if score #MWL AddedHoneyBlock matches 1 run function mwj:system/ongame/honey_block/honey_block_main
+execute if score #MWL Version matches 15.. if score #MWL AddedHoneyBlock matches 1 run function mwj:system/ongame/honey_block/main
 
 ## Detect soul lantern
-execute if score #MWL Version matches 16.. if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/soul_lantern_main
+execute if score #MWL Version matches 16.. if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/main
 
 ## Fox System
-execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongame/fox/fox_main
-execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/fox_seered
+execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongame/fox/main
+execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/detect_seered
 
 ## Immoralist System
-execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,RoleDone=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/immoral_main
-execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/immoral_dead
+execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,RoleDone=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/main
+execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/detect_dead
 
 ## Seer System
-execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/seer_main
+execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/main
 
 ## Fake Seer System
-execute as @a[team=Player,scores={CurrentRole=26}] run function mwj:system/ongame/fake_seer/fake_seer_main
+execute as @a[team=Player,scores={CurrentRole=26}] run function mwj:system/ongame/fake_seer/main
 
 ## Sage System
-execute as @a[team=Player,scores={CurrentRole=27}] run function mwj:system/ongame/sage/sage_main
+execute as @a[team=Player,scores={CurrentRole=27}] run function mwj:system/ongame/sage/main
 
 ## Medium System
-execute as @a[team=Player,scores={CurrentRole=28}] run function mwj:system/ongame/medium/medium_main
+execute as @a[team=Player,scores={CurrentRole=28}] run function mwj:system/ongame/medium/main
 
 ## Detective System
-execute as @a[team=Player,scores={CurrentRole=31}] run function mwj:system/ongame/detective/detective_main
+execute as @a[team=Player,scores={CurrentRole=31}] run function mwj:system/ongame/detective/main
 
 ## Thief System
-execute as @a[team=Player,scores={CurrentRole=35}] run function mwj:system/ongame/thief/thief_main
+execute as @a[team=Player,scores={CurrentRole=35}] run function mwj:system/ongame/thief/main
 
 ## Cat System
-execute as @a[team=Player,scores={CurrentRole=40}] run function mwj:system/ongame/cat/cat_main
+execute as @a[team=Player,scores={CurrentRole=40}] run function mwj:system/ongame/cat/main
 
 ## Kill Log System
-function mwj:system/ongame/kill_log/kill_log_main
+function mwj:system/ongame/kill_log/main
 
 ## Decide Winner
-execute unless entity @p[tag=MWLtest] run function mwj:system/finish/decide_winner/decide_winner_main
+execute unless entity @p[tag=MWLtest] run function mwj:system/finish/decide_winner/main
 
 ## Torch system
 scoreboard players reset @a[team=Player] DropTorch
