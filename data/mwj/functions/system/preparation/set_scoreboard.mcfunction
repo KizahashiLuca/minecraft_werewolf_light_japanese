@@ -32,6 +32,14 @@ scoreboard objectives add MasonPair dummy
 scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
 scoreboard objectives add TEMP_DIGIT dummy
+## Add Variables for randomizer
+scoreboard objectives add 11 dummy
+scoreboard objectives add DummyRoleFlag dummy
+scoreboard objectives add RandomSeed dummy
+scoreboard objectives add RandomCount dummy
+scoreboard objectives add RandomAnswer dummy
+scoreboard objectives add RandomModder dummy
+scoreboard objectives add RandomMultiplier dummy
 
 ## CurrentRole - breakdown
 ##   1 : Wolf 人狼
@@ -52,9 +60,9 @@ scoreboard objectives add TEMP_DIGIT dummy
 
 ## Set Variables for Game
 scoreboard players set @a CurrentRole 0
-scoreboard players set @a[team=Player] NUM 1
+scoreboard players set @a[team=Player] NumOfPlayers 1
 scoreboard players set #MWL CurrentRole 1
-scoreboard players set #MWL NUM 0
+scoreboard players set #MWL NumOfPlayers 0
 scoreboard players set #MWL WINNER 0
 scoreboard players set #MWL WHITE 0
 scoreboard players set #MWL BLACK 0
@@ -80,11 +88,21 @@ scoreboard players set #MWL NumberOfKillLog 1
 ## Set Variables for Mason Number
 scoreboard players set @a MasonPair 0
 scoreboard players set #MWL MasonPair 1
+## Set Variables for randomizer
+scoreboard players set #MWL 11 11
+scoreboard players set #MWL DummyRoleFlag 0
+scoreboard players set #MWL RandomSeed 0
+scoreboard players set #MWL RandomCount 10
+scoreboard players set #MWL RandomAnswer 0
+scoreboard players set #MWL RandomModder 2147483647
+scoreboard players set #MWL RandomMultiplier 48271
+execute if score #MWL SetDummyRole matches 1 run function mwj:system/preparation/random_generator/initialize
 
 ## RE-Count Players
-execute as @a[team=Player] run scoreboard players add #MWL NUM 1
+execute as @a[team=Player] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NUM 15
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 10
 
 ## Set dummy role
-execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NUM 1
+scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
+execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1

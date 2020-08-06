@@ -29,11 +29,11 @@ execute if score #MWL AddedCrossbow matches 1 run scoreboard players add #MWL Te
 execute if score #MWL AddedHoneyBlock matches 1 run scoreboard players add #MWL TempVariable 1
 execute if score #MWL AddedLantern matches 1 run scoreboard players add #MWL TempVariable 1
 ## Calculate ones digit
-scoreboard players operation #MWL ONES_DIGIT = #MWL NUM
+scoreboard players operation #MWL ONES_DIGIT = #MWL NumOfPlayers
 scoreboard players remove #MWL ONES_DIGIT 1
 scoreboard players operation #MWL ONES_DIGIT %= #MWL TempVariable
 ## Calculate tens digit
-scoreboard players operation #MWL TENS_DIGIT = #MWL NUM
+scoreboard players operation #MWL TENS_DIGIT = #MWL NumOfPlayers
 scoreboard players remove #MWL TENS_DIGIT 1
 scoreboard players operation #MWL TENS_DIGIT /= #MWL TempVariable
 

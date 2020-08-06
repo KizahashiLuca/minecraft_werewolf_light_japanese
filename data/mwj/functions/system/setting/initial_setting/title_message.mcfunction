@@ -21,11 +21,12 @@ tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"w
 
 tellraw @a ["",{"text":"  ","color":"white"},{"selector":"@p[tag=Host]","color":"white","bold":true},{"text":" さんは、インベントリを","color":"white"}]
 tellraw @a ["",{"text":"  開いて、以下の設定をしてください。","color":"white"}]
+tellraw @a ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"    ・役欠けなし/あり","color":"white"}]
 tellraw @a ["",{"text":"    ・潜伏時間","color":"white"}]
 tellraw @a ["",{"text":"    ・発光時間","color":"white"}]
 tellraw @a ["",{"text":"    ・制限時間","color":"white"}]
 tellraw @a ["",{"text":"    ・ゲームモード(人狼勝利条件)","color":"white"}]
 tellraw @a ["",{"text":"    ・追加特殊アイテム","color":"white"}]
-execute if score #MWL PrevAddedRole matches 1.. run tellraw @a ["",{"text":"    ・追加役職(","color":"white"},{"score":{"name":"#MWL","objective":"PrevAddedRole"},"color":"white"},{"text":"組)","color":"white"}]
+execute if score #MWL AddedRoleNumber matches 1.. run tellraw @a ["",{"text":"    ・追加役職(","color":"white"},{"score":{"name":"#MWL","objective":"AddedRoleNumber"},"color":"white"},{"text":"組)","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

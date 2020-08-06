@@ -76,7 +76,7 @@ scoreboard players enable @a TurnPageRight
 scoreboard players enable @a TurnPageLeft
 scoreboard players enable @a RoleTrigger
 #### Number the Members
-scoreboard players operation #MWL TurnPageMax = #MWL NUM
+scoreboard players operation #MWL TurnPageMax = #MWL NumOfPlayers
 scoreboard players remove #MWL TurnPageMax 1
 scoreboard players operation #MWL TurnPageMax /= #MWL 10
 #### Fox

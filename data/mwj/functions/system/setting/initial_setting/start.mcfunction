@@ -10,19 +10,19 @@
 tag @p[sort=nearest] add Host
 
 ## Add Scoreboard
-scoreboard objectives add NUM dummy
-scoreboard players set #MWL NUM 0
+scoreboard objectives add NumOfPlayers dummy
+scoreboard players set #MWL NumOfPlayers 0
 ## Count Players
-execute as @a[gamemode=!spectator] run scoreboard players add #MWL NUM 1
+execute as @a[gamemode=!spectator] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NUM 15
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 10
 
 ## Detect version
 function mwj:system/setting/initial_setting/detect_version/main
 
 ## Stop the game
-execute if score #MWL NUM matches ..2 run function mwj:system/finish/error_game_player
-execute if score #MWL NUM matches 3.. if score #MWL Version matches ..13 run function mwj:system/finish/error_game_version
+execute if score #MWL NumOfPlayers matches ..2 run function mwj:system/finish/error_game_player
+execute if score #MWL NumOfPlayers matches 3.. if score #MWL Version matches ..13 run function mwj:system/finish/error_game_version
 
 ## Start Setting
-execute if score #MWL NUM matches 3.. if score #MWL Version matches 14.. run function mwj:system/setting/initial_setting/main
+execute if score #MWL NumOfPlayers matches 3.. if score #MWL Version matches 14.. run function mwj:system/setting/initial_setting/main

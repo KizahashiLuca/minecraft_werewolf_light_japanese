@@ -8,6 +8,7 @@
 
 ## Add Variables for Game
 scoreboard objectives add Phase dummy
+scoreboard objectives add NumOfRoles dummy
 scoreboard objectives add PrevNumOfPlayers dummy
 ## Add Variables for Timer
 scoreboard objectives add Second dummy
@@ -73,6 +74,7 @@ scoreboard objectives add SelectNumber dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
 ## Add Variables for Setting Dummy Role
+scoreboard objectives add DummyRole dummy
 scoreboard objectives add SetDummyRole dummy
 scoreboard objectives add PrevSetDummyRole dummy
 ## Add Variables for Setting Hide Time
@@ -188,7 +190,8 @@ scoreboard objectives add ThrowItem dummy
 scoreboard objectives add TempVariable dummy
 
 ## Set Variables for Timer
-scoreboard players operation #MWL PrevNumOfPlayers = #MWL NUM
+scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
+scoreboard players operation #MWL PrevNumOfPlayers = #MWL NumOfPlayers
 ## Set Variables for Game
 scoreboard players set @a CurrentRole 0
 ## Set Variables for CurrentRole
@@ -244,6 +247,7 @@ scoreboard players set #MWL PrevAddedImmoral 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 600
 ## Set Variables for Setting Dummy Role
+scoreboard players set #MWL DummyRole 0
 scoreboard players set #MWL SetDummyRole 0
 scoreboard players set #MWL PrevSetDummyRole 0
 ## Set Variables for Setting Hide Time

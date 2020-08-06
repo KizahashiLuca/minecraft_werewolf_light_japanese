@@ -7,13 +7,13 @@
 ###############################
 
 ## Set the Role
-execute if score #MWL NumOfRoles matches 1.. as @r[team=Player] run scoreboard players operation @r[scores={CurrentRole=21,MasonPair=0},limit=2] MasonPair = #MWL MasonPair
+execute if score #MWL NumOfRole matches 1.. as @r[team=Player] run scoreboard players operation @r[scores={CurrentRole=21,MasonPair=0},limit=2] MasonPair = #MWL MasonPair
 
 ## Decrement value by 1
-scoreboard players remove #MWL NumOfRoles 1
+scoreboard players remove #MWL NumOfRole 1
 
 ## Increment
-execute if score #MWL NumOfRoles matches 1.. run scoreboard players add #MWL MasonPair 1
+execute if score #MWL NumOfRole matches 1.. run scoreboard players add #MWL MasonPair 1
 
 ## Repeat
-execute if score #MWL NumOfRoles matches 1.. run function mwj:system/preparation/role_decision/mason_pair
+execute if score #MWL NumOfRole matches 1.. run function mwj:system/preparation/role_decision/mason_pair

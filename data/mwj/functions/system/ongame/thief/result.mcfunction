@@ -67,7 +67,7 @@ tag @s[scores={DeathCount=0}] add NonWolf
 ## Store Recent Time
 scoreboard players set @s RoleStolen 1
 scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] NumberOfStolen = #MWL NumberOfStolen
-scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] TargetOfStolen = @s NUM
+scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] TargetOfStolen = @s NumOfPlayers
 scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] ThiefStealSecond = #MWL Second
 scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] ThiefStealTick = #MWL Tick
 scoreboard players add #MWL NumberOfStolen 1

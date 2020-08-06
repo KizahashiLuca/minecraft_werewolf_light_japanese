@@ -24,6 +24,20 @@ execute if score #MWL NumOfFanatics matches 1.. run tellraw @a ["",{"text":"    
 execute if score #MWL NumOfFoxes matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"羽 衣 狐","color":"dark_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PrevRole=10}]","color":"white"}]
 execute if score #MWL NumOfImmorals matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"背 徳 者","color":"dark_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={PrevRole=11}]","color":"white"}]
 
+## Send a display of dummy role
+execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"  役職欠けは以下の役職でした。","color":"white"}]
+execute if score #MWL DummyRole matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂    人","color":"light_purple"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 2 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"村    人","color":"green"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 3 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"予 言 者","color":"aqua"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 4 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"霊 媒 師","color":"yellow"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 5 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"共 有 者","color":"dark_green"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 6 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"探    偵","color":"dark_aqua"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 7 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"怪    盗","color":"blue"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 8 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"偽予言者","color":"aqua"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 9 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"賢    者","color":"aqua"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 10 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"狂 信 者","color":"light_purple"},{"text":" ： 1人","color":"white"}]
+execute if score #MWL DummyRole matches 11 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"背 徳 者","color":"dark_purple"},{"text":" ： 1人","color":"white"}]
+
 ## Send a Display of Survivors
 tellraw @a ["",{"text":"\n    ","color":"white"},{"text":"生 存 者","color":"white"},{"text":" ： ","color":"white"},{"selector":"@a[scores={DeathCount=0},team=Player]","color":"white"}]
 

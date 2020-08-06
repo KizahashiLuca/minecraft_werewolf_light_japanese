@@ -11,10 +11,59 @@ execute if score #MWL PrevSetDummyRole matches 0 run scoreboard players set #MWL
 execute if score #MWL PrevSetDummyRole matches 1 run scoreboard players set #MWL SetDummyRole 0
 scoreboard players operation #MWL PrevSetDummyRole = #MWL SetDummyRole
 
+## Count Players
+scoreboard players set #MWL NumOfPlayers 0
+execute as @a[gamemode=!spectator] run scoreboard players add #MWL NumOfPlayers 1
+## Test
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 10
+
+## Set dummy role
+scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
+execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
+
+## Set Role Number
+function mwj:system/setting/initial_setting/set_role_number
+function mwj:system/setting/initial_setting/set_added_role_number
+
+## Detect the Number of Players is not Enough
+execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Phase 0
+
+## Detect the Number of Players is increment/decrement
+scoreboard players operation #MWL TempVariable = #MWL PrevAddedRole
+execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL TempVariable 1
+execute if score #MWL SetDummyRole matches 0 run scoreboard players remove #MWL TempVariable 1
+
+execute if score #MWL TempVariable matches -1 run scoreboard players set #MWL PrevAddedRole 1
+execute if score #MWL TempVariable matches 0.. run scoreboard players operation #MWL PrevAddedRole = #MWL TempVariable
+
+execute if score #MWL TempVariable matches -1 run function mwj:system/preparation/decrease_added_role
+scoreboard players operation #MWL AddedRole = #MWL PrevAddedRole
+
+## Set Prev choice
+scoreboard players operation #MWL PrevAddedWolf = #MWL AddedWolf
+scoreboard players operation #MWL PrevAddedMadman = #MWL AddedMadman
+scoreboard players operation #MWL PrevAddedVilla = #MWL AddedVilla
+scoreboard players operation #MWL PrevAddedSeer = #MWL AddedSeer
+scoreboard players operation #MWL PrevAddedMedium = #MWL AddedMedium
+
+scoreboard players operation #MWL PrevAddedFox = #MWL AddedFox
+scoreboard players operation #MWL PrevAddedMason = #MWL AddedMason
+scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
+scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
+scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
+
+scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
+scoreboard players operation #MWL PrevAddedSage = #MWL AddedSage
+scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
+scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
+scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
+
 ## Send a Message Dummy Role to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 execute if score #MWL SetDummyRole matches 0 run tellraw @a ["",{"text":"  役欠けが、 ","color":"white"},{"text":"なし","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
+execute if score #MWL SetDummyRole matches 0 run tellraw @a ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" です。","color":"white"}]
 execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"  役欠けが、 ","color":"white"},{"text":"あり","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
+execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" で、役職数は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfRoles"},"color":"green","bold":true},{"text":"役","color":"green","bold":true},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Change to Choose Mode

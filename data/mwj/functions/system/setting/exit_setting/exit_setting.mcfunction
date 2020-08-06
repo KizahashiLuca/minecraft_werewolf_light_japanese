@@ -8,8 +8,7 @@
 
 ## Store Number of Role
 scoreboard players operation #MWL AddedVilla += #MWL AddedRole
-function mwj:system/setting/initial_setting/set_added_role_number
-scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole
+scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 
 ## Store Variables of ChangeHideTime
 scoreboard players set #MWL ChangeHideTime 15

@@ -11,7 +11,7 @@ scoreboard players set @s[scores={RoleOfNum=1}] DeathCount 1
 
 ## Tell Fox by Seer
 tag @s add DetectDeath
-execute as @a[scores={CurrentRole=25..27}] if score @s NUM = @p[tag=SeeredFox,tag=DetectDeath] KilledBySeer run tag @s add SeerFox
+execute as @a[scores={CurrentRole=25..27}] if score @s NumOfPlayers = @p[tag=SeeredFox,tag=DetectDeath] KilledBySeer run tag @s add SeerFox
 tellraw @s[scores={DeathCount=0..1}] ["",{"text":"\n----------------------------------","color":"white"}]
 tellraw @s[scores={DeathCount=0}] ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={CurrentRole=25..27},tag=SeerFox]","color":"white"},{"text":" に占われましたが、突然死しませんでした。","color":"white"}]
 tellraw @s[scores={DeathCount=1}] ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={CurrentRole=25..27},tag=SeerFox]","color":"white"},{"text":" に占われて、突然死しました。","color":"white"}]

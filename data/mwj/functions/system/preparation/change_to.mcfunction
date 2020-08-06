@@ -20,7 +20,9 @@ tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"w
 
 tellraw @a ["",{"text":"  ゲームモードは、 以下のとおりです。","color":"white"}]
 execute if score #MWL SetDummyRole matches 0 run tellraw @a ["",{"text":"    役職欠け : ","color":"white"},{"text":"なし","color":"green","bold":true}]
+execute if score #MWL SetDummyRole matches 0 run tellraw @a ["",{"text":"    参加者数 : ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true}]
 execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"    役職欠け : ","color":"white"},{"text":"あり","color":"green","bold":true}]
+execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"    参加者数 : ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" (役職数 : ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfRoles"},"color":"green","bold":true},{"text":"役","color":"green","bold":true},{"text":")","color":"white"}]
 execute if score #MWL GameMode matches 1 run tellraw @a ["",{"text":"    勝敗判定 : ","color":"white"},{"text":"通常人狼モード","color":"green","bold":true}]
 execute if score #MWL GameMode matches 1 run tellraw @a ["",{"text":"      村人陣営の人数が、人狼の人数以下に\n      なったら、人狼陣営の勝利です。","color":"white"}]
 execute if score #MWL GameMode matches 2 run tellraw @a ["",{"text":"    勝敗判定 : ","color":"white"},{"text":"村人2人生存モード","color":"green","bold":true}]

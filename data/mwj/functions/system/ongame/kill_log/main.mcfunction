@@ -15,10 +15,10 @@ execute as @a[scores={DeathCount=1},team=Player] run function mwj:system/ongame/
 ## Store Number of Killer Player
 #### Victim : 1 -
 #### Killer : 0
-execute if score #MWL CountOfVictim matches 1.. if score #MWL CountOfKiller matches 0 as @a[scores={FlagOfVictim=1},team=Player] run scoreboard players operation @s NumberOfKiller = @s NUM
+execute if score #MWL CountOfVictim matches 1.. if score #MWL CountOfKiller matches 0 as @a[scores={FlagOfVictim=1},team=Player] run scoreboard players operation @s NumberOfKiller = @s NumOfPlayers
 #### Victim : 1 -
 #### Killer : 1
-execute if score #MWL CountOfVictim matches 1.. if score #MWL CountOfKiller matches 1 as @a[scores={FlagOfVictim=1},team=Player] run scoreboard players operation @s NumberOfKiller = @p[scores={FlagOfKiller=1}] NUM
+execute if score #MWL CountOfVictim matches 1.. if score #MWL CountOfKiller matches 1 as @a[scores={FlagOfVictim=1},team=Player] run scoreboard players operation @s NumberOfKiller = @p[scores={FlagOfKiller=1}] NumOfPlayers
 #### Victim : 2 -
 #### Killer : 2 -
 execute if score #MWL CountOfVictim matches 2.. if score #MWL CountOfKiller matches 2.. as @a[scores={FlagOfVictim=1},team=Player] run function mwj:system/ongame/kill_log/multi_same_time

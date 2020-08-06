@@ -26,7 +26,7 @@ execute as @s[scores={CurrentRole=11}] run tellraw @p[scores={CurrentRole=27,Rol
 #### Put Tag
 tag @s[scores={CurrentRole=10,DeathCount=0}] add SeeredFox
 #### Store Seer Number
-scoreboard players operation @s[scores={CurrentRole=10,DeathCount=0}] KilledBySeer = @p[scores={CurrentRole=27,RoleOfNum=1}] NUM
+scoreboard players operation @s[scores={CurrentRole=10,DeathCount=0}] KilledBySeer = @p[scores={CurrentRole=27,RoleOfNum=1}] NumOfPlayers
 #### Deal Instant Damage to Fox
 effect give @s[scores={CurrentRole=10,DeathCount=0}] minecraft:instant_damage 1 10 true
 

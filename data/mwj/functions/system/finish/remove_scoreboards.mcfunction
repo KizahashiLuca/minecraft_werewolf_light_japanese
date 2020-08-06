@@ -9,7 +9,8 @@
 ## Remove Variables for Game
 scoreboard objectives remove Version
 scoreboard objectives remove Phase
-scoreboard objectives remove NUM
+scoreboard objectives remove NumOfPlayers
+scoreboard objectives remove NumOfRoles
 scoreboard objectives remove PrevNumOfPlayers
 scoreboard objectives remove CurrentRole
 scoreboard objectives remove PrevRole
@@ -67,6 +68,14 @@ scoreboard objectives remove ThiefStealSecond
 scoreboard objectives remove ThiefStealTick
 #### Cat
 scoreboard objectives remove KilledByCat
+## Remove Variables for randomizer
+scoreboard objectives remove 11
+scoreboard objectives remove DummyRoleFlag
+scoreboard objectives remove RandomSeed
+scoreboard objectives remove RandomCount
+scoreboard objectives remove RandomAnswer
+scoreboard objectives remove RandomModder
+scoreboard objectives remove RandomMultiplier
 ## Remove Variables for Items
 scoreboard objectives remove SneakTime
 #### Snowball
@@ -137,6 +146,7 @@ scoreboard objectives remove AddedLantern
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
 ## Remove Variables for Setting Dummy Role
+scoreboard objectives remove DummyRole
 scoreboard objectives remove SetDummyRole
 ## Remove Variables for Hide Time
 scoreboard objectives remove ChangeHideTime

@@ -7,7 +7,7 @@
 ###############################
 
 ## Detect the Number of Players is not Enough
-execute if score #MWL NUM matches ..2 run scoreboard players set #MWL Phase 0
+execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Detect the Number of Players is increment/decrement
 scoreboard players operation #MWL TempVariable = #MWL PrevAddedRole

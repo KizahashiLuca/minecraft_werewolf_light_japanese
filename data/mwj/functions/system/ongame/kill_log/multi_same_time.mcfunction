@@ -10,5 +10,5 @@
 execute if entity @p[scores={FlagOfKiller=1}] run scoreboard players set @s FlagOfKiller 2
 execute unless entity @p[scores={FlagOfKiller=1}] run scoreboard players set @s FlagOfKiller 3
 
-execute if entity @p[scores={FlagOfKiller=1}] run scoreboard players operation @s NumberOfKiller = @p[scores={FlagOfKiller=1}] NUM
-execute unless entity @p[scores={FlagOfKiller=1}] run scoreboard players operation @s NumberOfKiller = @p[scores={FlagOfKiller=2}] NUM
+execute if entity @p[scores={FlagOfKiller=1}] run scoreboard players operation @s NumberOfKiller = @p[scores={FlagOfKiller=1}] NumOfPlayers
+execute unless entity @p[scores={FlagOfKiller=1}] run scoreboard players operation @s NumberOfKiller = @p[scores={FlagOfKiller=2}] NumOfPlayers

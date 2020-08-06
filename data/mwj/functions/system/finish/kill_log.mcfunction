@@ -8,7 +8,7 @@
 
 ## Find Killer
 execute as @a[team=Player] if score @s NumberOfVictim = #MWL NumberOfKillLog run scoreboard players set @s FlagOfVictim 1
-execute as @a[team=Player] if score @s NUM = @p[scores={FlagOfVictim=1}] NumberOfKiller run scoreboard players set @s FlagOfKiller 1
+execute as @a[team=Player] if score @s NumOfPlayers = @p[scores={FlagOfVictim=1}] NumberOfKiller run scoreboard players set @s FlagOfKiller 1
 
 scoreboard players operation @p[scores={FlagOfVictim=1}] Tick *= #MWL TempVariable
 
