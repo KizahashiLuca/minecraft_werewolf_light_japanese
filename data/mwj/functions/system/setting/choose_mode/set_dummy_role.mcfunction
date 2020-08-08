@@ -15,13 +15,14 @@ scoreboard players operation #MWL PrevSetDummyRole = #MWL SetDummyRole
 scoreboard players set #MWL NumOfPlayers 0
 execute as @a[gamemode=!spectator] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 10
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 15
 
 ## Set dummy role
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
 execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
 
 ## Set Role Number
+scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 function mwj:system/setting/initial_setting/set_role_number
 function mwj:system/setting/initial_setting/set_added_role_number
 
@@ -29,14 +30,29 @@ function mwj:system/setting/initial_setting/set_added_role_number
 execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Detect the Number of Players is increment/decrement
-scoreboard players operation #MWL TempVariable = #MWL PrevAddedRole
-execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL SetDummyRole matches 0 run scoreboard players remove #MWL TempVariable 1
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedRoleNumber
+# execute if score #MWL PrevAddedRole matches ..-1 run 
+execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_added_role
+scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 
-execute if score #MWL TempVariable matches -1 run scoreboard players set #MWL PrevAddedRole 1
-execute if score #MWL TempVariable matches 0.. run scoreboard players operation #MWL PrevAddedRole = #MWL TempVariable
+## Calculate Prev choice
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWolf
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMadman
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedVilla
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSeer
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMedium
 
-execute if score #MWL TempVariable matches -1 run function mwj:system/preparation/decrease_added_role
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFox
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMason
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedDetec
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedThief
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedCat
+
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFkSeer
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSage
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWhWolf
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFanatic
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedImmoral
 scoreboard players operation #MWL AddedRole = #MWL PrevAddedRole
 
 ## Set Prev choice

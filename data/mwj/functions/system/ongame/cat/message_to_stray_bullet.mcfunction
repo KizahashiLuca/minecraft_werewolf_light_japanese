@@ -8,8 +8,9 @@
 
 ## Send a Message to a StrayBullet Player
 tellraw @p[tag=StrayBullet] ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @p[tag=StrayBullet,scores={DeathCount=0}] ["",{"selector":"@p[tag=StrayBullet,scores={DeathCount=0}]"},{"text":" は "},{"selector":"@s"},{"text":" に道連れされましたが、突然死しませんでした。"}]
-tellraw @p[tag=StrayBullet,scores={DeathCount=1}] ["",{"selector":"@p[tag=StrayBullet,scores={DeathCount=1}]"},{"text":" は "},{"selector":"@s"},{"text":" に道連れされて、突然死しました。"}]
+tellraw @s[tag=StrayBullet] ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"selector":"@a[scores={CurrentRole=25..27},tag=SeerFox]","color":"white"},{"text":" に","color":"white"}]
+tellraw @s[scores={DeathCount=0}] ["",{"text":"  道連れされましたが、突然死しませんでした。","color":"white"}]
+tellraw @s[scores={DeathCount=1}] ["",{"text":"  道連れされて、突然死しました。","color":"white"}]
 tellraw @p[tag=StrayBullet] ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Kill log

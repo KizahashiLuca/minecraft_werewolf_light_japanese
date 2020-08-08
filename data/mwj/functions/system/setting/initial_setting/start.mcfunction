@@ -15,7 +15,8 @@ scoreboard players set #MWL NumOfPlayers 0
 ## Count Players
 execute as @a[gamemode=!spectator] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 10
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 15
+
 
 ## Detect version
 function mwj:system/setting/initial_setting/detect_version/main

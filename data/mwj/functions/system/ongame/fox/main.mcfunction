@@ -13,10 +13,20 @@ execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_wolf=true}] r
 execute as @s[scores={DeathCount=1},tag=TridentDeadFoxbyWolf] run function mwj:system/ongame/fox/detect_dead
 
 ## Fox Dead by nonwolf
-execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_nonwolf=true},tag=!TridentDeadFoxbyWolf] run scoreboard players set @s RoleOfNum 2
+scoreboard players set @s[scores={DeathCount=1},advancements={mwj:be_killed_by_nonwolf=true},tag=!TridentDeadFoxbyWolf] RoleOfNum 2
+scoreboard players set @s[scores={DeathCount=1},tag=SeeredFox,tag=!TridentDeadFoxbyWolf] RoleOfNum 2
+
+## Fox suicide
+scoreboard players set #MWL CountOfKiller 0
+scoreboard players set #MWL CountOfVictim 0
+execute as @a[team=Player,advancements={mwj:killed_player=true}] run scoreboard players add #MWL CountOfKiller 1
+execute as @a[team=Player,scores={DeathCount=1}] run scoreboard players add #MWL CountOfVictim 1
+execute if score #MWL CountOfVictim matches 1.. if score #MWL CountOfKiller matches 0 run scoreboard players set @s[scores={DeathCount=1},tag=!TridentDeadFoxbyWolf] RoleOfNum 2
+scoreboard players set #MWL CountOfVictim 0
+scoreboard players set #MWL CountOfKiller 0
 
 ## Fox Dead by cat
-execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_cat=true}] run scoreboard players set @s RoleOfNum 2
+scoreboard players set @s[scores={DeathCount=1},advancements={mwj:be_killed_by_cat=true}] RoleOfNum 2
 
 ## Detect Respawn
 execute if score @s[scores={RoleOfNum=1}] FoxSpawnSecond = #MWL Second if score @s[scores={RoleOfNum=1}] FoxSpawnTick = #MWL Tick run function mwj:system/ongame/fox/detect_respawn
