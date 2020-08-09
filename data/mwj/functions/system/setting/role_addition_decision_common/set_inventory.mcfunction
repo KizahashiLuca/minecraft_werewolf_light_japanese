@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 03 Aug 2020
-## Version: v.1.2.1
+## Date   : 09 Aug 2020
+## Version: v.1.3
 ###############################
 
 ## Clear Inventory
@@ -40,19 +40,19 @@ execute if score #MWL Phase matches 92 run function mwj:system/setting/role_addi
 execute if score #MWL Phase matches 93 run function mwj:system/setting/role_addition_decision_4/set_inventory
 
 ## Set items
-replaceitem entity @p[tag=Host] inventory.9 minecraft:white_banner{display:{Name:'"\\u00A7r\\u00A7c前へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.17 minecraft:white_banner{display:{Name:'"\\u00A7r\\u00A7c次へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vh,Color:14},{Pattern:bl,Color:0},{Pattern:tl,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.21 minecraft:map{display:{Name:'"\\u00A7r\\u00A7e全選択解除"'},HideFlags:39} 1
-execute if score #MWL AddedRole matches 1.. run replaceitem entity @p[tag=Host] inventory.23 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a残り追加可能人数"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39} 1
+loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/common/white_banner_left
+loot replace entity @p[tag=Host] inventory.17 loot mwj:setting/common/white_banner_right
+loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
+loot replace entity @p[tag=Host] inventory.21 loot mwj:setting/common/map
+execute if score #MWL AddedRole matches 1.. run loot replace entity @p[tag=Host] inventory.23 loot mwj:setting/role_addition/nether_star_rest
+loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
 
 ## Set Nether Star above Selected Role
-execute if score #MWL AddedRole1 matches 1.. run replaceitem entity @p[tag=Host] inventory.2 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole1",HideFlags:39} 1
-execute if score #MWL AddedRole2 matches 1.. run replaceitem entity @p[tag=Host] inventory.3 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole2",HideFlags:39} 1
-execute if score #MWL AddedRole3 matches 1.. run replaceitem entity @p[tag=Host] inventory.4 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole3",HideFlags:39} 1
-execute if score #MWL AddedRole4 matches 1.. run replaceitem entity @p[tag=Host] inventory.5 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole4",HideFlags:39} 1
-execute if score #MWL AddedRole5 matches 1.. run replaceitem entity @p[tag=Host] inventory.6 minecraft:nether_star{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},Tag:"AddedRole5",HideFlags:39} 1
+execute if score #MWL AddedRole1 matches 1 run loot replace entity @p[tag=Host] inventory.2 loot mwj:setting/role_addition/nether_star_role1
+execute if score #MWL AddedRole2 matches 1 run loot replace entity @p[tag=Host] inventory.3 loot mwj:setting/role_addition/nether_star_role2
+execute if score #MWL AddedRole3 matches 1 run loot replace entity @p[tag=Host] inventory.4 loot mwj:setting/role_addition/nether_star_role3
+execute if score #MWL AddedRole4 matches 1 run loot replace entity @p[tag=Host] inventory.5 loot mwj:setting/role_addition/nether_star_role4
+execute if score #MWL AddedRole5 matches 1 run loot replace entity @p[tag=Host] inventory.6 loot mwj:setting/role_addition/nether_star_role5
 
 scoreboard objectives add AddedRoleTmp dummy
 scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole

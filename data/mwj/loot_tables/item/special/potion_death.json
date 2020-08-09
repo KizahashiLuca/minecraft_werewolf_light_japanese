@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"lingering_potion",
+          "name":"minecraft:lingering_potion",
           "functions":[
             {
               "function":"minecraft:set_name",
@@ -15,7 +15,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{CustomPotionEffects:[{Id:7b,Amplifier:3b}],CustomPotionColor:16122102,Tags:\"MWLitem\"}"
+              "tag":"{CustomPotionEffects:[{Id:7b,Amplifier:3b}],CustomPotionColor:16122102,Tags:[\"MWLitem\",\"potion_death\"]}"
             }
           ]
         }

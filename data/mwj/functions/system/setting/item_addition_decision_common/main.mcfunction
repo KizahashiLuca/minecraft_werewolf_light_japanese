@@ -2,23 +2,16 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 03 Aug 2020
-## Version: v.1.2.1
+## Date   : 09 Aug 2020
+## Version: v.1.3
 ###############################
 
 ## Process the timer system
 function mwj:system/time/time
 
 ## Detect Dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:white_banner",tag:{display:{Name:'"\\u00A7r\\u00A7c前へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:white_banner",tag:{display:{Name:'"\\u00A7r\\u00A7c次へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vh,Color:14},{Pattern:bl,Color:0},{Pattern:tl,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7e全選択解除"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:filled_map",tag:{display:{Name:'"\\u00A7r\\u00A7e全選択"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}}] ThrowItem 1
-
-scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:"MWLitem"}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLitem"]}}}] ThrowItem 1
 
 ## Kill a dropped item
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/item_addition_decision_common/detect_drop
@@ -42,18 +35,18 @@ execute if score #MWL AddedItem4 matches 1 run scoreboard players set @p[tag=Hos
 execute if score #MWL AddedItem5 matches 1 run scoreboard players set @p[tag=Host] SelectDecide5 1
 
 ## Declare Inventory
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:white_banner",tag:{display:{Name:'"\\u00A7r\\u00A7c前へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39}}]}] SelectPrevPage 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:white_banner",tag:{display:{Name:'"\\u00A7r\\u00A7c次へ"'},BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vh,Color:14},{Pattern:bl,Color:0},{Pattern:tl,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39}}]}] SelectNextPage 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dキャンセル"'},HideFlags:39}}]}] SelectCancel 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:30b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7e全選択解除"'},HideFlags:39}}]}] SelectAllDel 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:32b,id:"minecraft:filled_map",tag:{display:{Name:'"\\u00A7r\\u00A7e全選択"'},HideFlags:39}}]}] SelectAllSet 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7b決定"'},HideFlags:39}}]}] SelectOkay 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:white_banner",tag:{Tags:["MWLsetting","MWLleft"]}}]}] SelectPrevPage 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:white_banner",tag:{Tags:["MWLsetting","MWLright"]}}]}] SelectNextPage 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{Tags:["MWLsetting"]}}]}] SelectCancel 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:30b,id:"minecraft:map",tag:{Tags:["MWLsetting"]}}]}] SelectAllDel 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:32b,id:"minecraft:filled_map",tag:{Tags:["MWLsetting"]}}]}] SelectAllSet 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{Tags:["MWLsetting"]}}]}] SelectOkay 0
 
-execute if score #MWL AddedItem1 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide1 0
-execute if score #MWL AddedItem2 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide2 0
-execute if score #MWL AddedItem3 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide3 0
-execute if score #MWL AddedItem4 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide4 0
-execute if score #MWL AddedItem5 matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{display:{Name:'"\\u00A7r\\u00A7a選択済み"'},HideFlags:39}}]}] SelectDecide5 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:11b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide1 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide2 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:13b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide3 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:14b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide4 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:15b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide5 0
 
 execute if score #MWL Phase matches 85 run function mwj:system/setting/item_addition_decision_1/main
 execute if score #MWL Phase matches 86 run function mwj:system/setting/item_addition_decision_2/main

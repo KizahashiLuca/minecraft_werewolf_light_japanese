@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"redstone_torch",
+          "name":"minecraft:redstone_torch",
           "functions":[
             {
               "function":"minecraft:set_name",
@@ -24,7 +24,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],Tags:\"MWLitem\"}"
+              "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],Tags:[\"MWLitem\"]}"
             }
           ]
         }

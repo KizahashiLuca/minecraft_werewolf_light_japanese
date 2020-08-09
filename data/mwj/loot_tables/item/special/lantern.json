@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"lantern",
+          "name":"minecraft:lantern",
           "functions":[
             {
               "function":"minecraft:set_name",
@@ -24,7 +24,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:\"MWLitem\"}"
+              "tag":"{Tags:[\"MWLitem\"]}"
             }
           ]
         }

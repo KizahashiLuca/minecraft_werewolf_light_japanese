@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 03 Aug 2020
-## Version: v.1.2.1
+## Date   : 09 Aug 2020
+## Version: v.1.3
 ###############################
 
 ## Timer System
@@ -24,7 +24,7 @@ execute as @a[team=Player,scores={CurrentRole=20..40,DeathCount=1}] run scoreboa
 execute as @a[team=Player,scores={RemovedTorch=1..}] run loot give @s loot mwj:item/common/redstone_torch
 scoreboard players reset @a[team=Player,scores={RemovedTorch=1..}] RemovedTorch
 scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
-kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:"MWLitem"}}}]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:["MWLitem"]}}}]
 
 ## Detect snowball
 execute if score #MWL AddedSnowball matches 1 run function mwj:system/ongame/snowball/main

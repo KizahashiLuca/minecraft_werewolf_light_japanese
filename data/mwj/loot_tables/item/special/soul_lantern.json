@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"soul_lantern",
+          "name":"minecraft:soul_lantern",
           "functions":[
             {
               "function":"minecraft:set_name",

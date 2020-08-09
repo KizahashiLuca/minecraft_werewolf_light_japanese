@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"conduit",
+          "name":"minecraft:conduit",
           "functions":[
             {
               "function":"minecraft:set_name",
@@ -27,7 +27,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:\"MWLitem\"}"
+              "tag":"{Tags:[\"MWLitem\"]}"
             }
           ]
         }

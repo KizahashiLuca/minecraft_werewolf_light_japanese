@@ -6,11 +6,11 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"ender_pearl",
+          "name":"minecraft:ender_pearl",
           "functions":[
             {
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:\"MWLitem\"}"
+              "tag":"{Tags:[\"MWLitem\"]}"
             }
           ]
         }

@@ -6,7 +6,7 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"diamond_hoe",
+          "name":"minecraft:diamond_hoe",
           "functions":[
             {
               "function":"minecraft:set_lore",
@@ -17,7 +17,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:1,Tags:\"MWLitem\"}"
+              "tag":"{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:1,Tags:[\"MWLitem\"]}"
             }
           ]
         }
