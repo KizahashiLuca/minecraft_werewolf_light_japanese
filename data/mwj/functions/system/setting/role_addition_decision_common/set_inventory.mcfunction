@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 09 Aug 2020
-## Version: v.1.3
+## Date   : 12 Aug 2020
+## Version: v.1.3.1
 ###############################
 
 ## Clear Inventory
@@ -48,11 +48,11 @@ execute if score #MWL AddedRole matches 1.. run loot replace entity @p[tag=Host]
 loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
 
 ## Set Nether Star above Selected Role
-execute if score #MWL AddedRole1 matches 1 run loot replace entity @p[tag=Host] inventory.2 loot mwj:setting/role_addition/nether_star_role1
-execute if score #MWL AddedRole2 matches 1 run loot replace entity @p[tag=Host] inventory.3 loot mwj:setting/role_addition/nether_star_role2
-execute if score #MWL AddedRole3 matches 1 run loot replace entity @p[tag=Host] inventory.4 loot mwj:setting/role_addition/nether_star_role3
-execute if score #MWL AddedRole4 matches 1 run loot replace entity @p[tag=Host] inventory.5 loot mwj:setting/role_addition/nether_star_role4
-execute if score #MWL AddedRole5 matches 1 run loot replace entity @p[tag=Host] inventory.6 loot mwj:setting/role_addition/nether_star_role5
+execute if score #MWL AddedRole1 matches 1.. run loot replace entity @p[tag=Host] inventory.2 loot mwj:setting/role_addition/nether_star_role1
+execute if score #MWL AddedRole2 matches 1.. run loot replace entity @p[tag=Host] inventory.3 loot mwj:setting/role_addition/nether_star_role2
+execute if score #MWL AddedRole3 matches 1.. run loot replace entity @p[tag=Host] inventory.4 loot mwj:setting/role_addition/nether_star_role3
+execute if score #MWL AddedRole4 matches 1.. run loot replace entity @p[tag=Host] inventory.5 loot mwj:setting/role_addition/nether_star_role4
+execute if score #MWL AddedRole5 matches 1.. run loot replace entity @p[tag=Host] inventory.6 loot mwj:setting/role_addition/nether_star_role5
 
 scoreboard objectives add AddedRoleTmp dummy
 scoreboard players operation #MWL AddedRoleTmp = #MWL AddedRole

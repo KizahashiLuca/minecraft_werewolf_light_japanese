@@ -16,7 +16,7 @@
  - 再配布は禁止です。
 
 ## version
- 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_3.zip][v.1.3] をクリックして、データパックをDL。
+ 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_3_1.zip][v.1.3.1] をクリックして、データパックをDL。
  2. DLしたzipファイルを、使用するワールドのフォルダ内[datapacks]にコピー。
  3. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
@@ -42,9 +42,11 @@
      - 狂信者
  - 03 Aug 2020 - [v.1.2.1][v.1.2.1](非推奨)
    - 追加アイテム設定のバグ2点を修正
- - 09 Aug 2020 - [v.1.3][v.1.3]**(推奨)**
+ - 09 Aug 2020 - [v.1.3][v.1.3](非推奨)
    - 新機能「役職欠け」追加
    - 羽衣狐が絶対に勝利してしまうバグを修正 (MC v1.16.1以降のバグ)
+ - 12 Aug 2020 - [v.1.3.1][v.1.3.1]**(推奨)**
+   - 同じ追加役職を2つ以上選択するとフリーズするバグを修正
 
 ## Discord
 [Discord][discord]でご意見ご要望などをお聞きしています。   
@@ -82,4 +84,5 @@
 [v.1.2]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.2
 [v.1.2.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.2.1
 [v.1.3]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.3
+[v.1.3.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.3.1
 [twitter]:https://www.twitter.com/KizahashiLuca
