@@ -11,11 +11,18 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"透明化のポーション","color":"white","italic":false}]
+                ["",{"text":"透明化のポーション","color":"yellow","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore":[
+                ["",{"text":"透明化 (0:30)","color":"blue","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{CustomPotionEffects:[{Id:14b,Duration:600}],CustomPotionColor:16777215,Tags:[\"MWLitem\",\"potion_invisible\"]}"
+              "tag":"{CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:600}],CustomPotionColor:16777215,HideFlags:63,Tags:[\"MWLitem\",\"potion_invisible\"]}"
             }
           ]
         }

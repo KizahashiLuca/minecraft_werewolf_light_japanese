@@ -11,11 +11,11 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"前へ","color":"red","italic":false}]
+                ["",{"text":"前へ","color":"red","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:39,Tags:[\"MWLsetting\",\"MWLleft\"]}"
+              "tag":"{BlockEntityTag:{Patterns:[{Pattern:mr,Color:14},{Pattern:vhr,Color:14},{Pattern:br,Color:0},{Pattern:tr,Color:0},{Pattern:bts,Color:0},{Pattern:tts,Color:0},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MWLsetting\",\"MWLleft\"]}"
             }
           ]
         }

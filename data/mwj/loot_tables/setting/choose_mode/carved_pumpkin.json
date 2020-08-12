@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:carved_pumpkin",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"役欠けなし","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

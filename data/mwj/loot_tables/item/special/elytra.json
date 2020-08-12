@@ -9,8 +9,20 @@
           "name":"minecraft:elytra",
           "functions":[
             {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"エリトラ","color":"yellow","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore":[
+                ["",{"text":"不可壊","color":"blue","bold":false,"italic":false}]
+              ]
+            },{
               "function":"minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,Tags:[\"MWLitem\"]}"
+              "tag":"{Unbreakable:1b,HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

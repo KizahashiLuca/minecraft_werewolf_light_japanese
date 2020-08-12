@@ -7,15 +7,15 @@
 ###############################
 
 ## Replace Inventory
-execute if score #MWL SetDummyRole matches 0 run replaceitem entity @p[tag=Host] inventory.9 minecraft:carved_pumpkin{display:{Name:'"\\u00A7r\\u00A7f役欠けなし"'}} 1
-execute if score #MWL SetDummyRole matches 1 run replaceitem entity @p[tag=Host] inventory.9 minecraft:jack_o_lantern{display:{Name:'"\\u00A7r\\u00A7f役欠けあり"'}} 1
+execute if score #MWL SetDummyRole matches 0 run loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/choose_mode/carved_pumpkin
+execute if score #MWL SetDummyRole matches 1 run loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/choose_mode/jack_o_lantern
 
-replaceitem entity @p[tag=Host] inventory.11 minecraft:redstone{display:{Name:'"\\u00A7r\\u00A7f潜伏時間設定"'}} 1
-replaceitem entity @p[tag=Host] inventory.12 minecraft:glowstone_dust{display:{Name:'"\\u00A7r\\u00A7f発光時間設定"'}} 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:gunpowder{display:{Name:'"\\u00A7r\\u00A7f制限時間設定"'}} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:map{display:{Name:'"\\u00A7r\\u00A7fゲームモード(人狼勝利条件)設定"'}} 1
-replaceitem entity @p[tag=Host] inventory.15 minecraft:chest{display:{Name:'"\\u00A7r\\u00A7f追加特殊アイテム設定"'}} 1
+loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/choose_mode/redstone
+loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/choose_mode/glowstone_dust
+loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/choose_mode/gunpowder
+loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/choose_mode/map
+loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/choose_mode/chest
 
-execute if score #MWL AddedRoleNumber matches 1.. run replaceitem entity @p[tag=Host] inventory.17 minecraft:armor_stand{display:{Name:'"\\u00A7r\\u00A7f追加役職設定"'}} 1
-replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39} 1
-replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39} 1
+execute if score #MWL AddedRoleNumber matches 1.. run loot replace entity @p[tag=Host] inventory.17 loot mwj:setting/choose_mode/armor_stand
+loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/choose_mode/barrier
+loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void

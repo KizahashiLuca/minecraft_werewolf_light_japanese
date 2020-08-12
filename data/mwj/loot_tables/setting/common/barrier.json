@@ -11,11 +11,11 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"キャンセル","color":"light_purple","italic":false}]
+                ["",{"text":"キャンセル","color":"light_purple","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:39,Tags:[\"MWLsetting\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\"]}"
             }
           ]
         }

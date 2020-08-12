@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"フラッシュバン","color":"aqua","italic":false}]
+                ["",{"text":"フラッシュバン","color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
@@ -21,11 +21,12 @@
                 ["",{"text":"盲目 (0:20)","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  投擲","color":"white","bold":false,"italic":false}],
-                ["",{"text":"  効果範囲 : 半径3.0m","color":"white","bold":false,"italic":false}]
+                ["",{"text":"効果範囲 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  半径3.0m","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:[\"MWLitem\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

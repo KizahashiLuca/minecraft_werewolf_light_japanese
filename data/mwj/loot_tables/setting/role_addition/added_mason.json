@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:green_stained_glass",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"共有者の追加","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"AddedMason\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

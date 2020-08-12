@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"コンカッション地雷","color":"aqua","italic":false}]
+                ["",{"text":"コンカッション地雷","color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
@@ -22,12 +22,15 @@
                 ["",{"text":"吐き気 Ⅱ (0:10)","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s)+(%s)キーで設置","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
-                ["",{"text":"  設置以後 : アイテム非消失・設置者回収可能","color":"white","bold":false,"italic":false}],
-                ["",{"text":"  効果範囲 : 半径1.5m","color":"white","bold":false,"italic":false}]
+                ["",{"text":"設置以後 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  アイテム非消失","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  設置者回収可能","color":"white","bold":false,"italic":false}],
+                ["",{"text":"効果範囲 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  半径1.5m","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:[\"MWLitem\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

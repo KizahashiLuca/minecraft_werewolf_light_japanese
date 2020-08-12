@@ -10,9 +10,6 @@
 function mwj:system/time/time
 
 ## Detect Dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7f通常人狼モード"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7f村人2人生存モード"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7f殲滅モード"'}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/game_mode_decision/detect_drop
 
@@ -25,9 +22,9 @@ scoreboard players set @p[tag=Host] SelectOkay 1
 scoreboard players set @p[tag=Host] SelectDecide 1
 
 ## Declare Inventory
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7f通常人狼モード"'}}}]}] SelectNormalWolf 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7f村人2人生存モード"'}}}]}] SelectTwoAlive 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7f殲滅モード"'}}}]}] SelectAnnihilate 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:map",tag:{Tags:["MWLsetting","NormalWolf"]}}]}] SelectNormalWolf 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:map",tag:{Tags:["MWLsetting","TwoAlive"]}}]}] SelectTwoAlive 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{Tags:["MWLsetting","Annihilation"]}}]}] SelectAnnihilate 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{Tags:["MWLsetting"]}}]}] SelectCancel 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{Tags:["MWLsetting"]}}]}] SelectOkay 0
 execute if score #MWL GameMode matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:12b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide 0

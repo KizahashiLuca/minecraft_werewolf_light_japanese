@@ -10,16 +10,7 @@
 function mwj:system/time/time
 
 ## Detect Dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin",tag:{display:{Name:'"\\u00A7r\\u00A7f役欠けなし"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:jack_o_lantern",tag:{display:{Name:'"\\u00A7r\\u00A7f役欠けあり"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone",tag:{display:{Name:'"\\u00A7r\\u00A7f潜伏時間設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:glowstone_dust",tag:{display:{Name:'"\\u00A7r\\u00A7f発光時間設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gunpowder",tag:{display:{Name:'"\\u00A7r\\u00A7f制限時間設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fゲームモード(人狼勝利条件)設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest",tag:{display:{Name:'"\\u00A7r\\u00A7f追加特殊アイテム設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:armor_stand",tag:{display:{Name:'"\\u00A7r\\u00A7f追加役職設定"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39}}}] ThrowItem 1
+scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/choose_mode/detect_drop
 
 ## Detect Select Item
@@ -34,16 +25,16 @@ scoreboard players set @p[tag=Host] SelectCancel 1
 scoreboard players set @p[tag=Host] SelectOkay 1
 
 ## Declare Inventory
-execute if score #MWL SetDummyRole matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:carved_pumpkin",tag:{display:{Name:'"\\u00A7r\\u00A7f役欠けなし"'}}}]}] ChosenDummyRole 0
-execute if score #MWL SetDummyRole matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:jack_o_lantern",tag:{display:{Name:'"\\u00A7r\\u00A7f役欠けあり"'}}}]}] ChosenDummyRole 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:redstone",tag:{display:{Name:'"\\u00A7r\\u00A7f潜伏時間設定"'}}}]}] ChosenHideTime 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:glowstone_dust",tag:{display:{Name:'"\\u00A7r\\u00A7f発光時間設定"'}}}]}] ChosenGlowTime 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:gunpowder",tag:{display:{Name:'"\\u00A7r\\u00A7f制限時間設定"'}}}]}] ChosenGameTime 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{display:{Name:'"\\u00A7r\\u00A7fゲームモード(人狼勝利条件)設定"'}}}]}] ChosenGameMode 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:chest",tag:{display:{Name:'"\\u00A7r\\u00A7f追加特殊アイテム設定"'}}}]}] ChosenItemAdd 0
-execute if score #MWL AddedRoleNumber matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:armor_stand",tag:{display:{Name:'"\\u00A7r\\u00A7f追加役職設定"'}}}]}] ChosenRoleAdd 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:'"\\u00A7r\\u00A7dゲームキャンセル"'},HideFlags:39}}]}] SelectCancel 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:'"\\u00A7r\\u00A7bゲームスタート"'},HideFlags:39}}]}] SelectOkay 0
+execute if score #MWL SetDummyRole matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:carved_pumpkin",tag:{Tags:["MWLsetting"]}}]}] ChosenDummyRole 0
+execute if score #MWL SetDummyRole matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:jack_o_lantern",tag:{Tags:["MWLsetting"]}}]}] ChosenDummyRole 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:redstone",tag:{Tags:["MWLsetting"]}}]}] ChosenHideTime 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:glowstone_dust",tag:{Tags:["MWLsetting"]}}]}] ChosenGlowTime 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:gunpowder",tag:{Tags:["MWLsetting"]}}]}] ChosenGameTime 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:map",tag:{Tags:["MWLsetting"]}}]}] ChosenGameMode 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:chest",tag:{Tags:["MWLsetting"]}}]}] ChosenItemAdd 0
+execute if score #MWL AddedRoleNumber matches 1.. run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:26b,id:"minecraft:armor_stand",tag:{Tags:["MWLsetting"]}}]}] ChosenRoleAdd 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{Tags:["MWLsetting"]}}]}] SelectCancel 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{Tags:["MWLsetting"]}}]}] SelectOkay 0
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={ChosenDummyRole=1}] run function mwj:system/setting/choose_mode/set_dummy_role

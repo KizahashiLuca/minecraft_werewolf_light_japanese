@@ -16,7 +16,7 @@ data modify storage mwj:teleporter Teleporter.Temp.Pos set from entity @s Pos
 
 ## Give soul_lantern
 loot spawn ~ ~ ~ loot mwj:item/special/soul_lantern
-data modify storage mwj:teleporter Teleporter.Temp.Message set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{Tags:["MWLitem","UnsetStorage"]}}},sort=nearest,limit=1] Item.tag.display.Lore[2]
+data modify storage mwj:teleporter Teleporter.Temp.Message set from entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{Tags:["MWLitem","UnsetStorage"]}}},sort=nearest,limit=1] Item.tag.display.Lore[3]
 data remove entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:soul_lantern",tag:{Tags:["MWLitem","UnsetStorage"]}}},sort=nearest,limit=1] Item.tag.Tags[1]
 
 ## Clear scoreboard

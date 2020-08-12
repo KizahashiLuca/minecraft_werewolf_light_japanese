@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:jack_o_lantern",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"役欠けあり","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

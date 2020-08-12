@@ -19,13 +19,19 @@
               "replace": true,
               "lore":[
                 ["",{"text":"召雷","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"即時ダメージ Ⅹ","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  投擲","color":"white","bold":false,"italic":false}],
-                ["",{"text":"  効果範囲 : 半径4.0m","color":"white","bold":false,"italic":false}]
+                ["",{"text":"効果範囲 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  半径4.0m","color":"white","bold":false,"italic":false}],
+                [""],
+                ["",{"text":"利き手に持ったとき：","color":"gray","bold":false,"italic":false}],
+                ["",{"text":" 攻撃力 9","color":"dark_green","bold":false,"italic":false}],
+                ["",{"text":" 攻撃速度 1.1","color":"dark_green","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Damage:248,HideFlags:1,Tags:[\"MWLitem\"]}"
+              "tag":"{Damage:248,HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

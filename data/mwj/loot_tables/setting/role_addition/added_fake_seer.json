@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:light_blue_concrete",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"偽予言者の追加","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"AddedFkSeer\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

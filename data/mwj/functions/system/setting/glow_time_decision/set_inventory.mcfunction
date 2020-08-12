@@ -7,13 +7,13 @@
 ###############################
 
 ## Replace Inventory
-replaceitem entity @p[tag=Host] inventory.10 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7fなし"'}} 1
-replaceitem entity @p[tag=Host] inventory.11 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f1割"'}} 1
-replaceitem entity @p[tag=Host] inventory.12 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f2割"'}} 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f3割"'}} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f5割"'}} 1
-replaceitem entity @p[tag=Host] inventory.15 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f8割"'}} 1
-replaceitem entity @p[tag=Host] inventory.16 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f10割"'}} 1
+loot replace entity @p[tag=Host] inventory.10 loot mwj:setting/glow_time/paper_000pers
+loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/glow_time/paper_010pers
+loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/glow_time/paper_020pers
+loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/glow_time/paper_030pers
+loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/glow_time/paper_050pers
+loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/glow_time/paper_080pers
+loot replace entity @p[tag=Host] inventory.16 loot mwj:setting/glow_time/paper_100pers
 loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
 loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
 

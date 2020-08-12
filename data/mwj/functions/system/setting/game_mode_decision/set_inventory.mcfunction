@@ -7,9 +7,9 @@
 ###############################
 
 ## Replace Inventory
-replaceitem entity @p[tag=Host] inventory.12 minecraft:map{display:{Name:'"\\u00A7r\\u00A7f通常人狼モード"'}} 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:map{display:{Name:'"\\u00A7r\\u00A7f村人2人生存モード"'}} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:map{display:{Name:'"\\u00A7r\\u00A7f殲滅モード"'}} 1
+loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/game_mode/map_normal_wolf
+loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/game_mode/map_two_alive
+loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/game_mode/map_annihilation
 loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
 loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
 

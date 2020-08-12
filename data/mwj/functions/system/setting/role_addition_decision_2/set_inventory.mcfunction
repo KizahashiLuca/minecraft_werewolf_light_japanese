@@ -7,11 +7,11 @@
 ###############################
 
 ## Replace Inventory
-replaceitem entity @p[tag=Host] inventory.11 minecraft:purple_stained_glass{display:{Name:'"\\u00A7r\\u00A7f羽衣狐の追加"'}} 1
-replaceitem entity @p[tag=Host] inventory.12 minecraft:green_stained_glass{display:{Name:'"\\u00A7r\\u00A7f共有者の追加"'}} 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:cyan_stained_glass{display:{Name:'"\\u00A7r\\u00A7f探偵の追加"'}} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:blue_stained_glass{display:{Name:'"\\u00A7r\\u00A7f怪盗の追加"'}} 1
-replaceitem entity @p[tag=Host] inventory.15 minecraft:orange_stained_glass{display:{Name:'"\\u00A7r\\u00A7f猫又の追加"'}} 1
+loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/role_addition/added_fox
+loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/role_addition/added_mason
+loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/role_addition/added_detective
+loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/role_addition/added_thief
+loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/role_addition/added_cat
 
 ## Set scoreboard
 scoreboard players operation #MWL AddedFox = #MWL AddedRole1

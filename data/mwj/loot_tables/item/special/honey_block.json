@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"スティッキー地雷","color":"aqua","italic":false}]
+                ["",{"text":"スティッキー地雷","color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
@@ -21,12 +21,15 @@
                 ["",{"text":"移動速度低下 Ⅲ (**:**)","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s)+(%s)キーで設置","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
-                ["",{"text":"  設置以後 : アイテム消失・設置者回収不能","color":"white","bold":false,"italic":false}],
-                ["",{"text":"  効果範囲 : 半径4.0m","color":"white","bold":false,"italic":false}]
+                ["",{"text":"設置以後 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  アイテム消失","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  設置者回収不能","color":"white","bold":false,"italic":false}],
+                ["",{"text":"効果範囲 : ","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  半径4.0m","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:[\"MWLitem\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

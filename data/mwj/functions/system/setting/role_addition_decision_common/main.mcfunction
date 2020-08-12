@@ -13,10 +13,6 @@ function mwj:system/time/time
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
 
 ## Kill a dropped item
-execute if score #MWL Phase matches 90 run function mwj:system/setting/role_addition_decision_1/detect_drop
-execute if score #MWL Phase matches 91 run function mwj:system/setting/role_addition_decision_2/detect_drop
-execute if score #MWL Phase matches 92 run function mwj:system/setting/role_addition_decision_3/detect_drop
-execute if score #MWL Phase matches 93 run function mwj:system/setting/role_addition_decision_4/detect_drop
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/role_addition_decision_common/detect_drop
 
 ## Detect selected items

@@ -10,13 +10,6 @@
 function mwj:system/time/time
 
 ## Detect Dropping
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f5分"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f10分"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f15分"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f20分"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f25分"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f30分"'}}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f60分"'}}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/game_time_decision/detect_drop
 
@@ -33,13 +26,13 @@ scoreboard players set @p[tag=Host] SelectOkay 1
 scoreboard players set @p[tag=Host] SelectDecide 1
 
 ## Declare Inventory
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:19b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f5分"'}}}]}] Select05mins 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f10分"'}}}]}] Select10mins 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f15分"'}}}]}] Select15mins 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f20分"'}}}]}] Select20mins 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f25分"'}}}]}] Select25mins 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f30分"'}}}]}] Select30mins 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:25b,id:"minecraft:paper",tag:{display:{Name:'"\\u00A7r\\u00A7f60分"'}}}]}] Select60mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:19b,id:"minecraft:paper",tag:{Tags:["MWLsetting","05mins"]}}]}] Select05mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:paper",tag:{Tags:["MWLsetting","10mins"]}}]}] Select10mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:paper",tag:{Tags:["MWLsetting","15mins"]}}]}] Select15mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:paper",tag:{Tags:["MWLsetting","20mins"]}}]}] Select20mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:paper",tag:{Tags:["MWLsetting","25mins"]}}]}] Select25mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:paper",tag:{Tags:["MWLsetting","30mins"]}}]}] Select30mins 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:25b,id:"minecraft:paper",tag:{Tags:["MWLsetting","60mins"]}}]}] Select60mins 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{Tags:["MWLsetting"]}}]}] SelectCancel 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{Tags:["MWLsetting"]}}]}] SelectOkay 0
 execute if score #MWL GameTime matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:10b,id:"minecraft:nether_star",tag:{Tags:["MWLsetting"]}}]}] SelectDecide 0

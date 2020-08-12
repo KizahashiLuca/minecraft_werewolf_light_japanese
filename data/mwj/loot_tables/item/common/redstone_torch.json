@@ -11,20 +11,22 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"杖","color":"aqua","italic":false}]
+                ["",{"text":"杖","color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
               "entity" : "this",
               "replace": true,
               "lore":[
+                ["",{"text":"消滅の呪い","color":"red","bold":false,"italic":false}],
+                ["",{"text":"不可壊","color":"blue","bold":false,"italic":false}],
                 ["",{"text":"役職使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s)キーでドロップ","with":[{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
                 ["",{"text":"  チャット欄で対象を選択","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],Tags:[\"MWLitem\"]}"
+              "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

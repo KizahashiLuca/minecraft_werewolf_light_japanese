@@ -31,7 +31,6 @@ execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Pha
 
 ## Detect the Number of Players is increment/decrement
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedRoleNumber
-# execute if score #MWL PrevAddedRole matches ..-1 run 
 execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_added_role
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 

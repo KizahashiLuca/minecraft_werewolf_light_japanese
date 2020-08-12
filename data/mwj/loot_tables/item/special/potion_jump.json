@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"跳躍のポーション","color":"white","italic":false}]
+                ["",{"text":"跳躍のポーション","color":"yellow","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
@@ -22,7 +22,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{CustomPotionEffects:[{Id:8b,Amplifier:9b,Duration:600}],CustomPotionColor:3470848,HideFlags:32,Tags:[\"MWLitem\",\"potion_jump\"]}"
+              "tag":"{CustomPotionEffects:[{Id:8b,Amplifier:9b,Duration:600}],CustomPotionColor:3470848,HideFlags:63,Tags:[\"MWLitem\",\"potion_jump\"]}"
             }
           ]
         }

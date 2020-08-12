@@ -7,13 +7,13 @@
 ###############################
 
 ## Replace Inventory
-replaceitem entity @p[tag=Host] inventory.10 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f5分"'}} 1
-replaceitem entity @p[tag=Host] inventory.11 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f10分"'}} 1
-replaceitem entity @p[tag=Host] inventory.12 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f15分"'}} 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f20分"'}} 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f25分"'}} 1
-replaceitem entity @p[tag=Host] inventory.15 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f30分"'}} 1
-replaceitem entity @p[tag=Host] inventory.16 minecraft:paper{display:{Name:'"\\u00A7r\\u00A7f60分"'}} 1
+loot replace entity @p[tag=Host] inventory.10 loot mwj:setting/game_time/paper_05mins
+loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/game_time/paper_10mins
+loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/game_time/paper_15mins
+loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/game_time/paper_20mins
+loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/game_time/paper_25mins
+loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/game_time/paper_30mins
+loot replace entity @p[tag=Host] inventory.16 loot mwj:setting/game_time/paper_60mins
 loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
 loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
 

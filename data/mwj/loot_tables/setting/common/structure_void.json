@@ -11,11 +11,11 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"決定","color":"aqua","italic":false}]
+                ["",{"text":"決定","color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:39,Tags:[\"MWLsetting\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\"]}"
             }
           ]
         }

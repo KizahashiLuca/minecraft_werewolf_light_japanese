@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"テレポーター","color":"aqua","italic":false}]
+                ["",{"text":"テレポーター","color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
@@ -20,11 +20,12 @@
               "lore":[
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s)+(%s)キーでテレポート","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
-                ["",{"text":"  使用以後 : ","color":"white","bold":false,"italic":false},{"translate":"(%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false},{"text":" にテレポート","color":"white","bold":false,"italic":false}]
+                ["",{"text":"使用以後 : ","color":"white","bold":false,"italic":false}],
+                ["",{"translate":"  (%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false},{"text":" にテレポート","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Tags:[\"MWLitem\",\"UnsetStorage\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"UnsetStorage\"]}"
             }
           ]
         }

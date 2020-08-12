@@ -11,11 +11,11 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"選択済み","color":"green","italic":false}]
+                ["",{"text":"選択済み","color":"green","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:39,Tags:[\"MWLsetting\",\"AddedRole4\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"AddedRole4\"]}"
             }
           ]
         }
