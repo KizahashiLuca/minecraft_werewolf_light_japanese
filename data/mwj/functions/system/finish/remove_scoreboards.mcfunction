@@ -145,6 +145,9 @@ scoreboard objectives remove AddedHoneyBlock
 scoreboard objectives remove AddedLantern
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
+## Remove Variables for Setting Casting 
+scoreboard objectives remove Casting
+scoreboard objectives remove SetCasting
 ## Remove Variables for Setting Dummy Role
 scoreboard objectives remove DummyRole
 scoreboard objectives remove SetDummyRole

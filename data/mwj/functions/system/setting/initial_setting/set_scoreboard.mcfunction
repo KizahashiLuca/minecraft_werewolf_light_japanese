@@ -31,6 +31,23 @@ scoreboard objectives add NumOfSages dummy
 scoreboard objectives add NumOfWhWolves dummy
 scoreboard objectives add NumOfFanatics dummy
 scoreboard objectives add NumOfImmorals dummy
+scoreboard objectives add NumOfBlack dummy
+scoreboard objectives add NumOfWhite dummy
+scoreboard objectives add PNumOfWolves dummy
+scoreboard objectives add PNumOfMadmans dummy
+scoreboard objectives add PNumOfVillagers dummy
+scoreboard objectives add PNumOfSeers dummy
+scoreboard objectives add PNumOfMediums dummy
+scoreboard objectives add PNumOfFoxes dummy
+scoreboard objectives add PNumOfMasons dummy
+scoreboard objectives add PNumOfDetectives dummy
+scoreboard objectives add PNumOfThieves dummy
+scoreboard objectives add PNumOfCats dummy
+scoreboard objectives add PNumOfFkSeers dummy
+scoreboard objectives add PNumOfSages dummy
+scoreboard objectives add PNumOfWhWolves dummy
+scoreboard objectives add PNumOfFanatics dummy
+scoreboard objectives add PNumOfImmorals dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRoleNumber dummy
 scoreboard objectives add AddedRole dummy
@@ -73,6 +90,10 @@ scoreboard objectives add AddedRole5 dummy
 scoreboard objectives add SelectNumber dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
+## Add Variables for Setting Casting 
+scoreboard objectives add Casting dummy
+scoreboard objectives add SetCasting dummy
+scoreboard objectives add PrevSetCasting dummy
 ## Add Variables for Setting Dummy Role
 scoreboard objectives add DummyRole dummy
 scoreboard objectives add SetDummyRole dummy
@@ -97,6 +118,7 @@ scoreboard objectives add SelectCancel dummy
 scoreboard objectives add SelectReset dummy
 scoreboard objectives add SelectOkay dummy
 scoreboard objectives add SelectDecide dummy
+scoreboard objectives add ChosenCasting dummy
 scoreboard objectives add ChosenDummyRole dummy
 scoreboard objectives add ChosenHideTime dummy
 scoreboard objectives add ChosenGlowTime dummy
@@ -104,6 +126,7 @@ scoreboard objectives add ChosenGameTime dummy
 scoreboard objectives add ChosenGameMode dummy
 scoreboard objectives add ChosenItemAdd dummy
 scoreboard objectives add ChosenRoleAdd dummy
+scoreboard objectives add ChosenCastSet dummy
 ## Add Variables for GUI Hide Time
 scoreboard objectives add Select015secs dummy
 scoreboard objectives add Select030secs dummy
@@ -246,6 +269,10 @@ scoreboard players set #MWL PrevAddedFanatic 0
 scoreboard players set #MWL PrevAddedImmoral 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 600
+## Set Variables for Setting Casting 
+scoreboard players set #MWL Casting 0
+scoreboard players set #MWL SetCasting 0
+scoreboard players set #MWL PrevSetCasting 0
 ## Set Variables for Setting Dummy Role
 scoreboard players set #MWL DummyRole 0
 scoreboard players set #MWL SetDummyRole 0

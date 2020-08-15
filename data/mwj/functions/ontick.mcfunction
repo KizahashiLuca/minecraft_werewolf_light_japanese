@@ -10,6 +10,7 @@
 function mwj:system/en_route
 
 ## Run every tick
+execute if score #MWL Phase matches 95..99 run function mwj:system/setting/casting_decision_common/main
 execute if score #MWL Phase matches 90..94 run function mwj:system/setting/role_addition_decision_common/main
 execute if score #MWL Phase matches 85..89 run function mwj:system/setting/item_addition_decision_common/main
 execute if score #MWL Phase matches 84 run function mwj:system/setting/game_mode_decision/main

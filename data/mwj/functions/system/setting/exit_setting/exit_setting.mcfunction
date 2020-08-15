@@ -7,8 +7,11 @@
 ###############################
 
 ## Store Number of Role
-scoreboard players operation #MWL AddedVilla += #MWL AddedRole
-scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
+execute if score #MWL SetCasting matches 0 run scoreboard players operation #MWL AddedVilla += #MWL AddedRole
+execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL NumOfVillagers += #MWL AddedRole
+
+execute if score #MWL SetCasting matches 0 run scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
+execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL PrevAddedRole = #MWL NumOfRoles
 
 ## Store Variables of ChangeHideTime
 scoreboard players set #MWL ChangeHideTime 15

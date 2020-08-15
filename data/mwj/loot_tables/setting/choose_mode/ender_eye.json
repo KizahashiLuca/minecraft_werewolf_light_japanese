@@ -6,12 +6,12 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"minecraft:armor_stand",
+          "name":"minecraft:ender_eye",
           "functions":[
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"追加役職設定","color":"white","bold":false,"italic":false}]
+                ["",{"text":"配役決定 自動","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

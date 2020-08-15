@@ -6,6 +6,24 @@
 ## Version: v.1.3.1
 ###############################
 
+## Remove Variables for Role Number
+scoreboard objectives remove NumOfBlack
+scoreboard objectives remove NumOfWhite
+scoreboard objectives remove PNumOfWolves
+scoreboard objectives remove PNumOfMadmans
+scoreboard objectives remove PNumOfVillagers
+scoreboard objectives remove PNumOfSeers
+scoreboard objectives remove PNumOfMediums
+scoreboard objectives remove PNumOfFoxes
+scoreboard objectives remove PNumOfMasons
+scoreboard objectives remove PNumOfDetectives
+scoreboard objectives remove PNumOfThieves
+scoreboard objectives remove PNumOfCats
+scoreboard objectives remove PNumOfFkSeers
+scoreboard objectives remove PNumOfSages
+scoreboard objectives remove PNumOfWhWolves
+scoreboard objectives remove PNumOfFanatics
+scoreboard objectives remove PNumOfImmorals
 ## Remove Variables for Setting Added Role
 scoreboard objectives remove PrevAddedWolf
 scoreboard objectives remove PrevAddedMadman
@@ -28,6 +46,8 @@ scoreboard objectives remove AddedRole3
 scoreboard objectives remove AddedRole4
 scoreboard objectives remove AddedRole5
 scoreboard objectives remove SelectNumber
+## Remove Variables for Setting Casting 
+scoreboard objectives remove PrevSetCasting
 ## Remove Variables for Setting Dummy Role
 scoreboard objectives remove PrevSetDummyRole
 ## Remove Variables for Setting Hide Time
@@ -46,6 +66,7 @@ scoreboard objectives remove SelectCancel
 scoreboard objectives remove SelectReset
 scoreboard objectives remove SelectOkay
 scoreboard objectives remove SelectDecide
+scoreboard objectives remove ChosenCasting
 scoreboard objectives remove ChosenDummyRole
 scoreboard objectives remove ChosenHideTime
 scoreboard objectives remove ChosenGlowTime
@@ -53,6 +74,7 @@ scoreboard objectives remove ChosenGameTime
 scoreboard objectives remove ChosenGameMode
 scoreboard objectives remove ChosenItemAdd
 scoreboard objectives remove ChosenRoleAdd
+scoreboard objectives remove ChosenCastSet
 ## Remove Variables for GUI Hide Time
 scoreboard objectives remove Select015secs
 scoreboard objectives remove Select030secs

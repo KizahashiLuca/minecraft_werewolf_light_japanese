@@ -14,5 +14,5 @@ tellraw @a ["",{"text":" ","color":"white"},{"text":"Error","color":"yellow","bo
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲーム中に、新たなゲームは開始できません。","color":"white"}]
 tellraw @a ["",{"text":"  以下のコマンドで、ゲームを中断してください。","color":"white"}]
-tellraw @a ["",{"text":"    ","color":"white"},{"text":"/function #mwj:stop","color":"light_purple"}]
+tellraw @a ["",{"text":"    ","color":"white"},{"text":"/function #mwj:stop","color":"light_purple","hoverEvent":{"action":"show_text","value":"クリックしてゲーム中断"},"clickEvent":{"action":"suggest_command","value":"/function #mwj:stop"}}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

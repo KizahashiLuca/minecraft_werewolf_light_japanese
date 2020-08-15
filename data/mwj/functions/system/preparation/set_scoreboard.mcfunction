@@ -101,7 +101,7 @@ execute if score #MWL SetDummyRole matches 1 run function mwj:system/preparation
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 15
+execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 17
 
 ## Set dummy role
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers

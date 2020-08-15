@@ -22,56 +22,33 @@ scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
 execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
 
 ## Set Role Number
-scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 function mwj:system/setting/initial_setting/set_role_number
 function mwj:system/setting/initial_setting/set_added_role_number
 
 ## Detect the Number of Players is not Enough
 execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Phase 0
 
-## Detect the Number of Players is increment/decrement
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedRoleNumber
-execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_added_role
-scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
-
-## Calculate Prev choice
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWolf
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMadman
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedVilla
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSeer
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMedium
-
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFox
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMason
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedDetec
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedThief
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedCat
-
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFkSeer
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSage
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWhWolf
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFanatic
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedImmoral
-scoreboard players operation #MWL AddedRole = #MWL PrevAddedRole
-
 ## Set Prev choice
-scoreboard players operation #MWL PrevAddedWolf = #MWL AddedWolf
-scoreboard players operation #MWL PrevAddedMadman = #MWL AddedMadman
-scoreboard players operation #MWL PrevAddedVilla = #MWL AddedVilla
-scoreboard players operation #MWL PrevAddedSeer = #MWL AddedSeer
-scoreboard players operation #MWL PrevAddedMedium = #MWL AddedMedium
+scoreboard players set #MWL AddedRole 0
+scoreboard players set #MWL PrevAddedRole 0
 
-scoreboard players operation #MWL PrevAddedFox = #MWL AddedFox
-scoreboard players operation #MWL PrevAddedMason = #MWL AddedMason
-scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
-scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
-scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
+scoreboard players operation #MWL PNumOfWolves = #MWL NumOfWolves
+scoreboard players operation #MWL PNumOfMadmans = #MWL NumOfMadmans
+scoreboard players operation #MWL PNumOfVillagers = #MWL NumOfVillagers
+scoreboard players operation #MWL PNumOfSeers = #MWL NumOfSeers
+scoreboard players operation #MWL PNumOfMediums = #MWL NumOfMediums
 
-scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
-scoreboard players operation #MWL PrevAddedSage = #MWL AddedSage
-scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
-scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
-scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
+scoreboard players operation #MWL PNumOfFoxes = #MWL NumOfFoxes
+scoreboard players operation #MWL PNumOfMasons = #MWL NumOfMasons
+scoreboard players operation #MWL PNumOfDetectives = #MWL NumOfDetectives
+scoreboard players operation #MWL PNumOfThieves = #MWL NumOfThieves
+scoreboard players operation #MWL PNumOfCats = #MWL NumOfCats
+
+scoreboard players operation #MWL PNumOfFkSeers = #MWL NumOfFkSeers
+scoreboard players operation #MWL PNumOfSages = #MWL NumOfSages
+scoreboard players operation #MWL PNumOfWhWolves = #MWL NumOfWhWolves
+scoreboard players operation #MWL PNumOfFanatics = #MWL NumOfFanatics
+scoreboard players operation #MWL PNumOfImmorals = #MWL NumOfImmorals
 
 ## Send a Message Dummy Role to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
