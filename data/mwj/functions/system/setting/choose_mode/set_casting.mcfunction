@@ -17,7 +17,7 @@ execute if score #MWL SetCasting matches 1 run function mwj:system/setting/choos
 ## Send a Message Casting to All Players
 tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
 execute if score #MWL SetCasting matches 0 run tellraw @a ["",{"text":"  配役設定が、 ","color":"white"},{"text":"手動","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
-execute if score #MWL SetCasting matches 1 run tellraw @a ["",{"text":"  役欠けが、 ","color":"white"},{"text":"自動","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
+execute if score #MWL SetCasting matches 1 run tellraw @a ["",{"text":"  配役設定が、 ","color":"white"},{"text":"自動","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## Change to Choose Mode
