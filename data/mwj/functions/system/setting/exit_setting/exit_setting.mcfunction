@@ -12,6 +12,9 @@ execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL
 
 execute if score #MWL SetCasting matches 0 run scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL PrevAddedRole = #MWL NumOfRoles
+execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL AddedMason = #MWL NumOfMasons
+execute if score #MWL SetCasting matches 1 run scoreboard players set #MWL TempVariable 2
+execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL AddedMason /= #MWL TempVariable
 
 ## Store Variables of ChangeHideTime
 scoreboard players set #MWL ChangeHideTime 15

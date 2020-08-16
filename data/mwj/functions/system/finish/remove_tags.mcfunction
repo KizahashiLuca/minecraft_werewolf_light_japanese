@@ -7,7 +7,6 @@
 ###############################
 
 ## Remove tags
-tag @a remove Host
 #### Number system
 tag @a remove numbered
 #### Werwolf system

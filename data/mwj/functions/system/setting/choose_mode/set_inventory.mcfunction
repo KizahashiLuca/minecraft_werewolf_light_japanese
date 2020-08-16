@@ -6,6 +6,9 @@
 ## Version: v.1.3.1
 ###############################
 
+## Count number of roles
+function mwj:system/setting/casting_decision_common/count_number_of_roles
+
 ## Replace Inventory
 execute if score #MWL SetDummyRole matches 0 run loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/choose_mode/carved_pumpkin
 execute if score #MWL SetDummyRole matches 1 run loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/choose_mode/jack_o_lantern
@@ -21,4 +24,7 @@ loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/choose_mode/chest
 execute if score #MWL SetCasting matches 0 if score #MWL AddedRoleNumber matches 1.. run loot replace entity @p[tag=Host] inventory.17 loot mwj:setting/choose_mode/armor_stand_role_addition
 execute if score #MWL SetCasting matches 1 run loot replace entity @p[tag=Host] inventory.8 loot mwj:setting/choose_mode/armor_stand_casting
 loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/choose_mode/barrier
-loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void
+
+execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void
+execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void
+execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/choose_mode/structure_void

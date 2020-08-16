@@ -12,6 +12,7 @@ execute if score #MWL PrevSetDummyRole matches 1 run scoreboard players set #MWL
 scoreboard players operation #MWL PrevSetDummyRole = #MWL SetDummyRole
 
 ## Count Players
+scoreboard players operation #MWL PrevAddedRole = #MWL NumOfRoles
 scoreboard players set #MWL NumOfPlayers 0
 execute as @a[gamemode=!spectator] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
@@ -21,16 +22,16 @@ execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 1
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
 execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
 
-## Set Role Number
-function mwj:system/setting/initial_setting/set_role_number
-function mwj:system/setting/initial_setting/set_added_role_number
-
 ## Detect the Number of Players is not Enough
 execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Set Prev choice
-scoreboard players set #MWL AddedRole 0
-scoreboard players set #MWL PrevAddedRole 0
+scoreboard players operation #MWL PrevAddedRole -= #MWL NumOfRoles
+
+execute if score #MWL SetDummyRole matches 0 if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_number_of_role
+
+scoreboard players operation #MWL AddedRole -= #MWL PrevAddedRole
+scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole
 
 scoreboard players operation #MWL PNumOfWolves = #MWL NumOfWolves
 scoreboard players operation #MWL PNumOfMadmans = #MWL NumOfMadmans

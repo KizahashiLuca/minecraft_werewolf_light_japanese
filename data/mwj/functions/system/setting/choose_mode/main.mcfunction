@@ -24,7 +24,9 @@ scoreboard players set @p[tag=Host] ChosenItemAdd 1
 scoreboard players set @p[tag=Host] ChosenRoleAdd 1
 scoreboard players set @p[tag=Host] ChosenCastSet 1
 scoreboard players set @p[tag=Host] SelectCancel 1
-scoreboard players set @p[tag=Host] SelectOkay 1
+execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run scoreboard players set @p[tag=Host] SelectOkay 1
+execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run scoreboard players set @p[tag=Host] SelectOkay 1
+execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run scoreboard players set @p[tag=Host] SelectOkay 1
 
 ## Declare Inventory
 execute if score #MWL SetDummyRole matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:18b,id:"minecraft:carved_pumpkin",tag:{Tags:["MWLsetting"]}}]}] ChosenDummyRole 0
@@ -56,4 +58,10 @@ execute as @p[tag=Host,scores={SelectCancel=1}] run function mwj:stop
 execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/exit_setting/exit_setting
 
 ## Process the system finished
-execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/setting/exit_setting/exit_setting
+function mwj:system/setting/casting_decision_common/count_number_of_roles
+scoreboard players set #MWL TempVariable 0
+execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run scoreboard players set #MWL TempVariable 1
+execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run scoreboard players set #MWL TempVariable 1
+execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run scoreboard players set #MWL TempVariable 1
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 if score #MWL TempVariable matches 0 run scoreboard players set #MWL Second 600
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 if score #MWL TempVariable matches 1 run function mwj:system/setting/exit_setting/exit_setting

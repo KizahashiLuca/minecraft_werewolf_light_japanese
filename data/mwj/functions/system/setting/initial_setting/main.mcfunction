@@ -6,11 +6,29 @@
 ## Version: v.1.3.1
 ###############################
 
-## Set Team
-function mwj:system/setting/initial_setting/set_team
-
 ## Change gamerules
 function mwj:system/setting/initial_setting/set_gamerule
+
+## Remove storages
+execute if score #MWL Version matches 16.. run function mwj:system/finish/remove_storages
+
+## Remove bossbars
+function mwj:system/finish/remove_bossbars
+
+## Remove entities
+function mwj:system/finish/remove_entities
+
+## Remove entities
+function mwj:system/finish/remove_tags
+
+## Remove teams
+function mwj:system/finish/remove_teams
+
+## Revoke advancements
+function mwj:system/finish/revoke_advancements
+
+## Set Team
+function mwj:system/setting/initial_setting/set_team
 
 ## Set Scoreboard
 function mwj:system/setting/initial_setting/set_scoreboard

@@ -24,7 +24,8 @@ function mwj:system/finish/remove_bossbars
 ## Remove entities
 function mwj:system/finish/remove_entities
 
-## Remove entities
+## Remove tags
+tag @a remove Host
 function mwj:system/finish/remove_tags
 
 ## Remove teams
