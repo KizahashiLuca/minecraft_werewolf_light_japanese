@@ -11,7 +11,7 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"配役決定 自動","color":"white","bold":false,"italic":false}]
+                ["",{"text":"配役決定 手動","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

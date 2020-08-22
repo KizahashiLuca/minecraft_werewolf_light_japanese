@@ -19,7 +19,7 @@ execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL
 execute if score #MWL SetCasting matches 1 if score #MWL PrevAddedRole matches ..-1 run scoreboard players operation #MWL NumOfVillagers -= #MWL PrevAddedRole
 execute if score #MWL SetCasting matches 1 if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_number_of_role
 ## Dummy Role
-execute if score #MWL SetCasting matches 0 unless score #MWL Phase matches 0 if score #MWL SetDummyRole matches 1 run function mwj:system/preparation/set_dummy_role
+execute unless score #MWL Phase matches 0 if score #MWL SetDummyRole matches 1 run function mwj:system/preparation/set_dummy_role
 ## Decide Roles
 execute unless score #MWL Phase matches 0 run function mwj:system/preparation/role_decision
 ## Give Items

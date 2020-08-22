@@ -22,6 +22,9 @@ execute as @s[scores={CurrentRole=4,DeathCount=0}] run tellraw @p[scores={Curren
 ## Send a Message that the Stolen is Madman
 execute as @s[scores={CurrentRole=5,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"狂人","color":"light_purple","bold":true},{"text":" になりました","color":"white"}]
 
+## Send a Message that the Stolen is Fanatic
+execute as @s[scores={CurrentRole=6,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"狂信者","color":"light_purple","bold":true},{"text":" になりました","color":"white"}]
+
 ## Send a Message that the Stolen is Fox
 execute as @s[scores={CurrentRole=10,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" になりました","color":"white"}]
 
@@ -39,6 +42,9 @@ execute as @s[scores={CurrentRole=25,DeathCount=0}] run tellraw @p[scores={Curre
 
 ## Send a Message that the Stolen is Fake Seer
 execute as @s[scores={CurrentRole=26,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"予言者","color":"aqua","bold":true},{"text":" になりました","color":"white"}]
+
+## Send a Message that the Stolen is Sage
+execute as @s[scores={CurrentRole=27,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"賢者","color":"aqua","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Medium
 execute as @s[scores={CurrentRole=28,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"霊媒師","color":"yellow","bold":true},{"text":" になりました","color":"white"}]
@@ -90,6 +96,9 @@ execute as @s[scores={DeathCount=1..2}] run scoreboard players set @p[scores={Cu
 
 ## Send a Message of wolves
 execute as @s[scores={DeathCount=0,PrevRole=1..4}] run tellraw @p[scores={CurrentRole=1..4,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"},{"text":" です。","color":"white"}]
+
+## Send a Message of Fanatic
+execute as @s[scores={DeathCount=0,PrevRole=6}] run tellraw @p[scores={CurrentRole=6,RoleOfNum=1}] ["",{"text":"    人狼は ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"},{"text":" です。","color":"white"}]
 
 ## Send a Message of immoralists
 execute as @s[scores={DeathCount=0,PrevRole=11}] run tellraw @p[scores={CurrentRole=11,RoleOfNum=1}] ["",{"text":"    羽衣狐は ","color":"white"},{"selector":"@a[scores={CurrentRole=10}]","color":"dark_purple"},{"text":" です。","color":"white"}]
