@@ -34,6 +34,7 @@ scoreboard players operation #MWL NumOfVillagers -= #MWL AddedSage
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedWhWolf
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedFanatic
 scoreboard players operation #MWL NumOfVillagers -= #MWL AddedImmoral
+scoreboard players operation #MWL NumOfVillagers -= #MWL AddedLtRed
 
 scoreboard players operation #MWL NumOfWolves += #MWL AddedWolf
 scoreboard players operation #MWL NumOfMadmans += #MWL AddedMadman
@@ -52,3 +53,4 @@ scoreboard players operation #MWL NumOfSages = #MWL AddedSage
 scoreboard players operation #MWL NumOfWhWolves = #MWL AddedWhWolf
 scoreboard players operation #MWL NumOfFanatics = #MWL AddedFanatic
 scoreboard players operation #MWL NumOfImmorals = #MWL AddedImmoral
+scoreboard players operation #MWL NumOfLtReds = #MWL AddedLtRed

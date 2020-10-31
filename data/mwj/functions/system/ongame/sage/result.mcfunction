@@ -39,6 +39,7 @@ execute as @s[scores={CurrentRole=27}] run tellraw @p[scores={CurrentRole=27,Rol
 execute as @s[scores={CurrentRole=28}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"霊媒師","color":"yellow","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=31}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"探偵","color":"dark_aqua","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=35}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"怪盗","color":"blue","bold":true},{"text":" です","color":"white"}]
+execute as @s[scores={CurrentRole=39}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"赤ずきん","color":"gold","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=40}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"猫又","color":"gold","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Common Message

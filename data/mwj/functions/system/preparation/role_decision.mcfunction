@@ -84,6 +84,11 @@ scoreboard players operation #MWL NumOfRole = #MWL NumOfImmorals
 execute if score #MWL DummyRole matches 11 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/preparation/role_decision/immoralist
 
+## Decide little reds
+scoreboard players operation #MWL NumOfRole = #MWL NumOfLtReds
+execute if score #MWL DummyRole matches 12 run scoreboard players remove #MWL NumOfRole 1
+function mwj:system/preparation/role_decision/little_red
+
 ## Decide Mason Pair
 scoreboard players operation #MWL NumOfRole = #MWL AddedMason
 function mwj:system/preparation/role_decision/mason_pair

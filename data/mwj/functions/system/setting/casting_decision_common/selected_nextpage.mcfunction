@@ -8,8 +8,8 @@
 
 ## Set Next Page
 scoreboard players add #MWL Phase 1
-execute if score #MWL Phase matches 98 run scoreboard players set #MWL Phase 95
-# execute if score #MWL Phase matches 99 run scoreboard players set #MWL Phase 95
+execute if score #MWL Version matches ..14 if score #MWL Phase matches 98 run scoreboard players set #MWL Phase 95
+execute if score #MWL Phase matches 99 run scoreboard players set #MWL Phase 95
 
 execute if score #MWL Phase matches 95 run function mwj:system/setting/casting_decision_1/set_added
 execute if score #MWL Phase matches 96 run function mwj:system/setting/casting_decision_2/set_added

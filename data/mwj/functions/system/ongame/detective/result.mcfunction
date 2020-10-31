@@ -28,7 +28,10 @@ execute as @p[scores={TEMP2=1,DeathCount=0}] run tellraw @p[scores={CurrentRole=
 execute as @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=181..}] run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は行方不明です。","color":"white"}]
 
 ## Send a Message that Victim is dead
-execute as @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..180}] run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は殺害されています。","color":"white"}]
+execute as @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..180},tag=Cryptobiosis] run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は仮死状態です。","color":"white"}]
+
+## Send a Message that Victim is dead
+execute as @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..180},tag=!Cryptobiosis] run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は殺害されています。","color":"white"}]
 
 ## Send a Message that Killer is Known
 execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..120}] as @a if score @s NumOfPlayers = @p[scores={TEMP2=1}] NumberOfKiller run tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@p[scores={TEMP2=1}]","color":"white"},{"text":" の殺害者は ","color":"white"},{"selector":"@s","color":"white","bold":true},{"text":" です。","color":"white"}]

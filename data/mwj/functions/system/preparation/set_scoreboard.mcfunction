@@ -56,6 +56,7 @@ scoreboard objectives add RandomMultiplier dummy
 ##   28 : Medium 霊媒師
 ##   31 : Detective 探偵
 ##   35 : Thief 怪盗
+##   39 : Little Red 赤ずきん
 ##   40 : Cat 猫又
 
 ## Set Variables for Game

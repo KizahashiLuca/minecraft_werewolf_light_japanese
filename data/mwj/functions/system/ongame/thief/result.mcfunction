@@ -55,6 +55,9 @@ execute as @s[scores={CurrentRole=31,DeathCount=0}] run tellraw @p[scores={Curre
 ## Send a Message that the Stolen is Thief
 execute as @s[scores={CurrentRole=35,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
+## Send a Message that the Stolen is Little Red
+execute as @s[scores={CurrentRole=39,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"赤ずきん","color":"gold","bold":true},{"text":" になりました","color":"white"}]
+
 ## Send a Message that the Stolen is Cat
 execute as @s[scores={CurrentRole=40,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"猫又","color":"gold","bold":true},{"text":" になりました","color":"white"}]
 
@@ -81,7 +84,7 @@ scoreboard players add #MWL NumberOfStolen 1
 ## Thief Role Done
 execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
 execute as @s[scores={DeathCount=0,CurrentRole=35}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone 0
-execute as @s[scores={DeathCount=0,CurrentRole=40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
+execute as @s[scores={DeathCount=0,CurrentRole=36..40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
 execute as @s[scores={DeathCount=1}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone 0
 
 ## Reset Thief Trigger
@@ -90,7 +93,7 @@ scoreboard players reset @p[scores={CurrentRole=35,RoleOfNum=1}] TargetOfRole
 ## Exchange Role
 execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole = @s CurrentRole
 execute as @s[scores={DeathCount=0,CurrentRole=35}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole 20
-execute as @s[scores={DeathCount=0,CurrentRole=40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole = @s CurrentRole
+execute as @s[scores={DeathCount=0,CurrentRole=36..40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole = @s CurrentRole
 scoreboard players set @s[scores={DeathCount=0}] CurrentRole 20
 execute as @s[scores={DeathCount=1..2}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] CurrentRole 20
 

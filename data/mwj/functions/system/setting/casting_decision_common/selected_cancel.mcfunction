@@ -27,7 +27,7 @@ scoreboard players operation #MWL NumOfWhWolves = #MWL PNumOfWhWolves
 scoreboard players operation #MWL NumOfFanatics = #MWL PNumOfFanatics
 scoreboard players operation #MWL NumOfImmorals = #MWL PNumOfImmorals
 
-# scoreboard players operation #MWL NumOf = #MWL PNumOf
+scoreboard players operation #MWL NumOfLtReds = #MWL PNumOfLtReds
 # scoreboard players operation #MWL NumOf = #MWL PNumOf
 # scoreboard players operation #MWL NumOf = #MWL PNumOf
 # scoreboard players operation #MWL NumOf = #MWL PNumOf

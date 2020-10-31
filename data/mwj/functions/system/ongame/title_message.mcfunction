@@ -69,6 +69,7 @@ tellraw @a[scores={CurrentRole=27}] ["",{"text":"\n    あなたは ","color":"w
 tellraw @a[scores={CurrentRole=28}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"霊媒師","color":"yellow"},{"text":" です。","color":"white"}]
 tellraw @a[scores={CurrentRole=31}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"探偵","color":"dark_aqua"},{"text":" です。","color":"white"}]
 tellraw @a[scores={CurrentRole=35}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"怪盗","color":"blue"},{"text":" です。","color":"white"}]
+tellraw @a[scores={CurrentRole=39}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"赤ずきん","color":"gold"},{"text":" です。","color":"white"}]
 tellraw @a[scores={CurrentRole=40}] ["",{"text":"\n    あなたは ","color":"white"},{"text":"猫又","color":"gold"},{"text":" です。","color":"white"}]
 tellraw @a[team=!Player] ["",{"text":"\n    あなたは ","color":"white"},{"text":"観戦者","color":"white"},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]

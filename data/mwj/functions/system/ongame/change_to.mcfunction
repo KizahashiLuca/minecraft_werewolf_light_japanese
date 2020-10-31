@@ -41,6 +41,8 @@ scoreboard objectives add FlagOfThiefLog dummy
 scoreboard objectives add TargetOfStolen dummy
 scoreboard objectives add ThiefStealSecond dummy
 scoreboard objectives add ThiefStealTick dummy
+#### Little Red
+scoreboard objectives add KilledByWolf dummy
 #### Cat
 scoreboard objectives add KilledByCat dummy
 ## Add Variables for Items
@@ -94,6 +96,8 @@ scoreboard players reset @a NumberOfStolen
 scoreboard players reset @a TargetOfStolen
 scoreboard players reset @a FlagOfThiefLog
 scoreboard players set #MWL NumberOfStolen 1
+#### Little Red
+scoreboard players reset @a KilledByWolf
 #### Cat
 scoreboard players reset @a KilledByCat
 ## Add Items
