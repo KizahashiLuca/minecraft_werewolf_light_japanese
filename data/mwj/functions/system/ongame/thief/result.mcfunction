@@ -64,11 +64,13 @@ execute as @s[scores={CurrentRole=40,DeathCount=0}] run tellraw @p[scores={Curre
 ## Put Tag
 tag @p[scores={CurrentRole=35,RoleOfNum=1}] remove NonWolf
 execute as @s[scores={DeathCount=1..2}] run tag @p[scores={CurrentRole=35,RoleOfNum=1}] add NonWolf
-execute as @s[scores={DeathCount=0,CurrentRole=1..9}] run tag @p[scores={CurrentRole=35,RoleOfNum=1}] add WereWolf
+execute as @s[scores={DeathCount=0,CurrentRole=1..4}] run tag @p[scores={CurrentRole=35,RoleOfNum=1}] add WereWolf
+execute as @s[scores={DeathCount=0,CurrentRole=5..9}] run tag @p[scores={CurrentRole=35,RoleOfNum=1}] add MadMan
 execute as @s[scores={DeathCount=0,CurrentRole=10..39}] run tag @p[scores={CurrentRole=35,RoleOfNum=1}] add NonWolf
 execute as @s[scores={DeathCount=0,CurrentRole=40}] run tag @p[scores={CurrentRole=35,RoleOfNum=1}] add Cat
 
-tag @s[scores={DeathCount=0,CurrentRole=1..9}] remove WereWolf
+tag @s[scores={DeathCount=0,CurrentRole=1..4}] remove WereWolf
+tag @s[scores={DeathCount=0,CurrentRole=5..9}] remove MadMan
 tag @s[scores={DeathCount=0,CurrentRole=10..39}] remove NonWolf
 tag @s[scores={DeathCount=0,CurrentRole=40}] remove Cat
 tag @s[scores={DeathCount=0}] add NonWolf

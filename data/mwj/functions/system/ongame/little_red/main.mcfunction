@@ -6,8 +6,11 @@
 ## Version: v.1.4.1
 ###############################
 
-## Set 
-execute as @s[scores={DeathCount=1}] run function mwj:system/ongame/little_red/decide_stray_bullet
+## Set grave
+execute as @s[scores={DeathCount=1}] run function mwj:system/ongame/little_red/set_grave
 
-## Send a Message to a StrayBullet Player
-execute if score @s[scores={DeathCount=2}] NumOfPlayers = @p[tag=StrayBullet] KilledByCat run function mwj:system/ongame/cat/message_to_stray_bullet
+## Main loop
+execute as @s[tag=Cryptobiosis,scores={DeathCount=1..2}] run function mwj:system/ongame/little_red/in_grave
+
+## Leave grave
+execute if entity @p[tag=WereWolf,scores={CurrentRole=1..4,DeathCount=1}] as @s[tag=Cryptobiosis,scores={DeathCount=2}] run function mwj:system/ongame/little_red/leave_grave

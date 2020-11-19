@@ -30,6 +30,9 @@
             },{
               "function":"minecraft:set_nbt",
               "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": 4
             }
           ]
         }

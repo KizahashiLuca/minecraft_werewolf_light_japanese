@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:light_gray_stained_glass_pane",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                [""]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

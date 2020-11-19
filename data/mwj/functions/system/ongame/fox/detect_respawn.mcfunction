@@ -7,9 +7,7 @@
 ###############################
 
 ## Detected Respawn
-loot replace entity @s[scores={RespawnTime=1..}] hotbar.0 1 loot mwj:item/common/bow
-loot replace entity @s[scores={RespawnTime=1..}] hotbar.1 1 loot mwj:item/common/arrow
-loot replace entity @s[scores={RespawnTime=1..}] hotbar.2 1 loot mwj:item/common/redstone_torch
+loot replace entity @s[scores={RespawnTime=1..}] hotbar.0 3 loot mwj:item/common
 
 ## Detected Unspawn
 scoreboard players set @s[scores={RespawnTime=0}] DeathCount 1

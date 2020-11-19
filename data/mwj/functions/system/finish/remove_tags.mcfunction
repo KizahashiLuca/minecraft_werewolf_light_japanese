@@ -11,12 +11,15 @@
 tag @a remove numbered
 #### Werwolf system
 tag @a remove WereWolf
+tag @a remove MadMan
 tag @a remove NonWolf
 tag @a remove Cat
 #### Give item
 tag @a remove MWLitem
 #### Cat system
 tag @a remove StrayBullet
+#### Little Red system
+tag @a remove Cryptobiosis
 #### Fox system
 tag @a remove SeeredFox
 tag @a remove SeerFox

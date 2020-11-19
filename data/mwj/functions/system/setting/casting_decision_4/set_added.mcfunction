@@ -8,6 +8,10 @@
 
 ## Set scoreboard
 scoreboard players operation #MWL AddedRole1 = #MWL NumOfLtReds
+scoreboard players set #MWL AddedRole2 0
+scoreboard players set #MWL AddedRole3 0
+scoreboard players set #MWL AddedRole4 0
+scoreboard players set #MWL AddedRole5 0
 # scoreboard players operation #MWL AddedRole2 = #MWL NumOfSages
 # scoreboard players operation #MWL AddedRole3 = #MWL NumOfWhWolves
 # scoreboard players operation #MWL AddedRole4 = #MWL NumOfFanatics
