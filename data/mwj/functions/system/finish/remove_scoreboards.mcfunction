@@ -72,7 +72,7 @@ scoreboard objectives remove KilledByWolf
 #### Cat
 scoreboard objectives remove KilledByCat
 ## Remove Variables for randomizer
-scoreboard objectives remove 11
+scoreboard objectives remove 12
 scoreboard objectives remove DummyRoleFlag
 scoreboard objectives remove RandomSeed
 scoreboard objectives remove RandomCount

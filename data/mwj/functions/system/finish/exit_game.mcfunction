@@ -10,7 +10,7 @@
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 
 ## teleport to alive players
-execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DeathCount=1..2}] @r[gamemode=adventure]
+execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DeathCount=1..2}] @p[gamemode=adventure,sort=random]
 
 ## Remove storages
 execute if score #MWL Version matches 16.. run function mwj:system/finish/remove_storages

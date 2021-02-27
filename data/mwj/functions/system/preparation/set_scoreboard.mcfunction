@@ -33,7 +33,7 @@ scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
 scoreboard objectives add TEMP_DIGIT dummy
 ## Add Variables for randomizer
-scoreboard objectives add 11 dummy
+scoreboard objectives add 12 dummy
 scoreboard objectives add DummyRoleFlag dummy
 scoreboard objectives add RandomSeed dummy
 scoreboard objectives add RandomCount dummy
@@ -90,7 +90,7 @@ scoreboard players set #MWL NumberOfKillLog 1
 scoreboard players set @a MasonPair 0
 scoreboard players set #MWL MasonPair 1
 ## Set Variables for randomizer
-scoreboard players set #MWL 11 11
+scoreboard players set #MWL 12 12
 scoreboard players set #MWL DummyRoleFlag 0
 scoreboard players set #MWL RandomSeed 0
 scoreboard players set #MWL RandomCount 10
@@ -101,9 +101,10 @@ execute if score #MWL SetDummyRole matches 1 run function mwj:system/preparation
 
 ## RE-Count Players
 execute as @a[team=Player] run scoreboard players add #MWL NumOfPlayers 1
-execute if score #MWL NumOfPlayers matches ..2 run scoreboard players set #MWL Phase 0
 ## Test
 execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 15
+## Set phase
+execute if score #MWL NumOfPlayers matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Set dummy role
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers

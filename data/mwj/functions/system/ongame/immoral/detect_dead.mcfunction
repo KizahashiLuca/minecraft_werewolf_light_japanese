@@ -7,6 +7,6 @@
 ###############################
 
 ## Fox Glowing
-effect give @r[scores={CurrentRole=10,DeathCount=0}] minecraft:glowing 5 0 true
+effect give @p[scores={CurrentRole=10,DeathCount=0},sort=random] minecraft:glowing 5 0 true
 
 scoreboard players set @s RoleDone 1
