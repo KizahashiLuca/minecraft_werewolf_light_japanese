@@ -8,9 +8,6 @@
 
 ## Give item
 loot give @s loot mwj:item/special/snowball
-loot give @s loot mwj:item/special/snowball
-loot give @s loot mwj:item/special/snowball
-loot give @s loot mwj:item/special/snowball
 
 ## Add tag
 tag @s add MWLitem

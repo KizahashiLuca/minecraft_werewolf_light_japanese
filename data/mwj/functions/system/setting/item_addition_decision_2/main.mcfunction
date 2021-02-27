@@ -7,11 +7,11 @@
 ###############################
 
 ## Declare Inventory
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:elytra",tag:{Tags:["MWLitem"]}}]}] SelectItem1 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:snowball",tag:{Tags:["MWLitem"]}}]}] SelectItem2 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:potion",tag:{Tags:["MWLitem","potion_invisible"]}}]}] SelectItem3 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:potion",tag:{Tags:["MWLitem","potion_speed"]}}]}] SelectItem4 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:potion",tag:{Tags:["MWLitem","potion_jump"]}}]}] SelectItem5 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:elytra",Count:1b,tag:{Tags:["MWLitem"]}}]}] SelectItem1 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:21b,id:"minecraft:snowball",Count:4b,tag:{Tags:["MWLitem"]}}]}] SelectItem2 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:potion",Count:1b,tag:{Tags:["MWLitem","potion_invisible"]}}]}] SelectItem3 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:potion",Count:1b,tag:{Tags:["MWLitem","potion_speed"]}}]}] SelectItem4 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:potion",Count:1b,tag:{Tags:["MWLitem","potion_jump"]}}]}] SelectItem5 0
 
 ## Function Each Mode
 execute as @p[tag=Host,scores={SelectItem1=1}] run function mwj:system/setting/item_addition_decision_2/selected_elytra

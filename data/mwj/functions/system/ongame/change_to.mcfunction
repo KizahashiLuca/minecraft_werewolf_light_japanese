@@ -56,6 +56,8 @@ scoreboard objectives add DropConduit minecraft.dropped:minecraft.conduit
 execute if score #MWL Version matches 15.. run function mwj:system/preparation/scoreboard/add_honey_block
 #### Soul lantern
 execute if score #MWL Version matches 16.. run function mwj:system/preparation/scoreboard/add_soul_lantern
+#### Twisting Vines
+execute if score #MWL Version matches 16.. run function mwj:system/preparation/scoreboard/add_twisting_vines
 
 ## Set Variables for Role
 execute as @a run scoreboard players operation @s PrevRole = @s CurrentRole
@@ -115,6 +117,9 @@ scoreboard players reset @a TeleporterPosY
 scoreboard players reset @a TeleporterPosZ
 scoreboard players reset @a DropSoulLantern
 scoreboard players reset @a DropLantern
+#### Twisting Vines
+scoreboard players reset @a TwistVinesCount
+scoreboard players reset @a DropTwistVines
 
 ## Set the Game Time
 ## Reset Scoreboard

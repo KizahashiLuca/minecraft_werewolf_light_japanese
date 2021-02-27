@@ -119,6 +119,7 @@ scoreboard objectives remove PrevAddedConduit
 scoreboard objectives remove PrevAddedCrossbo
 scoreboard objectives remove PrevAddedHoneyBl
 scoreboard objectives remove PrevAddedLantern
+scoreboard objectives remove PrevAddedVines
 scoreboard objectives remove AddedItem1
 scoreboard objectives remove AddedItem2
 scoreboard objectives remove AddedItem3

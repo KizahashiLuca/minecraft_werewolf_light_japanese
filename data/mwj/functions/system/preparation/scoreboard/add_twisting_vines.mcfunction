@@ -6,8 +6,6 @@
 ## Version: v.1.4.1
 ###############################
 
-## Give item
-loot give @s loot mwj:item/special/conduit
-
-## Add tag
-tag @s add MWLitem
+## Add Variables for Twisting Vines
+scoreboard objectives add TwistVinesCount dummy
+scoreboard objectives add DropTwistVines minecraft.dropped:minecraft.twisting_vines

@@ -7,4 +7,4 @@
 ###############################
 
 ## Detect haven honey_block
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:honey_block",tag:{Tags:["MWLitem"]}}]}] SelectItem4 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:honey_block",Count:4b,tag:{Tags:["MWLitem"]}}]}] SelectItem4 0

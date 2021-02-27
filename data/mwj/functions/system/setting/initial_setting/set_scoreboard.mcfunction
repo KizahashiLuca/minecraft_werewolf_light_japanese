@@ -171,6 +171,7 @@ scoreboard objectives add AddedConduit dummy
 scoreboard objectives add AddedCrossbow dummy
 scoreboard objectives add AddedHoneyBlock dummy
 scoreboard objectives add AddedLantern dummy
+scoreboard objectives add AddedVines dummy
 scoreboard objectives add PrevAddedStick dummy
 scoreboard objectives add PrevAddedTotem dummy
 scoreboard objectives add PrevAddedDeath dummy
@@ -186,6 +187,7 @@ scoreboard objectives add PrevAddedConduit dummy
 scoreboard objectives add PrevAddedCrossbo dummy
 scoreboard objectives add PrevAddedHoneyBl dummy
 scoreboard objectives add PrevAddedLantern dummy
+scoreboard objectives add PrevAddedVines dummy
 scoreboard objectives add AddedItem1 dummy
 scoreboard objectives add AddedItem2 dummy
 scoreboard objectives add AddedItem3 dummy
@@ -310,6 +312,8 @@ scoreboard players set #MWL AddedHoneyBlock 0
 execute if score #MWL Version matches 15.. run scoreboard players set #MWL AddedHoneyBlock 1
 scoreboard players set #MWL AddedLantern 0
 execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedLantern 1
+scoreboard players set #MWL AddedVines 0
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedVines 1
 scoreboard players set #MWL PrevAddedStick 1
 scoreboard players set #MWL PrevAddedTotem 1
 scoreboard players set #MWL PrevAddedDeath 1
@@ -327,6 +331,8 @@ scoreboard players set #MWL PrevAddedHoneyBl 0
 execute if score #MWL Version matches 15.. run scoreboard players set #MWL PrevAddedHoneyBl 1
 scoreboard players set #MWL PrevAddedLantern 0
 execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedLantern 1
+scoreboard players set #MWL PrevAddedVines 0
+execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedVines 1
 ## Add Variables for GUI Addition Common
 scoreboard players set #MWL AddedItem1 1
 scoreboard players set #MWL AddedItem2 1

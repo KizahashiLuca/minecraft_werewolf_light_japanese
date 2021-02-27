@@ -6,8 +6,5 @@
 ## Version: v.1.4.1
 ###############################
 
-## Give item
-loot give @s loot mwj:item/special/conduit
-
-## Add tag
-tag @s add MWLitem
+## Detect haven soul_lantern
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:lantern",Count:1b,tag:{Tags:["MWLitem"]}}]}] SelectItem5 0

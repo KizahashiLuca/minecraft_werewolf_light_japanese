@@ -24,13 +24,13 @@ execute if score #MWL AddedConduit matches 1 run tellraw @a ["",{"text":"    ","
 execute if score #MWL AddedCrossbow matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・クロスボウ","color":"white","bold":true}]
 execute if score #MWL AddedHoneyBlock matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・スティッキー地雷","color":"white","bold":true}]
 execute if score #MWL AddedLantern matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・テレポーター","color":"white","bold":true}]
-# execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・追加アイテム","color":"white","bold":true}]
+execute if score #MWL AddedVines matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・ねじれツタ","color":"white","bold":true}]
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・追加アイテム","color":"white","bold":true}]
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・追加アイテム","color":"white","bold":true}]
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・追加アイテム","color":"white","bold":true}]
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・追加アイテム","color":"white","bold":true}]
 
-execute if score #MWL AddedStick matches 0 if score #MWL AddedTotem matches 0 if score #MWL AddedDeath matches 0 if score #MWL AddedPearl matches 0 if score #MWL AddedHoe matches 0 if score #MWL AddedElytra matches 0 if score #MWL AddedSnowball matches 0 if score #MWL AddedInvis matches 0 if score #MWL AddedSpeed matches 0 if score #MWL AddedJump matches 0 if score #MWL AddedTrident matches 0 if score #MWL AddedConduit matches 0 if score #MWL AddedCrossbow matches 0 if score #MWL AddedHoneyBlock matches 0 if score #MWL AddedLantern matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"無し","color":"white","bold":true}]
+execute if score #MWL AddedStick matches 0 if score #MWL AddedTotem matches 0 if score #MWL AddedDeath matches 0 if score #MWL AddedPearl matches 0 if score #MWL AddedHoe matches 0 if score #MWL AddedElytra matches 0 if score #MWL AddedSnowball matches 0 if score #MWL AddedInvis matches 0 if score #MWL AddedSpeed matches 0 if score #MWL AddedJump matches 0 if score #MWL AddedTrident matches 0 if score #MWL AddedConduit matches 0 if score #MWL AddedCrossbow matches 0 if score #MWL AddedHoneyBlock matches 0 if score #MWL AddedLantern matches 0 if score #MWL AddedVines matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"無し","color":"white","bold":true}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
 

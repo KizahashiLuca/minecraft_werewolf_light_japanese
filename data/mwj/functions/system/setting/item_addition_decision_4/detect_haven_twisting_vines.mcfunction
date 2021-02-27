@@ -6,8 +6,5 @@
 ## Version: v.1.4.1
 ###############################
 
-## Give item
-loot give @s loot mwj:item/special/conduit
-
-## Add tag
-tag @s add MWLitem
+## Detect haven twisting vines
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:twisting_vines",Count:2b,tag:{Tags:["MWLitem"]}}]}] SelectItem1 0

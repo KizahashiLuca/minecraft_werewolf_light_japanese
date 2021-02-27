@@ -95,6 +95,9 @@ scoreboard objectives remove TeleporterPosY
 scoreboard objectives remove TeleporterPosZ
 scoreboard objectives remove DropSoulLantern
 scoreboard objectives remove DropLantern
+#### Twisting Vines
+scoreboard objectives remove TwistVinesCount
+scoreboard objectives remove DropTwistVines
 
 ## Remove Variables for Kill Log
 scoreboard objectives remove DeathCount
@@ -143,6 +146,7 @@ scoreboard objectives remove AddedConduit
 scoreboard objectives remove AddedCrossbow
 scoreboard objectives remove AddedHoneyBlock
 scoreboard objectives remove AddedLantern
+scoreboard objectives remove AddedVines
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
 ## Remove Variables for Setting Casting 

@@ -28,6 +28,7 @@ execute if score #MWL AddedConduit matches 1 run scoreboard players add #MWL Tem
 execute if score #MWL AddedCrossbow matches 1 run scoreboard players add #MWL TempVariable 1
 execute if score #MWL AddedHoneyBlock matches 1 run scoreboard players add #MWL TempVariable 1
 execute if score #MWL AddedLantern matches 1 run scoreboard players add #MWL TempVariable 1
+execute if score #MWL AddedVines matches 1 run scoreboard players add #MWL TempVariable 1
 ## Calculate ones digit
 scoreboard players operation #MWL ONES_DIGIT = #MWL NumOfPlayers
 scoreboard players remove #MWL ONES_DIGIT 1

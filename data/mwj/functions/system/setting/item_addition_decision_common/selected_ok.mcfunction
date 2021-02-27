@@ -25,7 +25,7 @@ scoreboard players operation #MWL PrevAddedCrossbo = #MWL AddedCrossbow
 scoreboard players operation #MWL PrevAddedHoneyBl = #MWL AddedHoneyBlock
 scoreboard players operation #MWL PrevAddedLantern = #MWL AddedLantern
 
-# scoreboard players operation #MWL PrevAdded = #MWL Added
+scoreboard players operation #MWL PrevAddedVines = #MWL AddedVines
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
