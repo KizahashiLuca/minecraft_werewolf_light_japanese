@@ -8,7 +8,7 @@
 
 ## Set dummy role
 function mwj:system/preparation/random_generator/randomizing
-scoreboard players operation #MWL RandomAnswer %= #MWL 11
+scoreboard players operation #MWL RandomAnswer %= #MWL 12
 scoreboard players add #MWL RandomAnswer 1
 scoreboard players operation #MWL DummyRole = #MWL RandomAnswer
 
@@ -24,5 +24,6 @@ execute if score #MWL DummyRole matches 8 if score #MWL NumOfFkSeers matches 1..
 execute if score #MWL DummyRole matches 9 if score #MWL NumOfSages matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 execute if score #MWL DummyRole matches 10 if score #MWL NumOfFanatics matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 execute if score #MWL DummyRole matches 11 if score #MWL NumOfImmorals matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
+execute if score #MWL DummyRole matches 12 if score #MWL NumOfLtReds matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 
 execute if score #MWL DummyRoleFlag matches 0 run function mwj:system/preparation/set_dummy_role

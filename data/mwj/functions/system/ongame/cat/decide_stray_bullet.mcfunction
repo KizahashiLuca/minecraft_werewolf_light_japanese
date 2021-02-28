@@ -7,7 +7,13 @@
 ###############################
 
 ## Put Tag
-execute as @s[advancements={mwj:be_killed_by_wolf=true}] run tag @p[scores={CurrentRole=1..9,DeathCount=0},sort=random] add StrayBullet
+scoreboard objectives add OR dummy
+scoreboard players set @s OR 0
+scoreboard players set @s[advancements={mwj:be_killed_by_werewolf=true}] OR 1
+scoreboard players set @s[advancements={mwj:be_killed_by_madman=true}] OR 1
+execute as @s[scores={OR=1}] run tag @p[scores={CurrentRole=1..9,DeathCount=0},sort=random] add StrayBullet
+scoreboard objectives remove OR
+
 execute as @s[advancements={mwj:be_killed_by_nonwolf=true}] run tag @p[scores={CurrentRole=1..40,DeathCount=0},sort=random] add StrayBullet
 execute as @s[advancements={mwj:be_killed_by_cat=true}] run tag @p[scores={CurrentRole=1..40,DeathCount=0},sort=random] add StrayBullet
 

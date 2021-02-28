@@ -17,6 +17,7 @@ scoreboard players operation #MWL NumOfWhite += #MWL NumOfThieves
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfCats
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfFkSeers
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfSages
+scoreboard players operation #MWL NumOfWhite += #MWL NumOfLtReds
 
 scoreboard players set #MWL NumOfBlack 0
 scoreboard players operation #MWL NumOfBlack += #MWL NumOfWolves

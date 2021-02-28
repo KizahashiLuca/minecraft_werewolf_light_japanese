@@ -6,11 +6,17 @@
 ## Version: v.1.4.1
 ###############################
 
-## Fox Dead by wolf
-execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_wolf=true}] run function mwj:system/ongame/fox/detect_dead
-
-## Fox Dead by trident (wolf)
-execute as @s[scores={DeathCount=1},tag=TridentDeadFoxbyWolf] run function mwj:system/ongame/fox/detect_dead
+## Fox Dead
+scoreboard objectives add OR dummy
+scoreboard players set @s OR 0
+#### Be killed by werewolf
+execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_werewolf=true}] run scoreboard players set @s OR 1
+#### Be killed by madman
+execute as @s[scores={DeathCount=1},advancements={mwj:be_killed_by_madman=true}] run scoreboard players set @s OR 1
+#### by trident (wolf)
+execute as @s[scores={DeathCount=1},tag=TridentDeadFoxbyWolf] run scoreboard players set @s OR 1
+execute as @s[scores={OR=1}] run function mwj:system/ongame/fox/detect_dead
+scoreboard objectives remove OR
 
 ## Fox Dead by nonwolf
 scoreboard players set @s[scores={DeathCount=1},advancements={mwj:be_killed_by_nonwolf=true},tag=!TridentDeadFoxbyWolf] RoleOfNum 2

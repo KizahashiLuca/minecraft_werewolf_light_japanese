@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:item/common/bow"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:item/common/arrow"
+        }
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:item/common/redstone_torch"
+        }
+      ]
+    }
+  ]
+}

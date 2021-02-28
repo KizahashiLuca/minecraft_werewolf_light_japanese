@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "be_killed_by_werewolf": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"WereWolf\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["be_killed_by_werewolf"]
+  ]
+}

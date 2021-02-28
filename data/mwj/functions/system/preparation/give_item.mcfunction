@@ -7,9 +7,7 @@
 ###############################
 
 ## Give Common Items
-execute as @a[team=Player] run loot replace entity @s hotbar.0 1 loot mwj:item/common/bow
-execute as @a[team=Player] run loot replace entity @s hotbar.1 1 loot mwj:item/common/arrow
-execute as @a[team=Player] run loot replace entity @s hotbar.2 1 loot mwj:item/common/redstone_torch
+execute as @a[team=Player] run loot replace entity @s hotbar.0 3 loot mwj:item/common
 
 ## Set TempVariable (Kind of Items)
 scoreboard players set #MWL TempVariable 0

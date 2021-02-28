@@ -1,16 +1,16 @@
 {
   "criteria": {
-    "be_killed_by_wolf": {
+    "be_killed_by_madman": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
           "type": "minecraft:player",
-          "nbt": "{Tags:[\"WereWolf\"]}"
+          "nbt": "{Tags:[\"MadMan\"]}"
         }
       }
     }
   },
   "requirements": [
-    ["be_killed_by_wolf"]
+    ["be_killed_by_madman"]
   ]
 }
