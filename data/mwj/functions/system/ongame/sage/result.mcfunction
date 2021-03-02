@@ -12,6 +12,7 @@ tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"  賢者結果","co
 
 ## Send a Message that Suspect is Black
 execute as @s[scores={CurrentRole=1}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"人狼","color":"red","bold":true},{"text":" です","color":"white"}]
+execute as @s[scores={CurrentRole=3}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"賢狼","color":"dark_red","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=4}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白狼","color":"red","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Suspect is White

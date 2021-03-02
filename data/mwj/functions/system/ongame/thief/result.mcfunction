@@ -16,6 +16,9 @@ execute as @s[scores={DeathCount=1..2}] run tellraw @p[scores={CurrentRole=35,Ro
 ## Send a Message that the Stolen is Wolf
 execute as @s[scores={CurrentRole=1,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"人狼","color":"red","bold":true},{"text":" になりました","color":"white"}]
 
+## Send a Message that the Stolen is Clever Wolf
+execute as @s[scores={CurrentRole=3,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"賢狼","color":"dark_red","bold":true},{"text":" になりました","color":"white"}]
+
 ## Send a Message that the Stolen is White Wolf
 execute as @s[scores={CurrentRole=4,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"白狼","color":"red","bold":true},{"text":" になりました","color":"white"}]
 

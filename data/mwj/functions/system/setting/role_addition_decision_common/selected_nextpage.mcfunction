@@ -8,7 +8,6 @@
 
 ## Set Next Page
 scoreboard players add #MWL Phase 1
-execute if score #MWL Version matches ..14 if score #MWL Phase matches 93 run scoreboard players set #MWL Phase 90
 execute if score #MWL Phase matches 94 run scoreboard players set #MWL Phase 90
 
 execute if score #MWL Phase matches 90 run function mwj:system/setting/role_addition_decision_1/set_added

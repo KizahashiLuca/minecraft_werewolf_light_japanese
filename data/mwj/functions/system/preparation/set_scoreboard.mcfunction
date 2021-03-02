@@ -43,6 +43,7 @@ scoreboard objectives add RandomMultiplier dummy
 
 ## CurrentRole - breakdown
 ##   1 : Wolf 人狼
+##   3 : Clever Wolf 賢狼
 ##   4 : White Wolf 白狼
 ##   5 : Madman 狂人
 ##   6 : Fanatic 狂信者

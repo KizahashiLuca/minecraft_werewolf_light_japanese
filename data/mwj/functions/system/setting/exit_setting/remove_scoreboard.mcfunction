@@ -25,6 +25,7 @@ scoreboard objectives remove PNumOfWhWolves
 scoreboard objectives remove PNumOfFanatics
 scoreboard objectives remove PNumOfImmorals
 scoreboard objectives remove PNumOfLtReds
+scoreboard objectives remove PNumOfClWolves
 ## Remove Variables for Setting Added Role
 scoreboard objectives remove PrevAddedWolf
 scoreboard objectives remove PrevAddedMadman
@@ -42,6 +43,7 @@ scoreboard objectives remove PrevAddedWhWolf
 scoreboard objectives remove PrevAddedFanatic
 scoreboard objectives remove PrevAddedImmoral
 scoreboard objectives remove PrevAddedLtRed
+scoreboard objectives remove PrevAddedClWolf
 scoreboard objectives remove AddedRole1
 scoreboard objectives remove AddedRole2
 scoreboard objectives remove AddedRole3

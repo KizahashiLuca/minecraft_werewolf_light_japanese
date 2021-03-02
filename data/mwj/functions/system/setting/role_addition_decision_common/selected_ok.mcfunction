@@ -29,7 +29,7 @@ scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
 scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
 
 scoreboard players operation #MWL PrevAddedLtRed = #MWL AddedLtRed
-# scoreboard players operation #MWL PrevAdded = #MWL Added
+scoreboard players operation #MWL PrevAddedClWolf = #MWL AddedClWolf
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added

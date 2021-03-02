@@ -23,5 +23,6 @@ execute if score #MWL PrevAddedRole matches 1.. if score #MWL NumOfSages matches
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL NumOfWhWolves matches 1.. run function mwj:system/preparation/decrease_number_of_role/white_wolf
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL NumOfFanatics matches 1.. run function mwj:system/preparation/decrease_number_of_role/fanatic
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL NumOfLtReds matches 1.. run function mwj:system/preparation/decrease_number_of_role/little_red
+execute if score #MWL PrevAddedRole matches 1.. if score #MWL NumOfClWolves matches 1.. run function mwj:system/preparation/decrease_number_of_role/clever_wolf
 
 execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_number_of_role

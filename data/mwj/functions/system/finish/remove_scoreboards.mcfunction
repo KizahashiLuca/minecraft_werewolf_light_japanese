@@ -38,6 +38,7 @@ scoreboard objectives remove NumOfWhWolves
 scoreboard objectives remove NumOfFanatics
 scoreboard objectives remove NumOfImmorals
 scoreboard objectives remove NumOfLtReds
+scoreboard objectives remove NumOfClWolves
 ## Remove Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives remove RoleOfNum
@@ -133,6 +134,7 @@ scoreboard objectives remove AddedWhWolf
 scoreboard objectives remove AddedFanatic
 scoreboard objectives remove AddedImmoral
 scoreboard objectives remove AddedLtRed
+scoreboard objectives remove AddedClWolf
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Item Addition
 scoreboard objectives remove AddedStick
