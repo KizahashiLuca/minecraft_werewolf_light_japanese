@@ -33,7 +33,7 @@
               "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
             },{
               "function": "minecraft:set_count",
-              "count": 4
+              "count": 1
             }
           ]
         }

@@ -8,6 +8,9 @@
 
 ## Give item
 loot give @s loot mwj:item/special/honey_block
+loot give @s loot mwj:item/special/honey_block
+loot give @s loot mwj:item/special/honey_block
+loot give @s loot mwj:item/special/honey_block
 
 ## Add tag
 tag @s add MWLitem

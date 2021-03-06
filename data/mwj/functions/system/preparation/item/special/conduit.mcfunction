@@ -8,6 +8,9 @@
 
 ## Give item
 loot give @s loot mwj:item/special/conduit
+loot give @s loot mwj:item/special/conduit
+loot give @s loot mwj:item/special/conduit
+loot give @s loot mwj:item/special/conduit
 
 ## Add tag
 tag @s add MWLitem

@@ -12,7 +12,6 @@ summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["TwistingVinesBegin"],NoGravity:
 ## Not setblock twisting vines
 execute unless block ~ ~ ~ minecraft:air run kill @e[type=minecraft:area_effect_cloud,tag=TwistingVinesBegin,sort=nearest,limit=1]
 execute unless block ~ ~ ~ minecraft:air run loot spawn ~ ~ ~ loot mwj:item/special/twisting_vines
-execute unless block ~ ~ ~ minecraft:air run kill @e[type=minecraft:item,tag=MWLitem,sort=nearest,limit=1]
 
 ## Setblock twisting vines
 scoreboard players set @s TwistVinesCount 0

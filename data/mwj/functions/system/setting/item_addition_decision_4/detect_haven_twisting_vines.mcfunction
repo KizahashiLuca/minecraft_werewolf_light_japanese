@@ -7,4 +7,4 @@
 ###############################
 
 ## Detect haven twisting vines
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:twisting_vines",Count:2b,tag:{Tags:["MWLitem"]}}]}] SelectItem1 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:20b,id:"minecraft:twisting_vines",Count:1b,tag:{Tags:["MWLitem"]}}]}] SelectItem1 0

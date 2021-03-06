@@ -8,6 +8,7 @@
 
 ## Give item
 loot give @s loot mwj:item/special/twisting_vines
+loot give @s loot mwj:item/special/twisting_vines
 
 ## Add tag
 tag @s add MWLitem

@@ -27,7 +27,7 @@ scoreboard players set #MWL NumOfFanatics 0
 scoreboard players set #MWL NumOfImmorals 0
 
 scoreboard players set #MWL NumOfLtReds 0
-# scoreboard players set #MWL NumOf 0
+scoreboard players set #MWL NumOfClWolves 0
 # scoreboard players set #MWL NumOf 0
 # scoreboard players set #MWL NumOf 0
 # scoreboard players set #MWL NumOf 0

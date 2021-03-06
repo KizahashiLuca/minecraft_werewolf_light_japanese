@@ -22,3 +22,4 @@ scoreboard players operation #MWL NumOfWhite += #MWL NumOfLtReds
 scoreboard players set #MWL NumOfBlack 0
 scoreboard players operation #MWL NumOfBlack += #MWL NumOfWolves
 scoreboard players operation #MWL NumOfBlack += #MWL NumOfWhWolves
+scoreboard players operation #MWL NumOfBlack += #MWL NumOfClWolves
