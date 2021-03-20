@@ -9,6 +9,6 @@
 ## Set scoreboard
 scoreboard players operation #MWL AddedRole1 = #MWL AddedLtRed
 scoreboard players operation #MWL AddedRole2 = #MWL AddedClWolf
-# scoreboard players operation #MWL AddedRole3 = #MWL AddedWhWolf
-# scoreboard players operation #MWL AddedRole4 = #MWL AddedFanatic
-# scoreboard players operation #MWL AddedRole5 = #MWL AddedImmoral
+scoreboard players operation #MWL AddedRole3 = #MWL AddedBakery
+# scoreboard players operation #MWL AddedRole4 = #MWL Added
+# scoreboard players operation #MWL AddedRole5 = #MWL Added

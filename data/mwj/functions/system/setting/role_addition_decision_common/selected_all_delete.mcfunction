@@ -28,7 +28,7 @@ scoreboard players set #MWL AddedImmoral 0
 
 scoreboard players set #MWL AddedLtRed 0
 scoreboard players set #MWL AddedClWolf 0
-# scoreboard players set #MWL Added 0
+scoreboard players set #MWL AddedBakery 0
 # scoreboard players set #MWL Added 0
 # scoreboard players set #MWL Added 0
 

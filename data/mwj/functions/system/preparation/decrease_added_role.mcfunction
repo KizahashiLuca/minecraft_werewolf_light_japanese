@@ -24,5 +24,6 @@ execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedWhWolf matche
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedFanatic matches 1.. run function mwj:system/preparation/decrease_added_role/fanatic
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedLtRed matches 1.. run function mwj:system/preparation/decrease_added_role/little_red
 execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedClWolf matches 1.. run function mwj:system/preparation/decrease_added_role/clever_wolf
+execute if score #MWL PrevAddedRole matches 1.. if score #MWL AddedBakery matches 1.. run function mwj:system/preparation/decrease_added_role/bakery
 
 execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_added_role

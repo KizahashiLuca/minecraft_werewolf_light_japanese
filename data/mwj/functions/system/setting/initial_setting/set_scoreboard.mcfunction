@@ -33,6 +33,7 @@ scoreboard objectives add NumOfFanatics dummy
 scoreboard objectives add NumOfImmorals dummy
 scoreboard objectives add NumOfLtReds dummy
 scoreboard objectives add NumOfClWolves dummy
+scoreboard objectives add NumOfBakeries dummy
 scoreboard objectives add NumOfBlack dummy
 scoreboard objectives add NumOfWhite dummy
 scoreboard objectives add PNumOfWolves dummy
@@ -52,6 +53,7 @@ scoreboard objectives add PNumOfFanatics dummy
 scoreboard objectives add PNumOfImmorals dummy
 scoreboard objectives add PNumOfLtReds dummy
 scoreboard objectives add PNumOfClWolves dummy
+scoreboard objectives add PNumOfBakeries dummy
 ## Add Variables for Setting Added Role
 scoreboard objectives add AddedRoleNumber dummy
 scoreboard objectives add AddedRole dummy
@@ -72,6 +74,7 @@ scoreboard objectives add AddedFanatic dummy
 scoreboard objectives add AddedImmoral dummy
 scoreboard objectives add AddedLtRed dummy
 scoreboard objectives add AddedClWolf dummy
+scoreboard objectives add AddedBakery dummy
 scoreboard objectives add PrevAddedRole dummy
 scoreboard objectives add PrevAddedWolf dummy
 scoreboard objectives add PrevAddedMadman dummy
@@ -90,6 +93,7 @@ scoreboard objectives add PrevAddedFanatic dummy
 scoreboard objectives add PrevAddedImmoral dummy
 scoreboard objectives add PrevAddedLtRed dummy
 scoreboard objectives add PrevAddedClWolf dummy
+scoreboard objectives add PrevAddedBakery dummy
 scoreboard objectives add AddedRole1 dummy
 scoreboard objectives add AddedRole2 dummy
 scoreboard objectives add AddedRole3 dummy
@@ -245,6 +249,7 @@ scoreboard players set #MWL NumOfFanatics 0
 scoreboard players set #MWL NumOfImmorals 0
 scoreboard players set #MWL NumOfLtReds 0
 scoreboard players set #MWL NumOfClWolves 0
+scoreboard players set #MWL NumOfBakeries 0
 ## Set Variables for Setting Added Role
 scoreboard players set #MWL AddedRoleNumber 0
 scoreboard players set #MWL AddedRole 0
@@ -265,6 +270,7 @@ scoreboard players set #MWL AddedFanatic 0
 scoreboard players set #MWL AddedImmoral 0
 scoreboard players set #MWL AddedLtRed 0
 scoreboard players set #MWL AddedClWolf 0
+scoreboard players set #MWL AddedBakery 0
 scoreboard players set #MWL PrevAddedRole 0
 scoreboard players set #MWL PrevAddedWolf 0
 scoreboard players set #MWL PrevAddedMadman 0
@@ -283,6 +289,7 @@ scoreboard players set #MWL PrevAddedFanatic 0
 scoreboard players set #MWL PrevAddedImmoral 0
 scoreboard players set #MWL PrevAddedLtRed 0
 scoreboard players set #MWL PrevAddedClWolf 0
+scoreboard players set #MWL PrevAddedBakery 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 600
 ## Set Variables for Setting Casting 

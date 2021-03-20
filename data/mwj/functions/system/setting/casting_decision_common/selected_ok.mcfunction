@@ -30,9 +30,9 @@ scoreboard players operation #MWL PNumOfImmorals = #MWL NumOfImmorals
 
 scoreboard players operation #MWL PNumOfLtReds = #MWL NumOfLtReds
 scoreboard players operation #MWL PNumOfClWolves = #MWL NumOfClWolves
-# scoreboard players operation #MWL PrevAdded = #MWL Added
-# scoreboard players operation #MWL PrevAdded = #MWL Added
-# scoreboard players operation #MWL PrevAdded = #MWL Added
+scoreboard players operation #MWL PNumOfBakeries = #MWL NumOfBakeries
+# scoreboard players operation #MWL PNumOf = #MWL NumOf
+# scoreboard players operation #MWL PNumOf = #MWL NumOf
 
 ## Set inventory
 function mwj:system/setting/casting_decision_common/selected_set

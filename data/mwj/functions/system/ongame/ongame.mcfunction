@@ -55,6 +55,9 @@ execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/dete
 execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,RoleDone=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/main
 execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/detect_dead
 
+## Bakery System
+execute as @a[team=Player,scores={CurrentRole=22}] run function mwj:system/ongame/bakery/main
+
 ## Seer System
 execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/main
 

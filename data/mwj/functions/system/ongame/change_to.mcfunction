@@ -46,6 +46,8 @@ scoreboard objectives add ThiefStealTick dummy
 scoreboard objectives add KilledByWolf dummy
 #### Cat
 scoreboard objectives add KilledByCat dummy
+#### Bakery
+scoreboard objectives add CountOfBakery dummy
 ## Add Variables for Items
 scoreboard objectives add SneakTime minecraft.custom:minecraft.sneak_time
 #### Snowball
@@ -103,6 +105,8 @@ scoreboard players set #MWL NumberOfStolen 1
 scoreboard players reset @a KilledByWolf
 #### Cat
 scoreboard players reset @a KilledByCat
+#### Bakery
+scoreboard players set @a[scores={CurrentRole=22}] CountOfBakery 10
 ## Add Items
 scoreboard players reset @a SneakTime
 #### Snowball

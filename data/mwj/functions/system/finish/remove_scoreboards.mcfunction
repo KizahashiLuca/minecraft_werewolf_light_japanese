@@ -39,6 +39,7 @@ scoreboard objectives remove NumOfFanatics
 scoreboard objectives remove NumOfImmorals
 scoreboard objectives remove NumOfLtReds
 scoreboard objectives remove NumOfClWolves
+scoreboard objectives remove NumOfBakeries
 ## Remove Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives remove RoleOfNum
@@ -72,8 +73,10 @@ scoreboard objectives remove ThiefStealTick
 scoreboard objectives remove KilledByWolf
 #### Cat
 scoreboard objectives remove KilledByCat
+#### Bakery
+scoreboard objectives remove CountOfBakery
 ## Remove Variables for randomizer
-scoreboard objectives remove 12
+scoreboard objectives remove 13
 scoreboard objectives remove DummyRoleFlag
 scoreboard objectives remove RandomSeed
 scoreboard objectives remove RandomCount
@@ -135,6 +138,7 @@ scoreboard objectives remove AddedFanatic
 scoreboard objectives remove AddedImmoral
 scoreboard objectives remove AddedLtRed
 scoreboard objectives remove AddedClWolf
+scoreboard objectives remove AddedBakery
 scoreboard objectives remove PrevAddedRole
 ## Remove Variables for Item Addition
 scoreboard objectives remove AddedStick

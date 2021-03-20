@@ -17,48 +17,52 @@ scoreboard objectives add NumOfRole dummy
 scoreboard players operation #MWL NumOfRole = #MWL NumOfWolves
 function mwj:system/preparation/role_decision/wolf
 
+## Decide clever wolves
+scoreboard players operation #MWL NumOfRole = #MWL NumOfClWolves
+function mwj:system/preparation/role_decision/clever_wolf
+
+## Decide white wolves
+scoreboard players operation #MWL NumOfRole = #MWL NumOfWhWolves
+function mwj:system/preparation/role_decision/white_wolf
+
 ## Decide madmans
 scoreboard players operation #MWL NumOfRole = #MWL NumOfMadmans
 execute if score #MWL DummyRole matches 1 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/preparation/role_decision/madman
 
-## Decide villagers
-scoreboard players operation #MWL NumOfRole = #MWL NumOfVillagers
+## Decide fanatics
+scoreboard players operation #MWL NumOfRole = #MWL NumOfFanatics
 execute if score #MWL DummyRole matches 2 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/villager
-
-## Decide seers
-scoreboard players operation #MWL NumOfRole = #MWL NumOfSeers
-execute if score #MWL DummyRole matches 3 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/seer
-
-## Decide mediums
-scoreboard players operation #MWL NumOfRole = #MWL NumOfMediums
-execute if score #MWL DummyRole matches 4 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/medium
+function mwj:system/preparation/role_decision/fanatic
 
 ## Decide foxes
 scoreboard players operation #MWL NumOfRole = #MWL NumOfFoxes
 function mwj:system/preparation/role_decision/fox
+
+## Decide immoralists
+scoreboard players operation #MWL NumOfRole = #MWL NumOfImmorals
+execute if score #MWL DummyRole matches 3 run scoreboard players remove #MWL NumOfRole 1
+function mwj:system/preparation/role_decision/immoralist
+
+## Decide villagers
+scoreboard players operation #MWL NumOfRole = #MWL NumOfVillagers
+execute if score #MWL DummyRole matches 4 run scoreboard players remove #MWL NumOfRole 1
+function mwj:system/preparation/role_decision/villager
 
 ## Decide masons
 scoreboard players operation #MWL NumOfRole = #MWL NumOfMasons
 execute if score #MWL DummyRole matches 5 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/preparation/role_decision/mason
 
-## Decide detectives
-scoreboard players operation #MWL NumOfRole = #MWL NumOfDetectives
+## Decide bakeries
+scoreboard players operation #MWL NumOfRole = #MWL NumOfBakeries
 execute if score #MWL DummyRole matches 6 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/detective
+function mwj:system/preparation/role_decision/bakery
 
-## Decide thieves
-scoreboard players operation #MWL NumOfRole = #MWL NumOfThieves
+## Decide seers
+scoreboard players operation #MWL NumOfRole = #MWL NumOfSeers
 execute if score #MWL DummyRole matches 7 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/thief
-
-## Decide cats
-scoreboard players operation #MWL NumOfRole = #MWL NumOfCats
-function mwj:system/preparation/role_decision/cat
+function mwj:system/preparation/role_decision/seer
 
 ## Decide fake seers
 scoreboard players operation #MWL NumOfRole = #MWL NumOfFkSeers
@@ -70,28 +74,30 @@ scoreboard players operation #MWL NumOfRole = #MWL NumOfSages
 execute if score #MWL DummyRole matches 9 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/preparation/role_decision/sage
 
-## Decide white wolves
-scoreboard players operation #MWL NumOfRole = #MWL NumOfWhWolves
-function mwj:system/preparation/role_decision/white_wolf
-
-## Decide fanatics
-scoreboard players operation #MWL NumOfRole = #MWL NumOfFanatics
+## Decide mediums
+scoreboard players operation #MWL NumOfRole = #MWL NumOfMediums
 execute if score #MWL DummyRole matches 10 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/fanatic
+function mwj:system/preparation/role_decision/medium
 
-## Decide immoralists
-scoreboard players operation #MWL NumOfRole = #MWL NumOfImmorals
+## Decide detectives
+scoreboard players operation #MWL NumOfRole = #MWL NumOfDetectives
 execute if score #MWL DummyRole matches 11 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/preparation/role_decision/immoralist
+function mwj:system/preparation/role_decision/detective
+
+## Decide thieves
+scoreboard players operation #MWL NumOfRole = #MWL NumOfThieves
+execute if score #MWL DummyRole matches 12 run scoreboard players remove #MWL NumOfRole 1
+function mwj:system/preparation/role_decision/thief
 
 ## Decide little reds
 scoreboard players operation #MWL NumOfRole = #MWL NumOfLtReds
-execute if score #MWL DummyRole matches 12 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 13 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/preparation/role_decision/little_red
 
-## Decide clever wolves
-scoreboard players operation #MWL NumOfRole = #MWL NumOfClWolves
-function mwj:system/preparation/role_decision/clever_wolf
+## Decide cats
+scoreboard players operation #MWL NumOfRole = #MWL NumOfCats
+function mwj:system/preparation/role_decision/cat
+
 
 ## Decide Mason Pair
 scoreboard players operation #MWL NumOfRole = #MWL AddedMason

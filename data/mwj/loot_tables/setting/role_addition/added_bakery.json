@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:lime_concrete",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"パン屋の追加","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"AddedBakery\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

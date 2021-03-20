@@ -18,14 +18,7 @@ execute as @s[scores={CurrentRole=4..9}] run tellraw @p[scores={CurrentRole=25,R
 
 ## Send a Message that Suspect is Fox
 execute as @s[scores={CurrentRole=10}] run tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" です","color":"white"}]
-
-## Effect Instant Damage of Fox by Seer
-#### Put Tag
-tag @s[scores={CurrentRole=10,DeathCount=0}] add SeeredFox
-#### Store Seer Number
-scoreboard players operation @s[scores={CurrentRole=10,DeathCount=0}] KilledBySeer = @p[scores={CurrentRole=25,RoleOfNum=1}] NumOfPlayers
-#### Deal Instant Damage to Fox
-effect give @s[scores={CurrentRole=10,DeathCount=0}] minecraft:instant_damage 1 10 true
+execute as @s[scores={CurrentRole=10,DeathCount=0}] run function mwj:system/ongame/seer/damage_to_fox
 
 ## Send a Message that Suspect is White
 execute as @s[scores={CurrentRole=11..40}] run tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]

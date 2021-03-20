@@ -22,18 +22,12 @@ execute as @s[scores={CurrentRole=6}] run tellraw @p[scores={CurrentRole=27,Role
 ## Send a Message that Suspect is Fox
 execute as @s[scores={CurrentRole=10}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"羽衣狐","color":"dark_purple","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=11}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"背徳者","color":"dark_purple","bold":true},{"text":" です","color":"white"}]
-
-## Effect Instant Damage of Fox by Seer
-#### Put Tag
-tag @s[scores={CurrentRole=10,DeathCount=0}] add SeeredFox
-#### Store Seer Number
-scoreboard players operation @s[scores={CurrentRole=10,DeathCount=0}] KilledBySeer = @p[scores={CurrentRole=27,RoleOfNum=1}] NumOfPlayers
-#### Deal Instant Damage to Fox
-effect give @s[scores={CurrentRole=10,DeathCount=0}] minecraft:instant_damage 1 10 true
+execute as @s[scores={CurrentRole=10,DeathCount=0}] run function mwj:system/ongame/sage/damage_to_fox
 
 ## Send a Message that Suspect is White
 execute as @s[scores={CurrentRole=20}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=21}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"共有者","color":"dark_green","bold":true},{"text":" です","color":"white"}]
+execute as @s[scores={CurrentRole=22}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"パン屋","color":"green","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=25}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"予言者","color":"aqua","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=26}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"偽予言者","color":"aqua","bold":true},{"text":" です","color":"white"}]
 execute as @s[scores={CurrentRole=27}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"賢者","color":"aqua","bold":true},{"text":" です","color":"white"}]

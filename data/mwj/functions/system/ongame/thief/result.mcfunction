@@ -40,6 +40,9 @@ execute as @s[scores={CurrentRole=20,DeathCount=0}] run tellraw @p[scores={Curre
 ## Send a Message that the Stolen is Mason
 execute as @s[scores={CurrentRole=21,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"共有者","color":"dark_green","bold":true},{"text":" になりました","color":"white"}]
 
+## Send a Message that the Stolen is Bakery
+execute as @s[scores={CurrentRole=22,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"パン屋","color":"green","bold":true},{"text":" になりました","color":"white"}]
+
 ## Send a Message that the Stolen is Seer
 execute as @s[scores={CurrentRole=25,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"予言者","color":"aqua","bold":true},{"text":" になりました","color":"white"}]
 

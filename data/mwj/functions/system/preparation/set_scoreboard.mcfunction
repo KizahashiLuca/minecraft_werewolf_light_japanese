@@ -33,7 +33,7 @@ scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
 scoreboard objectives add TEMP_DIGIT dummy
 ## Add Variables for randomizer
-scoreboard objectives add 12 dummy
+scoreboard objectives add 13 dummy
 scoreboard objectives add DummyRoleFlag dummy
 scoreboard objectives add RandomSeed dummy
 scoreboard objectives add RandomCount dummy
@@ -51,6 +51,7 @@ scoreboard objectives add RandomMultiplier dummy
 ##   11 : Immoralist 背徳者
 ##   20 : Villager 村人
 ##   21 : Mason 共有者
+##   22 : Bakery パン屋
 ##   25 : Seer 予言者
 ##   26 : Fake Seer 偽予言者
 ##   27 : Sage 賢者
@@ -91,7 +92,7 @@ scoreboard players set #MWL NumberOfKillLog 1
 scoreboard players set @a MasonPair 0
 scoreboard players set #MWL MasonPair 1
 ## Set Variables for randomizer
-scoreboard players set #MWL 12 12
+scoreboard players set #MWL 13 13
 scoreboard players set #MWL DummyRoleFlag 0
 scoreboard players set #MWL RandomSeed 0
 scoreboard players set #MWL RandomCount 10
