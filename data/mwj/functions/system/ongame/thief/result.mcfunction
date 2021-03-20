@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 22 Aug 2020
-## Version: v.1.4.1
+## Date   : 20 Mar 2021
+## Version: v.1.5
 ###############################
 
 ## Send a Common Message
@@ -90,6 +90,7 @@ scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] ThiefStealT
 scoreboard players add #MWL NumberOfStolen 1
 
 ## Thief Role Done
+execute as @s[scores={DeathCount=0,CurrentRole=22}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CountOfBakery = @s CountOfBakery
 execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
 execute as @s[scores={DeathCount=0,CurrentRole=35}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone 0
 execute as @s[scores={DeathCount=0,CurrentRole=36..40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone

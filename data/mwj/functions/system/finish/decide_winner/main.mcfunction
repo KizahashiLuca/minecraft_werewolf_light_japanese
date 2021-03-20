@@ -2,8 +2,8 @@
 ## Minecraft Version 1.14-1.16
 ## Minecraft Werewolf Light
 ## Author : KizahashiLuca
-## Date   : 22 Aug 2020
-## Version: v.1.4.1
+## Date   : 20 Mar 2021
+## Version: v.1.5
 ###############################
 
 execute if score #MWL GameMode matches 1 run function mwj:system/finish/decide_winner/normal_wolf
