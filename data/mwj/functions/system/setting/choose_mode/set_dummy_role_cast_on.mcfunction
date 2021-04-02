@@ -28,7 +28,7 @@ execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Pha
 ## Set Prev choice
 scoreboard players operation #MWL PrevAddedRole -= #MWL NumOfRoles
 
-execute if score #MWL SetDummyRole matches 0 if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_number_of_role
+execute if score #MWL SetDummyRole matches 0 if score #MWL PrevAddedRole matches 1.. run function mwj:system/ongame/settings/decrease_number_of_role/main
 
 scoreboard players operation #MWL AddedRole -= #MWL PrevAddedRole
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole

@@ -64,8 +64,8 @@ scoreboard players set #MWL TempVariable 5
 scoreboard players operation #MWL Tick *= #MWL TempVariable
 
 ## Send a Game Begin Log
-execute if score #MWL ChangeGameTime matches 1000.. run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"#MWL","objective":"ChangeGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
-execute if score #MWL ChangeGameTime matches 100..999 run tellraw @a ["",{"text":"    0","color":"white"},{"score":{"name":"#MWL","objective":"ChangeGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
+execute if score #MWL SetGameTime matches 1000.. run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"#MWL","objective":"SetGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
+execute if score #MWL SetGameTime matches 100..999 run tellraw @a ["",{"text":"    0","color":"white"},{"score":{"name":"#MWL","objective":"SetGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
 
 ## Send a Kill Log
 function mwj:system/finish/kill_log

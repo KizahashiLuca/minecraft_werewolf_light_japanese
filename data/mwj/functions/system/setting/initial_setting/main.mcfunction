@@ -7,7 +7,7 @@
 ###############################
 
 ## Change gamerules
-function mwj:system/setting/initial_setting/set_gamerule
+function mwj:system/setting/initial_setting/set_gamerules
 
 ## Remove storages
 execute if score #MWL Version matches 16.. run function mwj:system/finish/remove_storages
@@ -28,18 +28,18 @@ function mwj:system/finish/remove_teams
 function mwj:system/finish/revoke_advancements
 
 ## Set Team
-function mwj:system/setting/initial_setting/set_team
+function mwj:system/setting/initial_setting/set_teams
 
 ## Set Scoreboard
-function mwj:system/setting/initial_setting/set_scoreboard
+function mwj:system/setting/initial_setting/set_scoreboards
 
 ## Set Role Number
-function mwj:system/setting/initial_setting/set_role_number
-function mwj:system/setting/initial_setting/set_added_role_number
+function mwj:system/common/roles/set_role_number
+function mwj:system/common/roles/set_added_role_number
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole
 
 ## Set Title
-function mwj:system/setting/initial_setting/title_message
+function mwj:system/setting/initial_setting/set_messages
 
 ## Set Inventory
 function mwj:system/setting/choose_mode/change_to

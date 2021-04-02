@@ -23,15 +23,15 @@ execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL Num
 
 ## Set Role Number
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
-function mwj:system/setting/initial_setting/set_role_number
-function mwj:system/setting/initial_setting/set_added_role_number
+function mwj:system/common/roles/set_role_number
+function mwj:system/common/roles/set_added_role_number
 
 ## Detect the Number of Players is not Enough
 execute if score #MWL NumOfRoles matches ..2 run scoreboard players set #MWL Phase 0
 
 ## Detect the Number of Players is increment/decrement
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedRoleNumber
-execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/preparation/decrease_added_role
+execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/ongame/settings/decrease_added_role/main
 
 ## Calculate Prev choice
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber

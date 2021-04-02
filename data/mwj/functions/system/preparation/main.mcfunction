@@ -7,13 +7,10 @@
 ###############################
 
 ## Process the timer system
-function mwj:system/time/time
+function mwj:system/common/time/tick
 
 ## Remove Entity
-function mwj:system/preparation/set_entity
+function mwj:system/preparation/set_entities
 
 ## Prepare Initially
-execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/preparation/just_before
-
-## Reset Scoreboard
-execute if score #MWL Phase matches 0 run function mwj:system/finish/error_game_player
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/ongame/change_to

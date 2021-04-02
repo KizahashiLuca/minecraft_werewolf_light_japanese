@@ -6,9 +6,6 @@
 ## Version: v.1.5
 ###############################
 
-## Process the timer system
-function mwj:system/time/time
-
 ## Detect Dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mwj:system/setting/choose_mode/detect_drop
@@ -55,13 +52,4 @@ execute as @p[tag=Host,scores={ChosenItemAdd=1}] run function mwj:system/setting
 execute if score #MWL SetCasting matches 0 if score #MWL AddedRoleNumber matches 1.. as @p[tag=Host,scores={ChosenRoleAdd=1}] run function mwj:system/setting/role_addition_decision_common/set_inventory
 execute if score #MWL SetCasting matches 1 as @p[tag=Host,scores={ChosenCastSet=1}] run function mwj:system/setting/casting_decision_common/set_inventory
 execute as @p[tag=Host,scores={SelectCancel=1}] run function mwj:stop
-execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/exit_setting/exit_setting
-
-## Process the system finished
-function mwj:system/setting/casting_decision_common/count_number_of_roles
-scoreboard players set #MWL TempVariable 0
-execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run scoreboard players set #MWL TempVariable 1
-execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run scoreboard players set #MWL TempVariable 1
-execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run scoreboard players set #MWL TempVariable 1
-execute if score #MWL Tick matches 0 if score #MWL Second matches 0 if score #MWL TempVariable matches 0 run scoreboard players set #MWL Second 600
-execute if score #MWL Tick matches 0 if score #MWL Second matches 0 if score #MWL TempVariable matches 1 run function mwj:system/setting/exit_setting/exit_setting
+execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/choose_mode/exit_setting
