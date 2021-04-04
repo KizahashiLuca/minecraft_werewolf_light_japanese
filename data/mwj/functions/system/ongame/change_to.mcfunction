@@ -6,23 +6,8 @@
 ## Version: v.1.5
 ###############################
 
-## Set Variables for Game
-scoreboard players set @a CurrentRole 0
-scoreboard players set @a[team=Player] NumOfPlayers 1
-scoreboard players set #MWL CurrentRole 1
-scoreboard players set #MWL NumOfPlayers 0
-scoreboard players set #MWL WINNER 0
-scoreboard players set #MWL WHITE 0
-scoreboard players set #MWL BLACK 0
-scoreboard players set #MWL PURPLE 0
-
-## RE-Count Players
-scoreboard players set #MWL NumOfPlayers 0
-function mwj:system/ongame/settings/count_players
-
-## Set dummy role
-scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
-execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
+## Set scoreboards
+function mwj:system/ongame/settings/set_scoreboards
 
 ## Revoke advancements
 function mwj:system/finish/revoke_advancements
@@ -57,8 +42,8 @@ function mwj:system/common/message/change_to
 ## Set tags
 function mwj:system/ongame/settings/set_tags
 
-## Set scoreboards
-function mwj:system/ongame/settings/set_scoreboards
+## Reset scoreboards
+function mwj:system/ongame/settings/reset_scoreboards
 
 ## Set players
 function mwj:system/ongame/settings/set_players
