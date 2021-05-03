@@ -18,3 +18,6 @@ tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"人狼陣営","b
 ## Change Game Mode
 scoreboard players set #MWL Phase 0
 scoreboard players set #MWL WINNER 1
+
+## Exit Game
+function mwj:system/finish/end_game

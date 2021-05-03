@@ -27,12 +27,15 @@ tellraw @a[scores={CurrentRole=39}] ["",{"text":"    ","color":"white"},{"text":
 tellraw @a[scores={CurrentRole=40}] ["",{"text":"    ","color":"white"},{"text":"猫又","color":"gold","bold":true}]
 tellraw @a[team=!Player] ["",{"text":"    ","color":"white"},{"text":"観戦者","color":"white","bold":true}]
 
-tellraw @a [""]
+tellraw @a[scores={CurrentRole=1..4}] [""]
 tellraw @a[scores={CurrentRole=1..4}] ["",{"text":"  仲間の人狼 : ","color":"white"}]
 tellraw @a[scores={CurrentRole=1..4}] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"}]
+tellraw @a[scores={CurrentRole=6}] [""]
 tellraw @a[scores={CurrentRole=6}] ["",{"text":"  主人の人狼 : ","color":"white"}]
 tellraw @a[scores={CurrentRole=6}] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"}]
+tellraw @a[scores={CurrentRole=11}] [""]
 tellraw @a[scores={CurrentRole=11}] ["",{"text":"  主人の羽衣狐 : ","color":"white"}]
 tellraw @a[scores={CurrentRole=11}] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=10}]","color":"dark_purple"}]
+tellraw @a[scores={CurrentRole=21}] [""]
 tellraw @a[scores={CurrentRole=21}] ["",{"text":"  仲間の共有者 : ","color":"white"}]
 execute as @a[scores={CurrentRole=21}] run function mwj:system/ongame/settings/tell_roles/pairs/mason

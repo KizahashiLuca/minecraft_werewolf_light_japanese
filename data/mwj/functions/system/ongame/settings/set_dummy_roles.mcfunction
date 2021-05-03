@@ -7,8 +7,9 @@
 ###############################
 
 ## Set dummy role
+scoreboard players set #MWL RandomCount 10
 function mwj:system/ongame/settings/random_generator/randomizing
-scoreboard players operation #MWL RandomAnswer %= #MWL 13
+scoreboard players operation #MWL RandomAnswer %= #MWL DummyRoleNumber
 scoreboard players add #MWL RandomAnswer 1
 scoreboard players operation #MWL DummyRole = #MWL RandomAnswer
 

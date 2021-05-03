@@ -93,4 +93,4 @@ scoreboard players reset @a[team=Player] DropTorch
 scoreboard players reset @a[team=Player] SneakTime
 
 ## Exit This Game
-execute if score #MWL Phase matches 0 run function mwj:system/finish/end_game
+# execute if score #MWL Phase matches 0 run function mwj:system/finish/end_game

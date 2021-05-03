@@ -14,6 +14,7 @@ scoreboard objectives remove NumOfRoles
 scoreboard objectives remove PrevNumOfPlayers
 scoreboard objectives remove CurrentRole
 scoreboard objectives remove PrevRole
+scoreboard objectives remove IsEndGame
 scoreboard objectives remove WINNER
 scoreboard objectives remove WHITE
 scoreboard objectives remove BLACK
@@ -96,7 +97,7 @@ scoreboard objectives remove KilledByCat
 #### Bakery
 scoreboard objectives remove CountOfBakery
 ## Remove Variables for randomizer
-scoreboard objectives remove 13
+scoreboard objectives remove DummyRoleNumber
 scoreboard objectives remove DummyRoleFlag
 scoreboard objectives remove RandomSeed
 scoreboard objectives remove RandomCount

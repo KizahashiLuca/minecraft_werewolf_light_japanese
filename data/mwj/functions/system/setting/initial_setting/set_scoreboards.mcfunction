@@ -36,6 +36,7 @@ scoreboard objectives add Tick dummy
 ## Add Variables for Game
 scoreboard objectives add CurrentRole dummy
 scoreboard objectives add PrevRole dummy
+scoreboard objectives add IsEndGame dummy
 scoreboard objectives add WINNER dummy
 scoreboard objectives add WHITE dummy
 scoreboard objectives add BLACK dummy
@@ -304,7 +305,7 @@ scoreboard objectives add KillLogOfTrident dummy
 ## Add Variables for Mason Number
 scoreboard objectives add MasonPair dummy
 ## Add Variables for randomizer
-scoreboard objectives add 13 dummy
+scoreboard objectives add DummyRoleNumber dummy
 scoreboard objectives add DummyRoleFlag dummy
 scoreboard objectives add RandomSeed dummy
 scoreboard objectives add RandomCount dummy

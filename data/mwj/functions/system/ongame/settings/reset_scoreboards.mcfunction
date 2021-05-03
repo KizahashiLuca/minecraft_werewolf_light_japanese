@@ -24,11 +24,8 @@ scoreboard players reset @a KillLogOfTrident
 scoreboard players set #MWL CountOfKiller 0
 scoreboard players set #MWL CountOfVictim 0
 scoreboard players set #MWL NumberOfKillLog 1
-## Set Variables for Mason Number
-scoreboard players set @a MasonPair 0
-scoreboard players set #MWL MasonPair 1
 ## Set Variables for randomizer
-scoreboard players set #MWL 13 13
+scoreboard players set #MWL DummyRoleNumber 13
 scoreboard players set #MWL DummyRoleFlag 0
 scoreboard players set #MWL RandomSeed 0
 scoreboard players set #MWL RandomCount 10
@@ -36,8 +33,6 @@ scoreboard players set #MWL RandomAnswer 0
 scoreboard players set #MWL RandomModder 2147483647
 scoreboard players set #MWL RandomMultiplier 48271
 execute if score #MWL SetDummyRole matches 1 run function mwj:system/ongame/settings/random_generator/initialize
-## Set Variables for Role
-execute as @a run scoreboard players operation @s PrevRole = @s CurrentRole
 #### Set Variables for Redstone Torch
 scoreboard players reset @a DropTorch
 scoreboard players reset @a RemovedTorch
@@ -74,8 +69,6 @@ scoreboard players set #MWL NumberOfStolen 1
 scoreboard players reset @a KilledByWolf
 #### Cat
 scoreboard players reset @a KilledByCat
-#### Bakery
-scoreboard players set @a[scores={CurrentRole=22}] CountOfBakery 10
 ## Add Items
 scoreboard players reset @a SneakTime
 #### Snowball
@@ -105,8 +98,3 @@ scoreboard players set #MWL Tick 0
 scoreboard players set #MWL Second 60
 scoreboard players operation #MWL Second *= #MWL ChangeGameTime
 scoreboard players operation #MWL SetGameTime = #MWL Second
-
-## Set Variables for Game
-execute as @a[scores={CurrentRole=1..4}] run scoreboard players add #MWL BLACK 1
-execute as @a[scores={CurrentRole=10}] run scoreboard players add #MWL PURPLE 1
-execute as @a[scores={CurrentRole=20..40}] run scoreboard players add #MWL WHITE 1
