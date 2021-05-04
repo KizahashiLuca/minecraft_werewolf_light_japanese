@@ -1,10 +1,12 @@
-###############################
-## Minecraft Version 1.14-1.16
-## Minecraft Werewolf Light
-## Author : KizahashiLuca
-## Date   : 20 Mar 2021
-## Version: v.1.5
-###############################
+####################################
+## Minecraft Werewolf Light       ##
+##   MC-Version : JE 1.14-1.16    ##
+##   Author     : @KizahashiLuca  ##
+##   Date       : 04 May 2021     ##
+##   Version    : v.2.0-pre1      ##
+## (C) 2019-2021 KizahashiLuca.   ##
+## Licensed under CC BY-SA 4.0.   ##
+####################################
 
 ## Store soul_lantern's lore 2nd line
 execute as @e[type=item,nbt={Item:{id:"minecraft:soul_lantern",tag:{Tags:["MWLitem"]}}},sort=nearest,limit=1] run data modify storage mwj:teleporter Teleporter.SoulLantern set from entity @s Item.tag.display.Lore[3]

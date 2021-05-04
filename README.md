@@ -9,11 +9,10 @@
 
 ## Caution!!
  - 実況でご利用の際は以下項目の記載をお願い致します。
-    - 作成者    : きざはしるか @KizahashiLuca
+    - 作成者    : きざはしるか [@KizahashiLuca][twitter]
     - 配布元URL : https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese
  - 良識の範囲内で、ルールとマナーを守って遊びましょう。
  - 配布に関して問題があれば削除いたします。ご了承ください。
- - 再配布は禁止です。
 
 ## version
  1. 以下のリンクの [minecraft_werewolf_light_japanese-v-1_5.zip][v.1.5] をクリックして、データパックをDL。
@@ -80,6 +79,10 @@
  実況や生放送なども見に行きます！   
  ぜひぜひリプライよろしくお願いいたします。   
  [@KizahashiLuca][twitter]
+
+## License
+(C) 2019-2021 KizahashiLuca.  
+Licensed under CC BY-SA 4.0.
 
 [wiki]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki
 [discord]:https://discord.gg/ryNDGhU
