@@ -9,7 +9,7 @@
 ####################################
 
 ## Login with en route
-function mwj:system/en_route
+function mwj:system/common/en_route/main
 
 ## Set Game
 execute if score #MWL Phase matches 95..99 run function mwj:system/setting/casting_decision_common/main

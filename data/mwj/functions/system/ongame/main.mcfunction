@@ -46,42 +46,42 @@ execute if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul
 ## Detect twisting vines
 execute if score #MWL AddedVines matches 1 run function mwj:system/ongame/twisting_vines/main
 
-## Seer System
-execute as @a[team=Player,scores={CurrentRole=3}] run function mwj:system/ongame/clever_wolf/main
+## Clever wolf System
+execute as @a[team=Player,scores={CurrentRole=3}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/clever_wolf/main
 
 ## Fox System
-execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongame/fox/main
-execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/detect_seered
+execute as @a[team=Player,scores={CurrentRole=10}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/fox/main
+execute as @a[team=Player,tag=SeeredFox] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/fox/detect_seered
 
 ## Immoralist System
-execute as @a[team=Player,scores={CurrentRole=11}] run function mwj:system/ongame/immoral/main
+execute as @a[team=Player,scores={CurrentRole=11}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/immoral/main
 
 ## Bakery System
-execute as @a[team=Player,scores={CurrentRole=22}] run function mwj:system/ongame/bakery/main
+execute as @a[team=Player,scores={CurrentRole=22}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/bakery/main
 
 ## Seer System
-execute as @a[team=Player,scores={CurrentRole=25}] run function mwj:system/ongame/seer/main
+execute as @a[team=Player,scores={CurrentRole=25}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/seer/main
 
 ## Fake Seer System
-execute as @a[team=Player,scores={CurrentRole=26}] run function mwj:system/ongame/fake_seer/main
+execute as @a[team=Player,scores={CurrentRole=26}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/fake_seer/main
 
 ## Sage System
-execute as @a[team=Player,scores={CurrentRole=27}] run function mwj:system/ongame/sage/main
+execute as @a[team=Player,scores={CurrentRole=27}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/sage/main
 
 ## Medium System
-execute as @a[team=Player,scores={CurrentRole=28}] run function mwj:system/ongame/medium/main
+execute as @a[team=Player,scores={CurrentRole=28}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/medium/main
 
 ## Detective System
-execute as @a[team=Player,scores={CurrentRole=31}] run function mwj:system/ongame/detective/main
+execute as @a[team=Player,scores={CurrentRole=31}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/detective/main
 
 ## Thief System
-execute as @a[team=Player,scores={CurrentRole=35}] run function mwj:system/ongame/thief/main
+execute as @a[team=Player,scores={CurrentRole=35}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/thief/main
+
+## Little Red System
+execute as @a[team=Player,scores={CurrentRole=39}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/little_red/main
 
 ## Cat System
-execute as @a[team=Player,scores={CurrentRole=39}] run function mwj:system/ongame/little_red/main
-
-## Cat System
-execute as @a[team=Player,scores={CurrentRole=40}] run function mwj:system/ongame/cat/main
+execute as @a[team=Player,scores={CurrentRole=40}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/cat/main
 
 ## Kill Log System
 function mwj:system/ongame/kill_log/main
