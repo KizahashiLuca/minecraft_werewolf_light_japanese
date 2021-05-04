@@ -41,3 +41,7 @@ scoreboard players set #MWL Phase 10
 bossbar set minecraft:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL ChangeHideTime
 execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second
+
+## Set bossbar style
+bossbar set minecraft:bossbar style notched_10
+bossbar set minecraft:bossbar color green
