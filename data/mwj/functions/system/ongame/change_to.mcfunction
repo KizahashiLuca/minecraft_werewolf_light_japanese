@@ -30,9 +30,6 @@ execute if score #MWL SetCasting matches 1 if score #MWL PrevAddedRole matches 1
 ## Give items
 function mwj:system/ongame/settings/give_items/main
 
-## Reset scoreboards
-function mwj:system/ongame/settings/reset_scoreboards
-
 ## Set dummy roles
 execute if score #MWL SetDummyRole matches 1 run function mwj:system/ongame/settings/set_dummy_roles
 
@@ -51,15 +48,8 @@ function mwj:system/ongame/settings/set_players
 ## Set bossbar
 function mwj:system/ongame/settings/set_bossbars
 
-## Set Variables for Role
-execute as @a run scoreboard players operation @s PrevRole = @s CurrentRole
-#### Bakery
-scoreboard players set @a[scores={CurrentRole=22}] CountOfBakery 10
-
-## Set Variables for Game
-execute as @a[scores={CurrentRole=1..4}] run scoreboard players add #MWL BLACK 1
-execute as @a[scores={CurrentRole=10}] run scoreboard players add #MWL PURPLE 1
-execute as @a[scores={CurrentRole=20..40}] run scoreboard players add #MWL WHITE 1
+## Reset scoreboards
+function mwj:system/ongame/settings/reset_scoreboards
 
 ## Game Start
 execute if score #MWL Phase matches 10 run scoreboard players set #MWL Phase 11

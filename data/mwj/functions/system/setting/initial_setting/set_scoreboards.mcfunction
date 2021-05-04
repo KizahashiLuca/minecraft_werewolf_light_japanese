@@ -130,8 +130,7 @@ scoreboard objectives add AddedRole5 dummy
 scoreboard objectives add SelectNumber dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
-## Add Variables for Setting Casting 
-scoreboard objectives add Casting dummy
+## Add Variables for Setting Casting
 scoreboard objectives add SetCasting dummy
 scoreboard objectives add PrevSetCasting dummy
 ## Add Variables for Setting Dummy Role
@@ -394,8 +393,7 @@ scoreboard players set #MWL PrevAddedClWolf 0
 scoreboard players set #MWL PrevAddedBakery 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 600
-## Set Variables for Setting Casting 
-scoreboard players set #MWL Casting 0
+## Set Variables for Setting Casting
 scoreboard players set #MWL SetCasting 0
 scoreboard players set #MWL PrevSetCasting 0
 ## Set Variables for Setting Dummy Role

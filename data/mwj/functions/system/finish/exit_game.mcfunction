@@ -18,6 +18,9 @@ execute if score #MWL Version matches 16.. run function mwj:system/finish/remove
 ## Reset world
 execute if score #MWL Version matches 16.. run function mwj:system/finish/reset_world
 
+## Reset scoreboards
+function mwj:system/setting/choose_mode/reset_scoreboards
+
 ## Remove scoreboards
 function mwj:system/finish/remove_scoreboards
 

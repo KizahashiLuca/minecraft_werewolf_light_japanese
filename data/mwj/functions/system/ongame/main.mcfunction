@@ -36,13 +36,13 @@ execute if score #MWL AddedTrident matches 1 run function mwj:system/ongame/trid
 execute if score #MWL AddedConduit matches 1 run function mwj:system/ongame/conduit/main
 
 ## Detect honey block
-execute if score #MWL Version matches 15.. if score #MWL AddedHoneyBlock matches 1 run function mwj:system/ongame/honey_block/main
+execute if score #MWL AddedHoneyBlock matches 1 run function mwj:system/ongame/honey_block/main
 
 ## Detect soul lantern
-execute if score #MWL Version matches 16.. if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/main
+execute if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/main
 
 ## Detect twisting vines
-execute if score #MWL Version matches 16.. if score #MWL AddedVines matches 1 run function mwj:system/ongame/twisting_vines/main
+execute if score #MWL AddedVines matches 1 run function mwj:system/ongame/twisting_vines/main
 
 ## Seer System
 execute as @a[team=Player,scores={CurrentRole=3}] run function mwj:system/ongame/clever_wolf/main
@@ -52,8 +52,7 @@ execute as @a[team=Player,scores={CurrentRole=10}] run function mwj:system/ongam
 execute as @a[team=Player,tag=SeeredFox] run function mwj:system/ongame/fox/detect_seered
 
 ## Immoralist System
-execute as @a[team=Player,scores={CurrentRole=11,DeathCount=0,RoleDone=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/main
-execute as @a[team=Player,scores={CurrentRole=11,DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/detect_dead
+execute as @a[team=Player,scores={CurrentRole=11}] run function mwj:system/ongame/immoral/main
 
 ## Bakery System
 execute as @a[team=Player,scores={CurrentRole=22}] run function mwj:system/ongame/bakery/main
@@ -91,6 +90,3 @@ execute unless entity @p[tag=MWLtest] run function mwj:system/finish/decide_winn
 ## Torch system
 scoreboard players reset @a[team=Player] DropTorch
 scoreboard players reset @a[team=Player] SneakTime
-
-## Exit This Game
-# execute if score #MWL Phase matches 0 run function mwj:system/finish/end_game

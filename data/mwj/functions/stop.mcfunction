@@ -16,5 +16,4 @@ execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"  ゲー�
 ## Quit Display
 execute if score #MWL Phase matches 0..10 run function mwj:system/finish/exit_game
 execute if score #MWL Phase matches 11 run function mwj:system/finish/end_game
-execute if score #MWL Phase matches 80..100 run function mwj:system/setting/exit_setting/remove_scoreboard
 execute if score #MWL Phase matches 80..100 run function mwj:system/finish/exit_game

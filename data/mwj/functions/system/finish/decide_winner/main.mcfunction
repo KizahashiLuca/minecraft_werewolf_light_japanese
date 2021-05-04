@@ -6,6 +6,8 @@
 ## Version: v.1.5
 ###############################
 
-execute if score #MWL GameMode matches 1 run function mwj:system/finish/decide_winner/gamemode_normal_werewolf
-execute if score #MWL GameMode matches 2 run function mwj:system/finish/decide_winner/gamemode_two_alive
-execute if score #MWL GameMode matches 3 run function mwj:system/finish/decide_winner/gamemode_annihilation
+## Decide winner
+execute if score #MWL Second matches 6.. if score #MWL IsEndGame matches 0 run function mwj:system/finish/decide_winner/gamemode/main
+
+## Times up
+execute if score #MWL Second matches 0 if score #MWL Tick matches 0 run function mwj:system/finish/decide_winner/schedule/draw

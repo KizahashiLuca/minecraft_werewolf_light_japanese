@@ -16,6 +16,3 @@ tellraw @a ["",{"text":"  両者 ","color":"white"},{"text":"引き分け","bold
 
 ## Change Game Mode
 scoreboard players set #MWL Phase 0
-
-## Exit Game
-function mwj:system/finish/end_game

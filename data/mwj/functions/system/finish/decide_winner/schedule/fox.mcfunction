@@ -19,6 +19,3 @@ execute unless entity @p[scores={CurrentRole=11}] run tellraw @a ["",{"text":"  
 ## Change Game Mode
 scoreboard players set #MWL Phase 0
 scoreboard players set #MWL WINNER 3
-
-## Exit Game
-function mwj:system/finish/end_game

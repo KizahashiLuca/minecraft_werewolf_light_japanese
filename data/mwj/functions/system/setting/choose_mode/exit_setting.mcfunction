@@ -33,5 +33,8 @@ scoreboard players operation #MWL ChangeGlowTime *= #MWL TempVariable
 ## Clear inventory
 clear @a
 
+## Reset scoreboards
+function mwj:system/setting/choose_mode/reset_scoreboards
+
 ## Hide Time
 function mwj:system/preparation/change_to
