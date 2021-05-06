@@ -51,15 +51,15 @@ scoreboard players operation #MWL NumOfRole = #MWL NumOfVillagers
 execute if score #MWL DummyRole matches 4 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/villager
 
-## Decide masons
-scoreboard players operation #MWL NumOfRole = #MWL NumOfMasons
-execute if score #MWL DummyRole matches 5 run scoreboard players remove #MWL NumOfRole 1
-function mwj:system/ongame/settings/set_roles/roles/mason
-
 ## Decide bakeries
 scoreboard players operation #MWL NumOfRole = #MWL NumOfBakeries
-execute if score #MWL DummyRole matches 6 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 5 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/bakery
+
+## Decide masons
+scoreboard players operation #MWL NumOfRole = #MWL NumOfMasons
+execute if score #MWL DummyRole matches 6 run scoreboard players remove #MWL NumOfRole 1
+function mwj:system/ongame/settings/set_roles/roles/mason
 
 ## Decide seers
 scoreboard players operation #MWL NumOfRole = #MWL NumOfSeers
