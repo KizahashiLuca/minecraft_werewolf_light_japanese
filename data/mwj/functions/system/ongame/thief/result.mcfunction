@@ -40,11 +40,11 @@ execute as @s[scores={CurrentRole=11,DeathCount=0}] run tellraw @p[scores={Curre
 ## Send a Message that the Stolen is Villager
 execute as @s[scores={CurrentRole=20,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
-## Send a Message that the Stolen is Mason
-execute as @s[scores={CurrentRole=21,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"共有者","color":"dark_green","bold":true},{"text":" になりました","color":"white"}]
-
 ## Send a Message that the Stolen is Bakery
 execute as @s[scores={CurrentRole=22,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"パン屋","color":"green","bold":true},{"text":" になりました","color":"white"}]
+
+## Send a Message that the Stolen is Mason
+execute as @s[scores={CurrentRole=24,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"共有者","color":"dark_green","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Seer
 execute as @s[scores={CurrentRole=25,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"予言者","color":"aqua","bold":true},{"text":" になりました","color":"white"}]
@@ -119,10 +119,10 @@ execute as @s[scores={DeathCount=0,PrevRole=6}] run tellraw @p[scores={CurrentRo
 execute as @s[scores={DeathCount=0,PrevRole=11}] run tellraw @p[scores={CurrentRole=11,RoleOfNum=1}] ["",{"text":"    羽衣狐は ","color":"white"},{"selector":"@a[scores={CurrentRole=10}]","color":"dark_purple"},{"text":" です。","color":"white"}]
 
 ## Send a Message of masons
-execute as @s[scores={DeathCount=0,PrevRole=21}] run scoreboard players operation @p[scores={CurrentRole=21,RoleOfNum=1}] MasonPair = @s MasonPair
-scoreboard players reset @s[scores={DeathCount=0,PrevRole=21}] MasonPair
-execute as @a[scores={CurrentRole=21}] if score @s MasonPair = @p[scores={CurrentRole=21,RoleOfNum=1}] MasonPair run tag @s add MasonTag
-tellraw @p[scores={CurrentRole=21,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[tag=MasonTag,scores={CurrentRole=21}]","color":"dark_green"},{"text":" です。","color":"white"}]
+execute as @s[scores={DeathCount=0,PrevRole=24}] run scoreboard players operation @p[scores={CurrentRole=24,RoleOfNum=1}] MasonPair = @s MasonPair
+scoreboard players reset @s[scores={DeathCount=0,PrevRole=24}] MasonPair
+execute as @a[scores={CurrentRole=24}] if score @s MasonPair = @p[scores={CurrentRole=24,RoleOfNum=1}] MasonPair run tag @s add MasonTag
+tellraw @p[scores={CurrentRole=24,RoleOfNum=1}] ["",{"text":"    仲間は ","color":"white"},{"selector":"@a[tag=MasonTag,scores={CurrentRole=24}]","color":"dark_green"},{"text":" です。","color":"white"}]
 tag @a remove MasonTag
 
 ## Send a Common Message

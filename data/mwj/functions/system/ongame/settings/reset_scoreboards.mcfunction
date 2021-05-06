@@ -15,10 +15,10 @@ scoreboard players set @a[scores={CurrentRole=3}] TurnPageNum 0
 scoreboard players enable @a[scores={CurrentRole=3}] TurnPageRight
 scoreboard players enable @a[scores={CurrentRole=3}] TurnPageLeft
 scoreboard players enable @a[scores={CurrentRole=3}] RoleTrigger
-#### Mason
-scoreboard players set @a[scores={CurrentRole=21}] MasonPair 0
 #### Bakery
 scoreboard players set @a[scores={CurrentRole=22}] CountOfBakery 10
+#### Mason
+scoreboard players set @a[scores={CurrentRole=24}] MasonPair 0
 #### Seer/FakeSeer/Sage/Medium/Detective/Thief
 scoreboard players set @a[scores={CurrentRole=25..35}] TurnPageNum 0
 scoreboard players enable @a[scores={CurrentRole=25..35}] TurnPageRight

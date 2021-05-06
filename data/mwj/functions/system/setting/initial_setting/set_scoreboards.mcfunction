@@ -17,8 +17,8 @@
 ##   10 : Fox 羽衣狐
 ##   11 : Immoralist 背徳者
 ##   20 : Villager 村人
-##   21 : Mason 共有者 -> 24 の予定
 ##   22 : Bakery パン屋
+##   24 : Mason 共有者
 ##   25 : Seer 予言者
 ##   26 : Fake Seer 偽予言者
 ##   27 : Sage 賢者
