@@ -9,7 +9,7 @@
 ####################################
 
 ## Count number of roles
-function mwj:system/setting/casting_decision_common/count_number_of_roles
+function mwj:system/setting/casting_decision/common/count_number_of_roles
 
 ## Replace Inventory
 execute if score #MWL SetDummyRole matches 0 run loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/choose_mode/carved_pumpkin
