@@ -8,9 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL AddedThief
-scoreboard players operation #MWL AddedRole2 = #MWL AddedLtRed
-scoreboard players operation #MWL AddedRole3 = #MWL AddedCat
-scoreboard players set #MWL AddedRole4 0
-scoreboard players set #MWL AddedRole5 0
+## Set Honey block - Item4
+scoreboard players operation #MWL TmpAdded = #MWL AddedItem4
+execute if score #MWL TmpAdded matches 1 run scoreboard players set #MWL AddedItem4 0
+execute if score #MWL TmpAdded matches 0 run scoreboard players set #MWL AddedItem4 1
+function mwj:system/setting/item_addition_decision/common/set_inventory

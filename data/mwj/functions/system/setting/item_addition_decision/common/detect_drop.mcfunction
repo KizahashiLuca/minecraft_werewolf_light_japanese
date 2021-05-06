@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL AddedThief
-scoreboard players operation #MWL AddedRole2 = #MWL AddedLtRed
-scoreboard players operation #MWL AddedRole3 = #MWL AddedCat
-scoreboard players set #MWL AddedRole4 0
-scoreboard players set #MWL AddedRole5 0
+## Detect Dropping
+kill @s
+function mwj:system/setting/item_addition_decision/common/set_inventory
