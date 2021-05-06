@@ -51,7 +51,7 @@ execute as @p[tag=Host,scores={ChosenGlowTime=1}] run function mwj:system/settin
 execute as @p[tag=Host,scores={ChosenGameTime=1}] run function mwj:system/setting/game_time_decision/change_to
 execute as @p[tag=Host,scores={ChosenGameMode=1}] run function mwj:system/setting/game_mode_decision/change_to
 execute as @p[tag=Host,scores={ChosenItemAdd=1}] run function mwj:system/setting/item_addition_decision_common/set_inventory
-execute if score #MWL SetCasting matches 0 if score #MWL AddedRoleNumber matches 1.. as @p[tag=Host,scores={ChosenRoleAdd=1}] run function mwj:system/setting/role_addition_decision_common/set_inventory
+execute if score #MWL SetCasting matches 0 if score #MWL AddedRoleNumber matches 1.. as @p[tag=Host,scores={ChosenRoleAdd=1}] run function mwj:system/setting/role_addition_decision/common/set_inventory
 execute if score #MWL SetCasting matches 1 as @p[tag=Host,scores={ChosenCastSet=1}] run function mwj:system/setting/casting_decision/common/set_inventory
 execute as @p[tag=Host,scores={SelectCancel=1}] run function mwj:stop
 execute as @p[tag=Host,scores={SelectOkay=1}] run function mwj:system/setting/choose_mode/exit_setting

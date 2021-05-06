@@ -16,8 +16,8 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:orang
 # scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:",tag:{Tags:["MWLsetting","Added"]}}]}] SelectItem5 0
 
 ## Function Each Mode
-execute as @p[tag=Host,scores={SelectItem1=1}] run function mwj:system/setting/casting_decision/role/selected_thief
-execute as @p[tag=Host,scores={SelectItem2=1}] run function mwj:system/setting/casting_decision/role/selected_little_red
-execute as @p[tag=Host,scores={SelectItem3=1}] run function mwj:system/setting/casting_decision/role/selected_cat
-# execute as @p[tag=Host,scores={SelectItem4=1}] run function mwj:system/setting/casting_decision/role/selected_
-# execute as @p[tag=Host,scores={SelectItem5=1}] run function mwj:system/setting/casting_decision/role/selected_
+execute as @p[tag=Host,scores={SelectItem1=1}] run function mwj:system/setting/role_addition_decision/role/selected_thief
+execute as @p[tag=Host,scores={SelectItem2=1}] run function mwj:system/setting/role_addition_decision/role/selected_little_red
+execute as @p[tag=Host,scores={SelectItem3=1}] run function mwj:system/setting/role_addition_decision/role/selected_cat
+# execute as @p[tag=Host,scores={SelectItem4=1}] run function mwj:system/setting/role_addition_decision/role/selected_
+# execute as @p[tag=Host,scores={SelectItem5=1}] run function mwj:system/setting/role_addition_decision/role/selected_
