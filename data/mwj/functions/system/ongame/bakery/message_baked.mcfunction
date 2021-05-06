@@ -15,7 +15,9 @@ loot give @a[scores={DeathCount=0}] loot mwj:item/roles/bread
 scoreboard players remove @s CountOfBakery 1
 
 ## Send a Common Message
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  パンが村のみんなに配られました。","color":"white"}]
 tellraw @s ["",{"text":"    配れる回数はあと ","color":"white"},{"score":{"name":"@s","objective":"CountOfBakery"},"color":"white"},{"text":"回 です。","color":"white"}]
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]

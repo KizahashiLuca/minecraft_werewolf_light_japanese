@@ -9,6 +9,8 @@
 ####################################
 
 ## Send a Common Message
-tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @s [""]
+tellraw @s ["",{"text":"----------------------------------","color":"white"}]
 tellraw @s ["",{"text":"  あなたはもうパンを焼けません","color":"white"}]
-tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @s ["",{"text":"----------------------------------","color":"white"}]
+tellraw @s [""]

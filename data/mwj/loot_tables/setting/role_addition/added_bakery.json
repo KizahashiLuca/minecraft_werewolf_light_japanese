@@ -11,7 +11,14 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"パン屋の追加","color":"white","bold":false,"italic":false}]
+                ["",{"text":"パン屋","color":"green","bold":true,"italic":false},{"text":"の追加","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"村人陣営","color":"green","bold":true,"italic":false}],
+                ["",{"text":"予言","color":"aqua","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"霊媒","color":"yellow","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"賢狼","color":"dark_red","bold":false,"italic":false},{"text":"の表示 : ","color":"white","bold":false,"italic":false},{"text":"白","color":"green","bold":true,"italic":false}],
+                ["",{"text":"上限10個まで全員にパンを配ることができる。","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

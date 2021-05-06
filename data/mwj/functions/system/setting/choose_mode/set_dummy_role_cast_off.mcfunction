@@ -77,12 +77,14 @@ scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
 scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
 
 ## Send a Message Dummy Role to All Players
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 execute if score #MWL SetDummyRole matches 0 run tellraw @a ["",{"text":"  役欠けが、 ","color":"white"},{"text":"なし","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
 execute if score #MWL SetDummyRole matches 0 run tellraw @a ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" です。","color":"white"}]
 execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"  役欠けが、 ","color":"white"},{"text":"あり","color":"green","bold":true},{"text":" に設定されました。","color":"white"}]
 execute if score #MWL SetDummyRole matches 1 run tellraw @a ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" で、役職数は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfRoles"},"color":"green","bold":true},{"text":"役","color":"green","bold":true},{"text":" です。","color":"white"}]
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]
 
 ## Change to Choose Mode
 function mwj:system/setting/choose_mode/change_to

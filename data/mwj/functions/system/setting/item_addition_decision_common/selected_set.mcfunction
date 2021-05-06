@@ -9,7 +9,8 @@
 ####################################
 
 ## Send a Message Added Item to All Players
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  追加アイテムは、 ","color":"white"}]
 execute if score #MWL AddedStick matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・木の棒","color":"white","bold":true}]
 execute if score #MWL AddedTotem matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"・不死のトーテム","color":"white","bold":true}]
@@ -34,7 +35,8 @@ execute if score #MWL AddedVines matches 1.. run tellraw @a ["",{"text":"    ","
 
 execute if score #MWL AddedStick matches 0 if score #MWL AddedTotem matches 0 if score #MWL AddedDeath matches 0 if score #MWL AddedPearl matches 0 if score #MWL AddedHoe matches 0 if score #MWL AddedElytra matches 0 if score #MWL AddedSnowball matches 0 if score #MWL AddedInvis matches 0 if score #MWL AddedSpeed matches 0 if score #MWL AddedJump matches 0 if score #MWL AddedTrident matches 0 if score #MWL AddedConduit matches 0 if score #MWL AddedCrossbow matches 0 if score #MWL AddedHoneyBlock matches 0 if score #MWL AddedLantern matches 0 if score #MWL AddedVines matches 0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"無し","color":"white","bold":true}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]
 
 ## Change to Choose Mode
 function mwj:system/setting/item_addition_decision_1/set_added

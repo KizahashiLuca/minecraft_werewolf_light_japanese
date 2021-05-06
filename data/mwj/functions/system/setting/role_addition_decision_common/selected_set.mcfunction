@@ -9,7 +9,8 @@
 ####################################
 
 ## Send a Message Added Item to All Players
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  追加役職は、 ","color":"white"}]
 execute if score #MWL AddedWolf matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"人    狼","color":"red","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedWolf"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL AddedClWolf matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"賢    狼","color":"red","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedClWolf"},"color":"white"},{"text":"人","color":"white"}]
@@ -33,8 +34,10 @@ execute if score #MWL AddedCat matches 1.. run tellraw @a ["",{"text":"    ","co
 # execute if score #MWL Added matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"追加役職","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"Added"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL AddedWolf matches ..0 if score #MWL AddedMadman matches ..0 if score #MWL AddedVilla matches ..0 if score #MWL AddedSeer matches ..0 if score #MWL AddedMedium matches ..0 if score #MWL AddedFox matches ..0 if score #MWL AddedMason matches ..0 if score #MWL AddedDetec matches ..0 if score #MWL AddedThief matches ..0 if score #MWL AddedCat matches ..0 if score #MWL AddedFkSeer matches ..0 if score #MWL AddedSage matches ..0 if score #MWL AddedWhWolf matches ..0 if score #MWL AddedFanatic matches ..0 if score #MWL AddedImmoral matches ..0 if score #MWL AddedLtRed matches ..0 if score #MWL AddedClWolf matches ..0 if score #MWL AddedBakery matches ..0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"なし","color":"white","bold":true}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
-execute if score #MWL AddedRole matches 1.. run tellraw @a ["",{"text":"\n  ","color":"white"},{"text":"残り追加可能人数","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedRole"},"color":"white"},{"text":"人","color":"white"}]
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+execute if score #MWL AddedRole matches 1.. run tellraw @a [""]
+execute if score #MWL AddedRole matches 1.. run tellraw @a ["",{"text":"  ","color":"white"},{"text":"残り追加可能人数","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedRole"},"color":"white"},{"text":"人","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]
 
 ## Change to Choose Mode
 function mwj:system/setting/role_addition_decision_1/set_added

@@ -9,7 +9,8 @@
 ####################################
 
 ## Send a Common Message
-tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] [""]
+tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]
 tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"selector":"@s","color":"white"},{"text":" から役職を盗んだ結果、","color":"white"}]
 
 ## Send a Message that the Stolen is dead
@@ -125,4 +126,5 @@ tellraw @p[scores={CurrentRole=21,RoleOfNum=1}] ["",{"text":"    仲間は ","co
 tag @a remove MasonTag
 
 ## Send a Common Message
-tellraw @p[scores={PrevRole=35,RoleOfNum=1}] ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @p[scores={PrevRole=35,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]
+tellraw @p[scores={PrevRole=35,RoleOfNum=1}] [""]

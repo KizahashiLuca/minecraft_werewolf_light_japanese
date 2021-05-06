@@ -20,7 +20,8 @@ scoreboard players operation @s TEMP1 -= #MWL Second
 scoreboard players set @s TEMP2 1
 
 ## Send a Common Message
-tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] [""]
+tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]
 tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"  探偵結果","color":"white"}]
 
 ## Send a Message that Victim is Alive
@@ -45,7 +46,8 @@ execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=121..180}] run tellra
 execute if entity @p[scores={TEMP2=1,DeathCount=1..2,TEMP1=0..60}] as @a if score @s NumOfPlayers = @p[scores={TEMP2=1}] NumberOfKiller run function mwj:system/ongame/detective/result_roles
 
 ## Send a Common Message
-tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]
+tellraw @p[scores={CurrentRole=31,RoleOfNum=1}] [""]
 
 ## Remove Scoreboard
 scoreboard objectives remove TEMP1

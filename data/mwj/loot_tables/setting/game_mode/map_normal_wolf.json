@@ -11,7 +11,13 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"通常人狼モード","color":"white","bold":false,"italic":false}]
+                ["",{"text":"通常人狼モード","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"村人陣営の人数が、人狼の人数以下","color":"white","bold":false,"italic":false}],
+                ["",{"text":"となれば人狼陣営の勝利。","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

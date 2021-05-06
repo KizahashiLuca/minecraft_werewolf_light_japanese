@@ -23,7 +23,8 @@ scoreboard players operation @s TargetOfRole = @s TurnPageNum
 scoreboard players operation @s TargetOfRole *= #MWL 10
 
 ## Send a Common Message
-tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @s [""]
+tellraw @s ["",{"text":"----------------------------------","color":"white"}]
 tellraw @s ["",{"text":"  霊媒を誰に行う？","color":"white"}]
 
 ## Send Triggers
@@ -56,7 +57,8 @@ scoreboard players add @s PageDenom 1
 execute if score #MWL TurnPageMax matches 1.. run tellraw @s ["",{"text":"    ","color":"white"},{"text":"<","clickEvent":{"action":"run_command","value":"/trigger TurnPageLeft set 1"},"hoverEvent":{"action":"show_text","value":[{"text":"前のページへ"}]},"color":"green","bold":true},{"text":"  ( ","color":"white"},{"score":{"name":"@s","objective":"PageNumer"},"color":"white"},{"text":" / ","color":"white"},{"score":{"name":"@s","objective":"PageDenom"},"color":"white"},{"text":" )  ","color":"white"},{"text":">","clickEvent":{"action":"run_command","value":"/trigger TurnPageRight set 1"},"hoverEvent":{"action":"show_text","value":[{"text":"次のページへ"}]},"color":"green","bold":true}]
 
 ## Send a Common Message
-tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @s ["",{"text":"----------------------------------","color":"white"}]
+tellraw @s [""]
 
 ## Reset Scoreboard
 scoreboard players reset @s PageNumer

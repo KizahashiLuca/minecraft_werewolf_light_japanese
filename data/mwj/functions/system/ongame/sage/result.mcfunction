@@ -9,7 +9,8 @@
 ####################################
 
 ## Send a Common Message
-tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] [""]
+tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]
 tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"  賢者結果","color":"white"}]
 
 ## Send a Message that Suspect is Black
@@ -40,7 +41,8 @@ execute as @s[scores={CurrentRole=39}] run tellraw @p[scores={CurrentRole=27,Rol
 execute as @s[scores={CurrentRole=40}] run tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"猫又","color":"gold","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Common Message
-tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]
+tellraw @p[scores={CurrentRole=27,RoleOfNum=1}] [""]
 
 ## Seer Role Done
 scoreboard players set @p[scores={CurrentRole=27,RoleOfNum=1}] RoleDone 1

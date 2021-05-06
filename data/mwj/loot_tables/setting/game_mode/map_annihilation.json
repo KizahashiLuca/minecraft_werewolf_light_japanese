@@ -11,7 +11,13 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"殲滅モード","color":"white","bold":false,"italic":false}]
+                ["",{"text":"殲滅モード","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"村人陣営のが全滅","color":"white","bold":false,"italic":false}],
+                ["",{"text":"となれば人狼陣営の勝利。","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

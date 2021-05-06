@@ -9,7 +9,8 @@
 ####################################
 
 ## Quit the game
-execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+execute if score #MWL Phase matches 0..100 run tellraw @a [""]
+execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
 execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"  - ","color":"white"},{"text":"Aborted","color":"red","bold":true}]
 execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"----------------------------------","color":"white"}]

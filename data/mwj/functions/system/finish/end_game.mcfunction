@@ -46,7 +46,8 @@ execute if score #MWL DummyRole matches 12 run tellraw @a ["",{"text":"    ","co
 execute if score #MWL DummyRole matches 13 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"赤ずきん","color":"gold"},{"text":" ： 1人","color":"white"}]
 
 ## Send a Display of Survivors
-tellraw @a ["",{"text":"\n    ","color":"white"},{"text":"生 存 者","color":"white"},{"text":" ： ","color":"white"},{"selector":"@a[scores={DeathCount=0},team=Player]","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"    ","color":"white"},{"text":"生 存 者","color":"white"},{"text":" ： ","color":"white"},{"selector":"@a[scores={DeathCount=0},team=Player]","color":"white"}]
 
 ## Send a Thief Log
 scoreboard players set #MWL TempVariable 5

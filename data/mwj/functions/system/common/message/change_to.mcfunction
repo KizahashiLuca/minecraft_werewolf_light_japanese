@@ -19,7 +19,8 @@ execute if score #MWL Phase matches 10 run title @a subtitle ["",{"text":"Game S
 scoreboard players set #MWL MasonPair 1
 
 ## Display Breakdown of Roles & His Role
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
 execute if score #MWL Phase matches 80 run tellraw @a ["",{"text":"  - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
 execute if score #MWL Phase matches 10 run tellraw @a ["",{"text":"  - ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
@@ -48,4 +49,5 @@ function mwj:system/common/message/set_items
 execute if score #MWL Phase matches 10 run tellraw @a [""]
 execute if score #MWL Phase matches 10 run tellraw @a ["",{"text":"  あなたの役職 : ","color":"white"}]
 execute if score #MWL Phase matches 10 run function mwj:system/ongame/settings/tell_roles/main
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]

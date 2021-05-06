@@ -9,7 +9,8 @@
 ####################################
 
 ## Send a Common Message
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]
 
 ## teleport to alive players
 execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DeathCount=1..2}] @p[gamemode=adventure,sort=random]

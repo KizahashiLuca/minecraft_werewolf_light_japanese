@@ -9,10 +9,12 @@
 ####################################
 
 ## Error Message
-tellraw @s ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @s [""]
+tellraw @s ["",{"text":"----------------------------------","color":"white"}]
 tellraw @s ["",{"text":"  エラー","color":"white"}]
 tellraw @s ["",{"text":"    あなたの役職は既に使用できません","color":"white"}]
-tellraw @s ["",{"text":"----------------------------------\n","color":"white"}]
+tellraw @s ["",{"text":"----------------------------------","color":"white"}]
+tellraw @s [""]
 
 ## Reset Scoreboard
 scoreboard players reset @s DropTorch

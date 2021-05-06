@@ -9,7 +9,8 @@
 ####################################
 
 ## Send a Message NumOf Item to All Players
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
+tellraw @a [""]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  役職選択は、 ","color":"white"}]
 execute if score #MWL NumOfWolves matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"人    狼","color":"red","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfWolves"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL NumOfClWolves matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"賢    狼","color":"dark_red","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfClWolves"},"color":"white"},{"text":"人","color":"white"}]
@@ -33,8 +34,10 @@ execute if score #MWL NumOfCats matches 1.. run tellraw @a ["",{"text":"    ","c
 # execute if score #MWL NumOf matches 1.. run tellraw @a ["",{"text":"    ","color":"white"},{"text":"追加役職","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"NumOf"},"color":"white"},{"text":"人","color":"white"}]
 execute if score #MWL NumOfWolves matches ..0 if score #MWL NumOfMadmans matches ..0 if score #MWL NumOfVillagers matches ..0 if score #MWL NumOfSeers matches ..0 if score #MWL NumOfMediums matches ..0 if score #MWL NumOfFoxes matches ..0 if score #MWL NumOfMasons matches ..0 if score #MWL NumOfDetectives matches ..0 if score #MWL NumOfThieves matches ..0 if score #MWL NumOfCats matches ..0 if score #MWL NumOfFkSeers matches ..0 if score #MWL NumOfSages matches ..0 if score #MWL NumOfWhWolves matches ..0 if score #MWL NumOfFanatics matches ..0 if score #MWL NumOfImmorals matches ..0 if score #MWL NumOfLtReds matches ..0 if score #MWL NumOfClWolves matches ..0 if score #MWL NumOfBakeries matches ..0 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"なし","color":"white","bold":true}]
 tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
-execute if score #MWL AddedRole matches 1.. run tellraw @a ["",{"text":"\n  ","color":"white"},{"text":"残り追加可能人数","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedRole"},"color":"white"},{"text":"人","color":"white"}]
-tellraw @a ["",{"text":"----------------------------------\n","color":"white"}]
+execute if score #MWL AddedRole matches 1.. run tellraw @a [""]
+execute if score #MWL AddedRole matches 1.. run tellraw @a ["",{"text":"  ","color":"white"},{"text":"残り追加可能人数","color":"white","bold":true},{"text":" : ","color":"white"},{"score":{"name":"#MWL","objective":"AddedRole"},"color":"white"},{"text":"人","color":"white"}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a [""]
 
 ## Change to Choose Mode
 function mwj:system/setting/casting_decision_1/set_added
