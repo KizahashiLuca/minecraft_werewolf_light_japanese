@@ -9,8 +9,8 @@
 ####################################
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL AddedSeer
-scoreboard players operation #MWL AddedRole2 = #MWL AddedFkSeer
-scoreboard players operation #MWL AddedRole3 = #MWL AddedSage
-scoreboard players operation #MWL AddedRole4 = #MWL AddedMedium
-scoreboard players operation #MWL AddedRole5 = #MWL AddedDetec
+scoreboard players operation #MWL AddedRole1 = #MWL AddedMason
+scoreboard players operation #MWL AddedRole2 = #MWL AddedSeer
+scoreboard players operation #MWL AddedRole3 = #MWL AddedFkSeer
+scoreboard players operation #MWL AddedRole4 = #MWL AddedSage
+scoreboard players operation #MWL AddedRole5 = #MWL AddedMedium

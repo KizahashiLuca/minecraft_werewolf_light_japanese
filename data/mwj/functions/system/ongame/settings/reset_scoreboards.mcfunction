@@ -16,7 +16,7 @@ scoreboard players enable @a[scores={CurrentRole=3}] TurnPageRight
 scoreboard players enable @a[scores={CurrentRole=3}] TurnPageLeft
 scoreboard players enable @a[scores={CurrentRole=3}] RoleTrigger
 #### Bakery
-scoreboard players set @a[scores={CurrentRole=22}] CountOfBakery 10
+scoreboard players set @a[scores={CurrentRole=21}] CountOfBakery 10
 #### Mason
 scoreboard players set @a[scores={CurrentRole=24}] MasonPair 0
 #### Seer/FakeSeer/Sage/Medium/Detective/Thief

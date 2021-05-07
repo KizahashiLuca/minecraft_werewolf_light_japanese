@@ -22,18 +22,18 @@ scoreboard players operation #MWL PrevAddedFox = #MWL AddedFox
 scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
 scoreboard players operation #MWL PrevAddedVilla = #MWL AddedVilla
 scoreboard players operation #MWL PrevAddedBakery = #MWL AddedBakery
-scoreboard players operation #MWL PrevAddedMason = #MWL AddedMason
+scoreboard players operation #MWL PrevAddedLycant = #MWL AddedLycant
 
+scoreboard players operation #MWL PrevAddedMason = #MWL AddedMason
 scoreboard players operation #MWL PrevAddedSeer = #MWL AddedSeer
 scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
 scoreboard players operation #MWL PrevAddedSage = #MWL AddedSage
 scoreboard players operation #MWL PrevAddedMedium = #MWL AddedMedium
-scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
 
+scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
 scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
 scoreboard players operation #MWL PrevAddedLtRed = #MWL AddedLtRed
 scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
-# scoreboard players operation #MWL PrevAdded = #MWL Added
 # scoreboard players operation #MWL PrevAdded = #MWL Added
 
 ## Set inventory

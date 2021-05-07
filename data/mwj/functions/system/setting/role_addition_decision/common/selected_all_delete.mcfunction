@@ -20,18 +20,18 @@ scoreboard players set #MWL AddedFox 0
 scoreboard players set #MWL AddedImmoral 0
 scoreboard players set #MWL AddedVilla 0
 scoreboard players set #MWL AddedBakery 0
-scoreboard players set #MWL AddedMason 0
+scoreboard players set #MWL AddedLycant 0
 
+scoreboard players set #MWL AddedMason 0
 scoreboard players set #MWL AddedSeer 0
 scoreboard players set #MWL AddedFkSeer 0
 scoreboard players set #MWL AddedSage 0
 scoreboard players set #MWL AddedMedium 0
-scoreboard players set #MWL AddedDetec 0
 
+scoreboard players set #MWL AddedDetec 0
 scoreboard players set #MWL AddedThief 0
 scoreboard players set #MWL AddedLtRed 0
 scoreboard players set #MWL AddedCat 0
-# scoreboard players set #MWL Added 0
 # scoreboard players set #MWL Added 0
 
 ## Set Item Addition

@@ -41,7 +41,10 @@ execute as @s[scores={CurrentRole=11,DeathCount=0}] run tellraw @p[scores={Curre
 execute as @s[scores={CurrentRole=20,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Bakery
-execute as @s[scores={CurrentRole=22,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"パン屋","color":"green","bold":true},{"text":" になりました","color":"white"}]
+execute as @s[scores={CurrentRole=21,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"パン屋","color":"green","bold":true},{"text":" になりました","color":"white"}]
+
+## Send a Message that the Stolen is Lycanthrope
+execute as @s[scores={CurrentRole=22,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"狼憑き","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Mason
 execute as @s[scores={CurrentRole=24,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"共有者","color":"dark_green","bold":true},{"text":" になりました","color":"white"}]
@@ -93,7 +96,7 @@ scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] ThiefStealT
 scoreboard players add #MWL NumberOfStolen 1
 
 ## Thief Role Done
-execute as @s[scores={DeathCount=0,CurrentRole=22}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CountOfBakery = @s CountOfBakery
+execute as @s[scores={DeathCount=0,CurrentRole=21}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] CountOfBakery = @s CountOfBakery
 execute as @s[scores={DeathCount=0,CurrentRole=1..34}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone
 execute as @s[scores={DeathCount=0,CurrentRole=35}] run scoreboard players set @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone 0
 execute as @s[scores={DeathCount=0,CurrentRole=36..40}] run scoreboard players operation @p[scores={CurrentRole=35,RoleOfNum=1}] RoleDone = @s RoleDone

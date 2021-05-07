@@ -9,8 +9,8 @@
 ####################################
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL AddedThief
-scoreboard players operation #MWL AddedRole2 = #MWL AddedLtRed
-scoreboard players operation #MWL AddedRole3 = #MWL AddedCat
-scoreboard players set #MWL AddedRole4 0
+scoreboard players operation #MWL AddedRole1 = #MWL AddedDetec
+scoreboard players operation #MWL AddedRole2 = #MWL AddedThief
+scoreboard players operation #MWL AddedRole3 = #MWL AddedLtRed
+scoreboard players operation #MWL AddedRole4 = #MWL AddedCat
 scoreboard players set #MWL AddedRole5 0

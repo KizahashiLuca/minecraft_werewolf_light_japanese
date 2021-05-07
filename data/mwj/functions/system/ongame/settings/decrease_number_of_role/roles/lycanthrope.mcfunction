@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL AddedFox
-scoreboard players operation #MWL AddedRole2 = #MWL AddedImmoral
-scoreboard players operation #MWL AddedRole3 = #MWL AddedVilla
-scoreboard players operation #MWL AddedRole4 = #MWL AddedBakery
-scoreboard players operation #MWL AddedRole5 = #MWL AddedLycant
+## Decrease lycanthrope
+scoreboard players remove #MWL NumOfLycants 1
+scoreboard players remove #MWL PrevAddedRole 1

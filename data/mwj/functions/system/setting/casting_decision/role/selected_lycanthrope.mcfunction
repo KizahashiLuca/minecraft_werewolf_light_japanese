@@ -8,9 +8,7 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL AddedFox
-scoreboard players operation #MWL AddedRole2 = #MWL AddedImmoral
-scoreboard players operation #MWL AddedRole3 = #MWL AddedVilla
-scoreboard players operation #MWL AddedRole4 = #MWL AddedBakery
-scoreboard players operation #MWL AddedRole5 = #MWL AddedLycant
+## Set Lycanthrope
+execute if score #MWL AddedRole matches 1.. run scoreboard players add #MWL NumOfLycants 1
+execute if score #MWL AddedRole matches 1.. run scoreboard players remove #MWL AddedRole 1
+function mwj:system/setting/casting_decision/common/set_inventory

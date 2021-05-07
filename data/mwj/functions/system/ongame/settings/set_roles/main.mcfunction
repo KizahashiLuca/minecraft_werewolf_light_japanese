@@ -56,44 +56,49 @@ scoreboard players operation #MWL NumOfRole = #MWL NumOfBakeries
 execute if score #MWL DummyRole matches 5 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/bakery
 
+## Decide bakeries
+scoreboard players operation #MWL NumOfRole = #MWL NumOfLycants
+execute if score #MWL DummyRole matches 6 run scoreboard players remove #MWL NumOfRole 1
+function mwj:system/ongame/settings/set_roles/roles/lycanthrope
+
 ## Decide masons
 scoreboard players operation #MWL NumOfRole = #MWL NumOfMasons
-execute if score #MWL DummyRole matches 6 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 7 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/mason
 
 ## Decide seers
 scoreboard players operation #MWL NumOfRole = #MWL NumOfSeers
-execute if score #MWL DummyRole matches 7 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 8 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/seer
 
 ## Decide fake seers
 scoreboard players operation #MWL NumOfRole = #MWL NumOfFkSeers
-execute if score #MWL DummyRole matches 8 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 9 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/fake_seer
 
 ## Decide sages
 scoreboard players operation #MWL NumOfRole = #MWL NumOfSages
-execute if score #MWL DummyRole matches 9 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 10 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/sage
 
 ## Decide mediums
 scoreboard players operation #MWL NumOfRole = #MWL NumOfMediums
-execute if score #MWL DummyRole matches 10 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 11 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/medium
 
 ## Decide detectives
 scoreboard players operation #MWL NumOfRole = #MWL NumOfDetectives
-execute if score #MWL DummyRole matches 11 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 12 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/detective
 
 ## Decide thieves
 scoreboard players operation #MWL NumOfRole = #MWL NumOfThieves
-execute if score #MWL DummyRole matches 12 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 13 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/thief
 
 ## Decide little reds
 scoreboard players operation #MWL NumOfRole = #MWL NumOfLtReds
-execute if score #MWL DummyRole matches 13 run scoreboard players remove #MWL NumOfRole 1
+execute if score #MWL DummyRole matches 14 run scoreboard players remove #MWL NumOfRole 1
 function mwj:system/ongame/settings/set_roles/roles/little_red
 
 ## Decide cats

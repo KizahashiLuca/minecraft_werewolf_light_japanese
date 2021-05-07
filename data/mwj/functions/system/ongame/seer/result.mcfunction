@@ -24,7 +24,13 @@ execute as @s[scores={CurrentRole=10}] run tellraw @p[scores={CurrentRole=25,Rol
 execute as @s[scores={CurrentRole=10,DeathCount=0}] run function mwj:system/ongame/seer/damage_to_fox
 
 ## Send a Message that Suspect is White
-execute as @s[scores={CurrentRole=11..40}] run tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
+execute as @s[scores={CurrentRole=11..21}] run tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
+
+## Send a Message that Suspect is Black - Lycanthrope
+execute as @s[scores={CurrentRole=22}] run tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"黒","color":"red","bold":true},{"text":" です","color":"white"}]
+
+## Send a Message that Suspect is White
+execute as @s[scores={CurrentRole=23..40}] run tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Common Message
 tellraw @p[scores={CurrentRole=25,RoleOfNum=1}] ["",{"text":"----------------------------------","color":"white"}]

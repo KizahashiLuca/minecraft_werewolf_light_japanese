@@ -57,7 +57,7 @@ execute as @a[team=Player,tag=SeeredFox] if score #MWL IsEndGame matches 0 run f
 execute as @a[team=Player,scores={CurrentRole=11}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/immoral/main
 
 ## Bakery System
-execute as @a[team=Player,scores={CurrentRole=22}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/bakery/main
+execute as @a[team=Player,scores={CurrentRole=21}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/bakery/main
 
 ## Seer System
 execute as @a[team=Player,scores={CurrentRole=25}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/seer/main

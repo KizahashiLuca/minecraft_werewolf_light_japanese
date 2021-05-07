@@ -36,6 +36,7 @@ scoreboard objectives remove NumOfFoxes
 scoreboard objectives remove NumOfImmorals
 scoreboard objectives remove NumOfVillagers
 scoreboard objectives remove NumOfBakeries
+scoreboard objectives remove NumOfLycants
 scoreboard objectives remove NumOfMasons
 scoreboard objectives remove NumOfSeers
 scoreboard objectives remove NumOfFkSeers
@@ -135,6 +136,7 @@ scoreboard objectives remove AddedFox
 scoreboard objectives remove AddedImmoral
 scoreboard objectives remove AddedVilla
 scoreboard objectives remove AddedBakery
+scoreboard objectives remove AddedLycant
 scoreboard objectives remove AddedMason
 scoreboard objectives remove AddedSeer
 scoreboard objectives remove AddedFkSeer

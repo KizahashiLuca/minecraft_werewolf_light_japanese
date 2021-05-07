@@ -9,8 +9,8 @@
 ####################################
 
 ## Set scoreboard
-scoreboard players operation #MWL AddedRole1 = #MWL NumOfSeers
-scoreboard players operation #MWL AddedRole2 = #MWL NumOfFkSeers
-scoreboard players operation #MWL AddedRole3 = #MWL NumOfSages
-scoreboard players operation #MWL AddedRole4 = #MWL NumOfMediums
-scoreboard players operation #MWL AddedRole5 = #MWL NumOfDetectives
+scoreboard players operation #MWL AddedRole1 = #MWL NumOfMasons
+scoreboard players operation #MWL AddedRole2 = #MWL NumOfSeers
+scoreboard players operation #MWL AddedRole3 = #MWL NumOfFkSeers
+scoreboard players operation #MWL AddedRole4 = #MWL NumOfSages
+scoreboard players operation #MWL AddedRole5 = #MWL NumOfMediums

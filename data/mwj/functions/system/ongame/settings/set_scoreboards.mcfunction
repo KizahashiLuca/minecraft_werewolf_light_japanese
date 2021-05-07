@@ -32,7 +32,7 @@ scoreboard players set #MWL CountOfKiller 0
 scoreboard players set #MWL CountOfVictim 0
 scoreboard players set #MWL NumberOfKillLog 1
 ## Set Variables for randomizer
-scoreboard players set #MWL DummyRoleNumber 13
+scoreboard players set #MWL DummyRoleNumber 14
 scoreboard players set #MWL DummyRoleFlag 0
 scoreboard players set #MWL RandomSeed 0
 scoreboard players set #MWL RandomCount 10

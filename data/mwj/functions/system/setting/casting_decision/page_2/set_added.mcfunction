@@ -13,4 +13,4 @@ scoreboard players operation #MWL AddedRole1 = #MWL NumOfFoxes
 scoreboard players operation #MWL AddedRole2 = #MWL NumOfImmorals
 scoreboard players operation #MWL AddedRole3 = #MWL NumOfVillagers
 scoreboard players operation #MWL AddedRole4 = #MWL NumOfBakeries
-scoreboard players operation #MWL AddedRole5 = #MWL NumOfMasons
+scoreboard players operation #MWL AddedRole5 = #MWL NumOfLycants

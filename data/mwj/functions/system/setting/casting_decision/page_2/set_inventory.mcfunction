@@ -13,11 +13,11 @@ loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/role_addition/add
 loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/role_addition/added_immoralist
 loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/role_addition/added_villager
 loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/role_addition/added_bakery
-loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/role_addition/added_mason
+loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/role_addition/added_lycanthrope
 
 ## Set scoreboard
 scoreboard players operation #MWL NumOfFoxes = #MWL AddedRole1
 scoreboard players operation #MWL NumOfImmorals = #MWL AddedRole2
 scoreboard players operation #MWL NumOfVillagers = #MWL AddedRole3
 scoreboard players operation #MWL NumOfBakeries = #MWL AddedRole4
-scoreboard players operation #MWL NumOfMasons = #MWL AddedRole5
+scoreboard players operation #MWL NumOfLycants = #MWL AddedRole5

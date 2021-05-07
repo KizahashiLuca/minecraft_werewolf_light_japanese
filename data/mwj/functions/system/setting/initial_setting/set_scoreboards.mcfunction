@@ -17,7 +17,8 @@
 ##   10 : Fox 羽衣狐
 ##   11 : Immoralist 背徳者
 ##   20 : Villager 村人
-##   22 : Bakery パン屋
+##   21 : Bakery パン屋
+##   22 : Lycanthrope 狼憑き
 ##   24 : Mason 共有者
 ##   25 : Seer 予言者
 ##   26 : Fake Seer 偽予言者
@@ -55,6 +56,7 @@ scoreboard objectives add NumOfFoxes dummy
 scoreboard objectives add NumOfImmorals dummy
 scoreboard objectives add NumOfVillagers dummy
 scoreboard objectives add NumOfBakeries dummy
+scoreboard objectives add NumOfLycants dummy
 scoreboard objectives add NumOfMasons dummy
 scoreboard objectives add NumOfSeers dummy
 scoreboard objectives add NumOfFkSeers dummy
@@ -75,6 +77,7 @@ scoreboard objectives add PNumOfFoxes dummy
 scoreboard objectives add PNumOfImmorals dummy
 scoreboard objectives add PNumOfVillagers dummy
 scoreboard objectives add PNumOfBakeries dummy
+scoreboard objectives add PNumOfLycants dummy
 scoreboard objectives add PNumOfMasons dummy
 scoreboard objectives add PNumOfSeers dummy
 scoreboard objectives add PNumOfFkSeers dummy
@@ -96,6 +99,7 @@ scoreboard objectives add AddedFox dummy
 scoreboard objectives add AddedImmoral dummy
 scoreboard objectives add AddedVilla dummy
 scoreboard objectives add AddedBakery dummy
+scoreboard objectives add AddedLycant dummy
 scoreboard objectives add AddedMason dummy
 scoreboard objectives add AddedSeer dummy
 scoreboard objectives add AddedFkSeer dummy
@@ -115,6 +119,7 @@ scoreboard objectives add PrevAddedFox dummy
 scoreboard objectives add PrevAddedImmoral dummy
 scoreboard objectives add PrevAddedVilla dummy
 scoreboard objectives add PrevAddedBakery dummy
+scoreboard objectives add PrevAddedLycant dummy
 scoreboard objectives add PrevAddedMason dummy
 scoreboard objectives add PrevAddedSeer dummy
 scoreboard objectives add PrevAddedFkSeer dummy
@@ -344,6 +349,7 @@ scoreboard players set #MWL NumOfFoxes 0
 scoreboard players set #MWL NumOfImmorals 0
 scoreboard players set #MWL NumOfVillagers 0
 scoreboard players set #MWL NumOfBakeries 0
+scoreboard players set #MWL NumOfLycants 0
 scoreboard players set #MWL NumOfMasons 0
 scoreboard players set #MWL NumOfSeers 0
 scoreboard players set #MWL NumOfFkSeers 0
@@ -365,6 +371,7 @@ scoreboard players set #MWL AddedFox 0
 scoreboard players set #MWL AddedImmoral 0
 scoreboard players set #MWL AddedVilla 0
 scoreboard players set #MWL AddedBakery 0
+scoreboard players set #MWL AddedLycant 0
 scoreboard players set #MWL AddedMason 0
 scoreboard players set #MWL AddedSeer 0
 scoreboard players set #MWL AddedFkSeer 0
@@ -384,6 +391,7 @@ scoreboard players set #MWL PrevAddedFox 0
 scoreboard players set #MWL PrevAddedImmoral 0
 scoreboard players set #MWL PrevAddedVilla 0
 scoreboard players set #MWL PrevAddedBakery 0
+scoreboard players set #MWL PrevAddedLycant 0
 scoreboard players set #MWL PrevAddedMason 0
 scoreboard players set #MWL PrevAddedSeer 0
 scoreboard players set #MWL PrevAddedFkSeer 0

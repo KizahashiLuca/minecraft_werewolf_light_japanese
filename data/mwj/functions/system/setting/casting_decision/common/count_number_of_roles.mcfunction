@@ -12,6 +12,7 @@
 scoreboard players set #MWL NumOfWhite 0
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfVillagers
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfBakeries
+scoreboard players operation #MWL NumOfWhite += #MWL NumOfLycants
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfMasons
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfSeers
 scoreboard players operation #MWL NumOfWhite += #MWL NumOfFkSeers

@@ -18,6 +18,7 @@ scoreboard objectives remove PNumOfFoxes
 scoreboard objectives remove PNumOfImmorals
 scoreboard objectives remove PNumOfVillagers
 scoreboard objectives remove PNumOfBakeries
+scoreboard objectives remove PNumOfLycants
 scoreboard objectives remove PNumOfMasons
 scoreboard objectives remove PNumOfSeers
 scoreboard objectives remove PNumOfFkSeers
@@ -37,6 +38,7 @@ scoreboard objectives remove PrevAddedFox
 scoreboard objectives remove PrevAddedImmoral
 scoreboard objectives remove PrevAddedVilla
 scoreboard objectives remove PrevAddedBakery
+scoreboard objectives remove PrevAddedLycant
 scoreboard objectives remove PrevAddedMason
 scoreboard objectives remove PrevAddedSeer
 scoreboard objectives remove PrevAddedFkSeer
