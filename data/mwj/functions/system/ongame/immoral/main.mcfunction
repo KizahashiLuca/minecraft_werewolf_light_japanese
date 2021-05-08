@@ -12,4 +12,4 @@
 execute as @s[scores={DeathCount=0,RoleDone=0}] if score #MWL PURPLE matches ..0 run function mwj:system/ongame/immoral/commit_suicide
 
 ## Effect glowing
-execute as @a[scores={DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/detect_dead
+execute as @s[scores={DeathCount=1,RoleDone=0}] run function mwj:system/ongame/immoral/detect_dead
