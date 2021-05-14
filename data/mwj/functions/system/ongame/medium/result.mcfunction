@@ -20,7 +20,7 @@ execute as @s[scores={DeathCount=0}] run tellraw @p[scores={CurrentRole=28,RoleO
 execute as @s[scores={CurrentRole=1..3,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"黒","color":"red","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Victim is White Wolf
-execute as @s[scores={CurrentRole=4,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白狼","color":"red","bold":true},{"text":" です","color":"white"}]
+execute as @s[scores={CurrentRole=4,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"黒","color":"red","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Victim is White
 execute as @s[scores={CurrentRole=5..9,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
@@ -32,7 +32,7 @@ execute as @s[scores={CurrentRole=10,DeathCount=1..2}] run tellraw @p[scores={Cu
 execute as @s[scores={CurrentRole=11..21,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Victim is Black - Lycanthrope
-execute as @s[scores={CurrentRole=22,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"狼憑き","color":"green","bold":true},{"text":" です","color":"white"}]
+execute as @s[scores={CurrentRole=22,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]
 
 ## Send a Message that Victim is White
 execute as @s[scores={CurrentRole=23..38,DeathCount=1..2}] run tellraw @p[scores={CurrentRole=28,RoleOfNum=1}] ["",{"text":"    ","color":"white"},{"selector":"@s","color":"white"},{"text":" は ","color":"white"},{"text":"白","color":"green","bold":true},{"text":" です","color":"white"}]

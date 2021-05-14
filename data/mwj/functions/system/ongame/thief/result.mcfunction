@@ -44,7 +44,7 @@ execute as @s[scores={CurrentRole=20,DeathCount=0}] run tellraw @p[scores={Curre
 execute as @s[scores={CurrentRole=21,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"パン屋","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Lycanthrope
-execute as @s[scores={CurrentRole=22,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"狼憑き","color":"green","bold":true},{"text":" になりました","color":"white"}]
+execute as @s[scores={CurrentRole=22,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"村人","color":"green","bold":true},{"text":" になりました","color":"white"}]
 
 ## Send a Message that the Stolen is Mason
 execute as @s[scores={CurrentRole=24,DeathCount=0}] run tellraw @p[scores={CurrentRole=35,RoleOfNum=1}] ["",{"text":"  ","color":"white"},{"text":"あなたは ","color":"white"},{"text":"共有者","color":"dark_green","bold":true},{"text":" になりました","color":"white"}]
