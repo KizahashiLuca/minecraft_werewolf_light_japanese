@@ -23,5 +23,8 @@ function mwj:system/setting/initial_setting/detect_version/v15
 ## Minecraft 1.16
 function mwj:system/setting/initial_setting/detect_version/v16
 
+## Minecraft 1.17
+function mwj:system/setting/initial_setting/detect_version/v17
+
 ## Clear inventory
-replaceitem entity @p[tag=Host] inventory.0 minecraft:air
+loot replace entity @p[tag=Host] inventory.0 loot mwj:item/common/air

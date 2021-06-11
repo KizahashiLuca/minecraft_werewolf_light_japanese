@@ -12,9 +12,9 @@
 loot replace entity @p[tag=Host] inventory.11 loot mwj:item/special/trident
 loot replace entity @p[tag=Host] inventory.12 loot mwj:item/special/conduit
 loot replace entity @p[tag=Host] inventory.13 loot mwj:item/special/crossbow
-replaceitem entity @p[tag=Host] inventory.14 minecraft:air 1
+loot replace entity @p[tag=Host] inventory.14 loot mwj:item/common/air
 execute if score #MWL Version matches 15.. run loot replace entity @p[tag=Host] inventory.14 loot mwj:item/special/honey_block
-replaceitem entity @p[tag=Host] inventory.15 minecraft:air 1
+loot replace entity @p[tag=Host] inventory.15 loot mwj:item/common/air
 execute if score #MWL Version matches 16.. run loot replace entity @p[tag=Host] inventory.15 loot mwj:item/special/lantern
 
 ## Set scoreboard

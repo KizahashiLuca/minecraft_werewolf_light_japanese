@@ -9,5 +9,5 @@
 ####################################
 
 ## Minecraft 1.14
-replaceitem entity @p[tag=Host] inventory.0 minecraft:lantern{Tags:"Ver"}
-execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:lantern",Count:1b,tag:{Tags:"Ver"}}]}] run scoreboard players set #MWL Version 14
+loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/detect_version/lantern
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:lantern",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 14

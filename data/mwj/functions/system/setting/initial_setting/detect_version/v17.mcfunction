@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Minecraft 1.16
-loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/detect_version/soul_lantern
-execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:soul_lantern",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 16
+## Minecraft 1.17
+loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/detect_version/copper_ingot
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:copper_ingot",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 17

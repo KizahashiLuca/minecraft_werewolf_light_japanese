@@ -9,12 +9,12 @@
 ####################################
 
 ## Replace Inventory
-replaceitem entity @p[tag=Host] inventory.11 minecraft:air 1
+loot replace entity @p[tag=Host] inventory.11 loot mwj:item/common/air
 execute if score #MWL Version matches 16.. run loot replace entity @p[tag=Host] inventory.11 loot mwj:item/special/twisting_vines
-replaceitem entity @p[tag=Host] inventory.12 minecraft:air 1
-replaceitem entity @p[tag=Host] inventory.13 minecraft:air 1
-replaceitem entity @p[tag=Host] inventory.14 minecraft:air 1
-replaceitem entity @p[tag=Host] inventory.15 minecraft:air 1
+loot replace entity @p[tag=Host] inventory.12 loot mwj:item/common/air
+loot replace entity @p[tag=Host] inventory.13 loot mwj:item/common/air
+loot replace entity @p[tag=Host] inventory.14 loot mwj:item/common/air
+loot replace entity @p[tag=Host] inventory.15 loot mwj:item/common/air
 
 ## Set scoreboard
 scoreboard players operation #MWL AddedVines = #MWL AddedItem1
