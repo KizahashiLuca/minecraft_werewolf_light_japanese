@@ -15,7 +15,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_set_dummy_role_off\"]}"
             }
           ]
         }

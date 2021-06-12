@@ -15,7 +15,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}],HideFlags:63,Tags:[\"MWLsetting\",\"Casting\"]}"
+              "tag":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}],HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_casting\"]}"
             }
           ]
         }

@@ -39,42 +39,54 @@ execute if score #MWL PrevAddedRole matches 1.. run function mwj:system/ongame/s
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
 
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWolf
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedClWolf
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWhWolf
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMadman
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedVilla
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSeer
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMedium
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFanatic
 
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFox
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMason
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedDetec
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedThief
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedCat
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedImmoral
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedVilla
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedBakery
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedLycant
 
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMason
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSeer
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFkSeer
 scoreboard players operation #MWL PrevAddedRole -= #MWL AddedSage
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedWhWolf
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedFanatic
-scoreboard players operation #MWL PrevAddedRole -= #MWL AddedImmoral
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedMedium
+
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedDetec
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedThief
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedLtRed
+scoreboard players operation #MWL PrevAddedRole -= #MWL AddedCat
+
 scoreboard players operation #MWL AddedRole = #MWL PrevAddedRole
 
 ## Set Prev choice
 scoreboard players operation #MWL PrevAddedWolf = #MWL AddedWolf
+scoreboard players operation #MWL PrevAddedClWolf = #MWL AddedClWolf
+scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
 scoreboard players operation #MWL PrevAddedMadman = #MWL AddedMadman
-scoreboard players operation #MWL PrevAddedVilla = #MWL AddedVilla
-scoreboard players operation #MWL PrevAddedSeer = #MWL AddedSeer
-scoreboard players operation #MWL PrevAddedMedium = #MWL AddedMedium
+scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
 
 scoreboard players operation #MWL PrevAddedFox = #MWL AddedFox
-scoreboard players operation #MWL PrevAddedMason = #MWL AddedMason
-scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
-scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
-scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
+scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
+scoreboard players operation #MWL PrevAddedVilla = #MWL AddedVilla
+scoreboard players operation #MWL PrevAddedBakery = #MWL AddedBakery
+scoreboard players operation #MWL PrevAddedLycant = #MWL AddedLycant
 
+scoreboard players operation #MWL PrevAddedMason = #MWL AddedMason
+scoreboard players operation #MWL PrevAddedSeer = #MWL AddedSeer
 scoreboard players operation #MWL PrevAddedFkSeer = #MWL AddedFkSeer
 scoreboard players operation #MWL PrevAddedSage = #MWL AddedSage
-scoreboard players operation #MWL PrevAddedWhWolf = #MWL AddedWhWolf
-scoreboard players operation #MWL PrevAddedFanatic = #MWL AddedFanatic
-scoreboard players operation #MWL PrevAddedImmoral = #MWL AddedImmoral
+scoreboard players operation #MWL PrevAddedMedium = #MWL AddedMedium
+
+scoreboard players operation #MWL PrevAddedDetec = #MWL AddedDetec
+scoreboard players operation #MWL PrevAddedThief = #MWL AddedThief
+scoreboard players operation #MWL PrevAddedLtRed = #MWL AddedLtRed
+scoreboard players operation #MWL PrevAddedCat = #MWL AddedCat
+
 
 ## Send a Message Dummy Role to All Players
 tellraw @a [""]

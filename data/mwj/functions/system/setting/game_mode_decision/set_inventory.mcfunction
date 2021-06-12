@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
+## Clear Inventory
+clear @p[tag=Host]
+
 ## Replace Inventory
 loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/game_mode/map_normal_wolf
 loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/game_mode/map_two_alive

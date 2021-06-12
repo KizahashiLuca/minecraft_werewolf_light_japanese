@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
+## Clear inventory
+clear @p[tag=Host]
+
 ## Count number of roles
 function mwj:system/setting/casting_decision/common/count_number_of_roles
 

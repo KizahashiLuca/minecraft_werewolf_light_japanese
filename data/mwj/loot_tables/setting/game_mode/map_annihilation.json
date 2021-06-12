@@ -16,12 +16,12 @@
             },{
               "function":"minecraft:set_lore",
               "lore": [
-                ["",{"text":"村人陣営のが全滅","color":"white","bold":false,"italic":false}],
+                ["",{"text":"村人陣営が全滅","color":"white","bold":true,"italic":false}],
                 ["",{"text":"となれば人狼陣営の勝利。","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"Annihilation\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}"
             }
           ]
         }

@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:18b,id:\"minecraft:carved_pumpkin\",tag:{Tags:[\"MWLsetting\",\"MWL_set_dummy_role_off\"]}}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:18b,id:\"minecraft:jack_o_lantern\",tag:{Tags:[\"MWLsetting\",\"MWL_set_dummy_role_on\"]}}]}"
+      }
+    }
+  }
+]

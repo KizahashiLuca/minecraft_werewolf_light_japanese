@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Inventory:[{Slot:22b,id:\"minecraft:gunpowder\",tag:{Tags:[\"MWLsetting\",\"MWL_choose_game_time\"]}}]}"
+    }
+  }
+}
