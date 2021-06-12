@@ -1,6 +1,6 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.14-1.16    ##
+##   MC-Version : JE 1.16-1.17    ##
 ##   Author     : @KizahashiLuca  ##
 ##   Date       : 04 May 2021     ##
 ##   Version    : v.2.0-pre1      ##
@@ -12,7 +12,7 @@
 function mwj:system/setting/initial_setting/set_gamerules
 
 ## Remove storages
-execute if score #MWL Version matches 16.. run function mwj:system/finish/remove_storages
+function mwj:system/finish/remove_storages
 
 ## Remove bossbars
 function mwj:system/finish/remove_bossbars

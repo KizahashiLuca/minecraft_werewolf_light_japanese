@@ -1,6 +1,6 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.14-1.16    ##
+##   MC-Version : JE 1.16-1.17    ##
 ##   Author     : @KizahashiLuca  ##
 ##   Date       : 04 May 2021     ##
 ##   Version    : v.2.0-pre1      ##
@@ -9,8 +9,7 @@
 ####################################
 
 ## Replace Inventory
-loot replace entity @p[tag=Host] inventory.11 loot mwj:item/common/air
-execute if score #MWL Version matches 16.. run loot replace entity @p[tag=Host] inventory.11 loot mwj:item/special/twisting_vines
+loot replace entity @p[tag=Host] inventory.11 loot mwj:item/special/twisting_vines
 loot replace entity @p[tag=Host] inventory.12 loot mwj:item/common/air
 loot replace entity @p[tag=Host] inventory.13 loot mwj:item/common/air
 loot replace entity @p[tag=Host] inventory.14 loot mwj:item/common/air

@@ -1,6 +1,6 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.14-1.16    ##
+##   MC-Version : JE 1.16-1.17    ##
 ##   Author     : @KizahashiLuca  ##
 ##   Date       : 04 May 2021     ##
 ##   Version    : v.2.0-pre1      ##
@@ -24,10 +24,10 @@ scoreboard players set #MWL AddedJump 1
 scoreboard players set #MWL AddedTrident 1
 scoreboard players set #MWL AddedConduit 1
 scoreboard players set #MWL AddedCrossbow 1
-execute if score #MWL Version matches 15.. run scoreboard players set #MWL AddedHoneyBlock 1
-execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedLantern 1
+scoreboard players set #MWL AddedHoneyBlock 1
+scoreboard players set #MWL AddedLantern 1
 
-execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedVines 1
+scoreboard players set #MWL AddedVines 1
 # scoreboard players set #MWL Added 1
 # scoreboard players set #MWL Added 1
 # scoreboard players set #MWL Added 1

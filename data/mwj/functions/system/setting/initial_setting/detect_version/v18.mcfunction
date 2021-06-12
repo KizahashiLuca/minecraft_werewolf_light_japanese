@@ -1,6 +1,6 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.14-1.16    ##
+##   MC-Version : JE 1.16-1.17    ##
 ##   Author     : @KizahashiLuca  ##
 ##   Date       : 04 May 2021     ##
 ##   Version    : v.2.0-pre1      ##
@@ -8,5 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect haven soul_lantern
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:lantern",Count:1b,tag:{Tags:["MWLitem"]}}]}] SelectItem5 0
+## Minecraft 1.18
+loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/detect_version/goat_horn
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:goat_horn",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 18

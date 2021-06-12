@@ -1,6 +1,6 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.14-1.16    ##
+##   MC-Version : JE 1.16-1.17    ##
 ##   Author     : @KizahashiLuca  ##
 ##   Date       : 04 May 2021     ##
 ##   Version    : v.2.0-pre1      ##
@@ -328,11 +328,18 @@ scoreboard objectives add KilledByTrident dummy
 #### Mines
 scoreboard objectives add DropConduit minecraft.dropped:minecraft.conduit
 #### Honey block
-execute if score #MWL Version matches 15.. run function mwj:system/setting/initial_setting/add_scoreboard/add_honey_block
+scoreboard objectives add HoneyBottleCount dummy
+scoreboard objectives add DropHoneyBlock minecraft.dropped:minecraft.honey_block
 #### Soul lantern
-execute if score #MWL Version matches 16.. run function mwj:system/setting/initial_setting/add_scoreboard/add_soul_lantern
+scoreboard objectives add TeleporterTemp dummy
+scoreboard objectives add TeleporterPosX dummy
+scoreboard objectives add TeleporterPosY dummy
+scoreboard objectives add TeleporterPosZ dummy
+scoreboard objectives add DropSoulLantern minecraft.dropped:minecraft.soul_lantern
+scoreboard objectives add DropLantern minecraft.dropped:minecraft.lantern
 #### Twisting Vines
-execute if score #MWL Version matches 16.. run function mwj:system/setting/initial_setting/add_scoreboard/add_twisting_vines
+scoreboard objectives add TwistVinesCount dummy
+scoreboard objectives add DropTwistVines minecraft.dropped:minecraft.twisting_vines
 
 ## Set Variables for Timer
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
@@ -440,11 +447,11 @@ scoreboard players set #MWL AddedTrident 1
 scoreboard players set #MWL AddedConduit 1
 scoreboard players set #MWL AddedCrossbow 1
 scoreboard players set #MWL AddedHoneyBlock 0
-execute if score #MWL Version matches 15.. run scoreboard players set #MWL AddedHoneyBlock 1
+scoreboard players set #MWL AddedHoneyBlock 1
 scoreboard players set #MWL AddedLantern 0
-execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedLantern 1
+scoreboard players set #MWL AddedLantern 1
 scoreboard players set #MWL AddedVines 0
-execute if score #MWL Version matches 16.. run scoreboard players set #MWL AddedVines 1
+scoreboard players set #MWL AddedVines 1
 scoreboard players set #MWL PrevAddedStick 1
 scoreboard players set #MWL PrevAddedTotem 1
 scoreboard players set #MWL PrevAddedDeath 1
@@ -459,11 +466,11 @@ scoreboard players set #MWL PrevAddedTrident 1
 scoreboard players set #MWL PrevAddedConduit 1
 scoreboard players set #MWL PrevAddedCrossbo 1
 scoreboard players set #MWL PrevAddedHoneyBl 0
-execute if score #MWL Version matches 15.. run scoreboard players set #MWL PrevAddedHoneyBl 1
+scoreboard players set #MWL PrevAddedHoneyBl 1
 scoreboard players set #MWL PrevAddedLantern 0
-execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedLantern 1
+scoreboard players set #MWL PrevAddedLantern 1
 scoreboard players set #MWL PrevAddedVines 0
-execute if score #MWL Version matches 16.. run scoreboard players set #MWL PrevAddedVines 1
+scoreboard players set #MWL PrevAddedVines 1
 ## Add Variables for GUI Addition Common
 scoreboard players set #MWL AddedItem1 1
 scoreboard players set #MWL AddedItem2 1

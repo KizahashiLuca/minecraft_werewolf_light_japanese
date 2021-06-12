@@ -1,6 +1,6 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.14-1.16    ##
+##   MC-Version : JE 1.16-1.17    ##
 ##   Author     : @KizahashiLuca  ##
 ##   Date       : 04 May 2021     ##
 ##   Version    : v.2.0-pre1      ##
@@ -16,10 +16,10 @@ tellraw @a [""]
 execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DeathCount=1..2}] @p[gamemode=adventure,sort=random]
 
 ## Remove storages
-execute if score #MWL Version matches 16.. run function mwj:system/finish/remove_storages
+function mwj:system/finish/remove_storages
 
 ## Reset world
-execute if score #MWL Version matches 16.. run function mwj:system/finish/reset_world
+function mwj:system/finish/reset_world
 
 ## Reset scoreboards
 function mwj:system/setting/choose_mode/reset_scoreboards
