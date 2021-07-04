@@ -18,7 +18,7 @@ execute if score #MWL Phase matches 85..89 run function mwj:system/setting/item_
 execute if score #MWL Phase matches 84 run function mwj:system/setting/game_mode_decision/main
 execute if score #MWL Phase matches 83 run function mwj:system/setting/game_time_decision/main
 execute if score #MWL Phase matches 82 run function mwj:system/setting/glow_time_decision/main
-execute if score #MWL Phase matches 81 run function mwj:system/setting/hide_time_decision/main
+execute if score #MWL Phase matches 81 run function mwj:system/setting/choose_hide_time/main
 execute if score #MWL Phase matches 80 run function mwj:system/setting/choose_mode/main
 
 ## Ongame

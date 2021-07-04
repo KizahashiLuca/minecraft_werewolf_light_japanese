@@ -147,7 +147,6 @@ scoreboard objectives add PrevSetDummyRole dummy
 ## Add Variables for Setting Hide Time
 scoreboard objectives add HideTime dummy
 scoreboard objectives add PrevHideTime dummy
-scoreboard objectives add ChangeHideTime dummy
 ## Add Variables for Setting Glow Time
 scoreboard objectives add GlowTime dummy
 scoreboard objectives add PrevGlowTime dummy
@@ -165,15 +164,13 @@ scoreboard objectives add SelectCancel dummy
 scoreboard objectives add SelectReset dummy
 scoreboard objectives add SelectOkay dummy
 scoreboard objectives add SelectDecide dummy
-scoreboard objectives add ChosenCasting dummy
-scoreboard objectives add ChosenDummyRole dummy
-scoreboard objectives add ChosenHideTime dummy
-scoreboard objectives add ChosenGlowTime dummy
-scoreboard objectives add ChosenGameTime dummy
-scoreboard objectives add ChosenGameMode dummy
-scoreboard objectives add ChosenItemAdd dummy
-scoreboard objectives add ChosenRoleAdd dummy
-scoreboard objectives add ChosenCastSet dummy
+## Add Variables for GUI - Time
+scoreboard objectives add 100 dummy
+scoreboard objectives add 010 dummy
+scoreboard objectives add 001 dummy
+scoreboard objectives add Digit100 dummy
+scoreboard objectives add Digit010 dummy
+scoreboard objectives add Digit001 dummy
 ## Add Variables for GUI Hide Time
 scoreboard objectives add Select015secs dummy
 scoreboard objectives add Select030secs dummy
@@ -219,6 +216,7 @@ scoreboard objectives add AddedCrossbow dummy
 scoreboard objectives add AddedHoneyBlock dummy
 scoreboard objectives add AddedLantern dummy
 scoreboard objectives add AddedVines dummy
+scoreboard objectives add AddedSpyglass dummy
 scoreboard objectives add PrevAddedStick dummy
 scoreboard objectives add PrevAddedTotem dummy
 scoreboard objectives add PrevAddedDeath dummy
@@ -235,6 +233,7 @@ scoreboard objectives add PrevAddedCrossbo dummy
 scoreboard objectives add PrevAddedHoneyBl dummy
 scoreboard objectives add PrevAddedLantern dummy
 scoreboard objectives add PrevAddedVines dummy
+scoreboard objectives add PrevAddedSpyglas dummy
 scoreboard objectives add AddedItem1 dummy
 scoreboard objectives add AddedItem2 dummy
 scoreboard objectives add AddedItem3 dummy
@@ -264,12 +263,14 @@ scoreboard objectives add TempVariable dummy
 scoreboard objectives add TENS_DIGIT dummy
 scoreboard objectives add ONES_DIGIT dummy
 scoreboard objectives add TEMP_DIGIT dummy
+## Add Variables for Bossbar
+scoreboard objectives add BossbarMax dummy
+scoreboard objectives add BossbarVal dummy
 ## Add Variables for Roles
 #### Seer/Medium/Detective
 scoreboard objectives add DropTorch minecraft.dropped:minecraft.redstone_torch
 scoreboard objectives add RemovedTorch dummy
 scoreboard objectives add RoleDone dummy
-scoreboard objectives add 10 dummy
 scoreboard objectives add PageNumer dummy
 scoreboard objectives add PageDenom dummy
 scoreboard objectives add TurnPageNum dummy
@@ -417,10 +418,13 @@ scoreboard players set #MWL PrevSetCasting 0
 scoreboard players set #MWL DummyRole 0
 scoreboard players set #MWL SetDummyRole 0
 scoreboard players set #MWL PrevSetDummyRole 0
+## Add Variables for GUI - Time
+scoreboard players set #MWL 100 100
+scoreboard players set #MWL 010 10
+scoreboard players set #MWL 001 1
 ## Set Variables for Setting Hide Time
-scoreboard players set #MWL HideTime 4
-scoreboard players set #MWL PrevHideTime 4
-scoreboard players set #MWL ChangeHideTime 15
+scoreboard players set #MWL HideTime 60
+scoreboard players set #MWL PrevHideTime 60
 ## Set Variables for Setting Glow Time
 scoreboard players set #MWL GlowTime 2
 scoreboard players set #MWL PrevGlowTime 2
@@ -446,12 +450,10 @@ scoreboard players set #MWL AddedJump 1
 scoreboard players set #MWL AddedTrident 1
 scoreboard players set #MWL AddedConduit 1
 scoreboard players set #MWL AddedCrossbow 1
-scoreboard players set #MWL AddedHoneyBlock 0
 scoreboard players set #MWL AddedHoneyBlock 1
-scoreboard players set #MWL AddedLantern 0
 scoreboard players set #MWL AddedLantern 1
-scoreboard players set #MWL AddedVines 0
 scoreboard players set #MWL AddedVines 1
+scoreboard players set #MWL AddedSpyglass 1
 scoreboard players set #MWL PrevAddedStick 1
 scoreboard players set #MWL PrevAddedTotem 1
 scoreboard players set #MWL PrevAddedDeath 1
@@ -465,12 +467,10 @@ scoreboard players set #MWL PrevAddedJump 1
 scoreboard players set #MWL PrevAddedTrident 1
 scoreboard players set #MWL PrevAddedConduit 1
 scoreboard players set #MWL PrevAddedCrossbo 1
-scoreboard players set #MWL PrevAddedHoneyBl 0
 scoreboard players set #MWL PrevAddedHoneyBl 1
-scoreboard players set #MWL PrevAddedLantern 0
 scoreboard players set #MWL PrevAddedLantern 1
-scoreboard players set #MWL PrevAddedVines 0
 scoreboard players set #MWL PrevAddedVines 1
+scoreboard players set #MWL PrevAddedSpyglas 1
 ## Add Variables for GUI Addition Common
 scoreboard players set #MWL AddedItem1 1
 scoreboard players set #MWL AddedItem2 1
@@ -486,5 +486,9 @@ scoreboard players operation #MWL Second = #MWL SettingTime
 bossbar add minecraft:bossbar ["",{"text":"初期設定時間"}]
 bossbar set minecraft:bossbar players @a
 bossbar set minecraft:bossbar name ["",{"text":"初期設定時間"}]
-execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL SettingTime
-execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second
+scoreboard players set #MWL BossbarMax 20
+scoreboard players operation #MWL BossbarMax *= #MWL SettingTime
+scoreboard players set #MWL BossbarVal 20
+scoreboard players operation #MWL BossbarVal *= #MWL Second
+execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL BossbarMax
+execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL BossbarVal

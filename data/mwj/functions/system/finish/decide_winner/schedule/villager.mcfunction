@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
+## Sound
+execute as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
+
 ## Title
 title @a times 20 40 20
 title @a title ["",{"text":"VILLAGER","color":"green","bold":true}]

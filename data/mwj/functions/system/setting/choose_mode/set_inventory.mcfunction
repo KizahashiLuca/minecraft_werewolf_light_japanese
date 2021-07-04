@@ -20,7 +20,7 @@ execute if score #MWL SetDummyRole matches 1 run loot replace entity @p[tag=Host
 execute if score #MWL SetCasting matches 0 run loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/choose_mode/ender_pearl
 execute if score #MWL SetCasting matches 1 run loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/choose_mode/ender_eye
 
-loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/choose_mode/redstone
+loot replace entity @p[tag=Host] inventory.11 loot mwj:setting/choose_mode/choose_hide_time
 loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/choose_mode/glowstone_dust
 loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/choose_mode/gunpowder
 loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/choose_mode/map

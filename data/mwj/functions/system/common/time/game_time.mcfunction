@@ -14,4 +14,4 @@ bossbar set minecraft:bossbar name [{"text":"制限時間  残り "},{"score":{"
 ## Set bossbar style
 execute if score #MWL Second > #MWL ChangeGlowTime run bossbar set minecraft:bossbar color green
 execute if score #MWL Second <= #MWL ChangeGlowTime run bossbar set minecraft:bossbar color yellow
-execute if score #MWL Second matches 0..10 run bossbar set minecraft:bossbar color red
+execute if score #MWL Second matches 0..9 run bossbar set minecraft:bossbar color red

@@ -20,7 +20,7 @@ scoreboard objectives remove TurnPageTmp
 
 ## Set Scoreboard
 scoreboard players operation @s TargetOfRole = @s TurnPageNum
-scoreboard players operation @s TargetOfRole *= #MWL 10
+scoreboard players operation @s TargetOfRole *= #MWL 010
 
 ## Send a Common Message
 tellraw @s [""]

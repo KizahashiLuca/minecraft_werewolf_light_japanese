@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
+## Sound
+execute as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
+
 ## Set scoreboards
 function mwj:system/ongame/settings/set_scoreboards
 

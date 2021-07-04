@@ -47,12 +47,12 @@ execute if score #MWL Phase matches 98 run function mwj:system/setting/casting_d
 ## Set items
 loot replace entity @p[tag=Host] inventory.9 loot mwj:setting/common/white_banner_left
 loot replace entity @p[tag=Host] inventory.17 loot mwj:setting/common/white_banner_right
-loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
+loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/cancel
 loot replace entity @p[tag=Host] inventory.21 loot mwj:setting/common/map
 execute if score #MWL AddedRole matches 1.. run loot replace entity @p[tag=Host] inventory.23 loot mwj:setting/role_addition/nether_star_rest
-execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
-execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
-execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
+execute if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
+execute if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
+execute if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
 
 ## Set Nether Star above Selected Role
 execute if score #MWL AddedRole1 matches 1.. run loot replace entity @p[tag=Host] inventory.2 loot mwj:setting/role_addition/nether_star_role1

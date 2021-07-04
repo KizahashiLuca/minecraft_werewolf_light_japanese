@@ -18,10 +18,6 @@ execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL
 execute if score #MWL SetCasting matches 1 run scoreboard players set #MWL TempVariable 2
 execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL AddedMason /= #MWL TempVariable
 
-## Store Variables of ChangeHideTime
-scoreboard players set #MWL ChangeHideTime 15
-scoreboard players operation #MWL ChangeHideTime *= #MWL HideTime
-
 ## Store Variables of ChangeGameTime
 scoreboard players set #MWL ChangeGameTime 5
 scoreboard players operation #MWL ChangeGameTime *= #MWL GameTime

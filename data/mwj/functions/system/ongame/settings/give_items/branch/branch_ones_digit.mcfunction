@@ -59,3 +59,6 @@ execute if score #MWL AddedLantern matches 1 run scoreboard players add #MWL TEM
 
 execute if score #MWL AddedVines matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @p[team=Player,tag=!MWLitem,sort=random] run function mwj:system/ongame/settings/give_items/special/twisting_vines
 execute if score #MWL AddedVines matches 1 run scoreboard players add #MWL TEMP_DIGIT 1
+
+execute if score #MWL AddedSpyglass matches 1 if score #MWL ONES_DIGIT >= #MWL TEMP_DIGIT as @p[team=Player,tag=!MWLitem,sort=random] run function mwj:system/ongame/settings/give_items/special/spyglass
+execute if score #MWL AddedSpyglass matches 1 run scoreboard players add #MWL TEMP_DIGIT 1

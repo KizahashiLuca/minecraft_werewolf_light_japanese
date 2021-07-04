@@ -36,13 +36,17 @@ function mwj:system/common/message/change_to
 
 ## Reset Scoreboard
 scoreboard players set #MWL Tick 0
-scoreboard players operation #MWL Second = #MWL ChangeHideTime
+scoreboard players operation #MWL Second = #MWL HideTime
 scoreboard players set #MWL Phase 10
 
 ## Set bossbar
 bossbar set minecraft:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
-execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL ChangeHideTime
-execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL Second
+scoreboard players set #MWL BossbarMax 20
+scoreboard players operation #MWL BossbarMax *= #MWL HideTime
+scoreboard players set #MWL BossbarVal 20
+scoreboard players operation #MWL BossbarVal *= #MWL Second
+execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL BossbarMax
+execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL BossbarVal
 
 ## Set bossbar style
 bossbar set minecraft:bossbar style notched_10

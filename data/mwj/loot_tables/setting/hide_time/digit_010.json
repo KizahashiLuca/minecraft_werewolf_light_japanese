@@ -1,0 +1,140 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_0",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 0
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_1",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 1
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_2",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 2
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_3",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 3
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_4",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 4
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_5",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 5
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_6",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 6
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_7",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 7
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_8",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 8
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name":"mwj:setting/number/number_9",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit010": 9
+              },
+              "entity": "this"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

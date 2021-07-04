@@ -16,8 +16,8 @@ loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/game_time/paper_2
 loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/game_time/paper_25mins
 loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/game_time/paper_30mins
 loot replace entity @p[tag=Host] inventory.16 loot mwj:setting/game_time/paper_60mins
-loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
-loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
+loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/cancel
+loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
 
 ## Set Nether Star above Game Time
 execute if score #MWL GameTime matches 1 run loot replace entity @p[tag=Host] inventory.1 loot mwj:setting/common/nether_star_selected

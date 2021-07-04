@@ -16,8 +16,8 @@ loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/glow_time/paper_0
 loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/glow_time/paper_050pers
 loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/glow_time/paper_080pers
 loot replace entity @p[tag=Host] inventory.16 loot mwj:setting/glow_time/paper_100pers
-loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
-loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
+loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/cancel
+loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
 
 ## Set Nether Star above Glow Time
 execute if score #MWL GlowTime matches 0 run loot replace entity @p[tag=Host] inventory.1 loot mwj:setting/common/nether_star_selected

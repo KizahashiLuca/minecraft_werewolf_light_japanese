@@ -60,8 +60,13 @@ scoreboard objectives remove SettingTime
 scoreboard objectives remove PrevSetCasting
 ## Remove Variables for Setting Dummy Role
 scoreboard objectives remove PrevSetDummyRole
+## Remove Variables for GUI - Time
+scoreboard objectives remove 100
+scoreboard objectives remove 001
+scoreboard objectives remove Digit100
+scoreboard objectives remove Digit010
+scoreboard objectives remove Digit001
 ## Remove Variables for Hide Time
-scoreboard objectives remove HideTime
 scoreboard objectives remove PrevHideTime
 ## Remove Variables for Glow Time
 scoreboard objectives remove GlowTime
@@ -76,15 +81,6 @@ scoreboard objectives remove SelectCancel
 scoreboard objectives remove SelectReset
 scoreboard objectives remove SelectOkay
 scoreboard objectives remove SelectDecide
-scoreboard objectives remove ChosenCasting
-scoreboard objectives remove ChosenDummyRole
-scoreboard objectives remove ChosenHideTime
-scoreboard objectives remove ChosenGlowTime
-scoreboard objectives remove ChosenGameTime
-scoreboard objectives remove ChosenGameMode
-scoreboard objectives remove ChosenItemAdd
-scoreboard objectives remove ChosenRoleAdd
-scoreboard objectives remove ChosenCastSet
 ## Remove Variables for GUI Hide Time
 scoreboard objectives remove Select015secs
 scoreboard objectives remove Select030secs
@@ -130,6 +126,7 @@ scoreboard objectives remove PrevAddedCrossbo
 scoreboard objectives remove PrevAddedHoneyBl
 scoreboard objectives remove PrevAddedLantern
 scoreboard objectives remove PrevAddedVines
+scoreboard objectives remove PrevAddedSpyglas
 scoreboard objectives remove AddedItem1
 scoreboard objectives remove AddedItem2
 scoreboard objectives remove AddedItem3

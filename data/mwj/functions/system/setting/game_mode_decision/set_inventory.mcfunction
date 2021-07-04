@@ -15,8 +15,8 @@ clear @p[tag=Host]
 loot replace entity @p[tag=Host] inventory.12 loot mwj:setting/game_mode/map_normal_wolf
 loot replace entity @p[tag=Host] inventory.13 loot mwj:setting/game_mode/map_two_alive
 loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/game_mode/map_annihilation
-loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/barrier
-loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/structure_void
+loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/cancel
+loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
 
 ## Set Nether Star above Selected Role
 execute if score #MWL GameMode matches 1 run loot replace entity @p[tag=Host] inventory.3 loot mwj:setting/common/nether_star_selected

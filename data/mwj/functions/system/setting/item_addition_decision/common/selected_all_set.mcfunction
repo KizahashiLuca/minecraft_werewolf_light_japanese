@@ -28,7 +28,7 @@ scoreboard players set #MWL AddedHoneyBlock 1
 scoreboard players set #MWL AddedLantern 1
 
 scoreboard players set #MWL AddedVines 1
-# scoreboard players set #MWL Added 1
+scoreboard players set #MWL AddedSpyglass 1
 # scoreboard players set #MWL Added 1
 # scoreboard players set #MWL Added 1
 # scoreboard players set #MWL Added 1

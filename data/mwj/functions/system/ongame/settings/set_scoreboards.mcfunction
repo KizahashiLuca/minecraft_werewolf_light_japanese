@@ -45,7 +45,6 @@ scoreboard players reset @a DropTorch
 scoreboard players reset @a RemovedTorch
 scoreboard players set @a RoleDone 0
 #### Seer/Medium/Detective
-scoreboard players set #MWL 10 10
 scoreboard players reset @a PageNumer
 scoreboard players reset @a PageDenom
 scoreboard players reset @a TurnPageNum
@@ -56,7 +55,7 @@ scoreboard players reset @a RoleTrigger
 #### Number the Members
 scoreboard players operation #MWL TurnPageMax = #MWL NumOfPlayers
 scoreboard players remove #MWL TurnPageMax 1
-scoreboard players operation #MWL TurnPageMax /= #MWL 10
+scoreboard players operation #MWL TurnPageMax /= #MWL 010
 #### Fox
 scoreboard players reset @a FoxSpawnSecond
 scoreboard players reset @a FoxSpawnTick

@@ -52,7 +52,6 @@ scoreboard objectives remove RoleOfNum
 scoreboard objectives remove DropTorch
 scoreboard objectives remove RemovedTorch
 scoreboard objectives remove RoleDone
-scoreboard objectives remove 10
 scoreboard objectives remove PageNumer
 scoreboard objectives remove PageDenom
 scoreboard objectives remove TurnPageNum
@@ -164,13 +163,16 @@ scoreboard objectives remove AddedCrossbow
 scoreboard objectives remove AddedHoneyBlock
 scoreboard objectives remove AddedLantern
 scoreboard objectives remove AddedVines
+scoreboard objectives remove AddedSpyglass
 ## Remove Variables for Setting Casting
 scoreboard objectives remove SetCasting
 ## Remove Variables for Setting Dummy Role
 scoreboard objectives remove DummyRole
 scoreboard objectives remove SetDummyRole
+## Remove Variables for GUI - Time
+scoreboard objectives remove 010
 ## Remove Variables for Hide Time
-scoreboard objectives remove ChangeHideTime
+scoreboard objectives remove HideTime
 ## Remove Variables for Glow Time
 scoreboard objectives remove ChangeGlowTime
 ## Remove Variables for Game Time
@@ -184,6 +186,9 @@ scoreboard objectives remove TempVariable
 scoreboard objectives remove TENS_DIGIT
 scoreboard objectives remove ONES_DIGIT
 scoreboard objectives remove TEMP_DIGIT
+## Add Variables for Bossbar
+scoreboard objectives remove BossbarMax
+scoreboard objectives remove BossbarVal
 
 ## Reset Players
 scoreboard players reset @a
