@@ -29,14 +29,14 @@ tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"w
 
 tellraw @a [""]
 tellraw @a ["",{"text":"  ゲームモードは、 以下のとおりです。","color":"white"}]
-execute if score #MWL SetDummyRole matches 0 run function mwj:system/common/message/dummyrole_not_available
-execute if score #MWL SetDummyRole matches 1 run function mwj:system/common/message/dummyrole_available
+execute if score #MWL DummyRoleMode matches 0 run function mwj:system/common/message/dummyrole_not_available
+execute if score #MWL DummyRoleMode matches 1 run function mwj:system/common/message/dummyrole_available
 execute if score #MWL GameMode matches 1 run function mwj:system/common/message/gamemode_normal_werewolf
 execute if score #MWL GameMode matches 2 run function mwj:system/common/message/gamemode_two_alive
 execute if score #MWL GameMode matches 3 run function mwj:system/common/message/gamemode_annihilation
 
-tellraw @a ["",{"text":"    制限時間 : ","color":"white"},{"score":{"name":"#MWL","objective":"ChangeGameTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true}]
-tellraw @a ["",{"text":"      残り時間 ","color":"white"},{"score":{"name":"#MWL","objective":"ChangeGlowTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員が発光","color":"white"}]
+tellraw @a ["",{"text":"    制限時間 : ","color":"white"},{"score":{"name":"#MWL","objective":"GameTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true}]
+tellraw @a ["",{"text":"      残り時間 ","color":"white"},{"score":{"name":"#MWL","objective":"GlowTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員が発光","color":"white"}]
 
 tellraw @a [""]
 tellraw @a ["",{"text":"  役職内訳 : ","color":"white"}]

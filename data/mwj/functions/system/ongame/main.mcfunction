@@ -16,7 +16,7 @@ execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
 execute as @e[type=minecraft:trident] run data merge entity @s {pickup:2b}
 
 ## Glow Time
-execute if score #MWL Second <= #MWL ChangeGlowTime run effect give @a[team=Player,scores={DeathCount=0}] minecraft:glowing 1000000 1 true
+execute if score #MWL Second <= #MWL GlowTime run effect give @a[team=Player,scores={DeathCount=0}] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
 execute as @a[team=Player,scores={CurrentRole=1..4,DeathCount=1}] run scoreboard players remove #MWL BLACK 1

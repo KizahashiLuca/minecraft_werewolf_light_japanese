@@ -15,9 +15,9 @@ function mwj:system/common/en_route/main
 execute if score #MWL Phase matches 95..99 run function mwj:system/setting/casting_decision/common/main
 execute if score #MWL Phase matches 90..94 run function mwj:system/setting/role_addition_decision/common/main
 execute if score #MWL Phase matches 85..89 run function mwj:system/setting/item_addition_decision/common/main
-execute if score #MWL Phase matches 84 run function mwj:system/setting/game_mode_decision/main
-execute if score #MWL Phase matches 83 run function mwj:system/setting/game_time_decision/main
-execute if score #MWL Phase matches 82 run function mwj:system/setting/glow_time_decision/main
+execute if score #MWL Phase matches 84 run function mwj:system/setting/choose_game_rule/main
+execute if score #MWL Phase matches 83 run function mwj:system/setting/choose_game_time/main
+execute if score #MWL Phase matches 82 run function mwj:system/setting/choose_glow_time/main
 execute if score #MWL Phase matches 81 run function mwj:system/setting/choose_hide_time/main
 execute if score #MWL Phase matches 80 run function mwj:system/setting/choose_mode/main
 

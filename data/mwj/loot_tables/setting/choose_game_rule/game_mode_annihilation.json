@@ -1,0 +1,31 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:large_amethyst_bud",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"殲滅モード","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"村人陣営が全滅","color":"white","bold":true,"italic":false}],
+                ["",{"text":"となれば人狼陣営の勝利。","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Inventory:[{Slot:17b,id:\"minecraft:armor_stand\",tag:{Tags:[\"MWLsetting\",\"MWL_choose_casting\"]}}]}"
+      "nbt": "{Inventory:[{Slot:26b,id:\"minecraft:armor_stand\",tag:{Tags:[\"MWLsetting\",\"MWL_choose_casting\"]}}]}"
     }
   }
 }

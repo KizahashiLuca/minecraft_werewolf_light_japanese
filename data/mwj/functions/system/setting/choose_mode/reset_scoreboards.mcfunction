@@ -56,10 +56,6 @@ scoreboard objectives remove AddedRole5
 scoreboard objectives remove SelectNumber
 ## Remove Variables for Setting Time
 scoreboard objectives remove SettingTime
-## Remove Variables for Setting Casting
-scoreboard objectives remove PrevSetCasting
-## Remove Variables for Setting Dummy Role
-scoreboard objectives remove PrevSetDummyRole
 ## Remove Variables for GUI - Time
 scoreboard objectives remove 100
 scoreboard objectives remove 001
@@ -69,13 +65,15 @@ scoreboard objectives remove Digit001
 ## Remove Variables for Hide Time
 scoreboard objectives remove PrevHideTime
 ## Remove Variables for Glow Time
-scoreboard objectives remove GlowTime
 scoreboard objectives remove PrevGlowTime
 ## Remove Variables for Game Time
-scoreboard objectives remove GameTime
 scoreboard objectives remove PrevGameTime
 ## Remove Variables for Game Rules
 scoreboard objectives remove PrevGameMode
+## Remove Variables for Setting Dummyrole Mode
+scoreboard objectives remove PreDummyRoleMode
+## Remove Variables for Setting Cast Mode
+scoreboard objectives remove PrevCastMode
 ## Remove Variables for GUI Choose Mode
 scoreboard objectives remove SelectCancel
 scoreboard objectives remove SelectReset

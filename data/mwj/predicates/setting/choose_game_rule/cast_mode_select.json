@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:player_head\",tag:{Tags:[\"MWLsetting\",\"MWL_cast_mode\"]}}]}"
+    }
+  }
+}

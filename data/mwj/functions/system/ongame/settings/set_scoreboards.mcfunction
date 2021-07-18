@@ -11,7 +11,7 @@
 ## Set the Game Time
 scoreboard players set #MWL Tick 0
 scoreboard players set #MWL Second 60
-scoreboard players operation #MWL Second *= #MWL ChangeGameTime
+scoreboard players operation #MWL Second *= #MWL GameTime
 scoreboard players operation #MWL SetGameTime = #MWL Second
 ## Set Variables for Timer of Kill Log
 scoreboard players reset @a Tick
@@ -39,7 +39,7 @@ scoreboard players set #MWL RandomCount 10
 scoreboard players set #MWL RandomAnswer 0
 scoreboard players set #MWL RandomModder 2147483647
 scoreboard players set #MWL RandomMultiplier 48271
-execute if score #MWL SetDummyRole matches 1 run function mwj:system/ongame/settings/random_generator/initialize
+execute if score #MWL DummyRoleMode matches 1 run function mwj:system/ongame/settings/random_generator/initialize
 #### Set Variables for Redstone Torch
 scoreboard players reset @a DropTorch
 scoreboard players reset @a RemovedTorch
@@ -114,4 +114,4 @@ function mwj:system/ongame/settings/count_players
 
 ## Set dummy role
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
-execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
+execute if score #MWL DummyRoleMode matches 1 run scoreboard players add #MWL NumOfRoles 1

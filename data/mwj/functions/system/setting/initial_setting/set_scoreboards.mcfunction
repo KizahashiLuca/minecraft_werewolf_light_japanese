@@ -137,28 +137,27 @@ scoreboard objectives add AddedRole5 dummy
 scoreboard objectives add SelectNumber dummy
 ## Add Variables for Setting Time
 scoreboard objectives add SettingTime dummy
-## Add Variables for Setting Casting
-scoreboard objectives add SetCasting dummy
-scoreboard objectives add PrevSetCasting dummy
 ## Add Variables for Setting Dummy Role
 scoreboard objectives add DummyRole dummy
-scoreboard objectives add SetDummyRole dummy
-scoreboard objectives add PrevSetDummyRole dummy
 ## Add Variables for Setting Hide Time
 scoreboard objectives add HideTime dummy
 scoreboard objectives add PrevHideTime dummy
 ## Add Variables for Setting Glow Time
 scoreboard objectives add GlowTime dummy
 scoreboard objectives add PrevGlowTime dummy
-scoreboard objectives add ChangeGlowTime dummy
 ## Add Variables for Setting Game Time
 scoreboard objectives add GameTime dummy
 scoreboard objectives add PrevGameTime dummy
-scoreboard objectives add ChangeGameTime dummy
 scoreboard objectives add SetGameTime dummy
 ## Add Variables for Setting Game Mode
 scoreboard objectives add GameMode dummy
 scoreboard objectives add PrevGameMode dummy
+## Add Variables for Setting Dummyrole Mode
+scoreboard objectives add DummyRoleMode dummy
+scoreboard objectives add PreDummyRoleMode dummy
+## Add Variables for Setting Cast Mode
+scoreboard objectives add CastMode dummy
+scoreboard objectives add PrevCastMode dummy
 ## Add Variables for GUI Choose Mode
 scoreboard objectives add SelectCancel dummy
 scoreboard objectives add SelectReset dummy
@@ -411,13 +410,8 @@ scoreboard players set #MWL PrevAddedLtRed 0
 scoreboard players set #MWL PrevAddedCat 0
 ## Set Variables for Setting Time
 scoreboard players set #MWL SettingTime 600
-## Set Variables for Setting Casting
-scoreboard players set #MWL SetCasting 0
-scoreboard players set #MWL PrevSetCasting 0
 ## Set Variables for Setting Dummy Role
 scoreboard players set #MWL DummyRole 0
-scoreboard players set #MWL SetDummyRole 0
-scoreboard players set #MWL PrevSetDummyRole 0
 ## Add Variables for GUI - Time
 scoreboard players set #MWL 100 100
 scoreboard players set #MWL 010 10
@@ -426,16 +420,20 @@ scoreboard players set #MWL 001 1
 scoreboard players set #MWL HideTime 60
 scoreboard players set #MWL PrevHideTime 60
 ## Set Variables for Setting Glow Time
-scoreboard players set #MWL GlowTime 2
-scoreboard players set #MWL PrevGlowTime 2
-scoreboard players set #MWL ChangeGlowTime 0
+scoreboard players set #MWL GlowTime 30
+scoreboard players set #MWL PrevGlowTime 30
 ## Set Variables for Setting Game Time
-scoreboard players set #MWL GameTime 4
-scoreboard players set #MWL PrevGameTime 4
-scoreboard players set #MWL ChangeGameTime 5
+scoreboard players set #MWL GameTime 20
+scoreboard players set #MWL PrevGameTime 20
 ## Set Variables for Setting Game Mode
 scoreboard players set #MWL GameMode 3
 scoreboard players set #MWL PrevGameMode 3
+## Set Variables for Setting Dummyrole Mode
+scoreboard players set #MWL DummyRoleMode 0
+scoreboard players set #MWL PreDummyRoleMode 0
+## Set Variables for Setting Cast Mode
+scoreboard players set #MWL CastMode 0
+scoreboard players set #MWL PrevCastMode 0
 ## Set Variables for GUI Item Addition
 scoreboard players set #MWL AddedStick 1
 scoreboard players set #MWL AddedTotem 1

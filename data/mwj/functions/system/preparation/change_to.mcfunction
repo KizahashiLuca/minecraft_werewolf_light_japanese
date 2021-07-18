@@ -12,24 +12,24 @@
 scoreboard players set #MWL NumOfPlayers 0
 function mwj:system/ongame/settings/count_players
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
-execute if score #MWL SetDummyRole matches 1 run scoreboard players add #MWL NumOfRoles 1
+execute if score #MWL DummyRoleMode matches 1 run scoreboard players add #MWL NumOfRoles 1
 
 ## Revoke advancements
 function mwj:system/finish/revoke_advancements
 
 ## Recount the Number of Roles
-execute if score #MWL SetCasting matches 0 run function mwj:system/common/roles/set_role_number
-execute if score #MWL SetCasting matches 0 run function mwj:system/common/roles/set_added_role_number
-execute if score #MWL SetCasting matches 0 run function mwj:system/ongame/settings/reset_added_role
-execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL TempVariable = #MWL PrevAddedRole
-execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL PrevAddedRole -= #MWL NumOfRoles
-execute if score #MWL SetCasting matches 1 if score #MWL PrevAddedRole matches ..-1 run scoreboard players operation #MWL NumOfVillagers -= #MWL PrevAddedRole
-execute if score #MWL SetCasting matches 1 if score #MWL PrevAddedRole matches 1.. run function mwj:system/ongame/settings/decrease_number_of_role/main
+execute if score #MWL CastMode matches 0 run function mwj:system/common/roles/set_role_number
+execute if score #MWL CastMode matches 0 run function mwj:system/common/roles/set_added_role_number
+execute if score #MWL CastMode matches 0 run function mwj:system/ongame/settings/reset_added_role
+execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL TempVariable = #MWL PrevAddedRole
+execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL PrevAddedRole -= #MWL NumOfRoles
+execute if score #MWL CastMode matches 1 if score #MWL PrevAddedRole matches ..-1 run scoreboard players operation #MWL NumOfVillagers -= #MWL PrevAddedRole
+execute if score #MWL CastMode matches 1 if score #MWL PrevAddedRole matches 1.. run function mwj:system/ongame/settings/decrease_number_of_role/main
 
-execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL PrevAddedRole = #MWL NumOfRoles
-execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL AddedMason = #MWL NumOfMasons
-execute if score #MWL SetCasting matches 1 run scoreboard players set #MWL TempVariable 2
-execute if score #MWL SetCasting matches 1 run scoreboard players operation #MWL AddedMason /= #MWL TempVariable
+execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL PrevAddedRole = #MWL NumOfRoles
+execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL AddedMason = #MWL NumOfMasons
+execute if score #MWL CastMode matches 1 run scoreboard players set #MWL TempVariable 2
+execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL AddedMason /= #MWL TempVariable
 
 ## Set messages
 function mwj:system/common/message/change_to

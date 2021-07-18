@@ -38,7 +38,9 @@ function mwj:system/setting/initial_setting/set_scoreboards
 ## Set Role Number
 function mwj:system/common/roles/set_role_number
 function mwj:system/common/roles/set_added_role_number
+
 scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole
+function mwj:system/common/roles/set_prev_roles
 
 ## Set Title
 function mwj:system/setting/initial_setting/set_messages

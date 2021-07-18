@@ -164,22 +164,23 @@ scoreboard objectives remove AddedHoneyBlock
 scoreboard objectives remove AddedLantern
 scoreboard objectives remove AddedVines
 scoreboard objectives remove AddedSpyglass
-## Remove Variables for Setting Casting
-scoreboard objectives remove SetCasting
 ## Remove Variables for Setting Dummy Role
 scoreboard objectives remove DummyRole
-scoreboard objectives remove SetDummyRole
 ## Remove Variables for GUI - Time
 scoreboard objectives remove 010
 ## Remove Variables for Hide Time
 scoreboard objectives remove HideTime
 ## Remove Variables for Glow Time
-scoreboard objectives remove ChangeGlowTime
+scoreboard objectives remove GlowTime
 ## Remove Variables for Game Time
+scoreboard objectives remove GameTime
 scoreboard objectives remove SetGameTime
-scoreboard objectives remove ChangeGameTime
-## Remove Variables for Game Rules
+## Remove Variables for Game Mode
 scoreboard objectives remove GameMode
+## Remove Variables for Dummyrole Mode
+scoreboard objectives remove DummyRoleMode
+## Remove Variables for Cast Mode
+scoreboard objectives remove CastMode
 ## Remove Variables for CurrentRole
 scoreboard objectives remove TempVariable
 ## Remove Variables for Item
