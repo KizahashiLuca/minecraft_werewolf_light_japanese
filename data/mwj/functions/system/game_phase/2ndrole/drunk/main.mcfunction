@@ -8,7 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Log-in midtime of game phase
-gamemode spectator @s
-effect clear @s
-clear @s
+## Give milk bucket
+give @s[advancements={mwj:killed_player=true}] minecraft:milk_bucket
+
+## Consume milk
+execute as @s[advancements={mwj:drink_milk=true}] run function mwj:system/game_phase/2ndrole/drunk/tell_roles/main

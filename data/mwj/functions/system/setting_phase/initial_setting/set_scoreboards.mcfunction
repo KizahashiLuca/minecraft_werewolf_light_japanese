@@ -100,6 +100,8 @@ scoreboard objectives add SelectRolePos4 dummy
 scoreboard objectives add SelectRolePos5 dummy
 ## Add Variables for Setting Dummy Role
 scoreboard objectives add DummyRole dummy
+## Add Variables for Setting 2nd Role
+scoreboard objectives add 2ndRole dummy
 ## Add Variables for Setting Hide Time
 scoreboard objectives add HideTime dummy
 scoreboard objectives add PrevHideTime dummy
@@ -278,6 +280,8 @@ scoreboard players set #MWL NumOfLtReds 0
 scoreboard players set #MWL NumOfCats 0
 ## Set Variables for Setting Dummy Role
 scoreboard players set #MWL DummyRole 0
+## Set Variables for Setting 2nd Role
+scoreboard players set #MWL 2ndRole 0
 ## Add Variables for GUI - Time
 scoreboard players set #MWL 100 100
 scoreboard players set #MWL 010 10

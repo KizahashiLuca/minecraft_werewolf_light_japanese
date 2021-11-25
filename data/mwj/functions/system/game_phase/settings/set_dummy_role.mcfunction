@@ -31,4 +31,4 @@ execute if score #MWL DummyRole matches 12 if score #MWL NumOfDetectives matches
 execute if score #MWL DummyRole matches 13 if score #MWL NumOfThieves matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 execute if score #MWL DummyRole matches 14 if score #MWL NumOfLtReds matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 
-execute if score #MWL DummyRoleFlag matches 0 run function mwj:system/game_phase/settings/set_dummy_roles
+execute if score #MWL DummyRoleFlag matches 0 run function mwj:system/game_phase/settings/set_dummy_role

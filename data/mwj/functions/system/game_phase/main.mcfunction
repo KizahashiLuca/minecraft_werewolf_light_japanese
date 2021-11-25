@@ -51,41 +51,45 @@ execute if predicate mwj:game_phase/lantern/main run function mwj:system/game_ph
 execute if predicate mwj:game_phase/twisting_vines/main run function mwj:system/game_phase/twisting_vines/main
 
 ## Clever wolf System
-execute as @a[team=Player,scores={CurrentRole=3}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/clever_wolf/main
+execute as @a[team=Player,scores={CurrentRole=3,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/clever_wolf/main
 
 ## Fox System
-execute as @a[team=Player,scores={CurrentRole=10}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fox/main
+execute as @a[team=Player,scores={CurrentRole=10,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fox/main
 execute as @a[team=Player,tag=SeeredFox] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fox/detect_seered
 
 ## Immoralist System
-execute as @a[team=Player,scores={CurrentRole=11}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/immoral/main
+execute as @a[team=Player,scores={CurrentRole=11,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/immoral/main
 
 ## Bakery System
-execute as @a[team=Player,scores={CurrentRole=21}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/bakery/main
+execute as @a[team=Player,scores={CurrentRole=21,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/bakery/main
 
 ## Seer System
-execute as @a[team=Player,scores={CurrentRole=25}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/seer/main
+execute as @a[team=Player,scores={CurrentRole=25,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/seer/main
 
 ## Fake Seer System
-execute as @a[team=Player,scores={CurrentRole=26}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fake_seer/main
+execute as @a[team=Player,scores={CurrentRole=26,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fake_seer/main
 
 ## Sage System
-execute as @a[team=Player,scores={CurrentRole=27}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/sage/main
+execute as @a[team=Player,scores={CurrentRole=27,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/sage/main
 
 ## Medium System
-execute as @a[team=Player,scores={CurrentRole=28}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/medium/main
+execute as @a[team=Player,scores={CurrentRole=28,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/medium/main
 
 ## Detective System
-execute as @a[team=Player,scores={CurrentRole=31}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/detective/main
+execute as @a[team=Player,scores={CurrentRole=31,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/detective/main
 
 ## Thief System
-execute as @a[team=Player,scores={CurrentRole=35}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/thief/main
+execute as @a[team=Player,scores={CurrentRole=35,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/thief/main
 
 ## Little Red System
-execute as @a[team=Player,scores={CurrentRole=39}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/little_red/main
+execute as @a[team=Player,scores={CurrentRole=39,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/little_red/main
 
 ## Cat System
-execute as @a[team=Player,scores={CurrentRole=40}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/cat/main
+execute as @a[team=Player,scores={CurrentRole=40,2ndRole=0..1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/cat/main
+
+## 2nd Role System
+execute as @a[team=Player,scores={2ndRole=1}] at @s run function mwj:system/game_phase/2ndrole/ghost/main
+execute as @a[team=Player,scores={2ndRole=2}] at @s run function mwj:system/game_phase/2ndrole/drunk/main
 
 ## Kill Log System
 function mwj:system/game_phase/kill_log/main

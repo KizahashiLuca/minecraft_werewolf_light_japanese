@@ -8,7 +8,5 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Log-in midtime of game phase
-gamemode spectator @s
-effect clear @s
-clear @s
+## Send message
+tellraw @a ["",{"text":"    二次役職 : ","color":"white"},{"text":"なし","color":"white","bold":true}]

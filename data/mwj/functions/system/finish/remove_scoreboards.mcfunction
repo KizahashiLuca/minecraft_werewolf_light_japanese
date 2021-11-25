@@ -128,6 +128,8 @@ scoreboard objectives remove KillLogOfCat
 scoreboard objectives remove KillLogOfTrident
 ## Remove Variables for Setting Dummy Role
 scoreboard objectives remove DummyRole
+## Remove Variables for Setting 2nd Role
+scoreboard objectives remove 2ndRole
 ## Remove Variables for GUI - Time
 scoreboard objectives remove 010
 ## Remove Variables for Hide Time

@@ -31,12 +31,15 @@ scoreboard players operation #MWL NumOfMasonPair /= #MWL TempVariable
 ## Give items
 function mwj:system/game_phase/settings/give_items/main
 
-## Set dummy roles
+## Set dummy role
 scoreboard players set #MWL DummyRoleFlag 0
-execute if score #MWL DummyRoleMode matches 1 run function mwj:system/game_phase/settings/set_dummy_roles
+execute if score #MWL DummyRoleMode matches 1 run function mwj:system/game_phase/settings/set_dummy_role
 
 ## Set roles
 function mwj:system/game_phase/settings/set_roles/main
+
+## Set 2nd role
+function mwj:system/game_phase/settings/set_2nd_role
 
 ## Set tags
 function mwj:system/game_phase/settings/set_tags

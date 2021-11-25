@@ -31,6 +31,9 @@ tellraw @a [""]
 tellraw @a ["",{"text":"  ゲームモードは、 以下のとおりです。","color":"white"}]
 execute if score #MWL DummyRoleMode matches 0 run function mwj:system/common/message/dummyrole_not_available
 execute if score #MWL DummyRoleMode matches 1 run function mwj:system/common/message/dummyrole_available
+execute if score #MWL 2ndRoleMode matches 0 run function mwj:system/common/message/2ndrole_off
+execute if score #MWL 2ndRoleMode matches 1 run function mwj:system/common/message/2ndrole_ghost
+execute if score #MWL 2ndRoleMode matches 2 run function mwj:system/common/message/2ndrole_drunk
 execute if score #MWL GameMode matches 1 run function mwj:system/common/message/gamemode_normal_werewolf
 execute if score #MWL GameMode matches 2 run function mwj:system/common/message/gamemode_two_alive
 execute if score #MWL GameMode matches 3 run function mwj:system/common/message/gamemode_annihilation
@@ -46,8 +49,6 @@ tellraw @a [""]
 tellraw @a ["",{"text":"  特殊アイテム内訳 : ","color":"white"}]
 function mwj:system/common/message/set_items
 
-execute if score #MWL Phase matches 10 run tellraw @a [""]
-execute if score #MWL Phase matches 10 run tellraw @a ["",{"text":"  あなたの役職 : ","color":"white"}]
 execute if score #MWL Phase matches 10 run function mwj:system/game_phase/settings/tell_roles/main
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
