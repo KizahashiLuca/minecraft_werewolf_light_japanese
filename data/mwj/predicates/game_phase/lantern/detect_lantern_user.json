@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "team": "Player",
+      "flags": {
+        "is_sneaking": true
+      }
+    }
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:game_phase/lantern/detect_lantern_user_score"
+  }
+]

@@ -93,8 +93,6 @@ scoreboard objectives remove RandomCount
 scoreboard objectives remove RandomAnswer
 scoreboard objectives remove RandomModder
 scoreboard objectives remove RandomMultiplier
-## Remove Variables for Items
-scoreboard objectives remove SneakTime
 #### Snowball
 scoreboard objectives remove NumberOfSnowball
 #### Trident

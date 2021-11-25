@@ -229,8 +229,6 @@ scoreboard objectives add RandomCount dummy
 scoreboard objectives add RandomAnswer dummy
 scoreboard objectives add RandomModder dummy
 scoreboard objectives add RandomMultiplier dummy
-## Add Variables for Items
-scoreboard objectives add SneakTime minecraft.custom:minecraft.sneak_time
 #### Snowball
 scoreboard objectives add NumberOfSnowball dummy
 #### Trident

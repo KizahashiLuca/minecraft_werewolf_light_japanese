@@ -48,6 +48,6 @@ function mwj:system/common/message/set_items
 
 execute if score #MWL Phase matches 10 run tellraw @a [""]
 execute if score #MWL Phase matches 10 run tellraw @a ["",{"text":"  あなたの役職 : ","color":"white"}]
-execute if score #MWL Phase matches 10 run function mwj:system/ongame/settings/tell_roles/main
+execute if score #MWL Phase matches 10 run function mwj:system/game_phase/settings/tell_roles/main
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]

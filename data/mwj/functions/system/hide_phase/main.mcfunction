@@ -19,4 +19,4 @@ function mwj:system/common/time/tick
 function mwj:system/hide_phase/set_entities
 
 ## Prepare Initially
-execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/ongame/change_to
+execute if score #MWL Tick matches 0 if score #MWL Second matches 0 run function mwj:system/game_phase/change_to

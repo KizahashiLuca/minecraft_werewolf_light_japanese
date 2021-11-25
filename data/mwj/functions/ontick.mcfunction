@@ -13,7 +13,7 @@ execute if score #MWL Phase matches 1..100 run bossbar set minecraft:bossbar pla
 ## Setting phase
 execute if predicate mwj:phase/setting_phase run function mwj:system/setting/main
 ## Game phase
-execute if predicate mwj:phase/game_phase run function mwj:system/ongame/main
+execute if predicate mwj:phase/game_phase run function mwj:system/game_phase/main
 ## Hide Time
 execute if predicate mwj:phase/hide_phase run function mwj:system/hide_phase/main
 ## Exit Game
