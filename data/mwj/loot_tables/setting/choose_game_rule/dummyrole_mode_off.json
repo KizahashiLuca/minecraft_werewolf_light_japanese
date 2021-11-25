@@ -6,12 +6,17 @@
       "entries":[
         {
           "type":"minecraft:item",
-          "name":"minecraft:redstone_lamp",
+          "name":"minecraft:ender_pearl",
           "functions":[
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"役欠け 無し","color":"white","bold":false,"italic":false}]
+                ["",{"text":"役欠け","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"無し","color":"red","bold":true,"italic":false},{"text":"を選択中","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function":"minecraft:set_nbt",

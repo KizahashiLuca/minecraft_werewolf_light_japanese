@@ -12,7 +12,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedStick": 1
+                "ChooseStick": 1
               }
             }
           ]
@@ -25,7 +25,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedTotem": 1
+                "ChooseTotem": 1
               }
             }
           ]
@@ -38,7 +38,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedDeath": 1
+                "ChooseDeathPot": 1
               }
             }
           ]
@@ -51,7 +51,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedPearl": 1
+                "ChoosePearl": 1
               }
             }
           ]
@@ -64,7 +64,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedHoe": 1
+                "ChooseHoe": 1
               }
             }
           ]
@@ -77,7 +77,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedElytra": 1
+                "ChooseElytra": 1
               }
             }
           ]
@@ -90,7 +90,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedSnowball": 1
+                "ChooseSnowball": 1
               }
             }
           ]
@@ -103,7 +103,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedInvis": 1
+                "ChooseInvisPot": 1
               }
             }
           ]
@@ -116,7 +116,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedSpeed": 1
+                "ChooseSpeedPot": 1
               }
             }
           ]
@@ -129,7 +129,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedJump": 1
+                "ChooseJumpPot": 1
               }
             }
           ]
@@ -142,7 +142,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedTrident": 1
+                "ChooseTrident": 1
               }
             }
           ]
@@ -155,7 +155,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedConduit": 1
+                "ChooseConduit": 1
               }
             }
           ]
@@ -168,7 +168,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedCrossbow": 1
+                "ChooseCrossbow": 1
               }
             }
           ]
@@ -181,7 +181,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedHoneyBlock": 1
+                "ChooseHoneyBlock": 1
               }
             }
           ]
@@ -194,7 +194,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "AddedLantern": 1
+                "ChooseLantern": 1
               }
             }
           ]

@@ -15,7 +15,7 @@ scoreboard players operation #MWL RandomAnswer %= #MWL DummyRoleNumber
 scoreboard players add #MWL RandomAnswer 1
 scoreboard players operation #MWL DummyRole = #MWL RandomAnswer
 
-## Detect not added role
+## Detect dummy flag
 execute if score #MWL DummyRole matches 1 if score #MWL NumOfMadmans matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 execute if score #MWL DummyRole matches 2 if score #MWL NumOfFanatics matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
 execute if score #MWL DummyRole matches 3 if score #MWL NumOfImmorals matches 1.. run scoreboard players set #MWL DummyRoleFlag 1

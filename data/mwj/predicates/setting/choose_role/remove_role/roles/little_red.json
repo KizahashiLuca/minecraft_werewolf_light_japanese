@@ -1,0 +1,53 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "Phase",
+      "scale": 1
+    },
+    "range": {
+      "min": 98,
+      "max": 98
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#MWL"
+        },
+        "score": "SelectRolePos3",
+        "scale": 1
+      },
+      "range": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#MWL"
+          },
+          "score": "NumOfLtReds",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#MWL"
+          },
+          "score": "NumOfLtReds",
+          "scale": 1
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:cyan_stained_glass",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"探偵","color":"dark_aqua","bold":true,"italic":false},{"text":"の追加","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"村人陣営","color":"green","bold":true,"italic":false}],
+                ["",{"text":"予言","color":"aqua","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"霊媒","color":"yellow","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"賢狼","color":"dark_red","bold":false,"italic":false},{"text":"の表示 : ","color":"white","bold":false,"italic":false},{"text":"白","color":"green","bold":true,"italic":false}],
+                ["",{"text":"誰か１人の死者の","color":"white","bold":false,"italic":false},{"text":"殺害者","color":"white","bold":true,"italic":false},{"text":"を見ることができる。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  生存/死後180秒経過 → 行方不明と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  死後180秒以内      → 生死判明","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  死後120秒以内      → 生死、殺害者判明","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  死後60秒以内","color":"white","bold":false,"italic":false}],
+                ["",{"text":"    → 生死、殺害者、殺害者陣営判明","color":"white","bold":false,"italic":false}],
+                ["",{"text":"    殺害者が羽衣狐    -> ｢羽衣狐｣と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"    殺害者が人狼/賢狼 -> ｢黒｣と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"    殺害者がそれ以外  -> ｢白｣と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"    ※羽衣狐と出ても殺害者は突然死しない","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"  ※自殺/事故死の場合、選択先が殺害者と表示","color":"gray","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role_detective\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

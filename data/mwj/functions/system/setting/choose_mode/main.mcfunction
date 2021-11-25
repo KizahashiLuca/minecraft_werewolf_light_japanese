@@ -9,21 +9,16 @@
 ####################################
 
 ## Detect Dropping
-execute if entity @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}] run function mwj:system/setting/choose_mode/set_inventory
-kill @e[type=minecraft:item,nbt={Item:{tag:{Tags:["MWLsetting"]}}}]
+execute if entity @e[predicate=mwj:setting/common/throw_item] run function mwj:system/setting/choose_mode/set_inventory
+kill @e[predicate=mwj:setting/common/throw_item]
 
 ## Function Each Mode
-execute if score #MWL Phase matches 80 as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_hide_time] run function mwj:system/setting/choose_hide_time/change_to
-execute if score #MWL Phase matches 80 as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_glow_time] run function mwj:system/setting/choose_glow_time/change_to
-execute if score #MWL Phase matches 80 as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_game_time] run function mwj:system/setting/choose_game_time/change_to
-execute if score #MWL Phase matches 80 as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_game_rule] run function mwj:system/setting/choose_game_rule/change_to
-execute if score #MWL Phase matches 80 as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_item_addition] run function mwj:system/setting/item_addition_decision/common/set_inventory
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_hide_time] run function mwj:system/setting/choose_hide_time/change_to
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_glow_time] run function mwj:system/setting/choose_glow_time/change_to
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_game_time] run function mwj:system/setting/choose_game_time/change_to
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_game_rule] run function mwj:system/setting/choose_game_rule/change_to
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_item] run function mwj:system/setting/choose_item/common/change_to
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_role] run function mwj:system/setting/choose_role/common/change_to
 
-execute if score #MWL Phase matches 80 if score #MWL CastMode matches 0 if score #MWL AddedRoleNumber matches 1.. as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_role_addition] run function mwj:system/setting/role_addition_decision/common/set_inventory
-execute if score #MWL Phase matches 80 if score #MWL CastMode matches 1 as @p[tag=Host,predicate=mwj:setting/choose_mode/choose_casting] run function mwj:system/setting/casting_decision/common/set_inventory
-
-execute if score #MWL Phase matches 80 as @p[tag=Host,predicate=mwj:setting/choose_mode/select_cancel] run function mwj:stop
-
-execute if score #MWL Phase matches 80 if score #MWL GameMode matches 1 if score #MWL NumOfWhite > #MWL NumOfBlack if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. as @p[tag=Host,predicate=mwj:setting/choose_mode/select_ok] run function mwj:system/setting/choose_mode/exit_setting
-execute if score #MWL Phase matches 80 if score #MWL GameMode matches 2 if score #MWL NumOfWhite matches 2.. if score #MWL NumOfBlack matches 1.. as @p[tag=Host,predicate=mwj:setting/choose_mode/select_ok] run function mwj:system/setting/choose_mode/exit_setting
-execute if score #MWL Phase matches 80 if score #MWL GameMode matches 3 if score #MWL NumOfWhite matches 1.. if score #MWL NumOfBlack matches 1.. as @p[tag=Host,predicate=mwj:setting/choose_mode/select_ok] run function mwj:system/setting/choose_mode/exit_setting
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/select_cancel] run function mwj:stop
+execute as @p[tag=Host,predicate=mwj:setting/choose_mode/select_ok] run function mwj:system/setting/choose_mode/exit_setting

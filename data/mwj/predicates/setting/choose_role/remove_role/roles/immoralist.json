@@ -1,0 +1,52 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "Phase",
+      "scale": 1
+    },
+    "range": {    
+      "min": 96,
+      "max": 96
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#MWL"
+        },
+        "score": "SelectRolePos2",
+        "scale": 1
+      },
+      "range": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#MWL"
+          },
+          "score": "NumOfImmorals",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#MWL"
+          },
+          "score": "NumOfImmorals",
+          "scale": 1
+        }
+      }
+    }
+  }]

@@ -1,0 +1,28 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "Phase",
+      "scale": 1
+    },
+    "range": {
+      "min": 87,
+      "max": 87
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:20b,tag:{Tags:[\"MWLitem\",\"MWL_trident\"]}}]}"
+      }
+    }
+  }
+]

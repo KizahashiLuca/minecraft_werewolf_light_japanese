@@ -32,7 +32,10 @@
 ## Add Variables for Game
 scoreboard objectives add Phase dummy
 scoreboard objectives add NumOfRoles dummy
-scoreboard objectives add PrevNumOfPlayers dummy
+scoreboard objectives add NumOfRestRoles dummy
+scoreboard objectives add PrevNumOfRoles dummy
+scoreboard objectives add PNumOfRestRoles dummy
+scoreboard objectives add TmpNumOfRoles dummy
 ## Add Variables for Timer
 scoreboard objectives add Second dummy
 scoreboard objectives add Tick dummy
@@ -47,6 +50,9 @@ scoreboard objectives add PURPLE dummy
 ## Add Variables for Role
 scoreboard objectives add RoleOfNum dummy
 ## Add Variables for Role Number
+scoreboard objectives add PlayerRole dummy
+scoreboard objectives add NumOfBlack dummy
+scoreboard objectives add NumOfWhite dummy
 scoreboard objectives add NumOfWolves dummy
 scoreboard objectives add NumOfClWolves dummy
 scoreboard objectives add NumOfWhWolves dummy
@@ -66,8 +72,6 @@ scoreboard objectives add NumOfDetectives dummy
 scoreboard objectives add NumOfThieves dummy
 scoreboard objectives add NumOfLtReds dummy
 scoreboard objectives add NumOfCats dummy
-scoreboard objectives add NumOfBlack dummy
-scoreboard objectives add NumOfWhite dummy
 scoreboard objectives add PNumOfWolves dummy
 scoreboard objectives add PNumOfClWolves dummy
 scoreboard objectives add PNumOfWhWolves dummy
@@ -87,56 +91,13 @@ scoreboard objectives add PNumOfDetectives dummy
 scoreboard objectives add PNumOfThieves dummy
 scoreboard objectives add PNumOfLtReds dummy
 scoreboard objectives add PNumOfCats dummy
-## Add Variables for Setting Added Role
-scoreboard objectives add AddedRoleNumber dummy
-scoreboard objectives add AddedRole dummy
-scoreboard objectives add AddedWolf dummy
-scoreboard objectives add AddedClWolf dummy
-scoreboard objectives add AddedWhWolf dummy
-scoreboard objectives add AddedMadman dummy
-scoreboard objectives add AddedFanatic dummy
-scoreboard objectives add AddedFox dummy
-scoreboard objectives add AddedImmoral dummy
-scoreboard objectives add AddedVilla dummy
-scoreboard objectives add AddedBakery dummy
-scoreboard objectives add AddedLycant dummy
-scoreboard objectives add AddedMason dummy
-scoreboard objectives add AddedSeer dummy
-scoreboard objectives add AddedFkSeer dummy
-scoreboard objectives add AddedSage dummy
-scoreboard objectives add AddedMedium dummy
-scoreboard objectives add AddedDetec dummy
-scoreboard objectives add AddedThief dummy
-scoreboard objectives add AddedLtRed dummy
-scoreboard objectives add AddedCat dummy
-scoreboard objectives add PrevAddedRole dummy
-scoreboard objectives add PrevAddedWolf dummy
-scoreboard objectives add PrevAddedClWolf dummy
-scoreboard objectives add PrevAddedWhWolf dummy
-scoreboard objectives add PrevAddedMadman dummy
-scoreboard objectives add PrevAddedFanatic dummy
-scoreboard objectives add PrevAddedFox dummy
-scoreboard objectives add PrevAddedImmoral dummy
-scoreboard objectives add PrevAddedVilla dummy
-scoreboard objectives add PrevAddedBakery dummy
-scoreboard objectives add PrevAddedLycant dummy
-scoreboard objectives add PrevAddedMason dummy
-scoreboard objectives add PrevAddedSeer dummy
-scoreboard objectives add PrevAddedFkSeer dummy
-scoreboard objectives add PrevAddedSage dummy
-scoreboard objectives add PrevAddedMedium dummy
-scoreboard objectives add PrevAddedDetec dummy
-scoreboard objectives add PrevAddedThief dummy
-scoreboard objectives add PrevAddedLtRed dummy
-scoreboard objectives add PrevAddedCat dummy
-scoreboard objectives add AddedRole1 dummy
-scoreboard objectives add AddedRole2 dummy
-scoreboard objectives add AddedRole3 dummy
-scoreboard objectives add AddedRole4 dummy
-scoreboard objectives add AddedRole5 dummy
-scoreboard objectives add SelectNumber dummy
-## Add Variables for Setting Time
-scoreboard objectives add SettingTime dummy
+## Add Variables for Setting Select Role
+scoreboard objectives add SelectNumOfRest dummy
+scoreboard objectives add SelectRolePos1 dummy
+scoreboard objectives add SelectRolePos2 dummy
+scoreboard objectives add SelectRolePos3 dummy
+scoreboard objectives add SelectRolePos4 dummy
+scoreboard objectives add SelectRolePos5 dummy
 ## Add Variables for Setting Dummy Role
 scoreboard objectives add DummyRole dummy
 ## Add Variables for Setting Hide Time
@@ -155,14 +116,9 @@ scoreboard objectives add PrevGameMode dummy
 ## Add Variables for Setting Dummyrole Mode
 scoreboard objectives add DummyRoleMode dummy
 scoreboard objectives add PreDummyRoleMode dummy
-## Add Variables for Setting Cast Mode
-scoreboard objectives add CastMode dummy
-scoreboard objectives add PrevCastMode dummy
-## Add Variables for GUI Choose Mode
-scoreboard objectives add SelectCancel dummy
-scoreboard objectives add SelectReset dummy
-scoreboard objectives add SelectOkay dummy
-scoreboard objectives add SelectDecide dummy
+## Add Variables for Setting 2ndRole Mode
+scoreboard objectives add 2ndRoleMode dummy
+scoreboard objectives add Prev2ndRoleMode dummy
 ## Add Variables for GUI - Time
 scoreboard objectives add 100 dummy
 scoreboard objectives add 010 dummy
@@ -170,92 +126,46 @@ scoreboard objectives add 001 dummy
 scoreboard objectives add Digit100 dummy
 scoreboard objectives add Digit010 dummy
 scoreboard objectives add Digit001 dummy
-## Add Variables for GUI Hide Time
-scoreboard objectives add Select015secs dummy
-scoreboard objectives add Select030secs dummy
-scoreboard objectives add Select060secs dummy
-scoreboard objectives add Select090secs dummy
-scoreboard objectives add Select120secs dummy
-scoreboard objectives add Select180secs dummy
-scoreboard objectives add Select300secs dummy
-## Add Variables for GUI Glow Time
-scoreboard objectives add Select000pers dummy
-scoreboard objectives add Select010pers dummy
-scoreboard objectives add Select020pers dummy
-scoreboard objectives add Select030pers dummy
-scoreboard objectives add Select050pers dummy
-scoreboard objectives add Select080pers dummy
-scoreboard objectives add Select100pers dummy
-## Add Variables for GUI Game Time
-scoreboard objectives add Select05mins dummy
-scoreboard objectives add Select10mins dummy
-scoreboard objectives add Select15mins dummy
-scoreboard objectives add Select20mins dummy
-scoreboard objectives add Select25mins dummy
-scoreboard objectives add Select30mins dummy
-scoreboard objectives add Select60mins dummy
-## Add Variables for GUI Game Mode
-scoreboard objectives add SelectNormalWolf dummy
-scoreboard objectives add SelectTwoAlive dummy
-scoreboard objectives add SelectAnnihilate dummy
-## Add Variables for GUI Item Addition
-scoreboard objectives add AddedStick dummy
-scoreboard objectives add AddedTotem dummy
-scoreboard objectives add AddedDeath dummy
-scoreboard objectives add AddedPearl dummy
-scoreboard objectives add AddedHoe dummy
-scoreboard objectives add AddedElytra dummy
-scoreboard objectives add AddedSnowball dummy
-scoreboard objectives add AddedInvis dummy
-scoreboard objectives add AddedSpeed dummy
-scoreboard objectives add AddedJump dummy
-scoreboard objectives add AddedTrident dummy
-scoreboard objectives add AddedConduit dummy
-scoreboard objectives add AddedCrossbow dummy
-scoreboard objectives add AddedHoneyBlock dummy
-scoreboard objectives add AddedLantern dummy
-scoreboard objectives add AddedVines dummy
-scoreboard objectives add AddedSpyglass dummy
-scoreboard objectives add PrevAddedStick dummy
-scoreboard objectives add PrevAddedTotem dummy
-scoreboard objectives add PrevAddedDeath dummy
-scoreboard objectives add PrevAddedPearl dummy
-scoreboard objectives add PrevAddedHoe dummy
-scoreboard objectives add PrevAddedElytra dummy
-scoreboard objectives add PrevAddedSnowbal dummy
-scoreboard objectives add PrevAddedInvis dummy
-scoreboard objectives add PrevAddedSpeed dummy
-scoreboard objectives add PrevAddedJump dummy
-scoreboard objectives add PrevAddedTrident dummy
-scoreboard objectives add PrevAddedConduit dummy
-scoreboard objectives add PrevAddedCrossbo dummy
-scoreboard objectives add PrevAddedHoneyBl dummy
-scoreboard objectives add PrevAddedLantern dummy
-scoreboard objectives add PrevAddedVines dummy
-scoreboard objectives add PrevAddedSpyglas dummy
-scoreboard objectives add AddedItem1 dummy
-scoreboard objectives add AddedItem2 dummy
-scoreboard objectives add AddedItem3 dummy
-scoreboard objectives add AddedItem4 dummy
-scoreboard objectives add AddedItem5 dummy
-## Add Variables for GUI Addition Common
-scoreboard objectives add TmpAdded dummy
-scoreboard objectives add SelectAllDel dummy
-scoreboard objectives add SelectAllSet dummy
-scoreboard objectives add SelectPrevPage dummy
-scoreboard objectives add SelectNextPage dummy
-scoreboard objectives add SelectItem1 dummy
-scoreboard objectives add SelectItem2 dummy
-scoreboard objectives add SelectItem3 dummy
-scoreboard objectives add SelectItem4 dummy
-scoreboard objectives add SelectItem5 dummy
-scoreboard objectives add SelectDecide1 dummy
-scoreboard objectives add SelectDecide2 dummy
-scoreboard objectives add SelectDecide3 dummy
-scoreboard objectives add SelectDecide4 dummy
-scoreboard objectives add SelectDecide5 dummy
-## Add Variables for Throwing Item
-scoreboard objectives add ThrowItem dummy
+## Add Variables for Setting Item
+scoreboard objectives add ChooseStick dummy
+scoreboard objectives add ChooseTotem dummy
+scoreboard objectives add ChooseDeathPot dummy
+scoreboard objectives add ChoosePearl dummy
+scoreboard objectives add ChooseHoe dummy
+scoreboard objectives add ChooseElytra dummy
+scoreboard objectives add ChooseSnowball dummy
+scoreboard objectives add ChooseInvisPot dummy
+scoreboard objectives add ChooseSpeedPot dummy
+scoreboard objectives add ChooseJumpPot dummy
+scoreboard objectives add ChooseTrident dummy
+scoreboard objectives add ChooseConduit dummy
+scoreboard objectives add ChooseCrossbow dummy
+scoreboard objectives add ChooseHoneyBlock dummy
+scoreboard objectives add ChooseLantern dummy
+scoreboard objectives add ChooseVines dummy
+scoreboard objectives add ChooseSpyglass dummy
+scoreboard objectives add PChooseStick dummy
+scoreboard objectives add PChooseTotem dummy
+scoreboard objectives add PChooseDeathPot dummy
+scoreboard objectives add PChoosePearl dummy
+scoreboard objectives add PChooseHoe dummy
+scoreboard objectives add PChooseElytra dummy
+scoreboard objectives add PChooseSnowbal dummy
+scoreboard objectives add PChooseInvisPot dummy
+scoreboard objectives add PChooseSpeedPot dummy
+scoreboard objectives add PChooseJumpPot dummy
+scoreboard objectives add PChooseTrident dummy
+scoreboard objectives add PChooseConduit dummy
+scoreboard objectives add PChooseCrossbow dummy
+scoreboard objectives add PChooseHoneyBloc dummy
+scoreboard objectives add PChooseLantern dummy
+scoreboard objectives add PChooseVines dummy
+scoreboard objectives add PChooseSpyglass dummy
+scoreboard objectives add SelectItemPos1 dummy
+scoreboard objectives add SelectItemPos2 dummy
+scoreboard objectives add SelectItemPos3 dummy
+scoreboard objectives add SelectItemPos4 dummy
+scoreboard objectives add SelectItemPos5 dummy
 ## Add Temporary Variable
 scoreboard objectives add TempVariable dummy
 ## Add Variables for Item
@@ -283,6 +193,9 @@ scoreboard objectives add KilledBySeer dummy
 scoreboard objectives add FoxSpawnSecond dummy
 scoreboard objectives add FoxSpawnTick dummy
 scoreboard objectives add RespawnTime minecraft.custom:minecraft.time_since_death
+#### Mason
+scoreboard objectives add MasonPair dummy
+scoreboard objectives add NumOfMasonPair dummy
 #### Thief
 scoreboard objectives add RoleStolen dummy
 scoreboard objectives add NumberOfStolen dummy
@@ -308,8 +221,6 @@ scoreboard objectives add NumberOfKillLog dummy
 scoreboard objectives add KillLogOfFox dummy
 scoreboard objectives add KillLogOfCat dummy
 scoreboard objectives add KillLogOfTrident dummy
-## Add Variables for Mason Number
-scoreboard objectives add MasonPair dummy
 ## Add Variables for randomizer
 scoreboard objectives add DummyRoleNumber dummy
 scoreboard objectives add DummyRoleFlag dummy
@@ -343,7 +254,8 @@ scoreboard objectives add DropTwistVines minecraft.dropped:minecraft.twisting_vi
 
 ## Set Variables for Timer
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
-scoreboard players operation #MWL PrevNumOfPlayers = #MWL NumOfPlayers
+scoreboard players set #MWL NumOfRestRoles 0
+scoreboard players set #MWL PNumOfRestRoles 0
 ## Set Variables for Game
 scoreboard players set @a CurrentRole 0
 ## Set Variables for CurrentRole
@@ -366,50 +278,6 @@ scoreboard players set #MWL NumOfDetectives 0
 scoreboard players set #MWL NumOfThieves 0
 scoreboard players set #MWL NumOfLtReds 0
 scoreboard players set #MWL NumOfCats 0
-## Set Variables for Setting Added Role
-scoreboard players set #MWL AddedRoleNumber 0
-scoreboard players set #MWL AddedRole 0
-scoreboard players set #MWL AddedWolf 0
-scoreboard players set #MWL AddedClWolf 0
-scoreboard players set #MWL AddedWhWolf 0
-scoreboard players set #MWL AddedMadman 0
-scoreboard players set #MWL AddedFanatic 0
-scoreboard players set #MWL AddedFox 0
-scoreboard players set #MWL AddedImmoral 0
-scoreboard players set #MWL AddedVilla 0
-scoreboard players set #MWL AddedBakery 0
-scoreboard players set #MWL AddedLycant 0
-scoreboard players set #MWL AddedMason 0
-scoreboard players set #MWL AddedSeer 0
-scoreboard players set #MWL AddedFkSeer 0
-scoreboard players set #MWL AddedSage 0
-scoreboard players set #MWL AddedMedium 0
-scoreboard players set #MWL AddedDetec 0
-scoreboard players set #MWL AddedThief 0
-scoreboard players set #MWL AddedLtRed 0
-scoreboard players set #MWL AddedCat 0
-scoreboard players set #MWL PrevAddedRole 0
-scoreboard players set #MWL PrevAddedWolf 0
-scoreboard players set #MWL PrevAddedClWolf 0
-scoreboard players set #MWL PrevAddedWhWolf 0
-scoreboard players set #MWL PrevAddedMadman 0
-scoreboard players set #MWL PrevAddedFanatic 0
-scoreboard players set #MWL PrevAddedFox 0
-scoreboard players set #MWL PrevAddedImmoral 0
-scoreboard players set #MWL PrevAddedVilla 0
-scoreboard players set #MWL PrevAddedBakery 0
-scoreboard players set #MWL PrevAddedLycant 0
-scoreboard players set #MWL PrevAddedMason 0
-scoreboard players set #MWL PrevAddedSeer 0
-scoreboard players set #MWL PrevAddedFkSeer 0
-scoreboard players set #MWL PrevAddedSage 0
-scoreboard players set #MWL PrevAddedMedium 0
-scoreboard players set #MWL PrevAddedDetec 0
-scoreboard players set #MWL PrevAddedThief 0
-scoreboard players set #MWL PrevAddedLtRed 0
-scoreboard players set #MWL PrevAddedCat 0
-## Set Variables for Setting Time
-scoreboard players set #MWL SettingTime 600
 ## Set Variables for Setting Dummy Role
 scoreboard players set #MWL DummyRole 0
 ## Add Variables for GUI - Time
@@ -431,62 +299,57 @@ scoreboard players set #MWL PrevGameMode 3
 ## Set Variables for Setting Dummyrole Mode
 scoreboard players set #MWL DummyRoleMode 0
 scoreboard players set #MWL PreDummyRoleMode 0
-## Set Variables for Setting Cast Mode
-scoreboard players set #MWL CastMode 0
-scoreboard players set #MWL PrevCastMode 0
-## Set Variables for GUI Item Addition
-scoreboard players set #MWL AddedStick 1
-scoreboard players set #MWL AddedTotem 1
-scoreboard players set #MWL AddedDeath 1
-scoreboard players set #MWL AddedPearl 1
-scoreboard players set #MWL AddedHoe 1
-scoreboard players set #MWL AddedElytra 1
-scoreboard players set #MWL AddedSnowball 1
-scoreboard players set #MWL AddedInvis 1
-scoreboard players set #MWL AddedSpeed 1
-scoreboard players set #MWL AddedJump 1
-scoreboard players set #MWL AddedTrident 1
-scoreboard players set #MWL AddedConduit 1
-scoreboard players set #MWL AddedCrossbow 1
-scoreboard players set #MWL AddedHoneyBlock 1
-scoreboard players set #MWL AddedLantern 1
-scoreboard players set #MWL AddedVines 1
-scoreboard players set #MWL AddedSpyglass 1
-scoreboard players set #MWL PrevAddedStick 1
-scoreboard players set #MWL PrevAddedTotem 1
-scoreboard players set #MWL PrevAddedDeath 1
-scoreboard players set #MWL PrevAddedPearl 1
-scoreboard players set #MWL PrevAddedHoe 1
-scoreboard players set #MWL PrevAddedElytra 1
-scoreboard players set #MWL PrevAddedSnowbal 1
-scoreboard players set #MWL PrevAddedInvis 1
-scoreboard players set #MWL PrevAddedSpeed 1
-scoreboard players set #MWL PrevAddedJump 1
-scoreboard players set #MWL PrevAddedTrident 1
-scoreboard players set #MWL PrevAddedConduit 1
-scoreboard players set #MWL PrevAddedCrossbo 1
-scoreboard players set #MWL PrevAddedHoneyBl 1
-scoreboard players set #MWL PrevAddedLantern 1
-scoreboard players set #MWL PrevAddedVines 1
-scoreboard players set #MWL PrevAddedSpyglas 1
-## Add Variables for GUI Addition Common
-scoreboard players set #MWL AddedItem1 1
-scoreboard players set #MWL AddedItem2 1
-scoreboard players set #MWL AddedItem3 1
-scoreboard players set #MWL AddedItem4 1
-scoreboard players set #MWL AddedItem5 1
+## Set Variables for Setting 2ndRole Mode
+scoreboard players set #MWL 2ndRoleMode 0
+scoreboard players set #MWL Prev2ndRoleMode 0
+## Add Variables for Setting Item
+scoreboard players set #MWL ChooseStick 1
+scoreboard players set #MWL ChooseTotem 1
+scoreboard players set #MWL ChooseDeathPot 1
+scoreboard players set #MWL ChoosePearl 1
+scoreboard players set #MWL ChooseHoe 1
+scoreboard players set #MWL ChooseElytra 1
+scoreboard players set #MWL ChooseSnowball 1
+scoreboard players set #MWL ChooseInvisPot 1
+scoreboard players set #MWL ChooseSpeedPot 1
+scoreboard players set #MWL ChooseJumpPot 1
+scoreboard players set #MWL ChooseTrident 1
+scoreboard players set #MWL ChooseConduit 1
+scoreboard players set #MWL ChooseCrossbow 1
+scoreboard players set #MWL ChooseHoneyBlock 1
+scoreboard players set #MWL ChooseLantern 1
+scoreboard players set #MWL ChooseVines 1
+scoreboard players set #MWL ChooseSpyglass 1
+scoreboard players set #MWL PChooseStick 1
+scoreboard players set #MWL PChooseTotem 1
+scoreboard players set #MWL PChooseDeathPot 1
+scoreboard players set #MWL PChoosePearl 1
+scoreboard players set #MWL PChooseHoe 1
+scoreboard players set #MWL PChooseElytra 1
+scoreboard players set #MWL PChooseSnowbal 1
+scoreboard players set #MWL PChooseInvisPot 1
+scoreboard players set #MWL PChooseSpeedPot 1
+scoreboard players set #MWL PChooseJumpPot 1
+scoreboard players set #MWL PChooseTrident 1
+scoreboard players set #MWL PChooseConduit 1
+scoreboard players set #MWL PChooseCrossbow 1
+scoreboard players set #MWL PChooseHoneyBloc 1
+scoreboard players set #MWL PChooseLantern 1
+scoreboard players set #MWL PChooseVines 1
+scoreboard players set #MWL PChooseSpyglass 1
 ## Set Temporary Variable
 scoreboard players set #MWL TempVariable 0
+## Set Variables for Roles
+#### Mason
+scoreboard players set #MWL NumOfMasonPair 0
 
 ## Set bossbar
 scoreboard players set #MWL Tick 0
-scoreboard players operation #MWL Second = #MWL SettingTime
+scoreboard players set #MWL Second 0
 bossbar add minecraft:bossbar ["",{"text":"初期設定時間"}]
 bossbar set minecraft:bossbar players @a
 bossbar set minecraft:bossbar name ["",{"text":"初期設定時間"}]
 scoreboard players set #MWL BossbarMax 20
-scoreboard players operation #MWL BossbarMax *= #MWL SettingTime
 scoreboard players set #MWL BossbarVal 20
-scoreboard players operation #MWL BossbarVal *= #MWL Second
 execute store result bossbar minecraft:bossbar max run scoreboard players get #MWL BossbarMax
 execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL BossbarVal

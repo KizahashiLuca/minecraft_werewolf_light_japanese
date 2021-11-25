@@ -1,0 +1,40 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:purple_stained_glass",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"羽衣狐","color":"dark_purple","bold":true,"italic":false},{"text":"の追加","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"羽衣狐陣営","color":"dark_purple","bold":true,"italic":false}],
+                ["",{"text":"予言","color":"aqua","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"霊媒","color":"yellow","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"賢狼","color":"dark_red","bold":false,"italic":false},{"text":"の表示 : ","color":"white","bold":false,"italic":false},{"text":"羽衣狐","color":"dark_purple","bold":true,"italic":false}],
+                ["",{"text":"人狼/村人陣営が勝利条件を満たしたとき、","color":"white","bold":false,"italic":false}],
+                ["",{"text":"生存すれば単独勝利となる。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ※仲間の羽衣狐を互いに","color":"gray","bold":false,"italic":false},{"text":"知らない","color":"gray","bold":true,"italic":false}],
+                ["",{"text":"人狼陣営に殺されても蘇生する。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ※蘇生後10秒はクールタイム","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"  ※クールタイム中は透明化","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"  ※クールタイム後にアイテム配布","color":"gray","bold":false,"italic":false}],
+                ["",{"text":"予言/賢者の予言を受けると突然死する。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ※不死のトーテムで回避可能","color":"gray","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role_fox\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

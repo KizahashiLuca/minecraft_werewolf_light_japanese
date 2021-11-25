@@ -20,7 +20,7 @@ function mwj:system/finish/remove_bossbars
 ## Remove entities
 function mwj:system/finish/remove_entities
 
-## Remove entities
+## Remove tags
 function mwj:system/finish/remove_tags
 
 ## Remove teams
@@ -36,10 +36,8 @@ function mwj:system/setting/initial_setting/set_teams
 function mwj:system/setting/initial_setting/set_scoreboards
 
 ## Set Role Number
+function mwj:system/common/roles/reset_roles
 function mwj:system/common/roles/set_role_number
-function mwj:system/common/roles/set_added_role_number
-
-scoreboard players operation #MWL PrevAddedRole = #MWL AddedRole
 function mwj:system/common/roles/set_prev_roles
 
 ## Set Title

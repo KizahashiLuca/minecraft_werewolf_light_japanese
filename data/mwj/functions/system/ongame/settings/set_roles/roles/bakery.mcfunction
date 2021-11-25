@@ -9,10 +9,10 @@
 ####################################
 
 ## Set the Role
-execute if score #MWL NumOfRole matches 1.. as @p[team=Player,sort=random] run scoreboard players set @p[scores={CurrentRole=0},team=Player,sort=random] CurrentRole 21
+execute if score #MWL PlayerRole matches 1.. as @p[team=Player,sort=random] run scoreboard players set @p[scores={CurrentRole=0},team=Player,sort=random] CurrentRole 21
 
 ## Decrement value by 1
-scoreboard players remove #MWL NumOfRole 1
+scoreboard players remove #MWL PlayerRole 1
 
 ## Repeat
-execute if score #MWL NumOfRole matches 1.. run function mwj:system/ongame/settings/set_roles/roles/bakery
+execute if score #MWL PlayerRole matches 1.. run function mwj:system/ongame/settings/set_roles/roles/bakery

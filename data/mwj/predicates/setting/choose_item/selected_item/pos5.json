@@ -1,0 +1,23 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_item"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/diamond_hoe"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/potion_jump"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/lantern"
+      }
+    ]
+  }
+]

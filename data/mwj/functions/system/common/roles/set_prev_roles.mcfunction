@@ -9,6 +9,8 @@
 ####################################
 
 ## Set Prev choice
+scoreboard players operation #MWL PNumOfRestRoles = #MWL NumOfRestRoles
+
 scoreboard players operation #MWL PNumOfWolves = #MWL NumOfWolves
 scoreboard players operation #MWL PNumOfClWolves = #MWL NumOfClWolves
 scoreboard players operation #MWL PNumOfWhWolves = #MWL NumOfWhWolves

@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_item"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/totem_of_undying"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/snowball"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/conduit"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/spyglass"
+      }
+    ]
+  }
+]

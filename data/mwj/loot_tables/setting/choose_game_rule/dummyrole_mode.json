@@ -5,17 +5,34 @@
       "rolls":1,
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:armor_stand",
-          "functions":[
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/dummyrole_mode_off",
+          "conditions": [
             {
-              "function":"minecraft:set_name",
-              "name": [
-                ["",{"text":"役欠け設定","color":"white","bold":false,"italic":false}]
-              ]
-            },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_dummyrole_mode\"]}"
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "DummyRoleMode": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/dummyrole_mode_on",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "DummyRoleMode": {
+                  "min": 1,
+                  "max": 1
+                }
+              }
             }
           ]
         }

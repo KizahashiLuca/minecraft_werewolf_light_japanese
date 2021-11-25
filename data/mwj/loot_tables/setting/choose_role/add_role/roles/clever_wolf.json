@@ -1,0 +1,39 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:red_concrete_powder",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"賢狼","color":"dark_red","bold":true,"italic":false},{"text":"の追加","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"人狼陣営","color":"red","bold":true,"italic":false}],
+                ["",{"text":"予言","color":"aqua","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"霊媒","color":"yellow","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"賢狼","color":"dark_red","bold":false,"italic":false},{"text":"の表示 : ","color":"white","bold":false,"italic":false},{"text":"黒","color":"red","bold":true,"italic":false}],
+                ["",{"text":"予言のできる人狼。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ※仲間の人狼を","color":"gray","bold":false,"italic":false},{"text":"互いに知っている","color":"gray","bold":true,"italic":false}],
+                ["",{"text":"  ※狂人/狂信者を","color":"gray","bold":false,"italic":false},{"text":"知らない","color":"gray","bold":true,"italic":false}],
+                ["",{"text":"誰か1人の白/黒/羽衣狐を見ることができる。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  羽衣狐を予言    -> ｢羽衣狐｣と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  人狼/賢狼を予言 -> ｢黒｣と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  それ以外を予言  -> ｢白｣と表示","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  ※羽衣狐を占っても突然死しない","color":"gray","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role_clever_wolf\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

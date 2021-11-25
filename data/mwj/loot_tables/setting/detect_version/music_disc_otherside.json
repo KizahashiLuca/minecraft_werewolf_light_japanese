@@ -1,0 +1,20 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:music_disc_otherside",
+          "functions":[
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"Ver\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:orange_stained_glass",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"猫又","color":"gold","bold":true,"italic":false},{"text":"の追加","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_lore",
+              "lore": [
+                ["",{"text":"村人陣営","color":"green","bold":true,"italic":false}],
+                ["",{"text":"予言","color":"aqua","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"霊媒","color":"yellow","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"賢狼","color":"dark_red","bold":false,"italic":false},{"text":"の表示 : ","color":"white","bold":false,"italic":false},{"text":"白","color":"green","bold":true,"italic":false}],
+                ["",{"text":"殺害されたとき","color":"white","bold":false,"italic":false},{"text":"誰か1人を道連れ","color":"white","bold":true,"italic":false},{"text":"にする。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"殺害した陣営により抽選先が決定する。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  人狼陣営から殺害 → 人狼陣営から抽選","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  村人陣営から殺害 → 生存者から抽選","color":"white","bold":false,"italic":false}],
+                ["",{"text":"  第三陣営から殺害 → 生存者から抽選","color":"white","bold":false,"italic":false}],
+                ["",{"text":"道連れにされるプレイヤーが不死のトーテムを","color":"white","bold":false,"italic":false}],
+                ["",{"text":"所持している場合、プレイヤーは生き残る。","color":"white","bold":false,"italic":false}],
+                ["",{"text":"猫又が不死のトーテムを所持しているときは、","color":"white","bold":false,"italic":false}],
+                ["",{"text":"道連れの効果は発動しない。","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role_cat\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,5 +9,5 @@
 ####################################
 
 ## Minecraft 1.18
-loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/detect_version/goat_horn
-execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:goat_horn",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 18
+loot replace entity @p[tag=Host] inventory.0 loot mwj:setting/detect_version/music_disc_otherside
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:music_disc_otherside",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 18

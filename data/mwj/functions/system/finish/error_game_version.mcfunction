@@ -17,7 +17,7 @@ tellraw @a ["",{"text":" ","color":"white"},{"text":"Error","color":"yellow","bo
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  前提バージョンが異なります。","color":"white"}]
 tellraw @a ["",{"text":"  このデータパックの対象は以下。","color":"white"}]
-tellraw @a ["",{"text":"     1.16 ","bold":true,"color":"red"},{"text":"～","color":"white"},{"text":" 1.17 ","bold":true,"color":"red"}]
+tellraw @a ["",{"text":"     1.16 ","bold":true,"color":"red"},{"text":"-","color":"white"},{"text":" 1.17 ","bold":true,"color":"red"}]
 
 ## Quit Game
 function mwj:system/finish/exit_game

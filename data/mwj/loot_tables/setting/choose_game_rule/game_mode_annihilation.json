@@ -11,11 +11,12 @@
             {
               "function":"minecraft:set_name",
               "name": [
-                ["",{"text":"殲滅モード","color":"aqua","bold":false,"italic":false}]
+                ["",{"text":"人狼勝利条件","color":"white","bold":true,"italic":false}]
               ]
             },{
               "function":"minecraft:set_lore",
               "lore": [
+                ["",{"text":"殲滅モード","color":"aqua","bold":true,"italic":false},{"text":"を選択中","color":"white","bold":false,"italic":false}],
                 ["",{"text":"村人陣営が全滅","color":"white","bold":true,"italic":false}],
                 ["",{"text":"となれば人狼陣営の勝利。","color":"white","bold":false,"italic":false}]
               ]

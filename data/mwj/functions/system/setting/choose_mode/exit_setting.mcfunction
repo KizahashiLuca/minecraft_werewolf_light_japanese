@@ -8,16 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Store Number of Role
-execute if score #MWL CastMode matches 0 run scoreboard players operation #MWL AddedVilla += #MWL AddedRole
-execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL NumOfVillagers += #MWL AddedRole
-
-execute if score #MWL CastMode matches 0 run scoreboard players operation #MWL PrevAddedRole = #MWL AddedRoleNumber
-execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL PrevAddedRole = #MWL NumOfRoles
-execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL AddedMason = #MWL NumOfMasons
-execute if score #MWL CastMode matches 1 run scoreboard players set #MWL TempVariable 2
-execute if score #MWL CastMode matches 1 run scoreboard players operation #MWL AddedMason /= #MWL TempVariable
-
 ## Calculate Glow Time
 scoreboard players set #MWL TempVariable 60
 scoreboard players operation #MWL GlowTime *= #MWL GameTime
@@ -31,4 +21,4 @@ clear @a
 function mwj:system/setting/choose_mode/reset_scoreboards
 
 ## Hide Time
-function mwj:system/preparation/change_to
+function mwj:system/hide_phase/change_to

@@ -1,0 +1,133 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"選択済み","color":"green","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_selected_role_pos5\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfFanatics",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 95,
+                    "max": 95
+                  }
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfLycants",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 96,
+                    "max": 96
+                  }
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfMediums",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 97,
+                    "max": 97
+                  }
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": 0,
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 98,
+                    "max": 98
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

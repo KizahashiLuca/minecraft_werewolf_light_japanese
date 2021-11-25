@@ -29,7 +29,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"MWL_honey_block\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

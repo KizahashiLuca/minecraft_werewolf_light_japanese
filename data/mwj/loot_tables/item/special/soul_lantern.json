@@ -25,7 +25,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"UnsetStorage\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"UnsetStorage\",\"MWL_soul_lantern\"]}"
             }
           ]
         }

@@ -21,5 +21,5 @@ function mwj:system/finish/finish_game_title
 tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"人狼陣営","bold":true,"color":"red"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode
-scoreboard players set #MWL Phase 0
+scoreboard players set #MWL Phase 100
 scoreboard players set #MWL WINNER 1

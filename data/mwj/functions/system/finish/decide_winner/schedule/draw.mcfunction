@@ -20,4 +20,4 @@ function mwj:system/finish/finish_game_title
 tellraw @a ["",{"text":"  両者 ","color":"white"},{"text":"引き分け","bold":true,"color":"white"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode
-scoreboard players set #MWL Phase 0
+scoreboard players set #MWL Phase 100

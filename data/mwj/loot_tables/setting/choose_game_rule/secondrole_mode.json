@@ -1,0 +1,58 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/secondrole_mode_off",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "2ndRoleMode": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/secondrole_mode_ghost",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "2ndRoleMode": {
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/secondrole_mode_drunk",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "2ndRoleMode": {
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

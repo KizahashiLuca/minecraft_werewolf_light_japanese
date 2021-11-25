@@ -1,0 +1,28 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "Phase",
+      "scale": 1
+    },
+    "range": {
+      "min": 95,
+      "max": 95
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:23b,tag:{Tags:[\"MWLsetting\",\"MWL_choose_role_madman\"]}}]}"
+      }
+    }
+  }
+]

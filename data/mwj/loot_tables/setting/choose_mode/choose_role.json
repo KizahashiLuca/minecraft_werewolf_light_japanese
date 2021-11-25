@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:armor_stand",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"役職数設定","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}],HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

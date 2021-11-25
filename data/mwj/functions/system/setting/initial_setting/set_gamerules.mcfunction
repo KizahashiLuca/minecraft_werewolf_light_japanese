@@ -17,8 +17,18 @@ gamerule doMobSpawning false
 gamerule keepInventory false
 gamerule sendCommandFeedback false
 gamerule showDeathMessages false
+
+## Set difficulty
 difficulty peaceful
+
+## Set gamemode
 gamemode adventure @a[gamemode=!spectator]
+
+## Clear effects
 effect clear @a[gamemode=!spectator]
+
+## Clear recipes
 recipe take @a *
+
+## Clear inventory
 clear @a

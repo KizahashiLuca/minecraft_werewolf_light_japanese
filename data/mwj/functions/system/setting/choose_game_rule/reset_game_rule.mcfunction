@@ -11,7 +11,7 @@
 ## Reset choice
 scoreboard players set #MWL GameMode 3
 scoreboard players set #MWL DummyRoleMode 0
-scoreboard players set #MWL CastMode 1
+scoreboard players set #MWL 2ndRoleMode 0
 
 ## Set inventory
 function mwj:system/setting/choose_game_rule/set_inventory

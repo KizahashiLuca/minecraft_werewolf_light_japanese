@@ -8,6 +8,10 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
+## Log-in midtime of ongame
+execute as @a[tag=!Host,team=!Player,gamemode=!spectator] run function mwj:system/common/en_route/game_phase
+execute as @a[team=Player,scores={CurrentRole=0},gamemode=!spectator] run function mwj:system/common/en_route/game_phase
+
 ## Timer System
 function mwj:system/common/time/tick
 
@@ -29,22 +33,22 @@ scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:["MWLitem"]}}}]
 
 ## Detect snowball
-execute if score #MWL AddedSnowball matches 1 run function mwj:system/ongame/snowball/main
+execute if score #MWL ChooseSnowball matches 1 run function mwj:system/ongame/snowball/main
 
 ## Detect trident
-execute if score #MWL AddedTrident matches 1 run function mwj:system/ongame/trident/main
+execute if score #MWL ChooseTrident matches 1 run function mwj:system/ongame/trident/main
 
 ## Detect conduit
-execute if score #MWL AddedConduit matches 1 run function mwj:system/ongame/conduit/main
+execute if score #MWL ChooseConduit matches 1 run function mwj:system/ongame/conduit/main
 
 ## Detect honey block
-execute if score #MWL AddedHoneyBlock matches 1 run function mwj:system/ongame/honey_block/main
+execute if score #MWL ChooseHoneyBlock matches 1 run function mwj:system/ongame/honey_block/main
 
 ## Detect soul lantern
-execute if score #MWL AddedLantern matches 1 run function mwj:system/ongame/soul_lantern/main
+execute if score #MWL ChooseLantern matches 1 run function mwj:system/ongame/soul_lantern/main
 
 ## Detect twisting vines
-execute if score #MWL AddedVines matches 1 run function mwj:system/ongame/twisting_vines/main
+execute if score #MWL ChooseVines matches 1 run function mwj:system/ongame/twisting_vines/main
 
 ## Clever wolf System
 execute as @a[team=Player,scores={CurrentRole=3}] if score #MWL IsEndGame matches 0 run function mwj:system/ongame/clever_wolf/main

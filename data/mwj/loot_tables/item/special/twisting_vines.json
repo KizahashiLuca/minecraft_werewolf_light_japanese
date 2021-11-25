@@ -28,7 +28,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
+              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"MWL_twisting_vines\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_item"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/stick"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/elytra"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/trident"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:setting/choose_item/selected_item/items/twisting_vines"
+      }
+    ]
+  }
+]

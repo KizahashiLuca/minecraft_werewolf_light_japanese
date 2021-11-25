@@ -31,7 +31,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Damage:248,HideFlags:63,Tags:[\"MWLitem\"]}"
+              "tag":"{Damage:248,HideFlags:63,Tags:[\"MWLitem\",\"MWL_trident\"]}"
             }
           ]
         }

@@ -11,6 +11,8 @@
 ## Set Team 
 team add Player
 team join Player @a[gamemode=!spectator]
+team modify Player collisionRule always
+team modify Player deathMessageVisibility never
 team modify Player nametagVisibility never
 team modify Player seeFriendlyInvisibles false
 team modify Player friendlyFire false

@@ -1,0 +1,36 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_game_rule"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:water_bucket\",tag:{Tags:[\"MWLsetting\",\"MWL_secondrole_mode_off\"]}}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:axolotl_bucket\",tag:{Tags:[\"MWLsetting\",\"MWL_secondrole_mode_ghost\"]}}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:milk_bucket\",tag:{Tags:[\"MWLsetting\",\"MWL_secondrole_mode_drunk\"]}}]}"
+      }
+    }
+  }
+]

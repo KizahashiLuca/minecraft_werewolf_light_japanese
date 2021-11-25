@@ -11,7 +11,7 @@
 ## Reset choice
 scoreboard players operation #MWL GameMode = #MWL PrevGameMode
 scoreboard players operation #MWL DummyRoleMode = #MWL PreDummyRoleMode
-scoreboard players operation #MWL CastMode = #MWL PrevCastMode
+scoreboard players operation #MWL 2ndRoleMode = #MWL Prev2ndRoleMode
 
 ## Set Game Rule
 function mwj:system/setting/choose_game_rule/selected_set

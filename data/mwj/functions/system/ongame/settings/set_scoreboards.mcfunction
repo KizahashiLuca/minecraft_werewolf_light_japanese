@@ -109,9 +109,4 @@ scoreboard players set #MWL PURPLE 0
 scoreboard players set #MWL MasonPair 1
 
 ## RE-Count Players
-scoreboard players set #MWL NumOfPlayers 0
-function mwj:system/ongame/settings/count_players
-
-## Set dummy role
-scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
-execute if score #MWL DummyRoleMode matches 1 run scoreboard players add #MWL NumOfRoles 1
+function mwj:system/common/count_players

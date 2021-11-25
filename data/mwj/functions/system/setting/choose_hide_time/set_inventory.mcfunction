@@ -27,4 +27,4 @@ loot replace entity @p[tag=Host] inventory.14 loot mwj:setting/common/digit_001
 loot replace entity @p[tag=Host] inventory.15 loot mwj:setting/common/alphabet/s
 loot replace entity @p[tag=Host] inventory.19 loot mwj:setting/common/cancel
 loot replace entity @p[tag=Host] inventory.22 loot mwj:setting/common/reset
-execute if score #MWL HideTime matches 1.. run loot replace entity @p[tag=Host] inventory.25 loot mwj:setting/common/ok
+loot replace entity @p[tag=Host,predicate=mwj:setting/choose_hide_time/hide_time_not_zero] inventory.25 loot mwj:setting/common/ok

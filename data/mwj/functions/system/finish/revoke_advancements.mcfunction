@@ -9,6 +9,7 @@
 ####################################
 
 ## Revoke advancements
+advancement revoke @a everything
 advancement revoke @a only mwj:be_killed_by_werewolf
 advancement revoke @a only mwj:be_killed_by_madman
 advancement revoke @a only mwj:be_killed_by_nonwolf

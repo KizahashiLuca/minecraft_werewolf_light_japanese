@@ -26,7 +26,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:63,Tags:[\"MWLitem\"]}"
+              "tag":"{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:63,Tags:[\"MWLitem\",\"MWL_diamond_hoe\"]}"
             }
           ]
         }

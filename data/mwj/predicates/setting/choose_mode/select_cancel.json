@@ -1,10 +1,16 @@
-{
-  "condition": "minecraft:inverted",
-  "term": {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Inventory:[{Slot:28b,id:\"minecraft:barrier\",tag:{Tags:[\"MWLsetting\",\"MWL_select_cancel\"]}}]}"
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_mode"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:28b,tag:{Tags:[\"MWLsetting\",\"MWL_select_cancel\"]}}]}"
+      }
     }
   }
-}
+]

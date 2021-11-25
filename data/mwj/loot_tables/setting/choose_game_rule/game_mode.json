@@ -5,17 +5,50 @@
       "rolls":1,
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:map",
-          "functions":[
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/game_mode_normal_wolf",
+          "conditions": [
             {
-              "function":"minecraft:set_name",
-              "name": [
-                ["",{"text":"人狼勝利条件","color":"white","bold":false,"italic":false}]
-              ]
-            },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_game_mode\"]}"
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "GameMode": {
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/game_mode_two_alive",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "GameMode": {
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting/choose_game_rule/game_mode_annihilation",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "GameMode": {
+                  "min": 3,
+                  "max": 3
+                }
+              }
             }
           ]
         }

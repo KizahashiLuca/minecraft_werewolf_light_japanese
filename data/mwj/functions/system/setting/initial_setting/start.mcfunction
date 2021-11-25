@@ -11,14 +11,9 @@
 ## decide Host
 tag @p[sort=nearest] add Host
 
-## Add Scoreboard
+## Count players
 scoreboard objectives add NumOfPlayers dummy
-scoreboard players set #MWL NumOfPlayers 0
-## Count Players
-execute as @a[gamemode=!spectator] run scoreboard players add #MWL NumOfPlayers 1
-## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 15
-
+function mwj:system/common/count_players
 
 ## Detect version
 function mwj:system/setting/initial_setting/detect_version/main

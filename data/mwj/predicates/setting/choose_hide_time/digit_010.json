@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_hide_time"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MWLsetting\",\"MWL_number\"]}}]}"
+      }
+    }
+  }
+]

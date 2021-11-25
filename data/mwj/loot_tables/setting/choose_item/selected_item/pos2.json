@@ -1,0 +1,141 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:item",
+          "name":"minecraft:nether_star",
+          "functions":[
+            {
+              "function":"minecraft:set_name",
+              "name": [
+                ["",{"text":"選択済み","color":"green","bold":false,"italic":false}]
+              ]
+            },{
+              "function":"minecraft:set_nbt",
+              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_selected_item_pos2\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseTotem",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 85,
+                    "max": 85
+                  }
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseSnowball",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 86,
+                    "max": 86
+                  }
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseConduit",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 87,
+                    "max": 87
+                  }
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseSpyglass",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#MWL"
+                    },
+                    "score": "Phase",
+                    "scale": 1
+                  },
+                  "range": {
+                    "min": 88,
+                    "max": 88
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#MWL"
+    },
+    "score": "Phase",
+    "scale": 1
+  },
+  "range": {
+    "min": 11,
+    "max": 11
+  }
+}

@@ -22,7 +22,7 @@
               ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,HideFlags:63,Tags:[\"MWLitem\"]}"
+              "tag":"{Unbreakable:1b,HideFlags:63,Tags:[\"MWLitem\",\"MWL_elytra\"]}"
             }
           ]
         }
