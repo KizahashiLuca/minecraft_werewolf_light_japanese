@@ -8,6 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect Gamemode
-execute if entity @p[tag=Host] run function mwj:system/finish/reject_game
-execute unless entity @p[tag=Host] run function mwj:system/setting_phase/initial_setting/start
+## Reset choice
+scoreboard players operation #MWL HideTime = #MWL PrevHideTime
+
+## Set Hide Time
+function mwj:system/setting_phase/choose_hide_time/selected_set

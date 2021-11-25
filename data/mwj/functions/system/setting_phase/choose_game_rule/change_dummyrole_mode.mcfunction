@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect Gamemode
-execute if entity @p[tag=Host] run function mwj:system/finish/reject_game
-execute unless entity @p[tag=Host] run function mwj:system/setting_phase/initial_setting/start
+## Change Dummyrole Mode
+scoreboard players add #MWL DummyRoleMode 1
+execute if score #MWL DummyRoleMode matches 2.. run scoreboard players set #MWL DummyRoleMode 0
+
+## Set inventory
+function mwj:system/setting_phase/choose_game_rule/set_inventory

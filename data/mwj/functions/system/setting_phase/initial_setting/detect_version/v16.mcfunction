@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect Gamemode
-execute if entity @p[tag=Host] run function mwj:system/finish/reject_game
-execute unless entity @p[tag=Host] run function mwj:system/setting_phase/initial_setting/start
+## Minecraft 1.16
+loot replace entity @p[tag=Host] inventory.0 loot mwj:setting_phase/detect_version/soul_lantern
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:soul_lantern",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 16

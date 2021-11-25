@@ -1,0 +1,76 @@
+{
+  "type": "generic",
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting_phase/choose_role/add_role/roles/fanatic",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Phase",
+                "scale": 1
+              },
+              "range": {
+                "min": 95,
+                "max": 95
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting_phase/choose_role/add_role/roles/lycanthrope",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Phase",
+                "scale": 1
+              },
+              "range": {
+                "min": 96,
+                "max": 96
+              }
+            }
+          ]
+        },
+        {
+          "type":"minecraft:loot_table",
+          "name": "mwj:setting_phase/choose_role/add_role/roles/medium",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Phase",
+                "scale": 1
+              },
+              "range": {
+                "min": 97,
+                "max": 97
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect Gamemode
-execute if entity @p[tag=Host] run function mwj:system/finish/reject_game
-execute unless entity @p[tag=Host] run function mwj:system/setting_phase/initial_setting/start
+## Set Next Page
+scoreboard players add #MWL Phase 1
+execute if score #MWL Phase matches 89 run scoreboard players set #MWL Phase 85
+
+## Set inventory
+function mwj:system/setting_phase/choose_item/common/set_inventory

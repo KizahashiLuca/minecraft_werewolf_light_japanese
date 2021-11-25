@@ -8,6 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect Gamemode
-execute if entity @p[tag=Host] run function mwj:system/finish/reject_game
-execute unless entity @p[tag=Host] run function mwj:system/setting_phase/initial_setting/start
+## Add 1 percent
+scoreboard players add #MWL GlowTime 1
+execute if score #MWL GlowTime matches 101.. run scoreboard players set #MWL GlowTime 0
+
+## Set inventory
+function mwj:system/setting_phase/choose_glow_time/set_inventory

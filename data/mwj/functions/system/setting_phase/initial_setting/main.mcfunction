@@ -8,24 +8,11 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Send a Common Message
-tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a [""]
-
-## teleport to alive players
-execute if entity @p[gamemode=adventure] run tp @a[team=Player,scores={DeathCount=1..2}] @p[gamemode=adventure,sort=random]
+## Change gamerules
+function mwj:system/setting_phase/initial_setting/set_gamerules
 
 ## Remove storages
 function mwj:system/finish/remove_storages
-
-## Reset world
-function mwj:system/finish/reset_world
-
-## Reset scoreboards
-function mwj:system/setting_phase/choose_mode/reset_scoreboards
-
-## Remove scoreboards
-function mwj:system/finish/remove_scoreboards
 
 ## Remove bossbars
 function mwj:system/finish/remove_bossbars
@@ -34,7 +21,6 @@ function mwj:system/finish/remove_bossbars
 function mwj:system/finish/remove_entities
 
 ## Remove tags
-tag @a remove Host
 function mwj:system/finish/remove_tags
 
 ## Remove teams
@@ -43,5 +29,19 @@ function mwj:system/finish/remove_teams
 ## Revoke advancements
 function mwj:system/finish/revoke_advancements
 
-## Reset gamerules
-function mwj:system/finish/reset_gamerules
+## Set Team
+function mwj:system/setting_phase/initial_setting/set_teams
+
+## Set Scoreboard
+function mwj:system/setting_phase/initial_setting/set_scoreboards
+
+## Set Role Number
+function mwj:system/common/roles/reset_roles
+function mwj:system/common/roles/set_role_number
+function mwj:system/common/roles/set_prev_roles
+
+## Set Title
+function mwj:system/setting_phase/initial_setting/set_messages
+
+## Set Inventory
+function mwj:system/setting_phase/choose_mode/change_to

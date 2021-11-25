@@ -8,6 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Detect Gamemode
-execute if entity @p[tag=Host] run function mwj:system/finish/reject_game
-execute unless entity @p[tag=Host] run function mwj:system/setting_phase/initial_setting/start
+## Minecraft 1.17
+loot replace entity @p[tag=Host] inventory.0 loot mwj:setting_phase/detect_version/copper_ingot
+execute if entity @p[tag=Host,nbt={Inventory:[{Slot:9b,id:"minecraft:copper_ingot",Count:1b,tag:{Tags:["Ver"]}}]}] run scoreboard players set #MWL Version 17
