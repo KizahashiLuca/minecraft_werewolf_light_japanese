@@ -9,7 +9,7 @@
 ####################################
 
 ## Give milk bucket
-execute as @s[advancements={mwj:killed_player=true},scores={2ndRoleGiven=0,2ndRoleDone=0}] run function mwj:system/game_phase/2ndrole/drunk/give_milk
+give @s minecraft:milk_bucket
 
-## Consume milk
-execute as @s[scores={2ndRoleDrunk=1..,2ndRoleGiven=1,2ndRoleDone=0}] run function mwj:system/game_phase/2ndrole/drunk/tell_roles/main
+## Set scoreboard
+scoreboard players set @s 2ndRoleGiven 1

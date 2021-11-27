@@ -12,7 +12,7 @@
 execute as @s[scores={DeathCount=1}] run function mwj:system/game_phase/2ndrole/ghost/first_death
 
 ## Send message
-title @s[scores={RespawnTime=1}] title ["",{"text":"あなたはここに","color":"white"},{"text":"囚われて","color":"dark_purple","bold":true},{"text":"いる","color":"white"}]
+title @s[scores={DeathCount=1..,RespawnTime=1}] title ["",{"text":"あなたはここに","color":"white"},{"text":"囚われて","color":"dark_purple","bold":true},{"text":"いる","color":"white"}]
 
 ## Change adventure for the Dead
 gamemode adventure @s[scores={DeathCount=2..}]

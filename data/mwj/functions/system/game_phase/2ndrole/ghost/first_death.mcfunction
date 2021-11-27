@@ -16,5 +16,4 @@ tellraw @s ["",{"text":"----------------------------------","color":"white"}]
 tellraw @s [""]
 
 ## Set spawnpoint
-spawnpoint @s ~ ~ ~
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["GhostSpawn"],NoGravity:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:100000000}

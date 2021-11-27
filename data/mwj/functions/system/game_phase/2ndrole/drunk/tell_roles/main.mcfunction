@@ -11,6 +11,7 @@
 ## Reset Scoreboard
 scoreboard players reset @a RoleOfNum
 scoreboard players set #MWL MasonPair 1
+scoreboard players set @s 2ndRoleDone 1
 
 ## Send message
 tellraw @s [""]
@@ -50,6 +51,3 @@ tellraw @s[scores={CurrentRole=24}] ["",{"text":"  仲間の共有者 : ","color
 execute as @s[scores={CurrentRole=24}] run function mwj:system/game_phase/settings/tell_roles/pairs/mason
 tellraw @s ["",{"text":"----------------------------------","color":"white"}]
 tellraw @s [""]
-
-## Revoke advancement
-advancement revoke @s only mwj:drink_milk

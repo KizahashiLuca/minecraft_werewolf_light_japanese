@@ -102,6 +102,9 @@ scoreboard objectives add SelectRolePos5 dummy
 scoreboard objectives add DummyRole dummy
 ## Add Variables for Setting 2nd Role
 scoreboard objectives add 2ndRole dummy
+scoreboard objectives add 2ndRoleDone dummy
+scoreboard objectives add 2ndRoleGiven dummy
+scoreboard objectives add 2ndRoleDrunk minecraft.used:minecraft.milk_bucket
 ## Add Variables for Setting Hide Time
 scoreboard objectives add HideTime dummy
 scoreboard objectives add PrevHideTime dummy
