@@ -27,6 +27,9 @@ gamemode adventure @a[gamemode=!spectator]
 ## Clear effects
 effect clear @a[gamemode=!spectator]
 
+## Set effect
+effect give @a[team=Player] minecraft:resistance 1000000 4 true
+
 ## Clear recipes
 recipe take @a *
 
