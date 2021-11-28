@@ -11,9 +11,6 @@
 ## Sound
 execute as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 1 1
 
-## Set scoreboards
-function mwj:system/game_phase/settings/set_scoreboards
-
 ## Revoke advancements
 function mwj:system/finish/revoke_advancements
 
@@ -27,6 +24,10 @@ function mwj:system/common/roles/count_number_of_roles
 scoreboard players operation #MWL NumOfMasonPair = #MWL NumOfMasons
 scoreboard players set #MWL TempVariable 2
 scoreboard players operation #MWL NumOfMasonPair /= #MWL TempVariable
+scoreboard players operation #MWL NumOfVillagers += #MWL NumOfRestRoles
+
+## Set scoreboards
+function mwj:system/game_phase/settings/set_scoreboards
 
 ## Give items
 function mwj:system/game_phase/settings/give_items/main

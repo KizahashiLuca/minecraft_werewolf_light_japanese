@@ -21,6 +21,7 @@ function mwj:system/common/roles/count_number_of_roles
 scoreboard players operation #MWL NumOfMasonPair = #MWL NumOfMasons
 scoreboard players set #MWL TempVariable 2
 scoreboard players operation #MWL NumOfMasonPair /= #MWL TempVariable
+scoreboard players operation #MWL NumOfVillagers += #MWL NumOfRestRoles
 
 ## Set messages
 function mwj:system/common/message/change_to
