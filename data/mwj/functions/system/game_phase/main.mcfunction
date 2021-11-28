@@ -39,7 +39,7 @@ execute if score #MWL ChooseSnowball matches 1 run function mwj:system/game_phas
 execute if score #MWL ChooseTrident matches 1 run function mwj:system/game_phase/trident/main
 
 ## Detect conduit
-execute if predicate mwj:game_phase/honey_block/main run function mwj:system/game_phase/conduit/main
+execute if predicate mwj:game_phase/conduit/main run function mwj:system/game_phase/conduit/main
 
 ## Detect honey block
 execute if predicate mwj:game_phase/honey_block/main run function mwj:system/game_phase/honey_block/main
