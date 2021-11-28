@@ -23,4 +23,4 @@ execute unless entity @e[type=minecraft:area_effect_cloud,tag=GhostSpawn,distanc
 effect give @s[scores={DeathCount=2..}] minecraft:weakness 1000000 255 true
 
 ## Set inventory
-execute if data entity @s[scores={DeathCount=2..}] Inventory run function mwj:system/game_phase/2ndrole/ghost/set_inventory/main
+execute if data entity @s[scores={DeathCount=2..}] Inventory run function mwj:system/game_phase/common/set_inventory/main

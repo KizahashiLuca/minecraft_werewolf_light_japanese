@@ -48,9 +48,9 @@ execute if score #MWL DummyRole matches 13 run tellraw @a ["",{"text":"    ","co
 execute if score #MWL DummyRole matches 14 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"赤ずきん","color":"gold"},{"text":" ： 1人","color":"white"}]
 
 ## Send a display of dummy role
-execute if score #MWL 2ndRole matches 1..2 run tellraw @a ["",{"text":"  二次役職は以下のプレイヤーでした。","color":"white"}]
-execute if score #MWL 2ndRole matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"地 縛 霊","color":"dark_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={2ndRole=1}]","color":"white"}]
-execute if score #MWL 2ndRole matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"酔っ払い","color":"green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={2ndRole=2}]","color":"white"}]
+execute if score #MWL 2ndRoleMode matches 1..2 run tellraw @a ["",{"text":"  二次役職は以下のプレイヤーでした。","color":"white"}]
+execute if score #MWL 2ndRoleMode matches 1 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"地 縛 霊","color":"dark_purple"},{"text":" ： ","color":"white"},{"selector":"@a[scores={2ndRole=1}]","color":"white"}]
+execute if score #MWL 2ndRoleMode matches 2 run tellraw @a ["",{"text":"    ","color":"white"},{"text":"酔っ払い","color":"green"},{"text":" ： ","color":"white"},{"selector":"@a[scores={2ndRole=2}]","color":"white"}]
 
 ## Send a Display of Survivors
 tellraw @a [""]

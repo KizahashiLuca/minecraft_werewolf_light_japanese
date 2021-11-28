@@ -40,8 +40,6 @@ scoreboard players set #MWL RandomAnswer 0
 scoreboard players set #MWL RandomModder 2147483647
 scoreboard players set #MWL RandomMultiplier 48271
 execute if score #MWL DummyRoleMode matches 1 run function mwj:system/game_phase/settings/random_generator/initialize
-## Set Variables for Setting 2nd Role
-scoreboard players set @a 2ndRoleDone 0
 #### Set Variables for Redstone Torch
 scoreboard players reset @a DropTorch
 scoreboard players reset @a RemovedTorch
