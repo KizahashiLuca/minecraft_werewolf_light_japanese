@@ -8,9 +8,6 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Change gamerules
-function mwj:system/setting_phase/initial_setting/set_gamerules
-
 ## Remove storages
 function mwj:system/finish/remove_storages
 
@@ -28,6 +25,9 @@ function mwj:system/finish/remove_teams
 
 ## Revoke advancements
 function mwj:system/finish/revoke_advancements
+
+## Change gamerules
+function mwj:system/setting_phase/initial_setting/set_gamerules
 
 ## Set Team
 function mwj:system/setting_phase/initial_setting/set_teams
