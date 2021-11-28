@@ -103,6 +103,7 @@ scoreboard players operation #MWL PlayerRole = #MWL NumOfCats
 function mwj:system/game_phase/settings/set_roles/roles/cat
 
 ## Set Variables for Mason Number
+scoreboard players set @a[scores={CurrentRole=24}] MasonPair 0
 scoreboard players set #MWL MasonPair 1
 ## Decide Mason Pair
 scoreboard players operation #MWL PlayerRole = #MWL NumOfMasonPair
