@@ -16,7 +16,7 @@ scoreboard objectives add NumOfPlayers dummy
 function mwj:system/common/count_players
 
 ## Detect version
-function mwj:system/setting_phase/initial_setting/detect_version/main
+function mwj:system/setting_phase/initial_setting/detect_version
 
 ## Stop the game
 execute if score #MWL NumOfPlayers matches ..2 run function mwj:system/finish/error_game_player

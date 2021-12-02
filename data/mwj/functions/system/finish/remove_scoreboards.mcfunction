@@ -9,6 +9,7 @@
 ####################################
 
 ## Remove Variables for Game
+scoreboard objectives remove DataVersion
 scoreboard objectives remove Version
 scoreboard objectives remove Phase
 scoreboard objectives remove NumOfPlayers
