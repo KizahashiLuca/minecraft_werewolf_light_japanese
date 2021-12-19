@@ -8,13 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Add scoreboard
-scoreboard objectives add DataVersion dummy
-scoreboard objectives add Version dummy
-
 ## Set scoreboard - Minecraft 1.13
-scoreboard players set #MWL DataVersion 1444
-scoreboard players set #MWL Version 13
+execute store result score #MWL DataVersion run data get entity @p DataVersion 1.0
 execute if predicate mwj:version/1.13 run scoreboard players set #MWL Version 13
 execute if predicate mwj:version/1.14 run scoreboard players set #MWL Version 14
 execute if predicate mwj:version/1.15 run scoreboard players set #MWL Version 15

@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/initial_setting/required_players"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/initial_setting/unsupported_version"
+  }
+]

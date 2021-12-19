@@ -12,6 +12,6 @@
 #### Put Tag
 tag @s add SeeredFox
 #### Store Sage Number
-scoreboard players operation @s KilledBySeer = @p[scores={CurrentRole=27,RoleOfNum=1}] NumOfPlayers
+scoreboard players operation @s KilledBySeer = @p[scores={CurrentRole=27,TagOfRoleWork=1}] NumOfPlayers
 #### Deal Instant Damage to Fox
 effect give @s minecraft:instant_damage 1 10 true

@@ -10,10 +10,10 @@
 
 ## Title Game Start
 title @a times 5 40 20
-execute if score #MWL Phase matches 80 run title @a title ["",{"text":"潜伏時間開始","color":"red","bold":true}]
-execute if score #MWL Phase matches 80 run title @a subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
-execute if score #MWL Phase matches 10 run title @a title ["",{"text":"ゲーム開始","color":"red","bold":true}]
-execute if score #MWL Phase matches 10 run title @a subtitle ["",{"text":"Game Start","color":"white","bold":true}]
+title @a[predicate=mwj:phase/choose_mode] title ["",{"text":"潜伏時間開始","color":"red","bold":true}]
+title @a[predicate=mwj:phase/choose_mode] subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
+title @a[predicate=mwj:phase/hide_phase] title ["",{"text":"ゲーム開始","color":"red","bold":true}]
+title @a[predicate=mwj:phase/hide_phase] subtitle ["",{"text":"Game Start","color":"white","bold":true}]
 
 ## Set scoreboard
 scoreboard players set #MWL MasonPair 1
@@ -22,21 +22,21 @@ scoreboard players set #MWL MasonPair 1
 tellraw @a [""]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-execute if score #MWL Phase matches 80 run tellraw @a ["",{"text":"  - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
-execute if score #MWL Phase matches 10 run tellraw @a ["",{"text":"  - ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
+tellraw @a[predicate=mwj:phase/choose_mode] ["",{"text":"  - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
+tellraw @a[predicate=mwj:phase/hide_phase] ["",{"text":"  - ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}}]
 
 tellraw @a [""]
 tellraw @a ["",{"text":"  ゲームモードは、 以下のとおりです。","color":"white"}]
-execute if score #MWL DummyRoleMode matches 0 run function mwj:system/common/message/dummyrole_not_available
-execute if score #MWL DummyRoleMode matches 1 run function mwj:system/common/message/dummyrole_available
-execute if score #MWL 2ndRoleMode matches 0 run function mwj:system/common/message/2ndrole_off
-execute if score #MWL 2ndRoleMode matches 1 run function mwj:system/common/message/2ndrole_ghost
-execute if score #MWL 2ndRoleMode matches 2 run function mwj:system/common/message/2ndrole_drunk
-execute if score #MWL GameMode matches 1 run function mwj:system/common/message/gamemode_normal_werewolf
-execute if score #MWL GameMode matches 2 run function mwj:system/common/message/gamemode_two_alive
-execute if score #MWL GameMode matches 3 run function mwj:system/common/message/gamemode_annihilation
+execute if predicate mwj:game_rule/dummyrole_none run function mwj:system/common/message/dummyrole_not_available
+execute if predicate mwj:game_rule/dummyrole_exist run function mwj:system/common/message/dummyrole_available
+execute if predicate mwj:game_rule/secondrole_none run function mwj:system/common/message/2ndrole_off
+execute if predicate mwj:game_rule/secondrole_ghost run function mwj:system/common/message/2ndrole_ghost
+execute if predicate mwj:game_rule/secondrole_drunk run function mwj:system/common/message/2ndrole_drunk
+execute if predicate mwj:game_rule/gamemode_normal run function mwj:system/common/message/gamemode_normal_werewolf
+execute if predicate mwj:game_rule/gamemode_two_alive run function mwj:system/common/message/gamemode_two_alive
+execute if predicate mwj:game_rule/gamemode_annihilation run function mwj:system/common/message/gamemode_annihilation
 
 tellraw @a ["",{"text":"    制限時間 : ","color":"white"},{"score":{"name":"#MWL","objective":"GameTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true}]
 tellraw @a ["",{"text":"      残り時間 ","color":"white"},{"score":{"name":"#MWL","objective":"GlowTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員が発光","color":"white"}]
@@ -49,6 +49,6 @@ tellraw @a [""]
 tellraw @a ["",{"text":"  特殊アイテム内訳 : ","color":"white"}]
 function mwj:system/common/message/set_items
 
-execute if score #MWL Phase matches 10 run function mwj:system/game_phase/settings/tell_roles/main
+execute if predicate mwj:phase/hide_phase run function mwj:system/game_phase/settings/tell_roles/main
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]

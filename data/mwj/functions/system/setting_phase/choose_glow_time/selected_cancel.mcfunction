@@ -11,5 +11,5 @@
 ## Reset choice
 scoreboard players operation #MWL GlowTime = #MWL PrevGlowTime
 
-## Set Glow Time
+## Set glow time
 function mwj:system/setting_phase/choose_glow_time/selected_set

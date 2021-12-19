@@ -19,4 +19,4 @@ execute if score #MWL Tick matches ..-1 run scoreboard players set #MWL Tick 19
 scoreboard players set #MWL BossbarVal 20
 scoreboard players operation #MWL BossbarVal *= #MWL Second
 scoreboard players operation #MWL BossbarVal += #MWL Tick
-execute store result bossbar minecraft:bossbar value run scoreboard players get #MWL BossbarVal
+execute store result bossbar mwj:bossbar value run scoreboard players get #MWL BossbarVal

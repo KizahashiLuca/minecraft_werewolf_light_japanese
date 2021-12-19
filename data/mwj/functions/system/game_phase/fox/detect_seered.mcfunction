@@ -9,7 +9,7 @@
 ####################################
 
 ## Detect Wolf Killed
-scoreboard players set @s[scores={RoleOfNum=1}] DeathCount 1
+scoreboard players set @s[scores={TagOfRoleWork=1}] DeathCount 1
 
 ## Tell Fox by Seer
 tag @s add DetectDeath
@@ -28,8 +28,8 @@ tag @a remove DetectDeath
 scoreboard players set @s[scores={DeathCount=1}] KillLogOfFox 1
 
 ## Detect Death
-execute as @s[scores={DeathCount=1,RoleOfNum=1}] run scoreboard players remove #MWL PURPLE 1
-scoreboard players set @s[scores={RoleOfNum=1}] RoleOfNum 2
+execute as @s[scores={DeathCount=1,TagOfRoleWork=1}] run scoreboard players remove #MWL PURPLE 1
+scoreboard players set @s[scores={TagOfRoleWork=1}] TagOfRoleWork 2
 
 ## Remove Tag
 tag @s remove SeeredFox

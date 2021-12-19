@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#MWL"
+    },
+    "score": "ChooseSpyglass",
+    "scale": 1
+  },
+  "range": {
+    "min": 1,
+    "max": 1
+  }
+}

@@ -11,37 +11,37 @@
 ## Give Common Items
 execute as @a[team=Player] run loot replace entity @s hotbar.0 3 loot mwj:item/common
 
-## Set TempVariable (Kind of Items)
-scoreboard players set #MWL TempVariable 0
-execute if score #MWL ChooseStick matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseTotem matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseDeathPot matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChoosePearl matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseHoe matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseElytra matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseSnowball matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseInvisPot matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseSpeedPot matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseJumpPot matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseTrident matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseConduit matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseCrossbow matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseHoneyBlock matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseLantern matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseVines matches 1 run scoreboard players add #MWL TempVariable 1
-execute if score #MWL ChooseSpyglass matches 1 run scoreboard players add #MWL TempVariable 1
+## Set KindOfItems (Kind of Items)
+scoreboard players set #MWL KindOfItems 0
+execute if predicate mwj:setting_phase/choose_item/chosen_item/stick run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/totem_of_undying run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/potion_death run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/ender_pearl run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/diamond_hoe run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/elytra run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/snowball run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/potion_invisible run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/potion_speed run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/potion_jump run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/trident run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/conduit run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/crossbow run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/honey_block run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/lantern run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/twisting_vines run scoreboard players add #MWL KindOfItems 1
+execute if predicate mwj:setting_phase/choose_item/chosen_item/spyglass run scoreboard players add #MWL KindOfItems 1
 ## Calculate ones digit
-scoreboard players operation #MWL ONES_DIGIT = #MWL NumOfPlayers
-scoreboard players remove #MWL ONES_DIGIT 1
-scoreboard players operation #MWL ONES_DIGIT %= #MWL TempVariable
+scoreboard players operation #MWL KindsOnesDigit = #MWL NumOfPlayers
+scoreboard players remove #MWL KindsOnesDigit 1
+scoreboard players operation #MWL KindsOnesDigit %= #MWL KindOfItems
 ## Calculate tens digit
-scoreboard players operation #MWL TENS_DIGIT = #MWL NumOfPlayers
-scoreboard players remove #MWL TENS_DIGIT 1
-scoreboard players operation #MWL TENS_DIGIT /= #MWL TempVariable
+scoreboard players operation #MWL KindsTensDigit = #MWL NumOfPlayers
+scoreboard players remove #MWL KindsTensDigit 1
+scoreboard players operation #MWL KindsTensDigit /= #MWL KindOfItems
 
 ## Give Special Items
-execute if score #MWL TENS_DIGIT matches 1.. as @a[team=Player] run function mwj:system/game_phase/settings/give_items/branch/branch_tens_digit
-execute if score #MWL TENS_DIGIT matches 0 run function mwj:system/game_phase/settings/give_items/branch/branch_ones_digit
+execute if score #MWL KindsTensDigit matches 1.. as @a[team=Player] run function mwj:system/game_phase/settings/give_items/branch/branch_tens_digit
+execute if score #MWL KindsTensDigit matches 0 run function mwj:system/game_phase/settings/give_items/branch/branch_ones_digit
 
 ## Remove tag
 tag @a remove MWLitem

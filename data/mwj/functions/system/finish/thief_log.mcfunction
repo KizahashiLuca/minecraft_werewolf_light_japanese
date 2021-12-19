@@ -10,7 +10,7 @@
 
 ## Set flag
 execute as @a[scores={PrevRole=35}] if score @s NumberOfStolen = #MWL NumberOfStolen run scoreboard players set @s FlagOfThiefLog 1
-scoreboard players operation @p[scores={FlagOfThiefLog=1}] ThiefStealTick *= #MWL TempVariable
+scoreboard players operation @p[scores={FlagOfThiefLog=1}] ThiefStealTick *= #MWL Num00005
 
 ## 1000 sec. -
 execute as @a[team=Player] if score @s NumOfPlayers = @p[scores={FlagOfThiefLog=1,ThiefStealSecond=1000..,ThiefStealTick=0..5}] TargetOfStolen run tellraw @a ["",{"text":"    ","color":"white"},{"score":{"name":"@p[scores={FlagOfThiefLog=1}]","objective":"ThiefStealSecond"},"color":"white"},{"text":".0","color":"white"},{"score":{"name":"@p[scores={FlagOfThiefLog=1}]","objective":"ThiefStealTick"},"color":"white"},{"text":" sec.  :  ","color":"white"},{"selector":"@p[scores={FlagOfThiefLog=1}]","color":"red"},{"text":" --> ","color":"white"},{"selector":"@s","color":"green"}]

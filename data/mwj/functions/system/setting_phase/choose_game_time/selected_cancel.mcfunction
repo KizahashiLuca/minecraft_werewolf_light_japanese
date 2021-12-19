@@ -11,5 +11,5 @@
 ## Reset choice
 scoreboard players operation #MWL GameTime = #MWL PrevGameTime
 
-## Set Game Time
+## Set game time
 function mwj:system/setting_phase/choose_game_time/selected_set

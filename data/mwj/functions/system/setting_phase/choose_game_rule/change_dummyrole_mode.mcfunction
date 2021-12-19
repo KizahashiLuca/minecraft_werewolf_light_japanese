@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Change Dummyrole Mode
+## Change dummyrole mode
 scoreboard players add #MWL DummyRoleMode 1
-execute if score #MWL DummyRoleMode matches 2.. run scoreboard players set #MWL DummyRoleMode 0
+execute if predicate mwj:setting_phase/choose_game_rule/dummyrole_mode_more_than_limit run scoreboard players set #MWL DummyRoleMode 0
 
 ## Set inventory
-function mwj:system/setting_phase/choose_game_rule/set_inventory
+function mwj:system/setting_phase/choose_game_rule/change_to

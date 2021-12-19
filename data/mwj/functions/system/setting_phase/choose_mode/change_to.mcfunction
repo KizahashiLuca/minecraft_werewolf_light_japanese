@@ -8,8 +8,24 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set Inventory
-function mwj:system/setting_phase/choose_mode/set_inventory
+## Clear inventory
+clear @p[predicate=mwj:player/host]
 
-## Change Mode
+## Recount players
+function mwj:system/common/roles/recount_roles/main
+
+## Count number of roles
+function mwj:system/common/roles/count_number_of_roles
+
+## Replace inventory
+loot replace entity @p[predicate=mwj:player/host] inventory.11 loot mwj:setting_phase/choose_mode/choose_hide_time
+loot replace entity @p[predicate=mwj:player/host] inventory.12 loot mwj:setting_phase/choose_mode/choose_glow_time
+loot replace entity @p[predicate=mwj:player/host] inventory.13 loot mwj:setting_phase/choose_mode/choose_game_time
+loot replace entity @p[predicate=mwj:player/host] inventory.14 loot mwj:setting_phase/choose_mode/choose_game_rule
+loot replace entity @p[predicate=mwj:player/host] inventory.15 loot mwj:setting_phase/choose_mode/choose_item
+loot replace entity @p[predicate=mwj:player/host] inventory.17 loot mwj:setting_phase/choose_mode/choose_role
+loot replace entity @p[predicate=mwj:player/host] inventory.19 loot mwj:setting_phase/common/cancel
+loot replace entity @p[predicate=mwj:setting_phase/choose_mode/set_ok/main] inventory.25 loot mwj:setting_phase/common/ok
+
+## Change phase
 scoreboard players set #MWL Phase 80

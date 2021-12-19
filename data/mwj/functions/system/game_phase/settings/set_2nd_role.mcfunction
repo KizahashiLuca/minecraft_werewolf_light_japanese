@@ -9,8 +9,8 @@
 ####################################
 
 ## Set scoreboard
-scoreboard players set @a 2ndRole 0
+scoreboard players set @a Set2ndRole 0
 
 ## Set 2nd role
-execute if score #MWL 2ndRoleMode matches 1 run scoreboard players set @p[team=Player,scores={2ndRole=0},sort=random] 2ndRole 1
-execute if score #MWL 2ndRoleMode matches 2 run scoreboard players set @p[team=Player,scores={2ndRole=0},sort=random] 2ndRole 2
+execute if predicate mwj:game_rule/secondrole_ghost run scoreboard players set @p[team=Player,scores={Set2ndRole=0},sort=random] Set2ndRole 1
+execute if predicate mwj:game_rule/secondrole_drunk run scoreboard players set @p[team=Player,scores={Set2ndRole=0},sort=random] Set2ndRole 2

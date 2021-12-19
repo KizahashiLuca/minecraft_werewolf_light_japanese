@@ -9,14 +9,15 @@
 ####################################
 
 ## Quit the game
-execute if score #MWL Phase matches 0..100 run tellraw @a [""]
-execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"  - ","color":"white"},{"text":"Aborted","color":"red","bold":true}]
-execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-execute if score #MWL Phase matches 0..100 run tellraw @a ["",{"text":"  ゲームが中断されました。","color":"white"}]
+tellraw @a[predicate=mwj:phase/on_game] [""]
+tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
+tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"  - ","color":"white"},{"text":"Aborted","color":"red","bold":true}]
+tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"  ゲームが中断されました。","color":"white"}]
 
 ## Quit Display
-execute if score #MWL Phase matches 0..10 run function mwj:system/finish/exit_game
-execute if score #MWL Phase matches 11 run function mwj:system/finish/end_game
-execute if score #MWL Phase matches 80..100 run function mwj:system/finish/exit_game
+execute if predicate mwj:phase/hide_phase run function mwj:system/finish/exit_game
+execute if predicate mwj:phase/game_phase run function mwj:system/finish/end_game
+execute if predicate mwj:phase/setting_phase run function mwj:system/finish/exit_game
+execute if predicate mwj:phase/exit_game run function mwj:system/finish/exit_game

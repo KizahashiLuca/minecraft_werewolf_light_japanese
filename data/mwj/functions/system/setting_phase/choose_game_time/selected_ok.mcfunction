@@ -8,8 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set Prev choice
+## Set preview choice
 scoreboard players operation #MWL PrevGameTime = #MWL GameTime
 
-## Set Game Time
+## Set game time
 function mwj:system/setting_phase/choose_game_time/selected_set

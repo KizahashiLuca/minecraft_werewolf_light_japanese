@@ -10,7 +10,7 @@
 
 ## Set Prev Page
 scoreboard players remove #MWL Phase 1
-execute if score #MWL Phase matches 94 run scoreboard players set #MWL Phase 98
+execute if predicate mwj:phase/choose_role/page0 run scoreboard players set #MWL Phase 98
 
 ## Set inventory
 function mwj:system/setting_phase/choose_role/common/set_inventory

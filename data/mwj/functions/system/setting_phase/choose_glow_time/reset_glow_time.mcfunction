@@ -8,8 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Reset choice
+## Set 0 percent
 scoreboard players set #MWL GlowTime 0
 
 ## Set inventory
-function mwj:system/setting_phase/choose_glow_time/set_inventory
+function mwj:system/setting_phase/choose_glow_time/change_to

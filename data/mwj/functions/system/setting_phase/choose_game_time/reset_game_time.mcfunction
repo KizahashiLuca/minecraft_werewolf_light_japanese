@@ -12,4 +12,4 @@
 scoreboard players set #MWL GameTime 0
 
 ## Set inventory
-function mwj:system/setting_phase/choose_game_time/set_inventory
+function mwj:system/setting_phase/choose_game_time/change_to

@@ -10,5 +10,5 @@
 
 ## Calculate Scoreboard
 scoreboard players operation @s TargetOfRole = @s TurnPageNum
-scoreboard players operation @s TargetOfRole *= #MWL 010
+scoreboard players operation @s TargetOfRole *= #MWL Num00010
 scoreboard players operation @s TargetOfRole += @s RoleTrigger

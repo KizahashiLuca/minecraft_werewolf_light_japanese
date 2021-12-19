@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Change Game Mode
+## Change game mode
 scoreboard players add #MWL GameMode 1
-execute if score #MWL GameMode matches 4.. run scoreboard players set #MWL GameMode 1
+execute if predicate mwj:setting_phase/choose_game_rule/game_mode_more_than_limit run scoreboard players set #MWL GameMode 1
 
 ## Set inventory
-function mwj:system/setting_phase/choose_game_rule/set_inventory
+function mwj:system/setting_phase/choose_game_rule/change_to

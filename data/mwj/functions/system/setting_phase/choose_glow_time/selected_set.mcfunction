@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Send a Message Glow Time to All Players
+## Send messages
 tellraw @a [""]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  発光時間が、","color":"white"},{"text":"潜伏時間の残り ","color":"white"},{"score":{"name":"#MWL","objective":"GlowTime"},"color":"green","bold":true},{"text":"%","color":"green","bold":true},{"text":" の時に","color":"white"}]
@@ -16,5 +16,5 @@ tellraw @a ["",{"text":"  設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
 
-## Change to Choose Mode
+## Change to choose mode
 function mwj:system/setting_phase/choose_mode/change_to

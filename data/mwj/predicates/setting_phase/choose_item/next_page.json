@@ -1,16 +1,14 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_item"
+    "name": "mwj:phase/choose_item/master"
   },
   {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Inventory:[{Slot:26b,tag:{Tags:[\"MWLsetting\",\"MWL_right\"]}}]}"
-      }
-    }
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/common/next_page"
   }
 ]

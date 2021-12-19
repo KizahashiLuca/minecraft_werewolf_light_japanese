@@ -8,7 +8,7 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Change Gamerules
+## Set gamerules
 gamerule announceAdvancements false
 gamerule commandBlockOutput false
 gamerule doFireTick false
@@ -20,18 +20,3 @@ gamerule showDeathMessages false
 
 ## Set difficulty
 difficulty peaceful
-
-## Set gamemode
-gamemode adventure @a[gamemode=!spectator]
-
-## Clear effects
-effect clear @a[gamemode=!spectator]
-
-## Set effect
-effect give @a[gamemode=!spectator] minecraft:resistance 1000000 4 true
-
-## Clear recipes
-recipe take @a *
-
-## Clear inventory
-clear @a

@@ -4,7 +4,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Inventory:[{Slot:28b,id:\"minecraft:barrier\",tag:{Tags:[\"MWLsetting\",\"MWL_cancel\"]}}]}"
+      "nbt": "{Inventory:[{Slot:28b,tag:{Tags:[\"MWLsetting\",\"MWL_cancel\"]}}]}"
     }
   }
 }

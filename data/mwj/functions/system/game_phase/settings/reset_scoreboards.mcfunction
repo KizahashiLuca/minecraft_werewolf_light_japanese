@@ -26,10 +26,10 @@ scoreboard players enable @a[scores={CurrentRole=25..35}] TurnPageRight
 scoreboard players enable @a[scores={CurrentRole=25..35}] TurnPageLeft
 scoreboard players enable @a[scores={CurrentRole=25..35}] RoleTrigger
 #### Drunk
-scoreboard players set @a[scores={2ndRole=0..1}] 2ndRoleDone 1
-scoreboard players set @a[scores={2ndRole=2}] 2ndRoleDone 0
-scoreboard players set @a[scores={2ndRole=2}] 2ndRoleGiven 0
-scoreboard players set @a[scores={2ndRole=2}] 2ndRoleDrunk 0
+scoreboard players set @a[scores={Set2ndRole=0..1}] 2ndRoleDone 1
+scoreboard players set @a[scores={Set2ndRole=2}] 2ndRoleDone 0
+scoreboard players set @a[scores={Set2ndRole=2}] 2ndRoleGiven 0
+scoreboard players set @a[scores={Set2ndRole=2}] 2ndRoleDrunk 0
 
 ## Set Variables for Game
 execute as @a[scores={CurrentRole=1..4}] run scoreboard players add #MWL BLACK 1

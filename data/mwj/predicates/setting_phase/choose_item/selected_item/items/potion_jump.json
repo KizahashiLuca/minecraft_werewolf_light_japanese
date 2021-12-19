@@ -1,35 +1,11 @@
 [
   {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#MWL"
-      },
-      "score": "Phase",
-      "scale": 1
-    },
-    "range": {
-      "min": 86,
-      "max": 86
-    }
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_item/page2"
   },
   {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#MWL"
-      },
-      "score": "ChooseJumpPot",
-      "scale": 1
-    },
-    "range": {
-      "min": 1,
-      "max": 1
-    }
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/choose_item/chosen_item/potion_jump"
   },
   {
     "condition": "minecraft:inverted",

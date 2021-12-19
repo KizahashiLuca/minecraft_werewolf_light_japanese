@@ -21,9 +21,6 @@ function mwj:system/finish/remove_storages
 ## Reset world
 function mwj:system/finish/reset_world
 
-## Reset scoreboards
-function mwj:system/setting_phase/choose_mode/reset_scoreboards
-
 ## Remove scoreboards
 function mwj:system/finish/remove_scoreboards
 

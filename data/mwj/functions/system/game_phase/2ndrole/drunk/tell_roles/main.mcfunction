@@ -9,7 +9,7 @@
 ####################################
 
 ## Reset Scoreboard
-scoreboard players reset @a RoleOfNum
+scoreboard players reset @a TagOfRoleWork
 scoreboard players set #MWL MasonPair 1
 scoreboard players set @s 2ndRoleDone 1
 

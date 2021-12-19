@@ -1,19 +1,7 @@
 [
   {
-    "condition": "minecraft:value_check",
-    "value": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "#MWL"
-      },
-      "score": "Phase",
-      "scale": 1
-    },
-    "range": {
-      "min": 87,
-      "max": 87
-    }
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/choose_item/page3"
   },
   {
     "condition": "minecraft:inverted",

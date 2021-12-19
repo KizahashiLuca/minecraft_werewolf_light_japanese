@@ -18,4 +18,4 @@ scoreboard players set @s[scores={RespawnTime=0}] DeathCount 1
 effect clear @s
 
 ## Remove Flag
-scoreboard players set @s RoleOfNum 2
+scoreboard players set @s TagOfRoleWork 2

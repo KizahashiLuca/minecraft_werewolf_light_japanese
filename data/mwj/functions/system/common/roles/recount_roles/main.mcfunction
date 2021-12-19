@@ -11,7 +11,7 @@
 ## Store preview num of roles
 scoreboard players operation #MWL PrevNumOfRoles = #MWL NumOfRoles 
 
-## Count Players
+## Count players
 function mwj:system/common/count_players
 
 ## If more

@@ -9,20 +9,8 @@
           "name": "mwj:item/special/totem_of_undying",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#MWL"
-                },
-                "score": "Phase",
-                "scale": 1
-              },
-              "range": {
-                "min": 85,
-                "max": 85
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/choose_item/page1"
             }
           ]
         },
@@ -31,20 +19,8 @@
           "name": "mwj:item/special/snowball",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#MWL"
-                },
-                "score": "Phase",
-                "scale": 1
-              },
-              "range": {
-                "min": 86,
-                "max": 86
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/choose_item/page2"
             }
           ]
         },
@@ -53,20 +29,8 @@
           "name": "mwj:item/special/conduit",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#MWL"
-                },
-                "score": "Phase",
-                "scale": 1
-              },
-              "range": {
-                "min": 87,
-                "max": 87
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/choose_item/page3"
             }
           ]
         },
@@ -75,20 +39,8 @@
           "name": "mwj:item/special/spyglass",
           "conditions": [
             {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#MWL"
-                },
-                "score": "Phase",
-                "scale": 1
-              },
-              "range": {
-                "min": 88,
-                "max": 88
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/choose_item/page4"
             }
           ]
         }

@@ -4,6 +4,10 @@
     "name": "mwj:phase/choose_mode"
   },
   {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
     "condition": "minecraft:inverted",
     "term": {
       "condition": "minecraft:entity_properties",

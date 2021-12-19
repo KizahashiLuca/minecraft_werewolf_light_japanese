@@ -9,9 +9,8 @@
 ####################################
 
 ## Add 10 percents
-scoreboard players add #MWL GlowTime 10
-execute if score #MWL GlowTime matches 110 run scoreboard players set #MWL GlowTime 0
-execute if score #MWL GlowTime matches 101.. run scoreboard players remove #MWL GlowTime 100
+scoreboard players operation #MWL GlowTime += #MWL Num00010
+execute if predicate mwj:setting_phase/choose_glow_time/glow_time_more_than_limit run scoreboard players operation #MWL GlowTime = #MWL Num00000
 
 ## Set inventory
-function mwj:system/setting_phase/choose_glow_time/set_inventory
+function mwj:system/setting_phase/choose_glow_time/change_to

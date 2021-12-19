@@ -9,4 +9,4 @@
 ####################################
 
 ## Remove bossbar
-bossbar remove minecraft:bossbar
+bossbar remove mwj:bossbar

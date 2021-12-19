@@ -29,20 +29,8 @@
               },
               "conditions": [
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#MWL"
-                    },
-                    "score": "Phase",
-                    "scale": 1
-                  },
-                  "range": {
-                    "min": 95,
-                    "max": 95
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/choose_role/page1"
                 }
               ]
             },{
@@ -58,20 +46,8 @@
               },
               "conditions": [
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#MWL"
-                    },
-                    "score": "Phase",
-                    "scale": 1
-                  },
-                  "range": {
-                    "min": 96,
-                    "max": 96
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/choose_role/page2"
                 }
               ]
             },{
@@ -87,20 +63,8 @@
               },
               "conditions": [
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#MWL"
-                    },
-                    "score": "Phase",
-                    "scale": 1
-                  },
-                  "range": {
-                    "min": 97,
-                    "max": 97
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/choose_role/page3"
                 }
               ]
             },{
@@ -108,20 +72,8 @@
               "count": 0,
               "conditions": [
                 {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#MWL"
-                    },
-                    "score": "Phase",
-                    "scale": 1
-                  },
-                  "range": {
-                    "min": 98,
-                    "max": 98
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/choose_role/page4"
                 }
               ]
             }

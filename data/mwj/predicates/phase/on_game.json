@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mwj:phase/setting_phase"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mwj:phase/hide_phase"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mwj:phase/game_phase"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mwj:phase/exit_game"
+    }
+  ]
+}

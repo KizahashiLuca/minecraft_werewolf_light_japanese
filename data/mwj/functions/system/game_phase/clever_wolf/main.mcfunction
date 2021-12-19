@@ -9,7 +9,7 @@
 ####################################
 
 ## Set Scoreboard
-scoreboard players set @s RoleOfNum 1
+scoreboard players set @s TagOfRoleWork 1
 scoreboard players reset @s TargetOfRole
 
 ## Detect Dropping Redstone Torch
@@ -27,10 +27,10 @@ execute as @s[scores={RoleTrigger=1..10,RoleDone=0}] run function mwj:system/gam
 execute as @s[scores={RoleTrigger=1..10,RoleDone=1}] run function mwj:system/game_phase/roles/message_error
 
 ## Send a Result Message to Clever Wolf
-execute as @a[team=Player] if score @s NumOfPlayers = @p[scores={CurrentRole=3,RoleOfNum=1,RoleDone=0}] TargetOfRole run function mwj:system/game_phase/clever_wolf/result
+execute as @a[team=Player] if score @s NumOfPlayers = @p[scores={CurrentRole=3,TagOfRoleWork=1,RoleDone=0}] TargetOfRole run function mwj:system/game_phase/clever_wolf/result
 
 ## Reset Scoreboard
-scoreboard players reset @s RoleOfNum
+scoreboard players reset @s TagOfRoleWork
 
 ## Enable Clever Wolf Trigger
 scoreboard players reset @s TurnPageRight

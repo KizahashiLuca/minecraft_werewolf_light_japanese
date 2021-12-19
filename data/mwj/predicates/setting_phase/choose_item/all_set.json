@@ -1,7 +1,11 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_item"
+    "name": "mwj:phase/choose_item/master"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
   },
   {
     "condition": "minecraft:inverted",

@@ -11,5 +11,5 @@
 ## Reset choice
 scoreboard players operation #MWL HideTime = #MWL PrevHideTime
 
-## Set Hide Time
+## Set hide time
 function mwj:system/setting_phase/choose_hide_time/selected_set

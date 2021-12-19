@@ -8,8 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set Prev choice
+## Set preview choice
 scoreboard players operation #MWL PrevGlowTime = #MWL GlowTime
 
-## Set Glow Time
+## Set glow time
 function mwj:system/setting_phase/choose_glow_time/selected_set

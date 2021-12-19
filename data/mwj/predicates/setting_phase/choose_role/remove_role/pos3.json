@@ -1,7 +1,11 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_role"
+    "name": "mwj:phase/choose_role/master"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
   },
   {
     "condition": "minecraft:alternative",

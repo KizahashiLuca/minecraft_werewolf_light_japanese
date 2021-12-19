@@ -17,48 +17,8 @@ function mwj:system/finish/revoke_advancements
 ## Recount players
 function mwj:system/common/roles/recount_roles/main
 
-## Recount number of roles
-function mwj:system/common/roles/count_number_of_roles
-
-## Recount the Number of Roles
-scoreboard players operation #MWL NumOfMasonPair = #MWL NumOfMasons
-scoreboard players set #MWL TempVariable 2
-scoreboard players operation #MWL NumOfMasonPair /= #MWL TempVariable
-scoreboard players operation #MWL NumOfVillagers += #MWL NumOfRestRoles
-
-## Set scoreboards
-function mwj:system/game_phase/settings/set_scoreboards
-
-## Give items
-function mwj:system/game_phase/settings/give_items/main
-
-## Set dummy role
-scoreboard players set #MWL DummyRoleFlag 0
-execute if score #MWL DummyRoleMode matches 1 run function mwj:system/game_phase/settings/set_dummy_role
-
-## Set roles
-function mwj:system/game_phase/settings/set_roles/main
-
-## Set 2nd role
-function mwj:system/game_phase/settings/set_2nd_role
-
-## Set tags
-function mwj:system/game_phase/settings/set_tags
-
-## Set messages
-function mwj:system/common/message/change_to
-
-## Set players
-function mwj:system/game_phase/settings/set_players
-
-## Set bossbar
-function mwj:system/game_phase/settings/set_bossbars
-
-## Reset scoreboards
-function mwj:system/game_phase/settings/reset_scoreboards
-
-## Game Start
-execute if score #MWL Phase matches 10 run scoreboard players set #MWL Phase 11
+## Setting games
+execute if predicate mwj:setting_phase/initial_setting/required_players run function mwj:system/game_phase/settings/main
 
 ## Error game
-execute if score #MWL Phase matches 100 run function mwj:system/finish/error_game_player
+execute if predicate mwj:setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player

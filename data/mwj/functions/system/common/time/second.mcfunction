@@ -13,8 +13,8 @@ scoreboard players remove #MWL Second 1
 execute if score #MWL Second matches ..-1 run scoreboard players set #MWL Second 59
 
 ## Store time for bossbar
-execute if score #MWL Phase matches 10 run function mwj:system/common/time/hide_time
-execute if score #MWL Phase matches 11 run function mwj:system/common/time/game_time
+execute if predicate mwj:phase/hide_phase run function mwj:system/common/time/hide_time
+execute if predicate mwj:phase/game_phase run function mwj:system/common/time/game_time
 
 ## Process the sound system
 execute if score #MWL Second matches 3..9 as @a at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1

@@ -8,8 +8,8 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set Prev choice
+## Set preview choice
 scoreboard players operation #MWL PrevHideTime = #MWL HideTime
 
-## Set Hide Time
+## Set hide time
 function mwj:system/setting_phase/choose_hide_time/selected_set

@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Add 10 percents
-scoreboard players add #MWL GameTime 10
-execute if score #MWL GameTime matches 1000.. run scoreboard players remove #MWL GameTime 1000
+## Add 10 minutes
+scoreboard players operation #MWL GameTime += #MWL Num00010
+execute if predicate mwj:setting_phase/choose_game_time/game_time_more_than_limit run scoreboard players operation #MWL GameTime = #MWL Num00000
 
 ## Set inventory
-function mwj:system/setting_phase/choose_game_time/set_inventory
+function mwj:system/setting_phase/choose_game_time/change_to

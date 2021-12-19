@@ -88,8 +88,8 @@ execute as @a[team=Player,scores={CurrentRole=39,2ndRoleDone=1}] if score #MWL I
 execute as @a[team=Player,scores={CurrentRole=40,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/cat/main
 
 ## 2nd Role System
-execute as @a[team=Player,tag=!Cryptobiosis,scores={2ndRole=1}] at @s run function mwj:system/game_phase/2ndrole/ghost/main
-execute as @a[team=Player,scores={2ndRole=2}] at @s run function mwj:system/game_phase/2ndrole/drunk/main
+execute as @a[team=Player,tag=!Cryptobiosis,scores={Set2ndRole=1}] at @s run function mwj:system/game_phase/2ndrole/ghost/main
+execute as @a[team=Player,scores={Set2ndRole=2}] at @s run function mwj:system/game_phase/2ndrole/drunk/main
 
 ## Kill Log System
 function mwj:system/game_phase/kill_log/main

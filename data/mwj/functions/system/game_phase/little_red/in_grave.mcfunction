@@ -9,27 +9,27 @@
 ####################################
 
 ## Put a tag
-scoreboard players set @s RoleOfNum 1
+scoreboard players set @s TagOfRoleWork 1
 
 ## Change Spectator for the Dead
-gamemode adventure @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}]
+gamemode adventure @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}]
 
 ## Teleport
-execute as @e[type=minecraft:armor_stand,tag=LittleRedGrave] if score @s NumOfPlayers = @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] NumOfPlayers run tp @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] @s
+execute as @e[type=minecraft:armor_stand,tag=LittleRedGrave] if score @s NumOfPlayers = @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] NumOfPlayers run tp @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] @s
 
 ## Give an effect
-effect clear @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}]
+effect clear @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}]
 
 ## Set effect
-effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] minecraft:resistance 1000000 100 true
-effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] minecraft:weakness 1000000 255 true
+effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:resistance 1000000 100 true
+effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:weakness 1000000 255 true
 
 ## Set inventory
-execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] at @s if data entity @s Inventory run function mwj:system/game_phase/common/set_inventory/main
+execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] at @s if data entity @s Inventory run function mwj:system/game_phase/common/set_inventory/main
 
 ## Kill arrows
-execute at @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] run kill @e[type=minecraft:arrow,distance=..2]
-execute at @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] run kill @e[type=minecraft:spectral_arrow,distance=..1]
+execute at @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run kill @e[type=minecraft:arrow,distance=..2]
+execute at @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run kill @e[type=minecraft:spectral_arrow,distance=..1]
 
 ## Remove a tag
-scoreboard players set @p[tag=Cryptobiosis,scores={CurrentRole=39,RoleOfNum=1}] RoleOfNum 0
+scoreboard players set @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] TagOfRoleWork 0

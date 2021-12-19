@@ -9,13 +9,13 @@
 ####################################
 
 ## Change mode
-execute if score #MWL Phase matches 80 run scoreboard players set #MWL Phase 85
+execute if predicate mwj:phase/choose_mode run scoreboard players set #MWL Phase 85
 
 ## Set Inventory
 function mwj:system/setting_phase/choose_item/common/set_inventory
 
 ## Set scoreboard
-execute if score #MWL Phase matches 85 run function mwj:system/setting_phase/choose_item/common/set_page1
-execute if score #MWL Phase matches 86 run function mwj:system/setting_phase/choose_item/common/set_page2
-execute if score #MWL Phase matches 87 run function mwj:system/setting_phase/choose_item/common/set_page3
-execute if score #MWL Phase matches 88 run function mwj:system/setting_phase/choose_item/common/set_page4
+execute if predicate mwj:phase/choose_item/page1 run function mwj:system/setting_phase/choose_item/common/set_page1
+execute if predicate mwj:phase/choose_item/page2 run function mwj:system/setting_phase/choose_item/common/set_page2
+execute if predicate mwj:phase/choose_item/page3 run function mwj:system/setting_phase/choose_item/common/set_page3
+execute if predicate mwj:phase/choose_item/page4 run function mwj:system/setting_phase/choose_item/common/set_page4

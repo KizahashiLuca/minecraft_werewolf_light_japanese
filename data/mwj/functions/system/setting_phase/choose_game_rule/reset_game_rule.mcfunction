@@ -14,4 +14,4 @@ scoreboard players set #MWL DummyRoleMode 0
 scoreboard players set #MWL 2ndRoleMode 0
 
 ## Set inventory
-function mwj:system/setting_phase/choose_game_rule/set_inventory
+function mwj:system/setting_phase/choose_game_rule/change_to

@@ -9,7 +9,7 @@
 ####################################
 
 ## Flag
-scoreboard players set @s RoleOfNum 1
+scoreboard players set @s TagOfRoleWork 1
 
 ## Store Respawn Time Limit
 scoreboard players operation @s FoxSpawnSecond = #MWL Second

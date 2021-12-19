@@ -8,9 +8,9 @@
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
-## Set Team 
+## Set teams
 team add Player
-team join Player @a[gamemode=!spectator]
+team join Player @a[predicate=mwj:gamemode/not_spectator]
 team modify Player collisionRule always
 team modify Player deathMessageVisibility never
 team modify Player nametagVisibility never

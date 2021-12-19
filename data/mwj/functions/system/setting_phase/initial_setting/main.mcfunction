@@ -11,37 +11,42 @@
 ## Remove storages
 function mwj:system/finish/remove_storages
 
-## Remove bossbars
-function mwj:system/finish/remove_bossbars
-
-## Remove entities
-function mwj:system/finish/remove_entities
-
 ## Remove tags
 function mwj:system/finish/remove_tags
-
-## Remove teams
-function mwj:system/finish/remove_teams
 
 ## Revoke advancements
 function mwj:system/finish/revoke_advancements
 
-## Change gamerules
+## Set gamerules
 function mwj:system/setting_phase/initial_setting/set_gamerules
 
-## Set Team
+## Set scoreboards
+function mwj:system/setting_phase/initial_setting/add_scoreboards/main
+function mwj:system/setting_phase/initial_setting/set_scoreboards/main
+
+## Set teams
 function mwj:system/setting_phase/initial_setting/set_teams
 
-## Set Scoreboard
-function mwj:system/setting_phase/initial_setting/set_scoreboards
+## Set entities
+function mwj:system/setting_phase/initial_setting/set_entities
 
-## Set Role Number
+## Set bossbars
+function mwj:system/setting_phase/initial_setting/set_bossbars
+
+## Detect version
+function mwj:system/setting_phase/initial_setting/detect_version
+
+## Count players
+function mwj:system/common/count_players
+
+## Set role number
 function mwj:system/common/roles/reset_roles
 function mwj:system/common/roles/set_role_number
 function mwj:system/common/roles/set_prev_roles
 
-## Set Title
-function mwj:system/setting_phase/initial_setting/set_messages
+## Stop the game
+execute if predicate mwj:setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player
+execute if predicate mwj:setting_phase/initial_setting/sufficient_players_but_unsupported_version run function mwj:system/finish/error_game_version
 
-## Set Inventory
-function mwj:system/setting_phase/choose_mode/change_to
+## Start setting phase
+execute if predicate mwj:setting_phase/initial_setting/sufficient_players_and_version run function mwj:system/setting_phase/initial_setting/send_messages

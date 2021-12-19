@@ -1,7 +1,11 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_role"
+    "name": "mwj:phase/choose_role/master"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
   },
   {
     "condition": "minecraft:alternative",
@@ -21,13 +25,7 @@
     ]
   },
   {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Inventory:[{Slot:34b,tag:{Tags:[\"MWLsetting\",\"MWL_ok\"]}}]}"
-      }
-    }
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/common/ok"
   }
 ]

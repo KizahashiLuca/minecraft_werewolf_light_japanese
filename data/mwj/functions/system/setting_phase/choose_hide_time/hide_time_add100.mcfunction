@@ -9,8 +9,8 @@
 ####################################
 
 ## Add 100 seconds
-scoreboard players add #MWL HideTime 100
-execute if score #MWL HideTime matches 1000.. run scoreboard players remove #MWL HideTime 1000
+scoreboard players operation #MWL HideTime += #MWL Num00100
+execute if predicate mwj:setting_phase/choose_hide_time/hide_time_more_than_limit run scoreboard players operation #MWL HideTime = #MWL Num00000
 
 ## Set inventory
-function mwj:system/setting_phase/choose_hide_time/set_inventory
+function mwj:system/setting_phase/choose_hide_time/change_to

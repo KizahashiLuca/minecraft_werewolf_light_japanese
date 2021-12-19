@@ -9,9 +9,9 @@
 ####################################
 
 ## Give Special Items 
-execute if score #MWL TENS_DIGIT matches 1.. run function mwj:system/game_phase/settings/give_items/branch/branch_ones_digit
+execute if score #MWL KindsTensDigit matches 1.. run function mwj:system/game_phase/settings/give_items/branch/branch_ones_digit
 
 ## Remove Number of Player Item Gived
-execute if score #MWL TENS_DIGIT matches 1.. run scoreboard players remove #MWL TENS_DIGIT 1
-scoreboard players operation #MWL ONES_DIGIT = #MWL TempVariable
-scoreboard players remove #MWL ONES_DIGIT 1
+execute if score #MWL KindsTensDigit matches 1.. run scoreboard players remove #MWL KindsTensDigit 1
+scoreboard players operation #MWL KindsOnesDigit = #MWL KindOfItems
+scoreboard players remove #MWL KindsOnesDigit 1
