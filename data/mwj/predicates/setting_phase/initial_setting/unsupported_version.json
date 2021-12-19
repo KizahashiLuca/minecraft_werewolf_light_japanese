@@ -1,7 +1,16 @@
 {
-  "condition": "minecraft:inverted",
-  "term": {
-    "condition": "minecraft:reference",
-    "name": "mwj:setting_phase/initial_setting/required_version"
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#MWL"
+    },
+    "score": "Version",
+    "scale": 1
+  },
+  "range": {
+    "min": -2147483646,
+    "max": 16
   }
 }
