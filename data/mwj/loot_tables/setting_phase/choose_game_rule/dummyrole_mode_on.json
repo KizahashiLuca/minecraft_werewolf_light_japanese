@@ -1,26 +1,26 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:ender_eye",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"役欠け","color":"white","bold":true,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 ["",{"text":"有り","color":"green","bold":true,"italic":false},{"text":"を選択中","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_dummyrole_mode_on\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_dummyrole_mode_on\"]}"
             }
           ]
         }

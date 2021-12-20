@@ -12,19 +12,19 @@
     "terms": [
       {
         "condition": "minecraft:reference",
-        "name": "mwj:setting_phase/choose_role/remove_role/roles/madman"
+        "name": "mwj:setting_phase/choose_role/remove_role/select/madman"
       },
       {
         "condition": "minecraft:reference",
-        "name": "mwj:setting_phase/choose_role/remove_role/roles/bakery"
+        "name": "mwj:setting_phase/choose_role/remove_role/select/bakery"
       },
       {
         "condition": "minecraft:reference",
-        "name": "mwj:setting_phase/choose_role/remove_role/roles/sage"
+        "name": "mwj:setting_phase/choose_role/remove_role/select/sage"
       },
       {
         "condition": "minecraft:reference",
-        "name": "mwj:setting_phase/choose_role/remove_role/roles/cat"
+        "name": "mwj:setting_phase/choose_role/remove_role/select/cat"
       }
     ]
   }

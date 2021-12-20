@@ -1,20 +1,20 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:orange_stained_glass",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:orange_stained_glass",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"猫又","color":"gold","bold":true,"italic":false},{"text":"の追加","color":"white","bold":true,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 ["",{"text":"村人陣営","color":"green","bold":true,"italic":false}],
                 ["",{"text":"予言","color":"aqua","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"霊媒","color":"yellow","bold":false,"italic":false},{"text":"/","color":"white","bold":false,"italic":false},{"text":"賢狼","color":"dark_red","bold":false,"italic":false},{"text":"の表示 : ","color":"white","bold":false,"italic":false},{"text":"白","color":"green","bold":true,"italic":false}],
@@ -29,8 +29,8 @@
                 ["",{"text":"道連れの効果は発動しない。","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role_cat\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_role_cat\"]}"
             }
           ]
         }

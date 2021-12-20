@@ -1,11 +1,11 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_game_rule/game_mode_normal_wolf",
           "conditions": [
             {
@@ -21,7 +21,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_game_rule/game_mode_two_alive",
           "conditions": [
             {
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_game_rule/game_mode_annihilation",
           "conditions": [
             {

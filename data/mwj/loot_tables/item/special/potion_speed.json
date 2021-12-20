@@ -1,31 +1,31 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:potion",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"俊敏のポーション","color":"white","italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"移動速度上昇 Ⅲ (0:30)","color":"blue","bold":false,"italic":false}],
                 [""],
                 ["",{"text":"効果：","color":"dark_purple","bold":false,"italic":false}],
                 ["",{"text":"移動速度 +60%","color":"blue","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{CustomPotionEffects:[{Id:1b,Amplifier:2b,Duration:600}],CustomPotionColor:63217,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_speed\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:1b,Amplifier:2b,Duration:600}],CustomPotionColor:63217,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_speed\"]}"
             }
           ]
         }

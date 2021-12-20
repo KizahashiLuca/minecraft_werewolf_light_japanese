@@ -9,10 +9,10 @@
 ####################################
 
 ## Pos4
-execute if predicate mwj:phase/choose_role/page1 if score #MWL NumOfMadmans matches 1.. run scoreboard players remove #MWL NumOfMadmans 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfBakeries matches 1.. run scoreboard players remove #MWL NumOfBakeries 1
-execute if predicate mwj:phase/choose_role/page3 if score #MWL NumOfSages matches 1.. run scoreboard players remove #MWL NumOfSages 1
-execute if predicate mwj:phase/choose_role/page4 if score #MWL NumOfCats matches 1.. run scoreboard players remove #MWL NumOfCats 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/madman run scoreboard players remove #MWL NumOfMadmans 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/bakery run scoreboard players remove #MWL NumOfBakeries 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/sage run scoreboard players remove #MWL NumOfSages 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/cat run scoreboard players remove #MWL NumOfCats 1
 
 ## Set inventory
 function mwj:system/setting_phase/choose_role/common/set_inventory

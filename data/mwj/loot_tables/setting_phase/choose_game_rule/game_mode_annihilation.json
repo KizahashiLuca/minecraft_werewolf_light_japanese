@@ -1,28 +1,28 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:large_amethyst_bud",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:large_amethyst_bud",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"人狼勝利条件","color":"white","bold":true,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "lore": [
                 ["",{"text":"殲滅モード","color":"aqua","bold":true,"italic":false},{"text":"を選択中","color":"white","bold":false,"italic":false}],
                 ["",{"text":"村人陣営が全滅","color":"white","bold":true,"italic":false}],
                 ["",{"text":"となれば人狼陣営の勝利。","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}"
             }
           ]
         }

@@ -12,6 +12,6 @@
 bossbar set mwj:bossbar name [{"text":"潜伏時間  残り "},{"score":{"name":"#MWL","objective":"Second"}},{"text":" 秒"}]
 
 ## Set bossbar style
-execute if score #MWL Second matches 10.. run bossbar set mwj:bossbar color green
-execute if score #MWL Second matches 3..9 run bossbar set mwj:bossbar color yellow
-execute if score #MWL Second matches 0..2 run bossbar set mwj:bossbar color red
+execute if predicate mwj:system/common/time/bossbar/green run bossbar set mwj:bossbar color green
+execute if predicate mwj:system/common/time/bossbar/yellow run bossbar set mwj:bossbar color yellow
+execute if predicate mwj:system/common/time/bossbar/hide_time_red run bossbar set mwj:bossbar color red

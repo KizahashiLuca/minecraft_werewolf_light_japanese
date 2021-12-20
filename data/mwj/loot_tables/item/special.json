@@ -1,12 +1,12 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/stick",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/stick",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -18,8 +18,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/totem_of_undying",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/totem_of_undying",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -31,8 +31,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/potion_death",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/potion_death",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -44,8 +44,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/ender_pearl",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/ender_pearl",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -57,8 +57,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/diamond_hoe",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/diamond_hoe",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -70,8 +70,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/elytra",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/elytra",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -83,8 +83,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/snowball",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/snowball",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -96,8 +96,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/potion_invisible",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/potion_invisible",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -109,8 +109,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/potion_speed",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/potion_speed",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -122,8 +122,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/potion_jump",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/potion_jump",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -135,8 +135,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/trident",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/trident",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -148,8 +148,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/conduit",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/conduit",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -161,8 +161,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/crossbow",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/crossbow",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -174,8 +174,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/honey_block",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/honey_block",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -187,8 +187,8 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
-          "name":"mwj:item/special/lantern",
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/lantern",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",

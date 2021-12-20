@@ -1,21 +1,21 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:chest",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:chest",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"追加特殊アイテム設定","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_item_addition\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_item_addition\"]}"
             }
           ]
         }

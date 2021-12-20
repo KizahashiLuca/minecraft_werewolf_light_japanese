@@ -14,4 +14,4 @@ bossbar set mwj:bossbar name [{"text":"制限時間  残り "},{"score":{"name":
 ## Set bossbar style
 execute if score #MWL Second > #MWL GlowTime run bossbar set mwj:bossbar color green
 execute if score #MWL Second <= #MWL GlowTime run bossbar set mwj:bossbar color yellow
-execute if score #MWL Second matches 0..9 run bossbar set mwj:bossbar color red
+execute if predicate mwj:system/common/time/bossbar/game_time_red run bossbar set mwj:bossbar color red

@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_role/page3"
+    "name": "mwj:phase/choose_role/page2"
   },
   {
     "condition": "minecraft:inverted",
@@ -13,7 +13,7 @@
           "type": "minecraft:fixed",
           "name": "#MWL"
         },
-        "score": "SelectRolePos2",
+        "score": "SelectRolePos1",
         "scale": 1
       },
       "range": {
@@ -23,7 +23,7 @@
             "type": "minecraft:fixed",
             "name": "#MWL"
           },
-          "score": "NumOfSeers",
+          "score": "NumOfFoxes",
           "scale": 1
         },
         "max": {
@@ -32,9 +32,10 @@
             "type": "minecraft:fixed",
             "name": "#MWL"
           },
-          "score": "NumOfSeers",
+          "score": "NumOfFoxes",
           "scale": 1
         }
       }
     }
-  }]
+  }
+]

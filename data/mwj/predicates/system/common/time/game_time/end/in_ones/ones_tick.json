@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/common/time/second/in_ones"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/common/time/tick/in_ones"
+  }
+]

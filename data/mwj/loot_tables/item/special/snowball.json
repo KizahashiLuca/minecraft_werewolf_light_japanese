@@ -1,23 +1,23 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:snowball",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"フラッシュバン","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"盲目 (0:20)","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"text":"  投擲","color":"white","bold":false,"italic":false}],
@@ -25,8 +25,8 @@
                 ["",{"text":"  半径3.0m","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"MWL_snowball\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLitem\",\"MWL_snowball\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

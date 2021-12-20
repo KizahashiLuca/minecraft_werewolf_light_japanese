@@ -9,13 +9,11 @@
 ####################################
 
 ## Pos1
-execute if predicate mwj:phase/choose_role/page1 if score #MWL NumOfWolves matches 1.. run scoreboard players remove #MWL NumOfWolves 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfFoxes matches 1 if score #MWL NumOfImmorals matches 0 run scoreboard players remove #MWL NumOfFoxes 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfFoxes matches 1 if score #MWL NumOfImmorals matches 1.. run scoreboard players remove #MWL NumOfFoxes 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfFoxes matches 0 if score #MWL NumOfImmorals matches 1.. run scoreboard players set #MWL NumOfImmorals 0
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfFoxes matches 2.. run scoreboard players remove #MWL NumOfFoxes 1
-execute if predicate mwj:phase/choose_role/page3 if score #MWL NumOfMasons matches 1.. run scoreboard players remove #MWL NumOfMasons 2
-execute if predicate mwj:phase/choose_role/page4 if score #MWL NumOfDetectives matches 1.. run scoreboard players remove #MWL NumOfDetectives 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/wolf run scoreboard players remove #MWL NumOfWolves 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/fox run scoreboard players remove #MWL NumOfFoxes 1
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/no_fox_more_immoralist run scoreboard players set #MWL NumOfImmorals 0
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/mason run scoreboard players remove #MWL NumOfMasons 2
+execute if predicate mwj:setting_phase/choose_role/remove_role/detect/detective run scoreboard players remove #MWL NumOfDetectives 1
 
 ## Set inventory
 function mwj:system/setting_phase/choose_role/common/set_inventory

@@ -13,7 +13,7 @@
           "type": "minecraft:fixed",
           "name": "#MWL"
         },
-        "score": "SelectRolePos1",
+        "score": "SelectRolePos2",
         "scale": 1
       },
       "range": {
@@ -23,7 +23,7 @@
             "type": "minecraft:fixed",
             "name": "#MWL"
           },
-          "score": "NumOfFoxes",
+          "score": "NumOfImmorals",
           "scale": 1
         },
         "max": {
@@ -32,11 +32,10 @@
             "type": "minecraft:fixed",
             "name": "#MWL"
           },
-          "score": "NumOfFoxes",
+          "score": "NumOfImmorals",
           "scale": 1
         }
       }
     }
   }
-
 ]

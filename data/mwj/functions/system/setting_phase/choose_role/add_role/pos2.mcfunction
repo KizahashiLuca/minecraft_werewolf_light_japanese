@@ -9,12 +9,11 @@
 ####################################
 
 ## Pos2
-execute if predicate mwj:phase/choose_role/page1 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfClWolves 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfRestRoles matches 1.. if score #MWL NumOfFoxes matches 1.. run scoreboard players add #MWL NumOfImmorals 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfRestRoles matches 2.. if score #MWL NumOfFoxes matches 0 run scoreboard players add #MWL NumOfImmorals 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfRestRoles matches 2.. if score #MWL NumOfFoxes matches 0 run scoreboard players add #MWL NumOfFoxes 1
-execute if predicate mwj:phase/choose_role/page3 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfSeers 1
-execute if predicate mwj:phase/choose_role/page4 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfThieves 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/clever_wolf run scoreboard players add #MWL NumOfClWolves 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/immoralist run scoreboard players add #MWL NumOfImmorals 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/immoralist/no_fox run scoreboard players add #MWL NumOfFoxes 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/seer run scoreboard players add #MWL NumOfSeers 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/thief run scoreboard players add #MWL NumOfThieves 1
 
 ## Set inventory
 function mwj:system/setting_phase/choose_role/common/set_inventory

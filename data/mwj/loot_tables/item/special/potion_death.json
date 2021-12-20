@@ -1,28 +1,28 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:lingering_potion",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"即死の残留ポーション","color":"yellow","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"即時ダメージ Ⅳ","color":"red","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{CustomPotionEffects:[{Id:7b,Amplifier:3b}],CustomPotionColor:16122102,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_death\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:7b,Amplifier:3b}],CustomPotionColor:16122102,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_death\"]}"
             }
           ]
         }

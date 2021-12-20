@@ -9,10 +9,10 @@
 ####################################
 
 ## Pos3
-execute if predicate mwj:phase/choose_role/page1 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfWhWolves 1
-execute if predicate mwj:phase/choose_role/page2 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfVillagers 1
-execute if predicate mwj:phase/choose_role/page3 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfFkSeers 1
-execute if predicate mwj:phase/choose_role/page4 if score #MWL NumOfRestRoles matches 1.. run scoreboard players add #MWL NumOfLtReds 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/white_wolf run scoreboard players add #MWL NumOfWhWolves 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/villager run scoreboard players add #MWL NumOfVillagers 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/fake_seer run scoreboard players add #MWL NumOfFkSeers 1
+execute if predicate mwj:setting_phase/choose_role/add_role/detect/little_red run scoreboard players add #MWL NumOfLtReds 1
 
 ## Set inventory
 function mwj:system/setting_phase/choose_role/common/set_inventory

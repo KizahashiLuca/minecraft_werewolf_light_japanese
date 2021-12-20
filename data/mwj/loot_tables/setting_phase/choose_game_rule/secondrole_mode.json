@@ -1,11 +1,11 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_off",
           "conditions": [
             {
@@ -21,7 +21,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_ghost",
           "conditions": [
             {
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_drunk",
           "conditions": [
             {

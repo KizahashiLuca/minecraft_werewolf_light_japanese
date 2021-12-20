@@ -1,21 +1,21 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:white_banner",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:white_banner",
+          "functions": [
             { 
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"秒","color":"reset","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{BlockEntityTag:{Patterns:[{Pattern:bs,Color:15},{Pattern:ts,Color:15},{Pattern:mr,Color:0},{Pattern:drs,Color:15},{Pattern:bo,Color:0},{Pattern:cbo,Color:0}]},HideFlags:63,Tags:[\"MWLsetting\",\"MWL_alphabet_s\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Patterns:[{Pattern:bs,Color:15},{Pattern:ts,Color:15},{Pattern:mr,Color:0},{Pattern:drs,Color:15},{Pattern:bo,Color:0},{Pattern:cbo,Color:0}]},HideFlags:63,Tags:[\"MWLsetting\",\"MWL_alphabet_s\"]}"
             }
           ]
         }

@@ -9,11 +9,11 @@
 ####################################
 
 ## Calculate time every second
-execute if score #MWL Tick matches 0 run function mwj:system/common/time/second
+execute if predicate mwj:system/common/time/tick/zero run function mwj:system/common/time/second
 
 ## Calculate time every tick
 scoreboard players remove #MWL Tick 1
-execute if score #MWL Tick matches ..-1 run scoreboard players set #MWL Tick 19
+execute if predicate mwj:system/common/time/tick/minus run scoreboard players set #MWL Tick 19
 
 ## Set bossbar
 scoreboard players set #MWL BossbarVal 20

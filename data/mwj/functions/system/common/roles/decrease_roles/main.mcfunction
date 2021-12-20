@@ -9,24 +9,24 @@
 ####################################
 
 ## If the Number is Short
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfWolves matches 1.. run function mwj:system/common/roles/decrease_roles/roles/wolf
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfClWolves matches 1.. run function mwj:system/common/roles/decrease_roles/roles/clever_wolf
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfWhWolves matches 1.. run function mwj:system/common/roles/decrease_roles/roles/white_wolf
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfMadmans matches 1.. run function mwj:system/common/roles/decrease_roles/roles/madman
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfFanatics matches 1.. run function mwj:system/common/roles/decrease_roles/roles/fanatic
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfFoxes matches 1.. run function mwj:system/common/roles/decrease_roles/roles/fox
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfImmorals matches 1.. run function mwj:system/common/roles/decrease_roles/roles/immoralist
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfVillagers matches 1.. run function mwj:system/common/roles/decrease_roles/roles/villager
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfBakeries matches 1.. run function mwj:system/common/roles/decrease_roles/roles/bakery
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfLycants matches 1.. run function mwj:system/common/roles/decrease_roles/roles/lycanthrope
-execute if score #MWL TmpNumOfRoles matches 2.. if score #MWL NumOfMasons matches 2.. run function mwj:system/common/roles/decrease_roles/roles/mason
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfSeers matches 1.. run function mwj:system/common/roles/decrease_roles/roles/seer
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfFkSeers matches 1.. run function mwj:system/common/roles/decrease_roles/roles/fake_seer
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfSages matches 1.. run function mwj:system/common/roles/decrease_roles/roles/sage
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfMediums matches 1.. run function mwj:system/common/roles/decrease_roles/roles/medium
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfDetectives matches 1.. run function mwj:system/common/roles/decrease_roles/roles/detective
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfThieves matches 1.. run function mwj:system/common/roles/decrease_roles/roles/thief
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfLtReds matches 1.. run function mwj:system/common/roles/decrease_roles/roles/little_red
-execute if score #MWL TmpNumOfRoles matches 1.. if score #MWL NumOfCats matches 1.. run function mwj:system/common/roles/decrease_roles/roles/cat
+execute if predicate mwj:system/common/roles/decrease_roles/wolf run function mwj:system/common/roles/decrease_roles/roles/wolf
+execute if predicate mwj:system/common/roles/decrease_roles/clever_wolf run function mwj:system/common/roles/decrease_roles/roles/clever_wolf
+execute if predicate mwj:system/common/roles/decrease_roles/white_wolf run function mwj:system/common/roles/decrease_roles/roles/white_wolf
+execute if predicate mwj:system/common/roles/decrease_roles/madman run function mwj:system/common/roles/decrease_roles/roles/madman
+execute if predicate mwj:system/common/roles/decrease_roles/fanatic run function mwj:system/common/roles/decrease_roles/roles/fanatic
+execute if predicate mwj:system/common/roles/decrease_roles/fox run function mwj:system/common/roles/decrease_roles/roles/fox
+execute if predicate mwj:system/common/roles/decrease_roles/immoralist run function mwj:system/common/roles/decrease_roles/roles/immoralist
+execute if predicate mwj:system/common/roles/decrease_roles/villager run function mwj:system/common/roles/decrease_roles/roles/villager
+execute if predicate mwj:system/common/roles/decrease_roles/bakery run function mwj:system/common/roles/decrease_roles/roles/bakery
+execute if predicate mwj:system/common/roles/decrease_roles/lycanthrope run function mwj:system/common/roles/decrease_roles/roles/lycanthrope
+execute if predicate mwj:system/common/roles/decrease_roles/mason run function mwj:system/common/roles/decrease_roles/roles/mason
+execute if predicate mwj:system/common/roles/decrease_roles/seer run function mwj:system/common/roles/decrease_roles/roles/seer
+execute if predicate mwj:system/common/roles/decrease_roles/fake_seer run function mwj:system/common/roles/decrease_roles/roles/fake_seer
+execute if predicate mwj:system/common/roles/decrease_roles/sage run function mwj:system/common/roles/decrease_roles/roles/sage
+execute if predicate mwj:system/common/roles/decrease_roles/medium run function mwj:system/common/roles/decrease_roles/roles/medium
+execute if predicate mwj:system/common/roles/decrease_roles/detective run function mwj:system/common/roles/decrease_roles/roles/detective
+execute if predicate mwj:system/common/roles/decrease_roles/thief run function mwj:system/common/roles/decrease_roles/roles/thief
+execute if predicate mwj:system/common/roles/decrease_roles/little_red run function mwj:system/common/roles/decrease_roles/roles/little_red
+execute if predicate mwj:system/common/roles/decrease_roles/cat run function mwj:system/common/roles/decrease_roles/roles/cat
 
-execute if score #MWL TmpNumOfRoles matches 1.. run function mwj:system/common/roles/decrease_roles/main
+execute if predicate mwj:system/common/roles/decrease_roles/num_of_roles/one_or_more run function mwj:system/common/roles/decrease_roles/main

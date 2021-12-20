@@ -1,23 +1,23 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:redstone_torch",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_torch",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"杖","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"消滅の呪い","color":"red","bold":false,"italic":false}],
                 ["",{"text":"不可壊","color":"blue","bold":false,"italic":false}],
                 ["",{"text":"役職使用方法 : ","color":"white","bold":false,"italic":false}],
@@ -25,8 +25,8 @@
                 ["",{"text":"  チャット欄で対象を選択","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],HideFlags:63,Tags:[\"MWLitem\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}],HideFlags:63,Tags:[\"MWLitem\"]}"
             }
           ]
         }

@@ -1,12 +1,12 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:structure_void",
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
           "functions": [
             {
               "function": "minecraft:set_nbt",

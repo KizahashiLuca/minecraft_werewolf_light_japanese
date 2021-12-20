@@ -1,21 +1,26 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:nether_star",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"残り追加可能人数","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_num_of_rest_role\"]}"
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"  ","color":"aqua","bold":false,"italic":false},{"score":{"name":"#MWL","objective":"NumOfRestRoles"},"color":"aqua","bold":true,"italic":false},{"text":" 役","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_num_of_rest_role\"]}"
             },{
               "function": "minecraft:set_count",
               "count": {

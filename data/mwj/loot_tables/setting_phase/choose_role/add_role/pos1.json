@@ -1,11 +1,11 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_role/add_role/roles/wolf",
           "conditions": [
             {
@@ -15,7 +15,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_role/add_role/roles/fox",
           "conditions": [
             {
@@ -25,7 +25,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_role/add_role/roles/mason",
           "conditions": [
             {
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "type":"minecraft:loot_table",
+          "type": "minecraft:loot_table",
           "name": "mwj:setting_phase/choose_role/add_role/roles/detective",
           "conditions": [
             {
