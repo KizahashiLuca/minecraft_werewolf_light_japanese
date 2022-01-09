@@ -40,4 +40,4 @@ tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
 
 ## Change to Choose Mode
-function mwj:system/setting_phase/choose_mode/change_to
+function mwj:system/setting_phase/master/change_to

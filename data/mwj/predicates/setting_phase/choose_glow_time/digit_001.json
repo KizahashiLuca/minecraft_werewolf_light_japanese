@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_glow_time"
+    "name": "mwj:phase/setting_phase/choose_glow_time"
   },
   {
     "condition": "minecraft:reference",

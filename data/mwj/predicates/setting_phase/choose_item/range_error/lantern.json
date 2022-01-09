@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "mwj:phase/choose_item/page3"
+    "name": "mwj:phase/setting_phase/choose_item/page3"
   },
   {
     "condition": "minecraft:value_check",

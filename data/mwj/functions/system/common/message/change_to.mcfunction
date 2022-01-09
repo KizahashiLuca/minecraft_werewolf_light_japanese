@@ -10,8 +10,8 @@
 
 ## Title Game Start
 title @a times 5 40 20
-title @a[predicate=mwj:phase/choose_mode] title ["",{"text":"潜伏時間開始","color":"red","bold":true}]
-title @a[predicate=mwj:phase/choose_mode] subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
+title @a[predicate=mwj:phase/setting_phase/master] title ["",{"text":"潜伏時間開始","color":"red","bold":true}]
+title @a[predicate=mwj:phase/setting_phase/master] subtitle ["",{"text":"Hiding Start","color":"white","bold":true}]
 title @a[predicate=mwj:phase/hide_phase] title ["",{"text":"ゲーム開始","color":"red","bold":true}]
 title @a[predicate=mwj:phase/hide_phase] subtitle ["",{"text":"Game Start","color":"white","bold":true}]
 
@@ -22,7 +22,7 @@ scoreboard players set #MWL MasonPair 1
 tellraw @a [""]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-tellraw @a[predicate=mwj:phase/choose_mode] ["",{"text":"  - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
+tellraw @a[predicate=mwj:phase/setting_phase/master] ["",{"text":"  - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
 tellraw @a[predicate=mwj:phase/hide_phase] ["",{"text":"  - ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}}]

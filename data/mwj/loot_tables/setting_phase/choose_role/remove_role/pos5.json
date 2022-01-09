@@ -30,7 +30,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mwj:phase/choose_role/page1"
+                  "name": "mwj:phase/setting_phase/choose_role/page1"
                 }
               ]
             },{
@@ -47,7 +47,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mwj:phase/choose_role/page2"
+                  "name": "mwj:phase/setting_phase/choose_role/page2"
                 }
               ]
             },{
@@ -64,7 +64,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mwj:phase/choose_role/page3"
+                  "name": "mwj:phase/setting_phase/choose_role/page3"
                 }
               ]
             },{
@@ -73,7 +73,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mwj:phase/choose_role/page4"
+                  "name": "mwj:phase/setting_phase/choose_role/page4"
                 }
               ]
             }

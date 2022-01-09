@@ -20,7 +20,7 @@ scoreboard players operation @p[predicate=mwj:player/host] Digit010 /= #MWL Num0
 scoreboard players operation @p[predicate=mwj:player/host] Digit001 = #MWL GameTime
 scoreboard players operation @p[predicate=mwj:player/host] Digit001 %= #MWL Num00100
 scoreboard players operation @p[predicate=mwj:player/host] Digit001 %= #MWL Num00010
-loot replace entity @p[predicate=mwj:player/host] inventory.4 loot mwj:setting_phase/choose_mode/choose_game_time
+loot replace entity @p[predicate=mwj:player/host] inventory.4 loot mwj:setting_phase/master/choose_game_time
 loot replace entity @p[predicate=mwj:player/host] inventory.12 loot mwj:setting_phase/common/digit_100
 loot replace entity @p[predicate=mwj:player/host] inventory.13 loot mwj:setting_phase/common/digit_010
 loot replace entity @p[predicate=mwj:player/host] inventory.14 loot mwj:setting_phase/common/digit_001
