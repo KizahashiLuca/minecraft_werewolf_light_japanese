@@ -11,11 +11,11 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                ["",{"text":"追加特殊アイテム設定","color":"white","bold":false,"italic":false}]
+                ["",{"text":"特殊アイテム設定","color":"white","bold":false,"italic":false}]
               ]
             },{
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_item_addition\"]}"
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_choose_item\"]}"
             }
           ]
         }

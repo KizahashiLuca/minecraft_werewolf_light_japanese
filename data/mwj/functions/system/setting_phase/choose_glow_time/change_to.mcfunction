@@ -12,14 +12,14 @@
 clear @p[predicate=mwj:player/host]
 
 ## Replace inventory
-scoreboard players operation @p[predicate=mwj:player/host] Digit100 = #MWL GlowTime
-scoreboard players operation @p[predicate=mwj:player/host] Digit100 /= #MWL Num00100
-scoreboard players operation @p[predicate=mwj:player/host] Digit010 = #MWL GlowTime
-scoreboard players operation @p[predicate=mwj:player/host] Digit010 %= #MWL Num00100
-scoreboard players operation @p[predicate=mwj:player/host] Digit010 /= #MWL Num00010
-scoreboard players operation @p[predicate=mwj:player/host] Digit001 = #MWL GlowTime
-scoreboard players operation @p[predicate=mwj:player/host] Digit001 %= #MWL Num00100
-scoreboard players operation @p[predicate=mwj:player/host] Digit001 %= #MWL Num00010
+scoreboard players operation #MWL Digit100 = #MWL GlowTime
+scoreboard players operation #MWL Digit100 /= #MWL Num00100
+scoreboard players operation #MWL Digit010 = #MWL GlowTime
+scoreboard players operation #MWL Digit010 %= #MWL Num00100
+scoreboard players operation #MWL Digit010 /= #MWL Num00010
+scoreboard players operation #MWL Digit001 = #MWL GlowTime
+scoreboard players operation #MWL Digit001 %= #MWL Num00100
+scoreboard players operation #MWL Digit001 %= #MWL Num00010
 loot replace entity @p[predicate=mwj:player/host] inventory.4 loot mwj:setting_phase/master/choose_glow_time
 loot replace entity @p[predicate=mwj:player/host] inventory.12 loot mwj:setting_phase/common/digit_100
 loot replace entity @p[predicate=mwj:player/host] inventory.13 loot mwj:setting_phase/common/digit_010
@@ -30,4 +30,4 @@ loot replace entity @p[predicate=mwj:player/host] inventory.22 loot mwj:setting_
 loot replace entity @p[predicate=mwj:player/host] inventory.25 loot mwj:setting_phase/common/ok
 
 ## Change phase
-scoreboard players set #MWL Phase 82
+scoreboard players set #MWL Phase 72

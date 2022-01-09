@@ -13,6 +13,11 @@ scoreboard players operation #MWL GlowTime *= #MWL GameTime
 scoreboard players operation #MWL GlowTime *= #MWL Num00060
 scoreboard players operation #MWL GlowTime /= #MWL Num00100
 
+## Calculate distribution time
+scoreboard players operation #MWL DstrScrapTime *= #MWL GameTime
+scoreboard players operation #MWL DstrScrapTime *= #MWL Num00060
+scoreboard players operation #MWL DstrScrapTime /= #MWL Num00100
+
 ## Clear inventory
 clear @a
 

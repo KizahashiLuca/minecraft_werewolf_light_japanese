@@ -32,7 +32,7 @@
 ## Game settings
 scoreboard players set #MWL DataVersion 1444
 scoreboard players set #MWL Version 13
-scoreboard players set #MWL Phase 80
+scoreboard players set #MWL Phase 70
 scoreboard players set #MWL NumOfPlayers 0
 scoreboard players set #MWL NumOfRoles 0
 scoreboard players set #MWL NumOfRestRoles 0

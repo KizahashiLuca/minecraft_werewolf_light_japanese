@@ -1,0 +1,18 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_distribution_time"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/choose_distribution_time/distribution_time_in_range"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:setting_phase/common/ok"
+  }
+]

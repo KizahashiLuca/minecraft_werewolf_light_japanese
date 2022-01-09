@@ -13,6 +13,7 @@
 scoreboard objectives add TagOfRoleWork dummy
 ## Common of augury
 scoreboard objectives add DropTorch minecraft.dropped:minecraft.redstone_torch
+scoreboard objectives add CraftTorch minecraft.crafted:minecraft.redstone_torch
 scoreboard objectives add RemovedTorch dummy
 scoreboard objectives add RoleDone dummy
 scoreboard objectives add PageNumer dummy

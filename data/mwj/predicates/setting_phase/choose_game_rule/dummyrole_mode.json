@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,id:\"minecraft:ender_eye\",tag:{Tags:[\"MWLsetting\",\"MWL_dummyrole_mode_on\"]}}]}"
+        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MWLsetting\",\"MWL_dummyrole_mode_on\"]}}]}"
       }
     }
   },
@@ -23,7 +23,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:22b,id:\"minecraft:ender_pearl\",tag:{Tags:[\"MWLsetting\",\"MWL_dummyrole_mode_off\"]}}]}"
+        "nbt": "{Inventory:[{Slot:22b,tag:{Tags:[\"MWLsetting\",\"MWL_dummyrole_mode_off\"]}}]}"
       }
     }
   }

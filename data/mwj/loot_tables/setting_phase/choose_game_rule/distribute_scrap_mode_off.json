@@ -1,0 +1,30 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_quartz_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"役職のかけら配布","color":"white","bold":true,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "lore": [
+                ["",{"text":"無し","color":"red","bold":true,"italic":false},{"text":"を選択中","color":"white","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_distribute_scrap_mode_off\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

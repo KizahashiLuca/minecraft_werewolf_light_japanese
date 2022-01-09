@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:26b,tag:{Tags:[\"MWLsetting\",\"MWL_choose_role\"]}}]}"
+        "nbt": "{Inventory:[{Slot:14b,tag:{Tags:[\"MWLsetting\",\"MWL_choose_role\"]}}]}"
       }
     }
   }

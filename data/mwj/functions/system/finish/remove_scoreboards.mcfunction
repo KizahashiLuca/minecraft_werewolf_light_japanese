@@ -65,6 +65,11 @@ scoreboard objectives remove SetDummyRole
 scoreboard objectives remove 2ndRoleMode
 scoreboard objectives remove Prev2ndRoleMode
 scoreboard objectives remove Set2ndRole
+## Choose distribute scrap mode
+scoreboard objectives remove DstrScrapMode
+scoreboard objectives remove PreDstrScrapMode
+scoreboard objectives remove DstrScrapTime
+scoreboard objectives remove PrevDstrScrapTime
 ## Common number gui
 scoreboard objectives remove Num10000
 scoreboard objectives remove Num01000
@@ -182,6 +187,7 @@ scoreboard objectives remove RandomMultiplier
 scoreboard objectives remove TagOfRoleWork
 ## Common of augury
 scoreboard objectives remove DropTorch
+scoreboard objectives remove CraftTorch
 scoreboard objectives remove RemovedTorch
 scoreboard objectives remove RoleDone
 scoreboard objectives remove PageNumer

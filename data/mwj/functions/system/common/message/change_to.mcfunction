@@ -37,9 +37,12 @@ execute if predicate mwj:game_rule/secondrole_drunk run function mwj:system/comm
 execute if predicate mwj:game_rule/gamemode_normal run function mwj:system/common/message/gamemode_normal_werewolf
 execute if predicate mwj:game_rule/gamemode_two_alive run function mwj:system/common/message/gamemode_two_alive
 execute if predicate mwj:game_rule/gamemode_annihilation run function mwj:system/common/message/gamemode_annihilation
+execute if predicate mwj:game_rule/distribute_scrap_false run function mwj:system/common/message/distribute_scrap_false
+execute if predicate mwj:game_rule/distribute_scrap_true run function mwj:system/common/message/distribute_scrap_true
 
 tellraw @a ["",{"text":"    制限時間 : ","color":"white"},{"score":{"name":"#MWL","objective":"GameTime"},"color":"green","bold":true},{"text":"分","color":"green","bold":true}]
 tellraw @a ["",{"text":"      残り時間 ","color":"white"},{"score":{"name":"#MWL","objective":"GlowTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員が発光","color":"white"}]
+tellraw @a[predicate=mwj:game_rule/distribute_scrap_true] ["",{"text":"      残り時間 ","color":"white"},{"score":{"name":"#MWL","objective":"DstrScrapTime"},"color":"green","bold":true},{"text":"秒","color":"green","bold":true},{"text":" で生存者全員にかけら配布","color":"white"}]
 
 tellraw @a [""]
 tellraw @a ["",{"text":"  役職内訳 : ","color":"white"}]

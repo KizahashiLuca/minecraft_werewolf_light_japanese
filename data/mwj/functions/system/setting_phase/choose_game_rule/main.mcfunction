@@ -16,6 +16,7 @@ kill @e[predicate=mwj:setting_phase/common/throw_item]
 execute as @p[predicate=mwj:setting_phase/choose_game_rule/game_mode] run function mwj:system/setting_phase/choose_game_rule/change_game_mode
 execute as @p[predicate=mwj:setting_phase/choose_game_rule/dummyrole_mode] run function mwj:system/setting_phase/choose_game_rule/change_dummyrole_mode
 execute as @p[predicate=mwj:setting_phase/choose_game_rule/secondrole_mode] run function mwj:system/setting_phase/choose_game_rule/change_secondrole_mode
+execute as @p[predicate=mwj:setting_phase/choose_game_rule/distribute_scrap_mode] run function mwj:system/setting_phase/choose_game_rule/change_distribute_scrap_mode
 execute as @p[predicate=mwj:setting_phase/choose_game_rule/cancel] run function mwj:system/setting_phase/choose_game_rule/selected_cancel
 execute as @p[predicate=mwj:setting_phase/choose_game_rule/reset] run function mwj:system/setting_phase/choose_game_rule/reset_game_rule
 execute as @p[predicate=mwj:setting_phase/choose_game_rule/ok] run function mwj:system/setting_phase/choose_game_rule/selected_ok

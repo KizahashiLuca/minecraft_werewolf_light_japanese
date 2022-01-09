@@ -43,6 +43,11 @@ scoreboard objectives add SetDummyRole dummy
 scoreboard objectives add 2ndRoleMode dummy
 scoreboard objectives add Prev2ndRoleMode dummy
 scoreboard objectives add Set2ndRole dummy
+## Choose distribute scrap mode
+scoreboard objectives add DstrScrapMode dummy
+scoreboard objectives add PreDstrScrapMode dummy
+scoreboard objectives add DstrScrapTime dummy
+scoreboard objectives add PrevDstrScrapTime dummy
 ## Common number gui
 scoreboard objectives add Num10000 dummy
 scoreboard objectives add Num01000 dummy

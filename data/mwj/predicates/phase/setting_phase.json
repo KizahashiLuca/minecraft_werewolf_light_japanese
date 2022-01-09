@@ -7,6 +7,18 @@
     },
     {
       "condition": "minecraft:reference",
+      "name": "mwj:phase/setting_phase/choose_game_rule"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mwj:phase/setting_phase/choose_item/master"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mwj:phase/setting_phase/choose_role/master"
+    },
+    {
+      "condition": "minecraft:reference",
       "name": "mwj:phase/setting_phase/choose_hide_time"
     },
     {
@@ -19,15 +31,7 @@
     },
     {
       "condition": "minecraft:reference",
-      "name": "mwj:phase/setting_phase/choose_game_rule"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mwj:phase/setting_phase/choose_item/master"
-    },
-    {
-      "condition": "minecraft:reference",
-      "name": "mwj:phase/setting_phase/choose_role/master"
+      "name": "mwj:phase/setting_phase/choose_distribution_time"
     }
   ]
 }

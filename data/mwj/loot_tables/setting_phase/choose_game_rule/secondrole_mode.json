@@ -9,14 +9,8 @@
           "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_off",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "2ndRoleMode": {
-                  "min": 0,
-                  "max": 0
-                }
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:game_rule/secondrole_none"
             }
           ]
         },
@@ -25,14 +19,8 @@
           "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_ghost",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "2ndRoleMode": {
-                  "min": 1,
-                  "max": 1
-                }
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:game_rule/secondrole_ghost"
             }
           ]
         },
@@ -41,14 +29,8 @@
           "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_drunk",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "2ndRoleMode": {
-                  "min": 2,
-                  "max": 2
-                }
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:game_rule/secondrole_drunk"
             }
           ]
         }

@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:21b,id:\"minecraft:small_amethyst_bud\",tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_normal_wolf\"]}}]}"
+        "nbt": "{Inventory:[{Slot:21b,tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_normal_wolf\"]}}]}"
       }
     }
   },
@@ -23,7 +23,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:21b,id:\"minecraft:medium_amethyst_bud\",tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_two_alive\"]}}]}"
+        "nbt": "{Inventory:[{Slot:21b,tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_two_alive\"]}}]}"
       }
     }
   },
@@ -33,7 +33,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:21b,id:\"minecraft:large_amethyst_bud\",tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}}]}"
+        "nbt": "{Inventory:[{Slot:21b,tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}}]}"
       }
     }
   }

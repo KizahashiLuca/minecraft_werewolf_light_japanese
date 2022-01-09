@@ -22,6 +22,9 @@ execute as @e[type=minecraft:trident] run data merge entity @s {pickup:2b}
 ## Glow Time
 execute if score #MWL Second <= #MWL GlowTime run effect give @a[team=Player,scores={DeathCount=0}] minecraft:glowing 1000000 1 true
 
+## Distribution time
+execute if score #MWL Second = #MWL DstrScrapTime run loot give @a[team=Player,scores={DeathCount=0}] loot mwj:item/roles/scrap
+
 ## Count Death Score
 execute as @a[team=Player,scores={CurrentRole=1..4,DeathCount=1}] run scoreboard players remove #MWL BLACK 1
 execute as @a[team=Player,scores={CurrentRole=20..40,DeathCount=1}] run scoreboard players remove #MWL WHITE 1
@@ -31,6 +34,11 @@ execute as @a[team=Player,scores={RemovedTorch=1..}] run loot give @s loot mwj:i
 scoreboard players reset @a[team=Player,scores={RemovedTorch=1..}] RemovedTorch
 scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:["MWLitem"]}}}]
+
+## Detect Crafting Torch
+scoreboard players set @a[team=Player,scores={CraftedTorch=1..,2ndRoleDone=1}] RoleDone 0 
+scoreboard players add @a[team=Player,scores={CurrentRole=21,CraftedTorch=1..,2ndRoleDone=1}] CountOfBakery 10
+scoreboard players reset @a[team=Player,scores={CraftedTorch=1..}] CraftedTorch
 
 ## Detect snowball
 execute if score #MWL ChooseSnowball matches 1 run function mwj:system/game_phase/snowball/main

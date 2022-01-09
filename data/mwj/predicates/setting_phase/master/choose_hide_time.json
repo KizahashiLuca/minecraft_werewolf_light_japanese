@@ -13,7 +13,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{Slot:20b,tag:{Tags:[\"MWLsetting\",\"MWL_choose_hide_time\"]}}]}"
+        "nbt": "{Inventory:[{Slot:21b,tag:{Tags:[\"MWLsetting\",\"MWL_choose_hide_time\"]}}]}"
       }
     }
   }

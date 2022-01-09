@@ -9,14 +9,8 @@
           "name": "mwj:setting_phase/choose_game_rule/game_mode_normal_wolf",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "GameMode": {
-                  "min": 1,
-                  "max": 1
-                }
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:game_rule/gamemode_normal"
             }
           ]
         },
@@ -25,14 +19,8 @@
           "name": "mwj:setting_phase/choose_game_rule/game_mode_two_alive",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "GameMode": {
-                  "min": 2,
-                  "max": 2
-                }
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:game_rule/gamemode_two_alive"
             }
           ]
         },
@@ -41,14 +29,8 @@
           "name": "mwj:setting_phase/choose_game_rule/game_mode_annihilation",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "GameMode": {
-                  "min": 3,
-                  "max": 3
-                }
-              }
+              "condition": "minecraft:reference",
+              "name": "mwj:game_rule/gamemode_annihilation"
             }
           ]
         }

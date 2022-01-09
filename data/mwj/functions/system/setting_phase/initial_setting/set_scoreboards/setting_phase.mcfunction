@@ -43,6 +43,11 @@ scoreboard players set #MWL SetDummyRole 0
 scoreboard players set #MWL 2ndRoleMode 0
 scoreboard players set #MWL Prev2ndRoleMode 0
 scoreboard players set #MWL Set2ndRole 0
+## Choose distribute scrap mode
+scoreboard players set #MWL DstrScrapMode 0
+scoreboard players set #MWL PreDstrScrapMode 0
+scoreboard players set #MWL DstrScrapTime 100
+scoreboard players set #MWL PrevDstrScrapTime 100
 ## Common number gui
 scoreboard players set #MWL Num10000 10000
 scoreboard players set #MWL Num01000 1000

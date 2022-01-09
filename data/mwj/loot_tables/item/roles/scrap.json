@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:quartz",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"役職のかけら","color":"aqua","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
+              "lore": [
+                ["",{"text":"不可壊","color":"blue","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:63,Tags:[\"MWLitem\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

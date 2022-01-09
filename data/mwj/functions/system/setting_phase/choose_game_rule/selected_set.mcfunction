@@ -20,6 +20,8 @@ tellraw @a[predicate=mwj:game_rule/dummyrole_exist] ["",{"text":"    役欠け�
 tellraw @a[predicate=mwj:game_rule/secondrole_none] ["",{"text":"    二次役職設定 : ","color":"white"},{"text":"なし","color":"red","bold":true}]
 tellraw @a[predicate=mwj:game_rule/secondrole_ghost] ["",{"text":"    二次役職設定 : ","color":"white"},{"text":"地縛霊","color":"dark_purple","bold":true}]
 tellraw @a[predicate=mwj:game_rule/secondrole_drunk] ["",{"text":"    二次役職設定 : ","color":"white"},{"text":"酔っ払い","color":"green","bold":true}]
+tellraw @a[predicate=mwj:game_rule/distribute_scrap_false] ["",{"text":"    かけら配布   : ","color":"white"},{"text":"なし","color":"red","bold":true}]
+tellraw @a[predicate=mwj:game_rule/distribute_scrap_true] ["",{"text":"    かけら配布   : ","color":"white"},{"text":"あり","color":"green","bold":true}]
 tellraw @a[predicate=mwj:game_rule/dummyrole_none] ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" です。","color":"white"}]
 tellraw @a[predicate=mwj:game_rule/dummyrole_exist] ["",{"text":"  現在参加者は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfPlayers"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" で、役職数は ","color":"white"},{"score":{"name":"#MWL","objective":"NumOfRoles"},"color":"green","bold":true},{"text":"役","color":"green","bold":true},{"text":" です。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]

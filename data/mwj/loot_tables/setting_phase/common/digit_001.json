@@ -9,11 +9,20 @@
           "name": "mwj:setting_phase/common/number/0",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 0
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 0,
+                "max": 0
+              }
             }
           ]
         },
@@ -22,11 +31,20 @@
           "name": "mwj:setting_phase/common/number/1",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 1
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 1,
+                "max": 1
+              }
             }
           ]
         },
@@ -35,11 +53,20 @@
           "name": "mwj:setting_phase/common/number/2",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 2
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 2,
+                "max": 2
+              }
             }
           ]
         },
@@ -48,11 +75,20 @@
           "name": "mwj:setting_phase/common/number/3",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 3
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 3,
+                "max": 3
+              }
             }
           ]
         },
@@ -61,11 +97,20 @@
           "name": "mwj:setting_phase/common/number/4",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 4
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 4,
+                "max": 4
+              }
             }
           ]
         },
@@ -74,11 +119,20 @@
           "name": "mwj:setting_phase/common/number/5",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 5
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 5,
+                "max": 5
+              }
             }
           ]
         },
@@ -87,11 +141,20 @@
           "name": "mwj:setting_phase/common/number/6",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 6
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 6,
+                "max": 6
+              }
             }
           ]
         },
@@ -100,11 +163,20 @@
           "name": "mwj:setting_phase/common/number/7",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 7
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 7,
+                "max": 7
+              }
             }
           ]
         },
@@ -113,11 +185,20 @@
           "name": "mwj:setting_phase/common/number/8",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 8
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 8,
+                "max": 8
+              }
             }
           ]
         },
@@ -126,11 +207,20 @@
           "name": "mwj:setting_phase/common/number/9",
           "conditions": [
             {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "Digit001": 9
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "Digit001",
+                "scale": 1
               },
-              "entity": "this"
+              "range": {
+                "min": 9,
+                "max": 9
+              }
             }
           ]
         }

@@ -19,6 +19,7 @@ execute if predicate mwj:setting_phase/initial_setting/shortage_players run func
 execute if predicate mwj:phase/setting_phase/choose_role/master run function mwj:system/setting_phase/choose_role/common/main
 execute if predicate mwj:phase/setting_phase/choose_item/master run function mwj:system/setting_phase/choose_item/common/main
 execute if predicate mwj:phase/setting_phase/choose_game_rule run function mwj:system/setting_phase/choose_game_rule/main
+execute if predicate mwj:phase/setting_phase/choose_distribution_time run function mwj:system/setting_phase/choose_distribution_time/main
 execute if predicate mwj:phase/setting_phase/choose_game_time run function mwj:system/setting_phase/choose_game_time/main
 execute if predicate mwj:phase/setting_phase/choose_glow_time run function mwj:system/setting_phase/choose_glow_time/main
 execute if predicate mwj:phase/setting_phase/choose_hide_time run function mwj:system/setting_phase/choose_hide_time/main
