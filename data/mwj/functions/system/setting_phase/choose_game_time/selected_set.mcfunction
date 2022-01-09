@@ -15,5 +15,5 @@ tellraw @a ["",{"text":"  制限時間が、 ","color":"white"},{"score":{"name"
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
 
-## Change to choose mode
+## Change to master
 function mwj:system/setting_phase/master/change_to

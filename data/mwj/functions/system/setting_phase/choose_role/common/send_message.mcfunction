@@ -39,5 +39,5 @@ tellraw @a[predicate=mwj:setting_phase/choose_role/chosen_role/rest_roles] ["",{
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
 
-## Change to Choose Mode
+## Change to master
 function mwj:system/setting_phase/master/change_to

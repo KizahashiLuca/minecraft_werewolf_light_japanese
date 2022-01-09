@@ -17,5 +17,5 @@ tellraw @a ["",{"text":"  に設定されました。","color":"white"}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
 
-## Change to Choose Mode
+## Change to master
 function mwj:system/setting_phase/master/change_to

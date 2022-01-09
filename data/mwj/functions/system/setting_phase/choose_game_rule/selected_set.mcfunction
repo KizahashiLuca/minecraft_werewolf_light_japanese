@@ -25,5 +25,5 @@ tellraw @a[predicate=mwj:game_rule/dummyrole_exist] ["",{"text":"  現在参加�
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a [""]
 
-## Change to choose mode
+## Change to master
 function mwj:system/setting_phase/master/change_to
