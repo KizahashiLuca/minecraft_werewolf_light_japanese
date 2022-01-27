@@ -18,3 +18,6 @@ scoreboard players remove @s FoxSpawnSecond 10
 
 ## Reset Death Count
 scoreboard players set @s DeathCount 0
+
+## Remove tag
+tag @s remove TridentDeadFoxbyWolf
