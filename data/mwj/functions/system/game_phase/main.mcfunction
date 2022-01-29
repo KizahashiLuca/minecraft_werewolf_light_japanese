@@ -19,35 +19,35 @@ function mwj:system/common/time/tick
 execute as @e[predicate=mwj:game_phase/projectile] run data merge entity @s {pickup:2b}
 
 ## Glow Time
-execute if score #MWL Second <= #MWL GlowTime run effect give @a[team=Player,scores={DeathCount=0}] minecraft:glowing 1000000 1 true
+effect give @a[predicate=mwj:game_phase/glowing] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
-execute as @a[team=Player,scores={CurrentRole=1..4,DeathCount=1}] run scoreboard players remove #MWL BLACK 1
-execute as @a[team=Player,scores={CurrentRole=20..40,DeathCount=1}] run scoreboard players remove #MWL WHITE 1
+execute as @a[predicate=mwj:game_phase/count_death/black] run scoreboard players remove #MWL BLACK 1
+execute as @a[predicate=mwj:game_phase/count_death/white] run scoreboard players remove #MWL WHITE 1
 
 ## Detect Dropping Torch
-execute as @a[team=Player,scores={RemovedTorch=1..}] run loot give @s loot mwj:item/common/redstone_torch
-scoreboard players reset @a[team=Player,scores={RemovedTorch=1..}] RemovedTorch
-scoreboard players set @a[team=Player,scores={DropTorch=1..}] RemovedTorch 1
-kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:redstone_torch",tag:{Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}],Tags:["MWLitem"]}}}]
+loot give @a[predicate=mwj:items/torch/not_have] loot mwj:item/common/redstone_torch
+scoreboard players reset @a[predicate=mwj:items/torch/not_have] RemovedTorch
+scoreboard players set @a[predicate=mwj:items/torch/drop] RemovedTorch 1
+kill @e[predicate=mwj:items/torch/dropped]
 
 ## Detect snowball
-execute if score #MWL ChooseSnowball matches 1 run function mwj:system/game_phase/snowball/main
+execute if predicate mwj:items/snowball/main run function mwj:system/game_phase/snowball/main
 
 ## Detect trident
 execute if score #MWL ChooseTrident matches 1 run function mwj:system/game_phase/trident/main
 
 ## Detect conduit
-execute if predicate mwj:game_phase/conduit/main run function mwj:system/game_phase/conduit/main
+execute if predicate mwj:items/conduit/main run function mwj:system/items/conduit/main
 
 ## Detect honey block
-execute if predicate mwj:game_phase/honey_block/main run function mwj:system/game_phase/honey_block/main
+execute if predicate mwj:items/honey_block/main run function mwj:system/items/honey_block/main
 
 ## Detect soul lantern
-execute if predicate mwj:game_phase/lantern/main run function mwj:system/game_phase/soul_lantern/main
+execute if predicate mwj:items/lantern/main run function mwj:system/game_phase/soul_lantern/main
 
 ## Detect twisting vines
-execute if predicate mwj:game_phase/twisting_vines/main run function mwj:system/game_phase/twisting_vines/main
+execute if predicate mwj:items/twisting_vines/main run function mwj:system/items/twisting_vines/main
 
 ## Clever wolf System
 execute as @a[team=Player,scores={CurrentRole=3,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/clever_wolf/main

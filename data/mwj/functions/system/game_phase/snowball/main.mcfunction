@@ -9,6 +9,5 @@
 ####################################
 
 ## Snowball
-execute as @a[team=Player,nbt={Inventory:[{id:"minecraft:snow_block"}]}] run function mwj:system/game_phase/snowball/clear_snowball
-execute as @e[type=minecraft:snowball,nbt={Item:{id:"minecraft:snowball",tag:{Tags:["MWLitem"]}}}] run function mwj:system/game_phase/snowball/detect_snowball_move
-execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,scores={NumberOfSnowball=1..}] run function mwj:system/game_phase/snowball/detect_snowball_exist
+execute as @e[predicate=mwj:items/snowball/snowball] at @s run function mwj:system/game_phase/snowball/detect_snowball_move
+execute as @e[predicate=mwj:items/snowball/set_num_cloud] at @s run function mwj:system/game_phase/snowball/detect_snowball_exist

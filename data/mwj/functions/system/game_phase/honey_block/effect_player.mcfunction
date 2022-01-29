@@ -12,7 +12,7 @@
 tag @s add DetectPlayer
 
 ## Give effect
-execute at @e[predicate=mwj:game_phase/honey_block/detect_cloud,tag=DetectPlayer,limit=1] as @a[team=Player,scores={DeathCount=0},distance=..4] unless score @s NumOfPlayers = @e[predicate=mwj:game_phase/honey_block/detect_cloud,tag=DetectPlayer,limit=1] NumOfPlayers run effect give @s minecraft:slowness 1 2 false
+execute at @e[predicate=mwj:items/honey_block/detect_cloud,tag=DetectPlayer,limit=1] as @a[team=Player,scores={DeathCount=0},distance=..4] unless score @s NumOfPlayers = @e[predicate=mwj:items/honey_block/detect_cloud,tag=DetectPlayer,limit=1] NumOfPlayers run effect give @s minecraft:slowness 1 2 false
 
 ## Remove a tag
 tag @s remove DetectPlayer

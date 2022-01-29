@@ -9,8 +9,8 @@
 ####################################
 
 ## Detect dropping lantern
-execute as @a[predicate=mwj:game_phase/lantern/detect_lantern_user] at @s run function mwj:system/game_phase/soul_lantern/throw_lantern
+execute as @a[predicate=mwj:items/lantern/detect_lantern_user] at @s run function mwj:system/game_phase/soul_lantern/throw_lantern
 
 ## Detect dropping soul lantern
-execute as @a[predicate=mwj:game_phase/lantern/detect_soul_lantern_user] at @s run function mwj:system/game_phase/soul_lantern/throw_soul_lantern
+execute as @a[predicate=mwj:items/lantern/detect_soul_lantern_user] at @s run function mwj:system/game_phase/soul_lantern/throw_soul_lantern
 scoreboard players reset @a[team=Player] TeleporterTemp

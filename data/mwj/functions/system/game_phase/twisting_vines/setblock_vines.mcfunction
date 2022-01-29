@@ -14,4 +14,4 @@ setblock ~ ~ ~ minecraft:twisting_vines keep
 playsound minecraft:block.weeping_vines.place block @a ~ ~ ~
 execute as @s[scores={TwistVinesCount=20}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["TwistingVinesEnd"],NoGravity:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:100000000}
 execute as @s[scores={TwistVinesCount=..19}] unless block ~ ~1 ~ minecraft:air run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["TwistingVinesEnd"],NoGravity:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:100000000}
-execute as @s[scores={TwistVinesCount=..19}] positioned ~ ~1 ~ if block ~ ~ ~ minecraft:air run function mwj:system/game_phase/twisting_vines/setblock_vines
+execute as @s[scores={TwistVinesCount=..19}] positioned ~ ~1 ~ if block ~ ~ ~ minecraft:air run function mwj:system/items/twisting_vines/setblock_vines

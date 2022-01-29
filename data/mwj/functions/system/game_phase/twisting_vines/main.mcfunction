@@ -9,4 +9,4 @@
 ####################################
 
 ## Twisting Vines
-execute as @a[predicate=mwj:game_phase/twisting_vines/detect_user] at @s run function mwj:system/game_phase/twisting_vines/throw_vines
+execute as @a[predicate=mwj:items/twisting_vines/detect_user] at @s run function mwj:system/items/twisting_vines/throw_vines

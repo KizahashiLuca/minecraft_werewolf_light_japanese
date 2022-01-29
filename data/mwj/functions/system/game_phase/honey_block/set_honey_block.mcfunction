@@ -9,6 +9,6 @@
 ####################################
 
 ## Detect honey_block set
-execute at @s unless score @e[predicate=mwj:game_phase/honey_block/detect_position,sort=nearest,limit=1] NumOfPlayers matches 1.. run scoreboard players operation @e[predicate=mwj:game_phase/honey_block/detect_position,sort=nearest,limit=1] NumOfPlayers = @s NumOfPlayers
-scoreboard players remove @a[predicate=mwj:game_phase/honey_block/detect_user_score] DropHoneyBlock 1
-scoreboard players reset @a[predicate=mwj:game_phase/honey_block/detect_user_score_error] DropHoneyBlock
+execute at @s unless score @e[predicate=mwj:items/honey_block/detect_position,sort=nearest,limit=1] NumOfPlayers matches 1.. run scoreboard players operation @e[predicate=mwj:items/honey_block/detect_position,sort=nearest,limit=1] NumOfPlayers = @s NumOfPlayers
+scoreboard players remove @a[predicate=mwj:items/honey_block/detect_user_score] DropHoneyBlock 1
+scoreboard players reset @a[predicate=mwj:items/honey_block/detect_user_score_error] DropHoneyBlock

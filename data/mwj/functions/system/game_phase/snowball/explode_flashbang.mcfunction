@@ -9,7 +9,7 @@
 ####################################
 
 ## Give effect
-execute at @s run effect give @a[team=Player,scores={DeathCount=0},distance=..3] minecraft:blindness 20 0 true
+effect give @a[predicate=mwj:items/snowball/give_effect] minecraft:blindness 20 0 true
 
 ## Kill area_effect_cloud
 kill @s

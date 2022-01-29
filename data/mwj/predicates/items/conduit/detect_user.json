@@ -11,6 +11,6 @@
   },
   {
     "condition": "minecraft:reference",
-    "name": "mwj:game_phase/lantern/detect_lantern_user_score"
+    "name": "mwj:items/conduit/detect_user_score"
   }
 ]

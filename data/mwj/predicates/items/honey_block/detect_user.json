@@ -11,6 +11,6 @@
   },
   {
     "condition": "minecraft:reference",
-    "name": "mwj:game_phase/twisting_vines/detect_user_score"
+    "name": "mwj:items/honey_block/detect_user_score"
   }
 ]

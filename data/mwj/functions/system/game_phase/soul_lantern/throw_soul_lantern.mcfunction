@@ -10,9 +10,9 @@
 
 ## Detect throwing soul_lantern
 execute as @s run function mwj:system/game_phase/soul_lantern/compare_soul_lantern_tag
-kill @e[predicate=mwj:game_phase/lantern/detect_soul_lantern_position,sort=nearest,limit=1]
+kill @e[predicate=mwj:items/lantern/detect_soul_lantern_position,sort=nearest,limit=1]
 data remove storage mwj:teleporter Teleporter.Temp
 data remove storage mwj:teleporter Teleporter.SoulLantern
 ## Set scoreboard
-scoreboard players remove @s[predicate=mwj:game_phase/lantern/detect_soul_lantern_user_score] DropSoulLantern 1
-scoreboard players reset @s[predicate=mwj:game_phase/lantern/detect_soul_lantern_user_score_error] DropSoulLantern
+scoreboard players remove @s[predicate=mwj:items/lantern/detect_soul_lantern_user_score] DropSoulLantern 1
+scoreboard players reset @s[predicate=mwj:items/lantern/detect_soul_lantern_user_score_error] DropSoulLantern

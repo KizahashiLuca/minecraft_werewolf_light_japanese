@@ -12,7 +12,7 @@
 tag @s add DetectSnowballUnexist
 
 ## Detect if not snowball hit
-execute as @e[type=minecraft:snowball,nbt={Item:{id:"minecraft:snowball",tag:{Tags:["MWLitem"]}}}] if score @s NumberOfSnowball = @e[type=minecraft:area_effect_cloud,tag=Snowball,tag=DetectSnowballUnexist,limit=1] NumberOfSnowball run tag @e[type=minecraft:area_effect_cloud,tag=Snowball,tag=DetectSnowballUnexist,limit=1] remove DetectSnowballUnexist
+execute as @e[predicate=mwj:items/snowball/detect_snowball] run tag @e[predicate=mwj:items/snowball/certain_cloud] remove DetectSnowballUnexist
 
 ## If snowball hit, explode
-execute as @e[type=minecraft:area_effect_cloud,tag=Snowball,tag=DetectSnowballUnexist,limit=1] run function mwj:system/game_phase/snowball/explode_flashbang
+execute as @s[predicate=mwj:items/snowball/certain_cloud] run function mwj:system/game_phase/snowball/explode_flashbang
