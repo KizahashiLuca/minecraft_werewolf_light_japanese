@@ -16,8 +16,7 @@ execute as @a[team=Player,scores={CurrentRole=0},gamemode=!spectator] run functi
 function mwj:system/common/time/tick
 
 ## Cannot Pickup
-execute as @e[type=minecraft:arrow] run data merge entity @s {pickup:2b}
-execute as @e[type=minecraft:trident] run data merge entity @s {pickup:2b}
+execute as @e[predicate=mwj:game_phase/projectile] run data merge entity @s {pickup:2b}
 
 ## Glow Time
 execute if score #MWL Second <= #MWL GlowTime run effect give @a[team=Player,scores={DeathCount=0}] minecraft:glowing 1000000 1 true
