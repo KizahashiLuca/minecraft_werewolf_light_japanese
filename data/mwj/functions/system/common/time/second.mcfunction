@@ -18,4 +18,4 @@ execute if predicate mwj:phase/game_phase run function mwj:system/common/time/ga
 
 ## Process the sound system
 execute if predicate mwj:system/common/time/bossbar/yellow as @a at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1 1
-execute if predicate mwj:system/common/time/bossbar/hide_time_red at @s run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1
+execute if predicate mwj:system/common/time/bossbar/hide_time_red as @a at @s run playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 1 1

@@ -44,5 +44,8 @@ function mwj:system/game_phase/settings/set_players
 ## Set bossbar
 function mwj:system/game_phase/settings/set_bossbars
 
+## Reset scoreboard
+function mwj:system/game_phase/settings/reset_scoreboards
+
 ## Game start
 scoreboard players set #MWL Phase 11
