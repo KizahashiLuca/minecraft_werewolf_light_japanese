@@ -38,16 +38,16 @@ execute if predicate mwj:items/snowball/main run function mwj:system/game_phase/
 execute if score #MWL ChooseTrident matches 1 run function mwj:system/game_phase/trident/main
 
 ## Detect conduit
-execute if predicate mwj:items/conduit/main run function mwj:system/items/conduit/main
+execute if predicate mwj:items/conduit/main run function mwj:system/game_phase/conduit/main
 
 ## Detect honey block
-execute if predicate mwj:items/honey_block/main run function mwj:system/items/honey_block/main
+execute if predicate mwj:items/honey_block/main run function mwj:system/game_phase/honey_block/main
 
 ## Detect soul lantern
 execute if predicate mwj:items/lantern/main run function mwj:system/game_phase/soul_lantern/main
 
 ## Detect twisting vines
-execute if predicate mwj:items/twisting_vines/main run function mwj:system/items/twisting_vines/main
+execute if predicate mwj:items/twisting_vines/main run function mwj:system/game_phase/twisting_vines/main
 
 ## Clever wolf System
 execute as @a[team=Player,scores={CurrentRole=3,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/clever_wolf/main
@@ -81,7 +81,7 @@ execute as @a[team=Player,scores={CurrentRole=31,2ndRoleDone=1}] if score #MWL I
 execute as @a[team=Player,scores={CurrentRole=35,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/thief/main
 
 ## Little Red System
-execute as @a[team=Player,scores={CurrentRole=39,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/little_red/main
+execute as @a[team=Player,scores={CurrentRole=39,2ndRoleDone=1}] at @s if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/little_red/main
 
 ## Cat System
 execute as @a[team=Player,scores={CurrentRole=40,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/cat/main

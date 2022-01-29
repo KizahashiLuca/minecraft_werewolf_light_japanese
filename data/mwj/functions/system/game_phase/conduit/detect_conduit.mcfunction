@@ -12,8 +12,8 @@
 tag @s add SetConduit
 
 ## Detect player
-execute at @e[predicate=mwj:items/conduit/detect_position_set,tag=SetConduit,limit=1] as @a[team=Player,scores={DeathCount=0},distance=..2] unless score @s NumOfPlayers = @e[predicate=mwj:items/conduit/detect_position_set,tag=SetConduit,limit=1,scores={NumOfPlayers=1..}] NumOfPlayers run tag @e[predicate=mwj:items/conduit/detect_position_set,tag=SetConduit,limit=1] add ExplodeConduit
-execute as @e[predicate=mwj:items/conduit/detect_position_set,tag=ExplodeConduit] at @s run function mwj:system/items/conduit/explode_conduit
+execute as @a[team=Player,scores={DeathCount=0},distance=..2] unless score @s NumOfPlayers = @e[predicate=mwj:items/conduit/detect_position_set,tag=SetConduit,limit=1,scores={NumOfPlayers=1..}] NumOfPlayers run tag @e[predicate=mwj:items/conduit/detect_position_set,tag=SetConduit,limit=1] add ExplodeConduit
+execute as @s[predicate=mwj:items/conduit/detect_position_set,tag=ExplodeConduit] run function mwj:system/game_phase/conduit/explode_conduit
 
 ## Remove a tag
 tag @s remove SetConduit

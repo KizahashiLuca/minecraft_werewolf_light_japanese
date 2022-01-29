@@ -18,7 +18,7 @@ execute as @e[type=minecraft:armor_stand,tag=LittleRedGrave] if score @s NumOfPl
 effect clear @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}]
 
 ## Play sound
-execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] at @s run playsound minecraft:block.glass.break block @a ~ ~ ~ 1.0 0.1
+execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run playsound minecraft:block.glass.break block @a ~ ~ ~ 1.0 0.1
 
 ## Particle
 particle minecraft:block stone ~ ~0.2 ~5 0.2 0.8 0.2 0.3 500

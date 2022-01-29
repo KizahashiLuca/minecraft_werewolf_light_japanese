@@ -16,7 +16,7 @@ execute as @s[predicate=mwj:items/snowball/not_set_number] run scoreboard player
 scoreboard players operation @s[predicate=mwj:items/snowball/not_set_number] NumberOfSnowball = #MWL NumberOfSnowball
 
 ## Remove area_effect_cloud preview position of snowball
-kill @e[predicate=mwj:items/snowball/detect_cloud]
+execute as @e[predicate=mwj:items/snowball/cloud] if score @s NumberOfSnowball = @e[predicate=mwj:items/snowball/certain_snowball,limit=1] NumberOfSnowball run kill @s
 
 ## Summon area_effect_cloud current position of snowball
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["CloudOfSnowball","JustBorn"],NoGravity:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:20}

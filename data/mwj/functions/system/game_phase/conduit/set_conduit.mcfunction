@@ -9,6 +9,4 @@
 ####################################
 
 ## Detect conduit set
-execute at @s unless score @e[predicate=mwj:items/conduit/detect_position,sort=nearest,limit=1] NumOfPlayers matches 1.. run scoreboard players operation @e[predicate=mwj:items/conduit/detect_position,sort=nearest,limit=1] NumOfPlayers = @s NumOfPlayers
-scoreboard players remove @a[predicate=mwj:items/conduit/detect_user_score] DropConduit 1
-scoreboard players reset @a[predicate=mwj:items/conduit/detect_user_score_error] DropConduit
+execute unless score @e[predicate=mwj:items/conduit/detect_position,sort=nearest,limit=1] NumOfPlayers matches 1.. run scoreboard players operation @e[predicate=mwj:items/conduit/detect_position,sort=nearest,limit=1] NumOfPlayers = @s NumOfPlayers

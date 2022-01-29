@@ -9,7 +9,7 @@
 ####################################
 
 ## Give effect
-effect give @a[predicate=mwj:items/snowball/give_effect] minecraft:blindness 20 0 true
+effect give @a[predicate=mwj:items/snowball/give_effect,distance=..3] minecraft:blindness 20 0 true
 
 ## Kill area_effect_cloud
 kill @s

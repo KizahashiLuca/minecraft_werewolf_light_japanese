@@ -9,6 +9,6 @@
 ####################################
 
 ## Trident
-execute as @a[team=Player,nbt={Inventory:[{id:"minecraft:trident",tag:{Damage:249,Tags:["MWLitem"]}}]}] run function mwj:system/game_phase/trident/clear_trident
-execute as @e[type=minecraft:trident,nbt={Trident:{id:"minecraft:trident",tag:{Tags:["MWLitem"]}}},tag=!TridentDone] run function mwj:system/game_phase/trident/detect_trident
-execute as @a[team=Player,scores={DeathCount=1}] run function mwj:system/game_phase/trident/kill_log_trident
+execute as @a[team=Player,nbt={Inventory:[{id:"minecraft:trident",tag:{Damage:249,Tags:["MWLitem"]}}]}] at @s run function mwj:system/game_phase/trident/clear_trident
+execute as @e[type=minecraft:trident,nbt={Trident:{id:"minecraft:trident",tag:{Tags:["MWLitem"]}}},tag=!TridentDone] at @s run function mwj:system/game_phase/trident/detect_trident
+execute as @a[team=Player,scores={DeathCount=1}] at @s run function mwj:system/game_phase/trident/kill_log_trident

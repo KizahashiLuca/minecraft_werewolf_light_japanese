@@ -9,5 +9,5 @@
 ####################################
 
 ## Clear
-execute at @s run playsound minecraft:item.shield.break master @a ~ ~ ~
+playsound minecraft:item.shield.break master @a ~ ~ ~
 clear @s minecraft:trident{Damage:249}

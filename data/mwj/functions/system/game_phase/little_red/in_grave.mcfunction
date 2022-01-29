@@ -25,11 +25,11 @@ effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecra
 effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:weakness 1000000 255 true
 
 ## Set inventory
-execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] at @s if data entity @s Inventory run function mwj:system/game_phase/common/set_inventory/main
+execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] if data entity @s Inventory run function mwj:system/game_phase/common/set_inventory/main
 
 ## Kill arrows
-execute at @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run kill @e[type=minecraft:arrow,distance=..2]
-execute at @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run kill @e[type=minecraft:spectral_arrow,distance=..1]
+execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run kill @e[type=minecraft:arrow,distance=..2]
+execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] run kill @e[type=minecraft:spectral_arrow,distance=..1]
 
 ## Remove a tag
 scoreboard players set @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] TagOfRoleWork 0

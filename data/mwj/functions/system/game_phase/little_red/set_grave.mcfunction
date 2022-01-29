@@ -10,7 +10,7 @@
 
 ## Put a tag
 execute as @s[advancements={mwj:be_killed_by_werewolf=true}] run tag @s add Cryptobiosis
-execute as @s[tag=Cryptobiosis] at @s run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoGravity:1b,Small:1b,Tags:["LittleRedGrave","NotNumbered"]}
+execute as @s[tag=Cryptobiosis] run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoGravity:1b,Small:1b,Tags:["LittleRedGrave","NotNumbered"]}
 execute as @s[tag=Cryptobiosis] run scoreboard players operation @e[type=minecraft:armor_stand,tag=LittleRedGrave,tag=NotNumbered] NumOfPlayers = @s NumOfPlayers
 tag @e[type=minecraft:armor_stand,tag=LittleRedGrave,tag=NotNumbered] remove NotNumbered
 

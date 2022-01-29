@@ -3,13 +3,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "team": "Player",
-      "distance": {
-        "absolute": {
-          "min": 0,
-          "max": 3
-        }
-      }
+      "team": "Player"
     }
   },
   {

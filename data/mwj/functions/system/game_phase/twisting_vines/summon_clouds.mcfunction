@@ -17,7 +17,7 @@ execute unless block ~ ~ ~ minecraft:air run loot spawn ~ ~ ~ loot mwj:item/spec
 
 ## Setblock twisting vines
 scoreboard players set @s TwistVinesCount 0
-execute if block ~ ~ ~ minecraft:air run function mwj:system/items/twisting_vines/setblock_vines
+execute if block ~ ~ ~ minecraft:air run function mwj:system/game_phase/twisting_vines/setblock_vines
 
 ## Kill item
 kill @s
