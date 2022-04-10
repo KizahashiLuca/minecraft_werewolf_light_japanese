@@ -28,17 +28,15 @@
       "scale": 1
     },
     "range": {
-      "min": {
-        "min": -2147483648,
-        "max": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "#MWL"
-          },
-          "score": "GlowTime",
-          "scale": 1
-        }
+      "min": -2147483648,
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#MWL"
+        },
+        "score": "GlowTime",
+        "scale": 1
       }
     }
   }
