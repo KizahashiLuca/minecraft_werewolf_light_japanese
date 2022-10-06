@@ -94,7 +94,7 @@ execute as @a[team=Player,scores={Set2ndRole=2}] at @s run function mwj:system/g
 function mwj:system/game_phase/kill_log/main
 
 ## Decide Winner
-execute unless entity @p[tag=MWLtest] run function mwj:system/finish/decide_winner/main
+execute unless entity @p[predicate=mwj:player/test] run function mwj:system/finish/decide_winner/main
 
 ## Torch system
-scoreboard players reset @a[team=Player] DropTorch
+scoreboard players reset @a DropTorch
