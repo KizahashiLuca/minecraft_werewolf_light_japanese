@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": -2147483648,
+      "max": 5
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "IsEndGame",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  }
+]

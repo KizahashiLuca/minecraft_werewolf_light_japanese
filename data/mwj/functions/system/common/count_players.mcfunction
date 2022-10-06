@@ -12,7 +12,7 @@
 scoreboard players set #MWL NumOfPlayers 0
 execute as @a[predicate=mwj:gamemode/not_spectator] run scoreboard players add #MWL NumOfPlayers 1
 ## Test
-execute if entity @p[tag=MWLtest] run scoreboard players set #MWL NumOfPlayers 15
+execute if entity @p[predicate=mwj:player/test] run scoreboard players set #MWL NumOfPlayers 15
 ## Set roles
 scoreboard players operation #MWL NumOfRoles = #MWL NumOfPlayers
 scoreboard players operation #MWL NumOfRoles += #MWL DummyRoleMode

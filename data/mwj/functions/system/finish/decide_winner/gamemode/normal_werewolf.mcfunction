@@ -9,12 +9,10 @@
 ####################################
 
 ## Winner is White
-execute if score #MWL PURPLE matches 0 if score #MWL BLACK matches 0 unless score #MWL BLACK = #MWL WHITE run function mwj:system/finish/decide_winner/detect_winner/villager
+execute if predicate mwj:system/finish/decide_winner/gamemode/normal_wolf/white run function mwj:system/finish/decide_winner/detect_winner/villager
 
 ## Winner is Black
-execute if score #MWL PURPLE matches 0 if score #MWL BLACK = #MWL WHITE run function mwj:system/finish/decide_winner/detect_winner/werewolf
+execute if predicate mwj:system/finish/decide_winner/gamemode/normal_wolf/black run function mwj:system/finish/decide_winner/detect_winner/werewolf
 
 ## Winner is Fox
-execute if score #MWL PURPLE matches 1.. if score #MWL BLACK matches 0 unless score #MWL BLACK = #MWL WHITE run function mwj:system/finish/decide_winner/detect_winner/fox
-
-execute if score #MWL PURPLE matches 1.. if score #MWL BLACK = #MWL WHITE run function mwj:system/finish/decide_winner/detect_winner/fox
+execute if predicate mwj:system/finish/decide_winner/gamemode/normal_wolf/fox run function mwj:system/finish/decide_winner/detect_winner/fox
