@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/player"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Set2ndRole": {
+        "min": 0,
+        "max": 0
+      }
+    }
+  }
+]

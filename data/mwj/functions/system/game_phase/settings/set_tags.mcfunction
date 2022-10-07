@@ -9,7 +9,7 @@
 ####################################
 
 ## Put a Tag
-tag @a[scores={CurrentRole=1..4}] add WereWolf
-tag @a[scores={CurrentRole=5..9}] add MadMan
-tag @a[scores={CurrentRole=10..39}] add NonWolf
-tag @a[scores={CurrentRole=40}] add Cat
+tag @a[predicate=mwj:system/game_phase/settings/set_tags/werewolf] add WereWolf
+tag @a[predicate=mwj:system/game_phase/settings/set_tags/madman] add MadMan
+tag @a[predicate=mwj:system/game_phase/settings/set_tags/nonwolf] add NonWolf
+tag @a[predicate=mwj:system/game_phase/settings/set_tags/cat] add Cat

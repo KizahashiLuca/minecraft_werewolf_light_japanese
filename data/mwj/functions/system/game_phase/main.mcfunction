@@ -9,21 +9,21 @@
 ####################################
 
 ## Log-in midtime of game phase
-execute as @a[tag=!Host,team=!Player,gamemode=!spectator] run function mwj:system/common/en_route/game_phase
-execute as @a[team=Player,scores={CurrentRole=0},gamemode=!spectator] run function mwj:system/common/en_route/game_phase
+execute as @a[predicate=mwj:system/common/en_route/not_spectator] run function mwj:system/common/en_route/game_phase
+execute as @a[predicate=mwj:system/common/en_route/not_have_roles] run function mwj:system/common/en_route/game_phase
 
 ## Timer System
 function mwj:system/common/time/tick
 
 ## Cannot Pickup
-execute as @e[predicate=mwj:game_phase/projectile] run data merge entity @s {pickup:2b}
+execute as @e[predicate=mwj:system/game_phase/projectile] run data merge entity @s {pickup:2b}
 
 ## Glow Time
-effect give @a[predicate=mwj:game_phase/glowing] minecraft:glowing 1000000 1 true
+effect give @a[predicate=mwj:system/game_phase/glowing] minecraft:glowing 1000000 1 true
 
 ## Count Death Score
-execute as @a[predicate=mwj:game_phase/count_death/black] run scoreboard players remove #MWL BLACK 1
-execute as @a[predicate=mwj:game_phase/count_death/white] run scoreboard players remove #MWL WHITE 1
+execute as @a[predicate=mwj:system/game_phase/count_death/black] run scoreboard players remove #MWL BLACK 1
+execute as @a[predicate=mwj:system/game_phase/count_death/white] run scoreboard players remove #MWL WHITE 1
 
 ## Detect Dropping Torch
 loot give @a[predicate=mwj:items/torch/not_have] loot mwj:item/common/redstone_torch

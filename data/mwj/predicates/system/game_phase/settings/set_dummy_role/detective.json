@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "SetDummyRole",
+      "scale": 1
+    },
+    "range": {
+      "min": 12,
+      "max": 12
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "NumOfDetectives",
+      "scale": 1
+    },
+    "range": {
+      "min": 1,
+      "max": 2147483647
+    }
+  }
+]

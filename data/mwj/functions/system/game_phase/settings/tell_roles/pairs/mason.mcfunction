@@ -9,10 +9,10 @@
 ####################################
 
 ## Message for Mason Pair
-execute as @a[scores={CurrentRole=24}] if score @s MasonPair = #MWL MasonPair run scoreboard players set @s TagOfRoleWork 1
+execute as @a[predicate=mwj:system/game_phase/settings/tell_roles/pairs/mason] if score @s MasonPair = #MWL MasonPair run scoreboard players set @s TagOfRoleWork 1
 
 ## Message for Mason Pair
-tellraw @a[scores={CurrentRole=24,TagOfRoleWork=1}] ["",{"text":"      ","color":"white"},{"selector":"@a[scores={CurrentRole=24,TagOfRoleWork=1}]","color":"dark_green"}]
+tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/pairs/mason_pair] ["",{"text":"      ","color":"white"},{"selector":"@a[predicate=mwj:system/game_phase/settings/tell_roles/pairs/mason_pair]","color":"dark_green"}]
 
 ## Reset Scoreboard
 scoreboard players reset @a TagOfRoleWork

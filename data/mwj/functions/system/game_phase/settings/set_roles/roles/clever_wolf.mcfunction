@@ -9,10 +9,10 @@
 ####################################
 
 ## Set the Role
-execute if score #MWL PlayerRole matches 1.. as @p[team=Player,sort=random] run scoreboard players set @p[scores={CurrentRole=0},team=Player,sort=random] CurrentRole 3
+execute if predicate mwj:system/game_phase/settings/set_roles/one_or_more_player_role as @p[team=Player,sort=random] run scoreboard players set @p[scores={CurrentRole=0},team=Player,sort=random] CurrentRole 3
 
 ## Decrement value by 1
 scoreboard players remove #MWL PlayerRole 1
 
 ## Repeat
-execute if score #MWL PlayerRole matches 1.. run function mwj:system/game_phase/settings/set_roles/roles/clever_wolf
+execute if predicate mwj:system/game_phase/settings/set_roles/one_or_more_player_role run function mwj:system/game_phase/settings/set_roles/roles/clever_wolf

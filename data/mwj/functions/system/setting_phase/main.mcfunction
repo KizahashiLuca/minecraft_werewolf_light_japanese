@@ -9,8 +9,8 @@
 ####################################
 
 ## Log-in midtime of setting phase
-execute as @a[tag=!Host,team=!Player,gamemode=!spectator] run function mwj:system/common/en_route/not_game_phase
-execute as @a[tag=!Host,team=Player,gamemode=spectator] run team leave @s
+execute as @a[predicate=mwj:system/common/en_route/not_spectator] run function mwj:system/common/en_route/not_game_phase
+execute as @a[predicate=mwj:system/common/en_route/spectator] run team leave @s
 
 ## Error game
 execute if predicate mwj:system/setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player

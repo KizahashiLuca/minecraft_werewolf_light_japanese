@@ -9,7 +9,7 @@
 ####################################
 
 ## Spawn item
-loot spawn ~ ~ ~ loot mwj:game_phase/common/dummy_item
+loot spawn ~ ~ ~ loot mwj:system/game_phase/common/dummy_item
 ## Merge data
 data modify entity @e[type=minecraft:item,nbt={Item:{tag:{Tags:["DummyItem"]}}},sort=nearest,limit=1] PickupDelay set value 40s
 data modify entity @e[type=minecraft:item,nbt={Item:{tag:{Tags:["DummyItem"]}}},sort=nearest,limit=1] Age set value 0s

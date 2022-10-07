@@ -9,13 +9,13 @@
 ####################################
 
 ## Set the Role
-execute if score #MWL PlayerRole matches 1.. as @p[team=Player,sort=random] run scoreboard players operation @a[scores={CurrentRole=24,MasonPair=0},sort=random,limit=2] MasonPair = #MWL MasonPair
+execute if predicate mwj:system/game_phase/settings/set_roles/one_or_more_player_role as @p[team=Player,sort=random] run scoreboard players operation @a[scores={CurrentRole=24,MasonPair=0},sort=random,limit=2] MasonPair = #MWL MasonPair
 
 ## Decrement value by 1
 scoreboard players remove #MWL PlayerRole 1
 
 ## Increment
-execute if score #MWL PlayerRole matches 1.. run scoreboard players add #MWL MasonPair 1
+execute if predicate mwj:system/game_phase/settings/set_roles/one_or_more_player_role run scoreboard players add #MWL MasonPair 1
 
 ## Repeat
-execute if score #MWL PlayerRole matches 1.. run function mwj:system/game_phase/settings/set_roles/pairs/mason
+execute if predicate mwj:system/game_phase/settings/set_roles/one_or_more_player_role run function mwj:system/game_phase/settings/set_roles/pairs/mason

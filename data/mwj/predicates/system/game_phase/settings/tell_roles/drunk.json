@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "Set2ndRole": {
+      "min": 2,
+      "max": 2
+    }
+  }
+}

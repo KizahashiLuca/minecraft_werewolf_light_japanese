@@ -17,4 +17,4 @@ scoreboard players operation #MWL RandomSeed %= #MWL RandomModder
 scoreboard players operation #MWL RandomAnswer = #MWL RandomSeed
 
 ## Loop
-execute unless score #MWL RandomCount matches ..0 run function mwj:system/game_phase/settings/random_generator/randomizing
+execute if predicate mwj:system/game_phase/settings/random_generator/count_gt_one run function mwj:system/game_phase/settings/random_generator/randomizing

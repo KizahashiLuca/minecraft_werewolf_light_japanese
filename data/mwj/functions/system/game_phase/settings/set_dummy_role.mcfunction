@@ -16,19 +16,19 @@ scoreboard players add #MWL RandomAnswer 1
 scoreboard players operation #MWL SetDummyRole = #MWL RandomAnswer
 
 ## Detect dummy flag
-execute if score #MWL SetDummyRole matches 1 if score #MWL NumOfMadmans matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 2 if score #MWL NumOfFanatics matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 3 if score #MWL NumOfImmorals matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 4 if score #MWL NumOfVillagers matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 5 if score #MWL NumOfBakeries matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 6 if score #MWL NumOfLycants matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 7 if score #MWL NumOfMasons matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 8 if score #MWL NumOfSeers matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 9 if score #MWL NumOfFkSeers matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 10 if score #MWL NumOfSages matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 11 if score #MWL NumOfMediums matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 12 if score #MWL NumOfDetectives matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 13 if score #MWL NumOfThieves matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
-execute if score #MWL SetDummyRole matches 14 if score #MWL NumOfLtReds matches 1.. run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/madman run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/fanatic run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/immoralist run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/villager run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/bakery run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/lycanthrope run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/mason run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/seer run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/fake_seer run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/sage run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/medium run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/detective run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/thief run scoreboard players set #MWL DummyRoleFlag 1
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/little_red run scoreboard players set #MWL DummyRoleFlag 1
 
-execute if score #MWL DummyRoleFlag matches 0 run function mwj:system/game_phase/settings/set_dummy_role
+execute if predicate mwj:system/game_phase/settings/set_dummy_role/repeat run function mwj:system/game_phase/settings/set_dummy_role
