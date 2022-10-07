@@ -1,10 +1,10 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.16-1.17    ##
+##   MC-Version : JE 1.19-        ##
 ##   Author     : @KizahashiLuca  ##
-##   Date       : 04 May 2021     ##
-##   Version    : v.2.0-pre1      ##
-## (C) 2019-2021 KizahashiLuca.   ##
+##   Date       : 07 Oct 2022     ##
+##   Version    : v.2.0           ##
+## (C) 2019-2022 KizahashiLuca.   ##
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
 
@@ -17,7 +17,10 @@ title @a title ["",{"text":"WEREWOLF","color":"red","bold":true}]
 title @a subtitle ["",{"text":"WIN","color":"red","bold":true}]
 
 ## Display Winners
-function mwj:system/finish/finish_game_title
+function mwj:system/common/message/begin
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a ["",{"text":"  ","color":"white"},{"text":"ゲーム終了","color":"green","bold":true}]
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  勝者は ","color":"white"},{"text":"人狼陣営","bold":true,"color":"red"},{"text":" です！","color":"white"}]
 
 ## Change Game Mode

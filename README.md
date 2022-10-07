@@ -65,7 +65,7 @@
  [@KizahashiLuca][twitter]
 
 ## License
-(C) 2019-2021 KizahashiLuca.  
+(C) 2019-2022 KizahashiLuca.  
 Licensed under CC BY-SA 4.0.
 
 [wiki]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki
