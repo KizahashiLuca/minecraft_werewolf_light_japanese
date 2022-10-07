@@ -35,7 +35,7 @@ kill @e[predicate=mwj:items/torch/dropped]
 execute if predicate mwj:items/snowball/main run function mwj:system/game_phase/snowball/main
 
 ## Detect trident
-execute if score #MWL ChooseTrident matches 1 run function mwj:system/game_phase/trident/main
+execute if predicate mwj:items/trident/main run function mwj:system/game_phase/trident/main
 
 ## Detect conduit
 execute if predicate mwj:items/conduit/main run function mwj:system/game_phase/conduit/main

@@ -9,8 +9,7 @@
 ####################################
 
 ## Hit in branch
-execute as @s[nbt={inGround:1b,pickup:2b}] run function mwj:system/game_phase/trident/summon_thunderbolt
-execute as @s[nbt={DealtDamage:1b}] run function mwj:system/game_phase/trident/summon_thunderbolt
+execute as @s[predicate=mwj:items/trident/summon_thunderbolt] run function mwj:system/game_phase/trident/summon_thunderbolt
 
 ## Throw
-execute as @a[scores={ThrowTrident=1..}] run function mwj:system/game_phase/trident/throw_trident
+execute as @a[predicate=mwj:items/trident/trident_thrower_score] run function mwj:system/game_phase/trident/throw_trident

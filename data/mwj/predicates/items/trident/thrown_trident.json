@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:trident",
+      "nbt": "{Trident:{id:\"minecraft:trident\",tag:{Tags:[\"MWLitem\"]}}}"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"TridentDone\"]}"
+      }
+    }
+  }
+]

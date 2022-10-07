@@ -12,10 +12,10 @@
 tag @s add TridentThrower
 
 ## Set number
-execute as @e[type=minecraft:trident,nbt={Trident:{id:"minecraft:trident",tag:{Tags:["MWLitem"]}}},distance=0..5] unless score @s NumOfPlayers matches 1.. run scoreboard players operation @s NumOfPlayers = @p[tag=TridentThrower] NumOfPlayers
+execute as @e[predicate=mwj:items/trident/just_thrown_trident,distance=0..5] unless score @s NumOfPlayers matches 1.. run scoreboard players operation @s NumOfPlayers = @p[predicate=mwj:items/trident/trident_thrower_tag] NumOfPlayers
 
 ## Set scoreboard
-scoreboard players reset @p[tag=TridentThrower] ThrowTrident
+scoreboard players reset @p[predicate=mwj:items/trident/trident_thrower_tag] ThrowTrident
 
 ## Remove a tag
 tag @s remove TridentThrower
