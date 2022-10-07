@@ -65,6 +65,6 @@ scoreboard players reset @a DropTwistVines
 
 ## Set Variables for Game
 scoreboard players set @a CurrentRole 0
-scoreboard players set @a[team=Player] NumOfPlayers 1
+scoreboard players set @a[predicate=mwj:player/player] NumOfPlayers 1
 ## Set Variables for Mason Number
 scoreboard players set #MWL MasonPair 1

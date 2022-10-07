@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/clever_wolf",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/clever_wolf",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -16,7 +16,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/immoralist",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/immoralist",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/seer",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/seer",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -36,7 +36,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/thief",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/thief",
           "conditions": [
             {
               "condition": "minecraft:reference",

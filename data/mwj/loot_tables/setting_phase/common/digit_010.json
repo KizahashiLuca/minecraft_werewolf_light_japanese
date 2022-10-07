@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/0",
+          "name": "mwj:system/setting_phase/common/number/0",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -19,7 +19,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/1",
+          "name": "mwj:system/setting_phase/common/number/1",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -32,7 +32,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/2",
+          "name": "mwj:system/setting_phase/common/number/2",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -45,7 +45,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/3",
+          "name": "mwj:system/setting_phase/common/number/3",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -58,7 +58,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/4",
+          "name": "mwj:system/setting_phase/common/number/4",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -71,7 +71,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/5",
+          "name": "mwj:system/setting_phase/common/number/5",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -84,7 +84,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/6",
+          "name": "mwj:system/setting_phase/common/number/6",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -97,7 +97,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/7",
+          "name": "mwj:system/setting_phase/common/number/7",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -110,7 +110,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/8",
+          "name": "mwj:system/setting_phase/common/number/8",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -123,7 +123,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/common/number/9",
+          "name": "mwj:system/setting_phase/common/number/9",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",

@@ -19,13 +19,12 @@ title @a[predicate=mwj:phase/hide_phase] subtitle ["",{"text":"Game Start","colo
 scoreboard players set #MWL MasonPair 1
 
 ## Display Breakdown of Roles & His Role
-tellraw @a [""]
+function mwj:system/common/message/begin
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-tellraw @a[predicate=mwj:phase/setting_phase/master] ["",{"text":"  - ","color":"white"},{"text":"Hiding Start","color":"green","bold":true}]
-tellraw @a[predicate=mwj:phase/hide_phase] ["",{"text":"  - ","color":"white"},{"text":"Game Start","color":"green","bold":true}]
+tellraw @a[predicate=mwj:phase/setting_phase/master] ["",{"text":"  ","color":"white"},{"text":"潜伏開始","color":"green","bold":true}]
+tellraw @a[predicate=mwj:phase/hide_phase] ["",{"text":"  ","color":"white"},{"text":"ゲーム開始","color":"green","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","bold":true,"color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"}}]
+tellraw @a ["",{"text":"  ゲームの詳しいルールなどは、","color":"white"},{"text":"こちら","hoverEvent":{"action":"show_text","value":[{"text":"Wikiへ移動"}]},"clickEvent":{"action":"open_url","value":"https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/wiki"},"bold":true,"color":"blue","underlined":true}]
 
 tellraw @a [""]
 tellraw @a ["",{"text":"  ゲームモードは、 以下のとおりです。","color":"white"}]
@@ -50,5 +49,4 @@ tellraw @a ["",{"text":"  特殊アイテム内訳 : ","color":"white"}]
 function mwj:system/common/message/set_items
 
 execute if predicate mwj:phase/hide_phase run function mwj:system/game_phase/settings/tell_roles/main
-tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a [""]
+function mwj:system/common/message/end

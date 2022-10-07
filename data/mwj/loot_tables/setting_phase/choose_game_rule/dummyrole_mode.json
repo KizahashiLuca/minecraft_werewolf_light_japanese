@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/dummyrole_mode_off",
+          "name": "mwj:system/setting_phase/choose_game_rule/dummyrole_mode_off",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -22,7 +22,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/dummyrole_mode_on",
+          "name": "mwj:system/setting_phase/choose_game_rule/dummyrole_mode_on",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",

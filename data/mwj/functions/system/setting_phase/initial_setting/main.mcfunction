@@ -45,8 +45,8 @@ function mwj:system/common/roles/set_role_number
 function mwj:system/common/roles/set_prev_roles
 
 ## Stop the game
-execute if predicate mwj:setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player
-execute if predicate mwj:setting_phase/initial_setting/sufficient_players_but_unsupported_version run function mwj:system/finish/error_game_version
+execute if predicate mwj:system/setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player
+execute if predicate mwj:system/setting_phase/initial_setting/sufficient_players_but_unsupported_version run function mwj:system/finish/error_game_version
 
 ## Start setting phase
-execute if predicate mwj:setting_phase/initial_setting/sufficient_players_and_version run function mwj:system/setting_phase/initial_setting/send_messages
+execute if predicate mwj:system/setting_phase/initial_setting/sufficient_players_and_version run function mwj:system/setting_phase/initial_setting/send_messages

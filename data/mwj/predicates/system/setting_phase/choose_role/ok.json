@@ -1,0 +1,31 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_role/master"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/set_ok/game_mode_normal_wolf"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/set_ok/game_mode_two_alive"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/set_ok/game_mode_annihilation"
+      }
+    ]
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/setting_phase/common/ok"
+  }
+]

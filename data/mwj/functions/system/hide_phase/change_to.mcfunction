@@ -15,7 +15,7 @@ function mwj:system/finish/revoke_advancements
 function mwj:system/common/roles/recount_roles/main
 
 ## Setting games
-execute if predicate mwj:setting_phase/initial_setting/required_players run function mwj:system/hide_phase/settings/main
+execute if predicate mwj:system/setting_phase/initial_setting/required_players run function mwj:system/hide_phase/settings/main
 
 ## Error game
-execute if predicate mwj:setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player
+execute if predicate mwj:system/setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player

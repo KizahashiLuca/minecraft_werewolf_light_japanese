@@ -9,8 +9,7 @@
 ####################################
 
 ## Send a Common Message
-tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a [""]
+function mwj:system/common/message/end
 
 ## teleport to alive players
 execute if entity @p[predicate=mwj:gamemode/adventure] run tp @a[predicate=mwj:player/the_dead] @p[predicate=mwj:gamemode/adventure,sort=random]

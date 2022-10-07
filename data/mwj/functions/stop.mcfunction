@@ -9,10 +9,8 @@
 ####################################
 
 ## Quit the game
-tellraw @a[predicate=mwj:phase/on_game] [""]
-tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"  - ","color":"white"},{"text":"Aborted","color":"red","bold":true}]
+execute if predicate mwj:phase/on_game run function mwj:system/common/message/begin
+tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"  ","color":"white"},{"text":"ゲーム中断","color":"red","bold":true}]
 tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a[predicate=mwj:phase/on_game] ["",{"text":"  ゲームが中断されました。","color":"white"}]
 

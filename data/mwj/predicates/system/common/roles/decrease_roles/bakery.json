@@ -5,6 +5,6 @@
   },
   {
     "condition": "minecraft:reference",
-    "name": "mwj:setting_phase/choose_role/chosen_role/bakery"
+    "name": "mwj:system/setting_phase/choose_role/chosen_role/bakery"
   }
 ]

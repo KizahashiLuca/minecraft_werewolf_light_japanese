@@ -1,0 +1,31 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_role/master"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/add_role/select/madman"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/add_role/select/bakery"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/add_role/select/sage"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/setting_phase/choose_role/add_role/select/cat"
+      }
+    ]
+  }
+]

@@ -16,3 +16,4 @@ execute if predicate mwj:version/1.15 run scoreboard players set #MWL Version 15
 execute if predicate mwj:version/1.16 run scoreboard players set #MWL Version 16
 execute if predicate mwj:version/1.17 run scoreboard players set #MWL Version 17
 execute if predicate mwj:version/1.18 run scoreboard players set #MWL Version 18
+execute if predicate mwj:version/1.19 run scoreboard players set #MWL Version 19

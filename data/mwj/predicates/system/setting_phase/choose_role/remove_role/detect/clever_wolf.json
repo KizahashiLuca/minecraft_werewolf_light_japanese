@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_role/page1"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/setting_phase/choose_role/chosen_role/clever_wolf"
+  }
+]

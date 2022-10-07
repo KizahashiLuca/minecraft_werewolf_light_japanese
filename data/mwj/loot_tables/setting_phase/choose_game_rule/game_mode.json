@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/game_mode_normal_wolf",
+          "name": "mwj:system/setting_phase/choose_game_rule/game_mode_normal_wolf",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -22,7 +22,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/game_mode_two_alive",
+          "name": "mwj:system/setting_phase/choose_game_rule/game_mode_two_alive",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -38,7 +38,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/game_mode_annihilation",
+          "name": "mwj:system/setting_phase/choose_game_rule/game_mode_annihilation",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",

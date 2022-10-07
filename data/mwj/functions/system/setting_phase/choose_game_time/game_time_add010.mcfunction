@@ -10,7 +10,7 @@
 
 ## Add 10 minutes
 scoreboard players operation #MWL GameTime += #MWL Num00010
-execute if predicate mwj:setting_phase/choose_game_time/game_time_more_than_limit run scoreboard players operation #MWL GameTime = #MWL Num00000
+execute if predicate mwj:system/setting_phase/choose_game_time/game_time_more_than_limit run scoreboard players operation #MWL GameTime = #MWL Num00000
 
 ## Set inventory
 function mwj:system/setting_phase/choose_game_time/change_to

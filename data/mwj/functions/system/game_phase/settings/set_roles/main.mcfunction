@@ -9,7 +9,7 @@
 ####################################
 
 ## Number the Members
-execute as @a[team=Player] run function mwj:system/game_phase/settings/set_numbering
+execute as @a[predicate=mwj:player/player] run function mwj:system/game_phase/settings/set_numbering
 tag @a remove numbered
 
 ## Decide wolves

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_off",
+          "name": "mwj:system/setting_phase/choose_game_rule/secondrole_mode_off",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -22,7 +22,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_ghost",
+          "name": "mwj:system/setting_phase/choose_game_rule/secondrole_mode_ghost",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -38,7 +38,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_game_rule/secondrole_mode_drunk",
+          "name": "mwj:system/setting_phase/choose_game_rule/secondrole_mode_drunk",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",

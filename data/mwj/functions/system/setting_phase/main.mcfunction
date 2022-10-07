@@ -13,7 +13,7 @@ execute as @a[tag=!Host,team=!Player,gamemode=!spectator] run function mwj:syste
 execute as @a[tag=!Host,team=Player,gamemode=spectator] run team leave @s
 
 ## Error game
-execute if predicate mwj:setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player
+execute if predicate mwj:system/setting_phase/initial_setting/shortage_players run function mwj:system/finish/error_game_player
 
 ## Setting phase
 execute if predicate mwj:phase/setting_phase/choose_role/master run function mwj:system/setting_phase/choose_role/common/main

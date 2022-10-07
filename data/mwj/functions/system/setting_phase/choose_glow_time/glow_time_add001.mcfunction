@@ -10,7 +10,7 @@
 
 ## Add 1 percent
 scoreboard players operation #MWL GlowTime += #MWL Num00001
-execute if predicate mwj:setting_phase/choose_glow_time/glow_time_more_than_limit run scoreboard players operation #MWL GlowTime = #MWL Num00000
+execute if predicate mwj:system/setting_phase/choose_glow_time/glow_time_more_than_limit run scoreboard players operation #MWL GlowTime = #MWL Num00000
 
 ## Set inventory
 function mwj:system/setting_phase/choose_glow_time/change_to

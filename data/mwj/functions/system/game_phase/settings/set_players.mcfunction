@@ -10,4 +10,4 @@
 
 ## Remove Effect
 team modify Player friendlyFire true
-effect clear @a[team=Player]
+effect clear @a[predicate=mwj:player/player]

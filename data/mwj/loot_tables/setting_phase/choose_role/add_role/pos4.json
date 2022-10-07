@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/madman",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/madman",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -16,7 +16,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/bakery",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/bakery",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/sage",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/sage",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -36,7 +36,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "mwj:setting_phase/choose_role/add_role/roles/cat",
+          "name": "mwj:system/setting_phase/choose_role/add_role/roles/cat",
           "conditions": [
             {
               "condition": "minecraft:reference",

@@ -27,7 +27,7 @@ execute as @s[scores={RoleTrigger=1..10,RoleDone=0}] run function mwj:system/gam
 execute as @s[scores={RoleTrigger=1..10,RoleDone=1}] run function mwj:system/game_phase/roles/message_error
 
 ## Send a Result Message to Medium
-execute as @a[team=Player] if score @s NumOfPlayers = @p[scores={CurrentRole=28,TagOfRoleWork=1,RoleDone=0}] TargetOfRole run function mwj:system/game_phase/medium/result
+execute as @a[predicate=mwj:player/player] if score @s NumOfPlayers = @p[scores={CurrentRole=28,TagOfRoleWork=1,RoleDone=0}] TargetOfRole run function mwj:system/game_phase/medium/result
 
 ## Reset Scoreboard
 scoreboard players reset @s TagOfRoleWork

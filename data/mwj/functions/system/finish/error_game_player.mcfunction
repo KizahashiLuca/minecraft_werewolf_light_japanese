@@ -9,11 +9,9 @@
 ####################################
 
 ## Send a Message
-tellraw @a [""]
+function mwj:system/common/message/begin
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-tellraw @a ["",{"text":"  - Minecraft version 1.","color":"green","bold":true},{"score":{"name":"#MWL","objective":"Version"},"color":"green","bold":true}]
-tellraw @a ["",{"text":" ","color":"white"},{"text":"Error","color":"yellow","bold":true}]
+tellraw @a ["",{"text":"  ","color":"white"},{"text":"ゲーム開始エラー","color":"yellow","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  人数条件をクリアしていません。","color":"white"}]
 tellraw @a ["",{"text":"  必要な人数は","color":"white"},{"text":" 3 ","bold":true,"color":"red"},{"text":"人からです。","color":"white"}]

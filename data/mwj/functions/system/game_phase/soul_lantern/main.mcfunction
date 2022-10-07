@@ -13,7 +13,7 @@ execute as @a[predicate=mwj:items/lantern/detect_lantern_user] at @s run functio
 
 ## Detect dropping soul lantern
 execute as @a[predicate=mwj:items/lantern/detect_soul_lantern_user] at @s run function mwj:system/game_phase/soul_lantern/throw_soul_lantern
-scoreboard players reset @a[team=Player] TeleporterTemp
+scoreboard players reset @a[predicate=mwj:player/player] TeleporterTemp
 
 ## Set scoreboard
 scoreboard players remove @a[predicate=mwj:items/lantern/detect_lantern_user_score] DropLantern 1
