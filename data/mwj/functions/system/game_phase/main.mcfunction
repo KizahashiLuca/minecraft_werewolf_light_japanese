@@ -32,63 +32,63 @@ scoreboard players set @a[predicate=mwj:items/torch/drop] RemovedTorch 1
 kill @e[predicate=mwj:items/torch/dropped]
 
 ## Detect snowball
-execute if predicate mwj:items/snowball/main run function mwj:system/game_phase/snowball/main
+execute if predicate mwj:items/snowball/main run function mwj:system/game_phase/items/snowball/main
 
 ## Detect trident
-execute if predicate mwj:items/trident/main run function mwj:system/game_phase/trident/main
+execute if predicate mwj:items/trident/main run function mwj:system/game_phase/items/trident/main
 
 ## Detect conduit
-execute if predicate mwj:items/conduit/main run function mwj:system/game_phase/conduit/main
+execute if predicate mwj:items/conduit/main run function mwj:system/game_phase/items/conduit/main
 
 ## Detect honey block
-execute if predicate mwj:items/honey_block/main run function mwj:system/game_phase/honey_block/main
+execute if predicate mwj:items/honey_block/main run function mwj:system/game_phase/items/honey_block/main
 
 ## Detect soul lantern
-execute if predicate mwj:items/lantern/main run function mwj:system/game_phase/soul_lantern/main
+execute if predicate mwj:items/lantern/main run function mwj:system/game_phase/items/soul_lantern/main
 
 ## Detect twisting vines
-execute if predicate mwj:items/twisting_vines/main run function mwj:system/game_phase/twisting_vines/main
+execute if predicate mwj:items/twisting_vines/main run function mwj:system/game_phase/items/twisting_vines/main
 
 ## Clever wolf System
-execute as @a[team=Player,scores={CurrentRole=3,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/clever_wolf/main
+execute as @a[predicate=mwj:system/game_phase/current_role/clever_wolf/main] run function mwj:system/game_phase/current_role/clever_wolf/main
 
 ## Fox System
-execute as @a[team=Player,scores={CurrentRole=10,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fox/main
-execute as @a[team=Player,tag=SeeredFox] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fox/detect_seered
+execute as @a[predicate=mwj:system/game_phase/current_role/fox/main] run function mwj:system/game_phase/current_role/fox/main
+execute as @a[predicate=mwj:system/game_phase/current_role/fox/seered] run function mwj:system/game_phase/current_role/fox/detect_seered
 
 ## Immoralist System
-execute as @a[team=Player,scores={CurrentRole=11,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/immoral/main
+execute as @a[predicate=mwj:system/game_phase/current_role/immoral/main] run function mwj:system/game_phase/current_role/immoral/main
 
 ## Bakery System
-execute as @a[team=Player,scores={CurrentRole=21,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/bakery/main
+execute as @a[predicate=mwj:system/game_phase/current_role/bakery/main] run function mwj:system/game_phase/current_role/bakery/main
 
 ## Seer System
-execute as @a[team=Player,scores={CurrentRole=25,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/seer/main
+execute as @a[predicate=mwj:system/game_phase/current_role/seer/main] run function mwj:system/game_phase/current_role/seer/main
 
 ## Fake Seer System
-execute as @a[team=Player,scores={CurrentRole=26,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/fake_seer/main
+execute as @a[predicate=mwj:system/game_phase/current_role/fake_seer/main] run function mwj:system/game_phase/current_role/fake_seer/main
 
 ## Sage System
-execute as @a[team=Player,scores={CurrentRole=27,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/sage/main
+execute as @a[predicate=mwj:system/game_phase/current_role/sage/main] run function mwj:system/game_phase/current_role/sage/main
 
 ## Medium System
-execute as @a[team=Player,scores={CurrentRole=28,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/medium/main
+execute as @a[predicate=mwj:system/game_phase/current_role/medium/main] run function mwj:system/game_phase/current_role/medium/main
 
 ## Detective System
-execute as @a[team=Player,scores={CurrentRole=31,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/detective/main
+execute as @a[predicate=mwj:system/game_phase/current_role/detective/main] run function mwj:system/game_phase/current_role/detective/main
 
 ## Thief System
-execute as @a[team=Player,scores={CurrentRole=35,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/thief/main
+execute as @a[predicate=mwj:system/game_phase/current_role/thief/main] run function mwj:system/game_phase/current_role/thief/main
 
 ## Little Red System
-execute as @a[team=Player,scores={CurrentRole=39,2ndRoleDone=1}] at @s if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/little_red/main
+execute as @a[predicate=mwj:system/game_phase/current_role/little_red/main] at @s run function mwj:system/game_phase/current_role/little_red/main
 
 ## Cat System
-execute as @a[team=Player,scores={CurrentRole=40,2ndRoleDone=1}] if score #MWL IsEndGame matches 0 run function mwj:system/game_phase/cat/main
+execute as @a[predicate=mwj:system/game_phase/current_role/cat/main] run function mwj:system/game_phase/current_role/cat/main
 
 ## 2nd Role System
-execute as @a[team=Player,tag=!Cryptobiosis,scores={Set2ndRole=1}] at @s run function mwj:system/game_phase/2ndrole/ghost/main
-execute as @a[team=Player,scores={Set2ndRole=2}] at @s run function mwj:system/game_phase/2ndrole/drunk/main
+execute as @a[predicate=mwj:system/game_phase/second_role/ghost/main] at @s run function mwj:system/game_phase/second_role/ghost/main
+execute as @a[predicate=mwj:system/game_phase/second_role/drunk/main] at @s run function mwj:system/game_phase/second_role/drunk/main
 
 ## Kill Log System
 function mwj:system/game_phase/kill_log/main

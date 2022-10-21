@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "IsEndGame",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "team": "Player",
+      "nbt": "{Tags:[\"SeeredFox\"]}"
+    }
+  }
+]
