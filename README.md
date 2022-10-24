@@ -87,5 +87,5 @@ Licensed under CC BY-SA 4.0.
 [v.1.4]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.4
 [v.1.4.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.4.1
 [v.1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.5
-[v.2.0]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.2.0
+[v.2.0]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/ver.2.0
 [twitter]:https://www.twitter.com/KizahashiLuca
