@@ -15,7 +15,7 @@
  - 配布に関して問題があれば削除いたします。ご了承ください。
 
 ## version
- 1. 以下のリンクの [minecraft_werewolf_light_japanese-v-2_0.zip][v.2.0] をクリックして、データパックをDL。
+ 1. 以下のリンクの [minecraft_werewolf_light_japanese-ver_2_0.zip][v.2.0] をクリックして、データパックをDL。
  2. DLしたzipファイルを、使用するワールドのフォルダ内[datapacks]にコピー。
  3. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
