@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_banner",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"+1","color":"red","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Patterns:[{Pattern:sc,Color:0},{Pattern:bs,Color:14},{Pattern:ts,Color:14},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MWLsetting\",\"MWL_plus\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

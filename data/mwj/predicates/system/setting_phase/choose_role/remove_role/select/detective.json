@@ -1,0 +1,41 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_role/page4"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#MWL"
+        },
+        "score": "SelectRolePos1",
+        "scale": 1
+      },
+      "range": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#MWL"
+          },
+          "score": "NumOfDetectives",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#MWL"
+          },
+          "score": "NumOfDetectives",
+          "scale": 1
+        }
+      }
+    }
+  }
+]

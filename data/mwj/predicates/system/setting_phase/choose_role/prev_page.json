@@ -1,0 +1,14 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_role/master"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/setting_phase/common/prev_page"
+  }
+]

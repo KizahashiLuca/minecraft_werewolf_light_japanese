@@ -1,0 +1,121 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/conduit"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/crossbow"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/diamond_hoe"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/elytra"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/ender_pearl"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/honey_block"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/lantern"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/potion_death"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/potion_invisible"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/potion_jump"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/potion_speed"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/snowball"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/spyglass"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/stick"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/totem_of_undying"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/trident"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "mwj:system/setting_phase/choose_item/chosen_item/twisting_vines"
+    }
+  }
+]

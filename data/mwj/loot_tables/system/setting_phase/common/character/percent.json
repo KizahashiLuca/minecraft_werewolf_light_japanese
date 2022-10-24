@@ -1,0 +1,25 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_banner",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"パーセント","color":"reset","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Patterns:[{Pattern:tl,Color:15},{Pattern:br,Color:15},{Pattern:mr,Color:0},{Pattern:dls,Color:15},{Pattern:cbo,Color:0},{Pattern:tts,Color:0},{Pattern:bts,Color:0},{Pattern:bo,Color:0}]},HideFlags:63,Tags:[\"MWLsetting\",\"MWL_percent\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

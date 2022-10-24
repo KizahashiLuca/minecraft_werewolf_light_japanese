@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "PrevRole": {
+      "min": 28,
+      "max": 28
+    }
+  }
+}

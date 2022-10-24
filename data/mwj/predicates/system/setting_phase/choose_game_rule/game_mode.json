@@ -1,0 +1,40 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_game_rule"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:player/host"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:21b,id:\"minecraft:small_amethyst_bud\",tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_normal_wolf\"]}}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:21b,id:\"minecraft:medium_amethyst_bud\",tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_two_alive\"]}}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:21b,id:\"minecraft:large_amethyst_bud\",tag:{Tags:[\"MWLsetting\",\"MWL_game_mode_annihilation\"]}}]}"
+      }
+    }
+  }
+]

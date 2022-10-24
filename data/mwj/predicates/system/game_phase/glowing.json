@@ -1,0 +1,43 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "team": "Player"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "DeathCount": {
+        "min": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": -2147483648,
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#MWL"
+        },
+        "score": "GlowTime",
+        "scale": 1
+      }
+    }
+  }
+]

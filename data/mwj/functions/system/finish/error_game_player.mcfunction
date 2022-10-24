@@ -1,16 +1,17 @@
-###############################
-## Minecraft Version 1.14-1.16
-## Minecraft Werewolf Light
-## Author : KizahashiLuca
-## Date   : 20 Mar 2021
-## Version: v.1.5
-###############################
+####################################
+## Minecraft Werewolf Light       ##
+##   MC-Version : JE 1.19-        ##
+##   Author     : @KizahashiLuca  ##
+##   Date       : 07 Oct 2022     ##
+##   Version    : v.2.0           ##
+## (C) 2019-2022 KizahashiLuca.   ##
+## Licensed under CC BY-SA 4.0.   ##
+####################################
 
 ## Send a Message
-tellraw @a ["",{"text":"\n----------------------------------","color":"white"}]
-tellraw @a ["",{"text":"Minecraft Werewolf Light v.1.5","color":"red","bold":true}]
-tellraw @a ["",{"text":"  - Minecraft version 1.","color":"green","bold":true},{"score":{"name":"#MWL","objective":"Version"},"color":"green","bold":true}]
-tellraw @a ["",{"text":" ","color":"white"},{"text":"Error","color":"yellow","bold":true}]
+function mwj:system/common/message/begin
+tellraw @a ["",{"text":"----------------------------------","color":"white"}]
+tellraw @a ["",{"text":"  ","color":"white"},{"text":"ゲーム開始エラー","color":"yellow","bold":true}]
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  人数条件をクリアしていません。","color":"white"}]
 tellraw @a ["",{"text":"  必要な人数は","color":"white"},{"text":" 3 ","bold":true,"color":"red"},{"text":"人からです。","color":"white"}]

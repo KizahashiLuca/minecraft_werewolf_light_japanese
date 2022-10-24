@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#MWL"
+    },
+    "score": "Second",
+    "scale": 1
+  },
+  "range": {
+    "min": 3,
+    "max": 9
+  }
+}

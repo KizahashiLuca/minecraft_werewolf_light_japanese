@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "CurrentRole": {
+        "min": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/game_phase/settings/tell_roles/not_drunk"
+  }
+]

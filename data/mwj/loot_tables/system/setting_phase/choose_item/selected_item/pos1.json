@@ -1,0 +1,93 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"選択済み","color":"green","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_selected_item_pos1\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseStick",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page1"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseElytra",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page2"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseTrident",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page3"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseVines",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

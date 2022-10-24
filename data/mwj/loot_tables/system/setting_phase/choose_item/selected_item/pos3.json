@@ -1,0 +1,85 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"選択済み","color":"green","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_selected_item_pos3\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseDeathPot",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page1"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseInvisPot",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page2"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "ChooseCrossbow",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page3"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": 0,
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_item/page4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,31 +1,31 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:soul_lantern",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:soul_lantern",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"テレポーター","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s)+(%s)キーでテレポート","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
                 ["",{"text":"使用以後 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s, %s, %s)","with":[{"score":{"name":"@s","objective":"TeleporterPosX"}},{"score":{"name":"@s","objective":"TeleporterPosY"}},{"score":{"name":"@s","objective":"TeleporterPosZ"}}],"color":"green","bold":true,"italic":false},{"text":" にテレポート","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\",\"UnsetStorage\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLitem\",\"UnsetStorage\",\"MWL_soul_lantern\"]}"
             }
           ]
         }

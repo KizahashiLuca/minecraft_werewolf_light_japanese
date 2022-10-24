@@ -1,0 +1,50 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/stick",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/setting_phase/choose_item/page1"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/elytra",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/setting_phase/choose_item/page2"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/trident",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/setting_phase/choose_item/page3"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:item/special/twisting_vines",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "mwj:phase/setting_phase/choose_item/page4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

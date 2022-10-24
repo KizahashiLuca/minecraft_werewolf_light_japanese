@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "nbt": "{Item:{id:\"minecraft:soul_lantern\",tag:{Tags:[\"MWLitem\"]}}}"
+  }
+}

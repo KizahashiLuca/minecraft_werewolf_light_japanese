@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:item",
+    "nbt": "{OnGround:1b,Item:{id:\"minecraft:conduit\",tag:{Tags:[\"MWLitem\"]}}}"
+  }
+}

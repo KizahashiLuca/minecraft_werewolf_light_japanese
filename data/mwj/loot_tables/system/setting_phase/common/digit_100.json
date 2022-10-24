@@ -1,0 +1,140 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/0",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 0
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/1",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 1
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/2",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 2
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/3",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 3
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/4",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 4
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/5",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 5
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/6",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 6
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/7",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 7
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/8",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 8
+              },
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "mwj:system/setting_phase/common/number/9",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "Digit100": 9
+              },
+              "entity": "this"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

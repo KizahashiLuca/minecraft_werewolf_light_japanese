@@ -1,23 +1,23 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:trident",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"トライデント","color":"aqua","italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"召雷","color":"gray","bold":false,"italic":false}],
                 ["",{"text":"即時ダメージ Ⅹ","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
@@ -30,8 +30,8 @@
                 ["",{"text":" 攻撃速度 1.1","color":"dark_green","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{Damage:248,HideFlags:63,Tags:[\"MWLitem\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:248,HideFlags:63,Tags:[\"MWLitem\",\"MWL_trident\"]}"
             }
           ]
         }

@@ -1,0 +1,31 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "PURPLE",
+      "scale": 1
+    },
+    "range": {
+      "min": 1,
+      "max": 2147483647
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/finish/decide_winner/gamemode/normal_wolf/no_black"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mwj:system/finish/decide_winner/gamemode/normal_wolf/few_white"
+      }
+    ]
+  }
+]

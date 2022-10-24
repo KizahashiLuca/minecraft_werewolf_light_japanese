@@ -1,23 +1,23 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:conduit",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:conduit",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"コンカッション地雷","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"発光 (0:10)","color":"blue","bold":false,"italic":false}],
                 ["",{"text":"吐き気 Ⅱ (0:10)","color":"red","bold":false,"italic":false}],
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
@@ -29,8 +29,8 @@
                 ["",{"text":"  半径1.5m","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLitem\",\"MWL_conduit\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

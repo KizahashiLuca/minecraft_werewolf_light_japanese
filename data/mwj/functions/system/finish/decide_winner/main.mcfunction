@@ -1,11 +1,17 @@
-###############################
-## Minecraft Version 1.14-1.16
-## Minecraft Werewolf Light
-## Author : KizahashiLuca
-## Date   : 20 Mar 2021
-## Version: v.1.5
-###############################
+####################################
+## Minecraft Werewolf Light       ##
+##   MC-Version : JE 1.19-        ##
+##   Author     : @KizahashiLuca  ##
+##   Date       : 07 Oct 2022     ##
+##   Version    : v.2.0           ##
+## (C) 2019-2022 KizahashiLuca.   ##
+## Licensed under CC BY-SA 4.0.   ##
+####################################
 
-execute if score #MWL GameMode matches 1 run function mwj:system/finish/decide_winner/normal_wolf
-execute if score #MWL GameMode matches 2 run function mwj:system/finish/decide_winner/two_alive
-execute if score #MWL GameMode matches 3 run function mwj:system/finish/decide_winner/annihilation
+## Decide winner
+execute if predicate mwj:system/finish/decide_winner/five_sec_rest run function mwj:system/finish/decide_winner/gamemode/main
+
+execute if predicate mwj:system/finish/decide_winner/five_sec_not_rest run scoreboard players set #MWL IsEndGame 1
+
+## Times up
+execute if predicate mwj:system/finish/decide_winner/times_up run function mwj:system/finish/decide_winner/schedule/draw

@@ -1,28 +1,28 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:elytra",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"エリトラ","color":"yellow","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"不可壊","color":"blue","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,HideFlags:63,Tags:[\"MWLitem\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:63,Tags:[\"MWLitem\",\"MWL_elytra\"]}"
             }
           ]
         }

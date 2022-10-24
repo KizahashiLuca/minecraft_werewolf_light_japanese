@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:phase/setting_phase/choose_item/page3"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "mwj:system/setting_phase/choose_item/chosen_item/honey_block"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:14b,tag:{Tags:[\"MWLsetting\"]}}]}"
+      }
+    }
+  }
+]

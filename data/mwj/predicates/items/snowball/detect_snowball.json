@@ -1,0 +1,36 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:snowball",
+      "nbt": "{Item:{tag:{Tags:[\"MWL_snowball\"]}}}"
+    }
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "NumberOfSnowball": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@e[predicate=mwj:items/snowball/certain_cloud,limit=1]"
+          },
+          "score": "NumberOfSnowball",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "@e[predicate=mwj:items/snowball/certain_cloud,limit=1]"
+          },
+          "score": "NumberOfSnowball",
+          "scale": 1
+        }
+      }
+    }
+  }
+]

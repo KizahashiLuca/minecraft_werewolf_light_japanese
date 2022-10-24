@@ -1,23 +1,23 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:twisting_vines",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:twisting_vines",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"ねじれツタ","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"アイテム使用方法 : ","color":"white","bold":false,"italic":false}],
                 ["",{"translate":"  (%s)+(%s)キーで設置","with":[{"keybind":"key.sneak","color":"aqua","bold":false,"italic":false},{"keybind":"key.drop","color":"aqua","bold":false,"italic":false}],"color":"white","bold":false,"italic":false}],
                 ["",{"text":"設置以後 : ","color":"white","bold":false,"italic":false}],
@@ -27,8 +27,8 @@
                 ["",{"text":"  設置箇所から高さ20mまで","color":"white","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{HideFlags:63,Tags:[\"MWLitem\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLitem\",\"MWL_twisting_vines\"]}"
             },{
               "function": "minecraft:set_count",
               "count": 1

@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "SetDummyRole",
+      "scale": 1
+    },
+    "range": {
+      "min": 2,
+      "max": 2
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#MWL"
+      },
+      "score": "NumOfFanatics",
+      "scale": 1
+    },
+    "range": {
+      "min": 1,
+      "max": 2147483647
+    }
+  }
+]

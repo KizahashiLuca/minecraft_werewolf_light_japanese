@@ -1,0 +1,93 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                ["",{"text":"選択済み","color":"green","bold":false,"italic":false}]
+              ]
+            },{
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MWLsetting\",\"MWL_selected_role_pos1\"]}"
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfWolves",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_role/page1"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfFoxes",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_role/page2"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfMasons",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_role/page3"
+                }
+              ]
+            },{
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#MWL"
+                },
+                "score": "NumOfDetectives",
+                "scale": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mwj:phase/setting_phase/choose_role/page4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,23 +1,23 @@
 {
   "type": "generic",
-  "pools":[
+  "pools": [
     {
-      "rolls":1,
-      "entries":[
+      "rolls": 1,
+      "entries": [
         {
-          "type":"minecraft:item",
-          "name":"minecraft:diamond_hoe",
-          "functions":[
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_hoe",
+          "functions": [
             {
-              "function":"minecraft:set_name",
+              "function": "minecraft:set_name",
               "name": [
                 ["",{"text":"ダイヤモンドのクワ","color":"aqua","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_lore",
+              "function": "minecraft:set_lore",
               "entity" : "this",
               "replace": true,
-              "lore":[
+              "lore": [
                 ["",{"text":"ダメージ増加 ⅭⅭ","color":"gray","bold":false,"italic":false}],
                 [""],
                 ["",{"text":"利き手に持ったとき：","color":"gray","bold":false,"italic":false}],
@@ -25,8 +25,8 @@
                 ["",{"text":" 攻撃速度 4","color":"dark_green","bold":false,"italic":false}]
               ]
             },{
-              "function":"minecraft:set_nbt",
-              "tag":"{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:63,Tags:[\"MWLitem\"]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:63,Tags:[\"MWLitem\",\"MWL_diamond_hoe\"]}"
             }
           ]
         }
