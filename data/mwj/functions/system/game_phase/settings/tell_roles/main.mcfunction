@@ -2,8 +2,8 @@
 ## Minecraft Werewolf Light       ##
 ##   MC-Version : JE 1.19-        ##
 ##   Author     : @KizahashiLuca  ##
-##   Date       : 07 Oct 2022     ##
-##   Version    : v.2.0           ##
+##   Date       : 01 Nov 2022     ##
+##   Version    : v.2.0.1         ##
 ## (C) 2019-2022 KizahashiLuca.   ##
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
@@ -38,9 +38,9 @@ tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/cat] ["",{"text":
 tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/werewolf] [""]
 tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/werewolf] ["",{"text":"  仲間の人狼 : ","color":"white"}]
 tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/werewolf] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"}]
-tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/madman] [""]
-tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/madman] ["",{"text":"  主人の人狼 : ","color":"white"}]
-tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/madman] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"}]
+tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/fanatic] [""]
+tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/fanatic] ["",{"text":"  主人の人狼 : ","color":"white"}]
+tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/fanatic] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=1..4}]","color":"red"}]
 tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/immoralist] [""]
 tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/immoralist] ["",{"text":"  主人の羽衣狐 : ","color":"white"}]
 tellraw @a[predicate=mwj:system/game_phase/settings/tell_roles/immoralist] ["",{"text":"    ","color":"white"},{"selector":"@a[scores={CurrentRole=10}]","color":"dark_purple"}]
