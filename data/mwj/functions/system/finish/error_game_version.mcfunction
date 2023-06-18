@@ -15,7 +15,7 @@ tellraw @a ["",{"text":"  ","color":"white"},{"text":"ゲーム開始エラー",
 tellraw @a ["",{"text":"----------------------------------","color":"white"}]
 tellraw @a ["",{"text":"  前提バージョンが異なります。","color":"white"}]
 tellraw @a ["",{"text":"  このデータパックの対象は以下。","color":"white"}]
-tellraw @a ["",{"text":"     v1.19 ","bold":true,"color":"red"},{"text":"-","color":"white"}]
+tellraw @a ["",{"text":"     v1.20 ","bold":true,"color":"red"},{"text":"-","color":"white"}]
 
 ## Quit Game
 function mwj:system/finish/exit_game
