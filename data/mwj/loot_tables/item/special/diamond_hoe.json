@@ -25,8 +25,22 @@
                 ["",{"text":" 攻撃速度 4","color":"dark_green","bold":false,"italic":false}]
               ]
             },{
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "sharpness": {
+                  "max": 200,
+                  "min": 200
+                }
+              }
+            },{
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0,
+                "min": 0
+              }
+            },{
               "function": "minecraft:set_nbt",
-              "tag": "{Damage:1561,Enchantments:[{id:\"minecraft:sharpness\",lvl:200s}],HideFlags:63,Tags:[\"MWLitem\",\"MWL_diamond_hoe\"]}"
+              "tag": "{HideFlags:63,Tags:[\"MWLitem\",\"MWL_diamond_hoe\"]}"
             }
           ]
         }

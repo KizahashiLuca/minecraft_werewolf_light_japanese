@@ -20,7 +20,7 @@ gamemode adventure @s[scores={DeathCount=2..}]
 execute unless entity @e[type=minecraft:area_effect_cloud,tag=GhostSpawn,distance=..8] run tp @s[scores={DeathCount=2..}] @e[type=minecraft:area_effect_cloud,tag=GhostSpawn,sort=nearest,limit=1]
 
 ## Set effect
-effect give @s[scores={DeathCount=2..}] minecraft:weakness 1000000 255 true
+effect give @s[scores={DeathCount=2..}] minecraft:weakness infinite 255 true
 
 ## Set inventory
 execute if data entity @s[scores={DeathCount=2..}] Inventory run function mwj:system/game_phase/common/set_inventory/main

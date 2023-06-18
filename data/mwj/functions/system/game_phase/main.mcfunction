@@ -19,7 +19,7 @@ function mwj:system/common/time/tick
 execute as @e[predicate=mwj:system/game_phase/projectile] run data merge entity @s {pickup:2b}
 
 ## Glow Time
-effect give @a[predicate=mwj:system/game_phase/glowing] minecraft:glowing 1000000 1 true
+effect give @a[predicate=mwj:system/game_phase/glowing] minecraft:glowing infinite 1 true
 
 ## Count Death Score
 execute as @a[predicate=mwj:system/game_phase/count_death/black] run scoreboard players remove #MWL BLACK 1

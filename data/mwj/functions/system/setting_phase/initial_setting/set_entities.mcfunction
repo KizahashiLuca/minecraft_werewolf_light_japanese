@@ -26,7 +26,7 @@ gamemode adventure @a[predicate=mwj:gamemode/not_spectator]
 effect clear @a[predicate=mwj:gamemode/not_spectator]
 
 ## Set effect
-effect give @a[predicate=mwj:gamemode/not_spectator] minecraft:resistance 1000000 4 true
+effect give @a[predicate=mwj:gamemode/not_spectator] minecraft:resistance infinite 4 true
 
 ## Clear recipes
 recipe take @a *

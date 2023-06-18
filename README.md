@@ -15,12 +15,13 @@
  - 配布に関して問題があれば削除いたします。ご了承ください。
 
 ## version
- 1. 以下のリンクの [minecraft_werewolf_light_japanese-ver_2_0_1.zip][v.2.0.1] をクリックして、データパックをDL。
+ 1. 以下のリンクの [minecraft_werewolf_light_japanese-ver_2_1.zip][v.2.1] をクリックして、データパックをDL。
  2. DLしたzipファイルを、使用するワールドのフォルダ内[datapacks]にコピー。
  3. ワールドを開き、コマンド `/reload` を実行して、「Thank you for Downloading」と出れば導入完了！
 
  - 20 Mar 2021 - [v.1.5][v.1.5] **(MC1.14-1.16対応)**
- - 01 Sep 2021 - [v.2.0.1][v.2.0.1] **(MC1.19以降対応)**
+ - 01 Nov 2022 - [v.2.0.1][v.2.0.1] **(MC1.19対応)**
+ - 18 Jun 2023 - [v.2.1][v.2.1] **(MC1.20以降対応)**
 
    <details><summary>過去バージョン</summary><div>
 
@@ -39,6 +40,10 @@
      - 12 Aug 2020 - [v.1.3.1][v.1.3.1]
      - 16 Aug 2020 - [v.1.4][v.1.4]
      - 22 Aug 2020 - [v.1.4.1][v.1.4.1]
+     - 20 Mar 2021 - [v.1.5][v.1.5]
+     - 24 Oct 2022 - [v.2.0][v.2.0]
+     - 01 Nov 2022 - [v.2.0.1][v.2.0.1]
+     - 18 Jun 2023 - [v.2.1][v.2.1]
 
    </div></details>
 
@@ -89,4 +94,5 @@ Licensed under CC BY-SA 4.0.
 [v.1.5]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/v.1.5
 [v.2.0]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/ver.2.0
 [v.2.0.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/ver.2.0.1
+[v.2.1]:https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese/releases/tag/ver.2.1
 [twitter]:https://www.twitter.com/KizahashiLuca

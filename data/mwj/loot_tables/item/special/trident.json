@@ -30,8 +30,14 @@
                 ["",{"text":" 攻撃速度 1.1","color":"dark_green","bold":false,"italic":false}]
               ]
             },{
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.0079,
+                "min": 0.0079
+              }
+            },{
               "function": "minecraft:set_nbt",
-              "tag": "{Damage:248,HideFlags:63,Tags:[\"MWLitem\",\"MWL_trident\"]}"
+              "tag": "{HideFlags:63,Tags:[\"MWLitem\",\"MWL_trident\"]}"
             }
           ]
         }

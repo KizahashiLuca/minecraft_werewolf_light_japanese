@@ -25,7 +25,7 @@
               ]
             },{
               "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionEffects:[{Id:1b,Amplifier:2b,Duration:600}],CustomPotionColor:63217,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_speed\"]}"
+              "tag": "{CustomPotionEffects:[{Id:1,Amplifier:2b,Duration:600}],CustomPotionColor:63217,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_speed\"]}"
             }
           ]
         }

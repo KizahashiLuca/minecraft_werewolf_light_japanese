@@ -18,4 +18,4 @@ tag @e[type=minecraft:armor_stand,tag=LittleRedGrave,tag=NotNumbered] remove Not
 execute if data entity @s[tag=Cryptobiosis] Inventory run function mwj:system/game_phase/common/set_inventory/main
 
 ## Give an effect
-effect give @s[tag=Cryptobiosis] minecraft:resistance 1000000 100 true
+effect give @s[tag=Cryptobiosis] minecraft:resistance infinite 100 true
