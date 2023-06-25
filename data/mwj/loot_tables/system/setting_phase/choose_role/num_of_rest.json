@@ -15,8 +15,10 @@
               ]
             },{
               "function": "minecraft:set_lore",
+              "entity" : "this",
+              "replace": true,
               "lore": [
-                ["",{"text":"  ","color":"aqua","bold":false,"italic":false},{"score":{"name":"#MWL","objective":"NumOfRestRoles"},"color":"aqua","bold":true,"italic":false},{"text":" 役","color":"aqua","bold":false,"italic":false}]
+                ["",{"translate":"  %s 役","with":[{"score":{"name":"#MWL","objective":"NumOfRestRoles"},"bold":true}],"color":"aqua","bold":false,"italic":false}]
               ]
             },{
               "function": "minecraft:set_nbt",
