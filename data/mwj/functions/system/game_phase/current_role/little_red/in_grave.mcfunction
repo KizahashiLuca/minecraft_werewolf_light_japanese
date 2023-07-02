@@ -1,9 +1,9 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.19-        ##
+##   MC-Version : JE 1.20-        ##
 ##   Author     : @KizahashiLuca  ##
-##   Date       : 01 Nov 2022     ##
-##   Version    : v.2.0.1         ##
+##   Date       : 18 Jun 2023     ##
+##   Version    : v.2.1           ##
 ## (C) 2019-2022 KizahashiLuca.   ##
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
@@ -21,8 +21,8 @@ execute as @e[type=minecraft:armor_stand,tag=LittleRedGrave] if score @s NumOfPl
 effect clear @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}]
 
 ## Set effect
-effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:resistance 1000000 100 true
-effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:weakness 1000000 255 true
+effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:resistance infinite 100 true
+effect give @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] minecraft:weakness infinite 255 true
 
 ## Set inventory
 execute as @p[tag=Cryptobiosis,scores={CurrentRole=39,TagOfRoleWork=1}] if data entity @s Inventory run function mwj:system/game_phase/common/set_inventory/main

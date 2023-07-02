@@ -1,9 +1,9 @@
 ####################################
 ## Minecraft Werewolf Light       ##
-##   MC-Version : JE 1.19-        ##
+##   MC-Version : JE 1.20-        ##
 ##   Author     : @KizahashiLuca  ##
-##   Date       : 01 Nov 2022     ##
-##   Version    : v.2.0.1         ##
+##   Date       : 18 Jun 2023     ##
+##   Version    : v.2.1           ##
 ## (C) 2019-2022 KizahashiLuca.   ##
 ## Licensed under CC BY-SA 4.0.   ##
 ####################################
@@ -74,7 +74,7 @@ scoreboard players operation #MWL Tick *= #MWL Num00005
 ## Send a Game Begin Log
 tellraw @a[predicate=mwj:system/common/time/game_time/start/in_thousands] ["",{"text":"    ","color":"white"},{"score":{"name":"#MWL","objective":"SetGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
 tellraw @a[predicate=mwj:system/common/time/game_time/start/in_hundreds] ["",{"text":"    0","color":"white"},{"score":{"name":"#MWL","objective":"SetGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
-tellraw @a[predicate=mwj:system/common/time/game_time/start/in_tens] ["",{"text":"   00","color":"white"},{"score":{"name":"#MWL","objective":"SetGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
+tellraw @a[predicate=mwj:system/common/time/game_time/start/in_tens] ["",{"text":"    00","color":"white"},{"score":{"name":"#MWL","objective":"SetGameTime"},"color":"white"},{"text":".00 sec.  :  ゲーム開始","color":"white"}]
 
 ## Send a Kill Log
 function mwj:system/finish/kill_log

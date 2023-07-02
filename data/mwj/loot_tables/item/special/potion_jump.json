@@ -22,7 +22,7 @@
               ]
             },{
               "function": "minecraft:set_nbt",
-              "tag": "{CustomPotionEffects:[{Id:8b,Amplifier:9b,Duration:600}],CustomPotionColor:3470848,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_jump\"]}"
+              "tag": "{CustomPotionEffects:[{Id:8,Amplifier:9b,Duration:600}],CustomPotionColor:3470848,HideFlags:63,Tags:[\"MWLitem\",\"MWL_potion_jump\"]}"
             }
           ]
         }
